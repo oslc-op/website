@@ -1,0 +1,4 @@
+baseURL = "http://oslc.github.io/"
+languageCode = "en-us"
+title = "OSLC - Open Services for Lifecycle Collaboration"
+theme = "gohugo-theme-ananke"
