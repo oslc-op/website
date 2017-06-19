@@ -1,0 +1,7 @@
+weight: 3
+title: "Inspired by the web"
+description: >
+  <p>
+    Why reinvent the wheel? We base our specifications on ubiquitous and established Internet and linked-data standards. We design RESTful services, and any resource must be accessible to multiple tools via a URL.
+  </p>
+image: "img/carousel/inspired.png"
