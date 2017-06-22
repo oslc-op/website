@@ -16,15 +16,20 @@ theme = "hugo-universal-theme"
     weight = 2
 
 [[menu.main]]
+    name = "Resources"
+    url  = "/resources/"
+    weight = 3
+
+[[menu.main]]
     name = "About"
     identifier = "about"
     url  = "/about/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Blog"
     url  = "/blog/"
-    weight = 4
+    weight = 5
 
 # Top bar social links menu
 
@@ -98,6 +103,12 @@ theme = "hugo-universal-theme"
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
+
+# resources - new for oslc
+[params.resources]
+    enable = true
+    link_url = "/resources/"
+    link_text = "Discover resources"
 
 [params.see_more]
     enable = true
