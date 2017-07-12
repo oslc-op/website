@@ -1,7 +1,8 @@
 baseURL = "https://oslc.github.io/"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
-theme = "hugo-universal-theme"
+theme = "oslc"
+layoutDir = "partials"
 
 # Main menu
 
@@ -11,8 +12,9 @@ theme = "hugo-universal-theme"
     weight = 1
 
 [[menu.main]]
-    name = "Contribute"
-    url  = "/contribute/"
+    name = "About"
+    identifier = "about"
+    url  = "/about/"
     weight = 2
 
 [[menu.main]]
@@ -21,14 +23,13 @@ theme = "hugo-universal-theme"
     weight = 3
 
 [[menu.main]]
-    name = "About"
-    identifier = "about"
-    url  = "/about/"
+    name = "Contribute"
+    url  = "/contribute/"
     weight = 4
 
 [[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
+    name = "News"
+    url  = "/news/"
     weight = 5
 
 # Top bar social links menu
