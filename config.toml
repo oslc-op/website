@@ -3,7 +3,8 @@ languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
 theme = "oslc"
 layoutDir = "partials"
-
+disableLiveReload = false
+watch = true
 # Main menu
 
 [[menu.main]]
