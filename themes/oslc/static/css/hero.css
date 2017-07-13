@@ -1,0 +1,10 @@
+.hero-container{
+  padding: 100px 0;
+  background: linear-gradient(to right, #4087DF, #375178, #8F5F61, #D96B50, #54A876);
+}
+
+.hero-container h1,
+.hero-container p,
+.hero-container a {
+  color: #fff;
+}
