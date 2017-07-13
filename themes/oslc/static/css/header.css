@@ -2,7 +2,13 @@ nav{
   background: #fff;
 }
 .nav__logo{
-  display: inline-block;;
+  display: inline-block;
+}
+
+.nav__logo img{
+  width: 35px;
+  display: block;
+  margin: 15px auto;
 }
 
 .links{
