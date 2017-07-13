@@ -21,3 +21,11 @@ p, a {
 .hero .textline {
   font-size: 20px;
 }
+
+
+/* buttons */
+.btn-oslc{
+  background: #28BD84;
+  color: #fff;
+  text-transform: uppercase;
+}
