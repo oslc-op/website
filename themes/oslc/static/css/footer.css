@@ -1,0 +1,28 @@
+.footer-nav {
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  color: #efefef;
+}
+
+.footer__item span {
+  color: #efefef;
+  padding-right: 10px;
+}
