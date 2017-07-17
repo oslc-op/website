@@ -33,13 +33,10 @@
   text-align: center;
 }
 
-.resource .resource-title {
-  margin-bottom: 30px;
-}
-
-.resources-top .resource-title,
-.resource .resource-title {
-  font-size: 26px;
+.resource .resource-title,
+.resources-top .resource-title {
+  font-size: 22px;
+  padding-bottom: 30px;
 }
 
 .resource .resource-description,
