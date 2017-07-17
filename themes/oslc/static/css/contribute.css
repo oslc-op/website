@@ -28,3 +28,20 @@
   width: 500px;
   margin: auto;
 }
+
+.title-ct{
+  text-align: center;
+}
+
+.sec-ct-second{
+  padding: 40px 0px;
+}
+
+.ct-item{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.ct-item__info{
+  width: 70%;
+}
