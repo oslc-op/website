@@ -1,0 +1,56 @@
+.resources {
+  color: #fff;
+}
+
+.resources a {
+  color: #D96250;
+}
+
+.resources-top {
+  background-color: #2D4467;
+  padding: 50px;
+}
+
+.resource-tutorials {
+  background-color: #418EEB;
+}
+
+.resource-articles {
+  background-color: #375178;
+}
+
+.resource-presentations {
+  background-color: #D96B50;
+}
+
+.resource-podcasts {
+  background-color: #28BD84;
+}
+
+.resource {
+  padding: 50px;
+  height: 300px;
+  text-align: center;
+}
+
+.resource .resource-title {
+  margin-bottom: 30px;
+}
+
+.resources-top .resource-title,
+.resource .resource-title {
+  font-size: 26px;
+}
+
+.resource .resource-description,
+.resources-top .resource-description {
+  font-size: 14px;
+}
+
+.resources .col-lg-3,
+.resources .col-md-3,
+.resources .col-sm-6,
+.resources .col-xs-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
