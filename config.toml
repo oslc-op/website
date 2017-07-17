@@ -5,6 +5,7 @@ theme = "oslc"
 layoutDir = "partials"
 disableLiveReload = false
 watch = true
+uglyURL = true
 # Main menu
 
 [[menu.main]]
