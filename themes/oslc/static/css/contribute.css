@@ -1,0 +1,47 @@
+.sec-ct-header{
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.sec-ct-img{
+  position: absolute;
+  z-index: 10;
+  top: -400px;
+}
+
+.sec-ct-info{
+  position: absolute;
+  z-index: 20;
+  background: rgba(45, 68, 103, .8);
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+}
+
+.sec-ct-info h1{
+  text-align: center;
+}
+
+.sec-ct-header__content{
+  width: 500px;
+  margin: auto;
+}
+
+.title-ct{
+  text-align: center;
+}
+
+.sec-ct-second{
+  padding: 40px 0px;
+}
+
+.ct-item{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.ct-item__info{
+  width: 70%;
+}
