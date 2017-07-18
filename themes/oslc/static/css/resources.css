@@ -155,6 +155,101 @@ label{
   width: 100%;
 }
 
+.rs-long-item{
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  border: 5px solid #fff;
+  box-shadow: 2px 3px 21px -3px rgba(0,0,0,0.54);
+  color: #fff;
+  height: auto;
+}
+
+.rs-long-item::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 61, 61, .7);
+  position: absolute;
+  top:0px;
+  z-index: 15;
+
+}
+
+.rs-long-item img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.rs-long-item .content__info,
+.rs-long-item .content__description,
+.rs-long-item .content__options{
+  padding: 0px 15px;
+  position: relative;
+  z-index: 20;
+}
+
+.rs-long-item .content__info .content__info__author{
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.rs-long-item .content__description{
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+.author span{
+  font-weight: bold;
+}
+
+.rs-long-item .content__options{
+  background:rgba(65, 142, 235, .6);
+  position: relative;
+  z-index: 20;
+  padding: 20px 15px;
+}
+.rs-long-item .content__options .buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.buttons{
+  width: 100%;
+}
+
+.buttons a{
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  line-height: 2;
+  margin-right: 0px;
+}
+
+.buttons a:hover{
+  background: #fff;
+  color: #375178;
+}
+
+.content__options{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.other a{
+  color:#fff;
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 760px){
   .rs-search{
     flex-direction: row;
@@ -172,5 +267,27 @@ label{
 
   .rs-search__item:last-child{
     width: 10%;
+  }
+
+  .rs-long-item .content__options{
+    padding: 15px 15px;
+  }
+
+  .rs-long-item .content__options .buttons{
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .content__options{
+    flex-direction: row;
+  }
+
+  .buttons{
+    width: 33%;
+  }
+  .buttons a{
+    margin-bottom: 0px;
+    width: 45%;
+    margin-right: 10px;
   }
 }
