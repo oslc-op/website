@@ -163,6 +163,7 @@ label{
   box-shadow: 2px 3px 21px -3px rgba(0,0,0,0.54);
   color: #fff;
   height: auto;
+  margin-bottom:20px;
 }
 
 .rs-long-item::before{
@@ -202,7 +203,7 @@ label{
   padding-top:20px;
 }
 
-.author span{
+.content__info__author .author span{
   font-weight: bold;
 }
 
