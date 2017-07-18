@@ -132,7 +132,7 @@
 
 .rs-search__item span{
   position: absolute;
-  right: 15px;
+  right: 28px;
   top:10px;
 }
 
@@ -251,6 +251,65 @@ label{
   font-size: 20px;
 }
 
+
+.container-small-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.rs-small-item{
+  margin-bottom: 30px;
+  border:5px solid #fff;
+  box-shadow: 2px 3px 21px -3px rgba(0,0,0,0.54);
+}
+
+.sm-header--blue,
+.sm-header--green,
+.sm-header--red,
+.sm-header--orange,
+.sm-header--gray{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+
+.sm-header--blue span,
+.sm-header--green span,
+.sm-header--red span,
+.sm-header--orange span,
+.sm-header--gray span{
+  font-size: 40px;
+}
+
+.sm-header--blue h3,
+.sm-header--green h3,
+.sm-header--red h3,
+.sm-header--orange h3,
+.sm-header--gray h3{
+  margin: 10px;
+}
+
+
+.sm-header--blue{background: #418EEB;}
+
+.sm-header--green{background: #28BD84}
+
+.sm-header--orange{background: #D96B50}
+
+.sm-header--gray{background: #3D3D3D}
+
+.sm-content{
+  padding: 0px 15px;
+}
+
+.sm-author-date{
+  display: flex;
+  justify-content: space-between;
+  color: #B8B8B8;
+  line-height: 3;
+}
+
 @media screen and (min-width: 760px){
   .rs-search{
     flex-direction: row;
@@ -268,6 +327,10 @@ label{
 
   .rs-search__item:last-child{
     width: 10%;
+  }
+
+  .rs-search__item span{
+    right:15px;
   }
 
   .rs-long-item .content__options{
@@ -290,5 +353,15 @@ label{
     margin-bottom: 0px;
     width: 45%;
     margin-right: 10px;
+  }
+
+  .container-small-items{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .rs-small-item{
+    width: 30%;
   }
 }
