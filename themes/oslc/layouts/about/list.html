@@ -13,7 +13,18 @@
 
         </header>
 
-        <h1>About</h1>
+        <div class="sections">
+
+          {{ partial "mission.html " . }}
+
+          {{ partial "governance.html" . }}
+
+          {{ partial "people.html" . }}
+
+          {{ partial "organizations.html" . }}
+
+          {{ partial "faq.html" . }}
+        </div>
 
         <footer>
           {{ partial "footer.html" . }}
