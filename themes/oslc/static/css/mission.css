@@ -1,0 +1,31 @@
+.mission__links {
+  background-color: #418EEB;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 0;
+}
+
+.mission__item {
+  padding-right: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.mission__item:last-child {
+  padding-right: 0;
+}
+
+.mission__title,
+.mission__slogan,
+.about__title {
+  text-align: center;
+}
+
+.mission__title {
+  padding: 20px 0;
+}
+
+.mission__slogan {
+  font-style: italic;
+}

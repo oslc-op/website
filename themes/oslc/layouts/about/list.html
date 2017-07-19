@@ -26,7 +26,7 @@
           {{ partial "faq.html" . }}
         </div>
 
-        <footer>
+        <footer class="footer" id="footer">
           {{ partial "footer.html" . }}
         </footer>
     </div>
@@ -34,5 +34,15 @@
 
     <!-- scripts -->
     {{ partial "scripts.html" }}
+
+    <script>
+      $(document).ready(function(){
+        $('owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true
+        });
+      })
+    </script>
   </body>
 </html>
