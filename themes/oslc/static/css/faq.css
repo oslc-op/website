@@ -1,11 +1,17 @@
 .faq {
   background-color: #3d3d3d;
   color: #fff;
+  padding: 40px 0 80px;
+}
+
+.faq__title {
+  text-align: center;
 }
 
 .question__title a{
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .question__title {
