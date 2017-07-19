@@ -1,3 +1,7 @@
+.mission {
+  padding: 10px 0;
+}
+
 .mission__links {
   background-color: #418EEB;
   display: flex;
