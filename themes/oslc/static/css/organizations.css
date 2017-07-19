@@ -60,3 +60,24 @@
 .carousel__description blockquote {
   border: 0;
 }
+
+
+.brands__title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.brand__item {
+  display: inline-block;
+  margin: 10px;
+}
+
+.brand__item img {
+  filter: grayscale(100%);
+}
+
+.brands__row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
