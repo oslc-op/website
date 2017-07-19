@@ -1,9 +1,15 @@
 .people__picture {
   width: 200px;
+  margin: 10px 0;
 }
 
 .people__title,
 .people__headline {
   text-align: center;
   margin: 20px 0;
+}
+
+.people__name,
+.people__position {
+  margin: 5px 0;
 }
