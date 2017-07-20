@@ -13,14 +13,7 @@
 
         </header>
 
-        {{ partial "header-news.html" . }}
-
-        <div class="container">
-          <div class="row">
-              <div class="col-sm-9">{{ partial "posts.html" . }}</div>         
-              <div class="col-sm-3">{{ partial "sidebar-posts.html" . }}</div>         
-          </div>
-        </div>
+        {{ partial "news.html" . }}
 
         <footer class="footer footer--inverse">
           {{ partial "footer.html" . }}
