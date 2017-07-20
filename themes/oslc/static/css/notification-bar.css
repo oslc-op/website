@@ -1,0 +1,15 @@
+.notification-bar {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #418EEB;
+}
+
+.notification-bar p,
+.notification-bar a {
+  color: #fff;
+}
+
+.notification-bar a:hover {
+  color: #D96B50;
+}
+
