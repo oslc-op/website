@@ -1,9 +1,13 @@
+.statistics{
+  background: #fff;
+}
+
 .statistics__container{
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #2D4467;
-  justify-content: space-around; 
+  justify-content: space-around;
   padding: 40px 0px;
   color: #3D3D3D;
 }
@@ -21,7 +25,7 @@
 
 .statistics__subtitle{
   font-size: 14px;
-  font-weight: light; 
+  font-weight: light;
 }
 
 .statistics__info{
@@ -41,7 +45,7 @@
   .statistics__container{
     flex-direction: row;
   }
-  
+
   .statistics__sec--right{
     text-align: right;
     float: right;
