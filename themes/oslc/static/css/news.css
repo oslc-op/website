@@ -6,6 +6,7 @@
 .news__container{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .news__item{
@@ -31,11 +32,11 @@
 }
 
 .new__info{
-  position: relative; 
+  position: relative;
   z-index: 10;
   height: 250px;
   top:96px;
-  color: #FFF;  
+  color: #FFF;
 }
 
 .new__date{
@@ -79,6 +80,7 @@
 @media screen and (min-width: 760px){
   .news__container{
     flex-direction: row;
+    margin-bottom:40px;
   }
 
   .news__item{
@@ -98,7 +100,7 @@
   }
 
   .new__info{
-    color: #3D3D3D;  
+    color: #3D3D3D;
   }
 
 }

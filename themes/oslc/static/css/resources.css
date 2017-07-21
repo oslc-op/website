@@ -6,9 +6,12 @@
   color: #D96250;
 }
 
-.resources-top {
+a.resources-top {
   background-color: #2D4467;
   padding: 50px;
+  display: block;
+  text-decoration: none;
+  color:#fff;
 }
 
 .resource-tutorials {
