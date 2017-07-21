@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
+  {{ partial "notification-bar.html" . }}
   {{ partial "head.html" . }}
 
   <body>
@@ -102,7 +102,7 @@
           </div>
         </section>
 
-        <footer style="text-align:center;">
+        <footer class="footer footer--inverse">
           {{ partial "footer.html" . }}
         </footer>
     </div>
