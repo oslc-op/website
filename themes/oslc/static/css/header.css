@@ -6,9 +6,9 @@ nav{
 }
 
 .nav__logo img{
-  width: 35px;
+  width: 40px;
   display: block;
-  margin: 15px auto;
+  margin: 20px auto 10px;
 }
 
 .links{
@@ -37,8 +37,8 @@ nav{
   font-size: 20px;
 }
 
-.nav__item--social a{
-  margin: 0 30px 0 0;
+.nav__links .nav__item--social a{
+  margin: 0 20px 0 0;
 }
 
 .menu-boton{
@@ -75,7 +75,7 @@ nav{
   }
 
   .nav__item--social a:first-child{
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .nav__item--social::before{

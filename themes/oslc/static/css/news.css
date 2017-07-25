@@ -7,35 +7,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 30px 100px 50px
 }
 
 .news__item{
-  width: 100%;
-  height: 256px;
-  overflow: hidden;
   background: #fff;
-  padding: 0px 15px 15px 15px;
-  position: relative;
   margin-bottom:20px;
 }
 
+.news__image {
+  width: 100%;
+  height: 214px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("https://unsplash.it/600/300?image=996");
+}
+
 .news__image img{
-  /* width: 100%;
-  height: 100%; */
-  position: absolute;
-  z-index: 0;
-  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .new__title{
+  position: absolute;
+  bottom: 0;
+  left: 15px;
   color:#fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 .new__info{
-  position: relative;
-  z-index: 10;
-  height: 250px;
-  top:96px;
+  padding: 0 15px 10px;
   color: #FFF;
 }
 
@@ -45,7 +47,6 @@
 }
 
 .new__content{
-  height: 150px;
 }
 
 /*Styles to news template*/
@@ -84,19 +85,25 @@
   }
 
   .news__item{
-    width: 300px;
-    height: 355px;
+    width: 23%;
     margin-right: 25px;
     margin-bottom: 0px;
-    -webkit-box-shadow: 10px 10px 5px -6px rgba(61,61,61,0.42);
-    -moz-box-shadow: 10px 10px 5px -6px rgba(61,61,61,0.42);
-    box-shadow: 10px 10px 5px -6px rgba(61,61,61,0.42);
+    border: 1px solid #CECECE;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
 
   }
 
+  .news__image {
+    width: 100%;
+    height: 214px;
+    overflow: hidden;
+  }
+
   .news__image img{
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: auto;
   }
 
   .new__info{

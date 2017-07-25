@@ -7,7 +7,11 @@
 }
 
 p, a {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.big__paragraph {
+  font-size: 18px;
 }
 
 .hero .title {
@@ -20,6 +24,26 @@ p, a {
 
 .hero .textline {
   font-size: 20px;
+}
+
+.section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #4B4B4B;
+}
+
+.section__title.white {
+  color: #FFF;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+
+  .container__big {
+    width: 1200px;
+  }
 }
 
 
