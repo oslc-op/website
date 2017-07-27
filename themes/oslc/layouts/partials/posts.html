@@ -2,11 +2,11 @@
   <div class="post">
     <div class="post__header">
       <div class="post__title">
-        <h1>Post Title</h1>
+        <h1>{{ .Title }}</h1>
       </div>
       <div class="post__meta">
-        <div class="post__date">13 June 2017</div>
-        <div class="post__author"><a href="#">Brian King</a></div>
+        <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
+        <div class="post__author"><a href="#"> {{ .Params.author }} </a></div>
         <div class="post__comments">No comments</div>
       </div>
     </div>
@@ -15,62 +15,20 @@
         <img src="https://unsplash.it/1920/400?random" alt="">
       </div>
       <div class="post__paragraphs">
-        <p>
-          Consectetur quo natus sint nam quibusdam dolore quia minima Ut est voluptates nesciunt inventore nostrum veritatis Praesentium officia ad maxime nesciunt facilis. Voluptatibus eum provident dicta soluta molestias? Optio tempore Lorem accusantium quasi quas nisi aut natus? Recusandae iste tempora recusandae maxime suscipit Exercitationem officiis dolores magni neque unde Atque in delectus est repellat fuga! Voluptatem dicta debitis totam earum? Sit cum quia repellendus maiores vel voluptas Molestiae accusamus itaque aperiam dolorum eos, inventore? Ad est soluta molestias corporis natus Impedit rerum voluptate eligendi accusamus tempora quisquam Nobis veniam sit Lorem vitae dolor at repudiandae illum Cum quo sit blanditiis quidem perferendis. Quam at dolorem ipsa tempore neque illo. Quos necessitatibus adipisicing vero ipsum facere Quas voluptatem assumenda quaerat placeat?
-        </p>
-        <p>
-          Lorem minima quisquam quod similique possimus Fugit quod odio soluta hic maiores tempora repudiandae fugit molestias ea Dicta temporibus et nesciunt odio officia. Corrupti sapiente debitis iusto porro sequi! Necessitatibus Adipisicing possimus et molestiae reiciendis nostrum quibusdam Ea numquam sit quas ad alias voluptates doloremque. Molestias eius rerum et possimus dolorem cumque. Atque quia ea voluptatem beatae sapiente deserunt impedit Adipisicing corporis ipsum voluptatibus dolores esse Maxime ipsa tenetur repudiandae pariatur nihil delectus quis? Asperiores maxime molestias modi architecto est sunt mollitia. Soluta repellat ad sunt ex saepe Voluptatum qui? Consectetur molestiae commodi quia odio quibusdam. A modi adipisci cum inventore quam Inventore ab id labore iure enim Incidunt sunt provident sit nemo optio? Blanditiis cupiditate possimus nisi provident id
-        </p>
-        <a href="#" class="post__button">Continue Reading</a>
+        {{ .Content }}
+        <a href=" {{ .Permalink }}" class="post__button">Continue Reading</a>
       </div>
     </div>
     <div class="post__footer">
       <div class="post__time-reading">
-        <span>Reading time: 5min</span>
+        <span>Reading time: {{ .ReadingTime }}</span>
       </div>
       <div class="post__share">
         <span>Share</span>
-        <span class="fa fa-facebook"></span>
-        <span class="fa fa-twitter"></span>
-        <span class="fa fa-google-plus"></span>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a>
+        <a href="https://twitter.com/home?status={{ .Permalink }}" title="Tweet this"><span class="fa fa-twitter"></span></a>
+        <a href="https://plus.google.com/share?url={{ .Permalink }}" title="Share on Google+"><span class="fa fa-google-plus"></span></a>
       </div>
     </div>
   </div>
-  <div class="post">
-    <div class="post__header">
-      <div class="post__title">
-        <h1>Post Title</h1>
-      </div>
-      <div class="post__meta">
-        <div class="post__date">13 June 2017</div>
-        <div class="post__author"><a href="#">Brian King</a></div>
-        <div class="post__comments">No comments</div>
-      </div>
-    </div>
-    <div class="post__content">
-      <div class="post__thumbnail">
-        <img src="https://unsplash.it/1920/400?random" alt="">
-      </div>
-      <div class="post__paragraphs">
-        <p>
-          Consectetur quo natus sint nam quibusdam dolore quia minima Ut est voluptates nesciunt inventore nostrum veritatis Praesentium officia ad maxime nesciunt facilis. Voluptatibus eum provident dicta soluta molestias? Optio tempore Lorem accusantium quasi quas nisi aut natus? Recusandae iste tempora recusandae maxime suscipit Exercitationem officiis dolores magni neque unde Atque in delectus est repellat fuga! Voluptatem dicta debitis totam earum? Sit cum quia repellendus maiores vel voluptas Molestiae accusamus itaque aperiam dolorum eos, inventore? Ad est soluta molestias corporis natus Impedit rerum voluptate eligendi accusamus tempora quisquam Nobis veniam sit Lorem vitae dolor at repudiandae illum Cum quo sit blanditiis quidem perferendis. Quam at dolorem ipsa tempore neque illo. Quos necessitatibus adipisicing vero ipsum facere Quas voluptatem assumenda quaerat placeat?
-        </p>
-        <p>
-          Lorem minima quisquam quod similique possimus Fugit quod odio soluta hic maiores tempora repudiandae fugit molestias ea Dicta temporibus et nesciunt odio officia. Corrupti sapiente debitis iusto porro sequi! Necessitatibus Adipisicing possimus et molestiae reiciendis nostrum quibusdam Ea numquam sit quas ad alias voluptates doloremque. Molestias eius rerum et possimus dolorem cumque. Atque quia ea voluptatem beatae sapiente deserunt impedit Adipisicing corporis ipsum voluptatibus dolores esse Maxime ipsa tenetur repudiandae pariatur nihil delectus quis? Asperiores maxime molestias modi architecto est sunt mollitia. Soluta repellat ad sunt ex saepe Voluptatum qui? Consectetur molestiae commodi quia odio quibusdam. A modi adipisci cum inventore quam Inventore ab id labore iure enim Incidunt sunt provident sit nemo optio? Blanditiis cupiditate possimus nisi provident id
-        </p>
-        <a href="#" class="post__button">Continue Reading</a>
-      </div>
-    </div>
-    <div class="post__footer">
-      <div class="post__time-reading">
-        <span>Reading time: 5min</span>
-      </div>
-      <div class="post__share">
-        <span>Share</span>
-        <span class="fa fa-facebook"></span>
-        <span class="fa fa-twitter"></span>
-        <span class="fa fa-google-plus"></span>
-      </div>
-    </div>
-  </div>  
 </div>

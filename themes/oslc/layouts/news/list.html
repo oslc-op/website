@@ -17,7 +17,9 @@
 
         <div class="container">
           <div class="row">
+              {{ range .Data.Pages.ByPublishDate }}
               <div class="col-sm-9">{{ partial "posts.html" . }}</div>
+              {{ end }}
               <div class="col-sm-3">{{ partial "sidebar-posts.html" . }}</div>
           </div>
         </div>
