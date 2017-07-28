@@ -1,0 +1,61 @@
+<div class="rs-small-item">
+  {{ if in .Params.tags "article" }}
+  <div class="sm-header--orange">
+    <span class="fa fa-file-text"></span>
+    <h3>Article</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "podcast" }}
+  <div class="sm-header--blue" style="background-color: #6c0808 !important;">
+    <span class="fa fa-podcast"></span>
+    <h3>Podcast</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "presentation" }}
+  <div class="sm-header--green">
+    <span class="fa fa-line-chart"></span>
+    <h3>Presentation</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "tool" }}
+  <div class="sm-header--blue" style="background-color: #d96d50 !important;">
+    <span class="fa fa-cogs"></span>
+    <h3>Tool</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "tutorial" }}
+  <div class="sm-header--blue">
+    <span class="fa fa-book"></span>
+    <h3>Tutorial</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "video" }}
+  <div class="sm-header--blue" style="background-color: #375178 !important;">
+    <span class="fa fa-film"></span>
+    <h3>Video</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "website" }}
+  <div class="sm-header--blue" style="background-color: #0a6743 !important;">
+    <span class="fa fa-globe"></span>
+    <h3>Website</h3>
+  </div>
+  {{ end }}
+  {{ if in .Params.tags "whitepaper" }}
+  <div class="sm-header--gray">
+    <span class="fa fa-files-o"></span>
+    <h3>Whitepaper</h3>
+  </div>
+  {{ end }}
+
+  <div class="sm-content">
+    <h3>{{ .Title }}</h3>
+    <div class="sm-info">
+      {{ .Content }}
+    </div>
+    <div class="sm-author-date">
+      <span class="author">{{ .Params.author }}</span>
+      <span class="author"><i class="fa fa-calendar"></i> {{ .Date.Format "Jan 2, 2006"}}</span>
+    </div>
+  </div>
+</div>
