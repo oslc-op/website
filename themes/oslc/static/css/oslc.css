@@ -518,7 +518,7 @@ header {
     margin: 0 0 20px 0;
     font-size: 20px; }
   .popular-posts .popular-posts__item, .popular-networks .popular-posts__item {
-    border-bottom: 3px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
