@@ -1,0 +1,16 @@
+.notification-bar {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #418EEB;
+
+  p, a {
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  a {
+    &:hover {
+      color: #D96B50;
+    }
+  }
+}

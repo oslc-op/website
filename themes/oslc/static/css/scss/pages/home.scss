@@ -1,0 +1,234 @@
+.hero-container{
+  background: linear-gradient(to right, #418EEB, #3A659E 14.1%, #375178 26.7%, #495473 35.5%, #C16756 59.5%, #D96B50 67.4%, #D96B50 70.8%, #C87355 77.5%, #49AE7A);
+
+  .home-texture {
+    background-image: url('../img/home-pattern.png');
+    background-position: 5px 5px;
+
+    .hero {
+      padding: 180px 0;
+
+      h1, p, a {
+        color: #fff;
+      }
+
+      .title {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .textline {
+        font-size: 22px;
+      }
+
+      .headline {
+        font-size: 26px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.statistics{
+  background: #fff;
+
+  .statistics__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #2D4467;
+    justify-content: space-between;
+    padding: 40px 0px;
+    color: #3D3D3D;
+
+    .statistics__item {
+      width: 20%;
+
+      .statisctics__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 0
+      }
+
+      .statistics__num {
+        font-size:60px;
+        font-weight: bold;
+        color: #28BD84;
+      }
+
+      .statistics__subtitle {
+        font-size: 18px;
+        font-weight: light;
+        margin-top: 0
+      }
+    }
+  }
+}
+
+.statistics__info{
+  background: #EFEFEF;
+  padding: 20px 0px 45px;
+
+  .btn{
+    margin-top:20px;
+  }
+
+  .statistics__sec--left{
+    margin-bottom: 80px;
+  }
+}
+
+.resources {
+  color: #fff;
+
+  a {
+    color: #D96250;
+
+    &.resources-top {
+      background-color: #2D4467;
+      padding: 50px;
+      display: block;
+      text-decoration: none;
+      color:#fff;
+    }
+
+    .resources__subtext {
+      max-width: 720px;
+    }
+  }
+
+  .resource {
+    padding: 50px;
+    height: 300px;
+    text-align: center;
+
+    &.resource-tutorials {
+      background-color: #418EEB;
+    }
+
+    &.resource-articles {
+      background-color: #375178;
+    }
+
+    &.resource-presentations {
+      background-color: #D96B50;
+    }
+
+    &.resource-podcasts {
+      background-color: #28BD84;
+    }
+  }
+
+  .resource-title {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  .col-lg-3, .col-md-3, .col-sm-6, .col-xs-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.news{
+  background: #EFEFEF;
+  padding: 20px 0px;
+
+  .news__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 100px 50px;
+
+    .news__item{
+      background: #fff;
+      margin-bottom:20px;
+
+      .news__image {
+        width: 100%;
+        height: 214px;
+        overflow: hidden;
+        position: relative;
+        background-image: url("https://unsplash.it/600/300?image=996");
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+        .new__title{
+          position: absolute;
+          bottom: 0;
+          left: 15px;
+          color:#fff;
+          text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+      }
+
+      .new__info{
+        padding: 0 15px 10px;
+        color: #FFF;
+
+        .new__date{
+          font-style: italic;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:760px){
+  .statistics {
+
+    .statistics__container{
+      flex-direction: row;
+    }
+  }
+
+  .statistics__info {
+
+    .statistics__sec--right{
+      text-align: right;
+      float: right;
+    }
+
+    .statistics__sec--left,
+    .statistics__sec--right{
+      width: 50%;
+    }
+  }
+
+  .news {
+
+    .news__container{
+      flex-direction: row;
+      margin-bottom:40px;
+
+      .news__item{
+        width: 23%;
+        margin-right: 25px;
+        margin-bottom: 0px;
+        border: 1px solid #CECECE;
+        -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
+        -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
+
+        .news__image {
+          width: 100%;
+          height: 214px;
+          overflow: hidden;
+
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .new__info{
+          color: #3D3D3D;
+        }
+      }
+    }
+  }
+}

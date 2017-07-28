@@ -1,3 +1,7 @@
+body{
+  background: #F8F8F8;
+}
+
 .page {
   font-family: 'Open Sans', sans-serif;
 }
@@ -14,16 +18,18 @@ p, a {
   font-size: 18px;
 }
 
-.hero .title {
-  font-size: 40px;
-}
+.hero {
+  .title {
+    font-size: 40px;
+  }
 
-.hero .headline {
-  font-size: 22px;
-}
+  .headline {
+    font-size: 22px;
+  }
 
-.hero .textline {
-  font-size: 20px;
+  .textline {
+    font-size: 20px;
+  }
 }
 
 .section__title {
@@ -48,8 +54,3 @@ p, a {
 
 
 /* buttons */
-.btn-oslc{
-  background: #28BD84;
-  color: #fff;
-  text-transform: uppercase;
-}
