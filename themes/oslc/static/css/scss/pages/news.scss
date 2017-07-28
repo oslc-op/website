@@ -65,11 +65,15 @@
   border-top: 1px solid #AAAAAA;
   border-bottom: 1px solid #AAAAAA;
   color: #AAAAAA;
-  margin: 20px 0 60px;
+  margin: 20px 0 50px;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
+
+  .fa {
+    margin-left: 10px;
+  }
 
   a {
     color: #AAAAAA;

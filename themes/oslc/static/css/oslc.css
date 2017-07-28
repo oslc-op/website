@@ -67,10 +67,8 @@ p, a {
   .footer.footer--inverse .footer-nav {
     background-color: #fff;
     color: #3d3d3d; }
-    .footer.footer--inverse .footer-nav .footer__links .footer__item {
+    .footer.footer--inverse .footer-nav .footer__links .footer__item span {
       color: #3d3d3d; }
-      .footer.footer--inverse .footer-nav .footer__links .footer__item span {
-        color: #3d3d3d; }
 .footer .footer-nav {
   background-color: #3d3d3d;
   color: #fff;
@@ -499,11 +497,13 @@ header {
   border-top: 1px solid #AAAAAA;
   border-bottom: 1px solid #AAAAAA;
   color: #AAAAAA;
-  margin: 20px 0 60px;
+  margin: 20px 0 50px;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase; }
+  .post__footer .fa {
+    margin-left: 10px; }
   .post__footer a {
     color: #AAAAAA; }
 
