@@ -15,16 +15,139 @@
 
         <div class="sections">
 
-          {{ partial "mission.html" . }}
+          <div class="mission" id="mission">
+            <nav class="mission__links">
+              <a href="#mission" class="mission__item">Mission</a>
+              <a href="#governance" class="mission__item">Governance</a>
+              <a href="#people" class="mission__item">People</a>
+              <a href="#organizations" class="mission__item">Organizations</a>
+              <a href="#faq" class="mission__item">FAQ</a>
+            </nav>
 
-          {{ partial "governance.html" . }}
+            <div class="mission" id="mission">
+              <div class="container">
+                <div class="row">
+                  <div class="mission__title">
+                    <h1>Our Mission</h1>
+                  </div>
+                  <div class="mission__slogan">
+                    <p> {{ .Params.mission_slogan }} </p>
+                  </div>
+                </div>
+                <div class="row">
+                  {{ range .Data.Pages.ByPublishDate }}
+                    {{ if in .Params.tags "mission" }}
+                      {{ partial "mission.html" . }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
 
-          {{ partial "people.html" . }}
+          <div class="governance" id="governance">
+            <div class="container">
+              <div class="governance__header">
+                <div class="row">
+                  <div class="governance__title">
+                    <h2>Governance</h2>
+                  </div>
+                  <div class="governance__slogan">
+                    {{ .Params.governance_slogan }}
+                  </div>
+                </div>
+              </div>
 
-          {{ partial "organizations.html" . }}
+              <div class="members">
+                <div class="row">
+                  <div class="members__title">
+                    <h3>Current Members</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  {{ range .Data.Pages.ByPublishDate }}
+                    {{ if in .Params.tags "governance"}}
+                      {{ partial "governance.html" . }}
+                    {{ end}}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
 
-          {{ partial "faq.html" . }}
-          
+          <div class="people" id="people">
+            <div class="container">
+              <div class="row">
+                <div class="people__title">
+                  <h2>Team</h2>
+                </div>
+                <div class="people__headline">
+                  {{ .Params.people_headline }}
+                </div>
+              </div>
+              <div class="row">
+                {{ range .Data.Pages.ByPublishDate }}
+                  {{ if in .Params.tags "people"}}
+                    {{ partial "people.html" . }}
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <div class="organizations" id="organizations">
+            <div class="carousel">
+              <div class="container">
+                <div class="carousel__title">
+                  <h2>What they say about us</h2>
+                </div>
+
+                <div class="carousel__content owl-carousel">
+                  {{ range .Data.Pages.ByPublishDate }}
+                    {{ if in .Params.tags "organization"}}
+                      {{ partial "organization.html" . }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brands">
+            <div class="container">
+              <div class="row">
+                <div class="brands__title">
+                  <h2>Trusted by</h2>
+                </div>
+              </div>
+              {{ range .Data.Pages.ByPublishDate }}
+                {{ if in .Params.tags "brand" }}
+                  {{ partial "brand.html" . }}
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="faq" id="faq">
+            <div class="container">
+              <div class="row">
+                <div class="faq__title">
+                  <h2>Frequently Asked Questions</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="questions">
+                  {{ range .Data.Pages.ByPublishDate }}
+                    {{ if in .Params.tags "faq" }}
+                      {{ partial "faq.html" . }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <footer class="footer footer--inverse" id="footer">

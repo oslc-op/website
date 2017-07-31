@@ -140,27 +140,27 @@
       }
     }
   }
+}
 
-  .brands {
-    background-image: url(../img/about-pattern.png);
+.brands {
+  background-image: url(../img/about-pattern.png);
 
-    .brands__title {
-      text-align: center;
-      margin: 20px 0;
-    }
+  .brands__title {
+    text-align: center;
+    margin: 20px 0;
+  }
 
-    .brands__row {
-      display: flex;
-      justify-content: center;
-      align-content: center;
+  .brands__row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
-      .brand__item {
-        display: inline-block;
-        margin: 10px;
+    .brand__item {
+      display: inline-block;
+      margin: 10px;
 
-        img {
-          filter: grayscale(100%);
-        }
+      img {
+        filter: grayscale(100%);
       }
     }
   }
