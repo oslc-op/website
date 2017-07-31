@@ -432,11 +432,12 @@ header {
 
   .news .news__container {
     flex-direction: row;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    flex-wrap: wrap; }
     .news .news__container .news__item {
       width: 23%;
-      margin-right: 25px;
-      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-bottom: 25px;
       border: 1px solid #CECECE;
       -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.22);
       -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.22);
