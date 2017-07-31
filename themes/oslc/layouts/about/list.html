@@ -120,11 +120,13 @@
                   <h2>Trusted by</h2>
                 </div>
               </div>
-              {{ range .Data.Pages.ByPublishDate }}
-                {{ if in .Params.tags "brand" }}
-                  {{ partial "brand.html" . }}
+              <div class="brands__row">
+                {{ range .Data.Pages.ByPublishDate }}
+                  {{ if in .Params.tags "brand" }}
+                    {{ partial "brand.html" . }}
+                  {{ end }}
                 {{ end }}
-              {{ end }}
+              </div>
             </div>
           </div>
 
