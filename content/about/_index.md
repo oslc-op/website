@@ -3,23 +3,7 @@ categories = []
 date = "2017-06-21T20:46:28+02:00"
 tags = []
 title = "About"
-
+mission_slogan = "This is the mission of the OSLC"
+governance_slogan = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+people_headline = "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
 +++
-
-# Community
-
-Software developers and organizations working to create a foundation for how software lifecycle tools share data (for example, requirements, defects, test cases, plans, or code) with one another.
-
-# Objectives
-
-* Easier development of tool integrations
-* Easier to plug in different tools to an engineering environment
-* Easier to link data together from disparate repositories and analyze
-* Minimalistic specifications
-* Based on Web standards
-
-# Specifications
-
-* Provides open specifications for service descriptions and cross-tool communication
-* Specifications in development migrating to OASIS
-

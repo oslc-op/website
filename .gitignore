@@ -3,3 +3,6 @@ public
 *.swp
 npm-debug.log
 .sass-cache
+themes/oslc/static/css/.sass-cache
+*.sass-cache
+themes/oslc/static/css/oslc.css.map

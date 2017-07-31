@@ -1,38 +1,8 @@
-<div class="faq" id="faq">
-  <div class="container">
-    <div class="row">
-      <div class="faq__title">
-        <h2>Frequently Asked Questions</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="questions">
-        <div class="question__item">
-          <div class="question__title">
-            <a href="#questionOne" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="questionOne">Question 1</a>
-          </div>
-          <div id="questionOne" class="question__answer collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, architecto veniam unde eos, excepturi, voluptas a sunt expedita illum aut nisi quaerat. Vero eaque laborum blanditiis, autem cupiditate obcaecati tenetur.</div>
-        </div>
-        <div class="question__item">
-          <div class="question__title">
-            <a href="#questionTwo" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="questionTwo">Question 2</a>
-          </div>
-          <div id="questionTwo" class="question__answer collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, iste, quis. Laudantium sunt ullam nemo exercitationem delectus et, voluptatum blanditiis laboriosam voluptates id itaque eligendi totam laborum corporis eveniet explicabo!</div>
-        </div>
-        <div class="question__item">
-          <div class="question__title">
-            <a href="#questionThree" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="questionThree">Question 3</a>
-          </div>
-          <div id="questionThree" class="question__answer collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita pariatur sint consequatur voluptates voluptatem modi natus eveniet, commodi laboriosam officiis a eos veniam iste provident dolore culpa maiores illo perferendis.</div>
-        </div>
-        <div class="question__item">
-          <div class="question__title">
-            <a href="#questionFour" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="questionFour">Question 4</a>
-          </div>
-          <div id="questionFour" class="question__answer collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ratione ad laborum quibusdam quia, earum architecto voluptas optio nostrum porro. Asperiores odio, veniam earum accusantium praesentium voluptas quas quibusdam ad.</div>
-        </div>
-      </div>
-    </div>
+<div class="question__item">
+  <div class="question__title">
+    <a href="#question{{ .Params.id }}" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="question{{ .Params.id }}">{{ .Title }}</a>
+  </div>
+  <div id="question{{ .Params.id }}" class="question__answer collapse">
+    {{ .Params.answer}}
   </div>
 </div>

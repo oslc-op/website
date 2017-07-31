@@ -233,19 +233,20 @@ header {
     float: left; }
   .organizations .carousel .carousel__content .owl-nav .owl-next {
     float: right; }
-.organizations .brands {
+
+.brands {
   background-image: url(../img/about-pattern.png); }
-  .organizations .brands .brands__title {
+  .brands .brands__title {
     text-align: center;
     margin: 20px 0; }
-  .organizations .brands .brands__row {
+  .brands .brands__row {
     display: flex;
     justify-content: center;
     align-content: center; }
-    .organizations .brands .brands__row .brand__item {
+    .brands .brands__row .brand__item {
       display: inline-block;
       margin: 10px; }
-      .organizations .brands .brands__row .brand__item img {
+      .brands .brands__row .brand__item img {
         filter: grayscale(100%); }
 
 .faq {
