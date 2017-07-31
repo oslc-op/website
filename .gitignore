@@ -2,3 +2,5 @@ public
 .DS_Store
 *.swp
 npm-debug.log
+themes/oslc/static/css/.sass-cache
+*.sass-cache
