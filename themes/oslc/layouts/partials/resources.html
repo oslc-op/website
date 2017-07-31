@@ -3,9 +3,9 @@
     <div class="row">
       <a href="{{ .Site.BaseURL }}resources/" class="resources-top">
           <div class="container">
-            <h2 class="section__title white">Resources</h2>
+            <h2 class="section__title white">{{ .Params.resourcesTitle }}</h2>
             <p class="resource-description big__paragraph resources__subtext">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ut, eligendi perferendis soluta. Nostrum aspernatur id, inventore, culpa laudantium natus dignissimos magnam.
+              {{ .Params.resourcesContent}}
             </p>
           </div>
       </a>

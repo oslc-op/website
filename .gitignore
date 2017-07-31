@@ -2,3 +2,4 @@ public
 .DS_Store
 *.swp
 npm-debug.log
+.sass-cache
