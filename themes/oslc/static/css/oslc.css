@@ -158,6 +158,12 @@ header {
   .notification-bar a:hover {
     color: #D96B50; }
 
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0; }
+
 .mission {
   padding: 0 0 10px; }
   .mission .mission__links {
@@ -224,7 +230,7 @@ header {
       border: 0; }
   .organizations .carousel .carousel__content .owl-nav .owl-prev, .organizations .carousel .carousel__content .owl-nav .owl-next {
     display: inline-block;
-    transform: translateY(-120px);
+    transform: translateY(-130px);
     font-size: 50px; }
     .organizations .carousel .carousel__content .owl-nav .owl-prev i, .organizations .carousel .carousel__content .owl-nav .owl-next i {
       font-style: normal;

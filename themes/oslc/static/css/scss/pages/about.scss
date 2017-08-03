@@ -1,3 +1,10 @@
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
 .mission {
   padding: 0 0 10px;
 
@@ -121,7 +128,7 @@
       .owl-nav {
         .owl-prev, .owl-next {
           display: inline-block;
-          transform: translateY(-120px);
+          transform: translateY(-130px);
           font-size: 50px;
 
           i {

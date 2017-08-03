@@ -25,46 +25,42 @@
             </nav>
 
             <div class="mission" id="mission">
-              <div class="container">
-                <div class="row">
-                  <div class="mission__title">
-                    <h1>Our Mission</h1>
-                  </div>
-                  <div class="mission__slogan">
-                    <p> {{ .Params.mission_slogan }} </p>
-                  </div>
+              <div class="container container-flex">
+                <div class="mission__title">
+                  <h1>Our Mission</h1>
                 </div>
-                <div class="row">
-                  {{ range .Data.Pages.ByPublishDate }}
-                    {{ if in .Params.tags "mission" }}
-                      {{ partial "mission.html" . }}
-                    {{ end }}
+                <div class="mission__slogan">
+                  <p> {{ .Params.mission_slogan }} </p>
+                </div>
+              </div>
+              <div class="container cotainer-flex">
+                {{ range .Data.Pages.ByPublishDate }}
+                  {{ if in .Params.tags "mission" }}
+                    {{ partial "mission.html" . }}
                   {{ end }}
-                </div>
+                {{ end }}
               </div>
             </div>
           </div>
 
           <div class="governance" id="governance">
-            <div class="container">
+            <div class="container container-flex">
               <div class="governance__header">
-                <div class="row">
-                  <div class="governance__title">
-                    <h2>Governance</h2>
-                  </div>
-                  <div class="governance__slogan">
-                    {{ .Params.governance_slogan }}
-                  </div>
+                <div class="governance__title">
+                  <h2>Governance</h2>
+                </div>
+                <div class="governance__slogan">
+                  {{ .Params.governance_slogan }}
                 </div>
               </div>
+            </div>
 
+            <div class="container container-flex">
               <div class="members">
-                <div class="row">
-                  <div class="members__title">
-                    <h3>Current Members</h3>
-                  </div>
+                <div class="members__title">
+                  <h3>Current Members</h3>
                 </div>
-                <div class="row">
+                <div>
                   {{ range .Data.Pages.ByPublishDate }}
                     {{ if in .Params.tags "governance"}}
                       {{ partial "governance.html" . }}
@@ -76,28 +72,26 @@
           </div>
 
           <div class="people" id="people">
-            <div class="container">
-              <div class="row">
-                <div class="people__title">
-                  <h2>Team</h2>
-                </div>
-                <div class="people__headline">
-                  {{ .Params.people_headline }}
-                </div>
+            <div class="container container-flex">
+              <div class="people__title">
+                <h2>Team</h2>
               </div>
-              <div class="row">
-                {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "people"}}
-                    {{ partial "people.html" . }}
-                  {{ end }}
+              <div class="people__headline">
+                {{ .Params.people_headline }}
+              </div>
+            </div>
+            <div class="container container-flex">
+              {{ range .Data.Pages.ByPublishDate }}
+                {{ if in .Params.tags "people"}}
+                  {{ partial "people.html" . }}
                 {{ end }}
-              </div>
+              {{ end }}
             </div>
           </div>
 
           <div class="organizations" id="organizations">
             <div class="carousel">
-              <div class="container">
+              <div class="container container-flex">
                 <div class="carousel__title">
                   <h2>What they say about us</h2>
                 </div>
@@ -114,38 +108,35 @@
           </div>
 
           <div class="brands">
-            <div class="container">
-              <div class="row">
-                <div class="brands__title">
-                  <h2>Trusted by</h2>
-                </div>
+            <div class="container container-flex">
+              <div class="brands__title">
+                <h2>Trusted by</h2>
               </div>
-              <div class="brands__row">
-                {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "brand" }}
-                    {{ partial "brand.html" . }}
+              <div class="container container-flex">
+                <div class="brands__row">
+                  {{ range .Data.Pages.ByPublishDate }}
+                    {{ if in .Params.tags "brand" }}
+                      {{ partial "brand.html" . }}
+                    {{ end }}
                   {{ end }}
-                {{ end }}
+                </div>
               </div>
             </div>
           </div>
 
           <div class="faq" id="faq">
-            <div class="container">
-              <div class="row">
-                <div class="faq__title">
-                  <h2>Frequently Asked Questions</h2>
-                </div>
+            <div class="container container-flex">
+              <div class="faq__title">
+                <h2>Frequently Asked Questions</h2>
               </div>
-
-              <div class="row">
-                <div class="questions">
-                  {{ range .Data.Pages.ByPublishDate }}
-                    {{ if in .Params.tags "faq" }}
-                      {{ partial "faq.html" . }}
-                    {{ end }}
+            </div>
+            <div class="container container-flex">
+              <div class="questions">
+                {{ range .Data.Pages.ByPublishDate }}
+                  {{ if in .Params.tags "faq" }}
+                    {{ partial "faq.html" . }}
                   {{ end }}
-                </div>
+                {{ end }}
               </div>
             </div>
           </div>
