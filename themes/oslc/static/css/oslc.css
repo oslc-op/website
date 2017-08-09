@@ -472,6 +472,17 @@ header {
       text-align: center;
       line-height: 3; }
 
+.news--container {
+  position: relative; }
+  .news--container .sidebar-posts {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    display: none; }
+    @media screen and (min-width: 760px) {
+      .news--container .sidebar-posts {
+        display: block; } }
+
 .posts {
   padding-top: 20px;
   padding-right: 15px; }
