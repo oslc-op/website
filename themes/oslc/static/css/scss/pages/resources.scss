@@ -59,12 +59,14 @@
     select{
       -webkit-appearance: none;
       -webkit-border-radius: 0px;
+      -moz-appearance: none;
+      -moz-border-radius: 0px;
       width: 100%;
       border-radius: 0;
       border:1px solid #37086C;
       color: #37086C;
       background: none;
-      line-height: 2;
+      height: 34px;
       padding: 0px 10px;
       font-size: 16px;
     }
