@@ -6,3 +6,4 @@ npm-debug.log
 themes/oslc/static/css/.sass-cache
 *.sass-cache
 themes/oslc/static/css/oslc.css.map
+.idea
