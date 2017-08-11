@@ -4,65 +4,19 @@
   </div>
   <div class="container-fluid">
     <div class="news__container">
-      {{ range .Data.Pages.ByPublishDate }}
+      {{ range first 4 .Data.Pages.ByPublishDate }}
       <div class="news__item">
-        <div class="news__image">
-          <h3 class="new__title">New headline</h3>
+        <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important">
+          <h3 class="new__title">{{ .Title }}</h3>
         </div>
         <div class="new__info">
-          <span class="new__date">3 june 2017</span>
+          <span class="new__date">{{ .Date.Format "Jan 2, 2006" }}</span>
           <div class="new__content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis sequi
-            accusantium vero provident quasi iusto hic voluptat...
-            </p>
+            {{ .Summary }}
           </div>
         </div>
       </div>
 
-      <!-- <div class="news__item">
-        <div class="news__image">
-          <h3 class="new__title">New headline</h3>
-        </div>
-        <div class="new__info">
-          <span class="new__date">3 june 2017</span>
-          <div class="new__content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis sequi
-            accusantium vero provident quasi iusto hic voluptat...
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="news__item">
-        <div class="news__image">
-          <h3 class="new__title">New headline</h3>
-        </div>
-        <div class="new__info">
-          <span class="new__date">3 june 2017</span>
-          <div class="new__content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis sequi
-            accusantium vero provident quasi iusto hic voluptat...
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="news__item">
-        <div class="news__image">
-          <h3 class="new__title">New headline</h3>
-        </div>
-        <div class="new__info">
-          <span class="new__date">3 june 2017</span>
-          <div class="new__content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit debitis sequi
-            accusantium vero provident quasi iusto hic voluptat...
-            </p>
-          </div>
-        </div>
-      </div> -->
       {{ end }}
     </div>
   </div>
