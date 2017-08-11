@@ -311,6 +311,64 @@ header {
 .ct-item__info {
   width: 70%; }
 
+.contribute__sections {
+  column-width: 400px;
+  column-gap: 15px;
+  max-width: 900px;
+  margin: 20px auto 60px; }
+  .contribute__sections .contribute__section {
+    background-color: #F9F9F9;
+    border: 1px solid rgba(45, 68, 103, 0.8);
+    padding: 1.5em;
+    margin: 10px 5px;
+    display: inline-block;
+    transition: opacity .4s ease-in-out;
+    break-inside: avoid; }
+    .contribute__sections .contribute__section .contribute__title {
+      padding-bottom: 5px;
+      border-bottom: 2px solid rgba(45, 68, 103, 0.5); }
+      .contribute__sections .contribute__section .contribute__title i {
+        font-size: 30px;
+        color: rgba(45, 68, 103, 0.8); }
+      .contribute__sections .contribute__section .contribute__title h2 {
+        display: inline-block;
+        margin-left: 8px;
+        margin-top: 0px;
+        color: rgba(45, 68, 103, 0.8); }
+    .contribute__sections .contribute__section .contribute__content {
+      padding: 5px 0; }
+      .contribute__sections .contribute__section .contribute__content p {
+        color: #888;
+        line-height: 1.6;
+        margin: 10px 0; }
+    .contribute__sections .contribute__section .contribute__img img {
+      max-width: 100%; }
+  .contribute__sections .contribute__content-add {
+    display: inline-block;
+    margin-left: -4px;
+    width: 175px;
+    vertical-align: top;
+    text-align: center;
+    padding: 30px 0; }
+    .contribute__sections .contribute__content-add p {
+      color: #fff !important; }
+  .contribute__sections .contribute__content-add.green {
+    background-color: #28BD84; }
+  .contribute__sections .contribute__content-add.blue {
+    background-color: #418EEB; }
+  .contribute__sections .contribute__content-add.red {
+    background-color: #D96B50; }
+  .contribute__sections .contribute__content-add.blueking {
+    background-color: #375178; }
+  .contribute__sections .contribute__share .contribute__content {
+    padding: 20px 0; }
+    .contribute__sections .contribute__share .contribute__content a {
+      width: 94px;
+      display: inline-block; }
+    .contribute__sections .contribute__share .contribute__content i {
+      font-size: 30px;
+      color: rgba(45, 68, 103, 0.8); }
+
 .hero-container {
   background: linear-gradient(to right, #418EEB, #3A659E 14.1%, #375178 26.7%, #495473 35.5%, #C16756 59.5%, #D96B50 67.4%, #D96B50 70.8%, #C87355 77.5%, #49AE7A); }
   .hero-container .home-texture {

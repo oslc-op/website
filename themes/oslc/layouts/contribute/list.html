@@ -29,24 +29,89 @@
           </div>
         </section>
 
-        <section class="container sec-ct-second">
-          <h1 class="title title-ct">How you can help us </h1>
+        <section class="container">
+          
+          <div class="contribute__sections">
 
-          <div class="ct-items">
-            {{ range .Data.Pages.ByPublishDate }}
-            <div class="ct-item">
-              <div class="ct-item__icon">
-                <img src="https://unsplash.it/100/100/?random" alt="">
+            <div id="contribute__development" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-code" aria-hidden="true"></i><h2>Development</h2>
               </div>
-              <div class="ct-item__info">
-                <h2 class="info-title">{{ .Title }}</h2>
-                {{ .Content }}
+              <div class="contribute__content">
+                <p>{{ .Params.development_paragraph }}</p>
+                <p>{{ .Params.development_paragraph2 }}</p>
+              </div>
+              <div class="contribute__footer">
+                <a href="{{ .Params.development_linkurl1}}">{{ .Params.development_link1}}</a>
+                <a href="{{ .Params.development_linkurl2}}">{{ .Params.development_link2}}</a>
+                <a href="{{ .Params.development_linkurl3}}">{{ .Params.development_link3}}</a>
               </div>
             </div>
-            {{ end }}
+            <div id="contribute__evangelize" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-user-plus" aria-hidden="true"></i><h2>Evangelize</h2>
+              </div>
+              <div class="contribute__content">
+                <div class="contribute__img">
+                  <img src="{{ .Params.evangelize_img }} " alt="">
+                </div>
+                <p>{{ .Params.evangelize_description }}</p>
+              </div>
+            </div>
+            <div id="contribute__share" class="contribute__section contribute__share">
+              <div class="contribute__title">
+                <i class="fa fa-share-alt" aria-hidden="true"></i><h2>Share</h2>
+              </div>
+              <div class="contribute__content">
+                <a href="{{ .Params.share_github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="{{ .Params.share_twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="{{ .Params.share_linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="{{ .Params.share_youteube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div id="contribute__user-groups" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-users" aria-hidden="true"></i><h2>User Groups</h2>
+              </div>
+              <div class="contribute__content">
+                <p>{{ .Params.user_groups_paragraph }}</p>
+              </div>
+              <div class="contribute__footer">
+                <a href="{{ .Params.user_groups_linkurl1}}">{{ .Params.user_groups_link1}}</a>
+                <a href="{{ .Params.user_groups_linkurl2}}">{{ .Params.user_groups_link2}}</a>
+              </div>
+            </div>
+            <div id="contribute__join" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-comments-o" aria-hidden="true"></i><h2>Join the talk</h2>
+              </div>
+              <div class="contribute__content">
+                <p>{{ .Params.join_paragraph }}</p>
+                <div class="contribute__img">
+                  <img src="{{ .Params.join_img }}" alt="">
+                </div>
+              </div>
+            </div>
+            <div id="contribute__add-content" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i><h2>Add Content</h2>
+              </div>
+              <div class="contribute__content">
+                <div class="contribute__content-add green">
+                  <p>{{ .Params.add_content_1 }}</p>
+                </div>
+                <div class="contribute__content-add blue">
+                  <p>{{ .Params.add_content_2 }}</p>
+                </div>
+                <div class="contribute__content-add red">
+                  <p>{{ .Params.add_content_3 }}</p>
+                </div>
+                <div class="contribute__content-add blueking">
+                  <p>{{ .Params.add_content_4 }}</p>
+                </div>
+              </div>
+            </div>
           </div>
-
-
         </section>
 
         <footer class="footer footer--inverse">
