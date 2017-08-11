@@ -1,6 +1,9 @@
 header{
   background: #fff;
-
+  position: fixed;
+  width: 100%;
+  top: 30px;
+  z-index: 99;
 
   .nav__logo{
     display: inline-block;
