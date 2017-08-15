@@ -72,6 +72,8 @@ p, a {
   .footer.footer--inverse .footer-nav {
     background-color: #fff;
     color: #3d3d3d; }
+    .footer.footer--inverse .footer-nav .footer__links a {
+      color: #3d3d3d; }
     .footer.footer--inverse .footer-nav .footer__links .footer__item span {
       color: #3d3d3d; }
 .footer .footer-nav {
