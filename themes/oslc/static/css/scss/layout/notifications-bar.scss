@@ -10,11 +10,14 @@
   p, a {
     color: #fff;
     margin-bottom: 0;
+    font-size: 14px;
   }
 
   a {
+    color: #ED3B10;
     &:hover {
-      color: #D96B50;
+      color: #2EFE94;
+      text-decoration: none;
     }
   }
 }
