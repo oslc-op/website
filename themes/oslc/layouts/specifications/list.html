@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <main class="main" style="margin-top: 200px;">
+          <div class="container">
+            <div class="content">
+              {{ .Content }}
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer footer--inverse" id="footer">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+
+    <script>
+    </script>
+  </body>
+</html>
