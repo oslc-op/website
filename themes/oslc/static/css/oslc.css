@@ -343,9 +343,11 @@ table {
 
 .sec-ct-header {
   position: relative;
-  height: 200px;
-  overflow: hidden;
-  color: #fff; }
+  height: 300px;
+  color: #fff;
+  background-image: url("../img/resource-contribute.jpg");
+  background-size: cover;
+  background-position: top; }
 
 .sec-ct-img {
   position: absolute;
