@@ -19,4 +19,4 @@ resourcesContent = "Seeing is doing, so come and learn how to do things. In the 
 
 
 +++
-An open community building practical specifications to integrate data in engineering and software development environments
+An open community building practical specifications for integrating data
