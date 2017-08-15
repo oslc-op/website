@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <main class="main">
+          <div class="container">
+            {{ .Content }}
+          </div>
+          <!-- If you want to render the content directly from _index.md you have to use {{ .Content }}-->
+            <!-- If you want to use a variable from the FrontMatter section you can do it using this convention {{ .Variable }} -->
+            <!-- If is a custom variable you can using {{ .Params.variable }} -->
+        </main>
+
+        <footer class="footer footer--inverse">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+  </body>
+</html>
