@@ -43,6 +43,13 @@
   .post__title {
     text-align: center;
     margin: 10px 0;
+    h1{
+      a{
+        text-decoration: none;
+        color:#3D3D3D;
+        font-size: 35px;
+      }
+    }
   }
 
   .post__meta {
