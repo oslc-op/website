@@ -195,9 +195,9 @@
     padding: 6px;
     background: #FFF;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.24);
-    transition: all 1s ease;
     position:relative;
     transition: all 1s ease;
+    min-height: 328px;
 
     .sm-header--blue, .sm-header--green, .sm-header--red, .sm-header--orange, .sm-header--gray{
       color: #fff;
