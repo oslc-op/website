@@ -81,20 +81,20 @@
 .resources {
   color: #fff;
 
+  .resources-top {
+    background-color: #2D4467;
+    padding: 50px;
+    display: block;
+    text-decoration: none;
+    color:#fff;
+  }
+
+  .resources__subtext {
+    max-width: 720px;
+  }
+
   a {
     color: #D96250;
-
-    &.resources-top {
-      background-color: #2D4467;
-      padding: 50px;
-      display: block;
-      text-decoration: none;
-      color:#fff;
-    }
-
-    .resources__subtext {
-      max-width: 720px;
-    }
   }
 
   .resource {
