@@ -16,8 +16,7 @@ descStat = "We have a variety of ways to get involved with the OSLC community. W
 resourcesTitle = "Resources"
 resourcesContent = "Seeing is doing, so come and learn how to do things. In the resources section of the site, you will find various resources to help including tutorials, videos, articles, and presentations."
 
-
-descriptionNews = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae, deleniti dicta dolorem eius enim, eos illum ipsum itaque laboriosam nisi odit officia omnis quam qui quidem quod voluptate! Sed."
+descriptionNews = "Find out all the latest happenings in the OSLC community. This could be site announcements, software news, stories from the wider OSLC ecosystem, and more."
 
 +++
 An open community building practical specifications for integrating data
