@@ -1,18 +1,25 @@
 .sec-nw-header{
+  position: relative;
   color: #fff;
   font-family: 'Merriweather', sans-serif;
   background-image: url('../img/news-hero.jpg');
   background-position-y: 44%;
+  height: 300px;
 
   .sec-nw-info{
+    position: absolute;
     background: linear-gradient(to bottom, rgba(88,47,1,.65), rgba(15,8,65,.65)) ;
-    padding: 82px 0px;
-
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
     h1{
       font-size: 35px;
-      text-transform: uppercase;
       text-align: center;
-      line-height: 3;
+      margin-bottom: 30px;
+    }
+
+    .sec-nw-header__content{
+      padding: 0 8px;
     }
   }
 }
