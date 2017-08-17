@@ -13,7 +13,20 @@
 
         </header>
 
-        {{ partial "header-news.html" . }}
+        <section class="m-top">
+          <div class="sec-nw-header">
+            <div class="sec-nw-info">
+              <div class="container">
+                <h1 class="section__title white"> {{ .Title }} </h1>
+                <div class="sec-rs-header__content">
+                  <div class="big__paragraph">
+                    {{ .Description }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div class="container">
           <div class="row news--container">
