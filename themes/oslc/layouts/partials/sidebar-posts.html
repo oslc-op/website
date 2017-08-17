@@ -1,32 +1,16 @@
 <div class="popular-posts">
   <h2>Popular Posts</h2>
-  <a href="#" class="popular-posts__item">
+  {{ range $key, $value := .Data.Taxonomy.ByCount }}
+  <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
       <img src="https://unsplash.it/200/150/?random" alt="">
     </div>
     <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
+      <span class="name">{{ .Title }}</span>
+      <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
     </div>
   </a>
-  <a href="#" class="popular-posts__item">
-    <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
-    </div>
-    <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
-    </div>
-  </a>
-  <a href="#" class="popular-posts__item">
-    <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
-    </div>
-    <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
-    </div>
-  </a>
+  {{ end }}
 </div>
 
 
@@ -42,31 +26,15 @@
 
 <div class="popular-posts">
   <h2>Recent Posts</h2>
-  <a href="#" class="popular-posts__item">
+  {{ range first 3 .Data.Pages.ByPublishDate }}
+  <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
       <img src="https://unsplash.it/200/150/?random" alt="">
     </div>
     <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
+      <span class="name">{{ .Title }}</span>
+      <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
     </div>
   </a>
-  <a href="#" class="popular-posts__item">
-    <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
-    </div>
-    <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
-    </div>
-  </a>
-  <a href="#" class="popular-posts__item">
-    <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
-    </div>
-    <div class="item__info">
-      <span class="name">Post Headline</span>
-      <span class="date">13 June 2017</span>
-    </div>
-  </a>
+  {{ end }}
 </div>
