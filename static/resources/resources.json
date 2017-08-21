@@ -1,0 +1,72 @@
+[
+    {
+        "uri": "/../resources/_index",
+        "title": "Resources",
+        "content": "\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n",
+        "tags": []
+    },
+    {
+        "uri": "/../resources/resource-articles",
+        "title": "A resource article",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "article"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-podcast",
+        "title": "A resource podcast",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "podcast"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-presentation",
+        "title": "A resource presentation",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "presentation"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-tool",
+        "title": "A resource tool",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "tool"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-tutorial",
+        "title": "A resource tutorial",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-video",
+        "title": "A resource video",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "video"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-website",
+        "title": "A resource website",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "website"
+        ]
+    },
+    {
+        "uri": "/../resources/resource-whitepapers",
+        "title": "A resource whitepapers",
+        "content": "\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "tags": [
+            "whitepaper"
+        ]
+    }
+]
