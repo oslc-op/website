@@ -1,9 +1,8 @@
 +++
-categories = []
 date = "2017-06-21T20:57:23+02:00"
-tags = []
+tags = ["evangelize"]
 title = "Evangelise"
 draft = false
+evangelize_img = "https://unsplash.it/700/400/?random"
+evangelize_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda!"
 +++
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

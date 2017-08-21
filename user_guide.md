@@ -27,7 +27,9 @@ needs to match the following attributes in the Front Matter.
 * Author is the name of the person or organization who writes the post
 
 ## How to update the Contribute page
-In the Contribute Page you need to modify the content from /content/contribute/_index.md to update the content
+In the Contribute Page you need to modify the content from `/content/contribute/_index.md` to update the top section
+
+To update this page you have to edit the corresponding section in the `content/contribute/*.md`
 
 ## How to update the News page (Blog)
 
