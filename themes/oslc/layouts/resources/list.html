@@ -28,33 +28,7 @@
           </div>
         </section>
 
-        <section>
-          <div class="container rs-search">
-            <div class="rs-search__item">
-              <label for="search">Search</label>
-              <input id="search" type="text">
-              <span class="fa fa-search"></span>
-            </div>
-            <div class="rs-search__item">
-              <label for="filter">Filter</label>
-              <select name="" id="filter">
-                <option selected>Select an option</option>
-                <option value="article">Article</option>
-                <option value="podcast">Podcast</option>
-                <option value="presentation">Presentation</option>
-                <option value="tool">Tool</option>
-                <option value="tutorial">Tutorial</option>
-                <option value="video">Video</option>
-                <option value="website">Website</option>
-                <option value="video">Video</option>
-              </select>
-              <span class="fa fa-caret-down"></span>
-            </div>
-            <div class="rs-search__item">
-              <button class="btn-purple">search</button>
-            </div>
-          </div>
-        </section>
+        {{ partial "search.html" . }}
 
         <section>
           <div class="container">
