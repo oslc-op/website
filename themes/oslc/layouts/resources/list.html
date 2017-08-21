@@ -117,7 +117,7 @@
               {{ end }}
             </div>
 
-            <div class="paginator">
+            <div class="paginator" style="display:none">
               {{ template "_internal/pagination.html" . }}
             </div>
 
@@ -132,5 +132,14 @@
 
     <!-- scripts -->
     {{ partial "scripts.html" }}
+
+    <script>
+      var el = document.querySelector('.container-small-items');
+      var infScroll = new InfiniteScroll(el, {
+        path : '.pagination a[aria-label="Next"]',
+        append : '.rs-small-item',
+        history: false
+      });
+    </script>
   </body>
 </html>
