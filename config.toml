@@ -6,6 +6,7 @@ layoutDir = "partials"
 disableLiveReload = false
 watch = true
 uglyURL = true
+paginate = 5
 # Main menu
 
 [[menu.main]]

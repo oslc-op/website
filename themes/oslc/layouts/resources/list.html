@@ -112,11 +112,15 @@
             {{ end }}
 
             <div class="container-small-items">
-              {{ range .Data.Pages.ByPublishDate }}
+              {{ range .Paginator.Pages.ByPublishDate }}
               {{ partial "resource-single.html" . }}
               {{ end }}
-
             </div>
+
+            <div class="paginator">
+              {{ template "_internal/pagination.html" . }}
+            </div>
+
           </div>
         </section>
 
