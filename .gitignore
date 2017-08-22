@@ -1,6 +1,8 @@
 public
 .DS_Store
 *.swp
+node_modules
+static/node_modules
 npm-debug.log
 .sass-cache
 themes/oslc/static/css/.sass-cache

@@ -217,6 +217,11 @@
       }
     }
 
+    .sm-info{
+      overflow: hidden;
+      height: 110px;
+    }
+
     .sm-header--blue{background: #418EEB;}
 
     .sm-header--green{background: #28BD84}
@@ -234,6 +239,11 @@
         color: #B8B8B8;
         line-height: 3;
         transition: all 1s ease;
+      }
+
+      .title-content{
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
 
