@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <section class="m-top">
+          <div class="sec-nw-header">
+            <div class="sec-nw-info">
+              <div class="container">
+                <h1 class="section__title white"> {{ .Title }} </h1>
+                <div class="sec-rs-header__content">
+                  <div class="big__paragraph">
+                    {{ .Description }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row news--container">
+              <div class="posts">
+                {{ range .Data.Terms }}
+                <div class="col-sm-8">{{ partial "posts.html" . }}</div>
+                {{ end }}
+              </div>
+              <div class="col-sm-4 sidebar-posts">{{ partial "sidebar-posts.html" . }}</div>
+          </div>
+        </div>
+
+        <footer class="footer footer--inverse">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+  </body>
+</html>
