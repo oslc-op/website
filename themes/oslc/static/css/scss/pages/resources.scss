@@ -328,10 +328,15 @@
   .container-small-items{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
 
     .rs-small-item{
       width: 31%;
+      margin-right:20px;
     }
+
+    .rs-small-item:nth-child(3n) {
+      margin-right: 0;
+   }
   }
 }
