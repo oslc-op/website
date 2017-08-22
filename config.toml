@@ -9,6 +9,10 @@ uglyURL = true
 paginate = 6
 # Main menu
 
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
 [[menu.main]]
     name = "About"
     identifier = "about"
