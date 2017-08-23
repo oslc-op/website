@@ -45,7 +45,9 @@
               <div class="contribute__footer">
                 <a href="{{ .Params.development_linkurl1}}">{{ .Params.development_link1}}</a>
                 <a href="{{ .Params.development_linkurl2}}">{{ .Params.development_link2}}</a>
+                <!--
                 <a href="{{ .Params.development_linkurl3}}">{{ .Params.development_link3}}</a>
+                -->
               </div>
             </div>
             {{ end }}
@@ -53,7 +55,7 @@
             {{ if in .Params.tags "evangelize" }}
             <div id="contribute__evangelize" class="contribute__section">
               <div class="contribute__title">
-                <i class="fa fa-user-plus" aria-hidden="true"></i><h2>Evangelize</h2>
+                <i class="fa fa-user-plus" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
               </div>
               <div class="contribute__content">
                 <div class="contribute__img">
@@ -61,15 +63,23 @@
                 </div>
                 <p>{{ .Params.evangelize_description }}</p>
               </div>
+              <div class="contribute__footer">
+                <a href="{{ .Params.evangelize_linkurl1}}">{{ .Params.evangelize_link1}}</a>
+                <!--
+                <a href="{{ .Params.evangelize_linkurl2}}">{{ .Params.evangelize_link2}}</a>
+                -->
+              </div>
             </div>
             {{ end }}
             
             {{ if in .Params.tags "share" }}
             <div id="contribute__share" class="contribute__section contribute__share">
               <div class="contribute__title">
-                <i class="fa fa-share-alt" aria-hidden="true"></i><h2>Share</h2>
+                <i class="fa fa-share-alt" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
               </div>
               <div class="contribute__content">
+                <p>{{ .Params.share_intro }}</p>
+
                 <a href="{{ .Params.share_github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href="{{ .Params.share_twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href="{{ .Params.share_linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -78,17 +88,20 @@
             </div>
             {{ end }}
 
-            {{ if in .Params.tags "usergroup" }}
+            {{ if in .Params.tags "workinggroup" }}
             <div id="contribute__user-groups" class="contribute__section">
               <div class="contribute__title">
-                <i class="fa fa-users" aria-hidden="true"></i><h2>User Groups</h2>
+                <i class="fa fa-users" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
               </div>
               <div class="contribute__content">
-                <p>{{ .Params.user_groups_paragraph }}</p>
+                <p>{{ .Params.working_groups_paragraph }}</p>
               </div>
               <div class="contribute__footer">
-                <a href="{{ .Params.user_groups_linkurl1}}">{{ .Params.user_groups_link1}}</a>
-                <a href="{{ .Params.user_groups_linkurl2}}">{{ .Params.user_groups_link2}}</a>
+                <a href="{{ .Params.user_groups_moreurl}}">{{ .Params.working_groups_more}}</a>
+              <!--
+                <a href="{{ .Params.user_groups_linkurl1}}">{{ .Params.working_groups_link1}}</a>
+                <a href="{{ .Params.user_groups_linkurl2}}">{{ .Params.working_groups_link2}}</a>
+              -->
               </div>
             </div>
             {{ end }}
@@ -96,12 +109,13 @@
             {{ if in .Params.tags "join" }}
             <div id="contribute__join" class="contribute__section">
               <div class="contribute__title">
-                <i class="fa fa-comments-o" aria-hidden="true"></i><h2>Join the talk</h2>
+                <i class="fa fa-comments-o" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
               </div>
               <div class="contribute__content">
                 <p>{{ .Params.join_paragraph }}</p>
+                <a href="{{ .Params.join_linkurl1}}">{{ .Params.join_link1}}</a>
                 <div class="contribute__img">
-                  <img src="{{ .Params.join_img }}" alt="">
+                  <img src="{{ .Site.BaseURL }}img/{{ .Params.join_img}}" alt="">
                 </div>
               </div>
             </div>
@@ -110,20 +124,23 @@
             {{ if in .Params.tags "addcontent" }}
             <div id="contribute__add-content" class="contribute__section">
               <div class="contribute__title">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i><h2>Add Content</h2>
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
+              </div>
+              <div class="contribute__content">
+                <p>{{ .Params.add_content_intro }}</p>
               </div>
               <div class="contribute__content">
                 <div class="contribute__content-add green">
-                  <p>{{ .Params.add_content_1 }}</p>
+                  <p><a class="contribute__content-link" href="{{ .Params.add_link_1 }}">{{ .Params.add_content_1 }}</a></p>
                 </div>
                 <div class="contribute__content-add blue">
-                  <p>{{ .Params.add_content_2 }}</p>
+                  <p><a class="contribute__content-link" href="{{ .Params.add_link_2 }}">{{ .Params.add_content_2 }}</a></p>
                 </div>
                 <div class="contribute__content-add red">
-                  <p>{{ .Params.add_content_3 }}</p>
+                  <p><a class="contribute__content-link" href="{{ .Params.add_link_3 }}">{{ .Params.add_content_3 }}</a></p>
                 </div>
                 <div class="contribute__content-add blueking">
-                  <p>{{ .Params.add_content_4 }}</p>
+                  <p><a class="contribute__content-link" href="{{ .Params.add_link_4 }}">{{ .Params.add_content_4 }}</a></p>
                 </div>
               </div>
             </div>

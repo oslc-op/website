@@ -1,11 +1,13 @@
 +++
 date = "2017-06-21T20:57:23+02:00"
-tags = ["usergroup"]
-title = "User Groups"
+tags = ["workinggroup"]
+title = "Working Groups"
 draft = false
-user_groups_paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda!"
-user_groups_link1 = "Community 1"
-user_groups_linkurl1 = "https://google.com"
-user_groups_link2 = "Community 2"
-user_groups_linkurl2 = "https://google.com"
+working_groups_paragraph = "We have a variety of working groups, here and at various standards organizations. They have different and occasionally overlapping interests, roles, and responsibilities. A working group is a loose grouping, based around one or more tools with the goal of collaborating on a specific technical challenge of the communtiy. For example, to discuss a new use case for OSLC."
+working_groups_more = "More information..."
+working_groups_moreurl = "http://open-services.net/workgroups/"
+working_groups_link1 = "Community 1"
+working_groups_linkurl1 = "http://open-services.net"
+working_groups_link2 = "Community 2"
+working_groups_linkurl2 = "http://open-services.net"
 +++
