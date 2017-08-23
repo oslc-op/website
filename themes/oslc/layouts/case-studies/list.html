@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "notification-bar.html" . }}
+{{ partial "head.html" . }}
+
+<body>
+
+<div id="page" class="page">
+
+    <header>
+
+        {{ partial "header.html" . }}
+
+    </header>
+
+    <section class="case m-top">
+        <div class="case-container__banner">
+            <h2 class="title-white">{{ .Title }}</h2>
+            {{ .Description }}
+        </div>
+    </section>
+    <section class="case-wrapper">
+        <div class="wrapper-logo">
+            <img src="{{ .Params.imgUsers }}" alt="">
+        </div>
+        <h2>{{ .Params.titleUsers }}</h2>
+        <div class="wrapper-content">
+            {{ .Params.contentUsers1 }}
+
+            <div class="wrapper-content__img">
+                <img src="{{ .Params.imageUser}}" alt="">
+            </div>
+
+            {{ .Params.contentUsers2 }}
+        </div>
+
+        <div class="wrapper-logo">
+            <img src="{{ .Params.imgVendors }}" alt="">
+        </div>
+        <h2>{{ .Params.titleVendors }}</h2>
+        <div class="wrapper-content">
+            {{ .Params.contentVendors1 }}
+
+            <div class="wrapper-content-image">
+                <div class="wrapper-content-image__info">
+                    {{ .Params.contentVendors2 }}
+                </div>
+                <div class="img-float">
+                    <img src="{{ .Params.imageVendor}}" alt="">
+                </div>
+            </div>
+
+
+            {{ .Params.contentVendors3 }}
+        </div>
+
+        <div class="wrapper-logo">
+            <img src="{{ .Params.imgDevelopers }}" alt="">
+        </div>
+        <h2>{{ .Params.titleDevelopers }}</h2>
+        <div class="wrapper-content">
+            {{ .Params.contentDevelopers1 }}
+
+            <div class="wrapper-content__img">
+                <pre>
+                    <code class="javascript monokai">
+                        import {Component} from './component';
+                        import Template from './template.html'
+                        @Component({})
+
+                        class Example implement OnInit{
+                            @onInit(){
+                                person: Person
+                            }
+
+                        }
+                    </code>
+                </pre>
+            </div>
+
+            {{ .Params.contentDevelopers2 }}
+        </div>
+    </section>
+
+    <footer class="footer footer--inverse" id="footer">
+        {{ partial "footer.html" . }}
+    </footer>
+</div>
+<!-- /#all -->
+
+<!-- scripts -->
+{{ partial "scripts.html" }}
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+</body>
+</html>
