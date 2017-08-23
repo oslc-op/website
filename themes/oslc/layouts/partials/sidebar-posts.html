@@ -1,3 +1,25 @@
+<div class="popular-posts sec-nw__search">
+  <h2>Search & Filters</h2>
+  <div class="search__item">
+    <label for="">Search</label>
+    <input type="text">
+    <span class="fa fa-search"></span>
+  </div>
+  <div class="search__item">
+    <label for="">Filter</label>
+    <select name="" id="">
+      <option value="">Option 1</option>
+      <option value="">Option 2</option>
+      <option value="">Option 3</option>
+    </select>
+    <span class="fa fa-caret-down"></span>
+  </div>
+  <div class="search__item">
+    <button class="search__button">Search</button>
+  </div>
+</div>
+
+
 <div class="popular-posts">
   <h2>Popular Posts</h2>
   {{ range $key, $value := .Data.Taxonomy.ByCount }}
