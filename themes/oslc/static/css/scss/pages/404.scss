@@ -22,6 +22,9 @@
         text-decoration:none;
         padding:5px 15px;
         transition: all 1s ease;
+        display: block;
+        width: 150px;
+        margin: 45px auto 0px;
         &:hover{
           background: #737373;
           color:#fff;
