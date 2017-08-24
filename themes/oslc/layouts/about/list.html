@@ -33,12 +33,23 @@
                   <p> {{ .Params.about_leadin }} </p>
                 </div>
               </div>
-              <div class="container cotainer-flex">
+            </div>
+
+            <div class="mission" id="mission">
+              <div class="container container-flex">
+                <div class="mission__title">
+                  <h1>{{ .Params.mission_title }}</h1>
+                </div>
+                <div>
                 {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "mission" }}
+                  {{ if in .Params.tags "mission-snippet" }}
                     {{ partial "mission.html" . }}
                   {{ end }}
                 {{ end }}
+                </div>
+                <div>
+                  <a href="{{ .Site.BaseURL }}about/mission.html" class="btn btn-oslc">Learn more</a>
+                </div>
               </div>
             </div>
           </div>
