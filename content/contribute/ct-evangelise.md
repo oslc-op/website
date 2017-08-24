@@ -4,5 +4,9 @@ tags = ["evangelize"]
 title = "Evangelise"
 draft = false
 evangelize_img = "https://unsplash.it/700/400/?random"
-evangelize_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, illum voluptas. Iste sequi quisquam illo a ipsa distinctio dolorem doloremque magni, in laboriosam ex, non, quo numquam repellat hic assumenda!"
+evangelize_description = "We need ambassadors to spread the goodness of OSLC. This can take many forms. You can talk to your colleagues about OSLC and the potential issues it can solve. Take our slide deck and present them internally in your company or at meetups. Write a blog post about your experiences."
+evangelize_link1 = "Resources"
+evangelize_linkurl1 = "http://open-services.net/resources/"
+evangelize_link2 = "Community 2"
+evangelize_linkurl2 = "http://open-services.net"
 +++

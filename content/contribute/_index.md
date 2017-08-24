@@ -4,5 +4,5 @@ tags = []
 title = "Contribute"
 draft = false
 type = "contribute"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod"
+description = "The OSLC community is nothing without you, and will thrive with a diverse group of people contributing. We have a variety of ways to get involved with the OSLC community, for people with different skill sets. Have a look around and ask if you need more information."
 +++

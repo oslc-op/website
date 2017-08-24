@@ -27,18 +27,29 @@
             <div class="mission" id="mission">
               <div class="container container-flex">
                 <div class="mission__title">
-                  <h1>Our Mission</h1>
+                  <h1>{{ .Params.about_title }}</h1>
                 </div>
                 <div class="mission__slogan">
-                  <p> {{ .Params.mission_slogan }} </p>
+                  <p> {{ .Params.about_leadin }} </p>
                 </div>
               </div>
-              <div class="container cotainer-flex">
+            </div>
+
+            <div class="mission" id="mission">
+              <div class="container container-flex">
+                <div class="mission__title">
+                  <h1>{{ .Params.mission_title }}</h1>
+                </div>
+                <div>
                 {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "mission" }}
+                  {{ if in .Params.tags "mission-snippet" }}
                     {{ partial "mission.html" . }}
                   {{ end }}
                 {{ end }}
+                </div>
+                <div>
+                  <a href="{{ .Site.BaseURL }}about/mission.html" class="btn btn-oslc">Learn more</a>
+                </div>
               </div>
             </div>
           </div>
@@ -47,7 +58,7 @@
             <div class="container container-flex">
               <div class="governance__header">
                 <div class="governance__title">
-                  <h2>Governance</h2>
+                  <h2>{{ .Params.governance_title }}</h2>
                 </div>
                 <div class="governance__slogan">
                   {{ .Params.governance_slogan }}
@@ -58,7 +69,7 @@
             <div class="container container-flex">
               <div class="members">
                 <div class="members__title">
-                  <h3>Current Members</h3>
+                  <h3>{{ .Params.members_title }}</h3>
                 </div>
                 <div>
                   {{ range .Data.Pages.ByPublishDate }}
@@ -74,7 +85,7 @@
           <div class="people" id="people">
             <div class="container container-flex">
               <div class="people__title">
-                <h2>Team</h2>
+                <h2>{{ .Params.people_title }}</h2>
               </div>
               <div class="people__headline">
                 {{ .Params.people_headline }}
@@ -93,7 +104,7 @@
             <div class="carousel">
               <div class="container container-flex">
                 <div class="carousel__title">
-                  <h2>What they say about us</h2>
+                  <h2>{{ .Params.organizations_title }}</h2>
                 </div>
 
                 <div class="carousel__content owl-carousel">
@@ -110,7 +121,7 @@
           <div class="brands">
             <div class="container container-flex">
               <div class="brands__title">
-                <h2>Trusted by</h2>
+                <h2>{{ .Params.brands_title }}</h2>
               </div>
               <div class="container container-flex">
                 <div class="brands__row">
@@ -127,7 +138,7 @@
           <div class="faq" id="faq">
             <div class="container container-flex">
               <div class="faq__title">
-                <h2>Frequently Asked Questions</h2>
+                <h2>{{ .Params.faq_title }}</h2>
               </div>
             </div>
             <div class="container container-flex">
