@@ -22,7 +22,7 @@
 
 <div class="popular-posts">
   <h2>Popular Posts</h2>
-  {{ range $key, $value := .Data.Taxonomy.ByCount }}
+  {{ range first 4 .Data.Pages.ByPublishDate }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
       <img src="https://unsplash.it/200/150/?random" alt="">
@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<div class="popular-posts">
+<!--div class="popular-posts">
   <h2>Recent Posts</h2>
   {{ range first 3 .Data.Pages.ByPublishDate }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
@@ -78,4 +78,4 @@
       Updates
     </span>
   </a>
-</div>
+</div-->
