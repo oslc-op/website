@@ -2,7 +2,7 @@
 categories = []
 date = "2017-06-21T20:57:23+02:00"
 author = "Brian King"
-tags = ["presentation"]
+tags = ["presentation", "no-tutorial"]
 title = "A resource presentation"
 
 +++

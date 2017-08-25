@@ -24,7 +24,13 @@
             </div>
           </aside>  
           {{ end }}
-          <section class="post">
+         
+          {{ if in .Params.tags "tutorial" }}
+          <section class="post tutorial">
+          {{ end }}
+          {{ if in .Params.tags "no-tutorial" }}
+          <section class="post no-tutorial">
+          {{ end }}
             <div class="post__header">
               <div class="post__title">
                 <h1>{{ .Title }}</h1>

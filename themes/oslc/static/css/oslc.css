@@ -1012,6 +1012,10 @@ table {
 .resource-post {
   position: relative;
   padding-top: 150px; }
+  .resource-post .post.no-tutorial {
+    display: block;
+    width: 70%;
+    margin: 0 auto; }
   .resource-post .search-found {
     text-decoration: underline; }
   .resource-post .sidebar-post {
@@ -1047,11 +1051,15 @@ table {
   .resource-post .focus {
     display: block;
     color: #fff; }
-  .resource-post .post {
+  .resource-post .post.tutorial {
     width: 70%;
     display: inline-block;
     padding: 0 2em;
     vertical-align: top; }
+  .resource-post .post__footer .post__share {
+    width: 90px;
+    display: block;
+    margin: 0 auto; }
 
 .case {
   display: flex;
