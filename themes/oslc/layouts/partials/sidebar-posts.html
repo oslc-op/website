@@ -1,21 +1,21 @@
 <div class="popular-posts sec-nw__search">
   <h2>Search & Filters</h2>
   <div class="search__item">
-    <label for="">Search</label>
-    <input type="text">
+    <label for="search">Search</label>
+    <input name="search" id="search-input" type="text">
     <span class="fa fa-search"></span>
   </div>
   <div class="search__item">
     <label for="">Filter</label>
-    <select name="" id="">
-      <option value="">Option 1</option>
-      <option value="">Option 2</option>
-      <option value="">Option 3</option>
+    <select name="categories" id="categories-news">
+      <option value="events">Events</option>
+      <option value="announcements">Announcements</option>
+      <option value="updates">Updates</option>
     </select>
     <span class="fa fa-caret-down"></span>
   </div>
   <div class="search__item">
-    <button class="search__button">Search</button>
+    <button id="search-button" class="search__button">Search</button>
   </div>
 </div>
 
@@ -59,23 +59,100 @@
     </div>
   </a>
   {{ end }}
-</div>
+</div> -->
 
-<div class="popular-posts">
-  <h2>Categories</h2>
-  <a href="{{ .Site.BaseURL }}news/events" class="popular-posts__item">
-    <span class="item__info">
-      Events
-    </span>
-  </a>
-  <a href="{{ .Site.BaseURL}}news/announcements" class="popular-posts__item">
-    <span class="item__info">
-      Announcements
-    </span>
-  </a>
-  <a href="{{ .Site.BaseURL}}news/updates" class="popular-posts__item">
-    <span class="item__info">
-      Updates
-    </span>
-  </a>
-</div-->
+<script type="text/javascript">
+var baseurl = "{{.Site.BaseURL}}";
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
+
+<script>
+var lunrIndex;
+var pagesIndex;
+function initLunr() {
+  $.getJSON(baseurl + "news/news.json")
+    .done(function (index) {
+      pagesIndex = index;
+      lunrIndex = lunr(function(){
+        this.ref('uri');
+        this.field('title', {
+          boost: 15
+        });
+        this.field('tags', {
+          boost: 10
+        });
+        this.field("content", {
+          boost: 5
+        });
+
+        pagesIndex.forEach(function (page) {
+          this.add(page);
+        }, this);
+      })
+      lunrIndex.pipeline.remove(lunrIndex.stemmer)
+      console.info(lunrIndex);
+    })
+    .fail(function (jqxhr, textStatus, error) {
+      var err = textStatus + ", " + error;
+      console.error("Error getting Hugo index flie:", err);
+    });
+}
+
+function search(query) {
+  return lunrIndex.search(query).map(function (result) {
+    return pagesIndex.filter(function (page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+function results(r) {
+  var matches = [];
+
+  $('.posts .post').each(function(index, elem){
+    $(elem).hide();
+    for (var i = 0; i < r.length; i++) {
+      if (elem.title === r[i].title) {
+        matches.push(elem)
+        $(elem).css('display', 'none')
+      }
+    }
+  })
+
+  $(matches).each(function(index, e){
+    $(e).css('display', 'block');
+  })
+}
+
+initLunr();
+
+$(document).ready(function(){
+  var result;
+  var filterBy;
+  $('#search-input').keypress(function(e){
+    if (e.which === 13) {
+      result = search($(this).val());
+      console.info('result ', result)
+      results(result)
+    }
+  })
+
+  $('#search-button').click(function(){
+    var searchBy = $('#search-input').val();
+    result = search(searchBy);
+    console.info('result ', result)
+    results(result)
+  })
+
+  $('#search-by').on('change keyup', function(event){
+    console.info('event ', event)
+    if ($('#search-by').val() === '') {
+      $('.container-small-items > div').each(function(index, elem){
+        $(elem).css('display', 'block');
+      })
+      $('#resource-hero').css('display', 'block');
+    }
+  })
+});
+
+</script>
