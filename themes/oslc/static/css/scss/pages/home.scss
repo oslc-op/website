@@ -239,3 +239,42 @@
     }
   }
 }
+
+
+.sec-case{
+  text-align:center;
+  background: #fff;
+  padding:40px 0px;
+  h2{margin-bottom:30px;}
+  &__container{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    @media screen and (min-width: 760px){
+      flex-direction: row;
+    }
+    .container-item{
+      width: 100%;
+      margin-bottom: 40px;
+      @media screen and (min-width:760px){
+        width: 30%;
+        margin-bottom:0px;
+      }
+    }
+    .item__image{
+      border-radius:50%;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      img{
+        display: block;
+        margin:auto;
+      }
+    }
+  }
+  .container-button{
+    text-align: center;
+    margin-top: 40px;
+  }
+}

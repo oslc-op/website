@@ -1,0 +1,37 @@
+<section class="sec-case">
+    <div class="container">
+        <h2>Case Studies</h2>
+        <div class="sec-case__container">
+            <div class="container-item">
+                <div class="item__image">
+                    <img src="https://unsplash.it/200" alt="">
+                </div>
+                <div class="item__name"><h3>Users</h3></div>
+                <div class="item__info">
+                    {{ .Params.caseContent1 }}
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="item__image">
+                    <img src="https://unsplash.it/200" alt="">
+                </div>
+                <div class="item__name"><h3>Vendors</h3></div>
+                <div class="item__info">
+                    {{ .Params.caseContent2 }}
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="item__image">
+                    <img src="https://unsplash.it/200" alt="">
+                </div>
+                <div class="item__name"><h3>Developers</h3></div>
+                <div class="item__info">
+                    {{ .Params.caseContent3 }}
+                </div>
+            </div>
+        </div>
+        <div class="container-button">
+            <a class="btn btn-oslc" href="{{ .Site.BaseURL }}/case-studies">Read more</a>
+        </div>
+    </div>
+</section>

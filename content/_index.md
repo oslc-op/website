@@ -13,6 +13,13 @@ des1= "Organizations are experiencing extreme pressures for digital transformati
 titleStat = "Be part of our community"
 descStat = "We have a variety of ways to get involved with the OSLC community. Whether you are a software developer, systems integrator, tool vendor or buyer, consultant, analyst, or open source enthusiast, there is value both in flexibility and cost savings of contributing to the community based around open interfaces."
 
+
+caseContent1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum error libero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+
+caseContent2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum erroribero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+
+caseContent3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum errorlibero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+
 resourcesTitle = "Resources"
 resourcesContent = "Seeing is doing, so come and learn how to do things. In the resources section of the site, you will find various resources to help including tutorials, videos, articles, and presentations."
 resourcesTutorials = "Tutorials"
