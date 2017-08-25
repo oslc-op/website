@@ -15,6 +15,14 @@ descStat = "We have a variety of ways to get involved with the OSLC community. W
 
 resourcesTitle = "Resources"
 resourcesContent = "Seeing is doing, so come and learn how to do things. In the resources section of the site, you will find various resources to help including tutorials, videos, articles, and presentations."
+resourcesTutorials = "Tutorials"
+resourcesArticles = "Articles"
+resourcesPresentations = "Presentations"
+resourcesVideos = "Videos"
+resourcesTutorialsText = "Do you like being walked through things? We have some useful tutorials to help."
+resourcesArticlesText = "There is an abundance of articles related to OSLC out there. Here we try to gather them into one place."
+resourcesPresentationsText = "Whether you are a slides fanatic, or need something to show off OSLC, we have options for you."
+resourcesVideosText = "Learn by watching and listening. We'll surface up the best videos on the OSLC community."
 
 descriptionNews = "Find out all the latest happenings in the OSLC community. This could be site announcements, software news, stories from the wider OSLC ecosystem, and more."
 
