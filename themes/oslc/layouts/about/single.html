@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "notification-bar.html" . }}
+{{ partial "head.html" . }}
+
+<body>
+
+<div id="single" class="single">
+
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <main class="single-about mission">
+    {{ if in .Params.tags "mission" }}
+      <nav class="mission__links mission-active">
+    {{ end }}
+    {{ if in .Params.tags "governance" }}
+      <nav class="mission__links governance-active">
+    {{ end }}
+    {{ if in .Params.tags "people" }}
+      <nav class="mission__links people-active">
+    {{ end }}
+    {{ if in .Params.tags "organizations" }}
+      <nav class="mission__links organizations-active">
+    {{ end }}
+    {{ if in .Params.tags "faq" }}
+      <nav class="mission__links faq-active">
+    {{ end }}
+      <a href="{{ .Site.BaseURL}}about/mission" class="mission__item mission--item">Mission</a>
+      <a href="{{ .Site.BaseURL}}about/governance" class="mission__item governance--item">Governance</a>
+      <a href="{{ .Site.BaseURL}}about/people" class="mission__item people--item">People</a>
+      <a href="{{ .Site.BaseURL}}about/organizations" class="mission__item organizations--item">Organizations</a>
+      <a href="{{ .Site.BaseURL}}about/faq" class="mission__item faq--item">FAQ</a>
+    </nav>
+
+    {{ if in .Params.tags "mission" }}
+      <div>
+        {{ .Content }}  
+      </div>
+    {{ end }}
+    {{ if in .Params.tags "governance" }}
+      <div>
+        {{ .Content }}
+      </div>
+    {{ end }}
+    {{ if in .Params.tags "people" }}
+      <div>
+        {{ .Content }}
+      </div>
+    {{ end }}
+    {{ if in .Params.tags "organizations" }}
+      <div>
+        {{ .Content }}
+      </div>
+    {{ end }}
+    {{ if in .Params.tags "faq" }}
+      <div>
+        {{ .Content }}
+      </div>
+    {{ end }}
+  </main>
+
+  <footer class="footer footer--inverse" id="footer">
+      {{ partial "footer.html" . }}
+  </footer>
+</div>
+<!-- /#all -->
+
+<!-- scripts -->
+{{ partial "scripts.html" }}
+
+</body>
+</html>

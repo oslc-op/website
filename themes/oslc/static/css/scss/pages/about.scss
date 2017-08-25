@@ -6,22 +6,26 @@
 }
 
 .mission {
-  padding: 0 0 10px;
 
   .mission__links {
     background-color: #418EEB;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 10px 0;
 
     .mission__item {
-      padding-right: 15px;
+      margin-right: 20px;
+      padding: 8px 0;      
       text-transform: uppercase;
       color: #fff;
 
       &:last-child {
         padding-right: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 4px solid #fff;
       }
     }
   }
@@ -201,5 +205,17 @@
         padding: 10px 0;
       }
     }
+  }
+}
+
+.single-about {
+  margin-top: 150px;
+
+  .mission-active .mission--item,
+  .governance-active .governance--item,
+  .people-active .people--item,
+  .organizations-active .organizations--item,
+  .faq-active .faq--item{
+    border-bottom: 4px solid #fff;
   }
 }
