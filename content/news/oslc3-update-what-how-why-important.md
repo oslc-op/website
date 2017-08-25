@@ -4,6 +4,8 @@ date = "2016-03-21T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["core", "oslc3"]
 title = "OSLC3 Update: What is it, how is it different, and why is it important?"
+banner = "img/logo-big.png"
+
 +++
 
 Open Services for Life-cycle Collaboration or OSLC defines a set of standard capabilities enabling loosely coupled, open and scalable point-to-point integration between heterogeneous software development tools. OSLC allows users to work seamlessly across their preferred tools and does not require complex interchange of data between tools that may result in information redundancy and maintenance issues.

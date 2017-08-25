@@ -4,6 +4,8 @@ date = "2015-03-06T10:00:00+02:00"
 author = "Lee Reamsnyder"
 tags = ["github", "meta", "redesign", "website"]
 title = "Pardon our dust: updated design rolling out gradually"
+banner = "img/logo-big.png"
+
 +++
 
 As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.

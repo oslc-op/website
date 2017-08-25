@@ -4,6 +4,8 @@ date = "2015-10-06T10:00:00+02:00"
 author = "Nelson Jean"
 tags = ["election", "oasis", "steering committee"]
 title = "New OASIS OSLC Steering Committee Announced"
+banner = "img/logo-big.png"
+
 +++
 
 The September 2015 elections for the OASIS OSLC Steering Committee have concluded -- congratulations to the new and re-elected members!  

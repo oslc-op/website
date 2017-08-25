@@ -4,6 +4,8 @@ date = "2015-08-11T10:00:00+02:00"
 author = "Nelson Jean"
 tags = ["community", "election", "members", "oasis"]
 title = "OASIS OSLC Steering Committee Elections Coming Soon"
+banner = "img/logo-big.png"
+
 +++
 
 Whether you live in the I/T or Systems world, software integration in heterogeneous environments can represent both a challenge (where do I even start?) and opportunity (how can I advance my environment to provide more value, deliver faster and with reduced risk?).

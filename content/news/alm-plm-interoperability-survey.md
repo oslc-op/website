@@ -4,6 +4,7 @@ date = "2016-06-27T10:00:00+02:00"
 author = "Rainer Ersch"
 tags = []
 title = "ALM-PLM Interoperability Survey"
+banner = "img/logo-big.png"
 +++
 
 If you are interested in ALM-PLM Interoperability, please participate in this survey - ALM / PLM Interoperability and OSLC questionnaire, https://vpe-umfrage.mv.uni-kl.de/index.php/748615/lang-en .

@@ -86,7 +86,7 @@ paginate = 6
     logo = "/img/logo.png"
 
 [Permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+    news = "/news/:filename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]

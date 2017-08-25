@@ -7,7 +7,7 @@
   </div>
   <div class="container-fluid">
     <div class="news__container">
-      {{ range first 4 .Data.Pages.ByPublishDate }}
+      {{ range first 4 (where .Site.Pages.ByPublishDate "Type" "=" "news") }}
       <div class="news__item">
         <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important">
           <h3 class="new__title">{{ .Title }}</h3>
