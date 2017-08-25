@@ -340,3 +340,75 @@
    }
   }
 }
+
+.resource-post {
+  position: relative;
+  padding-top: 150px;
+
+  .search-found {
+    text-decoration: underline;
+  }
+
+  .sidebar-post {
+    width: 22%;
+    display: inline-block;
+    background-color: #0B1E3A;
+    color: #fff;
+    height: 1000px;
+    padding: 1em 1em 4em;
+    vertical-align: top;
+
+    .search {
+
+      input {
+        width: 100%;
+        background-color: #0B1E3A;  
+        color: #fff;
+        padding: 0.75em 0.5em;
+      }
+    }
+
+    .table-of-contents {
+      padding: 1em 0;
+
+      ul {
+        padding: 0;
+        list-style: none;  
+            
+        a + ul {
+          display: none;
+          transition: 0.1s linear;
+        }
+
+        a:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        a:focus {
+          color: #fff;
+        }
+
+        li {
+          padding: 0.75em 0.2em;
+
+          ul {
+            padding-left: 1em;
+          }
+        }
+        
+      }
+    } 
+  }
+  .focus {
+    display: block;
+    color: #fff;
+  }
+
+  .post {
+    width: 70%;
+    display: inline-block;
+    padding: 0 2em;
+    vertical-align: top;
+  }
+}
