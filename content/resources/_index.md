@@ -7,4 +7,4 @@ title = "Resources"
 
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Seeing is doing, so come and learn how to do things. In this section of the site, you will find various resources to help including tutorials, videos, articles, and presentations.
