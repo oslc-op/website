@@ -246,47 +246,11 @@
     }
   }
 
-  .container.single-mission {
-
-  }
-
-  .container.single-governance {
-    h1, h2 {
-      text-align: center;
-    }
-
-    hr {
-      display: none;
-    }
-
-    ul, ol {
-      display: block;
-      list-style: none;
-      float: left;
-      width: 300px;
-      margin: 0;
-      padding: 0;
-
-      img {
-        max-width: 100%;
-      }
-    }
-
-    h3, h4, h5 {
-      display: inline-block;
-      text-align: center;
-    }
-  }
-
-  .container.single-people {
-    
-  }
-
-  .container.single-organizations {
-    
-  }
-
+  .container.single-mission,
+  .container.single-governance,
+  .container.single-people,
+  .container.single-organizations,
   .container.single-faq {
-    
+    padding: 25px 0;
   }
 }

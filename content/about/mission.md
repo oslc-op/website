@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["mission"]
 date = "2017-06-21T20:46:28+02:00"
 title = "Our mission"
-tags = ["mission"]
+tags = []
 banner = "https://unsplash.it/1900/300/?random"
 gradient = "to bottom, rgba(55,8,108,0.67), rgba(22,6,55,0.67)"
 description = "lorem ipsum etsum metum lapsum"

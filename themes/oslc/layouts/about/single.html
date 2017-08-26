@@ -13,19 +13,19 @@
 
   <main class="single-about">
     <div class="mission">
-      {{ if in .Params.tags "mission" }}
+      {{ if in .Params.categories "mission" }}
         <nav class="mission__links mission-active">
       {{ end }}
-      {{ if in .Params.tags "governance" }}
+      {{ if in .Params.categories "governance" }}
         <nav class="mission__links governance-active">
       {{ end }}
-      {{ if in .Params.tags "people" }}
+      {{ if in .Params.categories "people" }}
         <nav class="mission__links people-active">
       {{ end }}
-      {{ if in .Params.tags "organizations" }}
+      {{ if in .Params.categories "organizations" }}
         <nav class="mission__links organizations-active">
       {{ end }}
-      {{ if in .Params.tags "faq" }}
+      {{ if in .Params.categories "faq" }}
         <nav class="mission__links faq-active">
       {{ end }}
         <a href="{{ .Site.BaseURL}}about/mission" class="mission__item mission--item">Mission</a>
@@ -48,29 +48,79 @@
         </div>
       </div>
     </div>
-    {{ if in .Params.tags "mission" }}
+    {{ if in .Params.categories "mission" }}
       <div class="container container-flex single-mission">
         {{ .Content }}  
       </div>
     {{ end }}
-    {{ if in .Params.tags "governance" }}
+    {{ if in .Params.categories "governance" }}
       <div class="container container-flex single-governance">
         {{ .Content }}
       </div>
+      <div class="container container-flex single-governance">
+        <div class="members">
+          {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+            {{ if in .Params.tags "governance"}}
+              {{ partial "governance.html" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
     {{ end }}
-    {{ if in .Params.tags "people" }}
+    {{ if in .Params.categories "people" }}
       <div class="container container-flex single-people">
         {{ .Content }}
       </div>
+      <div class="container container-flex single-people">
+        {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+          {{ if in .Params.tags "people"}}
+            {{ partial "people.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
     {{ end }}
-    {{ if in .Params.tags "organizations" }}
+    {{ if in .Params.categories "organizations" }}
       <div class="container container-flex single-organizations">
         {{ .Content }}
       </div>
+      <div class="carousel">
+        <div class="container container-flex single-organizations">
+          <div class="carousel__content owl-carousel">
+            {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+              {{ if in .Params.tags "organization"}}
+                {{ partial "organization.html" . }}
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      <div class="brands">
+        <div class="container container-flex">
+          <div class="brands__title">
+            <h2>They trust in us</h2>
+          </div>
+          <div class="container container-flex">
+            <div class="brands__row">
+              {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+                {{ if in .Params.tags "brand" }}
+                  {{ partial "brand.html" . }}
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
     {{ end }}
-    {{ if in .Params.tags "faq" }}
+    {{ if in .Params.categories "faq" }}
       <div class="container container-flex single-faq">
         {{ .Content }}
+      </div>
+      <div class="container container-flex single-faq">
+        {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+          {{ if in .Params.tags "faq" }}
+            {{ partial "faq.html" . }}
+          {{ end }}
+        {{ end }}
       </div>
     {{ end }}
   </main>
@@ -83,6 +133,19 @@
 
 <!-- scripts -->
 {{ partial "scripts.html" }}
+
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      items: 1,
+      navText: ["<i class='icon-chevron-left icon-white'><</i>", "<i class='icon-chevron-right icon-white'>></i>"],
+      navClass: ['owl-prev', 'owl-next']
+    });
+  })
+</script>
 
 </body>
 </html>
