@@ -1,23 +1,30 @@
 <div class="popular-posts sec-nw__search">
-  <h2>Search & Filters</h2>
+  <h2>Search</h2>
   <div class="search__item">
     <label for="search">Search</label>
     <input name="search" id="search-input" type="text">
     <span class="fa fa-search"></span>
   </div>
+  
+  <div class="search__item">
+    <button id="search-button" class="search__button">Search</button>
+  </div>
+</div>
+
+<div class="popular-posts sec-nw__search">
+  <h2>Categories</h2>
   <div class="search__item">
     <label for="">Filter</label>
     <select name="categories" id="categories-news">
+      <option selected>Select a category</option>
       <option value="events">Events</option>
       <option value="announcements">Announcements</option>
       <option value="updates">Updates</option>
     </select>
     <span class="fa fa-caret-down"></span>
   </div>
-  <div class="search__item">
-    <button id="search-button" class="search__button">Search</button>
-  </div>
 </div>
+
 
 
 <div class="popular-posts">
@@ -62,7 +69,7 @@
 </div> -->
 
 <script type="text/javascript">
-var baseurl = "{{.Site.BaseURL}}";
+  var baseurl = "{{.Site.BaseURL}}";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
 
@@ -143,6 +150,10 @@ $(document).ready(function(){
     console.info('result ', result)
     results(result)
   })
+
+  $('#categories-news').change(function(){
+    window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
+  });
 
   $('#search-by').on('change keyup', function(event){
     console.info('event ', event)
