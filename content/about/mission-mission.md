@@ -1,6 +1,6 @@
 +++
 date = "2017-08-24T14:17:19+02:00"
-tags = ["mission-snippet"]
+tags = ["mission-snippet", "mission"]
 title = "Mission"
 
 +++

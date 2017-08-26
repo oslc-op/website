@@ -240,28 +240,29 @@ table {
   justify-content: space-between;
   padding: 10px 0; }
 
-.mission {
-  padding: 0 0 10px; }
-  .mission .mission__links {
-    background-color: #418EEB;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 0; }
-    .mission .mission__links .mission__item {
-      padding-right: 15px;
-      text-transform: uppercase;
-      color: #fff; }
-      .mission .mission__links .mission__item:last-child {
-        padding-right: 0; }
-  .mission .mission__title {
-    padding: 20px 0;
-    text-align: center; }
-  .mission .mission__slogan {
-    font-style: italic;
-    text-align: center; }
-  .mission .about__title {
-    text-align: center; }
+.mission .mission__links {
+  background-color: #418EEB;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .mission .mission__links .mission__item {
+    margin-right: 20px;
+    padding: 8px 0;
+    text-transform: uppercase;
+    color: #fff; }
+    .mission .mission__links .mission__item:last-child {
+      padding-right: 0; }
+    .mission .mission__links .mission__item:hover {
+      text-decoration: none;
+      border-bottom: 4px solid #fff; }
+.mission .mission__title {
+  padding: 20px 0;
+  text-align: center; }
+.mission .mission__slogan {
+  font-style: italic;
+  text-align: center; }
+.mission .about__title {
+  text-align: center; }
 
 .governance .governance__title {
   text-align: center; }
@@ -346,6 +347,50 @@ table {
       text-decoration: none; }
   .faq .questions .question__item .question__answer {
     padding: 10px 0; }
+
+.single-about {
+  margin-top: 120px;
+  line-height: 1.6; }
+  .single-about .mission-active .mission--item,
+  .single-about .governance-active .governance--item,
+  .single-about .people-active .people--item,
+  .single-about .organizations-active .organizations--item,
+  .single-about .faq-active .faq--item {
+    border-bottom: 4px solid #fff; }
+  .single-about .sec-header {
+    position: relative;
+    height: 300px;
+    color: #fff;
+    background-size: cover;
+    background-position: bottom; }
+    .single-about .sec-header .sec-info {
+      position: absolute;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      padding: 30px 0px; }
+      .single-about .sec-header .sec-info h1 {
+        text-align: center; }
+      .single-about .sec-header .sec-info .sec-header__content {
+        padding: 0 8px;
+        text-align: center;
+        font-style: italic; }
+  .single-about .container.single-governance h1, .single-about .container.single-governance h2 {
+    text-align: center; }
+  .single-about .container.single-governance hr {
+    display: none; }
+  .single-about .container.single-governance ul, .single-about .container.single-governance ol {
+    display: block;
+    list-style: none;
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0; }
+    .single-about .container.single-governance ul img, .single-about .container.single-governance ol img {
+      max-width: 100%; }
+  .single-about .container.single-governance h3, .single-about .container.single-governance h4, .single-about .container.single-governance h5 {
+    display: inline-block;
+    text-align: center; }
 
 .sec-ct-header {
   position: relative;
