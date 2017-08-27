@@ -103,13 +103,14 @@
 
     $('#button-search').click(function(){
       var searchBy = $('#search-by').val();
-      console.info(searchBy + " " + filterBy);
-      result = search(searchBy + " " + filterBy);
+      result = search(searchBy);
       results(result)
     })
 
     $('#filter-by').change(function(){
       filterBy = $("select option:selected").text();
+      result = search(filterBy);
+      results(result)
     });
 
     $('#search-by').on('change keyup', function(event){

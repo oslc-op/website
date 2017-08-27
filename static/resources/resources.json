@@ -2,71 +2,104 @@
     {
         "uri": "/../resources/_index",
         "title": "Resources",
-        "content": "\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n",
+        "content": "\nSeeing is doing, so come and learn how to do things. In this section of the site, you will find various resources to help including tutorials, videos, articles, and presentations.\n",
         "tags": []
     },
     {
-        "uri": "/../resources/resource-articles",
-        "title": "A resource article",
-        "content": "\nUno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia methamphetamine ad Africum. Quo facto suo, si huius huc termini velit vitae ipsum. Praemia essent ... ingentibus. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/article-20151109",
+        "title": "Why Integration requires a combination of linking and syncing",
+        "content": "\nIn this article, Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement. The conclusion is that flexibility and value are what drive integration decisions.\n\nRead\n",
         "tags": [
-            "article"
+            "article",
+            "no-tutorial"
         ]
     },
     {
-        "uri": "/../resources/resource-podcast",
-        "title": "A resource podcast",
-        "content": "\nLoquélæ. Brevis oratio. Hodie particeps tua perdideris. Quid sui nominis - Emilio? Emilio gradiens ad carcerem. Tulitque omnem pecuniam tuam in DEA tuus Lab. Vos got nihil. Quadratum unum. Et ego agnosco rem, nisi te scire elit. Cogito ... maybe vos possem socium ascendit. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/article-20170715",
+        "title": "Debunking the OSLC Link-Only Myth",
+        "content": "\nMost large organizations require dozens and sometimes hundreds of specialized software tools to manage the lifecycle of the physical products or software applications they create. It isn't hard to imagine the monumental waste these organizations incur in attempting to manually coordinate the efforts of the teams that use these many disparate tools to create a single product. Open Services for Lifecycle Collaboration (OSLC) is an open community for creating specifications for integrating lifecycle activities across tools to address this problem. Now imagine how much more happy and productive an organization would be if all those tools could integrate via standard interfaces. In broad strokes, this is the goal of the OSLC community.\n\nRead\n",
         "tags": [
-            "podcast"
+            "article",
+            "no-tutorial"
         ]
     },
     {
-        "uri": "/../resources/resource-presentation",
-        "title": "A resource presentation",
-        "content": "\nSumus tam adultis. Non est enim tibi nescio fingunt. Confusio esse cupio. Scio te debeo meae. At etiam, ut caveant ab his eu. In tuo positum, idem fecissem. Constitutione, quam molesta est mihi tres menses nescio quid de contractu fines nostros. Scis quare hoc facere. Lorem satis quaesitum. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
-        "tags": [
-            "presentation"
-        ]
-    },
-    {
-        "uri": "/../resources/resource-tool",
-        "title": "A resource tool",
-        "content": "\nPaenitet me quod tu me rogas? Oh, sic, qui stultus plastic continentis rogavi te ut emas. Vides non manducare acidum hydrofluoric per plastic. Erit autem dissolvere metalli petram, vitrum, tellus. Ita quod illic '. Quam de aliquo cum aliqua interdum, maybe? Aliquid viride, huh? Quam vos sunt etiam vivere? \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
-        "tags": [
-            "tool"
-        ]
-    },
-    {
-        "uri": "/../resources/resource-tutorial",
-        "title": "A resource tutorial",
-        "content": "\nQuinquaginta septem est - pars tua, triginta quinque millia. Est autem extra plus quindecim, tota tua est, quom meruisset. Fac nos fecit. SIC. Puto quia una res potest - venimus in cognitionem. Vide pretium in manibus. Sed finge iustum faciens quod qualibet septimana. SIC. Duis duas libras triginta quinque milia pondo. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/example-tutorial",
+        "title": "Example tutorial",
+        "content": "\nA title of section\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\n This is a subsection\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\nAnd this is another\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\n I like code\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\nimport { Component, ElementRef, Input, OnInit } from '@angular/core';\nimport { Router } from '@angular/router';\n\n@Component({})\nclass ExampleComponent implements OnInit {\n  @Input()\n  person: Person;\n}\n\nAnother title of section\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\n I like to paste\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\nHow many titles of sections we can have\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\n This is also a section\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!\n\nSections sections\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!",
         "tags": [
             "tutorial"
         ]
     },
     {
-        "uri": "/../resources/resource-video",
-        "title": "A resource video",
-        "content": "Respice ... Sentio sicut ego vobis exponam: sed vias breve iterum conabor. Fugere hoc maior difficultas est nobis. Perdet eam batch nostri. Et delebis eam ac omnia opus est vestigium, ut possimus coques. Sin id, quod morte morieris. Locus non est peccatum. Nec apud hos. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/get-started-with-developing-oslc-applications",
+        "title": "Get started with developing OSLC applications",
+        "content": "“OSL-whaaaat now?”\n\nOpen Services for Lifecycle Collaboration (OSLC) is a community that writes specifications to integrate software. Learn more at Why develop OSLC applications and at our main site.\n\nFor a high-level overview of how to add OSLC support to software, we recommend our video \"Getting started on implementing OSLC\":\n\nThe description on YouTube includes a table of contents and links to references.\n\nExplore our tutorial\n\nFor a more detailed look at what goes into OSLC support, read through our tutorial \"Integrating Products with OSLC\", which walks you through building an adapter that adds OSLC support to the popular Bugzilla defect-tracking software.\n\nThe concepts in the tutorial are broadly applicable to other software.\n\nIf you're building an OSLC provider (in other words, software that outputs OSLC resources), you'll learn how to\n\nProvide Service Providers and catalogs\nRepresent Bugzilla bugs as OSLC Change Management resources\nProvide UI Previews\nProvide a delegated UI for finding existing bugs\nProvide a delegated UI for creating new bugs\nAllow software to programmatically create new bugs\nIf you're building an OSLC consumer application, you'll learn how to:\n\nLink to OSLC resources in another application and display previews\nFind, select, and create bugs without leaving the application with delegated UIs\nParse OSLC resources\nCreate new bugs automatically\nThe tutorial has working sample applications and detailed instructions for running them.",
         "tags": [
-            "video"
+            "tutorial"
         ]
     },
     {
-        "uri": "/../resources/resource-website",
-        "title": "A resource website",
-        "content": "\nAut si rem a me pecuniam in Midiam elit. Nec ego in imperio elit. Id quod sum sub potestate felis. Etiam Id est - problema solvenda. Skyler est simplex partitio - introducam pecuniam, pecuniam launder. Id quod vobis deerat. \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/presentation-20171109",
+        "title": "Tasktop: Helping a Center of Excellence live up to its name",
+        "content": "\nTasktop Sync Case Study on enabling the customer to increase both velocity AND quality.\n\nView\n",
         "tags": [
-            "website"
+            "presentation",
+            "no-tutorial"
         ]
     },
     {
-        "uri": "/../resources/resource-whitepapers",
-        "title": "A resource whitepapers",
-        "content": "\nQui nunc loqueris? Ecce qui cogitatis? Vos scitis quanta ego faciam annum Id est, ut ego dixi vobis non credunt. Scis quid si ne subito placuit ire in opus? \n\nFor now, refer to:\n\nhttp://open-services.net/participate/\n",
+        "uri": "/../resources/presentation-20171117",
+        "title": "PROSTEP OpenPDM OSLC Adapter Product Overview",
+        "content": "\nThe PROSTEP OpenPDM OSLC Adapter makes your PLM system(s) available to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t  offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems. The OpenPDM OSLC services can be integrated in any OSLC consuming applications. The gap between ALM and PLM can be closed.\n\nThis presentation provides details on the OpenPDM OSLC Adapter including overview, reference project and technical information. For more details  contact infocenter@prostep.com. \n\nDownload\n",
         "tags": [
-            "whitepaper"
+            "presentation",
+            "no-tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/tool-20111111",
+        "title": "Eclipse Lyo",
+        "content": "\nThe Eclipse Lyo project focuses on providing an SDK to help the Eclipse community to adopt OSLC specifications and build OSLC-compliant tools. The source code is available in a Git repository.\n\nOSLC4J: A Java toolkit to help you build OSLC-ready Java applications\nTest suites: Verify that your OSLC implementations are compliant with the specifications\nReference Implementations: See how OSLC functions with working samples\n\nGo\n",
+        "tags": [
+            "tool",
+            "no-tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/tool-20130121",
+        "title": "OSLC4Net",
+        "content": "\nA toolkit for developing OSLC consumers and providers for .NET environments that contains the following tools:\n\nOSLC4NET SDK, which is very similar to the OSLC4J component of Eclipse Lyo: you can model OSLC resources as .NET objects, annotate them with OSLC attributes, and use the REST services provided by ASP.NET MVC 4 for HTTP requests and request handling.\nOSLC Change Management consumer implementation in the form of a test suite\n\nGo\n",
+        "tags": [
+            "tool",
+            "no-tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/video-20151109-1",
+        "title": "Get IBM RTC and HP ALM To Blend Together Like Peanut Butter and Jelly",
+        "content": "Webinar on integrating HP ALM and IBM RTC, presented by Wesley Coelho, Director of Business Development at Tasktop Technologies, and Lance Knight, Director of Solution Architects at Tasktop.\n\nWatch\n",
+        "tags": [
+            "video",
+            "no-tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/video-20151109-2",
+        "title": "Tear Down the Walls Between Requirements, Development and Testing",
+        "content": "In this webinar, Robert Elves, co-founder of Tasktop Technologies, describes how Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync.\n\nWatch\n",
+        "tags": [
+            "video",
+            "no-tutorial"
+        ]
+    },
+    {
+        "uri": "/../resources/website-20170825",
+        "title": "Beyond PLM",
+        "content": "\nA blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software. This has much information relevant for the OSLC community.\n\nVisit\n",
+        "tags": [
+            "website",
+            "no-tutorial"
         ]
     }
 ]

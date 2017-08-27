@@ -1,6 +1,6 @@
 var hugolunr = require('lunr-hugo');
 var h = new hugolunr();
-h.setInput('../content/news/**');
-h.setOutput('../static/news/news.json');
+h.setInput('../content/resources/**');
+h.setOutput('../static/resources/resources.json');
 console.info('resources search done');
 h.index();
