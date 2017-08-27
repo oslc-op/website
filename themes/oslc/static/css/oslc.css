@@ -1057,9 +1057,9 @@ table {
       margin-bottom: 0px;
       padding: 0px; }
       .rs-search .rs-search__item:nth-child(2) {
-        width: 27%; }
-      .rs-search .rs-search__item:last-child {
         width: 10%; }
+      .rs-search .rs-search__item:last-child {
+        width: 27%; }
       .rs-search .rs-search__item span {
         right: 15px; }
 
