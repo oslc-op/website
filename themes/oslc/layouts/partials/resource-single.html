@@ -50,8 +50,8 @@
 
   <div class="sm-content">
     <h3 class="title-content">{{ .Title }}</h3>
-    <div class="sm-info">
-      {{ .Content }}
+    <div class="sm-info truncate">
+      {{ .Summary }}
     </div>
     <div class="sm-author-date">
       <span class="author">{{ .Params.author }}</span>
@@ -59,7 +59,6 @@
     </div>
     <div class="sm-buttons">
       <a href=" {{ .Permalink }} ">Details</a>
-      <a href="#">Download</a>
     </div>
   </div>
 </div>

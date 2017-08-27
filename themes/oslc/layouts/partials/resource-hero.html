@@ -9,13 +9,12 @@
       </div>
     </div>
   </div>
-  <div class="content__description">
-    {{ .Content }}
+  <div class="content__description truncate">
+    {{ .Summary }}
   </div>
   <div class="content__options">
     <div class="buttons">
-      <a class="button-link" href="#">Details</a>
-      <a class="button-link" href="#">Download</a>
+      <a class="button-link" href="{{ .Permalink }}">Details</a>
     </div>
     <div class="other">
       <a class="link" href="#">

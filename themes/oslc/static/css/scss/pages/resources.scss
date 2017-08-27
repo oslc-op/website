@@ -197,7 +197,7 @@
     box-shadow: 0px 1px 2px rgba(0,0,0,0.24);
     position:relative;
     transition: all 1s ease;
-    height: 328px;
+    height: 348px;
 
     .sm-header--blue, .sm-header--green, .sm-header--red, .sm-header--orange, .sm-header--gray{
       color: #fff;
@@ -217,10 +217,10 @@
       }
     }
 
-    .sm-info{
-      overflow: hidden;
-      height: 110px;
-    }
+    // .sm-info{
+    //   overflow: hidden;
+    //   height: 110px;
+    // }
 
     .sm-header--blue{background: #418EEB;}
 
@@ -314,12 +314,11 @@
 
       .buttons{
         justify-content: space-around;
-        flex-direction: row;
         width: 33%;
 
         a{
           margin-bottom: 0px;
-          width: 45%;
+          width: 150px;
           margin-right: 10px;
         }
       }
@@ -332,8 +331,8 @@
     //justify-content: space-between;
 
     .rs-small-item{
-      width: 31%;
-      margin-right:20px;
+      width: 32%;
+      margin-right: 19px;
     }
 
     .rs-small-item:nth-child(3n) {

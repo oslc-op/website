@@ -56,5 +56,13 @@ p, a {
   }
 }
 
-
+.truncate {
+  display: block;
+  display: -webkit-box;
+  height: 140px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
+}
 /* buttons */
