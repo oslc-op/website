@@ -4,6 +4,7 @@ date = "2015-08-18T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["communications","social","user group"]
 title = "Extra, Extra, Communication User Group is Back"
+banner = "img/sven-brandsma-342430.jpg"
 +++
 
 The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC. As one participant said "Think of us as the newspaper for the city." This is a perfect analogy of our intent to be indespensible to the community we serve and relevant to the broader audience. The Communication User Group will aims to deliver value, grows our community and provides the news that you need. 

@@ -4,7 +4,7 @@ date = "2015-08-11T10:00:00+02:00"
 author = "Nelson Jean"
 tags = ["community", "election", "members", "oasis"]
 title = "OASIS OSLC Steering Committee Elections Coming Soon"
-banner = "img/logo-big.png"
+banner = "img/sven-brandsma-342430.jpg"
 
 +++
 

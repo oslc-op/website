@@ -4,7 +4,7 @@ date = "2015-11-09T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["announcements","software","tasktop"]
 title = "Learn more about Tasktop Sync 4.3 (July 2015)"
-banner = "img/logo-big.png"
+banner = "img/sven-brandsma-342430.jpg"
 
 +++
 
