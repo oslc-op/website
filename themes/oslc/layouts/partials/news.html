@@ -10,7 +10,7 @@
       {{ range first 4 (where .Site.Pages.ByPublishDate "Type" "=" "news") }}
       <div class="news__item">
         <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important">
-          <h3 class="new__title">{{ .Title }}</h3>
+          <h3 class="new__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         </div>
         <div class="new__info">
           <span class="new__date">{{ .Date.Format "Jan 2, 2006" }}</span>
