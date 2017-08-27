@@ -16,7 +16,7 @@ paginate = 6
 [[menu.main]]
     name = "About"
     identifier = "about"
-    url  = "/about/"
+    url  = "/about/mission"
     weight = 1
 
 [[menu.main]]
