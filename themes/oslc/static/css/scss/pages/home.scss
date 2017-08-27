@@ -150,10 +150,9 @@
 
       .news__image {
         width: 100%;
-        height: 214px;
+        height: 180px;
         overflow: hidden;
         position: relative;
-        background-image: url("https://unsplash.it/600/300?image=996");
 
         img{
           width: 100%;
@@ -164,18 +163,25 @@
           position: absolute;
           bottom: 0;
           left: 15px;
-          color:#fff;
-          text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+          right: 1px;
+          
+          a {
+            color:#fff;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+          }
         }
       }
 
       .new__info{
         padding: 0 15px 10px;
         color: #FFF;
-        height: 300px;
-        overflow: hidden;
+        
+        .new__content {
+          height: 142px;
+          overflow: hidden;
+        }
 
-        .new__date{
+        .new__date {
           font-style: italic;
           line-height: 3;
         }
@@ -223,7 +229,7 @@
 
         .news__image {
           width: 100%;
-          height: 214px;
+          height: 180px;
           overflow: hidden;
 
           img{
@@ -234,6 +240,11 @@
 
         .new__info{
           color: #3D3D3D;
+
+          .new__content {
+            height: 142px;
+            overflow: hidden;
+          }
         }
       }
     }
