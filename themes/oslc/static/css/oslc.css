@@ -1089,7 +1089,7 @@ table {
       margin-right: 0; } }
 .resource-post {
   position: relative;
-  padding-top: 150px; }
+  padding-top: 120px; }
   .resource-post .post.no-tutorial {
     display: block;
     width: 70%;
@@ -1098,6 +1098,9 @@ table {
     text-decoration: underline; }
   .resource-post .sidebar-post {
     width: 22%;
+    position: fixed;
+    top: 120px;
+    left: 0;
     display: inline-block;
     background-color: #0B1E3A;
     color: #fff;
@@ -1131,6 +1134,7 @@ table {
     color: #fff; }
   .resource-post .post.tutorial {
     width: 70%;
+    margin-left: 22%;
     display: inline-block;
     padding: 0 2em;
     vertical-align: top; }

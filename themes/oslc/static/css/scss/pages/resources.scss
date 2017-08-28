@@ -343,7 +343,7 @@
 
 .resource-post {
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
 
   .post.no-tutorial {
     display: block;
@@ -357,6 +357,9 @@
 
   .sidebar-post {
     width: 22%;
+    position: fixed;
+    top: 120px;
+    left: 0;
     display: inline-block;
     background-color: #0B1E3A;
     color: #fff;
@@ -413,6 +416,7 @@
 
   .post.tutorial {
     width: 70%;
+    margin-left: 22%;
     display: inline-block;
     padding: 0 2em;
     vertical-align: top;
