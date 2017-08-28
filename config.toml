@@ -7,11 +7,17 @@ disableLiveReload = false
 watch = true
 uglyURL = true
 paginate = 6
-# Main menu
+
+disqusShortname = "yourdiscussshortname"
+disqus_identifier = ""
+disqus_title = ""
+disqus_url = ""
 
 [taxonomies]
     tag = "tags"
     category = "categories"
+
+# Main menu
 
 [[menu.main]]
     name = "About"
