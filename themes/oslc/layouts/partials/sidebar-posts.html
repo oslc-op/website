@@ -155,13 +155,12 @@ $(document).ready(function(){
     window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
   });
 
-  $('#search-by').on('change keyup', function(event){
+  $('#search-input').on('change keyup', function(event){
     console.info('event ', event)
-    if ($('#search-by').val() === '') {
-      $('.container-small-items > div').each(function(index, elem){
+    if ($('#search-input').val() === '') {
+      $('.posts .post').each(function(index, elem){
         $(elem).css('display', 'block');
       })
-      $('#resource-hero').css('display', 'block');
     }
   })
 });
