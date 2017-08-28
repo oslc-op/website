@@ -70,8 +70,13 @@ $color-link: #3D3D3D;
     align-content: center;
     margin-bottom: 10px;
 
-    .post__date, .post__author, .post__comments {
+    .post__date, .post__comments {
       margin: 5px 0;
+      padding: 0 10px;
+    }
+
+    .post__author {
+      margin: 4px 0;
       padding: 0 10px;
     }
 
