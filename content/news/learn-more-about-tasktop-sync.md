@@ -2,6 +2,7 @@
 categories = ["announcements"]
 date = "2015-11-09T10:00:00+02:00"
 author = "OSLC Administrator"
+author_uri = ""
 tags = ["announcements","software","tasktop"]
 title = "Learn more about Tasktop Sync 4.3 (July 2015)"
 banner = "img/sven-brandsma-342430.jpg"

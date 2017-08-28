@@ -5,7 +5,7 @@ author = "Lee Reamsnyder"
 tags = ["github", "meta", "redesign", "website"]
 title = "Pardon our dust: updated design rolling out gradually"
 banner = "img/sven-brandsma-342430.jpg"
-
+author_uri = ""
 +++
 
 As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.

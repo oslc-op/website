@@ -2,6 +2,7 @@
 categories = ["announcements"]
 date = "2016-06-21T10:00:00+02:00"
 author = "Wesley Coelho"
+author_uri = ""
 tags = ["steering committee", "surveys"]
 title = "OLSC Survey Provides Insights into Needs for Software Integration Standards"
 banner = "img/sven-brandsma-342430.jpg"

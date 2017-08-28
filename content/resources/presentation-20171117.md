@@ -2,6 +2,7 @@
 categories = []
 date = "2015-11-17T20:00:00+02:00"
 author = ""
+author_uri = ""
 tags = ["presentation", "no-tutorial"]
 title = "PROSTEP OpenPDM OSLC Adapter Product Overview"
 

@@ -2,6 +2,7 @@
 categories = ["announcements"]
 date = "2016-03-21T10:00:00+02:00"
 author = "OSLC Administrator"
+author_uri = ""
 tags = ["core", "oslc3"]
 title = "OSLC3 Update: What is it, how is it different, and why is it important?"
 banner = "img/sven-brandsma-342430.jpg"

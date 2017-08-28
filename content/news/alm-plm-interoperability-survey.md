@@ -2,6 +2,7 @@
 categories = []
 date = "2016-06-27T10:00:00+02:00"
 author = "Rainer Ersch"
+author_uri = ""
 tags = []
 title = "ALM-PLM Interoperability Survey"
 banner = "img/sven-brandsma-342430.jpg"

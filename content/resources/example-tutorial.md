@@ -2,6 +2,7 @@
 categories = ["tutorial"]
 date = "2017-06-21T20:57:23+02:00"
 author = "OSLC Community"
+author_uri = ""
 tags = ["tutorial"]
 title = "Example tutorial"
 +++

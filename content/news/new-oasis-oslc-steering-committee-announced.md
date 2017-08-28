@@ -2,6 +2,7 @@
 categories = ["announcements"]
 date = "2015-10-06T10:00:00+02:00"
 author = "Nelson Jean"
+author_uri = ""
 tags = ["election", "oasis", "steering committee"]
 title = "New OASIS OSLC Steering Committee Announced"
 banner = "img/sven-brandsma-342430.jpg"

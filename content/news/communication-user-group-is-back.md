@@ -2,6 +2,7 @@
 categories = ["announcements"]
 date = "2015-08-18T10:00:00+02:00"
 author = "OSLC Administrator"
+author_uri = ""
 tags = ["communications","social","user group"]
 title = "Extra, Extra, Communication User Group is Back"
 banner = "img/sven-brandsma-342430.jpg"
