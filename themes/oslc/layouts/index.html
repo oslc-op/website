@@ -32,5 +32,13 @@
 
     <!-- scripts -->
     {{ partial "scripts.html" }}
+    <script>
+      $(document).ready(function(){
+        $('.news__container .new__content').each(function(i, e){
+          var summary = $(e).text().slice(0, 220);
+          $(e).text('' + summary + '...');
+        })
+      })
+    </script>
   </body>
 </html>

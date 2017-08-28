@@ -68,5 +68,13 @@
         history: false
       });
     </script>
+    <script>
+      $(document).ready(function(){
+        $('.rs-small-item .sm-info').each(function(i, e){
+          var summary = $(e).text().slice(0, 220);
+          $(e).text('' + summary + '...');
+        })
+      })
+    </script>
   </body>
 </html>
