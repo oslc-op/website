@@ -37,7 +37,7 @@
               </div>
               <div class="post__meta">
                 <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
-                <div class="post__author"><a href="#"> {{ .Params.author }} </a></div>
+                <div class="post__author"><a href="{{ .Params.author_uri }}"> {{ .Params.author }} </a></div>
                 <div class="post__comments">No comments</div>
               </div>
             </div>
@@ -69,18 +69,6 @@
     {{ partial "scripts.html" }}
     <script>
       $(document).ready(function(){
-
-        // var element = $('.post__paragraphs');
-
-        // var childrens = element[0].children;
-
-        // var content = ""
-
-        // for (var i = 0; i < childrens.length; i++) {
-        //   content = content + " " +  childrens[i].innerText;
-        // }
-
-        // console.info(content);
 
         $('#search-tutorial').keyup(function(){
           search = $('#search-tutorial').val();

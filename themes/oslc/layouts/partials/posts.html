@@ -5,7 +5,7 @@
     </div>
     <div class="post__meta">
       <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
-      <div class="post__author"><a href="#"> {{ .Params.author }} </a></div>
+      <div class="post__author"><a href="{{ .Params.author_uri}}"> {{ .Params.author }} </a></div>
       <div class="post__comments">No comments</div>
     </div>
   </div>
