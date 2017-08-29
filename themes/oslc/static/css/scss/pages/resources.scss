@@ -1,3 +1,32 @@
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background: white;
+    width: 100%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+
 .sec-rs-header{
   position: relative;
   height: 300px;
@@ -233,12 +262,19 @@
     .sm-content{
       padding: 0px 15px;
 
+      .sm-info{
+        @include multiLineEllipsis($lineHeight: 1.5em, $lineCount: 3.8, $bgColor: white);
+      }
+
       .sm-author-date{
         display: flex;
         justify-content: space-between;
         color: #B8B8B8;
         line-height: 3;
         transition: all 1s ease;
+        bottom:0;
+        position:absolute;
+        width: 85%;
       }
 
       .title-content{
