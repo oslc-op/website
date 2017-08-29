@@ -75,9 +75,8 @@
         })
 
         $('nav > ul > li > a').click(function(event){
-          event.preventDefault();
-            
           $(this).siblings('ul').css('display', 'block');
+          console.info($(this).attr('href'));
         })
       })
     </script>

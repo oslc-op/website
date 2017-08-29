@@ -1085,7 +1085,7 @@ table {
       margin-right: 0; } }
 .resource-post {
   position: relative;
-  padding-top: 120px; }
+  margin-top: 120px; }
   .resource-post .post.no-tutorial {
     display: block;
     width: 70%;
