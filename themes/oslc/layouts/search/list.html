@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page search">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <main class="results" id="results">
+          
+        </main>
+
+        <footer class="footer footer--inverse">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+  </body>
+</html>
