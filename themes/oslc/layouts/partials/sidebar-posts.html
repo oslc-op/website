@@ -145,10 +145,11 @@ $(document).ready(function(){
   })
 
   $('#search-button').click(function(){
-    var searchBy = $('#search-input').val();
-    result = search(searchBy);
-    console.info('result ', result)
-    results(result)
+    if ($('#search-input').val() !== '') {
+      var searchBy = $('#search-input').val();
+      result = search(searchBy);
+      results(result)
+    }
   })
 
   $('#categories-news').change(function(){
