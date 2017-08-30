@@ -1,32 +1,3 @@
-/* mixin for multiline */
-@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
-  overflow: hidden;
-  position: relative;
-  line-height: $lineHeight;
-  max-height: $lineHeight * $lineCount;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-  &:before {
-    content: '...';
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-    background: white;
-    width: 100%;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: $bgColor;
-  }
-}
-
-
 .sec-rs-header{
   position: relative;
   height: 300px;
@@ -261,10 +232,17 @@
 
     .sm-content{
       padding: 0px 15px;
+      position:relative;
+      /*&::after{
+        content: '...';
+        width: 80%;
+        position: absolute;
+        background: red;
+      }*/
 
-      .sm-info{
+      /*.sm-info{
         @include multiLineEllipsis($lineHeight: 1.5em, $lineCount: 3.8, $bgColor: white);
-      }
+      }*/
 
       .sm-author-date{
         display: flex;
@@ -272,7 +250,7 @@
         color: #B8B8B8;
         line-height: 3;
         transition: all 1s ease;
-        bottom:0;
+        bottom:-55px;
         position:absolute;
         width: 85%;
       }
@@ -281,16 +259,16 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        min-height: 30px;
       }
     }
 
     .sm-buttons{
-      display: flex;
       justify-content: space-between;
       position: absolute;
-      bottom:15px;
       width: 80%;
       display: none;
+      bottom:-80px;
       a{
         border: 1px solid #3D3D3D;
         color:#3D3D3D;
@@ -407,7 +385,7 @@
 
       input {
         width: 100%;
-        background-color: #0B1E3A;  
+        background-color: #0B1E3A;
         color: #fff;
         padding: 0.75em 0.5em;
       }
@@ -418,8 +396,8 @@
 
       ul {
         padding: 0;
-        list-style: none;  
-            
+        list-style: none;
+
         a + ul {
           display: none;
           transition: 0.1s linear;
@@ -441,9 +419,9 @@
             padding-left: 1em;
           }
         }
-        
+
       }
-    } 
+    }
   }
   .focus {
     display: block;
