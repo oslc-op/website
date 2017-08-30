@@ -28,7 +28,7 @@
           </div>
         </section>
 
-        {{ partial "search.html" . }}
+        {{ partial "resources-search.html" . }}
 
         <section>
           <div class="container">
@@ -62,19 +62,13 @@
 
     <script>
       var el = document.querySelector('.container-small-items');
+
       var infScroll = new InfiniteScroll(el, {
-        path : '.pagination a[aria-label="Next"]',
-        append : '.rs-small-item',
-        history: false
+          path : '.pagination a[aria-label="Next"]',
+          append : '.rs-small-item',
+          history: false
       });
-    </script>
-    <script>
-      $(document).ready(function(){
-        $('.rs-small-item .sm-info').each(function(i, e){
-          var summary = $(e).text().slice(0, 220);
-          $(e).text('' + summary + '...');
-        })
-      })
+
     </script>
   </body>
 </html>
