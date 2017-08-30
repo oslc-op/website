@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page search">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <main class="results" id="results">
+          <div class="container">
+            {{ $siteCont := getJSON "/static/site.json" }}
+            
+            {{ range $siteCont }}
+              <div class="result-item" title="{{ .title }}">
+                <h1><a href="{{ .uri }}"> {{ .title }} </a></h1>
+                <p> {{ .content }} </p>
+              </div>
+            {{ end }}
+          </div>
+        </main>
+
+        <footer class="footer footer--inverse">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+    <script>
+      var matches = [];
+      var r = JSON.parse(window.localStorage.getItem('results'));
+      console.info('results passed are', r)
+
+      $('.results .result-item').each(function(index, elem){
+        $(elem).hide();
+        for (var i = 0; i < r.length; i++) {
+          if (elem.title === r[i].title) {
+            matches.push(elem)
+            $(elem).css('display', 'none')
+          }
+        }
+      })
+
+      $(matches).each(function(index, e){
+        $(e).css('display', 'block');
+      })
+    </script>
+  </body>
+</html>
