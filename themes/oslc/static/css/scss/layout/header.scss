@@ -54,6 +54,32 @@ header{
   }
 }
 
+.search-header{
+  position: absolute;
+  right: 25%;
+  top:35%;
+  @media screen and (min-width:760px){
+    right: 55%;
+  }
+  input{
+    color:#375178;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    border-bottom: 1px solid #375178;
+    transition: all .3s ease-out;
+    &:focus{
+      border-bottom:3px solid #375178;
+      outline: none;
+    }
+  }
+  button{
+    border:none;
+    background: #fff;
+    color: #375178;
+  }
+}
+
 @media screen and (min-width:760px){
   header {
     .links {
