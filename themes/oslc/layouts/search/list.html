@@ -14,13 +14,13 @@
         </header>
 
         <main class="results" id="results">
-          <div class="container">
+          <div class="container m-top">
             {{ $siteCont := getJSON "/static/site.json" }}
             
             {{ range $siteCont }}
               <div class="result-item" title="{{ .title }}">
                 <h1><a href="{{ .uri }}"> {{ .title }} </a></h1>
-                <p> {{ .content }} </p>
+                <div class="content-paragraph"> {{ .content }} </div>
               </div>
             {{ end }}
           </div>
@@ -52,6 +52,12 @@
       $(matches).each(function(index, e){
         $(e).css('display', 'block');
       })
+
+      console.log('Cantidad de parrafos', $('.content-paragraph'));
+      
+      $('.results .result-item .content-paragraph').each(function(index, element){
+        $clamp(element,{clamp: 5, useNativeClamp: false});
+    });
     </script>
   </body>
 </html>
