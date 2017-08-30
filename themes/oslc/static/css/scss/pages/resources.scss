@@ -261,10 +261,17 @@
 
     .sm-content{
       padding: 0px 15px;
+      position:relative;
+      /*&::after{
+        content: '...';
+        width: 80%;
+        position: absolute;
+        background: red;
+      }*/
 
-      .sm-info{
+      /*.sm-info{
         @include multiLineEllipsis($lineHeight: 1.5em, $lineCount: 3.8, $bgColor: white);
-      }
+      }*/
 
       .sm-author-date{
         display: flex;
@@ -272,7 +279,7 @@
         color: #B8B8B8;
         line-height: 3;
         transition: all 1s ease;
-        bottom:0;
+        bottom:-55px;
         position:absolute;
         width: 85%;
       }
@@ -281,16 +288,16 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        min-height: 30px;
       }
     }
 
     .sm-buttons{
-      display: flex;
       justify-content: space-between;
       position: absolute;
-      bottom:15px;
       width: 80%;
       display: none;
+      bottom:-80px;
       a{
         border: 1px solid #3D3D3D;
         color:#3D3D3D;
