@@ -48,6 +48,15 @@
         ]
     },
     {
+        "uri": "/../resources/oslc4js",
+        "title": "OSLC4JS",
+        "content": "\nOSLC4JS is a set of related open source projects that support the creation and integration of Open Services for Lifecycle Collaboration (OSLC)-based client and server applications that leverage JavaScript and Node.js capabilities. OSLC4JS projects cover the complete end-to-end capabilities required to build, extend, and integrate web apps that exploit OSLC integration capabilities and linked data resources.\n\nWhy should I contribute?\n\nBecause you’ll see a lot of benefits. Developers will find that it makes it easy to add OSLC capabilities to any Node or Express Web application, including client and server components of that application. It will help you extend and integrate OSLC applications to support end-user scenarios and comprehensive cross-tool governance. \n\nGo\n",
+        "tags": [
+            "tool",
+            "no-tutorial"
+        ]
+    },
+    {
         "uri": "/../resources/presentation-20171109",
         "title": "Tasktop: Helping a Center of Excellence live up to its name",
         "content": "\nTasktop Sync Case Study on enabling the customer to increase both velocity AND quality.\n\nView\n",
