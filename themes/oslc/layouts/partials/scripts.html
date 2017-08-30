@@ -22,7 +22,7 @@
   var pagesIndex;
 
   function initLunr() {
-    $.getJSON(baseurl + "resources/resources.json")
+    $.getJSON(baseurl + "site.json")
       .done(function (index) {
         pagesIndex = index;
         lunrIndex = lunr(function(){
@@ -59,8 +59,10 @@
   }
 
   function results(r) {
-    var matches = [];
-    console.info(r)
+    console.info('results are', r);
+    window.localStorage.setItem('results', JSON.stringify(r));
+
+    window.location.href = baseurl + 'search';
   }
 
   initLunr();

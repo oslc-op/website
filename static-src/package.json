@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "4.17.4",
     "lunr-hugo": "0.1.2"
   }
 }
