@@ -37,6 +37,13 @@
     <script>
       var matches = [];
       var r = JSON.parse(window.localStorage.getItem('results'));
+
+      if (!r) {
+        $('.results .container').prepend("<h2>No results found</h2>")
+      } else {
+        $('.results .container').prepend("<h2>" + r.length + " results found</h2>")
+      }
+
       console.info('results passed are', r)
 
       $('.results .result-item').each(function(index, elem){
@@ -52,8 +59,6 @@
       $(matches).each(function(index, e){
         $(e).css('display', 'block');
       })
-
-      console.log('Cantidad de parrafos', $('.content-paragraph'));
       
       $('.results .result-item .content-paragraph').each(function(index, element){
         $clamp(element,{clamp: 5, useNativeClamp: false});

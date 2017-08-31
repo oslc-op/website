@@ -40,7 +40,7 @@ function search(query) {
   });
 }
 
-function results(r) {
+function resultsPage(r) {
   console.info('results are', r);
   window.localStorage.setItem('results', JSON.stringify(r));
 
@@ -56,14 +56,14 @@ $(document).ready(function(){
   $('#search-input-site').keypress(function(e){
     if (e.which === 13) {
       result = search($(this).val());
-      results(result)
+      resultsPage(result)
     }
   })
 
   $('#search-button-site').click(function(){
     var searchBy = $('#search-input-site').val();
     result = search(searchBy);
-    results(result)
+    resultsPage(result)
   })
 
 });
