@@ -1,5 +1,6 @@
 +++
 categories = []
+category = "article"
 date = "2015-11-17T20:00:00+02:00"
 author = ""
 author_uri = ""
