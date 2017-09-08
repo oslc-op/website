@@ -44,7 +44,7 @@ If you're building an OSLC consumer application, you'll learn how to:
 
 The tutorial has working sample applications and [detailed instructions for running them](http://open-services.net/resources/tutorials/integrating-products-with-oslc/running-the-examples/).
 
-# Why developr OSLC applications
+# Why develop OSLC applications
 
 Integrating software is hard; we want it to be easier. And we need your help.
 
