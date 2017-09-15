@@ -1,5 +1,6 @@
 +++
 categories = ["tutorial"]
+category = "tutorial"
 date = "2017-06-21T20:57:23+02:00"
 author = "OSLC Community"
 author_uri = ""
@@ -43,7 +44,7 @@ If you're building an OSLC consumer application, you'll learn how to:
 
 The tutorial has working sample applications and [detailed instructions for running them](http://open-services.net/resources/tutorials/integrating-products-with-oslc/running-the-examples/).
 
-# Why developr OSLC applications
+# Why develop OSLC applications
 
 Integrating software is hard; we want it to be easier. And we need your help.
 

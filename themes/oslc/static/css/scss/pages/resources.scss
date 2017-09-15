@@ -220,6 +220,20 @@
     .sm-info{
       overflow: hidden;
       height: 120px;
+      p{
+        position: relative;
+        max-height: 108px;
+        overflow: hidden;
+        &::after{
+          content:"...";
+          width: 100%;
+          height: 20px;
+          background:white;
+          position:absolute;
+          bottom: 0;
+          right: 0
+        }
+      }
     }
 
     .sm-header--blue{background: #418EEB;}
