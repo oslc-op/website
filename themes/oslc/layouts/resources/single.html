@@ -16,9 +16,7 @@
         <main class="resource-post">
           {{ if in .Params.tags "tutorial" }}
           <aside class="sidebar-post">
-            <div class="search">
-              <input id="search-tutorial" type="text" placeholder="Search this tutorial">
-            </div>
+
             <div class="table-of-contents">
                 {{ .TableOfContents }}
             </div>
@@ -69,10 +67,6 @@
     {{ partial "scripts.html" }}
     <script>
       $(document).ready(function(){
-
-        $('#search-tutorial').keyup(function(){
-          search = $('#search-tutorial').val();
-        })
 
         $('nav > ul > li > a').click(function(event){
           $(this).siblings('ul').css('display', 'block');
