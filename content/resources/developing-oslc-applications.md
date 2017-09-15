@@ -15,7 +15,7 @@ Open Services for Lifecycle Collaboration (OSLC) is a community that writes spec
 
 For a high-level overview of how to add OSLC support to software, we recommend our video "[Getting started on implementing OSLC](http://www.youtube.com/watch?v=-oXqudLmNMI)":
 
-{{< youtube oXqudLmNMI >}}
+{{< youtube -oXqudLmNMI >}}
 
 The description on YouTube includes a table of contents and links to references.
 
