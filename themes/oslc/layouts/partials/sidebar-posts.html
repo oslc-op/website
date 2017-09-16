@@ -32,7 +32,7 @@
   {{ range first 4 .Data.Pages.ByPublishDate }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
+      <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" alt="">
     </div>
     <div class="item__info">
       <span class="name">{{ .Title }}</span>
