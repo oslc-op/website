@@ -126,6 +126,15 @@ function results(r) {
     }
   })
 
+  if (!r.length) {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">0 items found</h1>')
+  } else if (r.length == 1) {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">1 item found</h1>')
+  } else {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">'+ r.length + ' items found</h1>')
+  }
+  
+
   $(matches).each(function(index, e){
     $(e).css('display', 'block');
   })

@@ -39,9 +39,11 @@
       var r = JSON.parse(window.localStorage.getItem('results'));
 
       if (!r) {
-        $('.results .container').prepend("<h2>No results found</h2>")
+        $('.results .container').prepend("<h2>0 items found</h2>")
+      } else if (r.length == 1) {
+        $('.results .container').prepend("<h2> 1 item found</h2>")
       } else {
-        $('.results .container').prepend("<h2>" + r.length + " results found</h2>")
+        $('.results .container').prepend("<h2>" + r.length + " items found</h2>")
       }
 
       console.info('results passed are', r)
