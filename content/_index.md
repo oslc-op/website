@@ -14,11 +14,11 @@ titleStat = "Be part of our community"
 descStat = "We have a variety of ways to get involved with the OSLC community. Whether you are a software developer, systems integrator, tool vendor or buyer, consultant, analyst, or open source enthusiast, there is value both in flexibility and cost savings of contributing to the community based around open interfaces."
 
 
-caseContent1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum error libero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+caseContent1 = "OSLC enables you to choose the best tools, independent of vendor and version, for your job and have them interact seamlessly to achieve traceability and visibility with the rest of your organization"
 
-caseContent2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum erroribero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+caseContent2 = "OSLC frees you to focus on your core competencies by enabling you to create software using reusable and open assets that will interoperate with other tools both inside and outside your influence providing time and cost savings."
 
-caseContent3 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum errorlibero, magnam maiores provident voluptas? Aperiam consectetur, eius eligendi eum libero nemo optio, porro praesentium quia quod reiciendis sint!"
+caseContent3 = "OSLC enables users, developers and third parties to realize increased value and opportunity through improved and open integration of software, and it incites innovation in both software and service communities"
 
 resourcesTitle = "Resources"
 resourcesContent = "Seeing is doing, so come and learn how to do things. In the resources section of the site, you will find various resources to help including tutorials, videos, articles, and presentations."
