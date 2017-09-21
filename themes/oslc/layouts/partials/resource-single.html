@@ -1,4 +1,4 @@
-<div class="rs-small-item {{ .Params.category }}" title="{{ .Title }}">
+<div class="rs-small-item {{ .Params.category }}" itemtype="{{ .Params.category }}" title="{{ .Title }}">
   {{ if in .Params.tags "article" }}
   <div class="sm-header--orange">
     <span class="fa fa-file-text"></span>
@@ -13,12 +13,12 @@
   {{ end }}
   {{ if in .Params.tags "presentation" }}
   <div class="sm-header--green">
-    <span class="fa fa-line-chart"></span>
+    <span class="fa fa-line-chart"></span>  
     <h3 class="title-item">Presentation</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "tool" }}
-  <div class="sm-header--blue" style="background-color: #d96d50 !important;">
+  <div class="sm-header--blue" style="background-color: #E2866F !important;">
     <span class="fa fa-cogs"></span>
     <h3 class="title-item">Tool</h3>
   </div>

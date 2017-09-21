@@ -6,7 +6,7 @@ layoutDir = "partials"
 disableLiveReload = false
 watch = true
 uglyURL = true
-paginate = 6
+paginate = 15
 
 disqusShortname = "yourdiscussshortname"
 disqus_identifier = ""
