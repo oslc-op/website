@@ -9,7 +9,7 @@
     <div class="news__container">
       {{ range first 4 (where .Site.Pages.ByPublishDate "Type" "=" "news") }}
       <div class="news__item">
-        <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important">
+        <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important; background-size: cover;">
           <h3 class="new__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         </div>
         <div class="new__info">
