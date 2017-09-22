@@ -152,6 +152,10 @@ $color-link: #3D3D3D;
       width: 25%;
       height: 65px;
       overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     .item__info{
