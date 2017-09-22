@@ -4,7 +4,7 @@ date = "2015-11-17T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["adapters", "announcements", "plm"]
 title = "PROSTEP AG Announces OpenPDM OSLC Adapter"
-banner = "img/sven-brandsma-342430.jpg"
+banner = "img/jan-kahanek-184676.jpg"
 author_uri = ""
 +++
 

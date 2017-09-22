@@ -5,7 +5,7 @@ author = "Nelson Jean"
 author_uri = ""
 tags = ["election", "oasis", "steering committee"]
 title = "New OASIS OSLC Steering Committee Announced"
-banner = "img/sven-brandsma-342430.jpg"
+banner = "img/jan-kahanek-184676.jpg"
 
 +++
 

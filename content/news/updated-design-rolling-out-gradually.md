@@ -4,7 +4,7 @@ date = "2015-03-06T10:00:00+02:00"
 author = "Lee Reamsnyder"
 tags = ["github", "meta", "redesign", "website"]
 title = "Pardon our dust: updated design rolling out gradually"
-banner = "img/sven-brandsma-342430.jpg"
+banner = "img/jan-kahanek-184676.jpg"
 author_uri = ""
 +++
 

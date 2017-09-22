@@ -5,7 +5,7 @@ author = "Rainer Ersch"
 author_uri = "https://github.com/rersch"
 tags = []
 title = "ALM-PLM Interoperability Survey"
-banner = "img/sven-brandsma-342430.jpg"
+banner = "img/jan-kahanek-184676.jpg"
 +++
 
 If you are interested in ALM-PLM Interoperability, please participate in this survey - ALM / PLM Interoperability and OSLC questionnaire, https://vpe-umfrage.mv.uni-kl.de/index.php/748615/lang-en .
