@@ -6,6 +6,7 @@ tags = ["steering committee", "surveys"]
 title = "OLSC Survey Provides Insights into Needs for Software Integration Standards"
 banner = "img/jan-kahanek-184676.jpg"
 author_uri = ""
+url = "news/oslc-survey-provides-insights-software-integration-standards/"
 +++
 
 The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.

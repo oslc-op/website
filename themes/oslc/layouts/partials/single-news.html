@@ -20,7 +20,8 @@
     </div>
     <div class="post__footer">
       <div class="post__share">
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a>
+        <!--a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a-->
+        <div class="fb-share-button" data-href="https://oslc.github.io/{{ .URL }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?{{ .Permalink }}">Share</a></div>
         <a href="https://twitter.com/home?status={{ .Permalink }}" title="Tweet this"><span class="fa fa-twitter"></span></a>
         <a href="https://plus.google.com/share?url={{ .Permalink }}" title="Share on Google+"><span class="fa fa-google-plus"></span></a>
       </div>
@@ -30,7 +31,7 @@
   <script type="text/javascript">
     DiscourseEmbed = { discourseUrl: 'https://discourse.oslc.co/',
                        discourseEmbedUrl: '{{ .Permalink }}' };
-  
+
     (function() {
       var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
       d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
