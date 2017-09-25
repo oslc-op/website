@@ -8,9 +8,9 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 
 titleUsers = "Users"
 imgUsers = "https://unsplash.it/100"
-contentUsers1 = "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH! "
+contentUsers1 = "OSLC enables you to choose the best tools, independent of vendor and version, for your job and have them interact seamlessly to achieve traceability and visibility with the rest of your organization."
 imageUser = "https://unsplash.it/800/400"
-contentUsers2 = "Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH! "
+contentUsers2 = "For instance, a QA professional can view requirements that are managed by a requirements management tool, and create live links between test cases and requirements, without leaving the test management tool. Mock quote: Thanks to OSLC, I can simply follow links to navigate between related requirements, design elements, work items and test cases across our multi-vendor toolset. Mock quote: “Because of historic integration problems, we used to have to use back levels of all the tools. With our OSLC-enabled toolset we use the latest releases of our preferred software and still have integration with the rest of our organization"
 
 titleVendors = "Vendors"
 imgVendors = "https://unsplash.it/100"
@@ -21,7 +21,7 @@ contentVendors3 = "Mock quote: OSLC allows us to improve our time-to-market of o
 
 titleDevelopers = "Developers"
 imgDevelopers = "https://unsplash.it/100"
-contentDevelopers1 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod"
+contentDevelopers1 = "OSLC reduces the complexity and risk of increasingly complex software infrastructures, and improves the value of software across a broader set of internal and external stakeholders"
 imageDeveloper = "https://unsplash.it/800/400"
-contentDevelopers2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod"
+contentDevelopers2 = "For example, you will be better able to integrate disjointed workflows and reuse information more efficiently, while at the same time reducing the integration costs and proprietary concerns attributed to the use of less open software. Mock quote: Software, and it’s integration, is a cost of creating our products. OSLC helps minimize that cost while also improving and increasing our capabilities. OSLC helps us deliver better quality products sooner."
 +++
