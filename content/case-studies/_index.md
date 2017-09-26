@@ -4,7 +4,7 @@ tags = []
 title = "Case Studies"
 draft = false
 type = "Case"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod"
+description = "A set of personas and user stories representing the kinds of people who should care about OSLC, will make it easier to determine what messages we want to send, and what channels we should use to send them."
 
 titleUsers = "Users"
 imgUsers = "https://unsplash.it/100"
