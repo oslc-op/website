@@ -58,3 +58,18 @@ Also, for display single elements of that url like `oslc-site/example/single-ite
 The difference between `list.html` and `single.html` is that the first is used to display the template of a page and the second is used for the posts.
 
 For reference you can copy the content from `/content/example` and `/themes/oslc/layouts/example` to your new page and update depending on what you need
+
+# How to add new work group content
+
+If you want to add a new page for a workgroup you have to create a markdown file with this attributes in the Front Matter section in the `/content/workgroups` folder
+
+```
+date
+author
+author_uri
+tags
+title
+description
+```
+
+You can look the another files in that folder to see an example working
