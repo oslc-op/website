@@ -44,6 +44,10 @@ p, a {
 
 .m-top{
   margin-top:110px;
+
+  &--small {
+    margin-top: 40px !important;
+  }
 }
 
 @media (min-width: 1200px) {

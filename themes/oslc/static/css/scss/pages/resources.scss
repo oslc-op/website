@@ -311,6 +311,40 @@
   }
 }
 
+.workgroup-small-item {
+  height: 240px !important; 
+
+  .sm-header--wg{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px;
+  
+    span {
+      font-size: 40px;
+      opacity: 0.7;
+    }
+  
+    h3 {
+      margin: 10px;
+      font-size: 20px !important;
+    }
+  }
+
+  .sm-info {
+    padding-top: 10px !important;
+    height: 60px !important;
+  }
+  
+  &:first-child .sm-header--wg { background: #418EEB !important; }
+  
+  &:nth-child(odd) .sm-header--wg {background: #28BD84; }
+  
+  &:nth-child(even) .sm-header--wg {background: #D96B50; }
+  
+  &:last-child .sm-header--wg {background: #3D3D3D; }
+}
+
 @media screen and (min-width: 760px){
   .rs-search{
     flex-direction: row;
