@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "notification-bar.html" . }}
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="page" class="page">
+
+        <header>
+
+          {{ partial "header.html" . }}
+
+        </header>
+
+        <section class="m-top">
+          <div class="sec-rs-header">
+            <div class="sec-rs-info">
+              <div class="container">
+                <h1 class="section__title white"> {{ .Title }} </h1>
+                <div class="sec-rs-header__content">
+                  <div class="big__paragraph">
+                    {{ .Content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- {{ partial "resources-search.html" . }} -->
+
+        <section>
+          <div class="container">
+
+            <div class="container-small-items">
+              {{ range .Paginator.Pages.ByPublishDate }}
+              {{ partial "workgroup-single.html" . }}
+              {{ end }}
+            </div>
+
+            <div class="paginator" style="display: none;">
+              {{ template "_internal/pagination.html" . }}
+            </div>
+
+          </div>
+        </section>
+
+        <footer class="footer footer--inverse">
+          {{ partial "footer.html" . }}
+        </footer>
+    </div>
+    <!-- /#all -->
+
+    <!-- scripts -->
+    {{ partial "scripts.html" }}
+
+    <!-- <script>
+      var el = document.querySelector('.container-small-items');
+
+      var infScroll = new InfiniteScroll(el, {
+          path : '.pagination a[aria-label="Next"]',
+          append : '.rs-small-item',
+          history: false
+      });
+
+      $(document).ready(function(){
+        $('.rs-small-item .sm-info').each(function(i, e){
+              var summary = $(e).text().slice(0, 220);
+             $(e).text('' + summary + '...');
+        })
+      })
+
+    </script> -->
+  </body>
+</html>
