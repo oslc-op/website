@@ -6,7 +6,7 @@ title = "OSLC at IBM InterConnect 2015"
 draft = false
 author = "Steve Speicher"
 author_uri = ""
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 url= "news/oslc-ibm-interconnect/"
 +++
 

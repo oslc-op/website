@@ -4,7 +4,7 @@ date = "2016-03-21T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["core", "oslc3"]
 title = "OSLC3 Update: What is it, how is it different, and why is it important?"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 author_uri = "news/oslc3-update-what-how-why-important/"
 url = "news/oslc3-update-what-how-why-important/"
 +++

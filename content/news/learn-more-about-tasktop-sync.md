@@ -5,7 +5,7 @@ author = "OSLC Administrator"
 author_uri = ""
 tags = ["announcements","software","tasktop"]
 title = "Learn more about Tasktop Sync 4.3 (July 2015)"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 url= "news/learn-more-about-tasktop-sync/"
 +++
 

@@ -5,7 +5,7 @@ author = "Rainer Ersch"
 author_uri = "https://github.com/rersch"
 tags = []
 title = "ALM-PLM Interoperability Survey"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 url= "news/alm-plm-interoperability-survey/"
 +++
 

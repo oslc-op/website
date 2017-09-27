@@ -5,7 +5,7 @@ author = "OSLC Administrator"
 author_uri = ""
 tags = ["announcements","software","tasktop"]
 title = "Learn more about Tasktop Sync 4.3 (July 2015)"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 +++
 
 Tasktop, the leader in Software Lifecycle Integration (SLI) and creator of the Eclipse Mylyn open source tool, today announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.

@@ -5,7 +5,7 @@ author = "Nelson Jean"
 author_uri = ""
 tags = ["election", "oasis", "steering committee"]
 title = "New OASIS OSLC Steering Committee Announced"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 +++
 
 The September 2015 elections for the OASIS OSLC Steering Committee have concluded -- congratulations to the new and re-elected members!  

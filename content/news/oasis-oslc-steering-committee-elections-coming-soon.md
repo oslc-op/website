@@ -5,7 +5,7 @@ author = "Nelson Jean"
 author_uri = ""
 tags = ["community", "election", "members", "oasis"]
 title = "OASIS OSLC Steering Committee Elections Coming Soon"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 url= "news/oasis-oslc-steering-committee-elections-coming-soon/"
 +++
 

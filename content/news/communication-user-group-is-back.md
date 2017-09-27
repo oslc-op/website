@@ -5,7 +5,7 @@ author = "OSLC Administrator"
 author_uri = ""
 tags = ["communications","social","user group"]
 title = "Extra, Extra, Communication User Group is Back"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 url= "news/communication-user-group-is-back/"
 +++
 

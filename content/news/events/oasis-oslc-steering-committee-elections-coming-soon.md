@@ -5,7 +5,7 @@ author = "Nelson Jean"
 author_uri = ""
 tags = ["community", "election", "members", "oasis"]
 title = "OASIS OSLC Steering Committee Elections Coming Soon"
-banner = "img/jan-kahanek-184676.jpg"
+banner = "img/news-default.jpg"
 +++
 
 Whether you live in the I/T or Systems world, software integration in heterogeneous environments can represent both a challenge (where do I even start?) and opportunity (how can I advance my environment to provide more value, deliver faster and with reduced risk?).
