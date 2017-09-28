@@ -22,8 +22,14 @@
       <div class="post__share">
         <!--a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a-->
         <div class="fb-share-button" data-href="https://oslc.github.io/{{ .URL }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?{{ .Permalink }}">Share</a></div>
-        <a href="https://twitter.com/home?status={{ .Permalink }}" title="Tweet this"><span class="fa fa-twitter"></span></a>
-        <a href="https://plus.google.com/share?url={{ .Permalink }}" title="Share on Google+"><span class="fa fa-google-plus"></span></a>
+
+        <a class="tw-share customer share" href="https://twitter.com/home?status=https://oslc.github.io/{{ .URL }}" title="Tweet this" target="_blank"><span class="fa fa-twitter"></span></a>
+
+        <a class="in-share customer share" href="https://www.linkedin.com/shareArticle?mini=true&url=https://oslc.github.io/{{ .URL }}&title={{ .Title }}&summary=Look%20this%20awesome%20post" title="Share on Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+
+        <a class="ml-share" href="mailto:?&subject={{ .Title }}&body=https://oslc.github.io/{{ .URL }}" title="Share by email"><span class="fa fa-envelope" target="_blank"></span></a>
+
+
       </div>
     </div>
   </div>
