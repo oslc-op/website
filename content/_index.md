@@ -7,12 +7,23 @@ draft = false
 type = "home"
 description = "(Also known as the 'OSLC' open community)"
 
-title1="About"
-des1= "Organizations are experiencing extreme pressures for digital transformations in order to collect, communicate, validate, reason about and act on high volumes of data for innovative new competitive opportunities. Addressing this pressure requires a flexible, efficient, and effective means of planning, building, operating, assessing and managing potentially complex, rapidly changing, integrated solutions. OSLC is a community of cross-industry experts who explore common challenges to enable better software integrations. Our specifications are free to adopt, and we facilitate sample integrations. OSLC technologies are inspired by the Web, meaning they use open linked data standards, RESTful services, and base data connections on the power of the URL."
+title1 = "About"
+about1 = "Open Services for Lifecycle Collaboration (OSLC) is based on World Wide Web and Linked Data principles, such as those defined in the W3C Linked Data Platform [LDP], to create a cohesive set of specifications that can enable products, services, and other distributed network resources to interoperate successfully."
+about2 = "OSLC consists of a Hypermedia API standard and RDF-based specifications for data interoperability. We are an open community that works together on specifications, software, and initiatives to expose more data on the private and public Web to surface up the advantages of having better integration."
+more = "Learn more"
 
-titleStat = "Be part of our community"
-descStat = "We have a variety of ways to get involved with the OSLC community. Whether you are a software developer, systems integrator, tool vendor or buyer, consultant, analyst, or open source enthusiast, there is value both in flexibility and cost savings of contributing to the community based around open interfaces."
+title2 = "Hypermedia API"
+hypermedia1 = "Hypermedia APIs are the most powerful type of REST APIs. They embody the Web principles of flexibility, standardization, and loose coupling to a service. They scale better, are more easily changed and provide better discoverability to consumers of the API."
 
+title3 = "The OSLC Core Specification"
+corespec1 = "The OSLC Core Specification is a Hypermedia API standard currently mainly adopted in software and systems engineering domains, but with the potential to provide value to any domain with data integration challenges. The OSLC Core specifications expands on the W3C LDP capabilities, to define the essential and common technical elements of OSLC domain specifications and offers guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources."
+
+title4 = "Domain-Specific OSLC Specifications"
+domainsspec1 = "OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist of RDF vocabularies and OSLC resource shapes."
+domainsspec2 = "RDF vocabularies are used to describe standardized resource types and properties. OSLC resource shapes are used to define constraints such as multiplicity constraints on properties of specific resource types."
+
+title5 = "The OSLC Stack"
+stack1 = "OSLC builds on Web standards, from codified ones like HTTP and LDP, to de-facto ones like REST that power applications today."
 
 caseContent1 = "OSLC enables you to choose the best tools, independent of vendor and version, for your job and have them interact seamlessly to achieve traceability and visibility with the rest of your organization"
 
