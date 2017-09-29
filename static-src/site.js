@@ -38,6 +38,4 @@ site.setInput('../content/**/**');
 site.setOutput('../static/site.json');
 site.index();
 
-console.info(site);
-
 console.info('finish task')
