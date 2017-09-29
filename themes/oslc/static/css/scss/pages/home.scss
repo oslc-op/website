@@ -252,11 +252,14 @@
 }
 
 
-.sec-case{
+.sec-case {
   text-align:center;
   background: #fff;
   padding:40px 0px;
   h2{margin-bottom:30px;}
+  .section__image{
+      padding: 20px 0 20px 0;
+  }
   &__container{
     display: flex;
     flex-direction:column;
@@ -288,4 +291,8 @@
     text-align: center;
     margin-top: 40px;
   }
+}
+
+.sec-case2 {
+  background: #EFEFEF;
 }

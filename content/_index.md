@@ -25,6 +25,15 @@ domainsspec2 = "RDF vocabularies are used to describe standardized resource type
 title5 = "The OSLC Stack"
 stack1 = "OSLC builds on Web standards, from codified ones like HTTP and LDP, to de-facto ones like REST that power applications today."
 
+title6 = "Ecosystem"
+ecosystem1 = "OSLC moves beyond the borders of this site, with the ecosystem made up of developers working on implementations, specification working groups at OASIS and the W3C, and passionate individuals and organisations that get behind the cause of data integration and interoperability."
+
+title7 = "Solutions"
+solutions1 = "OSLC is a foundational pillar of data integration solutions, and opens up a whole new set of possibilities for applications on the Web."
+
+title8 = "Implementations"
+implementations1 = "OSLC is already being used in a number of real-world scenarios... Introduce native and adapters"
+
 caseContent1 = "OSLC enables you to choose the best tools, independent of vendor and version, for your job and have them interact seamlessly to achieve traceability and visibility with the rest of your organization"
 
 caseContent2 = "OSLC frees you to focus on your core competencies by enabling you to create software using reusable and open assets that will interoperate with other tools both inside and outside your influence providing time and cost savings."

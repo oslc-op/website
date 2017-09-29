@@ -1,15 +1,14 @@
-<div class="resources">
-    <div class="resources-top">
-        <div class="container">
-            <div class="">
-                <h2 class="section__title white">{{ .Params.title3 }}</h2>
-                <p class="resource-description big__paragraph resources__subtext">
-                  {{ .Params.corespec1}}
-                </p>
-            </div>
-            <div class="">
-                <img src="{{ .Site.BaseURL }}/img/oslc-core-overview.png" alt="">
-            </div>
-        </div>
+<section class="sec-case sec-case2">
+  <div class="container">
+    <div class="">
+      <h2 class="section__title">{{ .Params.title3 }}</h2>
+      <p class="big__paragraph">
+        {{ .Params.corespec1 }}
+      </p>
     </div>
-</div>
+    <div class="section__image">
+        <img src="{{ .Site.BaseURL }}/img/oslc-core-overview.png" alt="">
+    </div>
+    <a href="{{ .Site.BaseURL }}about/" class="btn btn-oslc">{{ .Params.more }}</a>
+  </div>
+</section>
