@@ -12,6 +12,7 @@
       <label for="filter">Filter</label>
       <select name="options" id="filter-by">
         <option disabled selected>Select an option</option>
+        <option value="all">All</option>
         <option value="article">Article</option>
         <option value="presentation">Presentation</option>
         <option value="tool">Tool</option>
@@ -112,17 +113,24 @@
       var matches = [];
       filterBy = $("select option:selected").text().toLowerCase();
       
-      $('#resource-hero').css('display', 'none');
+      if (filterBy == 'all') {
+        $('.rs-small-item').css('display', 'block');
+        $('#resource-hero').css('display', 'block');
+      } else {
+        $('#resource-hero').css('display', 'none');
       
-      $('.rs-small-item').each(function(index, elem){
-        if ($(elem).attr('itemtype') === filterBy){
-          console.info($(elem).attr('itemtype'));
-          $(elem).css('display', 'block');
-          
-        } else {
-          $(elem).css('display', 'none');
-        }
-      })
+        $('.rs-small-item').each(function(index, elem){
+          if ($(elem).attr('itemtype') === filterBy){
+            console.info($(elem).attr('itemtype'));
+            $(elem).css('display', 'block');
+            
+          } else {
+            $(elem).css('display', 'none');
+          }
+        })
+      }
+
+      
       
     });
 
