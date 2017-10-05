@@ -1,18 +1,16 @@
-<section class="sec-case">
-    <div class="container">
-        <div class="">
-          <h2 class="section__title">{{ .Params.title2 }}</h2>
-          <p class="big__paragraph">
-            {{ .Params.about1 }}
-          </p>
-        </div>
-        <div class="">
-          <p class="big__paragraph">
-            {{ .Params.hypermedia1 }}
-          </p>
-        </div>
-        <div class="section__image">
-            <img src="{{ .Site.BaseURL }}/img/hypermedia.png" alt="">
-        </div>
+<div class="story">
+  <div class="container">
+    <div class="story--content">
+      <h2 class="section__title">{{ .Params.title2 }}</h2>
+      <p class="big__paragraph">
+        {{ .Params.about1 }}
+      </p>
+      <p class="big__paragraph">
+        {{ .Params.hypermedia1 }}
+      </p>
     </div>
-</section>
+    <div class="story--image">
+        <img src="{{ .Site.BaseURL }}/img/hypermedia.png" alt="">
+    </div>
+  </div>
+</div>

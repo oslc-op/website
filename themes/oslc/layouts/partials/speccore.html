@@ -1,14 +1,16 @@
-<section class="sec-case sec-case2">
+<div class="story">
   <div class="container">
-    <div class="">
+    <div class="story--content">
       <h2 class="section__title">{{ .Params.title3 }}</h2>
       <p class="big__paragraph">
         {{ .Params.corespec1 }}
       </p>
     </div>
-    <div class="section__image">
+    <div class="story--image">
         <img src="{{ .Site.BaseURL }}/img/oslc-core-overview.png" alt="">
     </div>
-    <a href="{{ .Site.BaseURL }}about/" class="btn btn-oslc">{{ .Params.more }}</a>
+    <div class="story--button">
+      <a href="{{ .Site.BaseURL }}about/" class="btn btn-oslc">{{ .Params.more }}</a>
+    </div>
   </div>
-</section>
+</div>
