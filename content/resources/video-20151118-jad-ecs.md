@@ -3,6 +3,7 @@ category = "video"
 date = "2015-11-18T20:00:00+02:00"
 author = "Jad El-khoury"
 author_uri = ""
+banner = "/img/resources/video-20151118-jad-ecs.png"
 tags = ["video", "no-tutorial"]
 title = "Linked Data and OSLC for Tool Interoperability"
 
