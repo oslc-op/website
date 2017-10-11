@@ -2,9 +2,9 @@ RewriteEngine On
 
 RewriteBase   /
 
-# Vocabulary Index (redirect /ns/ -> a wiki page listing all vocabs
+# Vocabulary Index (redirect /ns/ -> a standalone page listing all vocabs
 RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
-RewriteRule ^$ wiki/core/Vocabulary-index/ [R=303]
+RewriteRule ^$ specifications/vocabularies/ [R=303]
 
 # Linked data basic profile (only machine-readable right now)
 RewriteRule ^basicProfile$ ns/basicProfile/ldbp.rdf [R=303]
