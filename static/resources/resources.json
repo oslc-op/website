@@ -111,6 +111,15 @@
         ]
     },
     {
+        "uri": "/../resources/video-20151118-jad-ecs",
+        "title": "Linked Data and OSLC for Tool Interoperability",
+        "content": "\nIn a lecture given in an OSLC workshop at the Embedded Conference Scandinavia, Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC. After watching the lecture, you will gain a solid understanding of the linked data fundamentals, have a comperehsive overview of various parts of OSLC and be ready to individually work through the workshop material for Eclipse Lyo, an SDK for implementing OSLC-compliant solutions.\n\nPart 1\n\nPart 2\n",
+        "tags": [
+            "video",
+            "no-tutorial"
+        ]
+    },
+    {
         "uri": "/../resources/website-20170825",
         "title": "Beyond PLM",
         "content": "\nA blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software. This has much information relevant for the OSLC community.\n\nVisit\n",
