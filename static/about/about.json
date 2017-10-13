@@ -52,28 +52,6 @@
         ]
     },
     {
-        "uri": "/../about/governance",
-        "title": "Governance",
-        "content": "\nSteering Comitee\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa.",
-        "tags": []
-    },
-    {
-        "uri": "/../about/governance2",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
-        "uri": "/../about/governance3",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
         "uri": "/../about/mission-mission",
         "title": "Mission",
         "content": "\nThe OSLC Community is intended to be an open community collaborating on integration challenges around lifecycle applications, capturing user scenarios for understanding and evolving related specifications for integrating software, and developing integration solutions and prototypes based on those specifications to share with the user community.\n",
@@ -94,26 +72,6 @@
         "uri": "/../about/mission",
         "title": "Our mission",
         "content": "\nAbout\n\nThe community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges.\n",
-        "tags": []
-    },
-    {
-        "uri": "/../about/organization1",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organization2",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organizations",
-        "title": "Organizations",
-        "content": "\nOrganizations",
         "tags": []
     },
     {

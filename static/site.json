@@ -58,28 +58,6 @@
         ]
     },
     {
-        "uri": "/../about/governance",
-        "title": "Governance",
-        "content": "\nSteering Comitee\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa.",
-        "tags": []
-    },
-    {
-        "uri": "/../about/governance2",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
-        "uri": "/../about/governance3",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
         "uri": "/../about/mission-mission",
         "title": "Mission",
         "content": "\nThe OSLC Community is intended to be an open community collaborating on integration challenges around lifecycle applications, capturing user scenarios for understanding and evolving related specifications for integrating software, and developing integration solutions and prototypes based on those specifications to share with the user community.\n",
@@ -100,26 +78,6 @@
         "uri": "/../about/mission",
         "title": "Our mission",
         "content": "\nAbout\n\nThe community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges.\n",
-        "tags": []
-    },
-    {
-        "uri": "/../about/organization1",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organization2",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organizations",
-        "title": "Organizations",
-        "content": "\nOrganizations",
         "tags": []
     },
     {
@@ -599,13 +557,15 @@
     {
         "uri": "/../workgroups/alm-plm-interoperability",
         "title": "ALM-PLM Interoperability",
-        "content": "\nThe User Group ALM-PLM Interoperability (2nd edition) aims to define industrial relevant scenarios for interoperability of ALM and PLM engineering environment to indicate gaps and potential extensions to the relevant OASIS OSLC technical committees. It builds on the work of the previous Working Group “ALM-PLM Interoperability (1st edition)” ",
-        "tags": []
+        "content": "\nThe working group ALM-PLM Interoperability (2nd edition) aims to define industrial relevant scenarios for interoperability of ALM and PLM engineering environment to indicate gaps and potential extensions to the relevant OASIS OSLC technical committees. It builds on the work of the previous Working Group “ALM-PLM Interoperability (1st edition)” \n\nWiki : \nIssues: \nForum : \nWorkgroup leads : \n",
+        "tags": [
+            "working group"
+        ]
     },
     {
         "uri": "/../workgroups/communications",
         "title": "Communications",
-        "content": "\nA user group to discuss, plan, and execute communications about the work of the Open Services for Lifecycle Collaboration (OSLC) community. The workgroup aims to build better visibility within the community of the work of the various workgroups; and to raise awareness of the value of the work of the community within the applications and middleware industry and its customers.",
+        "content": "\nA working group to discuss, plan, and execute communications about the work of the Open Services for Lifecycle Collaboration (OSLC) community. The workgroup aims to build better visibility within the community of the work of the various workgroups; and to raise awareness of the value of the work of the community within the applications and middleware industry and its customers.\n\nWiki : \nIssues: \nForum : \nWorkgroup leads : \n",
         "tags": [
             "user group"
         ]
@@ -613,24 +573,25 @@
     {
         "uri": "/../workgroups/human-factors",
         "title": "Human factors",
-        "content": "\nThe Human factors (HF) user group resources will define a set of use cases and scenarios that will feed the concepts necessary for exchange in order facilitate the use of human factors in systems engineering. The term 'systems engineering' is used to describe the interdisciplinary field of engineering that focuses on the design and management of a system over the whole lifecycle.\n\nHF is the application of human factors methods to develop systems with an effective, comfortable and user friendly design. HF seeks to avoid HF issues which are typically problems in which humans do not work with the system in a way as expected thus negatively impacting the overall system performance. When properly applied at the design stage, HF reduces situations where the human does not act or behave as expected. \n\nThe discipline of HF involves many methods such as data collection, task analysis, cognitive task analysis, human error identification, situation awareness analysis and interface analysis techniques. The implementation of these methods and the results they produce must be orchestrated around the existing design process of a project. HF is multidisciplinary and takes place across the entire lifecycle. The implementation of methods can only be done with meaningful input from the system design and for maximum effect; the results must be fed back into that design.",
+        "content": "\nThe Human factors (HF) working group resources will define a set of use cases and scenarios that will feed the concepts necessary for exchange in order facilitate the use of human factors in systems engineering. The term 'systems engineering' is used to describe the interdisciplinary field of engineering that focuses on the design and management of a system over the whole lifecycle.\n\nHF is the application of human factors methods to develop systems with an effective, comfortable and user friendly design. HF seeks to avoid HF issues which are typically problems in which humans do not work with the system in a way as expected thus negatively impacting the overall system performance. When properly applied at the design stage, HF reduces situations where the human does not act or behave as expected. \n\nThe discipline of HF involves many methods such as data collection, task analysis, cognitive task analysis, human error identification, situation awareness analysis and interface analysis techniques. The implementation of these methods and the results they produce must be orchestrated around the existing design process of a project. HF is multidisciplinary and takes place across the entire lifecycle. The implementation of methods can only be done with meaningful input from the system design and for maximum effect; the results must be fed back into that design.\n\nWiki : \nIssues: \nForum : \nWorkgroup leads : \n",
         "tags": [
-            "user group"
+            "working group"
         ]
     },
     {
         "uri": "/../workgroups/lifecycle-integration-patterns",
         "title": "Lifecycle Integration Patterns",
-        "content": "\nThis user group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges.\nExperience users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns. \n",
+        "content": "\nThis working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges.\nExperienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.\n\nWiki : https://github.com/OSLC/lifecycle-integration-patterns/wiki\nIssues: https://github.com/OSLC/lifecycle-integration-patterns/issues\nForum : http://discourse.oslc.co/c/working-groups/lifecycle-integration-patterns\nWorkgroup leads : Rainer Ersch, Wesley Coelho\n",
         "tags": [
-            "user group"
+            "working group"
         ]
     },
     {
         "uri": "/../workgroups/steering-committee",
         "title": "Steering Committee",
-        "content": "\nThe Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.\n\nAt oasis-open.org\n\n",
+        "content": "\nThe Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.\n\nAt oasis-open.org\n\nWiki : \nIssues: \nForum : \nWorkgroup leads : \n",
         "tags": [
+            "working group",
             "governance",
             "oasis"
         ]
