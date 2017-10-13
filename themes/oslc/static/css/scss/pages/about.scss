@@ -194,10 +194,9 @@
   margin-top: 120px;
   line-height: 1.6;
 
+  .why-active .why--item,
   .mission-active .mission--item,
-  .governance-active .governance--item,
   .people-active .people--item,
-  .organizations-active .organizations--item,
   .faq-active .faq--item{
     border-bottom: 4px solid #fff;
   }
@@ -227,10 +226,9 @@
     }
   }
 
+  .container.single-why,
   .container.single-mission,
-  .container.single-governance,
   .container.single-people,
-  .container.single-organizations,
   .container.single-faq {
     padding: 25px 0;
   }

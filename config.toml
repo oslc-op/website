@@ -22,7 +22,7 @@ disqus_url = ""
 [[menu.main]]
     name = "About"
     identifier = "about"
-    url  = "/about/mission"
+    url  = "/about/why"
     weight = 1
 
 [[menu.main]]

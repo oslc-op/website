@@ -101,6 +101,15 @@
         ]
     },
     {
+        "uri": "/../about/why",
+        "title": "Why OSLC?",
+        "content": "\nAdd content here...\n",
+        "tags": [
+            "value",
+            "why"
+        ]
+    },
+    {
         "uri": "/../case-studies/_index",
         "title": "Case Studies",
         "content": "",
