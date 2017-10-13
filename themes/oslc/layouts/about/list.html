@@ -18,9 +18,7 @@
           <div class="mission" id="mission">
             <nav class="mission__links">
               <a href="{{ .Site.BaseURL}}about/mission" class="mission__item">Mission</a>
-              <a href="{{ .Site.BaseURL}}about/governance" class="mission__item">Governance</a>
               <a href="{{ .Site.BaseURL}}about/people" class="mission__item">People</a>
-              <a href="{{ .Site.BaseURL}}about/organizations" class="mission__item">Organizations</a>
               <a href="{{ .Site.BaseURL}}about/faq" class="mission__item">FAQ</a>
             </nav>
 
@@ -54,34 +52,6 @@
             </div>
           </div>
 
-          <div class="governance" id="governance">
-            <div class="container container-flex">
-              <div class="governance__header">
-                <div class="governance__title">
-                  <h2>{{ .Params.governance_title }}</h2>
-                </div>
-                <div class="governance__slogan">
-                  {{ .Params.governance_slogan }}
-                </div>
-              </div>
-            </div>
-
-            <div class="container container-flex">
-              <div class="members">
-                <div class="members__title">
-                  <h3>{{ .Params.members_title }}</h3>
-                </div>
-                <div>
-                  {{ range .Data.Pages.ByPublishDate }}
-                    {{ if in .Params.tags "governance"}}
-                      {{ partial "governance.html" . }}
-                    {{ end}}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="people" id="people">
             <div class="container container-flex">
               <div class="people__title">
@@ -97,41 +67,6 @@
                   {{ partial "people.html" . }}
                 {{ end }}
               {{ end }}
-            </div>
-          </div>
-
-          <div class="organizations" id="organizations">
-            <div class="carousel">
-              <div class="container container-flex">
-                <div class="carousel__title">
-                  <h2>{{ .Params.organizations_title }}</h2>
-                </div>
-
-                <div class="carousel__content owl-carousel">
-                  {{ range .Data.Pages.ByPublishDate }}
-                    {{ if in .Params.tags "organization"}}
-                      {{ partial "organization.html" . }}
-                    {{ end }}
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="brands">
-            <div class="container container-flex">
-              <div class="brands__title">
-                <h2>{{ .Params.brands_title }}</h2>
-              </div>
-              <div class="container container-flex">
-                <div class="brands__row">
-                  {{ range .Data.Pages.ByPublishDate }}
-                    {{ if in .Params.tags "brand" }}
-                      {{ partial "brand.html" . }}
-                    {{ end }}
-                  {{ end }}
-                </div>
-              </div>
             </div>
           </div>
 
