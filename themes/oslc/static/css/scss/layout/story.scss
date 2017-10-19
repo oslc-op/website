@@ -44,3 +44,15 @@
     }
   }
 }
+
+@media screen and (max-width:768px){
+  .section--story {
+    .story {
+      .story--image {
+        img{
+          width:100%
+        } 
+      }
+    }
+  }
+}

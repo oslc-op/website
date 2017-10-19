@@ -5,18 +5,15 @@
         <img src="{{ .Site.BaseURL }}img/logo.png" alt="Logo">
       </a>
     </div>
-    <div class="menu-boton">
-      <a href="#"><span class="fa fa-bars fa-2x"></span></a>
-    </div>
-    <div class="search search-header">
-      <input id="search-input-site" type="text" placeholder="Search">
-      <button type="button" id="search-button-site">
-        <i class="fa fa-search" id="search.button-site"></i>
-      </button>
-      <!--input type="button"  value="Search"-->
-    </div>
     <div class="links">
       <div class="nav__links">
+        <div class="search search-header">
+          <input id="search-input-site" type="text" placeholder="Search">
+          <button type="button" id="search-button-site">
+            <i class="fa fa-search" id="search.button-site"></i>
+          </button>
+          <!--input type="button"  value="Search"-->
+        </div>
         {{ range .Site.Menus.main }}
           <a href="{{ .URL }}" class="nav__item">{{ .Name }}</a>
         {{ end }}
@@ -27,6 +24,9 @@
           <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
         </div>
       </div>
+    </div>
+    <div class="menu-button">
+      <span class="fa fa-bars fa-2x"></span>
     </div>
   </div>
 </nav>

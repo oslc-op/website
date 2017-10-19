@@ -15,7 +15,7 @@
 
     .mission__item {
       margin-right: 20px;
-      padding: 8px 0;      
+      padding: 11px 5px 8px;      
       text-transform: uppercase;
       color: #fff;
 
@@ -25,7 +25,7 @@
 
       &:hover {
         text-decoration: none;
-        border-bottom: 4px solid #fff;
+        border-bottom: 3px solid #fff;
       }
     }
   }
@@ -191,14 +191,14 @@
 }
 
 .single-about {
-  margin-top: 120px;
   line-height: 1.6;
 
   .why-active .why--item,
   .mission-active .mission--item,
   .people-active .people--item,
   .faq-active .faq--item{
-    border-bottom: 4px solid #fff;
+    box-sizing: border-box;
+    border-bottom: 3px solid #fff;
   }
 
   .sec-header{
