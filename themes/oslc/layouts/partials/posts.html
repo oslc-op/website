@@ -14,8 +14,10 @@
       <img src="{{.Site.BaseURL}}{{ .Params.banner }}" alt="">
     </div>
     <div class="post__paragraphs">
-      {{ .Summary }}
-      <a href="{{ .Permalink }}" class="post__button">Continue Reading</a>
+      <p>
+        {{ .Summary }}
+      </p>
+      <a href=" {{ .Permalink }}" class="post__button">Continue Reading</a>
     </div>
   </div>
   <div class="post__footer">
