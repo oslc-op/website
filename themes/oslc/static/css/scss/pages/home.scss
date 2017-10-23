@@ -246,6 +246,26 @@
 }
 
 @media screen and (max-width:769px) {
+  .hero-container {
+    .home-texture {
+      .hero {
+        padding: 20px 0 40px;
+
+        .title {
+          font-size: 44px;
+        }
+
+        .textline {
+          font-size: 20px;
+        }
+
+        .headline {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
   .news {
     .news__container {
       justify-content: center;
