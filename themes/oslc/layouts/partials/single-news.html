@@ -29,8 +29,10 @@
   </div>
   <div class="discourse-comments"></div>
   <script type="text/javascript">
+    var discourseEmbedUrl = window.location.href;
+    console.info(discourseEmbedUrl)
     DiscourseEmbed = { discourseUrl: 'http://discourse.oslc.co/',
-                       discourseEmbedUrl: window.location };
+                       discourseEmbedUrl: discourseEmbedUrl };
 
     (function() {
       var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
