@@ -5,6 +5,8 @@ author = ""
 author_uri = ""
 tags = ["presentation", "no-tutorial"]
 title = "Tasktop: Helping a Center of Excellence live up to its name"
+summary = "Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality."
+
 +++
 
 Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.

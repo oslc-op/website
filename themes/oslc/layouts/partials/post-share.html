@@ -1,0 +1,11 @@
+<div class="post__share">
+  <!-- <span>Share</span> -->
+  <!--a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a-->
+  <div class="fb-share-button" data-href="{{ .Site.BaseURL }}{{ .URL }}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?{{ .Permalink }}">Share</a></div>
+
+  <a class="tw-share customer share" href="https://twitter.com/home?status={{ .Title }} {{ .Site.BaseURL }}{{ .URL }} by @oslcNews" title="Tweet this" target="_blank"><span class="fa fa-twitter"></span></a>
+
+  <a class="in-share customer share" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Site.BaseURL }}{{ .URL }}&title={{ .Title }}&summary={{ .Params.summary }}" title="Share on Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+
+  <a class="ml-share" href="mailto:?&subject={{ .Title }}&body={{ .Site.BaseURL }}{{ .URL }}" title="Share by email"><span class="fa fa-envelope" target="_blank"></span></a>
+</div>

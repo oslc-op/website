@@ -6,6 +6,7 @@ author_uri = ""
 banner = "/img/resources/video-20151118-jad-ecs.png"
 tags = ["video", "no-tutorial"]
 title = "Linked Data and OSLC for Tool Interoperability"
+summary = "Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC"
 
 +++
 

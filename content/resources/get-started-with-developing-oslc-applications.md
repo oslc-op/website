@@ -5,6 +5,7 @@ author = "OSLC Community"
 author_uri = ""
 tags = ["tutorial"]
 title = "Get started with developing OSLC applications"
+summary = ""
 
 +++
 _“OSL-whaaaat now?”_

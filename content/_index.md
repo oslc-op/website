@@ -51,6 +51,7 @@ resourcesArticlesText = "There is an abundance of articles related to OSLC out t
 resourcesPresentationsText = "Whether you are a slides fanatic, or need something to show off OSLC, we have options for you."
 resourcesVideosText = "Learn by watching and listening. We'll surface up the best videos on the OSLC community."
 
+titleNews = "Latest News"
 descriptionNews = "Find out all the latest happenings in the OSLC community. This could be site announcements, software news, stories from the wider OSLC ecosystem, and more."
 
 +++

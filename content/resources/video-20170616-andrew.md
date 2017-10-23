@@ -5,6 +5,7 @@ author = "Andrew Berezovskyi"
 author_uri = ""
 tags = ["video", "no-tutorial"]
 title = "New and updated tools in Eclipse Lyo: Toolchain Designer & Lyo Store"
+summary = "The latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains"
 
 +++
 

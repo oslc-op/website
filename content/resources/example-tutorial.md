@@ -5,6 +5,8 @@ author = "OSLC Community"
 author_uri = ""
 tags = ["tutorial"]
 title = "Example tutorial"
+summary = ""
+
 +++
 
 # A title of section

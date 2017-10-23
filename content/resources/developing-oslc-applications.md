@@ -5,6 +5,8 @@ author = "OSLC Community"
 author_uri = ""
 tags = ["tutorial"]
 title = "Developing OSLC Applications"
+summary = "Tips for building an OSLC provider, and building an OSLC consumer application."
+
 +++
 
 # Get started with developing OSLC applications
