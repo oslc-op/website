@@ -5,6 +5,7 @@ tags = []
 title = "About"
 about_title = "About"
 about_leadin = "This is OSLC. Learn more."
+why_title = "Why OSLC?"
 mission_title = "Our Mission"
 people_title = "People"
 people_headline = "Lorem ipsum dolor sit amet, consectetur adipisicing elit"

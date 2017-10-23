@@ -120,6 +120,15 @@
         ]
     },
     {
+        "uri": "/../resources/video-20170616-andrew",
+        "title": "New and updated tools in Eclipse Lyo: Toolchain Designer & Lyo Store",
+        "content": "\nIn this video, Andrew Berezovskyi, a Lyo project lead will describe the latest\nsupport tools that were contributed to Eclipse Lyo, which will further aim the\ndevelopment of OSLC adaptors and toolchains.\n\n{{ youtube tZxPzlSTdeM }}\n\nLyo is an Eclipse project aimed at helping the community adopt OSLC\nspecifications and build OSLC-compliant tools. Learn more about Lyo on\nhttps://www.eclipse.org/lyo/",
+        "tags": [
+            "video",
+            "no-tutorial"
+        ]
+    },
+    {
         "uri": "/../resources/website-20170825",
         "title": "Beyond PLM",
         "content": "\nA blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software. This has much information relevant for the OSLC community.\n\nVisit\n",

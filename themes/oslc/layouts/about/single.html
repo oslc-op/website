@@ -11,8 +11,11 @@
     {{ partial "header.html" . }}
   </header>
 
-  <main class="single-about">
+  <main class="single-about m-top">
     <div class="mission">
+      {{ if in .Params.categories "why" }}
+        <nav class="mission__links why-active">
+      {{ end }}
       {{ if in .Params.categories "mission" }}
         <nav class="mission__links mission-active">
       {{ end }}
@@ -22,6 +25,7 @@
       {{ if in .Params.categories "faq" }}
         <nav class="mission__links faq-active">
       {{ end }}
+        <a href="{{ .Site.BaseURL}}about/why" class="mission__item why--item">Why OSLC?</a>
         <a href="{{ .Site.BaseURL}}about/mission" class="mission__item mission--item">Mission</a>
         <a href="{{ .Site.BaseURL}}about/people" class="mission__item people--item">People</a>
         <a href="{{ .Site.BaseURL}}about/faq" class="mission__item faq--item">FAQ</a>
@@ -40,6 +44,11 @@
         </div>
       </div>
     </div>
+    {{ if in .Params.categories "why" }}
+      <div class="container container-flex single-why">
+        {{ .Content }}  
+      </div>
+    {{ end }}
     {{ if in .Params.categories "mission" }}
       <div class="container container-flex single-mission">
         {{ .Content }}  
