@@ -1,4 +1,4 @@
-baseURL = "https://oslc.github.io/"
+baseURL = "http://oslc.co/"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
 theme = "oslc"
