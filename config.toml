@@ -1,4 +1,4 @@
-baseURL = "http://oslc.co/"
+baseURL = "/"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
 theme = "oslc"
