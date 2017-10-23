@@ -248,3 +248,18 @@ $color-link: #3D3D3D;
   background: #2D4467;
   padding:40px 0px;
 }
+
+@media screen and (max-width: 768px){
+  .posts {
+    padding-right: 0;
+  }
+
+  .post__footer {
+    font-size: 12px;
+
+    .post__time-reading, .post_share {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
