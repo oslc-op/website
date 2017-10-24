@@ -320,7 +320,7 @@ table th {
   .section--story .story .story--image img.small {
     width: 60%; }
   .section--story .story .story--image img.smaller {
-    width: 40%; } }
+    width: 50%; } }
 @media screen and (max-width: 768px) {
   .section--story .story .story--image img {
     width: 100%; } }
