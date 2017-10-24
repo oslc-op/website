@@ -310,6 +310,17 @@ table th {
   display: flex;
   justify-content: center; }
 
+@media screen and (min-width: 769px) {
+  .section--story .story .story--image img {
+    width: 100%; }
+  .section--story .story .story--image img.medium {
+    width: 75%; }
+  .section--story .story .story--image img.small-medium {
+    width: 68%; }
+  .section--story .story .story--image img.small {
+    width: 60%; }
+  .section--story .story .story--image img.smaller {
+    width: 40%; } }
 @media screen and (max-width: 768px) {
   .section--story .story .story--image img {
     width: 100%; } }

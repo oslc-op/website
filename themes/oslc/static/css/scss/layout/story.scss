@@ -45,6 +45,34 @@
   }
 }
 
+@media screen and (min-width:769px) {
+  .section--story {
+    .story {
+      .story--image {
+        img {
+          width: 100%;
+
+          &.medium {
+            width: 75%;
+          }
+
+          &.small-medium {
+            width: 68%;
+          }
+
+          &.small {
+            width: 60%;
+          }
+
+          &.smaller {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width:768px){
   .section--story {
     .story {
