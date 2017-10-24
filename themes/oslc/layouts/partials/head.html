@@ -9,11 +9,14 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Description }}" />
   <meta property="og:image" content="https://oslc.github.io/img/logo.png" />
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:description" content="{{ .Description }}" />
   <meta property="twitter:title" content="{{ .Title }}" />
-  <meta property="twitter:image" content="https://oslc.github.io/img/logo.png" />
-
+  <meta property="twitter:image" content="http://oslc.co{{- .Params.banner -}}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@oslc">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:image" content="http://oslc.co{{- .Params.banner -}}">
 
   {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
