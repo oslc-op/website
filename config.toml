@@ -1,4 +1,4 @@
-baseURL = "https://oslc.github.io/"
+baseURL = "/"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
 theme = "oslc"
@@ -22,7 +22,7 @@ disqus_url = ""
 [[menu.main]]
     name = "About"
     identifier = "about"
-    url  = "/about/mission"
+    url  = "/about/why"
     weight = 1
 
 [[menu.main]]

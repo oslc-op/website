@@ -1,0 +1,116 @@
+RewriteEngine On
+
+RewriteBase   /
+
+# Vocabulary Index (redirect /ns/ -> a standalone page listing all vocabs
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^$ specifications/vocabularies/ [R=303]
+
+# Linked data basic profile (only machine-readable right now)
+RewriteRule ^basicProfile$ ns/basicProfile/ldbp.rdf [R=303]
+
+# Architecture Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^am$ bin/view/Main/AmVocabulary [R=303]
+
+# Asset Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^asset$ wiki/asset-management/OSLC-Asset-Management-Vocabulary/ [R=303]
+
+# Automation human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^auto$ wiki/automation/OSLC-Automation-Vocabulary/ [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^auto/auto\.rdf$ uploads/wiki/auto.rdf [L]
+
+# Change Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^cm$ bin/view/Main/CmVocabulary [R=303]
+
+# Core human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^core$ wiki/core/CoreVocabulary/ [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^core/core\.rdf$ uploads/wiki/core.rdf [L]
+
+
+# Estimation and Measurement human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteCond %{HTTP_ACCEPT} !text/
+
+RewriteRule ^ems$ http://open-services.net/uploads/wiki/ems.html [R=303]
+
+# Performance Monitoring human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^perfmon$ wiki/performance-monitoring/OSLC-Performance-Monitoring-Vocabulary/ [R=303]
+
+# Quality Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^qm$ bin/view/Main/QmVocabulary [R=303]
+
+# Reconciliation (Common IT Resource Type) human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^crtv$ wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/ [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^crtv/crtv\.rdf$ uploads/wiki/crtv.rdf [L]
+
+# Requirements Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^rm$ bin/view/Main/RmVocabulary [R=303]
+
+# Software and Configuration Management human readable
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml
+RewriteRule ^scm$ bin/view/Main/ScmSpecV1 [R=303]
+
+
+
+# Architecture Management machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^am$ ns/am/am.rdf [R=303]
+
+# Asset Management machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^asset$ ns/asset/asset.rdf [R=303]
+
+# Automation machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^auto(\/auto\.rdf)?$ http://open-services.net/uploads/wiki/auto.rdf [R=303]
+
+# Change Management machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^cm$ ns/cm/cm.rdf [R=303]
+
+# Core machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^core(\/core\.rdf)?$ http://open-services.net/uploads/wiki/core.rdf [R=303]
+
+# Estimation and Measurement machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^ems(\/ems\.rdf)?$ http://open-services.net/uploads/wiki/ems.rdf [R=303]
+
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^ems$ http://open-services.net/uploads/wiki/ems.ttl [R=303]
+
+
+# Quality Management machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^qm$ ns/qm/qm.rdf [R=303]
+
+# Reconciliation machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^crtv(\/crtv\.rdf)?$ http://open-services.net/uploads/wiki/crtv.rdf [R=303]
+
+# Requirements Management machine readable
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^rm$ pub/Main/RmVocabulary/rm.rdf [R=303]
+
+# Configuration Management machine readable
+RewriteCond %{HTTP_ACCEPT} !text/turtle
+RewriteRule ^config$ https://tools.oasis-open.org/version-control/browse/wsvn/oslc-ccm/trunk/specs/config-mgt/config-vocab.html [R=303]
+
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^config$ https://tools.oasis-open.org/version-control/browse/wsvn/oslc-ccm/trunk/specs/config-mgt/config-vocab.ttl  [E=TURTLE:TRUE,R=303]
+RequestHeader unset Accept env=TURTLE

@@ -345,7 +345,7 @@
   &:last-child .sm-header--wg {background: #3D3D3D; }
 }
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 769px){
   .rs-search{
     flex-direction: row;
 
@@ -486,9 +486,22 @@
 
   .post__footer {
     .post__share {
-      width: 90px;
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .rs-search {
+    border-radius: 0;
+
+    .rs-search__item {
+      padding: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

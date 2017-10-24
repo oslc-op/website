@@ -52,28 +52,6 @@
         ]
     },
     {
-        "uri": "/../about/governance",
-        "title": "Governance",
-        "content": "\nSteering Comitee\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, aliquid aperiam incidunt vel obcaecati sunt. Sunt nobis provident, corporis, neque, aut veritatis quidem deserunt consectetur id animi dolor culpa.",
-        "tags": []
-    },
-    {
-        "uri": "/../about/governance2",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
-        "uri": "/../about/governance3",
-        "title": "Member",
-        "content": "",
-        "tags": [
-            "governance"
-        ]
-    },
-    {
         "uri": "/../about/mission-mission",
         "title": "Mission",
         "content": "\nThe OSLC Community is intended to be an open community collaborating on integration challenges around lifecycle applications, capturing user scenarios for understanding and evolving related specifications for integrating software, and developing integration solutions and prototypes based on those specifications to share with the user community.\n",
@@ -97,26 +75,6 @@
         "tags": []
     },
     {
-        "uri": "/../about/organization1",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organization2",
-        "content": "",
-        "tags": [
-            "organization"
-        ]
-    },
-    {
-        "uri": "/../about/organizations",
-        "title": "Organizations",
-        "content": "\nOrganizations",
-        "tags": []
-    },
-    {
         "uri": "/../about/people",
         "title": "People",
         "content": "\nPeople",
@@ -134,6 +92,15 @@
         "content": "",
         "tags": [
             "people"
+        ]
+    },
+    {
+        "uri": "/../about/why",
+        "title": "Why OSLC?",
+        "content": "\nAdd content here...\n",
+        "tags": [
+            "value",
+            "why"
         ]
     }
 ]

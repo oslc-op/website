@@ -6,7 +6,7 @@
     background-position: 5px 5px;
 
     .hero {
-      padding: 180px 0;
+      padding: 120px 0;
 
       h1, p, a {
         color: #fff;
@@ -141,8 +141,8 @@
   .news__container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 30px 100px 50px;
+    margin: 20px 5% 0;
+    justify-content: space-evenly;
 
     .news__item{
       background: #fff;
@@ -174,12 +174,6 @@
 
       .new__info{
         padding: 0 15px 10px;
-        color: #FFF;
-        
-        // .new__content {
-        //   height: 142px;
-        //   overflow: hidden;
-        // }
 
         .new__date {
           font-style: italic;
@@ -190,7 +184,7 @@
   }
 }
 
-@media screen and (min-width:760px){
+@media screen and (min-width:769px){
   .statistics {
 
     .statistics__container{
@@ -219,7 +213,7 @@
       flex-wrap: wrap;
 
       .news__item{
-        width: 23%;
+        width: 19%;
         margin-right: 0px;
         margin-bottom: 25px;
         border: 1px solid #CECECE;
@@ -251,48 +245,35 @@
   }
 }
 
+@media screen and (max-width:769px) {
+  .hero-container {
+    .home-texture {
+      .hero {
+        padding: 20px 0 40px;
 
-.sec-case {
-  text-align:center;
-  background: #fff;
-  padding:40px 0px;
-  h2{margin-bottom:30px;}
-  .section__image{
-      padding: 20px 0 20px 0;
-  }
-  &__container{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    @media screen and (min-width: 760px){
-      flex-direction: row;
-    }
-    .container-item{
-      width: 100%;
-      margin-bottom: 40px;
-      @media screen and (min-width:760px){
-        width: 30%;
-        margin-bottom:0px;
-      }
-    }
-    .item__image{
-      border-radius:50%;
-      overflow: hidden;
-      width: 200px;
-      height: 200px;
-      margin: auto;
-      img{
-        display: block;
-        margin:auto;
+        .title {
+          font-size: 44px;
+        }
+
+        .textline {
+          font-size: 20px;
+        }
+
+        .headline {
+          margin-top: 10px;
+        }
       }
     }
   }
-  .container-button{
-    text-align: center;
-    margin-top: 40px;
-  }
-}
 
-.sec-case2 {
-  background: #EFEFEF;
+  .news {
+    .news__container {
+      justify-content: center;
+      margin: 20px 0 0;
+      
+      .news__item {
+        width: 100%;
+      }
+    }
+  }
 }

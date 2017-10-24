@@ -7,5 +7,5 @@ share_intro = "Follow us on social networks, and don't forget to share!"
 share_github = "https://github.com/oslc"
 share_twitter = "https://twitter.com/oslcNews"
 share_linkedin  = "https://www.linkedin.com/groups/3957829"
-share_youtube = "https://www.youtube.com/user/OpenServicesDotNet"
+share_youtube = "https://www.youtube.com/c/OpenServicesDotNet/"
 +++

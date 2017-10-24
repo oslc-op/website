@@ -5,6 +5,7 @@ author = ""
 author_uri = ""
 tags = ["presentation", "no-tutorial"]
 title = "PROSTEP OpenPDM OSLC Adapter Product Overview"
+summary = "The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems."
 
 +++
 

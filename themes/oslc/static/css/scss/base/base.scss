@@ -58,3 +58,8 @@ p, a {
   }
 }
 /* buttons */
+@media screen and (max-width: 768px){
+  .m-top {
+    margin-top: 100px;
+  }
+}

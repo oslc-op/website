@@ -5,7 +5,7 @@
 
   <body>
 
-    <div id="page" class="page">
+    <div id="page" class="page contribute">
 
         <header>
 
@@ -83,7 +83,7 @@
                 <a href="{{ .Params.share_github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href="{{ .Params.share_twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href="{{ .Params.share_linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="{{ .Params.share_youteube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="{{ .Params.share_youtube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
               </div>
             </div>
             {{ end }}
@@ -129,7 +129,7 @@
               <div class="contribute__content">
                 <p>{{ .Params.add_content_intro }}</p>
               </div>
-              <div class="contribute__content">
+              <div class="contribute__content grid">
                 <div class="contribute__content-add green">
                   <p><a class="contribute__content-link" href="{{ .Params.add_link_1 }}">{{ .Params.add_content_1 }}</a></p>
                 </div>

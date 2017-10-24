@@ -20,9 +20,9 @@
             <div class="table-of-contents">
                 {{ .TableOfContents }}
             </div>
-          </aside>  
+          </aside>
           {{ end }}
-         
+
           {{ if in .Params.tags "tutorial" }}
           <section class="post tutorial">
           {{ end }}
@@ -41,20 +41,21 @@
             </div>
             <div class="post__content">
               <div class="post__thumbnail">
-                <img src="https://unsplash.it/1920/400?random" alt="">
+                <img src="{{ .Params.banner }}" alt="">
               </div>
               <div class="post__paragraphs">
                 {{ .Content }}
               </div>
             </div>
             <div class="post__footer">
-              <div class="post__share">
-                <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"><span class="fa fa-facebook"></span></a>
-                <a href="https://twitter.com/home?status={{ .Permalink }}" title="Tweet this"><span class="fa fa-twitter"></span></a>
-                <a href="https://plus.google.com/share?url={{ .Permalink }}" title="Share on Google+"><span class="fa fa-google-plus"></span></a>
+              <div>
+                <span/>
               </div>
+              <!-- Put partial between 2 empty divs to center it -->
+              {{ partial "post-share.html" . }}
+              <div/>
             </div>
-          </section>  
+          </section>
         </main>
 
         <footer class="footer footer--inverse">

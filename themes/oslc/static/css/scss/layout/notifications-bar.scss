@@ -21,3 +21,11 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .notification-bar {
+    p, a {
+      font-size: 10px;
+    }
+  }
+}

@@ -11,33 +11,29 @@
     {{ partial "header.html" . }}
   </header>
 
-  <main class="single-about">
+  <main class="single-about m-top">
     <div class="mission">
+      {{ if in .Params.categories "why" }}
+        <nav class="mission__links why-active">
+      {{ end }}
       {{ if in .Params.categories "mission" }}
         <nav class="mission__links mission-active">
-      {{ end }}
-      {{ if in .Params.categories "governance" }}
-        <nav class="mission__links governance-active">
       {{ end }}
       {{ if in .Params.categories "people" }}
         <nav class="mission__links people-active">
       {{ end }}
-      {{ if in .Params.categories "organizations" }}
-        <nav class="mission__links organizations-active">
-      {{ end }}
       {{ if in .Params.categories "faq" }}
         <nav class="mission__links faq-active">
       {{ end }}
+        <a href="{{ .Site.BaseURL}}about/why" class="mission__item why--item">Why OSLC?</a>
         <a href="{{ .Site.BaseURL}}about/mission" class="mission__item mission--item">Mission</a>
-        <a href="{{ .Site.BaseURL}}about/governance" class="mission__item governance--item">Governance</a>
         <a href="{{ .Site.BaseURL}}about/people" class="mission__item people--item">People</a>
-        <a href="{{ .Site.BaseURL}}about/organizations" class="mission__item organizations--item">Organizations</a>
         <a href="{{ .Site.BaseURL}}about/faq" class="mission__item faq--item">FAQ</a>
       </nav>
     </div>
 
     <div class="sec-header" style="background-image: url('{{ .Params.banner }}');">
-      <div class="sec-info" style="background: linear-gradient({{ .Params.gradient }});">
+      <div class="sec-info" style="background: linear-gradient(to bottom, rgba(45,68,103,0.65), rgba(20,188,125,0.65));">
         <div class="container">
           <h1 class="section__title white"> {{ .Title }} </h1>
           <div class="sec-header__content">
@@ -48,23 +44,14 @@
         </div>
       </div>
     </div>
-    {{ if in .Params.categories "mission" }}
-      <div class="container container-flex single-mission">
+    {{ if in .Params.categories "why" }}
+      <div class="container container-flex single-why">
         {{ .Content }}  
       </div>
     {{ end }}
-    {{ if in .Params.categories "governance" }}
-      <div class="container container-flex single-governance">
-        {{ .Content }}
-      </div>
-      <div class="container container-flex single-governance">
-        <div class="members">
-          {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
-            {{ if in .Params.tags "governance"}}
-              {{ partial "governance.html" . }}
-            {{ end }}
-          {{ end }}
-        </div>
+    {{ if in .Params.categories "mission" }}
+      <div class="container container-flex single-mission">
+        {{ .Content }}  
       </div>
     {{ end }}
     {{ if in .Params.categories "people" }}
@@ -77,38 +64,6 @@
             {{ partial "people.html" . }}
           {{ end }}
         {{ end }}
-      </div>
-    {{ end }}
-    {{ if in .Params.categories "organizations" }}
-      <div class="container container-flex single-organizations">
-        {{ .Content }}
-      </div>
-      <div class="carousel">
-        <div class="container container-flex single-organizations">
-          <div class="carousel__content owl-carousel">
-            {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
-              {{ if in .Params.tags "organization"}}
-                {{ partial "organization.html" . }}
-              {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-      <div class="brands">
-        <div class="container container-flex">
-          <div class="brands__title">
-            <h2>They trust in us</h2>
-          </div>
-          <div class="container container-flex">
-            <div class="brands__row">
-              {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
-                {{ if in .Params.tags "brand" }}
-                  {{ partial "brand.html" . }}
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-        </div>
       </div>
     {{ end }}
     {{ if in .Params.categories "faq" }}
