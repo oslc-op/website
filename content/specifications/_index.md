@@ -1,3 +1,7 @@
++++
+title = "Specifications"
++++
+
 The table below provides a convenient place to see the currently available OSLC specifications, their status, and links to the documents.  Many of these specifications are still under development so you should consult the actual documents for the most up to date information.
 
 All OSLC specifications are governed by [OASIS Technical Committees](http://www.oasis-oslc.org) including:
