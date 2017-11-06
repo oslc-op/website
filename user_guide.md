@@ -73,3 +73,20 @@ description
 ```
 
 You can look the another files in that folder to see an example working
+
+
+# How to reindex the content for the search
+
+In the terminal go to the static-src folder of this project.
+
+These steps are only necessary the first time you install the site:
+
+1. After you run `npm install` in this folder.
+
+2. Copy the file `static-src/index.js` and replace the file `node_modules/lunr-hugo/lib/index.js`
+
+This step is necessary after you add new content
+
+1. Run `node site.js`
+
+This is to get the author, tags, categories and date in the results of the search.
