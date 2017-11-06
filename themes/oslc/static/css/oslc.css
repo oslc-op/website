@@ -1364,4 +1364,24 @@ table th {
 .result-item h1 a {
   font-size: 20px; }
 
+.specifications {
+  margin: 110px 0 60px;
+  background: #FFF; }
+.specifications .title {
+  margin: 50px 0; }
+.specifications h1, .specifications h2, .specifications h3 {
+  text-align: center;
+  margin-bottom: 20px; }
+.specifications p {
+  margin-bottom: 20px; }
+.specifications ul {
+  padding-left: 18px;
+  margin: 20px 0; }
+.specifications ul li {
+  font-size: 16px; }
+.specifications table {
+  margin: 20px 0; }
+.specifications table tr {
+  background: transparent; }
+
 /*# sourceMappingURL=oslc.css.map */
