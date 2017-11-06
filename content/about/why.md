@@ -5,7 +5,7 @@ title = "Why OSLC?"
 tags = ["value", "why"]
 banner = "/img/computer.jpg"
 gradient = "to bottom, rgba(55,8,108,0.67), rgba(22,6,55,0.67)"
-description = "lorem ipsum etsum metum lapsum"
+description = "The OSLC value proposition - reasons to embrace the technology"
 +++
 
 As a newcomer to the OSLC community, you might have been pondering over one question, but too shy to ask it aloud:
