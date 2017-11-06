@@ -7,4 +7,6 @@ banner = "/img/postit.jpg"
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 +++
 
-FAQ
+# FAQ
+
+Your OSLC questions, answered. Select a question to reveal the answer.

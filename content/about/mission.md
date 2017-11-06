@@ -1,7 +1,7 @@
 +++
 categories = ["mission"]
 date = "2017-06-21T20:46:28+02:00"
-title = "Our mission"
+title = "Our Mission"
 tags = []
 banner = "/img/meeting.jpg"
 gradient = "to bottom, rgba(55,8,108,0.67), rgba(22,6,55,0.67)"
