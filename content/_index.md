@@ -55,4 +55,4 @@ titleNews = "Latest News"
 descriptionNews = "Find out all the latest happenings in the OSLC community. This could be site announcements, software news, stories from the wider OSLC ecosystem, and more."
 
 +++
-An open community building practical specifications for integrating data
+Creating standard REST APIs to connect data
