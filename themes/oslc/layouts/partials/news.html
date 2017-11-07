@@ -7,7 +7,7 @@
   </div>
   <div class="container-fluid">
     <div class="news__container">
-      {{ range first 4 (where .Site.Pages.ByPublishDate "Type" "=" "news") }}
+      {{ range last 4 (where .Data.Pages.ByPublishDate "Type" "=" "news") }}
       <div class="news__item">
         <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important; background-size: cover;">
           <h3 class="new__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -19,7 +19,6 @@
           </div>
         </div>
       </div>
-
       {{ end }}
     </div>
   </div>
