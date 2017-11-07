@@ -83,7 +83,7 @@ disqus_url = ""
     # Enable the contact form by entering your Formspree.io email
     email = "your@email.com"
 
-    about_us = "<p>An open community building practical specifications for integrating software.</p>"
+    about_us = "<p>An open community building practical specifications for integrating data.</p>"
     copyright = "Copyright (c) 2017 OSLC; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -112,12 +112,6 @@ disqus_url = ""
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
-
-# resources - new for oslc
-[params.resources]
-    enable = true
-    link_url = "/resources/"
-    link_text = "Discover resources"
 
 [params.see_more]
     enable = true
