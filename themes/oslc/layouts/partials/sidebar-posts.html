@@ -29,7 +29,7 @@
 
 <div class="popular-posts">
   <h2>Popular Posts</h2>
-  {{ range first 4 .Data.Pages.ByPublishDate }}
+  {{ range first 4 .Data.Pages.ByPublishDate.Reverse }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
       <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" alt="">
