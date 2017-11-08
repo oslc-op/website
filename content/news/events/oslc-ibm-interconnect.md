@@ -7,6 +7,8 @@ draft = false
 author = "Steve Speicher"
 author_uri = ""
 banner = "img/news-default.jpg"
+url= "news/oslc-ibm-interconnect/"
+summary = "Coming in a couple weeks is IBM's new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one."
 +++
 
 Coming in a couple weeks is [IBM's new InterConnect](http://www.ibm.com/cloud-computing/us/en/interconnect/) conference which brings together past IBM events (Innovate, Pulse, Impact) into one.  These conferences often contain a number of sessions and events with OSLC connect.  As you are building your agenda for the conference, I wanted to highlight my sample agenda which has some key sessions that either talking directly about OSLC activities or other topics that are key to OSLC activities.
@@ -21,4 +23,3 @@ Coming in a couple weeks is [IBM's new InterConnect](http://www.ibm.com/cloud-co
 * Challenges and Solutions Implementing a Practical Commercial OSLC PLM Integration with PTC Windchill - Thu, Feb 26, 10:30-11:30, Mandalay Bay (Tradewinds C)
 
 Also if you want to just get together and chat, feel free to [https://twitter.com/sspeiche](reach out to me directly) and I'd be happy to chat, as well as help connect you to OSLC Steering Committee members or other community enthusiasts who will be in Vegas.
-

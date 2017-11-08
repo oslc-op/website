@@ -1,12 +1,13 @@
 +++
 categories = ["announcements"]
 date = "2015-08-18T10:00:00+02:00"
-author = "OSLC Administrator"
+author = "Ginny Ghezzo"
 author_uri = ""
 tags = ["communications","social","user group"]
 title = "Extra, Extra, Communication User Group is Back"
 banner = "img/news-default.jpg"
 url= "news/communication-user-group-is-back/"
+summary = "The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC."
 +++
 
 The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC. As one participant said "Think of us as the newspaper for the city." This is a perfect analogy of our intent to be indespensible to the community we serve and relevant to the broader audience. The Communication User Group will aims to deliver value, grows our community and provides the news that you need.
@@ -25,5 +26,3 @@ Add your ideas to the forum, the wiki and the mailing list.  Provide feedback to
 Include @OSLCNews on any integration Tweets
 Join us on September 8 at 11:00 EST for our next Open Services Communication User Group
 See you then!
-
-Ginny Ghezzo

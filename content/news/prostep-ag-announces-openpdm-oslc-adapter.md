@@ -7,6 +7,7 @@ title = "PROSTEP AG Announces OpenPDM OSLC Adapter"
 banner = "img/news-default.jpg"
 author_uri = ""
 url="news/prostep-ag-announces-openpdm-oslc-adapter/"
+summary = "OpenPDM OSLC Adapter enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones."
 +++
 
 PROSTEP would like to announce to the OSLC community, that there is an OpenPDM OSLC Adapter which enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems, e.g.:

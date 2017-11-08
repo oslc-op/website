@@ -7,6 +7,7 @@ tags = ["election", "oasis", "steering committee"]
 title = "New OASIS OSLC Steering Committee Announced"
 banner = "img/news-default.jpg"
 url="news/new-oasis-oslc-steering-committee-announced/"
+summary = "The September 2015 elections for the OASIS OSLC Steering Committee have concluded."
 +++
 
 The September 2015 elections for the OASIS OSLC Steering Committee have concluded -- congratulations to the new and re-elected members!

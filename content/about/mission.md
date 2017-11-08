@@ -5,7 +5,7 @@ title = "Our Mission"
 tags = []
 banner = "/img/meeting.jpg"
 gradient = "to bottom, rgba(55,8,108,0.67), rgba(22,6,55,0.67)"
-description = "lorem ipsum etsum metum lapsum"
+description = "What we are trying to achieve, and how we plan to get there"
 +++
 
 # About
