@@ -28,6 +28,14 @@
         "tags": []
     },
     {
+        "uri": "/../about/faq10",
+        "title": "RDF is a family of W3C standards and a general, standard method for describing information implemented as web resources. Some of W3C standards describe specific serialization formats of RDF resources including RDF/XML, Turtle, N-Triples, N-Quads, and Notation3. JSON is the standard, human readable, text representation of JavaScript objects. So RDF and JSON are similar in that both can be human readable text representations of information. However RDF is based on mathematical relations in the form of (subject, predicate, object) triples. JSON is structured name/value pairs that are very easy to parse and consume.\n\nFortunately these two technologies come together since JSON-LD is a standard serialization format for RDF using JSON.",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
         "uri": "/../about/faq2",
         "title": "How can I get involved in OSLC?",
         "content": "",
@@ -46,6 +54,46 @@
     {
         "uri": "/../about/faq4",
         "title": "Is OSLC only for software/systems engineering?",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
+        "uri": "/../about/faq5",
+        "title": "Why aren't OSLC specifications W3C standards?",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
+        "uri": "/../about/faq6",
+        "title": "What is the relationship between OSLC specifications and W3C standards?",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
+        "uri": "/../about/faq7",
+        "title": "What is the difference between OSLC and openAPI/Swagger?",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
+        "uri": "/../about/faq8",
+        "title": "What is the difference between OSLC and microservices?",
+        "content": "",
+        "tags": [
+            "faq"
+        ]
+    },
+    {
+        "uri": "/../about/faq9",
+        "title": "A SPARQL endpoint is provided by a REST server that supports the execution of SQPARL queries and returns the query results either constructed RDF graphs or result sets in a standard format. OSLC also supports a query capability, but is not coupled directly to SPARQL. OSLC query was intended to specify a simple, easy to implement, reasonably efficient to execute query language that could be adapted to many different data sources including SQL, and RDF data sources supporting SPARQL. That is, OSLC query capability is meant to be data source independent, and therefore enabling query across different data sources, including those that support SPARQL.",
         "content": "",
         "tags": [
             "faq"
