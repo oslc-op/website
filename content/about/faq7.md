@@ -1,6 +1,6 @@
 +++
 categories = []
-date = "2017-11-08T20:46:28+02:00"
+date = "2017-11-08T20:48:28+02:00"
 tags = ["faq"]
 id = "seven"
 title = "What is the difference between OSLC and openAPI/Swagger?"
