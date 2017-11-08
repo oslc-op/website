@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
-hugo -t oslc
+hugo -b http://oslc.co/ -t oslc
 
 # Go To Public folder
 cd public
