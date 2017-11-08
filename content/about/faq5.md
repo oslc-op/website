@@ -1,6 +1,6 @@
 +++
 categories = []
-date = "2017-11-08T20:46:28+02:00"
+date = "2017-11-07T20:46:28+02:00"
 tags = ["faq"]
 id = "five"
 title = "Why aren't OSLC specifications W3C standards?"

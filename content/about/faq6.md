@@ -1,6 +1,6 @@
 +++
 categories = []
-date = "2017-06-21T20:47:28+02:00"
+date = "2017-11-07T20:47:28+02:00"
 tags = ["faq"]
 id = "six"
 title = "What is the relationship between OSLC specifications and W3C standards?"
