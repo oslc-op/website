@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "notification-bar.html" . }}
+{{ partial "head.html" . }}
+
+<body>
+
+<div id="single" class="single">
+
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <main class="single-about m-top">
+
+    <div class="sec-header" style="background-image: url('{{ .Params.banner }}');">
+      <div class="sec-info" style="background: linear-gradient(to bottom, rgba(45,68,103,0.65), rgba(20,188,125,0.65));">
+        <div class="container">
+          <h1 class="section__title white"> {{ .Title }} </h1>
+          <div class="sec-header__content">
+            <div class="big__paragraph">
+              <p>{{ .Params.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ if in .Params.categories "why" }}
+      <div class="container container-flex single-why">
+        {{ .Content }}  
+      </div>
+    {{ end }}
+    {{ if in .Params.categories "mission" }}
+      <div class="container container-flex single-mission">
+        {{ .Content }}  
+      </div>
+    {{ end }}
+    {{ if in .Params.categories "people" }}
+      <div class="container container-flex single-people">
+        {{ .Content }}
+      </div>
+      <div class="container container-flex single-people">
+        {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+          {{ if in .Params.tags "people"}}
+            {{ partial "people.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+    {{ if in .Params.categories "faq" }}
+      <div class="container container-flex single-faq">
+        {{ .Content }}
+      </div>
+      <div class="container container-flex single-faq">
+        {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
+          {{ if in .Params.tags "faq" }}
+            {{ partial "faq.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </main>
+
+  <footer class="footer footer--inverse" id="footer">
+      {{ partial "footer.html" . }}
+  </footer>
+</div>
+<!-- /#all -->
+
+<!-- scripts -->
+{{ partial "scripts.html" }}
+
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      items: 1,
+      navText: ["<i class='icon-chevron-left icon-white'><</i>", "<i class='icon-chevron-right icon-white'>></i>"],
+      navClass: ['owl-prev', 'owl-next']
+    });
+  })
+</script>
+
+</body>
+</html>
