@@ -22,72 +22,7 @@
               <a href="{{ .Site.BaseURL}}about/people" class="mission__item">People</a>
               <a href="{{ .Site.BaseURL}}about/faq" class="mission__item">FAQ</a>
             </nav>
-
-            <div class="mission" id="why">
-              <div class="container container-flex">
-                <div class="mission__title">
-                  <h1>{{ .Params.about_title }}</h1>
-                </div>
-                <div class="mission__slogan">
-                  <p> {{ .Params.about_leadin }} </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="mission" id="mission">
-              <div class="container container-flex">
-                <div class="mission__title">
-                  <h1>{{ .Params.mission_title }}</h1>
-                </div>
-                <div>
-                {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "mission-snippet" }}
-                    {{ partial "mission.html" . }}
-                  {{ end }}
-                {{ end }}
-                </div>
-                <div>
-                  <a href="{{ .Site.BaseURL }}about/mission.html" class="btn btn-oslc">Learn more</a>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="people" id="people">
-            <div class="container container-flex">
-              <div class="people__title">
-                <h2>{{ .Params.people_title }}</h2>
-              </div>
-              <div class="people__headline">
-                {{ .Params.people_headline }}
-              </div>
-            </div>
-            <div class="container container-flex">
-              {{ range .Data.Pages.ByPublishDate }}
-                {{ if in .Params.tags "people"}}
-                  {{ partial "people.html" . }}
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-
-          <div class="faq" id="faq">
-            <div class="container container-flex">
-              <div class="faq__title">
-                <h2>{{ .Params.faq_title }}</h2>
-              </div>
-            </div>
-            <div class="container container-flex">
-              <div class="questions">
-                {{ range .Data.Pages.ByPublishDate }}
-                  {{ if in .Params.tags "faq" }}
-                    {{ partial "faq.html" . }}
-                  {{ end }}
-                {{ end }}
-              </div>
-            </div>
-          </div>
-
         </div>
 
         <footer class="footer footer--inverse" id="footer">
