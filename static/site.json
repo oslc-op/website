@@ -171,7 +171,7 @@
     },
     {
         "uri": "/../contribute/ct-content",
-        "title": "Add Content",
+        "title": "Add to this Site",
         "content": "",
         "tags": [
             "addcontent"
@@ -215,6 +215,14 @@
         "content": "",
         "tags": [
             "share"
+        ]
+    },
+    {
+        "uri": "/../contribute/ct-specifications",
+        "title": "Specifications",
+        "content": "",
+        "tags": [
+            "specifications"
         ]
     },
     {
