@@ -32,22 +32,20 @@
           
           <div class="contribute__sections">
             {{ range .Data.Pages.ByPublishDate }}
-
-            {{ if in .Params.tags "development" }}
-            <div id="contribute__development" class="contribute__section">
+            
+            {{ if in .Params.tags "share" }}
+            <div id="contribute__share" class="contribute__section contribute__share">
               <div class="contribute__title">
-                <i class="fa fa-code" aria-hidden="true"></i><h2>Development</h2>
+                <i class="fa fa-share-alt" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
               </div>
               <div class="contribute__content">
-                <p>{{ .Params.development_paragraph }}</p>
-                <p>{{ .Params.development_paragraph2 }}</p>
-              </div>
-              <div class="contribute__footer">
-                <a href="{{ .Params.development_linkurl1}}">{{ .Params.development_link1}}</a>
-                <a href="{{ .Params.development_linkurl2}}">{{ .Params.development_link2}}</a>
-                <!--
-                <a href="{{ .Params.development_linkurl3}}">{{ .Params.development_link3}}</a>
-                -->
+                <p>{{ .Params.share_intro }}</p>
+                <div class="contribue_share-links">
+                  <a href="{{ .Params.share_github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href="{{ .Params.share_twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="{{ .Params.share_linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="{{ .Params.share_youtube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </div>
               </div>
             </div>
             {{ end }}
@@ -59,31 +57,28 @@
               </div>
               <div class="contribute__content">
                 <div class="contribute__img">
-                  <img src="{{ .Params.evangelize_img }} " alt="">
+                  <img src="{{ .Site.BaseURL }}{{ .Params.evangelize_img }} " alt="">
                 </div>
                 <p>{{ .Params.evangelize_description }}</p>
-              </div>
-              <div class="contribute__footer">
-                <a href="{{ .Params.evangelize_linkurl1}}">{{ .Params.evangelize_link1}}</a>
-                <!--
-                <a href="{{ .Params.evangelize_linkurl2}}">{{ .Params.evangelize_link2}}</a>
-                -->
+                <div class="contribute_links">
+                  <a href="{{ .Params.evangelize_linkurl1}}">{{ .Params.evangelize_link1}}</a>
+                </div>
               </div>
             </div>
             {{ end }}
-            
-            {{ if in .Params.tags "share" }}
-            <div id="contribute__share" class="contribute__section contribute__share">
+
+            {{ if in .Params.tags "development" }}
+            <div id="contribute__development" class="contribute__section">
               <div class="contribute__title">
-                <i class="fa fa-share-alt" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
+                <i class="fa fa-code" aria-hidden="true"></i><h2>Development</h2>
               </div>
               <div class="contribute__content">
-                <p>{{ .Params.share_intro }}</p>
-
-                <a href="{{ .Params.share_github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="{{ .Params.share_twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="{{ .Params.share_linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="{{ .Params.share_youtube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <p>{{ .Params.development_paragraph }}</p>
+                <p>{{ .Params.development_paragraph2 }}</p>
+                <div class="contribute_links">
+                  <a href="{{ .Params.development_linkurl1}}">{{ .Params.development_link1}}</a>
+                  <a href="{{ .Params.development_linkurl2}}">{{ .Params.development_link2}}</a>
+                </div>
               </div>
             </div>
             {{ end }}
@@ -95,13 +90,9 @@
               </div>
               <div class="contribute__content">
                 <p>{{ .Params.working_groups_paragraph }}</p>
-              </div>
-              <div class="contribute__footer">
-                <a href="{{ .Params.working_groups_moreurl}}">{{ .Params.working_groups_more}}</a>
-              <!--
-                <a href="{{ .Params.user_groups_linkurl1}}">{{ .Params.working_groups_link1}}</a>
-                <a href="{{ .Params.user_groups_linkurl2}}">{{ .Params.working_groups_link2}}</a>
-              -->
+                <div class="contribute_links">
+                  <a href="{{ .Params.working_groups_moreurl}}">{{ .Params.working_groups_more}}</a>
+                </div>
               </div>
             </div>
             {{ end }}
@@ -113,9 +104,8 @@
               </div>
               <div class="contribute__content">
                 <p>{{ .Params.join_paragraph }}</p>
-                <a href="{{ .Params.join_linkurl1}}">{{ .Params.join_link1}}</a>
-                <div class="contribute__img">
-                  <img src="{{ .Site.BaseURL }}img/{{ .Params.join_img}}" alt="">
+                <div class="contribute_links">
+                  <a href="{{ .Params.join_linkurl1}}">{{ .Params.join_link1}}</a>
                 </div>
               </div>
             </div>
@@ -145,7 +135,20 @@
               </div>
             </div>
             {{ end }}
-
+            
+            {{ if in .Params.tags "specifications" }}
+            <div id="contribute__specs" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-puzzle-piece" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
+              </div>
+              <div class="contribute__content">
+                <p>{{ .Params.specs_paragraph }}</p>
+                <div class="contribute_links">
+                  <a href="{{ .Params.specs_more_url}}">{{ .Params.specs_more}}</a>
+                </div>
+              </div>
+            </div>
+            {{ end }}
             {{ end }}
           </div>
         </section>
