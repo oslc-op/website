@@ -6,7 +6,9 @@
       </div>
       <div class="post__meta">
         <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
-        <div class="post__author"><a href="{{ .Params.author_uri }}"> {{ .Params.author }} </a></div>
+        <div class="post__author">
+          <a href="{{ .Params.author_uri }}"> {{ .Params.author }} </a>
+        </div>
         <div class="post__comments">No comments</div>
       </div>
     </div>
@@ -31,13 +33,28 @@
   <script type="text/javascript">
     var discourseEmbedUrl = window.location.href;
     console.info(discourseEmbedUrl)
-    DiscourseEmbed = { discourseUrl: 'http://discourse.oslc.co/',
-                       discourseEmbedUrl: discourseEmbedUrl };
+    DiscourseEmbed = { 
+      discourseUrl: 'http://discourse.oslc.co/', 
+      discourseEmbedUrl: discourseEmbedUrl 
+    };
 
-    (function() {
-      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    (function () {
+      var d = document.createElement('script'); 
+      d.type = 'text/javascript'; 
+      d.async = true;
       d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByClassName('discourse-comments')[0]).appendChild(d);
+
+      var n = $('iframe html article.post').length;
+      console.info('number of comments ', n)
+      if ( n > 0) {
+        $('.post__comments').append( n + ' commments');
+      }
+
+      if ($('iframe html div.embed-error')){
+        console.info('if the error exists hide the iframe ')
+        $('.discourse-comments iframe').css('display', 'none');
+      }
     })();
   </script>
 </div>
