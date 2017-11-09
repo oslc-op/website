@@ -20,7 +20,7 @@ disqus_url = ""
 # Main menu
 
 [[menu.main]]
-    name = "Why"
+    name = "Why?"
     identifier = "why"
     url = "/why"
     weight = 1
@@ -28,7 +28,7 @@ disqus_url = ""
 [[menu.main]]
     name = "About"
     identifier = "about"
-    url  = "/about/why"
+    url  = "/about/mission"
     weight = 2
 
 [[menu.main]]
