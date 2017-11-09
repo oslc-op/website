@@ -15,12 +15,9 @@ more = "Learn more"
 title2 = "Hypermedia API"
 hypermedia1 = "Hypermedia APIs are the most powerful type of REST APIs. They embody the Web principles of flexibility, standardization, and loose coupling to a service. They scale better, are more easily changed and provide better discoverability to consumers of the API."
 
-title3 = "The OSLC Core Specification"
-corespec1 = "The OSLC Core Specification is a Hypermedia API standard currently mainly adopted in software and systems engineering domains, but with the potential to provide value to any domain with data integration challenges. The OSLC Core specifications expands on the W3C LDP capabilities, to define the essential and common technical elements of OSLC domain specifications and offers guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources."
-
-title4 = "Domain-Specific OSLC Specifications"
-domainsspec1 = "OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist of RDF vocabularies and OSLC resource shapes."
-domainsspec2 = "RDF vocabularies are used to describe standardized resource types and properties. OSLC resource shapes are used to define constraints such as multiplicity constraints on properties of specific resource types."
+title4 = "OSLC Specifications"
+corespec = "The OSLC Core Specification is a Hypermedia API standard currently mainly adopted in software and systems engineering domains, but with the potential to provide value to any domain with data integration challenges. The OSLC Core specifications expands on the W3C LDP capabilities, to define the essential and common technical elements of OSLC domain specifications and offers guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources."
+domainsspec = "OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist of RDF vocabularies and OSLC resource shapes. RDF vocabularies are used to describe standardized resource types and properties. OSLC resource shapes are used to define constraints such as multiplicity constraints on properties of specific resource types."
 
 title5 = "The OSLC Stack"
 stack1 = "OSLC builds on Web standards, from codified ones like HTTP and LDP, to de-facto ones like REST that power applications today."
