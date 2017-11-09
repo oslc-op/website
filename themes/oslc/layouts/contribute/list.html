@@ -135,7 +135,20 @@
               </div>
             </div>
             {{ end }}
-
+            
+            {{ if in .Params.tags "specifications" }}
+            <div id="contribute__specs" class="contribute__section">
+              <div class="contribute__title">
+                <i class="fa fa-puzzle-piece" aria-hidden="true"></i><h2>{{ .Params.title }}</h2>
+              </div>
+              <div class="contribute__content">
+                <p>{{ .Params.specs_paragraph }}</p>
+                <div class="contribute_links">
+                  <a href="{{ .Params.specs_more_url}}">{{ .Params.specs_more}}</a>
+                </div>
+              </div>
+            </div>
+            {{ end }}
             {{ end }}
           </div>
         </section>

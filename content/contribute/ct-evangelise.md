@@ -1,5 +1,5 @@
 +++
-date = "2017-06-20T20:57:23+02:00"
+date = "2017-06-24T20:57:23+02:00"
 tags = ["evangelize"]
 title = "Evangelise"
 draft = false

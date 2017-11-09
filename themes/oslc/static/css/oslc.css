@@ -521,15 +521,18 @@ table th {
   break-inside: avoid; }
 .contribute__sections .contribute__section .contribute__title {
   display: flex;
-  padding-bottom: 5px;
+  align-items: center;
+  padding-bottom: 12px;
   border-bottom: 2px solid #375178; }
 .contribute__sections .contribute__section .contribute__title i {
   font-size: 30px;
   color: #375178; }
 .contribute__sections .contribute__section .contribute__title h2 {
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 12px;
   margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1;
   color: #375178; }
 .contribute__sections .contribute__section .contribute__content {
   padding: 5px 0; }
@@ -543,13 +546,14 @@ table th {
 .contribute__sections .contribute__section .contribute__content .contribute_links {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; }
+  flex-wrap: wrap; }
 .contribute__sections .contribute__section .contribute__content .contribute_links a {
   border: 1px solid #375178;
   padding: 6px 12px;
   color: #375178;
   transition: all 350ms ease;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 20px; }
 .contribute__sections .contribute__section .contribute__content .contribute_links a:hover {
   background: #375178;
   color: white; }

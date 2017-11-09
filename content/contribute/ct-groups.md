@@ -1,5 +1,5 @@
 +++
-date = "2017-06-17T20:57:23+02:00"
+date = "2017-06-26T20:57:23+02:00"
 tags = ["workinggroup"]
 title = "Working Groups"
 draft = false

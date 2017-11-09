@@ -1,7 +1,7 @@
 +++
-date = "2017-06-19T20:57:23+02:00"
+date = "2017-06-22T20:57:23+02:00"
 tags = ["addcontent"]
-title = "Add Content"
+title = "Add to this Site"
 draft = false
 add_content_intro = "Write for this site, and help us make more awesome content available for the community"
 add_content_1 = "Blog"

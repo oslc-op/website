@@ -71,7 +71,8 @@
 
     .contribute__title {
       display: flex;
-      padding-bottom: 5px;
+      align-items: center;
+      padding-bottom: 12px;
       border-bottom: 2px solid #375178;
       i {
         font-size: 30px;
@@ -79,8 +80,10 @@
       }
       h2 {
         display: inline-block;
-        margin-left: 8px;
+        margin-left: 12px;
         margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 1;
         color: #375178;
       }
     }
@@ -101,8 +104,7 @@
       .contribute_links {
         display: flex;
         justify-content: space-between;
-
-        margin-top: 20px;
+        flex-wrap: wrap;
 
         a {
           border: 1px solid #375178;
@@ -110,6 +112,8 @@
           color: #375178;
           transition: all 350ms ease;
           text-decoration: none;
+          margin-top: 20px;
+
 
           &:hover {
             background: #375178;
