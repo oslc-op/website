@@ -22,6 +22,10 @@
       align-items: center;
       margin-bottom: 50px;
 
+      &.margin-top {
+        margin-top: 40px;
+      }
+
       p {
         margin-bottom: 30px;
 
@@ -41,6 +45,10 @@
       margin: 50px 0 15px;
       display: flex;
       justify-content: center;
+    }
+
+    .particles {
+      height: 350px;
     }
   }
 }
@@ -65,7 +73,7 @@
           }
 
           &.smaller {
-            width: 50%;
+            width: 33%;
           }
         }
       }
