@@ -12,6 +12,14 @@ about1 = "Open Services for Lifecycle Collaboration (OSLC) is based on World Wid
 about2 = "OSLC consists of a Hypermedia API standard and RDF-based specifications for data interoperability. We are an open community that works together on specifications, software, and initiatives to expose more data on the private and public Web to surface up the advantages of having better integration."
 more = "Learn more"
 
+titleDataSilos = "Breaking Down Data Silos"
+paragraph1DataSilos = "The Web has broken down barriers to connect documents (e.g. web pages, images) across different servers. Now, the Web is braking broken down barriers to connect data across different databases."
+paragraph2DataSilos = "This initiative is called Linked Data and was developed by the inventor of the Web Tim Berners Lee. Learn more on breaking down data silos through this HBR article."
+image1DataSilos = "img/data-silos.png"
+paragraph3DataSilos = "Linked Data can also be used to connect private data on the private enterprise Web, as done typically with OSLC REST APIs."
+paragraph4DataSilos = "Linked Data uses RDF as data format which can be described in many formats including JSON and XML. OSLC REST APIs expose data in RDF to enable the connection of data using open Web standards."
+image2DataSilos = "img/new-era-data.png"
+
 title2 = "Hypermedia API"
 hypermedia1 = "Hypermedia APIs are the most powerful type of REST APIs. They embody the Web principles of flexibility, standardization, and loose coupling to a service. They scale better, are more easily changed and provide better discoverability to consumers of the API."
 

@@ -1,0 +1,27 @@
+<div class="story">
+  <div class="container">
+    <div class="story--content">
+      <h2 class="section__title">{{ .Params.titleDataSilos }}</h2>
+      <p class="big__paragraph">
+        {{ .Params.paragraph1DataSilos }}
+      </p>
+      <p class="big__paragraph">
+        {{ .Params.paragraph2DataSilos }}
+      </p>
+    </div>
+    <div class="story--image">
+      <img class="smaller" src="{{ .Site.BaseURL }}{{ .Params.image1DataSilos }}" alt="">
+    </div>
+    <div class="story--content" style="margin-top: 30px;">
+      <p class="big__paragraph">
+        {{ .Params.paragraph3DataSilos }}
+      </p>
+      <p class="big__paragraph">
+        {{ .Params.paragraph4DataSilos }}
+      </p>
+    </div>
+    <div class="story--image">
+      <img class="smaller" src="{{ .Site.BaseURL }}{{ .Params.image2DataSilos }}" alt="">
+    </div>
+  </div>
+</div>
