@@ -1,4 +1,4 @@
-var baseurl = "http://localhost:1313/";
+var baseurl = "/"
 
 var lunrIndex;
 var pagesIndex;
@@ -24,6 +24,7 @@ function initLunr() {
         }, this);
       })
       lunrIndex.pipeline.remove(lunrIndex.stemmer)
+      console.info(lunrIndex);
     })
     .fail(function (jqxhr, textStatus, error) {
       var err = textStatus + ", " + error;
@@ -40,6 +41,7 @@ function search(query) {
 }
 
 function resultsPage(r) {
+  console.info('results are', r);
   window.localStorage.setItem('results', JSON.stringify(r));
 
   window.location.href = baseurl + 'search';
@@ -48,23 +50,22 @@ function resultsPage(r) {
 initLunr();
 
 $(document).ready(function(){
-  var result, term;
+  var result;
   var filterBy;
   
   $('#search-input-site').keypress(function(e){
     if (e.which === 13) {
-      term = $(this).val().replace(/(^\w+:|^)\/\//, '');
-      console.info('term is ', term)
-      result = search(term);
-      resultsPage(result);
+      result = search($(this).val());
+      resultsPage(result)
     }
   })
 
   $('#search-button-site').click(function(){
-    term = $('#search-input-site').val().replace(/(^\w+:|^)\/\//, '');
-    console.info('term is ', term)
-    result = search(term);
-    resultsPage(result)
+    var searchBy = $('#search-input-site').val();
+    if (searchBy !== '') {
+      result = search(searchBy);
+      resultsPage(result)
+    }
   })
 
 });
