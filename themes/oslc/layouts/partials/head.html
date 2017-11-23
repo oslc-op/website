@@ -16,38 +16,34 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@oslc">
   <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:image" content="http://oslc.co{{- .Params.banner -}}">
+  <meta name="twitter:image" content="http://oslc.co{{- .Params.banner -}}"> {{ if .Keywords }}
+  <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
+  <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{ end }} {{ if .Description }}
+  <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
+  <meta name="description" content="{{ .Site.Params.DefaultDescription }}"> {{ end }} {{ .Hugo.Generator }}
 
-  {{ if .Keywords }}
-  <meta name="keywords" content="{{ delimit .Keywords ", " }}">
-  {{ else if .Site.Params.DefaultKeywords }}
-  <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords ", " }}">
-  {{ end }}
-
-  {{ if .Description }}
-  <meta name="description" content="{{ .Description }}">
-  {{ else if .Site.Params.DefaultDescription }}
-  <meta name="description" content="{{ .Site.Params.DefaultDescription }}">
-  {{ end }}
-
-  {{ .Hugo.Generator }}
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .URL }}/" />
+  <meta property="og:image" content="{{ .Site.Params.logo }}" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|merriweather" rel="stylesheet">
 
   <!-- Bootstrap and Font Awesome css -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/horsey/4.2.2/horsey.min.css">
-  <link rel="stylesheet"
-  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> -->
 
 
   <!-- own styles -->
-  <link href="{{ .Site.BaseURL }}css/oslc.css" rel="stylesheet">
-
+  <!-- <link href="{{ .Site.BaseURL }}css/oslc.css" rel="stylesheet"> -->
+  <link href="{{"/css/third-party.css" | absURL }}" rel="stylesheet" />
+  <link href="{{"/css/oslc.css" | absURL }}" rel="stylesheet" />
   <!-- Responsivity for older IE -->
   {{ `
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -57,70 +53,25 @@
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" />
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet">
-
-  <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
+  <link rel="alternate" href="{{ " /index.xml " | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
   <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '131040684204512',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
 
-          (function($){
-
-
-          $.fn.customerPopup = function (e, intWidth, intHeight, blnResize) {
-            // Prevent default anchor event
-            e.preventDefault();
-
-            var uri = this.attr('href');
-
-            // Set values for window
-            intWidth = intWidth || '500';
-            intHeight = intHeight || '400';
-            strResize = (blnResize ? 'yes' : 'no');
-
-            // Set title and open popup with focus on it
-            var strTitle = ((typeof this.attr('title') !== 'undefined') ? this.attr('title') : 'Social Share'),
-                strParam = 'width=' + intWidth + ',height=' + intHeight + ',resizable=' + strResize,
-                objWindow = window.open(uri, strTitle, strParam).focus();
-          }
-          $(document).ready(function ($) {
-            $('.customer.share').on("click", function(e) {
-              $(this).customerPopup(e);
-            });
-          });
-
-        }(jQuery));
-
-        </script>
-
-  <script>
-    window.fbAsyncInit = function() {
-            FB.init({
-              appId            : '131040684204512',
-              autoLogAppEvents : true,
-              xfbml            : true,
-              version          : 'v2.10'
-            });
-            FB.AppEvents.logPageView();
-          };
-
-          (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
-
-
-
-  <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .URL }}/" />
-  <meta property="og:image" content="{{ .Site.Params.logo }}" />
-
 </head>
