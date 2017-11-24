@@ -503,8 +503,8 @@ table th {
   max-width: 900px;
   margin: 20px auto 60px; }
 .contribute__sections .contribute__section {
-  background-color: #F9F9F9;
-  border: 1px solid #C7C7C7;
+  background-color: #FFF;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
   padding: 1.5em;
   margin: 10px 5px;
   display: inline-block;
@@ -952,7 +952,7 @@ table th {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #F8f8f8;
+  background: #FFF;
   padding: 20px 20px;
   position: relative;
   top: -25px;
@@ -997,7 +997,7 @@ table th {
   font-size: 10px;
   color: #37086C;
   position: absolute;
-  background: #f8f8f8;
+  background: #FFF;
   padding: 0 7px;
   top: -7px;
   left: 15px;
