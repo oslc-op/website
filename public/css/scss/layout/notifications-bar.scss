@@ -1,0 +1,31 @@
+.notification-bar {
+  padding: 5px 0;
+  text-align: center;
+  background-color: #418EEB;
+  position: fixed;
+  width:100%;
+  z-index:99;
+  top:0;
+
+  p, a {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  a {
+    color: #ED3B10;
+    &:hover {
+      color: #2EFE94;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .notification-bar {
+    p, a {
+      font-size: 10px;
+    }
+  }
+}

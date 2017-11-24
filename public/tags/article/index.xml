@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/tags/article/</link>
+    <description>Recent content in Article on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 16 Jul 2017 13:24:02 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/tags/article/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debunking the OSLC Link-Only Myth</title>
+      <link>http://oslc.co/resources/article-20170715/</link>
+      <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
+      
+      <guid>http://oslc.co/resources/article-20170715/</guid>
+      <description>Most large organizations require dozens and sometimes hundreds of specialized software tools to manage the lifecycle of the physical products or software applications they create. It isn&amp;rsquo;t hard to imagine the monumental waste these organizations incur in attempting to manually coordinate the efforts of the teams that use these many disparate tools to create a single product. Open Services for Lifecycle Collaboration (OSLC) is an open community for creating specifications for integrating lifecycle activities across tools to address this problem.</description>
+    </item>
+    
+    <item>
+      <title>Why Integration requires a combination of linking and syncing</title>
+      <link>http://oslc.co/resources/article-20151109/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/resources/article-20151109/</guid>
+      <description>In this article, Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement. The conclusion is that flexibility and value are what drive integration decisions.
+Read</description>
+    </item>
+    
+  </channel>
+</rss>

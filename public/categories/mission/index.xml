@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mission on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/categories/mission/</link>
+    <description>Recent content in Mission on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Jun 2017 20:46:28 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/categories/mission/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Our Mission</title>
+      <link>http://oslc.co/about/mission/</link>
+      <pubDate>Wed, 21 Jun 2017 20:46:28 +0200</pubDate>
+      
+      <guid>http://oslc.co/about/mission/</guid>
+      <description>About The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges.</description>
+    </item>
+    
+  </channel>
+</rss>

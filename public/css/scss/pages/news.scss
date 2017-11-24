@@ -1,0 +1,265 @@
+$color-link: #3D3D3D;
+
+.sec-nw-header{
+  position: relative;
+  color: #fff;
+  background-image: url('../img/news-hero.jpg');
+  background-position-y: 44%;
+  height: 300px;
+
+  .sec-nw-info{
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(88,47,1,.65), rgba(15,8,65,.65)) ;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    h1{
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sec-nw-header__content{
+      padding: 0 8px;
+    }
+  }
+}
+
+.news--container{
+  position: relative;
+  .sidebar-posts{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    display: none;
+    @media screen and (min-width: 760px){
+      display: block;
+    }
+  }
+}
+
+
+
+.posts {
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.post__header {
+  font-family: 'Merriweather', sans-serif;
+
+  .post__title {
+    text-align: center;
+    margin: 10px 0;
+    h1{
+      a {
+        text-decoration: none;
+        color: $color-link;
+        font-size: 35px;
+        &:hover{
+          color: lighten($color-link, 30%);
+        }
+      }
+    }
+  }
+
+  .post__meta {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1;
+
+    .post__date, .post__comments {
+      margin: 5px 0;
+      padding: 0 10px;
+    }
+
+    .post__author {
+      margin: 4px 0;
+      padding: 0 10px;
+    }
+
+    .post__date, .post__author {
+      border-right: 2px solid #efefef;
+    }
+  }
+}
+
+.post__content {
+  font-family: 'Merriweather', sans-serif;
+
+  .post__thumbnail img{
+    max-width: 100%;
+  }
+
+  .post__paragraphs {
+    line-height: 2;
+    margin: 20px 0;
+  }
+}
+
+.post__footer {
+  font-family: 'Merriweather', sans-serif;
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
+  color: #AAAAAA;
+  margin: 20px 0 50px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  .fa {
+    margin-left: 10px;
+  }
+
+  a {
+    color: #AAAAAA;
+  }
+}
+
+
+.popular-posts, .popular-networks{
+  font-family: 'Merriweather', sans-serif;
+  background: #fff;
+  padding: 15px;
+  margin-top: 40px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.20);
+  margin-bottom: 40px;
+
+  h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+
+  .popular-posts__item{
+    border-bottom: 1px solid #EFEFEF;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px 0px;
+    color: #3D3D3D;
+
+    &:last-child{
+      margin-bottom: 0px;
+      border-bottom: none;
+    }
+
+    .item__img{
+      width: 25%;
+      height: 65px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .item__info{
+      width: 75%;
+      padding: 0px 10px;
+    }
+  }
+
+  .networks-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+
+    a{
+      color: #3D3D3D;
+      text-decoration: none;
+    }
+  }
+}
+
+.sec-nw__search{
+  .search__item{
+    position:relative;
+    padding:15px 15px;
+    &:nth-child(4){
+      border-top: 1px solid #ececec;
+      text-align: right;
+    }
+  }
+
+  select{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -moz-appearance: none;
+    width: 100%;
+    background: #fff;
+    color: #737373;
+    border: 1px solid #cecece;
+    padding: 5px;
+  }
+
+  .categories__option {
+    padding: 3px 0;
+  }
+
+  input{
+    border: 1px solid #cecece;
+    width: 100%;
+    color: #737373;
+    padding: 5px;
+  }
+
+  label,
+  span{
+    position: absolute;
+    color: #737373;
+  }
+
+  label{
+    font-size:10px;
+    background: #fff;
+    font-weight: lighter;
+    top: 8px;
+    left: 25px;
+  }
+
+  span.fa-caret-down{
+    right: 25px;
+    top: 25px;
+    pointer-events: none;
+  }
+
+  .search__button{
+    background: #fff;
+    border: 1px solid #737373;
+    color: #737373;
+    padding: 5px 10px;
+    transition: all 1s ease;
+    &:hover{
+      background: #737373;
+      color: #fff;
+    }
+  }
+
+
+}
+
+//New section landing page
+.news--section{
+  background: #2D4467;
+  padding:40px 0px;
+}
+
+@media screen and (max-width: 768px){
+  .posts {
+    padding-right: 0;
+  }
+
+  .post__footer {
+    font-size: 12px;
+
+    .post__time-reading, .post_share {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

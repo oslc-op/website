@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tool on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/tags/tool/</link>
+    <description>Recent content in Tool on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Aug 2017 15:20:56 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSLC4JS</title>
+      <link>http://oslc.co/resources/oslc4js/</link>
+      <pubDate>Wed, 30 Aug 2017 15:20:56 +0200</pubDate>
+      
+      <guid>http://oslc.co/resources/oslc4js/</guid>
+      <description>OSLC4JS is a set of related open source projects that support the creation and integration of Open Services for Lifecycle Collaboration (OSLC)-based client and server applications that leverage JavaScript and Node.js capabilities. OSLC4JS projects cover the complete end-to-end capabilities required to build, extend, and integrate web apps that exploit OSLC integration capabilities and linked data resources.
+Why should I contribute?
+Because you’ll see a lot of benefits. Developers will find that it makes it easy to add OSLC capabilities to any Node or Express Web application, including client and server components of that application.</description>
+    </item>
+    
+    <item>
+      <title>OSLC4Net</title>
+      <link>http://oslc.co/resources/tool-20130121/</link>
+      <pubDate>Mon, 21 Jan 2013 20:57:23 +0200</pubDate>
+      
+      <guid>http://oslc.co/resources/tool-20130121/</guid>
+      <description>A toolkit for developing OSLC consumers and providers for .NET environments that contains the following tools:
+ OSLC4NET SDK, which is very similar to the OSLC4J component of Eclipse Lyo: you can model OSLC resources as .NET objects, annotate them with OSLC attributes, and use the REST services provided by ASP.NET MVC 4 for HTTP requests and request handling. OSLC Change Management consumer implementation in the form of a test suite  Go</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo</title>
+      <link>http://oslc.co/resources/tool-20111111/</link>
+      <pubDate>Fri, 11 Nov 2011 20:57:23 +0200</pubDate>
+      
+      <guid>http://oslc.co/resources/tool-20111111/</guid>
+      <description>The Eclipse Lyo project focuses on providing an SDK to help the Eclipse community to adopt OSLC specifications and build OSLC-compliant tools. The source code is available in a Git repository.
+ OSLC4J: A Java toolkit to help you build OSLC-ready Java applications Test suites: Verify that your OSLC implementations are compliant with the specifications Reference Implementations: See how OSLC functions with working samples  Go</description>
+    </item>
+    
+  </channel>
+</rss>
