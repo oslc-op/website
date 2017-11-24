@@ -47,11 +47,11 @@ function resultsPage(r) {
   window.location.href = baseurl + 'search';
 }
 
-initLunr();
-
 $(document).ready(function(){
   var result;
   var filterBy;
+
+  initLunr();
   
   $('#search-input-site').keypress(function(e){
     if (e.which === 13) {
