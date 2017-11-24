@@ -3,6 +3,6 @@
     <a href="#question{{ .Params.id }}" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="question{{ .Params.id }}">{{ .Title }}</a>
   </div>
   <div id="question{{ .Params.id }}" class="question__answer collapse">
-    {{ .Params.answer}}
+    {{ .Content }}
   </div>
 </div>

@@ -69,7 +69,7 @@
       <div class="container container-flex single-faq">
         {{ .Content }}
       </div>
-      <div class="container container-flex single-faq">
+      <div class="container container-flex single-faq questions">
         {{ range (where .Site.Pages.ByPublishDate "Type" "=" "about") }}
           {{ if in .Params.tags "faq" }}
             {{ partial "faq.html" . }}

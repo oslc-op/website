@@ -1,5 +1,4 @@
 body {
-  background: #F8F8F8;
   font-family: 'Open Sans', sans-serif; }
 
 .title {
@@ -415,21 +414,13 @@ table th {
 .brands .brands__row .brand__item img {
   filter: grayscale(100%); }
 
-.faq {
-  background-color: #3d3d3d;
-  color: #fff;
-  padding: 40px 0 80px; }
-.faq .faq__title {
-  text-align: center; }
-.faq .questions .question__item .question__title {
-  border-bottom: 1px solid #fff;
+.questions .question__item .question__title {
   padding: 10px 0; }
-.faq .questions .question__item .question__title a {
-  color: #fff;
-  font-size: 16px;
+.questions .question__item .question__title a {
+  font-size: 18px;
   text-decoration: none; }
-.faq .questions .question__item .question__answer {
-  padding: 10px 0; }
+.questions .question__item .question__answer p {
+  line-height: 1.8; }
 
 .single-about {
   line-height: 1.6; }
