@@ -32,7 +32,7 @@
   {{ range first 4 .Data.Pages.ByPublishDate.Reverse }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
     <div class="item__img">
-      <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" alt="">
+      <img data-src="{{ .Site.BaseURL }}{{ .Params.banner }}" alt="">
     </div>
     <div class="item__info">
       <span class="name">{{ .Title }}</span>
@@ -52,21 +52,6 @@
     <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet" class="fa fa-youtube-play fa-lg"></a>
   </div>
 </div>
-
-<!--div class="popular-posts">
-  <h2>Recent Posts</h2>
-  {{ range first 3 .Data.Pages.ByPublishDate }}
-  <a href="{{ .Permalink }}" class="popular-posts__item">
-    <div class="item__img">
-      <img src="https://unsplash.it/200/150/?random" alt="">
-    </div>
-    <div class="item__info">
-      <span class="name">{{ .Title }}</span>
-      <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
-    </div>
-  </a>
-  {{ end }}
-</div> -->
 
 <script type="text/javascript">
   var baseurl = "{{.Site.BaseURL}}";
