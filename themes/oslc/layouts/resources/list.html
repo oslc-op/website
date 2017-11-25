@@ -32,12 +32,6 @@
 
         <section>
           <div class="container">
-            <div id="resource-hero">
-              {{ range first 1 .Data.Pages.ByPublishDate }}
-                {{ partial "resource-hero.html" . }}
-              {{ end }}
-            </div>
-
             <div class="container-small-items">
               {{ range .Paginator.Pages.ByPublishDate }}
               {{ partial "resource-single.html" . }}
