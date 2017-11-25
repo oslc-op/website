@@ -31,7 +31,7 @@
   <meta property="og:url" content="/about/people//" />
   <meta property="og:image" content="/img/logo.png" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
   
   
@@ -141,7 +141,7 @@
         
           
             <div class="people__item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-  <img src="https://avatars3.githubusercontent.com/u/114116?v=4&amp;s=400" alt="John Doe" class="people__picture">
+  <img data-src="https://avatars3.githubusercontent.com/u/114116?v=4&amp;s=400" alt="John Doe" class="people__picture">
   <h3 class="people__name">John Doe</h3>
   <p class="people__position">Position</p>
 </div>
@@ -150,7 +150,7 @@
         
           
             <div class="people__item col-xs-12 col-sm-6 col-md-4 col-lg-4">
-  <img src="https://avatars3.githubusercontent.com/u/114116?v=4&amp;s=400" alt="John Doe" class="people__picture">
+  <img data-src="https://avatars3.githubusercontent.com/u/114116?v=4&amp;s=400" alt="John Doe" class="people__picture">
   <h3 class="people__name">John Doe</h3>
   <p class="people__position">Position</p>
 </div>
@@ -205,7 +205,7 @@
   <div class="container">
     <div class="row">
       <div class="footer__links">
-        <a href="#" class="footer__item">Terms of use</a>
+        
 
         <div class="footer__item footer__item--social">
           <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
@@ -228,25 +228,12 @@
 
 
 
-
-
 <script src="http://oslc.co/js/third-party.js"></script>
 <script src="http://oslc.co/js/header.js" ></script>
+<script src="http://oslc.co/js/lazy-load.js" ></script>
 
 
-
-<script>
-  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      items: 1,
-      navText: ["<i class='icon-chevron-left icon-white'><</i>", "<i class='icon-chevron-right icon-white'>></i>"],
-      navClass: ['owl-prev', 'owl-next']
-    });
-  })
-</script>
+<script src="http://oslc.co/js/collapse.js" ></script>
 
 </body>
 </html>

@@ -46,8 +46,6 @@ $color-link: #3D3D3D;
 }
 
 .post__header {
-  font-family: 'Merriweather', sans-serif;
-
   .post__title {
     text-align: center;
     margin: 10px 0;
@@ -57,7 +55,7 @@ $color-link: #3D3D3D;
         color: $color-link;
         font-size: 35px;
         &:hover{
-          color: lighten($color-link, 30%);
+          color: #375178;
         }
       }
     }
@@ -67,7 +65,7 @@ $color-link: #3D3D3D;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
     line-height: 1;
 
@@ -81,15 +79,13 @@ $color-link: #3D3D3D;
       padding: 0 10px;
     }
 
-    .post__date, .post__author {
+    .post__date {
       border-right: 2px solid #efefef;
     }
   }
 }
 
 .post__content {
-  font-family: 'Merriweather', sans-serif;
-
   .post__thumbnail img{
     max-width: 100%;
   }
@@ -101,7 +97,6 @@ $color-link: #3D3D3D;
 }
 
 .post__footer {
-  font-family: 'Merriweather', sans-serif;
   border-top: 1px solid #AAAAAA;
   border-bottom: 1px solid #AAAAAA;
   color: #AAAAAA;
@@ -122,11 +117,10 @@ $color-link: #3D3D3D;
 
 
 .popular-posts, .popular-networks{
-  font-family: 'Merriweather', sans-serif;
   background: #fff;
   padding: 15px;
   margin-top: 40px;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.20);
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
   margin-bottom: 40px;
 
   h2 {
@@ -178,7 +172,8 @@ $color-link: #3D3D3D;
 .sec-nw__search{
   .search__item{
     position:relative;
-    padding:15px 15px;
+    padding-bottom: 15px;
+
     &:nth-child(4){
       border-top: 1px solid #ececec;
       text-align: right;
@@ -193,8 +188,8 @@ $color-link: #3D3D3D;
     width: 100%;
     background: #fff;
     color: #737373;
-    border: 1px solid #cecece;
-    padding: 5px;
+    line-height: 2;
+    padding: 0px 10px;
   }
 
   .categories__option {
@@ -205,27 +200,34 @@ $color-link: #3D3D3D;
     border: 1px solid #cecece;
     width: 100%;
     color: #737373;
-    padding: 5px;
+    line-height: 2;
+    padding: 0px 10px;
   }
 
   label,
   span{
     position: absolute;
     color: #737373;
+
+    &.fa-caret-down{
+      right: 8px;
+      top: 6px;
+      pointer-events: none;
+    }
+
+    &.fa-search {
+      right: 7px;
+      top: 5px;
+    }
   }
 
   label{
     font-size:10px;
     background: #fff;
-    font-weight: lighter;
-    top: 8px;
-    left: 25px;
-  }
-
-  span.fa-caret-down{
-    right: 25px;
-    top: 25px;
-    pointer-events: none;
+    font-weight: normal;
+    top: -7px;
+    left: 12px;
+    padding: 0 6px;
   }
 
   .search__button{
@@ -233,14 +235,18 @@ $color-link: #3D3D3D;
     border: 1px solid #737373;
     color: #737373;
     padding: 5px 10px;
-    transition: all 1s ease;
+    transition: all 350ms ease;
+
     &:hover{
       background: #737373;
       color: #fff;
+      cursor: pointer;
     }
   }
+}
 
-
+.post {
+  padding-top: 20px;
 }
 
 //New section landing page
