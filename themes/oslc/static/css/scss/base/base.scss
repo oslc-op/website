@@ -1,9 +1,11 @@
 body{
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
+.page, .single, .list {
+  position: relative;
+  padding-bottom: 104px;
 }
 
 .btn {
@@ -46,18 +48,6 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
-.title {
-  font-size: 30px;
-}
-
-p, a {
-  font-size: 16px;
-}
-
-.big__paragraph {
-  font-size: 18px;
-}
-
 .hero {
   .title {
     font-size: 40px;
@@ -88,6 +78,15 @@ p, a {
   &--small {
     margin-top: 40px !important;
   }
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
 }
 
 @media (min-width: 1200px) {
