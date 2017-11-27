@@ -22,15 +22,5 @@
 Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Dassault ENOVIA VPM V4 MSC SimManager Oracle Agile ePLM PTC Windchill SAP PLM Siemens Teamcenter Engineering Siemens Teamcenter Enterprise Siemens Teamcenter UA The OpenPDM OSLC services can be integrated in any OSLC consuming applications.</description>
     </item>
     
-    <item>
-      <title>PROSTEP AG Announces OpenPDM OSLC Adapter</title>
-      <link>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
-      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
-      <description>PROSTEP would like to announce to the OSLC community, that there is an OpenPDM OSLC Adapter which enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems, e.g.:
-Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Dassault ENOVIA VPM V4 MSC SimManager Oracle Agile ePLM PTC Windchill SAP PLM Siemens Teamcenter Engineering Siemens Teamcenter Enterprise Siemens Teamcenter UA The OpenPDM OSLC services can be integrated in any OSLC consuming applications.</description>
-    </item>
-    
   </channel>
 </rss>

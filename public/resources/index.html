@@ -212,11 +212,11 @@
     
   }
 
-  initLunr();
-
   $(document).ready(function(){
     var result;
     var filterBy;
+
+    initLunr();
 
     $('#filter-by').val('all');
 
@@ -253,9 +253,6 @@
           }
         })
       }
-
-      
-      
     });
 
     $('#search-by').on('change keyup', function(event){
