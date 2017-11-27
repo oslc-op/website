@@ -17,6 +17,7 @@
     <label for="">Filter</label>
     <select name="categories" id="categories-news">
       <option class="categories__option" selected>Select a category</option>
+      <option class="categories__option" value="all">All</option>      
       <option class="categories__option" value="events">Events</option>
       <option class="categories__option" value="announcements">Announcements</option>
       <option class="categories__option" value="updates">Updates</option>
@@ -57,7 +58,10 @@
   var baseurl = "{{.Site.BaseURL}}";
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
-
+<script
+src="http://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
 <script>
 var lunrIndex;
 var pagesIndex;
@@ -125,11 +129,13 @@ function results(r) {
   })
 }
 
-initLunr();
-
 $(document).ready(function(){
+
   var result;
   var filterBy;
+
+  initLunr();
+  $('#categories-news').val('all');
   $('#search-input').keypress(function(e){
     if (e.which === 13) {
       result = search($(this).val());
@@ -147,7 +153,24 @@ $(document).ready(function(){
   })
 
   $('#categories-news').change(function(){
-    window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
+    // window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
+
+    filterBy = $("#categories-news option:selected").text().toLowerCase();
+      
+      if (filterBy == 'all') {
+        $('.posts .post').css('display', 'block');
+      } else {
+      
+        $('.posts .post').each(function(index, elem){
+          if ($(elem).attr('itemtype') === filterBy){
+            console.info($(elem).attr('itemtype'));
+            $(elem).css('display', 'block');
+            
+          } else {
+            $(elem).css('display', 'none');
+          }
+        })
+      }
   });
 
   $('#search-input').on('change keyup', function(event){
