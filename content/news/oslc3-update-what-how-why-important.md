@@ -1,5 +1,5 @@
 +++
-categories = ["announcements"]
+category = "announcements"
 date = "2016-03-21T10:00:00+02:00"
 author = "OSLC Administrator"
 tags = ["core", "oslc3"]
