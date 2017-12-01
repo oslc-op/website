@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rddl="http://www.rddl.org/" xmlns:qudt="http://qudt.org/1.1/schema/qudt"
+	xmlns:pm="http://open-services.net/ns/perfmon#" xmlns:ems="http://open-services.net/ns/ems#">
+  <owl:Ontology rdf:about="http://open-services.net/ns/perfmon#">
+    <dcterms:title>The OSLC Performance Monitoring Vocabulary</dcterms:title>
+    <dcterms:description rdf:parseType="Literal">All vocabulary
+    URIs defined in the OSLC Performance Monitoring namespace.</dcterms:description>
+    <rdfs:label>Performance Monitoring</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/" />
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf" />
+    <dcterms:source rdf:resource="http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf" />
+    <rdfs:seeAlso>
+      <rdf:Description rdf:about="http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf">
+        <rddl:nature rdf:resource="http://www.w3.org/2000/01/rdf-schema#" />
+      </rdf:Description>
+    </rdfs:seeAlso>
+  </owl:Ontology>
+  
+  <!-- ********** Resource Types (Classes) ********** -->
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#PerformanceMonitoringRecord">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>PerformanceMonitoringRecord</rdfs:label>
+    <rdfs:comment>A resource representing performance monitoring information</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Performance_Monitoring_Record" />
+  </rdfs:Class>
+  
+  <!-- ********** Metric Categories/Types (Classes) ********** -->
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#Metric">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/ems#Metric"/>
+	<rdfs:label>Metric</rdfs:label>
+	<rdfs:comment>Metric category for metrics defined in the Performance Monitoring vocabulary.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ResourceUsageMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>ResourceUsageMetrics</rdfs:label>
+	<rdfs:comment>Metric category for metrics that show resource usage.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>ResourceAvailabilityMetrics</rdfs:label>
+	<rdfs:comment>Metric category for metrics that show resource availability.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:label>ResourceExhaustionMetrics</rdfs:label>
+	<rdfs:comment>Metric category for metrics that show resource consumption in excess of capacity.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ResponseTimeMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+	<rdfs:label>ResponseTimeMetrics</rdfs:label>
+	<rdfs:comment>Metric category for metrics that show time it takes for a response to be returned to a request.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Response_time_%28technology%29" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#RequestMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>RequestMetrics</rdfs:label>
+	<rdfs:comment>Metric category for requests on a resource, originating from an end user or a system component.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#CpuMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>CpuMetrics</rdfs:label>
+	<rdfs:comment>Metric category for CPU-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#MemoryMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>MemoryMetrics</rdfs:label>
+	<rdfs:comment>Metric category for memory-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#DiskMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>DiskMetrics</rdfs:label>
+	<rdfs:comment>Metric category for disk-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#NetworkMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>NetworkMetrics</rdfs:label>
+	<rdfs:comment>Metric category for network-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ThreadPoolMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>ThreadPoolMetrics</rdfs:label>
+	<rdfs:comment>Metric category for thread pool-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#BufferPoolMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#MemoryMetrics"/>
+	<rdfs:label>BufferPoolMetrics</rdfs:label>
+	<rdfs:comment>Metric category for buffer pool-related metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#VirtualizationMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#Metric"/>
+	<rdfs:label>VirtualizationMetrics</rdfs:label>
+	<rdfs:comment>Metric category for virtualization-related resource metrics.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#FailureMetrics">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+	<rdfs:label>FailureMetrics</rdfs:label>
+	<rdfs:comment>Metric category for requests that fail.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" />
+  </rdfs:Class>
+  
+  <!-- ********** Leaf (from the perspective of PM) Metric Types (Classes) ********** -->
+  <!-- These are still classes, not merely terms, to enable extensions to use them as superclasses -->
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#CpuUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#CpuMetrics"/>
+    <rdfs:label>CpuUsed</rdfs:label>
+    <rdfs:comment>CPU used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#VirtualMemoryUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#MemoryMetrics"/> 
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#VirtualizationMetrics"/>
+    <rdfs:label>VirtualMemoryUsed</rdfs:label>
+    <rdfs:comment>Virtual memory used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#RealMemoryUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#MemoryMetrics"/>
+    <rdfs:label>RealMemoryUsed</rdfs:label>
+    <rdfs:comment>Real memory used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#DiskSpaceUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#DiskMetrics"/>
+    <rdfs:label>DiskSpaceUsed</rdfs:label>
+    <rdfs:comment>Disk space used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#HeapMemoryUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#MemoryMetrics"/>
+    <rdfs:label>HeapMemoryUsed</rdfs:label>
+    <rdfs:comment>Heap memory used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#TableSpaceUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>TableSpaceUsed</rdfs:label>
+    <rdfs:comment>Table space used.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#TableSpaceFree">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics"/>
+    <rdfs:label>TableSpaceFree</rdfs:label>
+    <rdfs:comment>Table space free.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#TimeThreadPoolExhausted">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ThreadPoolMetrics"/>
+    <rdfs:label>TimeThreadPoolExhausted</rdfs:label>
+    <rdfs:comment>Time during which a thread pool was fully utilized (no threads were free)</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ThreadPoolMetrics"/>
+    <rdfs:label>TimeJCAThreadPoolExhausted</rdfs:label>
+    <rdfs:comment>Time during which a Java Connection Architecture thread pool was fully utilized (no threads were free)</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ThreadPoolMetrics"/>
+    <rdfs:label>TimeDatabaseThreadPoolExhausted</rdfs:label>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#DiskMetrics"/>
+    <rdfs:label>DiskSpaceOverCommitAmount</rdfs:label>
+    <rdfs:comment>Amount of disk space committed beyond the disk's capacity.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#MemoryMetrics"/>
+    <rdfs:label>MemoryAvailableAfterGarbageCollection</rdfs:label>
+    <rdfs:comment>Memory available following completion of a garbage collection request.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#VmCpuReady">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#VirtualizationMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#CpuMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics"/>
+    <rdfs:label>VmCpuReady</rdfs:label>
+    <rdfs:comment>Amount of CPU ready from a virtual machine's point of view</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#CpuSpeed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#CpuMetrics"/>
+    <rdfs:label>CpuSpeed</rdfs:label>
+    <rdfs:comment>Speed of the CPU</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#LoginRequestFailures">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>LoginRequestFailures</rdfs:label>
+    <rdfs:comment>Failed login requests</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#AvgLoginRequestFailures">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>AvgLoginRequestFailures</rdfs:label>
+    <rdfs:comment>Average login request failures</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#SqlStatmentFailures">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>SqlStatmentFailures</rdfs:label>
+    <rdfs:comment>SQL statements that failed</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#GarbageCollectionRequests">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+    <rdfs:label>GarbageCollectionRequests</rdfs:label>
+    <rdfs:comment>Garbage collection requests</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#AvgRequestFailures">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>AvgRequestFailures</rdfs:label>
+    <rdfs:comment>Average request failures</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#RequestFailures">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>RequestFailures</rdfs:label>
+    <rdfs:comment>Request failures</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#ResponseTime">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResponseTimeMetrics"/>
+    <rdfs:label>ResponseTime</rdfs:label>
+    <rdfs:comment>Time required for some system to respond to a request</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#AvgJmsGetTime">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResponseTimeMetrics"/>
+    <rdfs:label>AvgJmsGetTime</rdfs:label>
+    <rdfs:comment>Average time required for a system to respond to a Java Messaging Service GET request</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#NetworkIOErrors">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#NetworkMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#FailureMetrics"/>
+    <rdfs:label>NetworkIOErrors</rdfs:label>
+    <rdfs:comment>Network packets sent or received that did not complete successfully.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#PerMinute">
+	<rdf:type rdf:resource="http://qudt.org/schema/qudt#TimeUnit"/>
+	<qudt:conversionMultiplier rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60</qudt:conversionMultiplier>
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:label>PerMinute</rdfs:label>
+	<rdfs:comment>Units for a quantity where a value of one represents 60 seconds of time.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#LockListUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>LockListUsed</rdfs:label>
+    <rdfs:comment>Lock usage</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#SortOverflows">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+    <rdfs:label>SortOverflows</rdfs:label>
+    <rdfs:comment>A sort's performance was impacted because the data to be sorted is large enough for it to overflow from (relatively) fast to (relatively) slow storage.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#QueueFull">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+    <rdfs:label>QueueFull</rdfs:label>
+    <rdfs:comment>A queue filled to its maximum capacity</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#QueueDepth">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#RequestMetrics"/>
+    <rdfs:label>QueueDepth</rdfs:label>
+    <rdfs:comment>Size/lenght/depth of a queue</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#RemoteInboundConnections">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>RemoteInboundConnections</rdfs:label>
+    <rdfs:comment>Remote inbound connections</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#LocalInboundConnections">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>LocalInboundConnections</rdfs:label>
+    <rdfs:comment>Local inbound connections</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#HighDepthQueueCount">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceExhaustionMetrics"/>
+    <rdfs:label>HighDepthQueueCount</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#MessageCount">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>MessageCount</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#LogUsed">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>LogUsed</rdfs:label>
+    <rdfs:comment>Amount of log used, either absolute or relative to some maximum</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#HostedDatabases">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+    <rdfs:label>HostedDatabases</rdfs:label>
+    <rdfs:comment>Databases hosted, either absolute or relative to some maximum</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#BufferPoolHits">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" /> 
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#ResourceUsageMetrics"/>
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#BufferPoolMetrics"/>
+    <rdfs:label>BufferPoolHits</rdfs:label>
+    <rdfs:comment>Buffer pool hits, e.g. hit ratio or count</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+
+  <!-- 
+
+  <rdfs:Class rdf:about="http://open-services.net/ns/perfmon#">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:subClassOf rdf:resource="http://open-services.net/ns/perfmon#"/>
+    <rdfs:label></rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" />
+  </rdfs:Class>
+   -->
+   
+  <!-- ********** Properties ********** -->
+
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#process">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>process</rdfs:label>
+    <rdfs:comment>A process running, for example, in a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#disk">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>disk</rdfs:label>
+    <rdfs:comment>A disk attached, for example, to a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+  
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#availabilityStatus">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>availabilityStatus</rdfs:label>
+    <rdfs:comment>An indication of availability.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+   
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#monitoringAgent">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>monitoringAgent</rdfs:label>
+    <rdfs:comment>Software that monitors a resource’s availability, performance, capacity, or utilization. Typically refers to a resource with type foaf:Agent, but it may refer to other resource types.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#mobilityEnabled">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>mobilityEnabled</rdfs:label>
+    <rdfs:comment>An indication about whether the resource can move about dynamically.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#tableReorganizationNeeded">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label>tableReorganizationNeeded</rdfs:label>
+    <rdfs:comment>Indicates whether a database’s tables need to be reorganized.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties" />
+  </rdf:Property>
+
+  <!-- 
+
+  <rdf:Property rdf:about="http://open-services.net/ns/perfmon#">
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+    <rdfs:label></rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/bin/view/Main/PmSpecificationV2#Performance_Monitoring_Record" />
+  </rdf:Property>
+   -->
+
+  <!-- ********** Terms, e.g. "constants" ********** -->
+
+  <rdf:Description rdf:about="http://open-services.net/ns/perfmon#NotRunning">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:label>NotRunning</rdfs:label>
+	<rdfs:comment>Not running in its host environment</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://open-services.net/ns/perfmon#Running">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:label>Running</rdfs:label>
+	<rdfs:comment>Running in its host environment</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://open-services.net/ns/perfmon#Unknown">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:label>Unknown</rdfs:label>
+	<rdfs:comment>Unknown status</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values" />
+  </rdf:Description>
+
+  <!-- 
+  <rdf:Description rdf:about="http://open-services.net/ns/perfmon#">
+	<rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/perfmon#" />
+	<rdfs:label></rdfs:label>
+	<rdfs:comment></rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://open-services.net/bin/view/Main/PmSpecificationV2#Performance_Monitoring_Record" />
+  </rdf:Description>
+
+   -->
+
+</rdf:RDF>
