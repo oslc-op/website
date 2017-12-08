@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <div class="notification-bar">
+  <p>This is a prototype site, and still a work in progress. For now please continue to refer to <a href="http://open-services.net">open-services.net</a> as the source of information for the community</p>
+</div>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developing OSLC Applications | OSLC</title>
+  <meta name="author" content="" />
+
+  <meta property="og:title" content="Developing OSLC Applications" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://oslc.github.io/img/logo.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:description" content="" />
+  <meta property="twitter:title" content="Developing OSLC Applications" />
+  <meta property="twitter:image" content="http://oslc.co" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@oslc">
+  <meta name="twitter:title" content="Developing OSLC Applications">
+  <meta name="twitter:image" content="http://oslc.co">   <meta name="generator" content="Hugo 0.30.2" />
+
+  
+  <meta property="og:title" content="Developing OSLC Applications" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/resources/developing-oslc-applications//" />
+  <meta property="og:image" content="/img/logo.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+  
+  
+
+
+  
+  
+  <link href="http://oslc.co/css/third-party.css" rel="stylesheet" />
+  <link href="http://oslc.co/css/oslc.css" rel="stylesheet" />
+  
+  
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="http://oslc.co/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://oslc.co/img/apple-touch-icon.png" />
+
+  <link rel="alternate" href="http://oslc.co/%20/index.xml%20" type="application/rss+xml" title="OSLC - Open Services for Lifecycle Collaboration">
+
+</head>
+
+  <body>
+
+    <div id="page" class="page">
+
+        <header>
+
+          <nav class="nav">
+  <div class="container container__big">
+    <div class="nav__logo">
+      <a href="/">
+        <img src="http://oslc.co/img/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="links">
+      <div class="nav__links">
+        
+        
+          <a href="/why" class="nav__item">Why?</a>
+        
+          <a href="/about/mission" class="nav__item">About</a>
+        
+          <a href="/resources/" class="nav__item">Resources</a>
+        
+          <a href="/contribute/" class="nav__item">Contribute</a>
+        
+          <a href="/news/" class="nav__item">News</a>
+        
+        <div class="nav__item--social">
+          <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
+          <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
+          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
+          <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="menu-button">
+      <span class="fa fa-bars fa-2x"></span>
+    </div>
+  </div>
+</nav>
+<script>
+  
+  
+</script>
+
+        </header>
+
+        <main class="resource-post">
+          
+          <aside class="sidebar-post">
+
+            <div class="table-of-contents">
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#get-started-with-developing-oslc-applications">Get started with developing OSLC applications</a>
+<ul>
+<li><a href="#explore-our-tutorial">Explore our tutorial</a></li>
+</ul></li>
+<li><a href="#why-develop-oslc-applications">Why develop OSLC applications</a></li>
+<li><a href="#technical-foundations">Technical foundations</a>
+<ul>
+<li><a href="#linked-data">Linked Data</a></li>
+<li><a href="#restful-web-architecture-and-http">RESTful web architecture and HTTP</a></li>
+<li><a href="#rdf-turtle-json-and-html">RDF, Turtle, JSON, and HTML</a></li>
+<li><a href="#oauth">OAuth</a></li>
+</ul></li>
+<li><a href="#services-resources-and-design-patterns">Services, resources and design patterns</a></li>
+<li><a href="#tools-sdks">Tools &amp; SDKs</a>
+<ul>
+<li><a href="#eclipse-lyo">Eclipse Lyo</a></li>
+</ul></li>
+<li><a href="#sample-applications-and-code">Sample applications and code</a></li>
+<li><a href="#oslc-open-source-node-js-projects">OSLC Open Source Node.js Projects</a>
+<ul>
+<li><a href="#the-oslc4js-projects">The OSLC4JS Projects</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+          </aside>
+          
+
+          
+          <section class="post tutorial">
+          
+          
+            <div class="post__header">
+              <div class="post__title">
+                <h1>Developing OSLC Applications</h1>
+              </div>
+              <div class="post__meta">
+                <div class="post__date"> Jun 21, 2017 </div>
+                <div class="post__author"><a href=""> OSLC Community </a></div>
+                <div class="post__comments">No comments</div>
+              </div>
+            </div>
+            <div class="post__content">
+              <div class="post__thumbnail">
+                <img data-src="" alt="">
+              </div>
+              <div class="post__paragraphs">
+                
+
+<h1 id="get-started-with-developing-oslc-applications">Get started with developing OSLC applications</h1>
+
+<p>“OSL-whaaaat now?”</p>
+
+<p>Open Services for Lifecycle Collaboration (OSLC) is a community that writes specifications to integrate software. Learn more at Why develop OSLC applications and at our main site.</p>
+
+<p>For a high-level overview of how to add OSLC support to software, we recommend our video &ldquo;<a href="http://www.youtube.com/watch?v=-oXqudLmNMI">Getting started on implementing OSLC</a>&ldquo;:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/-oXqudLmNMI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+
+<p>The description on YouTube includes a table of contents and links to references.</p>
+
+<h2 id="explore-our-tutorial">Explore our tutorial</h2>
+
+<p>For a more detailed look at what goes into OSLC support, read through our tutorial &ldquo;<a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/">Integrating Products with OSLC</a>&rdquo;, which walks you through building an adapter that adds OSLC support to the popular Bugzilla defect-tracking software.</p>
+
+<p>The concepts in the tutorial are broadly applicable to other software.</p>
+
+<p>If you&rsquo;re <strong>building an OSLC provider</strong> (in other words, software that outputs OSLC resources), you&rsquo;ll learn how to</p>
+
+<ul>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-service-providers-and-catalogs/">Provide Service Providers and catalogs</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-oslc-representations/">Represent Bugzilla bugs as OSLC Change Management resources</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-ui-previews/">Provide UI Previews</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-a-delegated-ui-for-selection/">Provide a delegated UI for finding existing bugs</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-a-delegated-ui-for-creation/">Provide a delegated UI for creating new bugs</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/implementing-an-oslc-provider/providing-a-creation-factory/">Allow software to programmatically create new bugs</a></li>
+</ul>
+
+<p>If you&rsquo;re building an OSLC consumer application, you&rsquo;ll learn how to:</p>
+
+<ul>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/integrating-with-an-oslc-provider/implementing-links-and-previews/">Link to OSLC resources in another application and display previews</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/integrating-with-an-oslc-provider/making-incident-to-defect-linking-easy/">Find, select, and create bugs without leaving the application with delegated UIs</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/integrating-with-an-oslc-provider/implementing-a-customers-to-notify-page/">Parse OSLC resources</a></li>
+<li><a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/integrating-with-an-oslc-provider/automated-bug-creation/">Create new bugs automatically</a></li>
+</ul>
+
+<p>The tutorial has working sample applications and <a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/running-the-examples/">detailed instructions for running them</a>.</p>
+
+<h1 id="why-develop-oslc-applications">Why develop OSLC applications</h1>
+
+<p>Integrating software is hard; we want it to be easier. And we need your help.</p>
+
+<p><a href="http://open-services.net/specifications/">We define standardized ways</a> to represent common resources in software development (for example, a defect or a performance test). We also define standardized methods to allow other applications to access, display, preview, find, create, and update those resources.</p>
+
+<p>With standardized resources and methods, any tool can access and manipulate the data and artifacts from any other compliant tool. So instead of a variety of fragile point-to-point integrations you have one common way to connect and integrate <a href="http://open-services.net/software/">many products</a>. It&rsquo;s not quite plug-and-play, but it&rsquo;s close.</p>
+
+<p>We want OSLC to succeed because better and easier integrations will save everyone time and money. And we think that software with OSLC integration has a competitive advantage.</p>
+
+<p>Don&rsquo;t just take our word for it. <a href="http://open-services.net/resources/presentations/reducing-system-integration-costs-with-oslc-and-data-federation/">Icaro Technologies</a> estimated that they could have saved two million dollars over two years if they used OSLC standards for a project with more than 10 integrations. And major industry groups like <a href="http://www.sprint-iot.eu/">SPRINT</a> and <a href="http://www.eads.com/eads/int/en.html">EADS</a> have decided that OSLC-compliant software can help them collaborate and verify requirements <a href="http://open-services.net/resources/videos/concurrent-engineering-for-systems-based-on-oslc">on highly complex products like commercial airplanes</a>.</p>
+
+<p>OSLC specifications are free to adopt, and we want them to spread. So help us out!</p>
+
+<h1 id="technical-foundations">Technical foundations</h1>
+
+<p>To build software that supports OSLC, you should be familiar with the following concepts:</p>
+
+<h2 id="linked-data">Linked Data</h2>
+
+<p><a href="http://www.w3.org/DesignIssues/LinkedData.html">Linked data</a> is the main technical foundation of all of our specifications. The video below provides a brief overview of the value of linked data and how we implement it with OSLC:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/40mjwqGEKBU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+ </div>
+
+
+<p>If you&rsquo;re new to linked data and RDF, we&rsquo;ve put together <a href="http://open-services.net/resources/videos/linked-data-and-rdf-overview-playlist/">a playlist of videos</a> that can help you catch up.</p>
+
+<h2 id="restful-web-architecture-and-http">RESTful web architecture and HTTP</h2>
+
+<p>You should be familiar with designing <a href="http://en.wikipedia.org/wiki/Representational_state_transfer#Central_principle">RESTful</a> applications.</p>
+
+<p>For a quick primer, we recommend <a href="http://rest.elkstein.org/">“Learn REST” by Dr. M. Elkstein</a>, particularly these sections:</p>
+
+<ul>
+<li><a href="http://rest.elkstein.org/2008/02/what-is-rest.html">What is REST?</a></li>
+<li><a href="http://rest.elkstein.org/2008/02/rest-as-lightweight-web-services.html">REST as Lightweight Web Services</a></li>
+<li><a href="http://rest.elkstein.org/2008/02/how-simple-is-rest.html">How Simple is REST?</a></li>
+<li><a href="http://rest.elkstein.org/2008/02/more-complex-rest-requests.html">More Complex REST Requests</a></li>
+<li><a href="http://rest.elkstein.org/2008/02/rest-server-responses.htmls">REST Server Responses</a></li>
+</ul>
+
+<p>For OSLC implementations, you must use <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP protocol</a>.</p>
+
+<h2 id="rdf-turtle-json-and-html">RDF, Turtle, JSON, and HTML</h2>
+
+<p>We require services and resources to be represented in <a href="http://www.w3.org/RDF/">RDF</a>, but you might prefer to supplement that with a variety of machine-readable and human-readable formats like Turtle, JSON, or HTML.</p>
+
+<p>Instead of string parsing and regular expressions, you will definitely want to explore using an RDF parser such as <a href="http://jena.apache.org/">Apache Jena</a>.</p>
+
+<h2 id="oauth">OAuth</h2>
+
+<p>OSLC does not require OAuth, but it is the most common approach for managing authentication between clients.</p>
+
+<h1 id="services-resources-and-design-patterns">Services, resources and design patterns</h1>
+
+<p>The <a href="http://open-services.net/bin/view/Main/OslcCoreSpecification">OSLC Core specification</a> defines the basic patterns and protocols that any OSLC software must implement. The other workgroups define additional resources or extend existing ones, but they do not add new protocols.</p>
+
+<p>Here are the major resources defined in the <a href="http://open-services.net/bin/view/Main/OslcCoreSpecification">OSLC Core specification</a>:</p>
+
+<table>
+<thead>
+<tr>
+<th>Resource or Pattern</th>
+<th>Description</th>
+<th>More information</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Service Provider</td>
+<td>A resource that describes a collection of resources and tells you how to create new resources, find existing resources, or expose a user interface to do either</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/serviceprovider/">OSLC Primer: Service Provider</a></td>
+</tr>
+
+<tr>
+<td>Resource Paging</td>
+<td>A pattern to break long lists of resources into smaller pages, and provide a URL for the next page</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/resource-paging/">OSLC Primer: Resource Paging</a></td>
+</tr>
+
+<tr>
+<td>Queries</td>
+<td>Standard query string patterns to retrieve a subset of resources or properties</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/query-mechanisms/">OSLC Primer: Query mechanisms</a></td>
+</tr>
+
+<tr>
+<td>Resource Shapes</td>
+<td>Documents that define and describe the properties a resources should have, including acceptable values, cardinality, and whether or not those properties are required</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/resourceshapes/">OSLC Primer: Resource Shapes</a></td>
+</tr>
+
+<tr>
+<td>Creation Factory</td>
+<td>A service that creates new resources and (via HTTP POST) and may also provide the Resource Shape for new resources</td>
+<td><a href="http://open-services.net/bin/view/Main/OslcCoreSpecification?sortcol=table;table=up;up=#Creation_Factories">Core 2.0: Creation Factories</a></td>
+</tr>
+
+<tr>
+<td>Service Provider Catalog</td>
+<td>A resources that lists a set of ServiceProviders</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/serviceprovider/">OSLC Primer: ServiceProvider</a></td>
+</tr>
+
+<tr>
+<td>Delegated User Interface (UI) dialogs</td>
+<td>A method for embedding an interface to create or find resources inside another tool</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/delegated-user-interface-dialogs/">OSLC Primer: Delegated UI dialogs</a></td>
+</tr>
+
+<tr>
+<td>UI Previews</td>
+<td>A method for discovering and displaying a preview of a resource in another tool</td>
+<td><a href="http://open-services.net/resources/tutorials/oslc-primer/ui-preview/">OSLC Primer: UI Preview</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>To explore some of our other specifications, the OSLC Core Workgroup maintains <a href="http://open-services.net/wiki/core/Vocabulary-index/">a list of OSLC vocabularies and specifications</a> that includes relationship diagrams.</p>
+
+<h1 id="tools-sdks">Tools &amp; SDKs</h1>
+
+<h2 id="eclipse-lyo">Eclipse Lyo</h2>
+
+<p>The <a href="http://www.eclipse.org/lyo/">Eclipse Lyo</a> project has a variety of tools to help you adopt OSLC specifications:</p>
+
+<ul>
+<li><a href="http://wiki.eclipse.org/Lyo/LyoOSLC4J">OSLC4J</a>: a Java SDK for OSLC providers and consumers that lets you define OSLC resources and convert them to Java objects</li>
+<li><a href="http://wiki.eclipse.org/Lyo/LyoPerl">Perl libraries and samples</a>: modules for Perl for interacting with OSLC providers, including <a href="http://arroway.github.com/Net-OSLC-CM/">the Net-OSLC PERL library</a></li>
+<li><a href="http://wiki.eclipse.org/Lyo/LyoTestSuite">Test Suites</a>: test if your OSLC applications complies with the requirements of our specifications</li>
+<li><a href="http://wiki.eclipse.org/Lyo/TRSSDK">Tracked Resource Set SDK</a>: a test suite, toolkit, and sample application for the Tracked Resource Set specification</li>
+</ul>
+
+<p><strong>You do not have to use the Eclipse application to use Eclipse Lyo</strong>: Although much of the documentation assumes you will be using Eclipse, the source code is available in <a href="http://git.eclipse.org/c/?q=lyo">a Git repository</a> and much of it does not require the Eclipse application to work.</p>
+
+<h1 id="sample-applications-and-code">Sample applications and code</h1>
+
+<p>If you&rsquo;d like to explore some existing code, there are a variety of samples and existing applications available.</p>
+
+<p>The Communications Workgroup has <a href="http://open-services.net/wiki/communications/Open-source-software-and-tools/">a list of Open Source OSLC projects</a> (along with their licenses).</p>
+
+<p>If you&rsquo;d like to explore a basic application that provides OSLC Service Provider resources and UI previews, Vijay Kalangumvathakkal of developerWorks <a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/69ec672c-dd6b-443d-add8-bb9a9a490eba/entry/build_your_own_serviceprovider_that_provides_resource_preview_based_on_oslc_specifications_in_no_time4?lang=en">has some simple applications available to download and try out</a>.</p>
+
+<p>Our <a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/">tutorial</a> walks you through <a href="http://open-services.net/resources/tutorials/integrating-products-with-oslc/running-the-examples/">a working adapter that adds OSLC Change Management support to Bugzilla and a simple consumer application</a>.</p>
+
+<p>Finally, many of the software development kits include sample applications. <a href="http://wiki.eclipse.org/Lyo/BuildingOSLC4J">The OSLC4J component of Eclipse Lyo</a> has a variety of applications:</p>
+
+<ul>
+<li>a stock quote sample applications</li>
+<li>a Change Management provider</li>
+<li>a Quality Management provider</li>
+<li>an Automation provider</li>
+<li>the aforementioned Bugzilla Change Management adapter</li>
+</ul>
+
+<p>The <a href="http://wiki.eclipse.org/Lyo/BuildClient">Lyo Client component</a> in Eclipse Lyo includes additional APIs and sample code that addresses a variety of common OSLC use cases including login, OAuth, service discovery, and queries.</p>
+
+<p>The <a href="http://oslc4net.codeplex.com/">OSLC4Net</a> project includes sample applications if you favor .NET/C#.</p>
+
+<h1 id="oslc-open-source-node-js-projects">OSLC Open Source Node.js Projects</h1>
+
+<p>Eclipse/Lyo provides a set of Java based APIs and generative tools to support the creation of OSLC domain servers and integrated client applications. While Eclipse/Lyo provides a very rich and robust platfrom for OSLC development, it has a relatively high learning curve and that can increase development time, costs and risks.</p>
+
+<p>OSLC4JS represents a set of related Open Source projects supporting the creation and integration of OSLC based client and server applications that leverage the dynamic and asynchronous capabilities of JavaScript and Node.js. The LDP Service and OSLC Service projects provide Express.js middleware components that can be used to add LDP and/or OSLC services to any Express Web application. The OSLC Browser and OSLC Server projects use these services to create sample OSLC client and server apps that can easily and dynamically adapted to any OSLC domain, extensions to domains, and/or integrations between domains.</p>
+
+<p>OSLC4JS&rsquo;s goal is to minimize the cost of developing the OSLC specifications, reference implementation and test suites. The OASIS OSLC specifications would also benefit from a reference implementation in dynamic language such as JavaScript.</p>
+
+<h2 id="the-oslc4js-projects">The OSLC4JS Projects</h2>
+
+<p>The following sections provide a brief description of each OSLC4J sub-project and provide links to the development sites and related work products. The figure below shows the relationship between the modules created in the projects, and how they are assembled into a Web application.</p>
+
+<p><img src="/img/OSLC4JS-schematic.png" alt="Image OSLC4JS Schematic" title="OSLC4JS Schematic" /></p>
+
+<p>Adapter middleware in the figure represents some Express.js middleware component that provides CRUD access to some existing data source. This provides a simple way for vendors to provide OSLC access to their data sources without having to implement the details of OSLC and/or LDP.</p>
+
+<p>A <a href="https://openintegrations.slack.com/archives/oslc4js">oslc4js Slack Channel</a> has been created to facilitate collaborative development of these Open Source Projects.</p>
+
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Description</th>
+<th>More information</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://oslc.github.io/developing-oslc-applications/oslc-open-source-node-projects.html">OSLC Browser</a></td>
+<td>A sample OSLC Web application that uses the OSLC Service to provide a means of browsing OSLC resources. OSLC Browser allows you to configure a connection pool of contributing OSLC servers, and provides a convenient means of browsing the content contributed by those servers. The federation of thigs information is supported by the OSLC service with can also support OSLC domains, extension to domains, integration between domains. This allows the OSLC Browser to act as a federation hub for OSLC resources where stakeholder viewpoints, views (i.e., active dashboards) can be created to support integration needs.</td>
+<td><a href="https://app.mural.ly/t/ibm14/m/ibm14/1452806819730">Mural Design</a> Wiki Track &amp; Plan Bluemix App app route</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/OSLC/oslc-client">OSLC Client API</a></td>
+<td>A simple Node.js asynchronous OSLC client API to facilitate rich application development in JavaScript. This API may be attractive to client developers who wish to access OSLC capabilities and resources through a more logical API abstraction rather than more raw REST services.</td>
+<td><a href="https://github.com/OSLC/oslc-client/wiki">Wiki</a> <a href="https://hub.jazz.net/project/jamsden/oslc-client/track">Track &amp; Plan</a> npm package</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/OSLC/oslc-service">OSLC Service</a></td>
+<td>A generic Node.js Express middleware OSLC 3.0 service that can support any domain and can be easily adapted to any applicable data source. This services also utilizes the LDP Service.</td>
+<td><a href="https://github.com/OSLC/oslc-service/wiki">Wiki</a> <a href="https://hub.jazz.net/project/jamsden/oslc-service/track">Track &amp; Plan</a> npm package</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/OSLC/oslc-server">OSLC Server</a></td>
+<td>A minimal OSLC server that uses the oslc-service and ldp-service and can be accessed using a browser REST client. An instance of this server is deployed to IBM Bluemix in order to provide a platform for OSLC experimentation and testing.</td>
+<td><a href="https://github.com/OSLC/oslc-server/wiki">Wiki</a> <a href="https://hub.jazz.net/project/jamsden/oslc-server/track">Track &amp; Plan</a> <a href="https://console.ng.bluemix.net/?direct=classic/#/resources/appGuid=08af38ec-37f9-4138-9fb6-3775bb56f27e&amp;orgGuid=c4aaef36-b968-446f-9e72-d26046d28c9a&amp;spaceGuid=b07e4db6-9a60-4423-b233-873e6e443fd6">Bluemix App</a> <a href="http://oslc-server.mybluemix.net/">app route</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/OSLC/ldp-app">LDP App</a></td>
+<td>A sample Linked Data Platform (LDP) Web application that uses the LDP Service and supports CRUD operations and a graph of linked data.</td>
+<td><a href="https://github.com/OSLC/ldp-app/wiki">Wiki</a> <a href="https://hub.jazz.net/project/jamsden/ldp-app/track">Track &amp; Plan</a> <a href="https://console.ng.bluemix.net/?direct=classic/#/resources/appGuid=f9ff4bb4-2732-4e99-86e8-613fafe67d53&amp;orgGuid=c4aaef36-b968-446f-9e72-d26046d28c9a&amp;spaceGuid=b07e4db6-9a60-4423-b233-873e6e443fd6">Bluemix App</a> <a href="http://ldp-app.mybluemix.net/">app route</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/OSLC/ldp-service">LDP Service</a></td>
+<td>Express middleware providing LDP capabilities to Web apps, with storage of JSON-DL in MongoDB.</td>
+<td><a href="https://github.com/OSLC/ldp-service/wiki">Wiki</a> <a href="https://hub.jazz.net/project/jamsden/ldp-service/track">Track &amp; Plan</a> <a href="https://www.npmjs.com/package/ldp-service">npm package</a></td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+            </div>
+            <div class="post__footer">
+              <div>
+                <span/>
+              </div>
+              
+              <div class="post__share">
+  
+  
+  <div class="fb-share-button" data-href="http://oslc.co/resources/developing-oslc-applications/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?http%3a%2f%2foslc.co%2fresources%2fdeveloping-oslc-applications%2f">Share</a></div>
+
+  <a class="tw-share customer share" href="https://twitter.com/home?status=Developing%20OSLC%20Applications http%3a%2f%2foslc.co%2fresources%2fdeveloping-oslc-applications%2f by @oslcNews" title="Tweet this" target="_blank"><span class="fa fa-twitter"></span></a>
+
+  <a class="in-share customer share" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2foslc.co%2fresources%2fdeveloping-oslc-applications%2f&title=Developing%20OSLC%20Applications&summary=Tips%20for%20building%20an%20OSLC%20provider%2c%20and%20building%20an%20OSLC%20consumer%20application." title="Share on Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+
+  <a class="ml-share" href="mailto:?&subject=Developing%20OSLC%20Applications&body=http%3a%2f%2foslc.co%2fresources%2fdeveloping-oslc-applications%2f" title="Share by email"><span class="fa fa-envelope" target="_blank"></span></a>
+</div>
+
+              <div/>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer footer--inverse">
+          <nav class="footer-nav">
+  <div class="container">
+    <div class="row">
+      <div class="footer__links">
+        
+
+        <div class="footer__item footer__item--social">
+          <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
+          <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
+          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
+          <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="copyright">
+        <p>Copyright &copy; 2017 OSLC. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        </footer>
+    </div>
+    
+
+    
+    <script src="http://oslc.co/js/third-party.js"></script>
+<script src="http://oslc.co/js/header.js" ></script>
+<script src="http://oslc.co/js/lazy-load.js" ></script>
+
+
+    <script>
+      $(document).ready(function(){
+
+        $('nav > ul > li > a').click(function(event){
+          $(this).siblings('ul').css('display', 'block');
+          console.info($(this).attr('href'));
+        })
+      })
+    </script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script async src="http://oslc.co/js/fb.js" ></script>    
+  </body>
+</html>
+
+

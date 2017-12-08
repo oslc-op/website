@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faq on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/categories/faq/</link>
+    <description>Recent content in Faq on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Jun 2017 20:46:28 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/categories/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>http://oslc.co/about/faq/</link>
+      <pubDate>Wed, 21 Jun 2017 20:46:28 +0200</pubDate>
+      
+      <guid>http://oslc.co/about/faq/</guid>
+      <description>FAQ Your OSLC questions, answered. Select a question to reveal the answer.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,8 +6,7 @@
   <body>
 
     <div id="page" class="page">
-
-        {{ partial "notification-bar.html" . }}
+     
         <header>
 
           {{ partial "header.html" . }}
@@ -16,14 +15,20 @@
 
         {{ partial "hero.html" . }}
 
-        <section class="section--story">
-          <!-- {{ partial "statistics.html" . }} -->
+        {{ partial "benefits.html" . }}
+        
+        {{ partial "understand.html" . }}
+
+        <section class="section--intro">
+          {{ partial "why.html" . }}
+
+          {{ partial "supporters.html" . }}
+        </section>
+
+        <!-- <section class="section--story">
           {{ partial "leadtext.html" . }}
 
-          <!-- {{ partial "case.html" . }} -->
           {{ partial "hypermedia.html" . }}
-
-          <!-- {{ partial "resources.html" . }} -->
 
           {{ partial "specdomains.html" . }}
 
@@ -34,7 +39,7 @@
           {{ partial "solutions.html" . }}
 
           {{ partial "implementations.html" . }}
-        </section>
+        </section> -->
 
         {{ partial "news.html" . }}
 

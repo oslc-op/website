@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/news/updates/</link>
+    <description>Recent content on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 06 Mar 2015 10:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/news/updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pardon our dust: updated design rolling out gradually</title>
+      <link>http://oslc.co/news/updated-design-rolling-out-gradually/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/updated-design-rolling-out-gradually/</guid>
+      <description>As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.
+And as of today, you’ll be able to see how it looks live. I’ll be rolling out elements of it gradually. There are a number of moving parts and I want to test thoroughly.</description>
+    </item>
+    
+  </channel>
+</rss>

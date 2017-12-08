@@ -1,8 +1,8 @@
 header{
-  background: #fff;
+  background: $white;
   position: fixed;
   width: 100%;
-  top: 30px;
+  top: 0;
   z-index: 99;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
 
@@ -30,12 +30,12 @@ header{
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
-        background: #375178;
+        background: $oslc-dark-blue;
   
         a{
-          color: #375178;
+          color: $oslc-dark-blue;
           line-height: 5;
-          color:#fff;
+          color:$white;
           text-align: center;
         }
   
@@ -57,7 +57,7 @@ header{
     .menu-button{
   
       span{
-        color: #375178;
+        color: $oslc-dark-blue;
       }
     }
   }
@@ -70,21 +70,21 @@ header{
   padding-right: 15px;
 
   input{
-    color:#375178;
+    color:$oslc-dark-blue;
     border-top:none;
     border-left:none;
     border-right: none;
-    border-bottom: 1px solid #375178;
+    border-bottom: 1px solid $oslc-dark-blue;
     transition: all .3s ease-out;
     &:focus{
-      border-bottom:2px solid #375178;
+      border-bottom:2px solid $oslc-dark-blue;
       outline: none;
     }
   }
   button{
     border:none;
-    background: #fff;
-    color: #375178;
+    background: $white;
+    color: $oslc-dark-blue;
   }
 }
 
@@ -97,10 +97,10 @@ header{
         .nav__links{
           flex-direction: row;
           justify-content: space-around;
-          background: #fff;
+          background: $white;
 
           a {
-            color:#375178;
+            color:$oslc-dark-blue;
             margin: 0 30px 0 0;
           }
 
@@ -109,7 +109,7 @@ header{
               content: "";
               width: 2px;
               height: 20px;
-              background: #375178;
+              background: $oslc-dark-blue;
             }
 
             a:first-child{
@@ -127,7 +127,7 @@ header{
 
 @media screen and (max-width:768px){
   header {
-    top: 38px;
+    top: 0;
 
     .container {
       .nav__logo {
@@ -139,7 +139,7 @@ header{
         left: 0;
         width: 100%;
         height: 100%;
-        background: #375178;
+        background: $oslc-dark-blue;
         padding-top: 20px;
 
         .search-header, .nav__item--social {
@@ -151,16 +151,16 @@ header{
 
           input{
             background: transparent;
-            border-color: #FFF;
-            color: #FFF;
+            border-color: $white;
+            color: $white;
             
             &::placeholder {
-              color: #FFF;
+              color: $white;
             }
           }
           button {
             background: transparent;
-            color: #FFF;
+            color: $white;
           }
         }
       }

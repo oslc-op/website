@@ -1,8 +1,10 @@
-<div class="about">
-  <div class="about__title">
-    <h3>{{ .Title }}</h3>
-  </div>
-  <div class="about__content">
-    {{ .Content }}
+<div class="intro">
+  <div class="container">
+    <h2 class="headline">{{ .Params.title1 }}</h2>
+    <p class="intro--paragraph">{{ .Params.what1 }}</p>
+    <p class="intro--paragraph">{{ .Params.what2 }}</p>
+    <div class="intro--button">
+      <a class="button white hover--light_blue" href="/why">learn more</a>
+    </div>
   </div>
 </div>
