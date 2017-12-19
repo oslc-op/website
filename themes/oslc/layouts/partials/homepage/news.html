@@ -1,7 +1,5 @@
-<section class="news">
-  <div class="container">
-    <h2 class="headline">{{ .Params.titleNews }}</h2>
-  </div>
+<section class="homepage--section section--news gray">
+  <h2 class="headline">{{ .Params.titleNews }}</h2>
   <div class="container-fluid">
     <div class="news__container">
       {{ range last 4 (where .Data.Pages.ByPublishDate "Type" "=" "news") }}

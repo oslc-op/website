@@ -70,110 +70,127 @@
   }
 }
 
-.section--understand {
-  box-shadow: 0 -1px 2px rgba(0,0,0,0.16);
-  padding-top: 50px;
+.homepage--section {
+  padding: 50px 0 100px;
 
-  .understand--intro {
+  &.white {
+    background: $white;
+  }
+
+  &.gray {
+    background: $gray-background;
+  }
+  
+  &.light-blue-gradient {
+    background: -moz-linear-gradient(275deg, $oslc-light-blue 0%, $purple 50%, $oslc-dark-blue 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(275deg, $oslc-light-blue 0%,$purple 50%,$oslc-dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(175deg, $oslc-light-blue 0%,$purple 50%,$oslc-dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+    
+    .headline, .subtitle, p, span {
+      color: $white;
+    }
+  }
+
+  &.dark-blue-gradient {
+    background: -moz-linear-gradient(275deg, $oslc-dark-blue 0%, $black-blue 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(275deg, $oslc-dark-blue 0%, $black-blue 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(175deg, $oslc-dark-blue 0%, $black-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+
+    .headline, .subtitle, .column--item, p, span {
+      color: $white;
+    }
+  }
+
+  .headline {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .subtitle {
     font-size: 20px;
     text-align: center;
   }
 
-  .understand--split {
+  .section--split {
     display: flex;
-    padding: 80px 0;
 
-    .document-web, .data-web {
+    margin-top: 80px;
+
+    .column--item {
       width: 50%;
-      padding: 30px 0 50px;
+      box-sizing: border-box;
+      padding: 50px 0;
 
-      h3 {
-        text-align: center;
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 40px;
+      &:nth-child(odd) {
+        padding-right: 50px;
+        border-right: 1px solid $light-border;
       }
 
-      .info--section {
+      &:nth-child(even) {
+        padding-left: 50px;
+      }
+
+      .column--title {
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .item--content {
         display: flex;
+        flex-direction: column;
 
-        .info--col {
-          flex: 2;
-          
-          display: flex;
-          align-items: center;
+        .item--image {
+          width: 100%;
+          align-self: center;
 
-          &.bigger {
-            flex: 4;
+          &.half {
+            width: 50%;
+          }
+
+          &.four-fifths {
+            width: 80%;
+          }
+
+          &.one-fifth {
+            width: 20%;
           }
 
           img {
-            width: 55%;
-            height: 100%;
             display: block;
+            width: 100%;
           }
+        }
+        
+        .item--text {
+          margin-top: 35px;
 
-          p {
-            font-size: 18px;
-          }
-          
-          &:nth-child(even) {
-            justify-content: flex-end;
-          }
+          font-size: 18px;
+          text-align: center;
         }
       }
     }
+  }
 
-    .document-web {
-      box-sizing: border-box;
-      border-right: 1px solid $light-border;
-      padding-right: 60px;
-    }
-
-    .data-web {
-      padding-left: 60px;
-    }
+  .info--button {
+    margin: 50px 0 15px;
+    display: flex;
+    justify-content: center;
   }
 }
 
-.section--intro {
-  display: block;
+.section--why, .section--supporters {
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0 70px;
-    background: $white;
-
-    &:nth-child(odd) {
-      background: -moz-linear-gradient(275deg, $oslc-light-blue 0%, #4b5ad9 50%, $oslc-dark-blue 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(275deg, $oslc-light-blue 0%,#4b5ad9 50%,$oslc-dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(175deg, $oslc-light-blue 0%,#4b5ad9 50%,$oslc-dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
-
-      .headline {
-        color: white;
-      }
-
-      .intro--paragraph {
-        color: white;
-      }
-    }
-
-    .headline {
-      margin-bottom: 50px;
-    }
-
-    .intro--paragraph {
-      font-size: 20px;
-      line-height: 1.5;
-      text-align: center;
-    }
-
-    .intro--button {
-      margin: 50px 0 15px;
-      display: flex;
-      justify-content: center;
-    }
+  .intro--paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
   }
 }
 
@@ -233,13 +250,7 @@
   }
 }
 
-.news{
-  background: #EFEFEF;
-  padding: 50px 0px;
-
-  .headline {
-    margin-bottom: 50px;
-  }
+.section--news{
 
   .news__container{
     display: flex;
@@ -288,7 +299,7 @@
 }
 
 @media screen and (min-width:769px){
-  .news {
+  .section--news {
 
     .news__container{
       flex-direction: row;
@@ -359,7 +370,7 @@
     }
   }
 
-  .news {
+  .section--news {
     .news__container {
       justify-content: center;
       margin: 20px 0 0;
