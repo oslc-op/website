@@ -102,6 +102,10 @@ header{
           a {
             color:$oslc-dark-blue;
             margin: 0 30px 0 0;
+
+            &:last-child {
+              margin: 0;
+            }
           }
 
           .nav__item--social{

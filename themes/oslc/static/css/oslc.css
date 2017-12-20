@@ -270,6 +270,8 @@ header .container .menu-button span {
   header .container .links .nav__links a {
     color: #375178;
     margin: 0 30px 0 0; }
+  header .container .links .nav__links a:last-child {
+    margin: 0; }
   header .container .links .nav__links .nav__item--social::before {
     content: "";
     width: 2px;
@@ -702,7 +704,7 @@ table th {
   margin-top: 0; }
 
 .homepage--section {
-  padding: 50px 0 100px; }
+  padding: 50px 0 70px; }
 .homepage--section.white {
   background: #FFF; }
 .homepage--section.gray {
@@ -736,6 +738,7 @@ table th {
   text-align: center; }
 .homepage--section .section--split {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 80px; }
 .homepage--section .section--split .column--item {
   width: 50%;
@@ -757,12 +760,16 @@ table th {
 .homepage--section .section--split .column--item .item--content .item--image {
   width: 100%;
   align-self: center; }
-.homepage--section .section--split .column--item .item--content .item--image.half {
-  width: 50%; }
-.homepage--section .section--split .column--item .item--content .item--image.four-fifths {
-  width: 80%; }
 .homepage--section .section--split .column--item .item--content .item--image.one-fifth {
   width: 20%; }
+.homepage--section .section--split .column--item .item--content .item--image.half {
+  width: 50%; }
+.homepage--section .section--split .column--item .item--content .item--image.three-fifths {
+  width: 60%; }
+.homepage--section .section--split .column--item .item--content .item--image.four-fifths {
+  width: 80%; }
+.homepage--section .section--split .column--item .item--content .item--image.nine-tenths {
+  width: 90%; }
 .homepage--section .section--split .column--item .item--content .item--image img {
   display: block;
   width: 100%; }
@@ -774,6 +781,27 @@ table th {
   margin: 50px 0 15px;
   display: flex;
   justify-content: center; }
+
+.section--understand .section--split .column--item {
+  padding: 50px 0 200px; }
+.section--understand .section--split .column--item:last-child, .section--understand .section--split .column--item:nth-last-child(2) {
+  padding-bottom: 80px; }
+.section--understand .section--split .column--item .item--content .mashup_applications {
+  margin-top: 9px; }
+.section--understand .section--split .column--item .item--content .mashup_applications a {
+  color: #418EEB; }
+
+.section--supporters .supporters--list {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0; }
+.section--supporters .supporters--list .supporter {
+  width: 15%; }
+.section--supporters .supporters--list .supporter img {
+  display: block;
+  width: 100%; }
+.section--supporters .info--button {
+  margin-top: 20px; }
 
 .section--why .intro--paragraph, .section--supporters .intro--paragraph {
   font-size: 20px;
