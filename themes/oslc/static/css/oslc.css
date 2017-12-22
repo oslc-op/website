@@ -683,24 +683,34 @@ table th {
 .section--benefits .container {
   width: 1300px;
   max-width: 1300px; }
-.section--benefits .benefits_grid {
-  display: flex; }
-.section--benefits .benefits_grid .benefit {
+.section--benefits .benefit {
+  padding: 40px 0 60px; }
+.section--benefits .benefit .benefit--title {
+  font-size: 34px;
+  text-align: center; }
+.section--benefits .benefit .benefit--subtext {
+  font-size: 20px;
+  text-align: center; }
+.section--benefits .benefit .benefits_grid {
+  display: flex;
+  margin-top: 50px; }
+.section--benefits .benefit .benefits_grid .benefit--item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 40px 20px; }
-.section--benefits .benefits_grid .benefit i {
+.section--benefits .benefit .benefits_grid .benefit--item i {
   font-size: 45px;
-  color: #4690FF; }
-.section--benefits .benefits_grid .benefit .benefit--title {
+  color: #418EEB; }
+.section--benefits .benefit .benefits_grid .benefit--item .item--title {
   color: #04002B;
   font-weight: normal;
   text-align: center;
-  font-size: 25px; }
-.section--benefits .benefits_grid .benefit .benefit--paragraph {
+  font-size: 22px; }
+.section--benefits .benefit .benefits_grid .benefit--item .item--paragraph {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 0; }
 
 .homepage--section {
@@ -729,7 +739,7 @@ table th {
   color: #FFF; }
 .homepage--section .headline {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: normal;
   text-align: center; }
@@ -790,6 +800,15 @@ table th {
   margin-top: 9px; }
 .section--understand .section--split .column--item .item--content .mashup_applications a {
   color: #418EEB; }
+.section--understand .section--split .column--item .item--content .note {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+.section--understand .section--split .column--item .item--content .note .url-icon {
+  color: #418EEB;
+  font-size: 20px;
+  margin-left: 5px; }
 
 .section--supporters .supporters--list {
   display: flex;
