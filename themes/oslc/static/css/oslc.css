@@ -152,22 +152,6 @@ h1, h2, h3, h4, h5 {
   box-sizing: border-box;
   z-index: -1; }
 
-.post__button {
-  color: #FFF;
-  width: 170px;
-  font-size: 16px;
-  padding: 6px 0;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  background-color: #3D3D3D;
-  margin-top: 20px; }
-.post__button:hover {
-  text-decoration: none;
-  color: #FFF; }
-.post__button:visited {
-  color: #FFF; }
-
 .footer {
   position: absolute;
   width: 100%;
@@ -1008,6 +992,16 @@ table th {
 .post__content .post__paragraphs {
   line-height: 2;
   margin: 20px 0; }
+.post__content .post__paragraphs .post__button {
+  width: 170px;
+  padding: 3px 0;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; }
+.post__content .post__paragraphs .post__button:hover {
+  text-decoration: none;
+  color: #FFF; }
 
 .post__footer {
   border-top: 1px solid #AAAAAA;
@@ -1101,15 +1095,10 @@ table th {
   left: 12px;
   padding: 0 6px; }
 .sec-nw__search .search__button {
+  font-size: 14px;
   background: #FFF;
   border: 1px solid #737373;
-  color: #737373;
-  padding: 5px 10px;
-  transition: all 350ms ease; }
-.sec-nw__search .search__button:hover {
-  background: #737373;
-  color: #FFF;
-  cursor: pointer; }
+  padding: 5px 10px; }
 
 .post {
   padding-top: 20px; }

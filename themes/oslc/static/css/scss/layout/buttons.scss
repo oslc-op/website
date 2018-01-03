@@ -78,24 +78,3 @@
     z-index: -1;
   }
 }
-
-.post__button {
-  color: $white;
-  width: 170px;
-  font-size: 16px;
-  padding: 6px 0;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  background-color: $black;
-  margin-top: 20px;
-
-  &:hover {
-    text-decoration: none;
-    color: $white;
-  }
-
-  &:visited{
-    color:$white;
-  }
-}
