@@ -107,9 +107,11 @@ h1, h2, h3, h4, h5 {
   box-sizing: border-box;
   border: 1px solid #3D3D3D;
   color: #3D3D3D;
+  background: transparent;
   padding: 7px 25px;
   font-size: 16px;
   transition: all 200ms ease-in;
+  cursor: pointer;
   z-index: 0; }
 .button.white {
   border-color: #FFF;
@@ -117,11 +119,19 @@ h1, h2, h3, h4, h5 {
 .button.blue {
   border-color: #FFF;
   color: #FFF; }
+.button.blue {
+  border-color: #37086C;
+  color: #37086C; }
 .button.hover--light_blue:hover {
   color: #FFF;
   border-color: #418EEB; }
 .button.hover--light_blue:before {
   border-bottom-color: #418EEB; }
+.button.hover--dark_purple:hover {
+  color: #FFF;
+  border-color: #37086C; }
+.button.hover--dark_purple:before {
+  border-bottom-color: #37086C; }
 .button:hover {
   color: white; }
 .button:hover::before {
@@ -1178,7 +1188,7 @@ table th {
 .rs-search .rs-search__item span {
   position: absolute;
   right: 28px;
-  top: 10px;
+  top: 8px;
   color: #37086C;
   pointer-events: none; }
 .rs-search .rs-search__item label {
@@ -1334,18 +1344,6 @@ table th {
   width: 80%;
   display: none;
   bottom: -80px; }
-.container-small-items .rs-small-item .sm-buttons a {
-  border: 1px solid #3D3D3D;
-  color: #3D3D3D;
-  line-height: 2;
-  display: block;
-  width: 40%;
-  text-align: center;
-  text-decoration: none;
-  transition: all 1s ease; }
-.container-small-items .rs-small-item .sm-buttons a:hover {
-  background: #3D3D3D;
-  color: #FFF; }
 .container-small-items .rs-small-item:hover .title-item, .container-small-items .rs-small-item:hover .sm-author-date {
   display: none; }
 .container-small-items .rs-small-item:hover .sm-buttons {
@@ -1388,7 +1386,7 @@ table th {
   .rs-search .rs-search__item:last-child {
     width: 27%; }
   .rs-search .rs-search__item span {
-    right: 15px; }
+    right: 11px; }
 
   .rs-long-item .content__options {
     padding: 15px 15px;

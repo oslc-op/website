@@ -6,9 +6,11 @@
 
   border: 1px solid $black;
   color: $black;
+  background: transparent;
   padding: 7px 25px;
   font-size: 16px;
   transition: all 200ms ease-in;
+  cursor: pointer;
   
   z-index: 0;
 
@@ -22,6 +24,11 @@
     color: $white;
   }
 
+  &.blue {
+    border-color: $dark-purple;
+    color: $dark-purple;
+  }
+
   &.hover--light_blue {
     &:hover {
       color: $white;
@@ -30,6 +37,17 @@
 
     &:before {
       border-bottom-color: $oslc-light-blue
+    }
+  }
+
+  &.hover--dark_purple {
+    &:hover {
+      color: $white;
+      border-color: $dark-purple;
+    }
+
+    &:before {
+      border-bottom-color: $dark-purple;
     }
   }
 

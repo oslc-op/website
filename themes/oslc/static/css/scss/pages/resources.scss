@@ -48,8 +48,8 @@
     input{
       width: 100%;
       border-radius: 0;
-      border:1px solid #37086C;
-      color: #37086C;
+      border:1px solid $dark-purple;
+      color: $dark-purple;
       background: none;
       line-height: 2;
       padding: 0px 10px;
@@ -63,8 +63,8 @@
       -moz-border-radius: 0px;
       width: 100%;
       border-radius: 0;
-      border:1px solid #37086C;
-      color: #37086C;
+      border:1px solid $dark-purple;
+      color: $dark-purple;
       background: none;
       height: 34px;
       padding: 0px 10px;
@@ -74,14 +74,14 @@
     span{
       position: absolute;
       right: 28px;
-      top:10px;
-      color: #37086C;
+      top:8px;
+      color: $dark-purple;
       pointer-events: none;
     }
 
     label{
       font-size: 10px;
-      color: #37086C;
+      color: $dark-purple;
       position:absolute;
       background: $white;
       padding: 0 7px;
@@ -283,20 +283,6 @@
       width: 80%;
       display: none;
       bottom:-80px;
-      a{
-        border: 1px solid $black;
-        color:$black;
-        line-height: 2;
-        display: block;
-        width: 40%;
-        text-align: center;
-        text-decoration: none;
-        transition: all 1s ease;
-        &:hover{
-          background: $black;
-          color:$white;
-        }
-      }
     }
 
     &:hover{
@@ -363,7 +349,7 @@
       }
 
       span{
-        right:15px;
+        right:11px;
       }
     }
   }
