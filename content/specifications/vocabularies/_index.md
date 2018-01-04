@@ -3,6 +3,7 @@ title = "OSLC Vocabularies"
 date = "2017-10-02T18:23:03+02:00"
 
 +++
+## Introduction
 
 The purpose of this page is to provide a single index of all the vocabulary documents on the OSLC website. Not all these vocabularies are from OASIS Standards. Some are references to current OSLC v2.0 domain specifications that have not yet been migrated to OASIS. Others are still under development and may change. Consult the corresponding specification to learn about its status. The process by which the domain namespaces are mapped to the RDF Schema and HTML documents is documented in the following documents:
 
@@ -14,7 +15,7 @@ The namespace for each domain is defined in the domain specification.
 
 OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html#versionCompatibility) specify that updated OSLC vocabularies should be backward compatible. That is, classes and properties can be added, or deprecated (archaic), but may not be changed or removed. Resource shapes on the other hand can be created to constrain these vocabularies for whatever purpose is needed, including the needs of the OSLC specifications themselves. As a result, new vocabularies published on this site should be compatible with the old vocabularies. Therefore, only the most recent version of the vocabularies are listed here, and linked to by the various OSLC core and domain namespace URIs.
 
-## Namespaces
+## Standard Namespaces
 
 | Specification | Namespace | RDF Schema | HTML |
 |---------------|-----------|------------|------|
@@ -30,5 +31,18 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | [PROMCODE 1.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/WorkingDrafts/promcode-interface-v1.0-wd01_Chapter3.docx) |  |  |  |
 
 
+## Other OSLC Namespaces
 
+There may be many other domain vocabularies that are for whatever reason, not currently on an OASIS standards track. This could include:
+
+* Old open-services.net documents and vocabulary namespaces that were never completed.
+* Existing open-services.net documents and vocabularies that were at least partially completed, but are not currently targeted for migration to OASIS.
+* New experimental domains that the OSLC community might find useful
+* Namespaces used by existing tool implementations that should be preserved
+
+In order to foster open integration, we will allow additional domain vocabularies (ontology) and resource shapes to be published on open-services.net. The open-services.net administrator will review these vocabularies and publish them upon community request. These will be listed in the following table to help interested parties know what namespace names people are working on in order to avoid potential collisions.
+
+| Document | Namespace | RDF Schema | HTML |
+|----------|-----------|------------|------|
+| [Estimation and Measurement](https://www.oasis-open.org/committees/document.php?document_id=61066&wg_abbrev=oslc-domains) | http://open-services.net/ns/ems# | [ems.rdf](../../ns/ems/ems.rdf) | |
 
