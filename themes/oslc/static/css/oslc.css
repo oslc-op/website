@@ -62,9 +62,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0; }
 
-.page, .single, .list {
-  position: relative; }
-
 .btn {
   display: inline-block;
   font-weight: 400;
