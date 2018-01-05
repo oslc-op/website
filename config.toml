@@ -26,25 +26,37 @@ disqus_url = ""
     weight = 1
 
 [[menu.main]]
+    name = "Specs"
+    identifier = "specifications"
+    url  = "/specifications"
+    weight = 2
+
+[[menu.main]]
+    name = "Working Groups"
+    identifier = "wgroups"
+    url = "/workgroups"
+    weight = 3
+
+[[menu.main]]
     name = "About"
     identifier = "about"
     url  = "/about/mission"
-    weight = 2
+    weight = 4
 
 [[menu.main]]
     name = "Resources"
     url  = "/resources/"
-    weight = 3
+    weight = 5
 
 [[menu.main]]
     name = "Contribute"
     url  = "/contribute/"
-    weight = 4
+    weight = 6
 
 [[menu.main]]
     name = "News"
     url  = "/news/"
-    weight = 5
+    weight = 7
 
 # Top bar social links menu
 

@@ -1,7 +1,7 @@
 .sec-rs-header{
   position: relative;
   height: 300px;
-  color: #fff;
+  color: $white;
   background-image: url("../img/resource-hero.jpg");
   background-size: cover;
   background-position: bottom;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background : #FFF;
+  background : $white;
   padding: 20px 20px;
   position: relative;
   top: -25px;
@@ -48,8 +48,8 @@
     input{
       width: 100%;
       border-radius: 0;
-      border:1px solid #37086C;
-      color: #37086C;
+      border:1px solid $dark-purple;
+      color: $dark-purple;
       background: none;
       line-height: 2;
       padding: 0px 10px;
@@ -63,8 +63,8 @@
       -moz-border-radius: 0px;
       width: 100%;
       border-radius: 0;
-      border:1px solid #37086C;
-      color: #37086C;
+      border:1px solid $dark-purple;
+      color: $dark-purple;
       background: none;
       height: 34px;
       padding: 0px 10px;
@@ -74,16 +74,16 @@
     span{
       position: absolute;
       right: 28px;
-      top:10px;
-      color: #37086C;
+      top:8px;
+      color: $dark-purple;
       pointer-events: none;
     }
 
     label{
       font-size: 10px;
-      color: #37086C;
+      color: $dark-purple;
       position:absolute;
-      background: #FFF;
+      background: $white;
       padding: 0 7px;
       top:-7px;
       left: 15px;
@@ -96,9 +96,9 @@
   overflow: hidden;
   position: relative;
   z-index: 20;
-  border: 5px solid #fff;
+  border: 5px solid $white;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.24);
-  color: #fff;
+  color: $white;
   height: auto;
   margin-bottom:20px;
 
@@ -162,8 +162,8 @@
       width: 100%;
 
       a{
-        color: #fff;
-        border: 1px solid #fff;
+        color: $white;
+        border: 1px solid $white;
         text-align: center;
         text-decoration: none;
         margin-bottom: 20px;
@@ -171,14 +171,14 @@
         margin-right: 0px;
 
         &:hover{
-          background: #fff;
-          color: #375178;
+          background: $white;
+          color: $oslc-dark-blue;
         }
       }
     }
 
     .other a{
-      color:#fff;
+      color:$white;
       text-decoration: none;
       float: right;
       font-size: 20px;
@@ -193,14 +193,14 @@
   .rs-small-item{
     margin-bottom: 30px;
     padding: 6px;
-    background: #FFF;
+    background: $white;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.24);
     position:relative;
     transition: all 1s ease;
     height: 348px;
 
     .sm-header--blue, .sm-header--green, .sm-header--red, .sm-header--orange, .sm-header--gray{
-      color: #fff;
+      color: $white;
       text-align: center;
       text-transform: uppercase;
       padding: 10px 0px;
@@ -236,13 +236,13 @@
       }
     }
 
-    .sm-header--blue{background: #418EEB;}
+    .sm-header--blue{background: $oslc-light-blue;}
 
-    .sm-header--green{background: #28BD84}
+    .sm-header--green{background: $oslc-green}
 
-    .sm-header--orange{background: #D96B50}
+    .sm-header--orange{background: $oslc-orange}
 
-    .sm-header--gray{background: #3D3D3D}
+    .sm-header--gray{background: $black}
 
     .sm-content{
       padding: 0px 15px;
@@ -283,20 +283,6 @@
       width: 80%;
       display: none;
       bottom:-80px;
-      a{
-        border: 1px solid #3D3D3D;
-        color:#3D3D3D;
-        line-height: 2;
-        display: block;
-        width: 40%;
-        text-align: center;
-        text-decoration: none;
-        transition: all 1s ease;
-        &:hover{
-          background: #3D3D3D;
-          color:#fff;
-        }
-      }
     }
 
     &:hover{
@@ -315,7 +301,7 @@
   height: 240px !important; 
 
   .sm-header--wg{
-    color: #fff;
+    color: $white;
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0px;
@@ -336,13 +322,13 @@
     height: 60px !important;
   }
   
-  &:first-child .sm-header--wg { background: #418EEB !important; }
+  &:first-child .sm-header--wg { background: $oslc-light-blue !important; }
   
-  &:nth-child(odd) .sm-header--wg {background: #28BD84; }
+  &:nth-child(odd) .sm-header--wg {background: $oslc-green; }
   
-  &:nth-child(even) .sm-header--wg {background: #D96B50; }
+  &:nth-child(even) .sm-header--wg {background: $oslc-orange; }
   
-  &:last-child .sm-header--wg {background: #3D3D3D; }
+  &:last-child .sm-header--wg {background: $black; }
 }
 
 @media screen and (min-width: 769px){
@@ -363,7 +349,7 @@
       }
 
       span{
-        right:15px;
+        right:11px;
       }
     }
   }
@@ -424,7 +410,7 @@
     left: 0;
     display: inline-block;
     background-color: #0B1E3A;
-    color: #fff;
+    color: $white;
     height: 1000px;
     padding: 1em 1em 4em;
     vertical-align: top;
@@ -434,7 +420,7 @@
       input {
         width: 100%;
         background-color: #0B1E3A;
-        color: #fff;
+        color: $white;
         padding: 0.75em 0.5em;
       }
     }
@@ -452,12 +438,12 @@
         }
 
         a:hover {
-          color: #fff;
+          color: $white;
           text-decoration: none;
         }
 
         a:focus {
-          color: #fff;
+          color: $white;
         }
 
         li {
@@ -473,7 +459,7 @@
   }
   .focus {
     display: block;
-    color: #fff;
+    color: $white;
   }
 
   .post.tutorial {

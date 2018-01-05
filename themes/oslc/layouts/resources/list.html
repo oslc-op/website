@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "notification-bar.html" . }}
+  
   {{ partial "head.html" . }}
 
   <body>
@@ -69,6 +69,128 @@
              $(e).text('' + summary + '...');
         })
       })
+
+    </script>
+ 
+    <script type="text/javascript">
+      var baseurl = "{{.Site.BaseURL}}";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
+
+    <script>
+      var lunrIndex;
+      var pagesIndex;
+      function initLunr() {
+        $.getJSON(baseurl + "resources/resources.json")
+          .done(function (index) {
+            pagesIndex = index;
+            lunrIndex = lunr(function(){
+              this.ref('uri');
+              this.field('title', {
+                boost: 15
+              });
+              this.field('tags', {
+                boost: 10
+              });
+              this.field("content", {
+                boost: 5
+              });
+
+              pagesIndex.forEach(function (page) {
+                this.add(page);
+              }, this);
+            })
+            lunrIndex.pipeline.remove(lunrIndex.stemmer)
+            console.info(lunrIndex);
+          })
+          .fail(function (jqxhr, textStatus, error) {
+            var err = textStatus + ", " + error;
+            console.error("Error getting Hugo index flie:", err);
+          });
+      }
+
+      function search(query) {
+        return lunrIndex.search(query).map(function (result) {
+          return pagesIndex.filter(function (page) {
+            return page.uri === result.ref;
+          })[0];
+        });
+      }
+
+      function results(r) {
+        var matches = [];
+
+        $('#resource-hero').hide();
+
+        $('.container-small-items > div').each(function(index, elem){
+          $(elem).hide();
+          for (var i = 0; i < r.length; i++) {
+            if (elem.title === r[i].title) {
+              matches.push(elem)
+              $(elem).css('display', 'none')
+            }
+          }
+        })
+
+        $(matches).each(function(index, e){
+          $(e).css('display', 'block');
+        });
+        
+      }
+
+      $(document).ready(function(){
+        var result;
+        var filterBy;
+
+        initLunr();
+
+        $('#filter-by').val('all');
+
+        $('#search-by').keypress(function(e){
+          if (e.which === 13) {
+            result = search($(this).val());
+            results(result)
+          }
+        })
+
+        $('#button-search').click(function(){
+          var searchBy = $('#search-by').val();
+          result = search(searchBy);
+          results(result)
+        })
+
+        $('#filter-by').change(function(){
+          var matches = [];
+          filterBy = $("select option:selected").text().toLowerCase();
+          
+          if (filterBy == 'all') {
+            $('.rs-small-item').css('display', 'block');
+            $('#resource-hero').css('display', 'block');
+          } else {
+            $('#resource-hero').css('display', 'none');
+          
+            $('.rs-small-item').each(function(index, elem){
+              if ($(elem).attr('itemtype') === filterBy){
+                console.info($(elem).attr('itemtype'));
+                $(elem).css('display', 'block');
+                
+              } else {
+                $(elem).css('display', 'none');
+              }
+            })
+          }
+        });
+
+        $('#search-by').on('change keyup', function(event){
+          console.info('event ', event)
+          if ($('#search-by').val() === '') {
+            $('.container-small-items > div').each(function(index, elem){
+              $(elem).css('display', 'block');
+            })
+            $('#resource-hero').css('display', 'block');
+          }
+        })
+      });
 
     </script>
   </body>

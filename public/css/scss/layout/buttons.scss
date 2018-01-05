@@ -1,0 +1,35 @@
+.btn-oslc{
+  background: #28BD84;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-purple{
+  background: #37086C;
+  color:#fff;
+  border: 1px solid #37086C;
+  text-transform: uppercase;
+  line-height: 2;
+  width: 100%;
+}
+
+.post__button {
+  color: #fff;
+  width: 170px;
+  font-size: 16px;
+  padding: 6px 0;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background-color: #3d3d3d;
+  margin-top: 20px;
+
+  &:hover {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  &:visited{
+    color:#fff;
+  }
+}
