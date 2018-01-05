@@ -1,0 +1,514 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/perfmon#",
+    "@type" : "owl:Ontology",
+    "description" : "All vocabulary\n    URIs defined in the OSLC Performance Monitoring namespace.",
+    "source" : "http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf",
+    "title" : "The OSLC Performance Monitoring Vocabulary",
+    "label" : "Performance Monitoring",
+    "seeAlso" : [ "http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf", "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/" ]
+  }, {
+    "@id" : "pm:AvgJmsGetTime",
+    "@type" : "rdfs:Class",
+    "comment" : "Average time required for a system to respond to a Java Messaging Service GET request",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "AvgJmsGetTime",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:ResponseTimeMetrics", "pm:RequestMetrics" ]
+  }, {
+    "@id" : "pm:AvgLoginRequestFailures",
+    "@type" : "rdfs:Class",
+    "comment" : "Average login request failures",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "AvgLoginRequestFailures",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:FailureMetrics"
+  }, {
+    "@id" : "pm:AvgRequestFailures",
+    "@type" : "rdfs:Class",
+    "comment" : "Average request failures",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "AvgRequestFailures",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:FailureMetrics"
+  }, {
+    "@id" : "pm:BufferPoolHits",
+    "@type" : "rdfs:Class",
+    "comment" : "Buffer pool hits, e.g. hit ratio or count",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "BufferPoolHits",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:BufferPoolMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:BufferPoolMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for buffer pool-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "BufferPoolMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:MemoryMetrics"
+  }, {
+    "@id" : "pm:CpuMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for CPU-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "CpuMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:CpuSpeed",
+    "@type" : "rdfs:Class",
+    "comment" : "Speed of the CPU",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "CpuSpeed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:CpuMetrics", "pm:ResourceAvailabilityMetrics" ]
+  }, {
+    "@id" : "pm:CpuUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "CPU used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "CpuUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:CpuMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:DiskMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for disk-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "DiskMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:DiskSpaceOverCommitAmount",
+    "@type" : "rdfs:Class",
+    "comment" : "Amount of disk space committed beyond the disk's capacity.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "DiskSpaceOverCommitAmount",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:DiskMetrics", "pm:ResourceExhaustionMetrics" ]
+  }, {
+    "@id" : "pm:DiskSpaceUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Disk space used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "DiskSpaceUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:DiskMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:FailureMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for requests that fail.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "FailureMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:RequestMetrics"
+  }, {
+    "@id" : "pm:GarbageCollectionRequests",
+    "@type" : "rdfs:Class",
+    "comment" : "Garbage collection requests",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "GarbageCollectionRequests",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:RequestMetrics"
+  }, {
+    "@id" : "pm:HeapMemoryUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Heap memory used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "HeapMemoryUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:MemoryMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:HighDepthQueueCount",
+    "@type" : "rdfs:Class",
+    "comment" : "",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "HighDepthQueueCount",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceExhaustionMetrics"
+  }, {
+    "@id" : "pm:HostedDatabases",
+    "@type" : "rdfs:Class",
+    "comment" : "Databases hosted, either absolute or relative to some maximum",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "HostedDatabases",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:LocalInboundConnections",
+    "@type" : "rdfs:Class",
+    "comment" : "Local inbound connections",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "LocalInboundConnections",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:LockListUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Lock usage",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "LockListUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:LogUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Amount of log used, either absolute or relative to some maximum",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "LogUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:LoginRequestFailures",
+    "@type" : "rdfs:Class",
+    "comment" : "Failed login requests",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "LoginRequestFailures",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:FailureMetrics"
+  }, {
+    "@id" : "pm:MemoryAvailableAfterGarbageCollection",
+    "@type" : "rdfs:Class",
+    "comment" : "Memory available following completion of a garbage collection request.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "MemoryAvailableAfterGarbageCollection",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:MemoryMetrics", "pm:ResourceAvailabilityMetrics" ]
+  }, {
+    "@id" : "pm:MemoryMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for memory-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "MemoryMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:MessageCount",
+    "@type" : "rdfs:Class",
+    "comment" : "",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "MessageCount",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:Metric",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for metrics defined in the Performance Monitoring vocabulary.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "Metric",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "ems:Metric"
+  }, {
+    "@id" : "pm:NetworkIOErrors",
+    "@type" : "rdfs:Class",
+    "comment" : "Network packets sent or received that did not complete successfully.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "NetworkIOErrors",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:FailureMetrics", "pm:NetworkMetrics" ]
+  }, {
+    "@id" : "pm:NetworkMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for network-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "NetworkMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:NotRunning",
+    "comment" : "Not running in its host environment",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "NotRunning",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values"
+  }, {
+    "@id" : "pm:PerMinute",
+    "@type" : [ "http://qudt.org/schema/qudt#TimeUnit", "rdfs:Class" ],
+    "qudt:conversionMultiplier" : 60.0,
+    "comment" : "Units for a quantity where a value of one represents 60 seconds of time.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "PerMinute",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure"
+  }, {
+    "@id" : "pm:PerformanceMonitoringRecord",
+    "@type" : "rdfs:Class",
+    "comment" : "A resource representing performance monitoring information",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "PerformanceMonitoringRecord",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Performance_Monitoring_Record"
+  }, {
+    "@id" : "pm:QueueDepth",
+    "@type" : "rdfs:Class",
+    "comment" : "Size/lenght/depth of a queue",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "QueueDepth",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:RequestMetrics"
+  }, {
+    "@id" : "pm:QueueFull",
+    "@type" : "rdfs:Class",
+    "comment" : "A queue filled to its maximum capacity",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "QueueFull",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceExhaustionMetrics"
+  }, {
+    "@id" : "pm:RealMemoryUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Real memory used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "RealMemoryUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:MemoryMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:RemoteInboundConnections",
+    "@type" : "rdfs:Class",
+    "comment" : "Remote inbound connections",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "RemoteInboundConnections",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:RequestFailures",
+    "@type" : "rdfs:Class",
+    "comment" : "Request failures",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "RequestFailures",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:FailureMetrics"
+  }, {
+    "@id" : "pm:RequestMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for requests on a resource, originating from an end user or a system component.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "RequestMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:ResourceAvailabilityMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for metrics that show resource availability.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ResourceAvailabilityMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:ResourceExhaustionMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for metrics that show resource consumption in excess of capacity.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ResourceExhaustionMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:ResourceUsageMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for metrics that show resource usage.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ResourceUsageMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:ResponseTime",
+    "@type" : "rdfs:Class",
+    "comment" : "Time required for some system to respond to a request",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ResponseTime",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:ResponseTimeMetrics", "pm:RequestMetrics" ]
+  }, {
+    "@id" : "pm:ResponseTimeMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for metrics that show time it takes for a response to be returned to a request.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ResponseTimeMetrics",
+    "seeAlso" : [ "http://dbpedia.org/resource/Response_time_%28technology%29", "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories" ],
+    "subClassOf" : "pm:RequestMetrics"
+  }, {
+    "@id" : "pm:Running",
+    "comment" : "Running in its host environment",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "Running",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values"
+  }, {
+    "@id" : "pm:SortOverflows",
+    "@type" : "rdfs:Class",
+    "comment" : "A sort's performance was impacted because the data to be sorted is large enough for it to overflow from (relatively) fast to (relatively) slow storage.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "SortOverflows",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceExhaustionMetrics"
+  }, {
+    "@id" : "pm:SqlStatmentFailures",
+    "@type" : "rdfs:Class",
+    "comment" : "SQL statements that failed",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "SqlStatmentFailures",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:FailureMetrics"
+  }, {
+    "@id" : "pm:TableSpaceFree",
+    "@type" : "rdfs:Class",
+    "comment" : "Table space free.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "TableSpaceFree",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceAvailabilityMetrics"
+  }, {
+    "@id" : "pm:TableSpaceUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Table space used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "TableSpaceUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : "pm:ResourceUsageMetrics"
+  }, {
+    "@id" : "pm:ThreadPoolMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for thread pool-related metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "ThreadPoolMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:TimeDatabaseThreadPoolExhausted",
+    "@type" : "rdfs:Class",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "TimeDatabaseThreadPoolExhausted",
+    "seeAlso" : [ "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#", "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure" ],
+    "subClassOf" : [ "pm:ThreadPoolMetrics", "pm:ResourceExhaustionMetrics" ]
+  }, {
+    "@id" : "pm:TimeJCAThreadPoolExhausted",
+    "@type" : "rdfs:Class",
+    "comment" : "Time during which a Java Connection Architecture thread pool was fully utilized (no threads were free)",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "TimeJCAThreadPoolExhausted",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:ThreadPoolMetrics", "pm:ResourceExhaustionMetrics" ]
+  }, {
+    "@id" : "pm:TimeThreadPoolExhausted",
+    "@type" : "rdfs:Class",
+    "comment" : "Time during which a thread pool was fully utilized (no threads were free)",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "TimeThreadPoolExhausted",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:ThreadPoolMetrics", "pm:ResourceExhaustionMetrics" ]
+  }, {
+    "@id" : "pm:Unknown",
+    "comment" : "Unknown status",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "Unknown",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values"
+  }, {
+    "@id" : "pm:VirtualMemoryUsed",
+    "@type" : "rdfs:Class",
+    "comment" : "Virtual memory used.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "VirtualMemoryUsed",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:VirtualizationMetrics", "pm:MemoryMetrics", "pm:ResourceUsageMetrics" ]
+  }, {
+    "@id" : "pm:VirtualizationMetrics",
+    "@type" : "rdfs:Class",
+    "comment" : "Metric category for virtualization-related resource metrics.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "VirtualizationMetrics",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories",
+    "subClassOf" : "pm:Metric"
+  }, {
+    "@id" : "pm:VmCpuReady",
+    "@type" : "rdfs:Class",
+    "comment" : "Amount of CPU ready from a virtual machine's point of view",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "VmCpuReady",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure",
+    "subClassOf" : [ "pm:ResourceAvailabilityMetrics", "pm:CpuMetrics", "pm:VirtualizationMetrics" ]
+  }, {
+    "@id" : "pm:availabilityStatus",
+    "@type" : "rdf:Property",
+    "comment" : "An indication of availability.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "availabilityStatus",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "pm:disk",
+    "@type" : "rdf:Property",
+    "comment" : "A disk attached, for example, to a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "disk",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "pm:mobilityEnabled",
+    "@type" : "rdf:Property",
+    "comment" : "An indication about whether the resource can move about dynamically.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "mobilityEnabled",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "pm:monitoringAgent",
+    "@type" : "rdf:Property",
+    "comment" : "Software that monitors a resource’s availability, performance, capacity, or utilization. Typically refers to a resource with type foaf:Agent, but it may refer to other resource types.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "monitoringAgent",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "pm:process",
+    "@type" : "rdf:Property",
+    "comment" : "A process running, for example, in a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "process",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "pm:tableReorganizationNeeded",
+    "@type" : "rdf:Property",
+    "comment" : "Indicates whether a database’s tables need to be reorganized.",
+    "isDefinedBy" : "http://open-services.net/ns/perfmon#",
+    "label" : "tableReorganizationNeeded",
+    "seeAlso" : "http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties"
+  }, {
+    "@id" : "http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf",
+    "nature" : "http://www.w3.org/2000/01/rdf-schema#"
+  } ],
+  "@id" : "urn:x-arq:DefaultGraphNode",
+  "@context" : {
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
+    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "qudtconversionMultiplier" : {
+      "@id" : "http://qudt.org/1.1/schema/qudtconversionMultiplier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "title" : "http://purl.org/dc/terms/title",
+    "nature" : {
+      "@id" : "http://www.rddl.org/nature",
+      "@type" : "@id"
+    },
+    "qudt" : "http://qudt.org/1.1/schema/qudt",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "ems" : "http://open-services.net/ns/ems#",
+    "pm" : "http://open-services.net/ns/perfmon#",
+    "rddl" : "http://www.rddl.org/"
+  }
+}
