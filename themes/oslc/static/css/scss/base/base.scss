@@ -5,7 +5,6 @@ body{
 
 .page, .single, .list {
   position: relative;
-  padding-bottom: 104px;
 }
 
 .btn {
@@ -69,11 +68,11 @@ fieldset[disabled] a.btn {
 }
 
 .section__title.white {
-  color: #FFF;
+  color: $white;
 }
 
 .m-top{
-  margin-top:110px;
+  margin-top:94px;
 
   &--small {
     margin-top: 40px !important;
@@ -95,6 +94,7 @@ img[data-src] {
   }
 
   .container__big {
+    max-width: 1200px;
     width: 1200px;
     position:relative;
   }
@@ -102,6 +102,6 @@ img[data-src] {
 /* buttons */
 @media screen and (max-width: 768px){
   .m-top {
-    margin-top: 100px;
+    margin-top: 67px;
   }
 }

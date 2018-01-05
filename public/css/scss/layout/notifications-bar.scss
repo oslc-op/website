@@ -1,22 +1,22 @@
 .notification-bar {
   padding: 5px 0;
   text-align: center;
-  background-color: #418EEB;
+  background-color: $oslc-light-blue;
   position: fixed;
   width:100%;
   z-index:999;
   top:0;
 
   p, a {
-    color: #fff;
+    color: $white;
     margin: 0;
     font-size: 15px;
   }
 
   a {
-    color: #ED3B10;
+    color: #ffb96e;
     &:hover {
-      color: #2EFE94;
+      color: #ff916e;
       text-decoration: none;
     }
   }

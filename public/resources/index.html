@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <div class="notification-bar">
-  <p>This is a prototype site, and still a work in progress. For now please continue to refer to <a href="http://open-services.net">open-services.net</a> as the source of information for the community</p>
-</div>
-
+  
   <head>
   <meta charset="utf-8">
   <meta name="robots" content="all,follow">
@@ -62,18 +59,25 @@
 
         <header>
 
-          <nav class="nav">
+          <div class="notification-bar">
+  <p>This is a prototype site, and still a work in progress. For now please continue to refer to <a href="http://open-services.net">open-services.net</a> as the source of information for the community</p>
+</div>
+<nav class="nav">
   <div class="container container__big">
-    <div class="nav__logo">
-      <a href="/">
+    <a href="/">
+      <div class="nav__logo">
         <img src="http://oslc.co/img/logo.png" alt="Logo">
-      </a>
-    </div>
+      </div>
+    </a>
     <div class="links">
       <div class="nav__links">
         
         
           <a href="/why" class="nav__item">Why?</a>
+        
+          <a href="/specifications" class="nav__item">Specs</a>
+        
+          <a href="/workgroups" class="nav__item">Working Groups</a>
         
           <a href="/about/mission" class="nav__item">About</a>
         
@@ -83,12 +87,6 @@
         
           <a href="/news/" class="nav__item">News</a>
         
-        <div class="nav__item--social">
-          <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
-          <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
-          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
-          <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
-        </div>
       </div>
     </div>
     <div class="menu-button">
@@ -127,7 +125,7 @@
       <span class="fa fa-search"></span>
     </div>
     <div class="rs-search__item">
-      <button id="button-search" class="btn-purple">search</button>
+      <button id="button-search" class="button purple hover--dark_purple">Search</button>
     </div>
     <div class="rs-search__item">
       <label for="filter">Filter</label>
@@ -145,128 +143,6 @@
     </div>
   </div>
 </section>
-
-<script type="text/javascript">
-  var baseurl = "http:\/\/oslc.co\/";
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
-
-<script>
-  var lunrIndex;
-  var pagesIndex;
-  function initLunr() {
-    $.getJSON(baseurl + "resources/resources.json")
-      .done(function (index) {
-        pagesIndex = index;
-        lunrIndex = lunr(function(){
-          this.ref('uri');
-          this.field('title', {
-            boost: 15
-          });
-          this.field('tags', {
-            boost: 10
-          });
-          this.field("content", {
-            boost: 5
-          });
-
-          pagesIndex.forEach(function (page) {
-            this.add(page);
-          }, this);
-        })
-        lunrIndex.pipeline.remove(lunrIndex.stemmer)
-        console.info(lunrIndex);
-      })
-      .fail(function (jqxhr, textStatus, error) {
-        var err = textStatus + ", " + error;
-        console.error("Error getting Hugo index flie:", err);
-      });
-  }
-
-  function search(query) {
-    return lunrIndex.search(query).map(function (result) {
-      return pagesIndex.filter(function (page) {
-        return page.uri === result.ref;
-      })[0];
-    });
-  }
-
-  function results(r) {
-    var matches = [];
-
-    $('#resource-hero').hide();
-
-    $('.container-small-items > div').each(function(index, elem){
-      $(elem).hide();
-      for (var i = 0; i < r.length; i++) {
-        if (elem.title === r[i].title) {
-          matches.push(elem)
-          $(elem).css('display', 'none')
-        }
-      }
-    })
-
-    $(matches).each(function(index, e){
-      $(e).css('display', 'block');
-    });
-    
-  }
-
-  $(document).ready(function(){
-    var result;
-    var filterBy;
-
-    initLunr();
-
-    $('#filter-by').val('all');
-
-    $('#search-by').keypress(function(e){
-      if (e.which === 13) {
-        result = search($(this).val());
-        results(result)
-      }
-    })
-
-    $('#button-search').click(function(){
-      var searchBy = $('#search-by').val();
-      result = search(searchBy);
-      results(result)
-    })
-
-    $('#filter-by').change(function(){
-      var matches = [];
-      filterBy = $("select option:selected").text().toLowerCase();
-      
-      if (filterBy == 'all') {
-        $('.rs-small-item').css('display', 'block');
-        $('#resource-hero').css('display', 'block');
-      } else {
-        $('#resource-hero').css('display', 'none');
-      
-        $('.rs-small-item').each(function(index, elem){
-          if ($(elem).attr('itemtype') === filterBy){
-            console.info($(elem).attr('itemtype'));
-            $(elem).css('display', 'block');
-            
-          } else {
-            $(elem).css('display', 'none');
-          }
-        })
-      }
-    });
-
-    $('#search-by').on('change keyup', function(event){
-      console.info('event ', event)
-      if ($('#search-by').val() === '') {
-        $('.container-small-items > div').each(function(index, elem){
-          $(elem).css('display', 'block');
-        })
-        $('#resource-hero').css('display', 'block');
-      }
-    })
-  });
-
-</script>
 
 
         <section>
@@ -299,7 +175,7 @@
       <span class="author"><i class="fa fa-calendar"></i> Nov 11, 2011</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/tool-20111111/ ">Details</a>
+      <a href=" http://oslc.co/resources/tool-20111111/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -331,7 +207,7 @@
       <span class="author"><i class="fa fa-calendar"></i> Jan 21, 2013</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/tool-20130121/ ">Details</a>
+      <a href=" http://oslc.co/resources/tool-20130121/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -363,7 +239,7 @@ Watch</p>
       <span class="author"><i class="fa fa-calendar"></i> Nov 9, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/video-20151109-2/ ">Details</a>
+      <a href=" http://oslc.co/resources/video-20151109-2/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -395,7 +271,7 @@ Watch</p>
       <span class="author"><i class="fa fa-calendar"></i> Nov 9, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/video-20151109-1/ ">Details</a>
+      <a href=" http://oslc.co/resources/video-20151109-1/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -427,7 +303,7 @@ View</p>
       <span class="author"><i class="fa fa-calendar"></i> Nov 9, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/presentation-20171109/ ">Details</a>
+      <a href=" http://oslc.co/resources/presentation-20171109/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -459,7 +335,7 @@ Read</p>
       <span class="author"><i class="fa fa-calendar"></i> Nov 9, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/article-20151109/ ">Details</a>
+      <a href=" http://oslc.co/resources/article-20151109/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -491,7 +367,7 @@ This presentation provides details on the OpenPDM OSLC Adapter including overvie
       <span class="author"><i class="fa fa-calendar"></i> Nov 17, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/presentation-20171117/ ">Details</a>
+      <a href=" http://oslc.co/resources/presentation-20171117/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -522,7 +398,7 @@ This presentation provides details on the OpenPDM OSLC Adapter including overvie
       <span class="author"><i class="fa fa-calendar"></i> Nov 18, 2015</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/video-20151118-jad-ecs/ ">Details</a>
+      <a href=" http://oslc.co/resources/video-20151118-jad-ecs/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -554,7 +430,7 @@ This presentation provides details on the OpenPDM OSLC Adapter including overvie
       <span class="author"><i class="fa fa-calendar"></i> Jun 16, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/video-20170616-andrew/ ">Details</a>
+      <a href=" http://oslc.co/resources/video-20170616-andrew/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -588,7 +464,7 @@ For a high-level overview of how to add OSLC support to software, we recommend o
       <span class="author"><i class="fa fa-calendar"></i> Jun 21, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/developing-oslc-applications/ ">Details</a>
+      <a href=" http://oslc.co/resources/developing-oslc-applications/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -621,7 +497,7 @@ And this is another Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <span class="author"><i class="fa fa-calendar"></i> Jun 21, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/example-tutorial/ ">Details</a>
+      <a href=" http://oslc.co/resources/example-tutorial/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -656,7 +532,7 @@ Explore our tutorial For a more detailed look at what goes into OSLC support, re
       <span class="author"><i class="fa fa-calendar"></i> Jun 21, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/get-started-with-developing-oslc-applications/ ">Details</a>
+      <a href=" http://oslc.co/resources/get-started-with-developing-oslc-applications/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -688,7 +564,7 @@ Visit</p>
       <span class="author"><i class="fa fa-calendar"></i> Jul 15, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/website-20170825/ ">Details</a>
+      <a href=" http://oslc.co/resources/website-20170825/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -719,7 +595,7 @@ Visit</p>
       <span class="author"><i class="fa fa-calendar"></i> Jul 16, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/article-20170715/ ">Details</a>
+      <a href=" http://oslc.co/resources/article-20170715/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -752,7 +628,7 @@ Because you’ll see a lot of benefits. Developers will find that it makes it ea
       <span class="author"><i class="fa fa-calendar"></i> Aug 30, 2017</span>
     </div>
     <div class="sm-buttons">
-      <a href=" http://oslc.co/resources/oslc4js/ ">Details</a>
+      <a href=" http://oslc.co/resources/oslc4js/ " class="button">Details</a>
     </div>
   </div>
 </div>
@@ -783,11 +659,7 @@ Because you’ll see a lot of benefits. Developers will find that it makes it ea
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="copyright">
-        <p>Copyright &copy; 2017 OSLC. All rights reserved.</p>
-      </div>
-    </div>
+    
   </div>
 </nav>
 
@@ -817,6 +689,128 @@ Because you’ll see a lot of benefits. Developers will find that it makes it ea
              $(e).text('' + summary + '...');
         })
       })
+
+    </script>
+ 
+    <script type="text/javascript">
+      var baseurl = "http:\/\/oslc.co\/";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
+
+    <script>
+      var lunrIndex;
+      var pagesIndex;
+      function initLunr() {
+        $.getJSON(baseurl + "resources/resources.json")
+          .done(function (index) {
+            pagesIndex = index;
+            lunrIndex = lunr(function(){
+              this.ref('uri');
+              this.field('title', {
+                boost: 15
+              });
+              this.field('tags', {
+                boost: 10
+              });
+              this.field("content", {
+                boost: 5
+              });
+
+              pagesIndex.forEach(function (page) {
+                this.add(page);
+              }, this);
+            })
+            lunrIndex.pipeline.remove(lunrIndex.stemmer)
+            console.info(lunrIndex);
+          })
+          .fail(function (jqxhr, textStatus, error) {
+            var err = textStatus + ", " + error;
+            console.error("Error getting Hugo index flie:", err);
+          });
+      }
+
+      function search(query) {
+        return lunrIndex.search(query).map(function (result) {
+          return pagesIndex.filter(function (page) {
+            return page.uri === result.ref;
+          })[0];
+        });
+      }
+
+      function results(r) {
+        var matches = [];
+
+        $('#resource-hero').hide();
+
+        $('.container-small-items > div').each(function(index, elem){
+          $(elem).hide();
+          for (var i = 0; i < r.length; i++) {
+            if (elem.title === r[i].title) {
+              matches.push(elem)
+              $(elem).css('display', 'none')
+            }
+          }
+        })
+
+        $(matches).each(function(index, e){
+          $(e).css('display', 'block');
+        });
+        
+      }
+
+      $(document).ready(function(){
+        var result;
+        var filterBy;
+
+        initLunr();
+
+        $('#filter-by').val('all');
+
+        $('#search-by').keypress(function(e){
+          if (e.which === 13) {
+            result = search($(this).val());
+            results(result)
+          }
+        })
+
+        $('#button-search').click(function(){
+          var searchBy = $('#search-by').val();
+          result = search(searchBy);
+          results(result)
+        })
+
+        $('#filter-by').change(function(){
+          var matches = [];
+          filterBy = $("select option:selected").text().toLowerCase();
+          
+          if (filterBy == 'all') {
+            $('.rs-small-item').css('display', 'block');
+            $('#resource-hero').css('display', 'block');
+          } else {
+            $('#resource-hero').css('display', 'none');
+          
+            $('.rs-small-item').each(function(index, elem){
+              if ($(elem).attr('itemtype') === filterBy){
+                console.info($(elem).attr('itemtype'));
+                $(elem).css('display', 'block');
+                
+              } else {
+                $(elem).css('display', 'none');
+              }
+            })
+          }
+        });
+
+        $('#search-by').on('change keyup', function(event){
+          console.info('event ', event)
+          if ($('#search-by').val() === '') {
+            $('.container-small-items > div').each(function(index, elem){
+              $(elem).css('display', 'block');
+            })
+            $('#resource-hero').css('display', 'block');
+          }
+        })
+      });
 
     </script>
   </body>

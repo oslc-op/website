@@ -10,17 +10,16 @@
   <meta name="author" content="" />
 
   <meta property="og:title" content="Open Services for Lifecycle Collaboration" />
-  <meta property="og:description" content="(Also known as the &#39;OSLC&#39; open community)" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://oslc.github.io/img/logo.png" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:description" content="(Also known as the &#39;OSLC&#39; open community)" />
+  <meta property="twitter:description" content="" />
   <meta property="twitter:title" content="Open Services for Lifecycle Collaboration" />
   <meta property="twitter:image" content="http://oslc.co" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@oslc">
   <meta name="twitter:title" content="Open Services for Lifecycle Collaboration">
-  <meta name="twitter:image" content="http://oslc.co">  
-  <meta name="description" content="(Also known as the &#39;OSLC&#39; open community)">  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="twitter:image" content="http://oslc.co">   <meta name="generator" content="Hugo 0.30.2" />
 
   
   <meta property="og:title" content="Open Services for Lifecycle Collaboration" />
@@ -57,25 +56,28 @@
   <body>
 
     <div id="page" class="page">
-
-        <div class="notification-bar">
-  <p>This is a prototype site, and still a work in progress. For now please continue to refer to <a href="http://open-services.net">open-services.net</a> as the source of information for the community</p>
-</div>
-
+     
         <header>
 
-          <nav class="nav">
+          <div class="notification-bar">
+  <p>This is a prototype site, and still a work in progress. For now please continue to refer to <a href="http://open-services.net">open-services.net</a> as the source of information for the community</p>
+</div>
+<nav class="nav">
   <div class="container container__big">
-    <div class="nav__logo">
-      <a href="/">
+    <a href="/">
+      <div class="nav__logo">
         <img src="http://oslc.co/img/logo.png" alt="Logo">
-      </a>
-    </div>
+      </div>
+    </a>
     <div class="links">
       <div class="nav__links">
         
         
           <a href="/why" class="nav__item">Why?</a>
+        
+          <a href="/specifications" class="nav__item">Specs</a>
+        
+          <a href="/workgroups" class="nav__item">Working Groups</a>
         
           <a href="/about/mission" class="nav__item">About</a>
         
@@ -85,12 +87,6 @@
         
           <a href="/news/" class="nav__item">News</a>
         
-        <div class="nav__item--social">
-          <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
-          <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
-          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
-          <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
-        </div>
       </div>
     </div>
     <div class="menu-button">
@@ -111,171 +107,275 @@
       <div class="hero">
         <h1 class="title">Open Services for Lifecycle Collaboration</h1>
         <p class="textline">(Also known as the &#39;OSLC&#39; open community)</p>
-        <p class="headline"><p>Creating standard REST APIs to connect data</p>
-</p>
+        <p class="headline">Creating standard REST APIs to connect data</p>
       </div>
     </div>
   </div>
 </div>
 
 
-        <section class="section--story">
-          
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">About</h2>
-      <p class="big__paragraph">
-        Open Services for Lifecycle Collaboration (OSLC) is based on World Wide Web and Linked Data principles, such as those defined in the W3C Linked Data Platform [LDP], to create a cohesive set of specifications that can enable products, services, and other distributed network resources to interoperate successfully.
-      </p>
-      <p class="big__paragraph">
-        OSLC consists of a Hypermedia API standard and RDF-based specifications for data interoperability. We are an open community that works together on specifications, software, and initiatives to expose more data on the private and public Web to surface up the advantages of having better integration.
-      </p>
-    </div>
-    <div class="story--image">
-    </div>
-  </div>
-</div>
-
-
-          
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">Hypermedia API</h2>
-      <p class="big__paragraph">
-        Open Services for Lifecycle Collaboration (OSLC) is based on World Wide Web and Linked Data principles, such as those defined in the W3C Linked Data Platform [LDP], to create a cohesive set of specifications that can enable products, services, and other distributed network resources to interoperate successfully.
-      </p>
-      <p class="big__paragraph">
-        Hypermedia APIs are the most powerful type of REST APIs. They embody the Web principles of flexibility, standardization, and loose coupling to a service. They scale better, are more easily changed and provide better discoverability to consumers of the API.
-      </p>
-    </div>
-    <div class="story--image">
-        <img data-src="http://oslc.co/img/hypermedia-api.png" class="small" alt="">
-    </div>
-  </div>
-</div>
-
-
-          
-
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">OSLC Specifications</h2>
-      <p class="big__paragraph">
-        The OSLC Core Specification is a Hypermedia API standard currently mainly adopted in software and systems engineering domains, but with the potential to provide value to any domain with data integration challenges. The OSLC Core specifications expands on the W3C LDP capabilities, to define the essential and common technical elements of OSLC domain specifications and offers guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources.
-      </p>
-      <p class="big__paragraph">
-        OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist of RDF vocabularies and OSLC resource shapes. RDF vocabularies are used to describe standardized resource types and properties. OSLC resource shapes are used to define constraints such as multiplicity constraints on properties of specific resource types.
-      </p>
-    </div>
-    <div class="story--image">
-      <img data-src="http://oslc.co/img/oslc-domains.png" class="small" alt="">
-    </div>
-    <div class="story--button">
-      <a href="http://oslc.co/specifications/" class="btn btn-oslc">Learn more</a>
-    </div>
-  </div>
-</div>
-
-
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">The OSLC Stack</h2>
-      <p class="big__paragraph">
-        OSLC builds on Web standards, from codified ones like HTTP and LDP, to de-facto ones like REST that power applications today.
-      </p>
-    </div>
-    <div class="story--image">
-      <img data-src="http://oslc.co/img/oslc-architecture.png" class="small-medium" alt="">
-    </div>
-    
-  </div>
-</div>
-
-
-          <div class="story">
-    <div class="container">
-        <div class="story--content">
-            <h2 class="section__title">Ecosystem</h2>
-            <p class="big__paragraph">
-            OSLC moves beyond the borders of this site, with the ecosystem made up of developers working on implementations, specification working groups at OASIS and the W3C, and passionate individuals and organisations that get behind the cause of data integration and interoperability.
+        <section class="homepage--section white before">
+  <div class="container container__big">
+    <h2 class="headline">What is OSLC?</h2>
+    <p class="subtitle">OSLC is inspired by the Web</p>
+    <div class="section--split">
+      <div class="column--item">
+        <h3 class="column--title">Before the Web</h3>
+        <div class="item--content">
+          <div class="item--image four-fifths">
+            <img data-src="/img/web-before.svg">
+          </div>
+          <div class="item--text">
+            <p>
+              There were many hypertext systems. Those systems had no compatibility to one another. 
+              They also used different protocols to access and connect the documents. 
+              This made so that documents in System Type 1 could not link to documents in System Type 2. 
             </p>
+          </div>
         </div>
-        <div class="story--image">
-            <img data-src="http://oslc.co/img/oslc-ecosystem.png" alt="">
+      </div>
+      <div class="column--item">
+        <h3 class="column--title">After the Web</h3>
+        <div class="item--content">
+          <div class="item--image four-fifths">
+            <img data-src="/img/web-after.svg">
+          </div>
+          <div class="item--text">
+            <p>
+              HTML became the standard for documents in the web. Alongside with a 
+              standard protocol (HTTP) which determined how to access and connect documents. 
+              Now documents could link to others independently of where they were stored.
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
         
+        <section class="homepage--section dark-blue-gradient section--understand">
+  <div class="container container__big">
+    <h2 class="headline">Key Concepts of OSLC</h2>
+    <p class="subtitle">Difference between Web of documents, as we use today, and Web of data, as enabled by OSLC</p>
+    <div class="section--split">
+      
+      <div class="column--item">
+        <h3 class="column--title">The Web of Documents</h3>
+        <div class="item--content">
+          <div class="item--image one-fifth">
+            <img data-src="/img/html-file.svg">
+          </div>
+          <div class="item--text">
+            <p>
+              The web uses documents, standardized to .html, to define web pages. 
+              Documents in the web use URLs as identifiers 
+              <br> <span class="note">(URL represented by <i class="fa fa-link url-icon" aria-hidden="true"></i>)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <h3 class="column--title">The Web of Data</h3>
+        <div class="item--content">
+          <div class="item--image one-fifth">
+            <img data-src="/img/rdf-file.svg">
+          </div>
+          <div class="item--text">
+            <p>
+              The web uses <i>data</i>, standardized to .RDF, to define data in the web. 
+              <i>Data</i> in the web use URLs as identifiers 
+              <br> <span class="note">(URL represented by <i class="fa fa-link url-icon" aria-hidden="true"></i>)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image three-fifths">
+            <img data-src="/img/http-documents.svg">
+          </div>
+          <div class="item--text">
+            <p>Clients can request documents from Servers via a common protocol, HTTP</p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image three-fifths">
+            <img data-src="/img/http-data.svg">
+          </div>
+          <div class="item--text">
+            <p>Clients can request <i>data</i> from Servers via a common protocol, HTTP.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths">
+            <img data-src="/img/link-documents.svg">
+          </div>
+          <div class="item--text">
+            <p>Documents from different sources can link to one another by referencing the other document's URL</p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths">
+            <img data-src="/img/link-data.svg">
+          </div>
+          <div class="item--text">
+            <p><i>Data</i> from different sources can link to one another by referencing the other <i>data's</i> URL</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths">
+            <img data-src="/img/mashup-applications.png">
+          </div>
+          <div class="item--text">
+            <p>Clients can use mashup applications to interact with documents in the web (Search, Visualize, Analize, etc)</p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--text mashup_applications">
+            <p><a href="https://www.ibm.com/us-en/marketplace/application-lifecycle-management">IBM RCLM</a>, <a href="https://www.ibm.com/us-en/marketplace/engineering-analytics">IBM RELM</a>, <a href="https://www.mentor.com/products/sm/context-sdm/">Mentor Graphics Context</a>, <a href="https://github.com/koneksys/KLD">Koneksys KLD</a></p>
+          </div>
+          <div class="item--text">
+            <p>Clients can use mashup applications to interact with <i>data</i> in the web (Search, Visualize, Analize, etc)</p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">Solutions</h2>
-      <p class="big__paragraph">
-        OSLC is a foundational pillar of data integration solutions, and opens up a whole new set of possibilities for applications on the Web.
-      </p>
-    </div>
-    <div class="story--image">
-        <img data-src="http://oslc.co/img/oslc-solutions.png" alt="">
-    </div>
-    
   </div>
-</div>
+</section>
 
-
-          <div class="story">
-  <div class="container">
-    <div class="story--content">
-      <h2 class="section__title">Implementations</h2>
-      <p class="big__paragraph">
-        OSLC is already being used in a number of real-world scenarios... Introduce native and adapters
-      </p>
+        <section class="homepage--section section--benefits">
+  <div class="container container__big">   
+    <h2 class="headline">OSLC Benefits</h2>     
+    <p class="subtitle">Here's how OSLC can empower you</p>
+    <div class="benefits_grid">
+      <div class="benefit--item">
+        <i class="fa fa-unlock" aria-hidden="true"></i>
+        <h4 class="item--title">No Vendor Lock-In</h4>
+        <p class="item--paragraph">Being open source means independability from vendors. Your data in your hands</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-refresh" aria-hidden="true"></i>
+        <h4 class="item--title">Reusability</h4>
+        <p class="item--paragraph">Reuse existing OSLC REST APIs supported by major vendor and for especific application or data formats</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+        <h4 class="item--title">Application Integration</h4>
+        <p class="item--paragraph">Integrate your own or existing open sources applications to visualize, search, analyze, edit your data and more!</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-server" aria-hidden="true"></i>
+        <h4 class="item--title">Source Independent</h4>
+        <p class="item--paragraph">Different datasets in different servers can easily be integrated</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-database" aria-hidden="true"></i>
+        <h4 class="item--title">Database Independent</h4>
+        <p class="item--paragraph">No matter the data format or database technology. OSLC Adapters are virtually limitless</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-arrows-h" aria-hidden="true"></i>
+        <h4 class="item--title">Linked Data</h4>
+        <p class="item--paragraph">Your data integrated as easily as we link html pages. </p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+        <h4 class="item--title">Data Visualization</h4>
+        <p class="item--paragraph">Visualize your data the way you need. Graphs, Tables, Trees, you name it. With an integrated dataset, anything is possible!</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <h4 class="item--title">Data Analysis</h4>
+        <p class="item--paragraph">Analysis your integrated data. Providing you with the power to find answers you need.</p>
+      </div>
+      <div class="benefit--item">
+        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+        <h4 class="item--title">Make Better Decisions</h4>
+        <p class="item--paragraph">An integrated dataset means having information and insight never possible with such ease before.</p>
+      </div>
     </div>
-    <div class="story--button">
-      <a href="http://oslc.co/implementations/" class="btn btn-oslc">Learn more</a>
+    <div class="info--button">
+      <a class="button" href="">Learn More</a>
     </div>
-  </div>
-</div>
+  </div>  
+</section>
 
-        </section>
-
-        <section class="news">
+        <section class="homepage--section section--specs dark-blue-gradient">
   <div class="container">
-    <h2 class="section__title">Latest News</h2>
-    <p class="">
-      Find out all the latest happenings in the OSLC community. This could be site announcements, software news, stories from the wider OSLC ecosystem, and more.
+    <h2 class="headline">Specifications</h2>
+    <p class="intro--paragraph">
+      The OSLC Core Specification is a Hypermedia API standard currently mainly adopted in software and systems engineering domains, 
+      but with the potential to provide value to any domain with data integration challenges. The OSLC Core specifications expands 
+      on the W3C LDP capabilities, to define the essential and common technical elements of OSLC domain specifications and offers 
+      guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources.
     </p>
+    <p class="intro--paragraph">
+      OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist 
+      of RDF vocabularies and OSLC resource shapes. RDF vocabularies are used to describe standardized resource types and properties.
+      OSLC resource shapes are used to define constraints such as multiplicity constraints on properties of specific resource types.
+    </p>
+    <img data-src="http://oslc.co/img/oslc-domains.png">
+    <div class="info--button">
+      <a class="button white hover--light_blue" href="/specifications">Learn More</a>
+    </div>
   </div>
+</section>
+
+
+        <section class="homepage--section section--supporters white">
+  <div class="container container__big">
+    <h2 class="headline">Supported By</h2>
+    <div class="supporters--list">
+      <div class="supporter">
+        <img data-src="/img/placeholder.png">
+      </div>
+      <div class="supporter">
+        <img data-src="/img/placeholder.png">
+      </div>
+      <div class="supporter">
+        <img data-src="/img/placeholder.png">
+      </div>
+      <div class="supporter">
+        <img data-src="/img/placeholder.png">
+      </div>
+      <div class="supporter">
+        <img data-src="/img/placeholder.png">
+      </div>
+    </div>
+    <p class="intro--paragraph">And many more!</p>
+    <div class="info--button">
+      <a class="button" href="">See All</a>
+    </div>
+  </div>
+</section>
+
+        <section class="homepage--section section--news gray">
+  <h2 class="headline">Latest News</h2>
   <div class="container-fluid">
     <div class="news__container">
       
       <div class="news__item">
         <div class="news__image" style="background-image: url('http://oslc.co/img/news-default.jpg') !important; background-size: cover;">
-          <h3 class="new__title"><a href="http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/">PROSTEP AG Announces OpenPDM OSLC Adapter</a></h3>
+          <h3 class="new__title"><a href="http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/">OLSC Survey Provides Insights into Needs for Software Integration Standards</a></h3>
         </div>
         <div class="new__info">
-          <span class="new__date">Nov 17, 2015</span>
+          <span class="new__date">Jun 21, 2016</span>
           <div class="new__content">
-            PROSTEP would like to announce to the OSLC community, that there is an OpenPDM OSLC Adapter which enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems, e.g.:
-Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Dassault ENOVIA VPM V4 MSC SimManager Oracle Agile ePLM PTC Windchill SAP PLM Siemens Teamcenter Engineering Siemens Teamcenter Enterprise Siemens Teamcenter UA The OpenPDM OSLC services can be integrated in any OSLC consuming applications.
-          </div>
-        </div>
-      </div>
-      
-      <div class="news__item">
-        <div class="news__image" style="background-image: url('http://oslc.co/img/news-default.jpg') !important; background-size: cover;">
-          <h3 class="new__title"><a href="http://oslc.co/news/oslc3-update-what-how-why-important/">OSLC3 Update: What is it, how is it different, and why is it important?</a></h3>
-        </div>
-        <div class="new__info">
-          <span class="new__date">Mar 21, 2016</span>
-          <div class="new__content">
-            Open Services for Life-cycle Collaboration or OSLC defines a set of standard capabilities enabling loosely coupled, open and scalable point-to-point integration between heterogeneous software development tools. OSLC allows users to work seamlessly across their preferred tools and does not require complex interchange of data between tools that may result in information redundancy and maintenance issues.
-The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC through collaborating organizations to provide the standards, APIs and tools that support integrated product, system and application lifecycle management.
+            The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
+OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.
           </div>
         </div>
       </div>
@@ -289,6 +389,20 @@ The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC
           <div class="new__content">
             The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
 OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.
+          </div>
+        </div>
+      </div>
+      
+      <div class="news__item">
+        <div class="news__image" style="background-image: url('http://oslc.co/img/news-default.jpg') !important; background-size: cover;">
+          <h3 class="new__title"><a href="http://oslc.co/news/alm-plm-interoperability-survey/">ALM-PLM Interoperability Survey</a></h3>
+        </div>
+        <div class="new__info">
+          <span class="new__date">Jun 27, 2016</span>
+          <div class="new__content">
+            If you are interested in ALM-PLM Interoperability, please participate in this survey - ALM / PLM Interoperability and OSLC questionnaire, https://vpe-umfrage.mv.uni-kl.de/index.php/748615/lang-en .
+The ProSTEP iViP Association and the Institute for Virtual Product development would like to invite you to participate in this questionnaire. Please take about 10 minutes of your time to complete the questionnaire.
+The results will help to initiate the ALM-PLM Interoperability Workflow Forum from the ProSTEP iViP Association.
           </div>
         </div>
       </div>
@@ -327,11 +441,7 @@ The results will help to initiate the ALM-PLM Interoperability Workflow Forum fr
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="copyright">
-        <p>Copyright &copy; 2017 OSLC. All rights reserved.</p>
-      </div>
-    </div>
+    
   </div>
 </nav>
 

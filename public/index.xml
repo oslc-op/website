@@ -346,6 +346,17 @@ The results will help to initiate the ALM-PLM Interoperability Workflow Forum fr
     </item>
     
     <item>
+      <title>ALM-PLM Interoperability Survey</title>
+      <link>http://oslc.co/news/alm-plm-interoperability-survey/</link>
+      <pubDate>Mon, 27 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/alm-plm-interoperability-survey/</guid>
+      <description>If you are interested in ALM-PLM Interoperability, please participate in this survey - ALM / PLM Interoperability and OSLC questionnaire, https://vpe-umfrage.mv.uni-kl.de/index.php/748615/lang-en .
+The ProSTEP iViP Association and the Institute for Virtual Product development would like to invite you to participate in this questionnaire. Please take about 10 minutes of your time to complete the questionnaire.
+The results will help to initiate the ALM-PLM Interoperability Workflow Forum from the ProSTEP iViP Association.</description>
+    </item>
+    
+    <item>
       <title>OLSC Survey Provides Insights into Needs for Software Integration Standards</title>
       <link>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</link>
       <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
@@ -353,6 +364,26 @@ The results will help to initiate the ALM-PLM Interoperability Workflow Forum fr
       <guid>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</guid>
       <description>The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
 OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.</description>
+    </item>
+    
+    <item>
+      <title>OLSC Survey Provides Insights into Needs for Software Integration Standards</title>
+      <link>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</link>
+      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</guid>
+      <description>The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
+OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.</description>
+    </item>
+    
+    <item>
+      <title>OSLC3 Update: What is it, how is it different, and why is it important?</title>
+      <link>http://oslc.co/news/oslc3-update-what-how-why-important/</link>
+      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/oslc3-update-what-how-why-important/</guid>
+      <description>Open Services for Life-cycle Collaboration or OSLC defines a set of standard capabilities enabling loosely coupled, open and scalable point-to-point integration between heterogeneous software development tools. OSLC allows users to work seamlessly across their preferred tools and does not require complex interchange of data between tools that may result in information redundancy and maintenance issues.
+The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC through collaborating organizations to provide the standards, APIs and tools that support integrated product, system and application lifecycle management.</description>
     </item>
     
     <item>
@@ -382,6 +413,16 @@ The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC
       <guid>http://oslc.co/resources/presentation-20171117/</guid>
       <description>The PROSTEP OpenPDM OSLC Adapter makes your PLM system(s) available to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems. The OpenPDM OSLC services can be integrated in any OSLC consuming applications. The gap between ALM and PLM can be closed.
 This presentation provides details on the OpenPDM OSLC Adapter including overview, reference project and technical information.</description>
+    </item>
+    
+    <item>
+      <title>PROSTEP AG Announces OpenPDM OSLC Adapter</title>
+      <link>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
+      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
+      <description>PROSTEP would like to announce to the OSLC community, that there is an OpenPDM OSLC Adapter which enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems, e.g.:
+Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Dassault ENOVIA VPM V4 MSC SimManager Oracle Agile ePLM PTC Windchill SAP PLM Siemens Teamcenter Engineering Siemens Teamcenter Enterprise Siemens Teamcenter UA The OpenPDM OSLC services can be integrated in any OSLC consuming applications.</description>
     </item>
     
     <item>
@@ -496,6 +537,16 @@ Tasktop products enable enterprises to achieve major gains by connecting everyon
     </item>
     
     <item>
+      <title>Learn more about Tasktop Sync 4.3 (July 2015)</title>
+      <link>http://oslc.co/news/learn-more-about-tasktop-sync/</link>
+      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/learn-more-about-tasktop-sync/</guid>
+      <description>Tasktop, the leader in Software Lifecycle Integration (SLI) and creator of the Eclipse Mylyn open source tool, today announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.
+Tasktop products enable enterprises to achieve major gains by connecting everyone in the software lifecycle to create one efficient development and delivery team. With Tasktop solutions, everyone can use their various tools of choice and still collaborate in real time as if they were all working on a single platform.</description>
+    </item>
+    
+    <item>
       <title>New OASIS OSLC Steering Committee Announced</title>
       <link>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</link>
       <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
@@ -503,6 +554,25 @@ Tasktop products enable enterprises to achieve major gains by connecting everyon
       <guid>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</guid>
       <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded &amp;ndash; congratulations to the new and re-elected members!
 Also noteworthy is that as of this election, the number of Steering Committee members increased from 7 to 9. The expanded breadth and experience that is represented in the new Steering Committee will further enhance its ability to guide and serve the OSLC Member Section and community. A warm welcome to the OSLC Steering Committee for September 2015-2016:</description>
+    </item>
+    
+    <item>
+      <title>New OASIS OSLC Steering Committee Announced</title>
+      <link>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</link>
+      <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</guid>
+      <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded &amp;ndash; congratulations to the new and re-elected members!
+Also noteworthy is that as of this election, the number of Steering Committee members increased from 7 to 9. The expanded breadth and experience that is represented in the new Steering Committee will further enhance its ability to guide and serve the OSLC Member Section and community. A warm welcome to the OSLC Steering Committee for September 2015-2016:</description>
+    </item>
+    
+    <item>
+      <title>Extra, Extra, Communication User Group is Back</title>
+      <link>http://oslc.co/news/communication-user-group-is-back/</link>
+      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/communication-user-group-is-back/</guid>
+      <description>The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC. As one participant said &amp;ldquo;Think of us as the newspaper for the city.&amp;rdquo; This is a perfect analogy of our intent to be indespensible to the community we serve and relevant to the broader audience. The Communication User Group will aims to deliver value, grows our community and provides the news that you need.</description>
     </item>
     
     <item>
@@ -525,6 +595,16 @@ Communities like openservices and OASIS OSLC collaboratively discuss lifecycle i
     </item>
     
     <item>
+      <title>OASIS OSLC Steering Committee Elections Coming Soon</title>
+      <link>http://oslc.co/news/oasis-oslc-steering-committee-elections-coming-soon/</link>
+      <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
+      <description>Whether you live in the I/T or Systems world, software integration in heterogeneous environments can represent both a challenge (where do I even start?) and opportunity (how can I advance my environment to provide more value, deliver faster and with reduced risk?).
+Communities like openservices and OASIS OSLC collaboratively discuss lifecycle integration challenges and solutions that leverage open standards. Whether you&amp;rsquo;re here to contribute your knowledge and experience or to learn from others, we&amp;rsquo;re all in it together.</description>
+    </item>
+    
+    <item>
       <title>Pardon our dust: updated design rolling out gradually</title>
       <link>http://oslc.co/news/updated-design-rolling-out-gradually/</link>
       <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
@@ -532,6 +612,25 @@ Communities like openservices and OASIS OSLC collaboratively discuss lifecycle i
       <guid>http://oslc.co/news/updated-design-rolling-out-gradually/</guid>
       <description>As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.
 And as of today, you’ll be able to see how it looks live. I’ll be rolling out elements of it gradually. There are a number of moving parts and I want to test thoroughly.</description>
+    </item>
+    
+    <item>
+      <title>Pardon our dust: updated design rolling out gradually</title>
+      <link>http://oslc.co/news/updated-design-rolling-out-gradually/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/updated-design-rolling-out-gradually/</guid>
+      <description>As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.
+And as of today, you’ll be able to see how it looks live. I’ll be rolling out elements of it gradually. There are a number of moving parts and I want to test thoroughly.</description>
+    </item>
+    
+    <item>
+      <title>OSLC at IBM InterConnect 2015</title>
+      <link>http://oslc.co/news/oslc-ibm-interconnect/</link>
+      <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/news/oslc-ibm-interconnect/</guid>
+      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one. These conferences often contain a number of sessions and events with OSLC connect. As you are building your agenda for the conference, I wanted to highlight my sample agenda which has some key sessions that either talking directly about OSLC activities or other topics that are key to OSLC activities.</description>
     </item>
     
     <item>

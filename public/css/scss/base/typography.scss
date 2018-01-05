@@ -11,9 +11,19 @@ p, a {
 }
 
 h1,h2,h3,h4,h5 {
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .big__paragraph {
   font-size: 18px;
+}
+
+.headline {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+
+  &.white {
+    color: $white;
+  }
 }

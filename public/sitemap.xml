@@ -223,8 +223,23 @@
   </url>
   
   <url>
+    <loc>http://oslc.co/news/alm-plm-interoperability-survey/</loc>
+    <lastmod>2016-06-27T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</loc>
     <lastmod>2016-06-21T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</loc>
+    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/oslc3-update-what-how-why-important/</loc>
+    <lastmod>2016-03-21T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -240,6 +255,11 @@
   <url>
     <loc>http://oslc.co/resources/presentation-20171117/</loc>
     <lastmod>2015-11-17T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</loc>
+    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -298,8 +318,23 @@
   </url>
   
   <url>
+    <loc>http://oslc.co/news/learn-more-about-tasktop-sync/</loc>
+    <lastmod>2015-11-09T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</loc>
     <lastmod>2015-10-06T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</loc>
+    <lastmod>2015-10-06T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/communication-user-group-is-back/</loc>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -313,8 +348,23 @@
   </url>
   
   <url>
+    <loc>http://oslc.co/news/oasis-oslc-steering-committee-elections-coming-soon/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://oslc.co/news/updated-design-rolling-out-gradually/</loc>
     <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/updated-design-rolling-out-gradually/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/oslc-ibm-interconnect/</loc>
+    <lastmod>2015-02-09T12:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -330,6 +380,21 @@
   <url>
     <loc>http://oslc.co/resources/tool-20111111/</loc>
     <lastmod>2011-11-11T20:57:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/announcements/</loc>
+    <lastmod>2016-06-27T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/events/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/news/updates/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -353,6 +418,12 @@
   <url>
     <loc>http://oslc.co/tags/addcontent/</loc>
     <lastmod>2017-06-22T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/categories/announcements/</loc>
+    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -381,6 +452,7 @@
   
   <url>
     <loc>http://oslc.co/categories/</loc>
+    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -427,14 +499,20 @@
   </url>
   
   <url>
-    <loc>http://oslc.co/tags/faq/</loc>
-    <lastmod>2017-11-07T20:52:28+02:00</lastmod>
+    <loc>http://oslc.co/categories/events/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://oslc.co/categories/faq/</loc>
     <lastmod>2017-06-21T20:46:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://oslc.co/tags/faq/</loc>
+    <lastmod>2017-11-07T20:52:28+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -481,14 +559,14 @@
   </url>
   
   <url>
-    <loc>http://oslc.co/tags/mission/</loc>
-    <lastmod>2017-08-24T14:17:19+02:00</lastmod>
+    <loc>http://oslc.co/categories/mission/</loc>
+    <lastmod>2017-06-21T20:46:28+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://oslc.co/categories/mission/</loc>
-    <lastmod>2017-06-21T20:46:28+02:00</lastmod>
+    <loc>http://oslc.co/tags/mission/</loc>
+    <lastmod>2017-08-24T14:17:19+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -527,13 +605,13 @@
   </url>
   
   <url>
-    <loc>http://oslc.co/tags/people/</loc>
+    <loc>http://oslc.co/categories/people/</loc>
     <lastmod>2017-06-21T20:46:28+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://oslc.co/categories/people/</loc>
+    <loc>http://oslc.co/tags/people/</loc>
     <lastmod>2017-06-21T20:46:28+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -621,6 +699,12 @@
   </url>
   
   <url>
+    <loc>http://oslc.co/categories/updates/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://oslc.co/tags/user-group/</loc>
     <lastmod>2015-11-09T20:00:00+02:00</lastmod>
     <priority>0</priority>
@@ -645,13 +729,13 @@
   </url>
   
   <url>
-    <loc>http://oslc.co/tags/why/</loc>
+    <loc>http://oslc.co/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://oslc.co/categories/why/</loc>
+    <loc>http://oslc.co/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>

@@ -1,35 +1,80 @@
-.btn-oslc{
-  background: #28BD84;
-  color: #fff;
-  text-transform: uppercase;
-}
+.button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
 
-.btn-purple{
-  background: #37086C;
-  color:#fff;
-  border: 1px solid #37086C;
-  text-transform: uppercase;
-  line-height: 2;
-  width: 100%;
-}
-
-.post__button {
-  color: #fff;
-  width: 170px;
+  border: 1px solid $black;
+  color: $black;
+  background: transparent;
+  padding: 7px 25px;
   font-size: 16px;
-  padding: 6px 0;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  background-color: #3d3d3d;
-  margin-top: 20px;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  
+  z-index: 0;
 
-  &:hover {
-    text-decoration: none;
-    color: #FFF;
+  &.white {
+    border-color: $white;
+    color: $white;
   }
 
-  &:visited{
-    color:#fff;
+  &.blue {
+    border-color: $white;
+    color: $white;
+  }
+
+  &.blue {
+    border-color: $dark-purple;
+    color: $dark-purple;
+  }
+
+  &.hover--light_blue {
+    &:hover {
+      color: $white;
+      border-color: $oslc-light-blue;
+    }
+
+    &:before {
+      border-bottom-color: $oslc-light-blue
+    }
+  }
+
+  &.hover--dark_purple {
+    &:hover {
+      color: $white;
+      border-color: $dark-purple;
+    }
+
+    &:before {
+      border-bottom-color: $dark-purple;
+    }
+  }
+
+  &:hover {
+    color: white;
+
+    &::before {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 38px solid transparent;
+    border-bottom: 38px solid $black;
+    transition: all 200ms ease-in;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    box-sizing: border-box;
+    
+    z-index: -1;
   }
 }

@@ -8,7 +8,7 @@
 .mission {
 
   .mission__links {
-    background-color: #418EEB;
+    background-color: $oslc-light-blue;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -17,7 +17,7 @@
       margin-right: 20px;
       padding: 11px 5px 8px;      
       text-transform: uppercase;
-      color: #fff;
+      color: $white;
 
       &:last-child {
         margin-right: 0
@@ -25,7 +25,7 @@
 
       &:hover {
         text-decoration: none;
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid $white;
       }
     }
   }
@@ -123,13 +123,13 @@
   .people-active .people--item,
   .faq-active .faq--item{
     box-sizing: border-box;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid $white;
   }
 
   .sec-header{
     position: relative;
     height: 300px;
-    color: #fff;
+    color: $white;
     background-size: cover;
     background-position: bottom;
   
