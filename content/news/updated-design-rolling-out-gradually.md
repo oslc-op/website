@@ -1,5 +1,5 @@
 +++
-categories = ["updates"]
+category = "updates"
 date = "2015-03-06T10:00:00+02:00"
 author = "Lee Reamsnyder"
 tags = ["github", "meta", "redesign", "website"]
