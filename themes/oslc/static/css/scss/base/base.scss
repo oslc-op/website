@@ -3,6 +3,11 @@ body{
   margin: 0;
 }
 
+.page, .single, .list {
+  position: relative;
+  padding-bottom: 62px; 
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
