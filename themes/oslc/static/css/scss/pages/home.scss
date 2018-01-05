@@ -40,51 +40,46 @@
     max-width: 1300px;
   }
 
-  .benefit {
-    padding: 40px 0 60px;
+  .benefits_grid {
+    display: flex;
+    flex-wrap: wrap;
 
-    .benefit--title {
-      font-size: 34px;
-      text-align: center;
-    }
+    margin-top: 50px;
 
-    .benefit--subtext {
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .benefits_grid {
+    .benefit--item {
+      width: 33.3%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 40px 20px;
 
-      margin-top: 50px;
-  
-      .benefit--item {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 40px 20px;
-  
-        i {
-          font-size: 45px;
-          color: $oslc-light-blue;
-        }
-  
-        .item--title {
-          color: #04002B;
-          font-weight: normal;
-          text-align: center;
-          font-size: 22px;
-        }
-  
-        .item--paragraph {
-          text-align: center;
-          font-size: 16px;
-          margin-top: 0;
-        }
+      i {
+        font-size: 45px;
+        color: $oslc-light-blue;
+      }
+
+      .item--title {
+        color: #04002B;
+        font-weight: normal;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .item--paragraph {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 0;
       }
     }
   }  
+}
+
+.section--specs {
+  img {
+    width: 60%;
+    display: block;
+    margin: 50px auto 70px;
+  }
 }
 
 .homepage--section {
