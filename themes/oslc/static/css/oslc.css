@@ -3,7 +3,8 @@ body {
   margin: 0; }
 
 .page, .single, .list {
-  position: relative; }
+  position: relative;
+  padding-bottom: 62px; }
 
 .btn {
   display: inline-block;
@@ -118,7 +119,7 @@ h1, h2, h3, h4, h5 {
 .button.blue {
   border-color: #FFF;
   color: #FFF; }
-.button.blue {
+.button.purple {
   border-color: #37086C;
   color: #37086C; }
 .button.hover--light_blue:hover {
@@ -423,6 +424,29 @@ table th {
 @media screen and (max-width: 768px) {
   .section--story .story .story--image img {
     width: 100%; } }
+.hero-container {
+  background: linear-gradient(to right, #418EEB, #3A659E 14.1%, #375178 26.7%, #495473 35.5%, #C16756 59.5%, #D96B50 67.4%, #D96B50 70.8%, #C87355 77.5%, #49AE7A); }
+.hero-container .home-texture {
+  background-image: url("../img/home-pattern.png");
+  background-position: 4px 4px; }
+.hero-container .home-texture .hero {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+.hero-container .home-texture .hero h1, .hero-container .home-texture .hero p, .hero-container .home-texture .hero a {
+  color: #FFF; }
+.hero-container .home-texture .hero .title {
+  font-size: 50px;
+  margin: 10px 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+.hero-container .home-texture .hero .headline {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
+
 .container-flex {
   display: flex;
   flex-direction: column;
@@ -653,28 +677,6 @@ table th {
   font-size: 30px;
   color: rgba(45, 68, 103, 0.8); }
 
-.hero-container {
-  background: linear-gradient(to right, #418EEB, #3A659E 14.1%, #375178 26.7%, #495473 35.5%, #C16756 59.5%, #D96B50 67.4%, #D96B50 70.8%, #C87355 77.5%, #49AE7A); }
-.hero-container .home-texture {
-  background-image: url("../img/home-pattern.png");
-  background-position: 5px 5px; }
-.hero-container .home-texture .hero {
-  padding: 112px 0; }
-.hero-container .home-texture .hero h1, .hero-container .home-texture .hero p, .hero-container .home-texture .hero a {
-  color: #FFF; }
-.hero-container .home-texture .hero .title {
-  font-size: 50px;
-  margin: 10px 0;
-  text-align: center; }
-.hero-container .home-texture .hero .textline {
-  margin-top: 0;
-  font-size: 18px;
-  text-align: center; }
-.hero-container .home-texture .hero .headline {
-  font-size: 22px;
-  margin-top: 20px;
-  text-align: center; }
-
 .section--benefits .container {
   width: 1300px;
   max-width: 1300px; }
@@ -808,7 +810,9 @@ table th {
   justify-content: space-between;
   margin: 100px 0; }
 .section--supporters .supporters--list .supporter {
-  width: 15%; }
+  width: 15%;
+  display: flex;
+  align-items: center; }
 .section--supporters .supporters--list .supporter img {
   display: block;
   width: 100%; }
@@ -864,18 +868,18 @@ table th {
   background: #FFF;
   margin-bottom: 20px; }
 .section--news .news__container .news__item .news__image {
+  display: flex;
+  align-items: center;
+  background: #375178;
   width: 100%;
-  height: 180px;
+  height: 100px;
   overflow: hidden;
   position: relative; }
 .section--news .news__container .news__item .news__image img {
   width: 100%;
   height: auto; }
 .section--news .news__container .news__item .news__image .new__title {
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  right: 1px; }
+  padding: 0 15px; }
 .section--news .news__container .news__item .news__image .new__title a {
   color: #FFF;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
@@ -884,6 +888,8 @@ table th {
 .section--news .news__container .news__item .new__info .new__date {
   font-style: italic;
   line-height: 3; }
+.section--news .info--button {
+  margin-bottom: 60px; }
 
 @media screen and (min-width: 769px) {
   .section--news .news__container {
@@ -900,7 +906,7 @@ table th {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.22); }
   .section--news .news__container .news__item .news__image {
     width: 100%;
-    height: 180px;
+    height: 100px;
     overflow: hidden; }
   .section--news .news__container .news__item .news__image img {
     width: 100%;

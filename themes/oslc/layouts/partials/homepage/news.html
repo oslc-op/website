@@ -4,7 +4,7 @@
     <div class="news__container">
       {{ range last 4 (where .Data.Pages.ByPublishDate "Type" "=" "news") }}
       <div class="news__item">
-        <div class="news__image" style="background-image: url('{{ .Site.BaseURL }}{{ .Params.banner }}') !important; background-size: cover;">
+        <div class="news__image">
           <h3 class="new__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         </div>
         <div class="new__info">
@@ -16,5 +16,8 @@
       </div>
       {{ end }}
     </div>
+  </div>
+  <div class="info--button">
+    <a class="button" href="/news">See All</a>
   </div>
 </section>
