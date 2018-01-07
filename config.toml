@@ -38,7 +38,7 @@ disqus_url = ""
     weight = 3
 
 [[menu.main]]
-    name = "About"
+    name = "About Us"
     identifier = "about"
     url  = "/about/mission"
     weight = 4

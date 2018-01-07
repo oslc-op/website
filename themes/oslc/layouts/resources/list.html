@@ -13,20 +13,7 @@
 
         </header>
 
-        <section class="m-top">
-          <div class="sec-rs-header">
-            <div class="sec-rs-info">
-              <div class="container">
-                <h1 class="section__title white"> {{ .Title }} </h1>
-                <div class="sec-rs-header__content">
-                  <div class="big__paragraph">
-                    {{ .Content }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {{ partial "hero.html" . }}
 
         {{ partial "resources-search.html" . }}
 
