@@ -1,24 +1,29 @@
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo "Starting Deployment"
 
-# Build the project.
+echo "Switch to Production"
+git checkout production
+
+echo "Updating Production branch"
+git pull origin production
+
+echo "Removing /public directory"
+rm -R public
+
+echo "Merging changes from Master"
+git pull origin master
+
+echo "Generate Hugo site"
 hugo -b http://oslc.co/ -t oslc
 
-# Go To Public folder
-cd public
-# Add changes to git.
-git add -A
+echo "Commiting changes"
+git add *
+git commit -m 'Updating Production Branch'
 
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
+echo "Pushing changes to repository"
+git push origin production
 
-# Push source and build repos.
-git push origin master
-
-# Come Back
-cd ..
+echo "Updating server code"
+SCRIPT="cd ../var/www/oslc.co; git checkout production; git pull origin production; exit"
+ssh -A root@165.227.5.255 "${SCRIPT}"
