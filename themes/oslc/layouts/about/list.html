@@ -5,7 +5,7 @@
 
   <body>
 
-    <div id="page" class="page">
+    <div id="page" class="page about_page">
 
         <header>
 
@@ -13,16 +13,98 @@
 
         </header>
 
-        <div class="sections m-top">
+        {{ partial "hero.html" . }}
 
-          <div class="mission" id="mission">
-            <nav class="mission__links">
-              <a href="{{ .Site.BaseURL}}about/mission" class="mission__item">Mission</a>
-              <a href="{{ .Site.BaseURL}}about/people" class="mission__item">People</a>
-              <a href="{{ .Site.BaseURL}}about/faq" class="mission__item">FAQ</a>
-            </nav>
+        <nav class="sub_nav">
+          <a href="#mission" class="sub_nav--item active">Mission</a>
+          <a href="#people" class="sub_nav--item">People</a>
+          <a href="#supporters" class="sub_nav--item">Supporters</a>
+          <a href="#faq" class="sub_nav--item">FAQ</a>
+        </nav>
+
+        <section id="mission-anchor" class="content--section mission">
+          <div class="container">
+            <h2 class="headline">{{ .Params.mission_title }}</h2>
+            <p class="subtitle">{{ .Params.mission_subtitle }}</p>
+            <p>{{ .Params.mission_content }}</p>
           </div>
-        </div>
+        </section>
+
+        <section id="people-anchor" class="content--section people">
+          <div class="container">
+            <h2 class="headline">{{ .Params.people_title }}</h2>
+            <p class="subtitle">{{ .Params.people_subtitle }}</p>
+            <div class="row--list">
+              {{range $index, $member := .Params.members}}
+                {{ $position := index $.Params.positions $index }}
+                <div class="item">
+                  <p class="bigger">{{ $member }}</p>
+                  <p>{{ $position }}</p>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+        <section id="supporters-anchor" class="content--section supporters">
+          <div class="container">
+            <h2 class="headline">{{ .Params.supporters_title }}</h2>
+            <p class="subtitle">{{ .Params.supporters_subtitle }}</p>
+            <div class="supporters--wrap">
+              <h3 class="type">{{ .Params.supporters_type_1 }}</h3>
+              <div class="row--list">
+                {{range $index, $supporter := .Params.supporters_foundational }}
+                  {{ $link := index $.Params.supporters_foundational_links $index }}
+                  <div class="item">
+                    <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="supporters--wrap">
+              <h3 class="type">{{ .Params.supporters_type_2 }}</h3>
+              <div class="row--list">
+                {{range $index, $supporter := .Params.supporters_sponsors }}
+                  {{ $link := index $.Params.supporters_sponsors_links $index }}
+                  <div class="item">
+                    <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+            <div class="supporters--wrap">
+              <h3 class="type">{{ .Params.supporters_type_3 }}</h3>
+              <div class="row--list">
+                {{range $index, $supporter := .Params.supporters_contributors }}
+                  {{ $link := index $.Params.supporters_contributors_links $index }}
+                  <div class="item">
+                    <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>  
+        </section>
+
+        <section id="faq-anchor" class="content--section faq">
+          <div class="container">
+            <h2 class="headline">{{ .Params.faq_title }}</h2>
+            <p class="subtitle">{{ .Params.faq_subtitle }}</p>
+            <div class="faq">
+              {{range $index, $question := .Params.faq_questions }}
+                {{ $answer := index $.Params.faq_answers $index }}
+                <div class="faq__item">
+                  <div class="question__title">
+                    <a class="collapse-toggle" data-target="#answer{{ $index }}">{{ $question }}</a>
+                  </div>
+                  <div id="answer{{ $index }}" class="answer">
+                    <p>{{ $answer }}</p>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
 
         <footer class="footer footer--inverse" id="footer">
           {{ partial "footer.html" . }}
@@ -32,5 +114,7 @@
 
     <!-- scripts -->
     {{ partial "scripts.html" }}
+    <script src="{{ "/js/collapse.js" | absURL }}" ></script>
+    <script src="{{ "/js/subnav.js" | absURL }}" ></script>
   </body>
 </html>
