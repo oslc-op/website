@@ -18,12 +18,12 @@ echo "Generate Hugo site"
 hugo -b http://oslc.co/ -t oslc
 
 echo "Commiting changes"
-git add *
+git add -A
 git commit -m 'Updating Production Branch'
 
 echo "Pushing changes to repository"
 git push origin production
 
 echo "Updating server code"
-SCRIPT="cd ../var/www/oslc.co; git checkout production; git pull origin production; exit"
+SCRIPT="cd ../var/www/oslc.co; git pull origin production; exit"
 ssh -A root@165.227.5.255 "${SCRIPT}"
