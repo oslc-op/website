@@ -13,20 +13,28 @@ mission_content = "The community is striving to pull together many diverse initi
 people_title = "Steering Committee"
 people_subtitle = "The Steering Committee is responsible for all things OSLC"
 members = [
-  "Jake",
-  "Sully",
-  "Perseus",
-  "Annabeth",
-  "Brunner",
-  "Grover"
+  "Axel Reichwein",
+  "Bill Chown",
+  "Celine Sauvaget",
+  "Jean Nelson",
+  "Jim Amsden",
+  "Mark Schulte",
+  "Martin Sarabura",
+  "Mats Berglund",
+  "Rainer Ersch",
+  "Wesley Coelho",
 ]
 positions = [
-  "Leader",
-  "Designer",
-  "Developer",
-  "Designer",
-  "Developer",
-  "Tester"
+  "Koneksys",
+  "Mentor Graphics",
+  "Airbus",
+  "IBM",
+  "IBM",
+  "Boeing",
+  "PTC",
+  "Ericsson",
+  "Siemems",
+  "Tasktop Technologies",
 ]
 
 supporters_title = "Supporters"
