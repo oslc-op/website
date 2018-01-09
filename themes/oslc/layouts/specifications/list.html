@@ -7,25 +7,24 @@
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        <main class="main specifications">
-          <div class="container">
-            <div class="content">
-              <h1 class="title">{{ .Params.title }}</h1>
-              {{ .Content }}
-            </div>
+      <main class="main specifications">
+        <div class="container">
+          <div class="content">
+            <h1 class="title">{{ .Params.title }}</h1>
+            {{ .Content }}
           </div>
-        </main>
-
-        <footer class="footer footer--inverse" id="footer">
-          {{ partial "footer.html" . }}
-        </footer>
+        </div>
+      </main>
     </div>
+    <footer class="footer footer--inverse" id="footer">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

@@ -7,61 +7,60 @@
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        <main class="resource-post">
-          {{ if in .Params.tags "tutorial" }}
-          <aside class="sidebar-post">
+      <main class="resource-post">
+        {{ if in .Params.tags "tutorial" }}
+        <aside class="sidebar-post">
 
-            <div class="table-of-contents">
-                {{ .TableOfContents }}
+          <div class="table-of-contents">
+              {{ .TableOfContents }}
+          </div>
+        </aside>
+        {{ end }}
+
+        {{ if in .Params.tags "tutorial" }}
+        <section class="post tutorial">
+        {{ end }}
+        {{ if in .Params.tags "no-tutorial" }}
+        <section class="post no-tutorial">
+        {{ end }}
+          <div class="post__header">
+            <div class="post__title">
+              <h1>{{ .Title }}</h1>
             </div>
-          </aside>
-          {{ end }}
-
-          {{ if in .Params.tags "tutorial" }}
-          <section class="post tutorial">
-          {{ end }}
-          {{ if in .Params.tags "no-tutorial" }}
-          <section class="post no-tutorial">
-          {{ end }}
-            <div class="post__header">
-              <div class="post__title">
-                <h1>{{ .Title }}</h1>
-              </div>
-              <div class="post__meta">
-                <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
-                <div class="post__author"><a href="{{ .Params.author_uri }}"> {{ .Params.author }} </a></div>
-                <div class="post__comments">No comments</div>
-              </div>
+            <div class="post__meta">
+              <div class="post__date"> {{ .Date.Format "Jan 2, 2006" }} </div>
+              <div class="post__author"><a href="{{ .Params.author_uri }}"> {{ .Params.author }} </a></div>
+              <div class="post__comments">No comments</div>
             </div>
-            <div class="post__content">
-              <div class="post__thumbnail">
-                <img data-src="{{ .Params.banner }}" alt="">
-              </div>
-              <div class="post__paragraphs">
-                {{ .Content }}
-              </div>
+          </div>
+          <div class="post__content">
+            <div class="post__thumbnail">
+              <img data-src="{{ .Params.banner }}" alt="">
             </div>
-            <div class="post__footer">
-              <div>
-                <span/>
-              </div>
-              <!-- Put partial between 2 empty divs to center it -->
-              {{ partial "post-share.html" . }}
-              <div/>
+            <div class="post__paragraphs">
+              {{ .Content }}
             </div>
-          </section>
-        </main>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+          </div>
+          <div class="post__footer">
+            <div>
+              <span/>
+            </div>
+            <!-- Put partial between 2 empty divs to center it -->
+            {{ partial "post-share.html" . }}
+            <div/>
+          </div>
+        </section>
+      </main>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->
