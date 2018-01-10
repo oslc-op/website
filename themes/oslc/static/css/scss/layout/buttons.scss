@@ -7,7 +7,7 @@
   border: 1px solid $black;
   color: $black;
   background: transparent;
-  padding: 7px 25px;
+  padding: 6px 18px;
   font-size: 16px;
   transition: all 200ms ease-in;
   cursor: pointer;
@@ -29,6 +29,11 @@
     color: $dark-purple;
   }
 
+  &.dark_blue {
+    border-color: $oslc-dark-blue;
+    color: $oslc-dark-blue;
+  }
+
   &.hover--light_blue {
     &:hover {
       color: $white;
@@ -48,6 +53,17 @@
 
     &:before {
       border-bottom-color: $dark-purple;
+    }
+  }
+
+  &.hover--dark_blue {
+    &:hover {
+      color: $white;
+      border-color: $oslc-dark-blue;
+    }
+
+    &:before {
+      border-bottom-color: $oslc-dark-blue;
     }
   }
 
