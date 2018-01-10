@@ -29,14 +29,11 @@
 
 
 <div class="popular-posts">
-  <h2>Popular Posts</h2>
+  <h2>Recommended Posts</h2>
   {{ range first 4 .Data.Pages.ByPublishDate.Reverse }}
   <a href="{{ .Permalink }}" class="popular-posts__item">
-    <div class="item__img">
-      <img data-src="{{ .Site.BaseURL }}{{ .Params.banner }}" alt="">
-    </div>
     <div class="item__info">
-      <span class="name">{{ .Title }}</span>
+      <p class="name">{{ .Title }}</p>
       <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
     </div>
   </a>
