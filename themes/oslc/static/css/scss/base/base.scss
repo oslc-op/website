@@ -4,8 +4,7 @@ body{
 }
 
 .page, .single, .list {
-  position: relative;
-  padding-bottom: 62px;
+  min-height: calc(100vh - 206px);
 }
 
 .btn {

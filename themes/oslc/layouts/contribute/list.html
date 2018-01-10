@@ -48,7 +48,7 @@
                 </div>
                 <p>{{ .Params.evangelize_description }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.evangelize_linkurl1}}">{{ .Params.evangelize_link1}}</a>
+                  <a href="{{ .Params.evangelize_linkurl1}}" class="button dark-blue hover--dark_blue">{{ .Params.evangelize_link1}}</a>
                 </div>
               </div>
             </div>
@@ -63,8 +63,8 @@
                 <p>{{ .Params.development_paragraph }}</p>
                 <p>{{ .Params.development_paragraph2 }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.development_linkurl1}}">{{ .Params.development_link1}}</a>
-                  <a href="{{ .Params.development_linkurl2}}">{{ .Params.development_link2}}</a>
+                  <a href="{{ .Params.development_linkurl1}}" class="button dark-blue hover--dark_blue">{{ .Params.development_link1}}</a>
+                  <a href="{{ .Params.development_linkurl2}}" class="button dark-blue hover--dark_blue">{{ .Params.development_link2}}</a>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@
               <div class="contribute__content">
                 <p>{{ .Params.working_groups_paragraph }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.working_groups_moreurl}}">{{ .Params.working_groups_more}}</a>
+                  <a href="{{ .Params.working_groups_moreurl}}" class="button dark-blue hover--dark_blue">{{ .Params.working_groups_more}}</a>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@
               <div class="contribute__content">
                 <p>{{ .Params.join_paragraph }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.join_linkurl1}}">{{ .Params.join_link1}}</a>
+                  <a href="{{ .Params.join_linkurl1}}" class="button dark-blue hover--dark_blue">{{ .Params.join_link1}}</a>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
               <div class="contribute__content">
                 <p>{{ .Params.specs_paragraph }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.specs_more_url}}">{{ .Params.specs_more}}</a>
+                  <a href="{{ .Params.specs_more_url}}" class="button dark-blue hover--dark_blue">{{ .Params.specs_more}}</a>
                 </div>
               </div>
             </div>
@@ -139,11 +139,10 @@
             {{ end }}
           </div>
         </section>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

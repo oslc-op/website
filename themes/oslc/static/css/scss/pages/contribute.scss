@@ -107,18 +107,8 @@
         flex-wrap: wrap;
 
         a {
-          border: 1px solid $oslc-dark-blue;
-          padding: 6px 12px;
-          color: $oslc-dark-blue;
-          transition: all 350ms ease;
           text-decoration: none;
           margin-top: 20px;
-
-
-          &:hover {
-            background: $oslc-dark-blue;
-            color: white;
-          }
         }
       }
     }

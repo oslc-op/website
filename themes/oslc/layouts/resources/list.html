@@ -7,35 +7,34 @@
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        {{ partial "hero.html" . }}
+      {{ partial "hero.html" . }}
 
-        {{ partial "resources-search.html" . }}
+      {{ partial "resources-search.html" . }}
 
-        <section>
-          <div class="container">
-            <div class="container-small-items">
-              {{ range .Paginator.Pages.ByPublishDate }}
-              {{ partial "resource-single.html" . }}
-              {{ end }}
-            </div>
-
-            <div class="paginator" style="display: none;">
-              {{ template "_internal/pagination.html" . }}
-            </div>
-
+      <section>
+        <div class="container">
+          <div class="container-small-items">
+            {{ range .Paginator.Pages.ByPublishDate }}
+            {{ partial "resource-single.html" . }}
+            {{ end }}
           </div>
-        </section>
 
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+          <div class="paginator" style="display: none;">
+            {{ template "_internal/pagination.html" . }}
+          </div>
+
+        </div>
+      </section>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

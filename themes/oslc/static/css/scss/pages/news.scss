@@ -94,11 +94,10 @@
 
     .post__button {
       width: 170px;
-      padding: 3px 0;
+      padding: 0;
       text-align: center;
       display: block;
-      margin: 0 auto;
-      margin-top: 20px;
+      margin: 30px auto 30px;
 
       &:hover {
         text-decoration: none;
@@ -113,14 +112,30 @@
   border-bottom: 1px solid #AAAAAA;
   color: #AAAAAA;
   margin: 20px 0 50px;
-  padding: 15px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
 
-  .fa {
-    margin-left: 10px;
+  .post__time-reading {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
   }
+
+  .post__share {
+    display: flex;
+    
+    a {
+      margin-left: 10px;
+  
+      &:last-child {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  
 
   a {
     color: #AAAAAA;
@@ -152,20 +167,14 @@
       margin-bottom: 0px;
       border-bottom: none;
     }
-
-    .item__img{
-      width: 25%;
-      height: 65px;
-      overflow: hidden;
-
-      img {
-        max-width: 100%;
-      }
+    
+    .name {
+      margin: 0 0 5px;
+      font-weight: 600;
     }
 
-    .item__info{
-      width: 75%;
-      padding: 0px 10px;
+    .date {
+      font-size: 14px;
     }
   }
 

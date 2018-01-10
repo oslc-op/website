@@ -11,20 +11,9 @@
     {{ partial "header.html" . }}
   </header>
 
-  <main class="single-about m-top">
+  {{ partial "hero.html" . }}
 
-    <div class="sec-header" style="background-image: url('{{ .Params.banner }}');">
-      <div class="sec-info" style="background: linear-gradient(to bottom, rgba(45,68,103,0.65), rgba(20,188,125,0.65));">
-        <div class="container">
-          <h1 class="section__title white"> {{ .Title }} </h1>
-          <div class="sec-header__content">
-            <div class="big__paragraph">
-              <p>{{ .Params.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <main class="single-about m-top">
     {{ if in .Params.categories "why" }}
       <div class="container container-flex single-why">
         {{ .Content }}  
@@ -60,11 +49,10 @@
       </div>
     {{ end }}
   </main>
-
-  <footer class="footer footer--inverse" id="footer">
-      {{ partial "footer.html" . }}
-  </footer>
 </div>
+<footer class="footer footer--inverse" id="footer">
+    {{ partial "footer.html" . }}
+</footer>
 <!-- /#all -->
 
 <!-- scripts -->

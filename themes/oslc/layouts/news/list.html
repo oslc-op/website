@@ -7,29 +7,28 @@
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        {{ partial "hero.html" . }}
+      {{ partial "hero.html" . }}
 
-        <div class="container">
-          <div class="row news--container">
-              <div class="posts">
-                {{ range .Data.Pages.ByPublishDate.Reverse }}
-                <div class="col-sm-8">{{ partial "posts.html" . }}</div>
-                {{ end }}
-              </div>
-              <div class="col-sm-4 sidebar-posts">{{ partial "sidebar-posts.html" . }}</div>
-          </div>
+      <div class="container">
+        <div class="row news--container">
+            <div class="posts">
+              {{ range .Data.Pages.ByPublishDate.Reverse }}
+              <div class="col-sm-8">{{ partial "posts.html" . }}</div>
+              {{ end }}
+            </div>
+            <div class="col-sm-4 sidebar-posts">{{ partial "sidebar-posts.html" . }}</div>
         </div>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+      </div>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

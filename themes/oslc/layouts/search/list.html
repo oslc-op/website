@@ -7,29 +7,28 @@
 
     <div id="page" class="page search">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        <main class="results" id="results">
-          <div class="container m-top">
-            {{ $siteCont := getJSON "/static/site.json" }}
-            
-            {{ range $siteCont }}
-              <div class="result-item" title="{{ .title }}">
-                <h1><a href="{{ .uri }}"> {{ .title }} </a></h1>
-                <div class="content-paragraph"> {{ .content }} </div>
-              </div>
-            {{ end }}
-          </div>
-        </main>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+      <main class="results" id="results">
+        <div class="container m-top">
+          {{ $siteCont := getJSON "/static/site.json" }}
+          
+          {{ range $siteCont }}
+            <div class="result-item" title="{{ .title }}">
+              <h1><a href="{{ .uri }}"> {{ .title }} </a></h1>
+              <div class="content-paragraph"> {{ .content }} </div>
+            </div>
+          {{ end }}
+        </div>
+      </main>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->
