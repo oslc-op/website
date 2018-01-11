@@ -34,6 +34,24 @@
               </div>
               <div class="post__paragraphs">
                 {{ .Content }}
+
+                <ul>
+                  {{ if isset .Params "wiki"}}
+                    <li>Wiki: <a href="{{ .Params.wiki }}">{{ .Params.wiki }}</a></li>
+                  {{ end }}
+                
+                  {{ if isset .Params "issues"}}
+                    <li>Issues: <a href="{{ .Params.issues }}">{{ .Params.issues }}</a></li>
+                  {{ end }}
+                
+                  {{ if isset .Params "forum"}}
+                    <li>Forum: <a href="{{ .Params.forum }}">{{ .Params.forum }}</a></li>
+                  {{ end }}
+                
+                  {{ if isset .Params "workgroup_leads"}}
+                    <li>Workgroup Leads: {{ .Params.workgroup_leads }}</li>
+                  {{ end }}
+                </ul>
               </div>
             </div>
             <div class="post__footer">

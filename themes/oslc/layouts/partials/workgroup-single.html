@@ -1,47 +1,34 @@
-<div class="rs-small-item workgroup-small-item" title="{{ .Title }}">
-  <div class="sm-header--wg">
-    <span class="fa fa-briefcase"></span>
-    <h3 class="title-item">{{ .Title }}</h3>
-  </div>
-  <!-- <div class="sm-header--blue" style="background-color: #6c0808 !important;">
-    <span class="fa fa-podcast"></span>
-    <h3 class="title-item">Podcast</h3>
-  </div>
-  <div class="sm-header--green">
-    <span class="fa fa-line-chart"></span>  
-    <h3 class="title-item">Presentation</h3>
-  </div>
-  <div class="sm-header--blue" style="background-color: #E2866F !important;">
-    <span class="fa fa-cogs"></span>
-    <h3 class="title-item">Tool</h3>
-  </div>
-  <div class="sm-header--blue">
-    <span class="fa fa-book"></span>
-    <h3 class="title-item">Tutorial</h3>
-  </div>
-  <div class="sm-header--blue" style="background-color: #375178 !important;">
-    <span class="fa fa-film"></span>
-    <h3 class="title-item">Video</h3>
-  </div>
-  <div class="sm-header--blue" style="background-color: #0a6743 !important;">
-    <span class="fa fa-globe"></span>
-    <h3 class="title-item">Website</h3>
-  </div>
-  <div class="sm-header--gray">
-    <span class="fa fa-files-o"></span>
-    <h3 class="title-item">Whitepaper</h3>
-  </div> -->
-  <div class="sm-content">
-    <!-- <h3 class="title-content"></h3> -->
-    <div class="sm-info">
-      <p>{{ .Params.description }}</p>
+<div class="workgroup--item" title="{{ .Title }}">
+  <h3 class="workgroup--title">{{ .Title }}</h3>
+  <div class="workgroup--content">
+    <div class="workgroup--info">
+      <p>
+        {{ .Content }}
+      </p>
     </div>
-    <div class="sm-author-date">
-      <span class="author">{{ .Params.author }}</span>
-      <span class="author"><i class="fa fa-calendar"></i> {{ .Date.Format "Jan 2, 2006"}}</span>
-    </div>
-    <div class="sm-buttons">
-      <a href=" {{ .Permalink }} ">See more</a>
+    {{ if isset .Params "workgroup_leads"}}
+      <div class="workgroup--leads">
+        <p>Lead by: {{ .Params.workgroup_leads }}</p>
+      </div>
+    {{ end }}
+    <div class="workgroup--buttons">
+      {{ if isset .Params "wiki"}}
+        <a href=" {{ .Params.wiki }} " class="button dark-blue hover--dark_blue">Wiki</a>
+      {{ end }}
+    
+      {{ if isset .Params "issues"}}
+        <a href=" {{ .Params.issues }} " class="button dark-blue hover--dark_blue">Issues</a>
+      {{ end }}
+    
+      {{ if isset .Params "forum"}}
+        <a href=" {{ .Params.forum }} " class="button dark-blue hover--dark_blue">Forum</a>
+      {{ end }}
+        
+      {{ if isset .Params "next"}}
+        <a href=" {{ .Params.next }} " class="button dark-blue hover--dark_blue">Learn More</a>
+      {{ else }}
+        <a href=" {{ .Permalink }} " class="button dark-blue hover--dark_blue">Learn More</a>
+      {{ end }}
     </div>
   </div>
 </div>
