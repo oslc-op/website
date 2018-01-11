@@ -55,17 +55,6 @@ For a high-level overview of how to add OSLC support to software, we recommend o
     </item>
     
     <item>
-      <title>Example tutorial</title>
-      <link>http://oslc.co/resources/example-tutorial/</link>
-      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://oslc.co/resources/example-tutorial/</guid>
-      <description>A title of section Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!
-This is a subsection Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam ea voluptas reprehenderit debitis nesciunt ex sed corrupti corporis fugiat! Quia rerum maiores minus inventore odio architecto nisi aperiam optio!
-And this is another Lorem ipsum dolor sit amet consectetur adipisicing elit.</description>
-    </item>
-    
-    <item>
       <title>Get started with developing OSLC applications</title>
       <link>http://oslc.co/resources/get-started-with-developing-oslc-applications/</link>
       <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>

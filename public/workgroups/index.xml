@@ -18,8 +18,7 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/alm-plm-interoperability/</guid>
-      <description>The working group ALM-PLM Interoperability (2nd edition) aims to define industrial relevant scenarios for interoperability of ALM and PLM engineering environment to indicate gaps and potential extensions to the relevant OASIS OSLC technical committees. It builds on the work of the previous Working Group “ALM-PLM Interoperability (1st edition)”
- Wiki : Issues: Forum : Workgroup leads :  </description>
+      <description>The working group ALM-PLM Interoperability (2nd edition) aims to define industrial relevant scenarios for interoperability of ALM and PLM engineering environment to indicate gaps and potential extensions to the relevant OASIS OSLC technical committees. It builds on the work of the previous Working Group “ALM-PLM Interoperability (1st edition)”</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/communications/</guid>
-      <description>A working group to discuss, plan, and execute communications about the work of the Open Services for Lifecycle Collaboration (OSLC) community. The workgroup aims to build better visibility within the community of the work of the various workgroups; and to raise awareness of the value of the work of the community within the applications and middleware industry and its customers.
- Wiki : Issues: Forum : Workgroup leads :  </description>
+      <description>A working group to discuss, plan, and execute communications about the work of the Open Services for Lifecycle Collaboration (OSLC) community. The workgroup aims to build better visibility within the community of the work of the various workgroups; and to raise awareness of the value of the work of the community within the applications and middleware industry and its customers.</description>
     </item>
     
     <item>
@@ -48,8 +46,7 @@ HF is the application of human factors methods to develop systems with an effect
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/lifecycle-integration-patterns/</guid>
-      <description>This working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges. Experienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.
- Wiki : https://github.com/OSLC/lifecycle-integration-patterns/wiki Issues: https://github.com/OSLC/lifecycle-integration-patterns/issues Forum : http://discourse.oslc.co/c/working-groups/lifecycle-integration-patterns Workgroup leads : Rainer Ersch, Wesley Coelho  </description>
+      <description>This working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges. Experienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.</description>
     </item>
     
     <item>
@@ -58,9 +55,7 @@ HF is the application of human factors methods to develop systems with an effect
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/steering-committee/</guid>
-      <description>The Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.
-At oasis-open.org
- Wiki : Issues: Forum : Workgroup leads :  </description>
+      <description>The Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.</description>
     </item>
     
   </channel>
