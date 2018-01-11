@@ -1,7 +1,7 @@
 +++
 category = "presentation"
 date = "2015-11-09T20:00:00+02:00"
-author = ""
+author = "OSLC Community"
 author_uri = ""
 tags = ["presentation", "no-tutorial"]
 title = "Tasktop: Helping a Center of Excellence live up to its name"

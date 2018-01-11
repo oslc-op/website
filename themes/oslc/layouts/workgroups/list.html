@@ -20,9 +20,9 @@
         <section class="m-top--small">
           <div class="container">
 
-            <div class="container-small-items">
+            <div class="workgroups--list">
               {{ range .Paginator.Pages.ByPublishDate }}
-              {{ partial "workgroup-single.html" . }}
+                {{ partial "workgroup-single.html" . }}
               {{ end }}
             </div>
 
