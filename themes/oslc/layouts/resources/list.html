@@ -19,9 +19,9 @@
 
       <section>
         <div class="container">
-          <div class="container-small-items">
+          <div class="resources--list">
             {{ range .Paginator.Pages.ByPublishDate }}
-            {{ partial "resource-single.html" . }}
+              {{ partial "resource-single.html" . }}
             {{ end }}
           </div>
 
@@ -41,16 +41,16 @@
     {{ partial "scripts.html" }}
 
     <script>
-      var el = document.querySelector('.container-small-items');
+      var el = document.querySelector('.resources--list');
 
       var infScroll = new InfiniteScroll(el, {
-          path : '.pagination a[aria-label="Next"]',
-          append : '.rs-small-item',
+          path : '.pagination',
+          append : '.resource--item',
           history: false
       });
 
       $(document).ready(function(){
-        $('.rs-small-item .sm-info').each(function(i, e){
+        $('.resource--item .resource--info').each(function(i, e){
               var summary = $(e).text().slice(0, 220);
              $(e).text('' + summary + '...');
         })
@@ -106,9 +106,7 @@
       function results(r) {
         var matches = [];
 
-        $('#resource-hero').hide();
-
-        $('.container-small-items > div').each(function(index, elem){
+        $('.resources--list > div').each(function(index, elem){
           $(elem).hide();
           for (var i = 0; i < r.length; i++) {
             if (elem.title === r[i].title) {
@@ -150,12 +148,10 @@
           filterBy = $("select option:selected").text().toLowerCase();
           
           if (filterBy == 'all') {
-            $('.rs-small-item').css('display', 'block');
-            $('#resource-hero').css('display', 'block');
+            $('.resources--item').css('display', 'block');
           } else {
-            $('#resource-hero').css('display', 'none');
           
-            $('.rs-small-item').each(function(index, elem){
+            $('..resources--item').each(function(index, elem){
               if ($(elem).attr('itemtype') === filterBy){
                 console.info($(elem).attr('itemtype'));
                 $(elem).css('display', 'block');
@@ -170,10 +166,9 @@
         $('#search-by').on('change keyup', function(event){
           console.info('event ', event)
           if ($('#search-by').val() === '') {
-            $('.container-small-items > div').each(function(index, elem){
+            $('..resources--list > div').each(function(index, elem){
               $(elem).css('display', 'block');
             })
-            $('#resource-hero').css('display', 'block');
           }
         })
       });
