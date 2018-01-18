@@ -408,13 +408,37 @@
 @media screen and (max-width: 768px){
   .rs-search {
     border-radius: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 0;
+    margin-bottom: 15px;
 
     .rs-search__item {
       padding: 0;
 
+      &:nth-child(1) {
+        width: 70%;
+      }
+
+      &:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        width: 30%;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
+
+      span {
+        right: 10px;
+      }
+    }
+  }
+
+  .resources--list {
+    .resource--item {
+      width: 100%;
     }
   }
 }
