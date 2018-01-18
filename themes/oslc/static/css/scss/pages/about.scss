@@ -59,4 +59,27 @@
 }
 
 @media screen and (max-width: 768px){
+  .about_page {
+    .m-top {
+      margin-top: 106px;
+    }
+
+    .mission {
+      p {
+        text-align: justify;
+
+        &.subtitle {
+          text-align: center;
+        }
+      }
+    }
+
+    .people, .supporters {
+      .row--list {
+        .item {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
