@@ -92,6 +92,14 @@
       display: flex;
       align-items: center;
 
+      &.square {
+        justify-content: center;
+
+        .fifty {
+          width: 50%;
+        }
+      }
+
       img {
         display: block;
         width: 100%;
