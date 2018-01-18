@@ -29,10 +29,6 @@
     position: absolute;
     right: 0;
     width: 300px;
-    display: none;
-    @media screen and (min-width: 760px){
-      display: block;
-    }
   }
 }
 
@@ -280,6 +276,19 @@
     .post__time-reading, .post_share {
       display: flex;
       align-items: center;
+    }
+  }
+
+  .news--container {
+    flex-direction: column-reverse;
+
+    .sidebar-posts {
+      position: relative;
+      width: 100%;
+
+      .popular-networks {
+        display: none;
+      }
     }
   }
 }

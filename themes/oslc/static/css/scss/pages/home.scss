@@ -92,6 +92,14 @@
       display: flex;
       align-items: center;
 
+      &.square {
+        justify-content: center;
+
+        .fifty {
+          width: 50%;
+        }
+      }
+
       img {
         display: block;
         width: 100%;
@@ -267,7 +275,7 @@
   .hero-container {
     .home-texture {
       .hero {
-        padding: 20px 0 40px;
+        height: 250px;
 
         .title {
           font-size: 30px;
