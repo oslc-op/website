@@ -53,3 +53,24 @@
     }
   }
 }
+
+@media screen and (max-width:769px) {
+  .workgroups--list {
+    .workgroup--item {
+      .workgroup--buttons {
+        flex-wrap: wrap;
+
+        .button {
+          width: 45%;
+          min-width: 126px;
+          text-align: center;
+          margin: 0 2.5% 10px;
+
+          &:last-child {
+            margin-right: 2.5%;
+          }
+        }
+      }
+    }
+  }
+}
