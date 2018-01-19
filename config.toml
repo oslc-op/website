@@ -54,9 +54,14 @@ disqus_url = ""
     weight = 6
 
 [[menu.main]]
+    name = "Forum"
+    url  = "http://discourse.oslc.com"
+    weight = 7
+
+[[menu.main]]
     name = "News"
     url  = "/news/"
-    weight = 7
+    weight = 8
 
 # Top bar social links menu
 
