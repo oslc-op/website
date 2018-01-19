@@ -30,7 +30,7 @@ table {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   table {
     border: 0;
 
@@ -59,21 +59,27 @@ table {
       border-bottom: 1px solid #ddd;
       display: block;
       font-size: .8em;
-      text-align: right;
-    }
-    
-    td:before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    td:last-child {
-      border-bottom: 0;
+      text-align: left;
+      padding-top: 28px;
+      position: relative;
+
+      &::before {
+        content: attr(data-title);
+        position: absolute;
+        top: 8px;
+        opacity: .8;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
   }
 }
+
+// @media screen and (max-width: 600px) {
+//   
+// }
