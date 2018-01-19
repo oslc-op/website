@@ -333,7 +333,7 @@
   .sidebar-post {
     width: 22%;
     position: fixed;
-    top: 120px;
+    top: 94px;
     left: 0;
     display: inline-block;
     background-color: #0B1E3A;
@@ -364,13 +364,17 @@
           transition: 0.1s linear;
         }
 
-        a:hover {
+        a {
           color: $white;
+        }
+
+        a:hover {
+          color: $oslc-light-blue;
           text-decoration: none;
         }
 
         a:focus {
-          color: $white;
+          color: $oslc-light-blue;
         }
 
         li {
@@ -395,6 +399,10 @@
     display: inline-block;
     padding: 0 2em;
     vertical-align: top;
+
+    img {
+      width: 100%;
+    }
   }
 
   .post__footer {
@@ -436,8 +444,22 @@
     }
   }
 
-  .resource-post .post.no-tutorial {
-    width: 90%;
+  .resource-post {
+    .post{
+      &.no-tutorial {
+        width: 90%;
+      }
+
+      &.tutorial {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 5%;
+      }
+    }
+    
+    .sidebar-post {
+      display: none;
+    }
   }
 
   .resources--list {
