@@ -83,26 +83,31 @@
 .section--supporters {
   .supporters--list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    margin: 100px 0;
+    margin: 60px 0;
 
     .supporter {
-      width: 15%;
+      width: 20%;
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      margin: 20px 0;
 
       &.square {
-        justify-content: center;
-
         .fifty {
           width: 50%;
+        }
+        .thirty-five {
+          width: 35%;
         }
       }
 
       img {
         display: block;
-        width: 100%;
+        width: 80%;
       }
     }
   }
