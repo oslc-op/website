@@ -96,18 +96,44 @@
 
       margin: 20px 0;
 
-      &.square {
-        .fifty {
+      img {
+        padding: 0 10%;
+        display: block;
+        width: 100%;
+
+        &.full {
+          width: 100%;
+        }
+        &.ninety-five {
+          width: 95%;
+        }
+        &.ninety {
+          width: 90%;
+        }
+        &.eighty-five {
+          width: 85%;
+        }
+        &.eighty {
+          width: 80%;
+        }
+        &.seventy-five {
+          width: 75%;
+        }
+        &.seventy {
+          width: 70%;
+        }
+        &.sixty-five {
+          width: 65%;
+        }
+        &.sixty {
+          width: 60%;
+        }
+        &.fifty-five {
+          width: 55%;
+        }
+        &.fifty {
           width: 50%;
         }
-        .thirty-five {
-          width: 35%;
-        }
-      }
-
-      img {
-        display: block;
-        width: 80%;
       }
     }
   }
