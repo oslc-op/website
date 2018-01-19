@@ -55,7 +55,7 @@ disqus_url = ""
 
 [[menu.main]]
     name = "Forum"
-    url  = "http://discourse.oslc.com"
+    url  = "http://discourse.oslc.co"
     weight = 7
 
 [[menu.main]]
