@@ -54,11 +54,12 @@ benefits_icons = [
 supporters = [
   "airbus_logo.png",
   "tasktop_logo.png",
+  "ibm_logo.png",
   "jama_software_logo.png",
-  "nomagic_logo.png",
   "sodius_logo.png",
   "vitech_logo.png",
   "metreeca_logo.png",
+  "nomagic_logo.png",
   "puresystems_logo.png",
   "kovair_logo.png",
   "koneksys_logo.png"
@@ -67,10 +68,12 @@ supporters = [
 supporters_size = [
   "full",
   "full",
+  "eighty",
+  "full",
+  "full",
+  "full",
   "full",
   "fifty-five",
-  "full",
-  "full",
   "full",
   "full",
   "full"
