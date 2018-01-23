@@ -3,10 +3,14 @@ categories = []
 date = "2017-06-21T20:57:23+02:00"
 tags = []
 title = "Open Services for Lifecycle Collaboration"
+heroTitle = "Open Services for Lifecycle Collaboration"
+heroSubtitle = "Creating standard REST APIs to connect data"
 draft = false
 type = "home"
-aka = "(Also known as the 'OSLC' open community)"
-heroSubtext = "Creating standard REST APIs to connect data"
+
+digital_thread-title = "Achieving the Digital Thread"
+digital_thread-subtitle = "Use OSLC to connect your data and achieve the digital thread across domains, applications, and organizations"
+digital_thread-image = "digital-thread.svg"
 
 title1 = "Why OSLC?"
 what1 = "Open Services for Lifecycle Collaboration (OSLC) is based on World Wide Web and Linked Data principles, such as those defined in the W3C Linked Data Platform [LDP], to create a cohesive set of specifications that can enable products, services, and other distributed network resources to interoperate successfully."

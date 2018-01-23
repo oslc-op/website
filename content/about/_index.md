@@ -3,7 +3,8 @@ categories = []
 date = "2017-06-21T20:46:28+02:00"
 tags = []
 title = "About"
-heroSubtext = "This is OSLC. Learn more."
+heroTitle = "About"
+heroSubtitle = "This is OSLC. Learn more."
 why_title = "Why OSLC?"
 
 mission_title = "Our Mission"
