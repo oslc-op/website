@@ -1,7 +1,7 @@
 <section class="content--section section--benefits">
   <div class="container container__big">   
-    <h2 class="headline">OSLC Benefits</h2>     
-    <p class="subtitle">Here's how OSLC can empower you</p>
+    <h2 class="headline">{{ .Params.benefits_title }}</h2>     
+    <p class="subtitle">{{ .Params.benefits_subtitle }}</p>
     <div class="benefits_grid">
       {{range $index, $benefit := .Params.benefits }}
         {{ $description := index $.Params.benefits_descriptions $index}}
