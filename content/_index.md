@@ -136,6 +136,7 @@ supporters = [
   "nomagic_logo.png",
   "puresystems_logo.png",
   "kovair_logo.png",
+  "oasis_logo.png",
   "koneksys_logo.png"
 ]
 
@@ -148,6 +149,7 @@ supporters_size = [
   "full",
   "full",
   "fifty-five",
+  "full",
   "full",
   "full",
   "full"
