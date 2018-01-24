@@ -2,6 +2,8 @@
 date = "2017-08-23T20:57:23+02:00"
 tags = []
 title = "Case Studies"
+heroTitle = "Case Studies"
+heroSubtitle = ""
 draft = false
 type = "Case"
 description = "A set of personas and user stories representing the kinds of people who should care about OSLC, will make it easier to determine what messages we want to send, and what channels we should use to send them."

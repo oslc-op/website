@@ -1,35 +1,33 @@
 <section class="content--section dark-blue-gradient section--understand">
   <div class="container container__big">
-    <h2 class="headline">Key Concepts of OSLC</h2>
-    <p class="subtitle">Difference between Web of documents, as we use today, and Web of data, as enabled by OSLC</p>
+    <h2 class="headline">{{ .Params.understand_title }}</h2>
+    <p class="subtitle">{{ .Params.understand_subtitle }}</p>
     <div class="section--split">
       <!-- ROW 1 -->
       <div class="column--item">
-        <h3 class="column--title">The Web of Documents</h3>
+        <h3 class="column--title">{{ .Params.understand_documents_title }}</h3>
         <div class="item--content">
           <div class="item--image one-fifth">
-            <img data-src="/img/html-file.svg">
+            <img data-src="/img/{{ .Params.understand_documents_1_image }}">
           </div>
           <div class="item--text">
             <p>
-              The web uses documents, standardized to .html, to define web pages. 
-              Documents in the web use URLs as identifiers 
-              <br> <span class="note">(URL represented by <i class="fa fa-link url-icon" aria-hidden="true"></i>)</span>
+              {{ .Params.understand_documents_1_paragraph }}
+              <br> <span class="note">({{ .Params.understand_documents_1_note }} <i class="fa {{ .Params.understand_documents_1_icon }} url-icon" aria-hidden="true"></i>)</span>
             </p>
           </div>
         </div>
       </div>
       <div class="column--item">
-        <h3 class="column--title">The Web of Data</h3>
+        <h3 class="column--title">{{ .Params.understand_data_title }}</h3>
         <div class="item--content">
           <div class="item--image one-fifth">
-            <img data-src="/img/rdf-file.svg">
+            <img data-src="/img/{{ .Params.understand_data_1_image }}">
           </div>
           <div class="item--text">
             <p>
-              The web uses <i>data</i>, standardized to .RDF, to define data in the web. 
-              <i>Data</i> in the web use URLs as identifiers 
-              <br> <span class="note">(URL represented by <i class="fa fa-link url-icon" aria-hidden="true"></i>)</span>
+              {{ .Params.understand_data_1_paragraph }}
+              <br> <span class="note">({{ .Params.understand_data_1_note }} <i class="fa {{ .Params.understand_data_1_icon }} url-icon" aria-hidden="true"></i>)</span>
             </p>
           </div>
         </div>
@@ -38,20 +36,20 @@
       <div class="column--item">
         <div class="item--content">
           <div class="item--image three-fifths mb-four-fifths">
-            <img data-src="/img/http-documents.svg">
+            <img data-src="/img/{{ .Params.understand_documents_2_image }}">
           </div>
           <div class="item--text">
-            <p>Clients can request documents from Servers via a common protocol, HTTP</p>
+            <p>{{ .Params.understand_documents_2_paragraph }}</p>
           </div>
         </div>
       </div>
       <div class="column--item">
         <div class="item--content">
           <div class="item--image three-fifths mb-four-fifths">
-            <img data-src="/img/http-data.svg">
+            <img data-src="/img/{{ .Params.understand_data_2_image }}">
           </div>
           <div class="item--text">
-            <p>Clients can request <i>data</i> from Servers via a common protocol, HTTP.</p>
+            <p>{{ .Params.understand_data_2_paragraph }}</p>
           </div>
         </div>
       </div>
@@ -59,20 +57,20 @@
       <div class="column--item">
         <div class="item--content">
           <div class="item--image nine-tenths">
-            <img data-src="/img/link-documents.svg">
+            <img data-src="/img/{{ .Params.understand_documents_3_image }}">
           </div>
           <div class="item--text">
-            <p>Documents from different sources can link to one another by referencing the other document's URL</p>
+            <p>{{ .Params.understand_documents_3_paragraph }}</p>
           </div>
         </div>
       </div>
       <div class="column--item">
         <div class="item--content">
           <div class="item--image nine-tenths">
-            <img data-src="/img/link-data.svg">
+            <img data-src="/img/{{ .Params.understand_data_3_image }}">
           </div>
           <div class="item--text">
-            <p><i>Data</i> from different sources can link to one another by referencing the other <i>data's</i> URL</p>
+            <p>{{ .Params.understand_data_3_paragraph }}</p>
           </div>
         </div>
       </div>
@@ -80,26 +78,38 @@
       <div class="column--item">
         <div class="item--content">
           <div class="item--image nine-tenths mb-full">
-            <img data-src="/img/mashup-documents.svg">
+            <img data-src="/img/{{ .Params.understand_documents_4_image }}">
           </div>
           <div class="item--text">
-            <p>Clients can use mashup applications to interact with documents in the web (Search, Visualize, Analize, etc)</p>
+            <p>{{ .Params.understand_documents_4_paragraph }}</p>
           </div>
           <div class="item--text mashup_applications">
-            <p>Google Search, Mozilla Firefox, Google Analytics</p>
+            <p>
+              {{ delimit .Params.understand_documents_4_mashup ", " }}
+            </p>
           </div>
         </div>
       </div>
       <div class="column--item">
         <div class="item--content">
           <div class="item--image nine-tenths mb-full">
-            <img data-src="/img/mashup-data.svg">
+            <img data-src="/img/{{ .Params.understand_data_4_image }}">
           </div>
           <div class="item--text">
-            <p>Clients can use mashup applications to interact with <i>data</i> in the web (Search, Visualize, Analize, etc)</p>
+            <p>{{ .Params.understand_data_4_paragraph }}</p>
           </div>
           <div class="item--text mashup_applications">
-            <p><a href="https://www.ibm.com/us-en/marketplace/application-lifecycle-management">IBM RCLM</a>, <a href="https://www.ibm.com/us-en/marketplace/engineering-analytics">IBM RELM</a>, <a href="https://www.mentor.com/products/sm/context-sdm/">Mentor Graphics Context</a>, <a href="https://github.com/koneksys/KLD">Koneksys KLD</a></p>
+            <p>
+              {{ $len := (len (.Params.understand_data_4_mashup))}}
+              {{range $index, $app := .Params.understand_data_4_mashup }}
+                {{ $url := index $.Params.understand_data_4_mashup_urls $index}}
+                <a href="{{ $url }}">{{ $app }}</a>
+                {{ if eq (add $index 1) $len }}
+                {{ else }}
+                ,
+                {{ end }}
+              {{ end }}
+            </p>
           </div>
         </div>
       </div>

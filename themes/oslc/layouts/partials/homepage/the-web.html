@@ -1,34 +1,30 @@
 <section class="content--section white before">
   <div class="container container__big">
-    <h2 class="headline">Inspired by the Web</h2>
-    <p class="subtitle">Transition from a world of incompatible systems into a world of connected data</p>
+    <h2 class="headline">{{ .Params.inspiredBy_title }}</h2>
+    <p class="subtitle">{{ .Params.inspiredBy_subtitle }}</p>
     <div class="section--split">
       <div class="column--item">
-        <h3 class="column--title">Before the Web</h3>
+        <h3 class="column--title">{{ .Params.inspiredBy_before_title }}</h3>
         <div class="item--content">
           <div class="item--image four-fifths">
-            <img data-src="/img/web-before.svg">
+            <img data-src="/img/{{ .Params.inspiredBy_before_image }}">
           </div>
           <div class="item--text">
             <p>
-              There were many hypertext systems. Those systems had no compatibility to one another. 
-              They also used different protocols to access and connect the documents. 
-              This made so that documents in System Type 1 could not link to documents in System Type 2. 
+              {{ .Params.inspiredBy_before_paragraph }}
             </p>
           </div>
         </div>
       </div>
       <div class="column--item">
-        <h3 class="column--title">After the Web</h3>
+        <h3 class="column--title">{{ .Params.inspiredBy_after_title }}</h3>
         <div class="item--content">
           <div class="item--image four-fifths">
-            <img data-src="/img/web-after.svg">
+            <img data-src="/img/{{ .Params.inspiredBy_after_image }}">
           </div>
           <div class="item--text">
             <p>
-              HTML became the standard for documents in the web. Alongside with a 
-              standard protocol (HTTP) which determined how to access and connect documents. 
-              Now documents could link to others independently of where they were stored.
+              {{ .Params.inspiredBy_after_paragraph }}
             </p>
           </div>
         </div>
