@@ -1,5 +1,5 @@
 +++
-categories = ["events"]
+category = "events"
 date = "2015-02-09T12:00:00+02:00"
 tags = ["conferences", "ibm", "interconnect"]
 title = "OSLC at IBM InterConnect 2015"

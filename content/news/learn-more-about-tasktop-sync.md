@@ -1,5 +1,5 @@
 +++
-categories = ["announcements"]
+category = "announcements"
 date = "2015-11-09T10:00:00+02:00"
 author = "OSLC Administrator"
 author_uri = ""

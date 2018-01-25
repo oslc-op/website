@@ -1,5 +1,5 @@
 +++
-categories = ["events"]
+category = "events"
 date = "2015-08-11T10:00:00+02:00"
 author = "Nelson Jean"
 author_uri = ""
