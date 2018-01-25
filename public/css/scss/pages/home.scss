@@ -212,7 +212,7 @@
 
   .news__container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 20px 5% 0;
     justify-content: space-between;
 
@@ -268,7 +268,7 @@
   .section--news {
 
     .news__container{
-      flex-direction: row;
+      flex-direction: row-reverse;
       margin: 60px 0 40px;
       flex-wrap: wrap;
 
