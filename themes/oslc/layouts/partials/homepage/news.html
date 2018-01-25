@@ -3,7 +3,7 @@
   <p class="subtitle">{{ .Params.news_subtitle }}</p>
   <div class="container container__big">
     <div class="news__container">
-      {{ range last 4 (where .Data.Pages.ByPublishDate "Type" "=" "news") }}
+      {{ range last 4 (where .Data.Pages.ByPublishDate "Type" "=" "news")}}
       <div class="news__item">
         <div class="news__image">
           <h3 class="new__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
