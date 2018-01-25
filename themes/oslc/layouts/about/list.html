@@ -26,7 +26,9 @@
         <div class="container">
           <h2 class="headline">{{ .Params.mission_title }}</h2>
           <p class="subtitle">{{ .Params.mission_subtitle }}</p>
-          <p>{{ .Params.mission_content }}</p>
+          {{ range $index, $paragraphs := .Params.mission_content }}
+            <p>{{ $paragraphs }}</p>
+          {{ end }}
         </div>
       </section>
 
@@ -36,10 +38,10 @@
           <p class="subtitle">{{ .Params.people_subtitle }}</p>
           <div class="row--list">
             {{range $index, $member := .Params.members}}
-              {{ $position := index $.Params.positions $index }}
+              {{ $company := index $.Params.company $index }}
               <div class="item">
                 <p class="bigger">{{ $member }}</p>
-                <p>{{ $position }}</p>
+                <p>{{ $company }}</p>
               </div>
             {{ end }}
           </div>
@@ -51,10 +53,10 @@
           <h2 class="headline">{{ .Params.supporters_title }}</h2>
           <p class="subtitle">{{ .Params.supporters_subtitle }}</p>
           <div class="supporters--wrap">
-            <h3 class="type">{{ .Params.supporters_type_1 }}</h3>
+            <h3 class="type">{{ .Params.supporters_type_1_title }}</h3>
             <div class="row--list">
-              {{range $index, $supporter := .Params.supporters_foundational }}
-                {{ $link := index $.Params.supporters_foundational_links $index }}
+              {{range $index, $supporter := .Params.supporters_type_1_list }}
+                {{ $link := index $.Params.supporters_type_1_url_list $index }}
                 <div class="item">
                   <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
                 </div>
@@ -62,10 +64,10 @@
             </div>
           </div>
           <div class="supporters--wrap">
-            <h3 class="type">{{ .Params.supporters_type_2 }}</h3>
+            <h3 class="type">{{ .Params.supporters_type_2_title }}</h3>
             <div class="row--list">
-              {{range $index, $supporter := .Params.supporters_sponsors }}
-                {{ $link := index $.Params.supporters_sponsors_links $index }}
+              {{range $index, $supporter := .Params.supporters_type_2_list }}
+                {{ $link := index $.Params.supporters_type_2_url_list $index }}
                 <div class="item">
                   <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
                 </div>
@@ -73,10 +75,10 @@
             </div>
           </div>
           <div class="supporters--wrap">
-            <h3 class="type">{{ .Params.supporters_type_3 }}</h3>
+            <h3 class="type">{{ .Params.supporters_type_3_title }}</h3>
             <div class="row--list">
-              {{range $index, $supporter := .Params.supporters_contributors }}
-                {{ $link := index $.Params.supporters_contributors_links $index }}
+              {{range $index, $supporter := .Params.supporters_type_3_list }}
+                {{ $link := index $.Params.supporters_type_3_url_list $index }}
                 <div class="item">
                   <a href="{{ $link }}" class="bigger">{{ $supporter }}</a>
                 </div>
