@@ -9,7 +9,9 @@ why_title = "Why OSLC?"
 
 mission_title = "Our Mission"
 mission_subtitle = "What we are trying to achieve"
-mission_content = "The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges."
+mission_content = [
+  "The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges."
+]
 
 people_title = "Steering Committee"
 people_subtitle = "The Steering Committee is responsible for all things OSLC"
@@ -21,11 +23,10 @@ members = [
   "Mark Schulte",
   "Martin Sarabura",
   "Mats Berglund",
-  "Nelson Jean",
   "Rainer Ersch",
-  "Wesley Coelho",
+  "Wesley Coelho"
 ]
-positions = [
+company = [
   "Koneksys",
   "Mentor Graphics",
   "Airbus",
@@ -33,22 +34,21 @@ positions = [
   "Boeing",
   "PTC",
   "Ericsson",
-  "IBM",
   "Siemems",
-  "Tasktop Technologies",
+  "Tasktop Technologies"
 ]
 
 supporters_title = "Supporters"
 supporters_subtitle = "The many supporters of OSLC"
-supporters_type_1 = "Foundational Sponsor-level members"
-supporters_foundational = [
+supporters_type_1_title = "Foundational Sponsor-level members"
+supporters_type_1_list = [
   "IBM"
 ]
-supporters_foundational_links = [
+supporters_type_1_url_list = [
   "http://www.ibm.com/software"
 ]
-supporters_type_2 = "Sponsor-level members"
-supporters_sponsors = [
+supporters_type_2_title = "Sponsor-level members"
+supporters_type_2_list = [
   "ActewAGL Distribution",
   "Cisco",
   "Fujitsu Limited",
@@ -57,7 +57,7 @@ supporters_sponsors = [
   "Software AG",
   "Boeing"
 ]
-supporters_sponsors_links = [
+supporters_type_2_url_list = [
   "https://www.actewagl.com.au/",
   "https://www.cisco.com/",
   "https://www.fujitsu.com/",
@@ -66,8 +66,8 @@ supporters_sponsors_links = [
   "https://www.softwareag.com/",
   "https://www.boeing.com/"
 ]
-supporters_type_3 = "Contributor-level members"
-supporters_contributors = [
+supporters_type_3_title = "Contributor-level members"
+supporters_type_3_list = [
   "Airbus",
   "AIT Austrian Institute of Technology",
   "Bank of America",
@@ -79,7 +79,7 @@ supporters_contributors = [
   "Swedish Royal Institute of Technology",
   "Tasktop Technologies Inc."
 ]
-supporters_contributors_links = [
+supporters_type_3_url_list = [
   "https://www.airbus.com/",
   "https://www.ait.ac.at/en/",
   "https://www.bankofamerica.com/",
@@ -127,6 +127,6 @@ faq_answers = [
 
   "RDF is a family of W3C standards and a general, standard method for describing information implemented as web resources. Some of W3C standards describe specific serialization formats of RDF resources including RDF/XML, Turtle, N-Triples, N-Quads, and Notation3. JSON is the standard, human readable, text representation of JavaScript objects. So RDF and JSON are similar in that both can be human readable text representations of information. However RDF is based on mathematical relations in the form of (subject, predicate, object) triples. JSON is structured name/value pairs that are very easy to parse and consume. Fortunately these two technologies come together since JSON-LD is a standard serialization format for RDF using JSON.",
 
-  "In this case please visit our <a href='http://discourse.oslc.co'>discourse!</a> There you can join the conversation, see what others are talking about or start a topic yourself."
+  "In this case please visit our Forum! There you can join the conversation, see what others are talking about or start a topic yourself."
 ]
 +++
