@@ -1,5 +1,5 @@
 +++
-categories = ["announcements"]
+category = "announcements"
 date = "2016-06-21T10:00:00+02:00"
 author = "Wesley Coelho"
 tags = ["steering committee", "surveys"]
