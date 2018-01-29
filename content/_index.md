@@ -139,6 +139,8 @@ supporters = [
   "sparx_logo.png",
   "prostep_logo.png",
   "intercax_logo.png",
+  "lyo_logo.png",
+  "aras_logo.png",
   "koneksys_logo.png"
 ]
 
@@ -153,9 +155,11 @@ supporters_size = [
   "full",
   "full",
   "full",
-  "full",
+  "ninety-five",
+  "seventy-five",
   "eighty",
-  "eighty-five",
+  "sixty-five",
+  "full",
   "full"
 ]
 
