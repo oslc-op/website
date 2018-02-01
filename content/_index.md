@@ -127,6 +127,7 @@ supporters_outro = "And many more!"
 
 supporters = [
   "airbus_logo.png",
+  "dassault_logo.png",
   "tasktop_logo.png",
   "jama_software_logo.png",
   "sodius_logo.png",
@@ -147,6 +148,7 @@ supporters = [
 ]
 
 supporters_size = [
+  "full",
   "full",
   "full",
   "full",
