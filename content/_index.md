@@ -93,7 +93,7 @@ benefits = [
 
 benefits_descriptions = [
   "Free yourself from vendor dependancy. Your data in your hands",
-  "Reuse existing OSLC REST APIs supported by major vendor and for especific application or data formats",
+  "Reuse existing OSLC REST APIs supported by major vendor and for specific application or data formats",
   "Integrate your own or existing open sources applications to visualize, search, analyze and edit your data, and more!",
   "Integrate databases from different sources",
   "Integrate systems with different technologies and standards",
@@ -169,6 +169,6 @@ supporters_size = [
 
 
 news_title = "Latest News"
-news_subtitle = "Annoucements, Articles, Updates, and many more!"
+news_subtitle = "Announcements, Articles, Updates, and many more!"
 
 +++
