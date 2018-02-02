@@ -131,6 +131,7 @@ supporters = [
   "tasktop_logo.png",
   "jama_software_logo.png",
   "sodius_logo.png",
+  "aras_logo.png",
   "vitech_logo.png",
   "metreeca_logo.png",
   "nomagic_logo.png",
@@ -141,13 +142,13 @@ supporters = [
   "prostep_logo.png",
   "intercax_logo.png",
   "lyo_logo.png",
-  "aras_logo.png",
   "biglever_logo.jpg",
   "dspace_logo.png",
   "koneksys_logo.png"
 ]
 
 supporters_size = [
+  "full",
   "full",
   "full",
   "full",
@@ -163,7 +164,6 @@ supporters_size = [
   "seventy-five",
   "eighty",
   "sixty-five",
-  "full",
   "eighty-five",
   "ninety",
   "full"
