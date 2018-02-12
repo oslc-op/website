@@ -145,7 +145,6 @@ supporters = [
   "lyo_logo.png",
   "biglever_logo.jpg",
   "dspace_logo.png",
-  "raytheon_logo.png",
   "koneksys_logo.png"
 ]
 
@@ -169,7 +168,6 @@ supporters_size = [
   "sixty-five",
   "eighty-five",
   "ninety",
-  "full",
   "full"
 ]
 
