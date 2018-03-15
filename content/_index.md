@@ -127,9 +127,9 @@ supporters_outro = "And many more!"
 
 supporters = [
   "airbus_logo.png",
-  "raytheon_logo.png",
   "mathworks_logo.png",
   "dassault_logo.png",
+  "raytheon_logo.png",
   "tasktop_logo.png",
   "jama_software_logo.png",
   "sodius_logo.png",
@@ -150,6 +150,7 @@ supporters = [
 ]
 
 supporters_size = [
+  "ninety-five",
   "full",
   "full",
   "full",
@@ -157,19 +158,18 @@ supporters_size = [
   "full",
   "full",
   "full",
-  "full",
-  "full",
+  "ninety",
   "full",
   "fifty-five",
   "full",
   "full",
-  "full",
+  "ninety-five",
   "ninety-five",
   "seventy-five",
   "eighty",
   "sixty-five",
   "eighty-five",
-  "ninety",
+  "eighty-five",
   "full"
 ]
 
