@@ -1,16 +1,18 @@
 <div class="workgroup--item" title="{{ .Title }}">
   <h3 class="workgroup--title">{{ .Title }}</h3>
   <div class="workgroup--content">
-    <div class="workgroup--info">
-      <p>
-        {{ .Content }}
-      </p>
-    </div>
-    {{ if isset .Params "workgroup_leads"}}
-      <div class="workgroup--leads">
-        <p>Lead by: {{ .Params.workgroup_leads }}</p>
+    <div>
+      <div class="workgroup--info">
+        <p>
+          {{ .Params.Description }}
+        </p>
       </div>
-    {{ end }}
+      {{ if isset .Params "workgroup_leads"}}
+        <div class="workgroup--leads">
+          <p>Lead by: {{ .Params.workgroup_leads }}</p>
+        </div>
+      {{ end }}
+    </div>
     <div class="workgroup--buttons">
       {{ if isset .Params "wiki"}}
         <a href=" {{ .Params.wiki }} " class="button dark-blue hover--dark_blue">Wiki</a>
