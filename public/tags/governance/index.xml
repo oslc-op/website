@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Governance on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/tags/governance/</link>
+    <description>Recent content in Governance on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 09 Nov 2015 20:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/tags/governance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Steering Committee</title>
+      <link>http://oslc.co/workgroups/steering-committee/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://oslc.co/workgroups/steering-committee/</guid>
+      <description>The Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.
+At oasis-open.org
+ Wiki : Issues: Forum : Workgroup leads :  </description>
+    </item>
+    
+  </channel>
+</rss>

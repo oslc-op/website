@@ -1,5 +1,7 @@
 +++
 title = "Specifications"
+heroTitle = "Specifications"
+heroSubtitle = ""
 +++
 
 The table below provides a convenient place to see the currently available OSLC specifications, their status, and links to the documents.  Many of these specifications are still under development so you should consult the actual documents for the most up to date information.

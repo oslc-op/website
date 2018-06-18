@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "notification-bar.html" . }}
+  
   {{ partial "head.html" . }}
 
   <body>
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        <section class="m-top">
-          <div class="sec-nw-header">
-            <div class="sec-nw-info">
-              <div class="container">
-                <h1 class="section__title white"> {{ .Title }} </h1>
-                <div class="sec-rs-header__content">
-                  <div class="big__paragraph">
-                    <p>{{ .Description }}</p>
-                  </div>
-                </div>
-              </div>
+      {{ partial "hero.html" . }}
+
+      <div class="container">
+        <div class="row news--container">
+            <div class="posts">
+              {{ range .Data.Pages.ByPublishDate.Reverse }}
+              <div class="col-sm-8">{{ partial "posts.html" . }}</div>
+              {{ end }}
             </div>
-          </div>
-        </section>
-
-        <div class="container">
-          <div class="row news--container">
-              <div class="posts">
-                {{ range .Data.Pages.ByPublishDate.Reverse }}
-                <div class="col-sm-8">{{ partial "posts.html" . }}</div>
-                {{ end }}
-              </div>
-              <div class="col-sm-4 sidebar-posts">{{ partial "sidebar-posts.html" . }}</div>
-          </div>
+            <div class="col-sm-4 sidebar-posts">{{ partial "sidebar-posts.html" . }}</div>
         </div>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+      </div>
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

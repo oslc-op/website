@@ -1,12 +1,12 @@
 .page {
   &.contribute {
-    background: #FFF;
+    background: $white;
   }
 }
 
 .sec-ct-header{
   position: relative;
-  color: #fff;
+  color: $white;
   background-image: url("../img/resource-contribute.jpg");
   background-size: cover;
   background-position-y: 18%;
@@ -61,7 +61,7 @@
   margin: 20px auto 60px;
 
   .contribute__section {
-    background-color: #FFF;
+    background-color: $white;
     box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
     padding: 1.5em;
     margin: 10px 5px;
@@ -73,10 +73,10 @@
       display: flex;
       align-items: center;
       padding-bottom: 12px;
-      border-bottom: 2px solid #375178;
+      border-bottom: 2px solid $oslc-dark-blue;
       i {
         font-size: 30px;
-        color: #375178;
+        color: $oslc-dark-blue;
       }
       h2 {
         display: inline-block;
@@ -84,7 +84,7 @@
         margin-top: 0px;
         margin-bottom: 0px;
         line-height: 1;
-        color: #375178;
+        color: $oslc-dark-blue;
       }
     }
 
@@ -107,18 +107,8 @@
         flex-wrap: wrap;
 
         a {
-          border: 1px solid #375178;
-          padding: 6px 12px;
-          color: #375178;
-          transition: all 350ms ease;
           text-decoration: none;
           margin-top: 20px;
-
-
-          &:hover {
-            background: #375178;
-            color: white;
-          }
         }
       }
     }
@@ -140,26 +130,26 @@
     padding: 26.5px 0;
 
     p {
-      color: #fff !important;
+      color: $white !important;
     }
   }
 
   .contribute__content-link {
     text-decoration: none;
-    color: #fff;
+    color: $white;
   }
 
   .contribute__content-add.green {
-    background-color: #28BD84;
+    background-color: $oslc-green;
   }
   .contribute__content-add.blue {
-    background-color: #418EEB;
+    background-color: $oslc-light-blue;
   }
   .contribute__content-add.red {
-    background-color: #D96B50;
+    background-color: $oslc-orange;
   }
   .contribute__content-add.blueking {
-    background-color: #375178;
+    background-color: $oslc-dark-blue;
   }
   
 

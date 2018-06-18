@@ -1,0 +1,17 @@
+<section class="content--section section--supporters white">
+  <div class="container container__big">
+    <h2 class="headline">{{ .Params.supporters_title }}</h2>
+    <div class="supporters--list">
+      {{range $index, $supporter := .Params.supporters }}
+        {{ $size := index $.Params.supporters_size $index}}
+        <div class="supporter">
+          <img data-src="/img/logos/{{ $supporter }}" class="{{ $size }}">
+        </div>
+      {{ end }}
+    </div>
+    <p class="intro--paragraph">{{ .Params.supporters_outro  }}</p>
+    <div class="info--button">
+      <a class="button" href="/about/#supporters">See All</a>
+    </div>
+  </div>
+</section>

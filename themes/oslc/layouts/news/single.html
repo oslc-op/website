@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "notification-bar.html" . }}
+  
   {{ partial "head.html" . }}
 
   <body>
 
     <div id="page" class="page">
 
-        <header>
+      <header>
 
-          {{ partial "header.html" . }}
+        {{ partial "header.html" . }}
 
-        </header>
+      </header>
 
-        {{ partial "single-news.html" . }}
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+      {{ partial "single-news.html" . }}
     </div>
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

@@ -1,0 +1,118 @@
+<section class="content--section dark-blue-gradient section--understand">
+  <div class="container container__big">
+    <h2 class="headline">{{ .Params.understand_title }}</h2>
+    <p class="subtitle">{{ .Params.understand_subtitle }}</p>
+    <div class="section--split">
+      <!-- ROW 1 -->
+      <div class="column--item">
+        <h3 class="column--title">{{ .Params.understand_documents_title }}</h3>
+        <div class="item--content">
+          <div class="item--image one-fifth">
+            <img data-src="/img/{{ .Params.understand_documents_1_image }}">
+          </div>
+          <div class="item--text">
+            <p>
+              {{ .Params.understand_documents_1_paragraph }}
+              <br> <span class="note">({{ .Params.understand_documents_1_note }} <i class="fa {{ .Params.understand_documents_1_icon }} url-icon" aria-hidden="true"></i>)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <h3 class="column--title">{{ .Params.understand_data_title }}</h3>
+        <div class="item--content">
+          <div class="item--image one-fifth">
+            <img data-src="/img/{{ .Params.understand_data_1_image }}">
+          </div>
+          <div class="item--text">
+            <p>
+              {{ .Params.understand_data_1_paragraph }}
+              <br> <span class="note">({{ .Params.understand_data_1_note }} <i class="fa {{ .Params.understand_data_1_icon }} url-icon" aria-hidden="true"></i>)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 2 -->
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image three-fifths mb-four-fifths">
+            <img data-src="/img/{{ .Params.understand_documents_2_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_documents_2_paragraph }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image three-fifths mb-four-fifths">
+            <img data-src="/img/{{ .Params.understand_data_2_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_data_2_paragraph }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 3 -->
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths">
+            <img data-src="/img/{{ .Params.understand_documents_3_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_documents_3_paragraph }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths">
+            <img data-src="/img/{{ .Params.understand_data_3_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_data_3_paragraph }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 4 -->
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths mb-full">
+            <img data-src="/img/{{ .Params.understand_documents_4_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_documents_4_paragraph }}</p>
+          </div>
+          <div class="item--text mashup_applications">
+            <p>
+              {{ delimit .Params.understand_documents_4_mashup ", " }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column--item">
+        <div class="item--content">
+          <div class="item--image nine-tenths mb-full">
+            <img data-src="/img/{{ .Params.understand_data_4_image }}">
+          </div>
+          <div class="item--text">
+            <p>{{ .Params.understand_data_4_paragraph }}</p>
+          </div>
+          <div class="item--text mashup_applications">
+            <p>
+              {{ $len := (len (.Params.understand_data_4_mashup))}}
+              {{range $index, $app := .Params.understand_data_4_mashup }}
+                {{ $url := index $.Params.understand_data_4_mashup_urls $index}}
+                <a href="{{ $url }}">{{ $app }}</a>
+                {{ if eq (add $index 1) $len }}
+                {{ else }}
+                ,
+                {{ end }}
+              {{ end }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

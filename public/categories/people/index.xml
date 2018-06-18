@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>People on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/categories/people/</link>
+    <description>Recent content in People on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Jun 2017 20:46:28 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/categories/people/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>People</title>
+      <link>http://oslc.co/about/people/</link>
+      <pubDate>Wed, 21 Jun 2017 20:46:28 +0200</pubDate>
+      
+      <guid>http://oslc.co/about/people/</guid>
+      <description> People </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,6 @@
-$color-link: #3D3D3D;
-
 .sec-nw-header{
   position: relative;
-  color: #fff;
+  color: $white;
   background-image: url('../img/news-hero.jpg');
   background-position-y: 44%;
   height: 300px;
@@ -31,10 +29,6 @@ $color-link: #3D3D3D;
     position: absolute;
     right: 0;
     width: 300px;
-    display: none;
-    @media screen and (min-width: 760px){
-      display: block;
-    }
   }
 }
 
@@ -52,10 +46,10 @@ $color-link: #3D3D3D;
     h1{
       a {
         text-decoration: none;
-        color: $color-link;
+        color: $black;
         font-size: 35px;
         &:hover{
-          color: #375178;
+          color: $oslc-dark-blue;
         }
       }
     }
@@ -93,6 +87,19 @@ $color-link: #3D3D3D;
   .post__paragraphs {
     line-height: 2;
     margin: 20px 0;
+
+    .post__button {
+      width: 170px;
+      padding: 0;
+      text-align: center;
+      display: block;
+      margin: 30px auto 30px;
+
+      &:hover {
+        text-decoration: none;
+        color: $white;
+      }
+    }
   }
 }
 
@@ -101,14 +108,30 @@ $color-link: #3D3D3D;
   border-bottom: 1px solid #AAAAAA;
   color: #AAAAAA;
   margin: 20px 0 50px;
-  padding: 15px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
 
-  .fa {
-    margin-left: 10px;
+  .post__time-reading {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
   }
+
+  .post__share {
+    display: flex;
+    
+    a {
+      margin-left: 10px;
+  
+      &:last-child {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  
 
   a {
     color: #AAAAAA;
@@ -117,7 +140,7 @@ $color-link: #3D3D3D;
 
 
 .popular-posts, .popular-networks{
-  background: #fff;
+  background: $white;
   padding: 15px;
   margin-top: 40px;
   box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
@@ -134,26 +157,20 @@ $color-link: #3D3D3D;
     display: flex;
     justify-content: space-between;
     padding: 0px 0px 20px 0px;
-    color: #3D3D3D;
+    color: $black;
 
     &:last-child{
       margin-bottom: 0px;
       border-bottom: none;
     }
-
-    .item__img{
-      width: 25%;
-      height: 65px;
-      overflow: hidden;
-
-      img {
-        max-width: 100%;
-      }
+    
+    .name {
+      margin: 0 0 5px;
+      font-weight: 600;
     }
 
-    .item__info{
-      width: 75%;
-      padding: 0px 10px;
+    .date {
+      font-size: 14px;
     }
   }
 
@@ -163,7 +180,7 @@ $color-link: #3D3D3D;
     font-size: 15px;
 
     a{
-      color: #3D3D3D;
+      color: $black;
       text-decoration: none;
     }
   }
@@ -186,7 +203,7 @@ $color-link: #3D3D3D;
     -moz-border-radius: 0px;
     -moz-appearance: none;
     width: 100%;
-    background: #fff;
+    background: $white;
     color: #737373;
     line-height: 2;
     padding: 0px 10px;
@@ -223,7 +240,7 @@ $color-link: #3D3D3D;
 
   label{
     font-size:10px;
-    background: #fff;
+    background: $white;
     font-weight: normal;
     top: -7px;
     left: 12px;
@@ -231,17 +248,10 @@ $color-link: #3D3D3D;
   }
 
   .search__button{
-    background: #fff;
+    font-size: 14px;
+    background: $white;
     border: 1px solid #737373;
-    color: #737373;
     padding: 5px 10px;
-    transition: all 350ms ease;
-
-    &:hover{
-      background: #737373;
-      color: #fff;
-      cursor: pointer;
-    }
   }
 }
 
@@ -266,6 +276,19 @@ $color-link: #3D3D3D;
     .post__time-reading, .post_share {
       display: flex;
       align-items: center;
+    }
+  }
+
+  .news--container {
+    flex-direction: column-reverse;
+
+    .sidebar-posts {
+      position: relative;
+      width: 100%;
+
+      .popular-networks {
+        display: none;
+      }
     }
   }
 }

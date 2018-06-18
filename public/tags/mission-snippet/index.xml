@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mission Snippet on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://oslc.co/tags/mission-snippet/</link>
+    <description>Recent content in Mission Snippet on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 24 Aug 2017 14:17:19 +0200</lastBuildDate>
+    
+	<atom:link href="http://oslc.co/tags/mission-snippet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mission</title>
+      <link>http://oslc.co/about/mission-mission/</link>
+      <pubDate>Thu, 24 Aug 2017 14:17:19 +0200</pubDate>
+      
+      <guid>http://oslc.co/about/mission-mission/</guid>
+      <description>The OSLC Community is intended to be an open community collaborating on integration challenges around lifecycle applications, capturing user scenarios for understanding and evolving related specifications for integrating software, and developing integration solutions and prototypes based on those specifications to share with the user community.</description>
+    </item>
+    
+    <item>
+      <title>Vision</title>
+      <link>http://oslc.co/about/mission-vision/</link>
+      <pubDate>Thu, 24 Aug 2017 14:16:21 +0200</pubDate>
+      
+      <guid>http://oslc.co/about/mission-vision/</guid>
+      <description>The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges.</description>
+    </item>
+    
+  </channel>
+</rss>

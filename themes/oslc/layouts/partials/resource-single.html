@@ -1,64 +1,70 @@
-<div class="rs-small-item {{ .Params.category }}" itemtype="{{ .Params.category }}" title="{{ .Title }}">
+<div class="resource--item {{ .Params.category }}" itemtype="{{ .Params.category }}" title="{{ .Title }}">
   {{ if in .Params.tags "article" }}
-  <div class="sm-header--orange">
+  <div class="resource--header orange">
     <span class="fa fa-file-text"></span>
-    <h3 class="title-item">Article</h3>
+    <h3 class="resource--type">Article</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "podcast" }}
-  <div class="sm-header--blue" style="background-color: #6c0808 !important;">
+  <div class="resource--header wine">
     <span class="fa fa-podcast"></span>
-    <h3 class="title-item">Podcast</h3>
+    <h3 class="resource--type">Podcast</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "presentation" }}
-  <div class="sm-header--green">
+  <div class="resource--header green">
     <span class="fa fa-line-chart"></span>  
-    <h3 class="title-item">Presentation</h3>
+    <h3 class="resource--type">Presentation</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "tool" }}
-  <div class="sm-header--blue" style="background-color: #E2866F !important;">
+  <div class="resource--header light-orange">
     <span class="fa fa-cogs"></span>
-    <h3 class="title-item">Tool</h3>
+    <h3 class="resource--type">Tool</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "tutorial" }}
-  <div class="sm-header--blue">
+  <div class="resource--header blue">
     <span class="fa fa-book"></span>
-    <h3 class="title-item">Tutorial</h3>
+    <h3 class="resource--type">Tutorial</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "video" }}
-  <div class="sm-header--blue" style="background-color: #375178 !important;">
+  <div class="resource--header dark-blue">
     <span class="fa fa-film"></span>
-    <h3 class="title-item">Video</h3>
+    <h3 class="resource--type">Video</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "website" }}
-  <div class="sm-header--blue" style="background-color: #0a6743 !important;">
+  <div class="resource--header dark-green">
     <span class="fa fa-globe"></span>
-    <h3 class="title-item">Website</h3>
+    <h3 class="resource--type">Website</h3>
   </div>
   {{ end }}
   {{ if in .Params.tags "whitepaper" }}
-  <div class="sm-header--gray">
+  <div class="resource--header gray">
     <span class="fa fa-files-o"></span>
-    <h3 class="title-item">Whitepaper</h3>
+    <h3 class="resource--type">Whitepaper</h3>
   </div>
   {{ end }}
 
-  <div class="sm-content">
-    <h3 class="title-content">{{ .Title }}</h3>
-    <div class="sm-info">
+  <div class="resource--content">
+    <h3 class="resource--title">{{ .Title }}</h3>
+    <div class="resource--info">
       <p>{{ .Summary }}</p>
     </div>
-    <div class="sm-author-date">
-      <span class="author">{{ .Params.author }}</span>
-      <span class="author"><i class="fa fa-calendar"></i> {{ .Date.Format "Jan 2, 2006"}}</span>
-    </div>
-    <div class="sm-buttons">
-      <a href=" {{ .Permalink }} ">Details</a>
-    </div>
+  </div>
+  <div class="resource--author-date">
+    <span class="author">
+      {{ if isset .Params "author" }}
+        {{ .Params.author }}
+      {{ else }}
+        <span>OSLC</span>
+      {{ end }}
+    </span>
+    <span class="author"><i class="fa fa-calendar"></i> {{ .Date.Format "Jan 2, 2006"}}</span>
+  </div>
+  <div class="resource--buttons">
+    <a href=" {{ .Permalink }} " class="button">Details</a>
   </div>
 </div>

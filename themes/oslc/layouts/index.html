@@ -6,8 +6,7 @@
   <body>
 
     <div id="page" class="page">
-
-        {{ partial "notification-bar.html" . }}
+     
         <header>
 
           {{ partial "header.html" . }}
@@ -16,32 +15,24 @@
 
         {{ partial "hero.html" . }}
 
-        <section class="section--story">
-          <!-- {{ partial "statistics.html" . }} -->
-          {{ partial "leadtext.html" . }}
+        {{ partial "homepage/digital-thread.html" . }}
 
-          <!-- {{ partial "case.html" . }} -->
-          {{ partial "hypermedia.html" . }}
+        {{ partial "homepage/the-web.html" . }}
+        
+        {{ partial "homepage/understand.html" . }}
 
-          <!-- {{ partial "resources.html" . }} -->
+        {{ partial "homepage/benefits.html" . }}
 
-          {{ partial "specdomains.html" . }}
+        {{ partial "homepage/specifications.html" . }}
 
-          {{ partial "stack.html" . }}
+        {{ partial "homepage/supporters.html" . }}
 
-          {{ partial "ecosystem.html" . }}
-
-          {{ partial "solutions.html" . }}
-
-          {{ partial "implementations.html" . }}
-        </section>
-
-        {{ partial "news.html" . }}
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
+        {{ partial "homepage/news.html" . }}
     </div>
+
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

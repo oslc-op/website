@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "notification-bar.html" . }}
+  
   {{ partial "head.html" . }}
 
   <body>
@@ -13,29 +13,16 @@
 
         </header>
 
-        <section class="m-top">
-          <div class="sec-rs-header">
-            <div class="sec-rs-info">
-              <div class="container">
-                <h1 class="section__title white"> {{ .Title }} </h1>
-                <div class="sec-rs-header__content">
-                  <div class="big__paragraph">
-                    {{ .Content }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {{ partial "hero.html" . }}
 
         <!-- {{ partial "resources-search.html" . }} -->
 
         <section class="m-top--small">
           <div class="container">
 
-            <div class="container-small-items">
+            <div class="workgroups--list">
               {{ range .Paginator.Pages.ByPublishDate }}
-              {{ partial "workgroup-single.html" . }}
+                {{ partial "workgroup-single.html" . }}
               {{ end }}
             </div>
 
@@ -45,11 +32,11 @@
 
           </div>
         </section>
-
-        <footer class="footer footer--inverse">
-          {{ partial "footer.html" . }}
-        </footer>
     </div>
+
+    <footer class="footer footer--inverse">
+      {{ partial "footer.html" . }}
+    </footer>
     <!-- /#all -->
 
     <!-- scripts -->

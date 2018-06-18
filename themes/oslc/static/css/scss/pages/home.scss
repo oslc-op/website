@@ -1,92 +1,165 @@
-.hero-container{
-  background: linear-gradient(to right, #418EEB, #3A659E 14.1%, #375178 26.7%, #495473 35.5%, #C16756 59.5%, #D96B50 67.4%, #D96B50 70.8%, #C87355 77.5%, #49AE7A);
+.section--benefits {
 
-  .home-texture {
-    background-image: url('../img/home-pattern.png');
-    background-position: 5px 5px;
-
-    .hero {
-      padding: 120px 0;
-
-      h1, p, a {
-        color: #fff;
-      }
-
-      .title {
-        font-size: 50px;
-        font-weight: bold;
-      }
-
-      .textline {
-        font-size: 22px;
-      }
-
-      .headline {
-        font-size: 26px;
-        margin-top: 25px;
-      }
-    }
+  .container {
+    width: 1300px;
+    max-width: 1300px;
   }
-}
 
-.statistics{
-  background: #fff;
-
-  .statistics__container{
+  .benefits_grid {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #2D4467;
-    justify-content: space-between;
-    padding: 40px 0px;
-    color: #3D3D3D;
+    flex-wrap: wrap;
 
-    .statistics__item {
-      width: 20%;
+    margin-top: 50px;
 
-      .statisctics__title {
+    .benefit--item {
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 40px 20px;
+
+      i {
+        font-size: 45px;
+        color: $oslc-light-blue;
+      }
+
+      .item--title {
+        color: #04002B;
+        font-weight: normal;
+        text-align: center;
         font-size: 22px;
-        text-transform: uppercase;
-        margin-bottom: 0
       }
 
-      .statistics__num {
-        font-size:60px;
-        font-weight: bold;
-        color: #28BD84;
+      .item--paragraph {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 0;
+      }
+    }
+  }  
+}
+
+.section--specs {
+  img {
+    width: 60%;
+    display: block;
+    margin: 50px auto 70px;
+  }
+}
+
+.section--understand {
+  .section--split .column--item {
+    padding: 50px 0 200px;
+
+    &:last-child, &:nth-last-child(2) {
+      padding-bottom: 80px;
+    }
+
+    .item--content{
+      .mashup_applications {
+        margin-top: 9px;
+  
+        a {
+          color: $oslc-light-blue;
+        }
       }
 
-      .statistics__subtitle {
-        font-size: 18px;
-        font-weight: light;
-        margin-top: 0
+      .note {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .url-icon {
+          color: $oslc-light-blue;
+          font-size: 20px;
+          margin-left: 5px;
+        }
       }
     }
   }
 }
 
-.statistics__info{
-  background: #EFEFEF;
-  padding: 20px 0px 45px;
+.section--supporters {
+  .supporters--list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  .btn{
-    margin-top:20px;
+    margin: 60px 0;
+
+    .supporter {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+
+      img {
+        padding: 0 15%;
+        display: block;
+        width: 100%;
+
+        &.full {
+          width: 100%;
+        }
+        &.ninety-five {
+          width: 95%;
+        }
+        &.ninety {
+          width: 90%;
+        }
+        &.eighty-five {
+          width: 85%;
+        }
+        &.eighty {
+          width: 80%;
+        }
+        &.seventy-five {
+          width: 75%;
+        }
+        &.seventy {
+          width: 70%;
+        }
+        &.sixty-five {
+          width: 65%;
+        }
+        &.sixty {
+          width: 60%;
+        }
+        &.fifty-five {
+          width: 55%;
+        }
+        &.fifty {
+          width: 50%;
+        }
+      }
+    }
   }
 
-  .statistics__sec--left{
-    margin-bottom: 80px;
+  .info--button {
+    margin-top: 20px;
+  }
+}
+
+.section--why, .section--supporters {
+
+  .intro--paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
   }
 }
 
 .resources {
-  color: #fff;
+  color: $white;
 
   .resources-top {
     background-color: #2D4467;
     padding: 50px;
     display: block;
     text-decoration: none;
-    color:#fff;
+    color:$white;
   }
 
   .resources__subtext {
@@ -103,26 +176,26 @@
     text-align: center;
 
     &.resource-tutorials {
-      background-color: #418EEB;
+      background-color: $oslc-light-blue;
     }
 
     &.resource-articles {
-      background-color: #375178;
+      background-color: $oslc-dark-blue;
     }
 
     &.resource-presentations {
-      background-color: #D96B50;
+      background-color: $oslc-orange;
     }
 
     &.resource-videos {
-      background-color: #28BD84;
+      background-color: $oslc-green;
     }
   }
 
   .resource-title {
     font-size: 22px;
     padding-bottom: 15px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid $white;
     display: block;
     width: 175px;
     margin: 30px auto 20px;
@@ -134,23 +207,28 @@
   }
 }
 
-.news{
-  background: #EFEFEF;
-  padding: 20px 0px;
+.section--news{
 
   .news__container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 20px 5% 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     .news__item{
-      background: #fff;
+      background: $white;
       margin-bottom:20px;
+      -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+      -moz-box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+      box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
 
       .news__image {
+        display: flex;
+        align-items: center;
+        background: $oslc-dark-blue;
+
         width: 100%;
-        height: 180px;
+        height: 100px;
         overflow: hidden;
         position: relative;
 
@@ -160,13 +238,10 @@
         }
 
         .new__title{
-          position: absolute;
-          bottom: 0;
-          left: 15px;
-          right: 1px;
+          padding: 0 15px;
           
           a {
-            color:#fff;
+            color:$white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.6);
           }
         }
@@ -182,48 +257,28 @@
       }
     }
   }
+
+  .info--button {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width:769px){
-  .statistics {
-
-    .statistics__container{
-      flex-direction: row;
-    }
-  }
-
-  .statistics__info {
-
-    .statistics__sec--right{
-      text-align: right;
-      float: right;
-    }
-
-    .statistics__sec--left,
-    .statistics__sec--right{
-      width: 50%;
-    }
-  }
-
-  .news {
+  .section--news {
 
     .news__container{
-      flex-direction: row;
-      margin-bottom:40px;
+      flex-direction: row-reverse;
+      margin: 60px 0 40px;
       flex-wrap: wrap;
 
       .news__item{
-        width: 19%;
+        width: 22%;
         margin-right: 0px;
         margin-bottom: 25px;
-        border: 1px solid #CECECE;
-        -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
-        -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
-        box-shadow: 1px 1px 3px rgba(0,0,0,0.22);
 
         .news__image {
           width: 100%;
-          height: 180px;
+          height: 100px;
           overflow: hidden;
 
           img{
@@ -233,7 +288,7 @@
         }
 
         .new__info{
-          color: #3D3D3D;
+          color: $black;
 
           // .new__content {
           //   height: 142px;
@@ -249,10 +304,10 @@
   .hero-container {
     .home-texture {
       .hero {
-        padding: 20px 0 40px;
+        height: 250px;
 
         .title {
-          font-size: 44px;
+          font-size: 30px;
         }
 
         .textline {
@@ -266,7 +321,58 @@
     }
   }
 
-  .news {
+  .section--benefits {
+    .container {
+      width: 100%;
+    }
+
+    .benefits_grid {
+      flex-direction: column;
+
+      .benefit--item {
+        width: 100%;
+        padding: 20px 0 20px;
+      }
+    }
+  }
+
+  .section--understand {
+    .section--split {
+      .column--item {
+        padding: 50px 0 20px;
+      }
+    }
+  }
+
+  .section--specs {
+    p {
+      text-align: justify;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .section--supporters {
+    .supporters--list {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+
+      margin: 50px 0;
+
+      .supporter {
+        width: 40%;
+
+        img {
+          padding: 0 5%;
+        }
+      }
+    }
+  }
+
+  .section--news {
     .news__container {
       justify-content: center;
       margin: 20px 0 0;
@@ -274,6 +380,10 @@
       .news__item {
         width: 100%;
       }
+    }
+
+    .info--button {
+      margin-bottom: 0;
     }
   }
 }

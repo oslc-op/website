@@ -1,6 +1,8 @@
 +++
 title = "OSLC Vocabularies"
 date = "2017-10-02T18:23:03+02:00"
+heroTitle = "OSLC Vocabularies"
+heroSubtitle = ""
 
 +++
 ## Introduction

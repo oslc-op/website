@@ -1,0 +1,20 @@
+<section class="content--section section--benefits">
+  <div class="container container__big">   
+    <h2 class="headline">{{ .Params.benefits_title }}</h2>     
+    <p class="subtitle">{{ .Params.benefits_subtitle }}</p>
+    <div class="benefits_grid">
+      {{range $index, $benefit := .Params.benefits }}
+        {{ $description := index $.Params.benefits_descriptions $index}}
+        {{ $icon := index $.Params.benefits_icons $index}}
+        <div class="benefit--item">
+          <i class="fa {{ $icon }}" aria-hidden="true"></i>
+          <h4 class="item--title">{{ $benefit }}</h4>
+          <p class="item--paragraph">{{ $description }}</p>
+        </div>
+      {{ end }}
+    </div>
+    <!-- <div class="info--button">
+      <a class="button" href="">Learn More</a>
+    </div> -->
+  </div>  
+</section>

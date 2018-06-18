@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organizations on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://localhost:1313/tags/organizations/</link>
+    <description>Recent content in Organizations on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Jun 2017 20:46:28 +0200</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/organizations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/organizations/</link>
+      <pubDate>Wed, 21 Jun 2017 20:46:28 +0200</pubDate>
+      
+      <guid>http://localhost:1313/about/organizations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
