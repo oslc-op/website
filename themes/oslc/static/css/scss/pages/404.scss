@@ -5,30 +5,17 @@
   align-items: center;
   text-align: center;
   .container-error{
-    .error-number{
-      display: flex;
-      justify-content: space-around;
-      font-size:150px;
-      img{
-        width: 100px;
-      }
-    }
     .error-content{
       h1{font-size: 30px;}
       h2{font-size:20px;}
-      a{
-        color: #737373;
-        border:1px solid #737373;
-        text-decoration:none;
-        padding:5px 15px;
-        transition: all 1s ease;
-        display: block;
-        width: 150px;
-        margin: 45px auto 0px;
-        &:hover{
-          background: #737373;
-          color:$white;
-        }
+    }
+    .link-wrapper {
+      display: flex;
+      margin: 30px 0;
+      justify-content: center;
+
+      a:first-child {
+        margin-right: 15px;
       }
     }
   }
