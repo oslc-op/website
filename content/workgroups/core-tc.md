@@ -3,10 +3,10 @@ date = "2015-11-09T20:00:00+02:00"
 author = ""
 author_uri = ""
 tags = ["working group"]
-title = "Core TC"
-description = "Integrating software with linked data at OASIS"
+title = "Core Technical Committee"
+description = "Defining essential technical elements of OSLC specifications and offering guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources based on W3C Linked Data Platform (LDP)"
 banner = ""
-wiki = "https://wiki.oasis-open.org/oslc-core/"
+next = "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=oslc-core"
 +++
 
-The OSLC Core TC at OASIS is responsible for developing minimal, loosely-coupled, and standardized specifications that expand W3C [Linked Data Platform](http://www.w3.org/2012/ldp/wiki/Main_Page) concepts, as needed, to enable integration between different products and components from a variety of sources.
+
