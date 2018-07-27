@@ -3,7 +3,7 @@ date = "2017-06-23T20:57:23+02:00"
 tags = ["specifications"]
 title = "Specifications"
 draft = false
-specs_paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at libero pellentesque ante pulvinar congue nec ut elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed viverra, justo eu viverra posuere, lacus libero dapibus mauris, vitae maximus purus purus ut enim."
+specs_paragraph = "OSLC domain-specific specifications define the equivalent of schemas in RDF for enabling data interoperability. They consist of RDF vocabularies and OSLC resource shapes. RDF vocabularies are used to describe standardized resource types and properties."
 specs_more = "More Information"
 specs_more_url = "/specifications"
 +++
