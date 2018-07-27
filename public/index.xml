@@ -201,94 +201,21 @@ Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Das
     </item>
     
     <item>
-      <title>ALM-PLM Interoperability</title>
-      <link>http://oslc.co/workgroups/alm-plm-interoperability/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/alm-plm-interoperability/</guid>
-      <description>The working group ALM-PLM Interoperability (2nd edition) aims to define industrial relevant scenarios for interoperability of ALM and PLM engineering environment to indicate gaps and potential extensions to the relevant OASIS OSLC technical committees. It builds on the work of the previous Working Group “ALM-PLM Interoperability (1st edition)”</description>
-    </item>
-    
-    <item>
-      <title>Architecture Management</title>
-      <link>http://oslc.co/workgroups/architecture-management/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/architecture-management/</guid>
-      <description>Architecture Management (AM) is all about the evolution of the ideas and requirements driving the business needs and seeing them fulfilled in the applications and systems created by coordinated development teams. These activities include traditional planning, analysis, design and construction, and governance. However the emphasis is shifted to the driving business factors, and to the management of cross project and enterprise-level concerns. It also is concerned with how to do this in a constantly evolving environment.</description>
-    </item>
-    
-    <item>
-      <title>Automation</title>
-      <link>http://oslc.co/workgroups/automation/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/automation/</guid>
-      <description>The goal of this effort is to define a common set of resources, formats and RESTful services for Automation (build/deploy) tools to interact with other Application Lifecycle Management (ALM) tools.</description>
-    </item>
-    
-    <item>
-      <title>Automation TC</title>
-      <link>http://oslc.co/workgroups/automation-tc/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/automation-tc/</guid>
-      <description>The goal of the OSLC Lifecycle Integration for Automation TC is to enable the interoperation of automation processes among IT systems such as servers, workstations, and smart hand-held devices. OSLC Automation standards seek to improve efficiency and reduce the need for human interactions in the software development, test, deployment, and operations lifecycle phases.</description>
-    </item>
-    
-    <item>
-      <title>Change Management</title>
-      <link>http://oslc.co/workgroups/change-management/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/change-management/</guid>
-      <description>The goal of this effort is to define a common set of resources, formats and RESTful services for the use in Change Management tools and use by ALM, PLM, Integrated Service Management (ISM) and DevOps tools.
-Change Management (CM) resources define the change requests and tasks of the software and hardware delivery lifecycle. These resources relate and interact with many other resources such as projects, products, or categories.</description>
-    </item>
-    
-    <item>
-      <title>Change and Configuration Management TC</title>
-      <link>http://oslc.co/workgroups/change-and-configuration-management-tc/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/change-and-configuration-management-tc/</guid>
-      <description>The OASIS OSLC CCM TC defines a set of resources, formats, and RESTful web services interfaces for Change Management (change requests, activities, tasks), Configuration Management (configurations, baselines, change sets), and Asset Management (reusable elements like software, documentation, or representations).</description>
-    </item>
-    
-    <item>
-      <title>Communications</title>
-      <link>http://oslc.co/workgroups/communications/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/communications/</guid>
-      <description>A working group to discuss, plan, and execute communications about the work of the Open Services for Lifecycle Collaboration (OSLC) community. The workgroup aims to build better visibility within the community of the work of the various workgroups; and to raise awareness of the value of the work of the community within the applications and middleware industry and its customers.</description>
-    </item>
-    
-    <item>
-      <title>Core</title>
-      <link>http://oslc.co/workgroups/core/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/core/</guid>
-      <description>The OSLC Core defines essential elements of OSLC specs and offers guidance on common concerns for creating, updating, retrieving, and linking to lifecycle resources. The Core specification builds on the best practices we’ve learned as a community and on the work of the existing domain work groups. Future OSLC domain specifications can be based on this core specification, enabling other workgroups to focus more exclusively on domain-specific concerns.</description>
-    </item>
-    
-    <item>
-      <title>Core TC</title>
+      <title>Core Technical Committee</title>
       <link>http://oslc.co/workgroups/core-tc/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/core-tc/</guid>
-      <description>The OSLC Core TC at OASIS is responsible for developing minimal, loosely-coupled, and standardized specifications that expand W3C Linked Data Platform concepts, as needed, to enable integration between different products and components from a variety of sources.</description>
+      <description></description>
     </item>
     
     <item>
-      <title>Embedded Systems</title>
-      <link>http://oslc.co/workgroups/embedded-systems/</link>
+      <title>Domains Technical Committee</title>
+      <link>http://oslc.co/workgroups/domains/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/workgroups/embedded-systems/</guid>
-      <description>A User Group that will explore issues in embedded systems across a broad variety of application domains.</description>
+      <guid>http://oslc.co/workgroups/domains/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -302,104 +229,12 @@ Watch</description>
     </item>
     
     <item>
-      <title>Human factors</title>
-      <link>http://oslc.co/workgroups/human-factors/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/human-factors/</guid>
-      <description>The Human factors (HF) working group resources will define a set of use cases and scenarios that will feed the concepts necessary for exchange in order facilitate the use of human factors in systems engineering. The term &amp;lsquo;systems engineering&amp;rsquo; is used to describe the interdisciplinary field of engineering that focuses on the design and management of a system over the whole lifecycle.
-HF is the application of human factors methods to develop systems with an effective, comfortable and user friendly design.</description>
-    </item>
-    
-    <item>
-      <title>Lifecycle Integration Patterns</title>
-      <link>http://oslc.co/workgroups/lifecycle-integration-patterns/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/lifecycle-integration-patterns/</guid>
-      <description>This working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges. Experienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.</description>
-    </item>
-    
-    <item>
-      <title>Linked Data Platform</title>
-      <link>http://oslc.co/workgroups/linked-data-platform/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/linked-data-platform/</guid>
-      <description>The mission of the Linked Data Platform (LDP) Working Group is to produce a W3C Recommendation for HTTP-based (RESTful) application integration patterns using read/write Linked Data.</description>
-    </item>
-    
-    <item>
-      <title>Mobile</title>
-      <link>http://oslc.co/workgroups/mobile/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/mobile/</guid>
-      <description>A User Group to explore and understand the integration scenarios that make Mobile painful for organizations, and to drive these scenarios into OSLC standards.</description>
-    </item>
-    
-    <item>
-      <title>PROMCODE TC</title>
-      <link>http://oslc.co/workgroups/promcode-tc/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/promcode-tc/</guid>
-      <description>The PROMCODE (Project Management of Contracted Delivery for Software Supply Chains) specifications advance a standard for exchanging project management information across organizational boundaries in support of Software Supply Chain (SSC) delivery.</description>
-    </item>
-    
-    <item>
-      <title>Performance Monitoring</title>
-      <link>http://oslc.co/workgroups/performance-monitoring/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/performance-monitoring/</guid>
-      <description>The goal of this effort is to define a common set of resources, formats and RESTful services that can be used by lifecycle tools such as operation dashboards, applications, and products to monitor resources.</description>
-    </item>
-    
-    <item>
-      <title>Quality Management</title>
-      <link>http://oslc.co/workgroups/quality-management/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/quality-management/</guid>
-      <description>The goal of this effort is to define a common set of resources, formats and RESTful services for Quality Management tools to interact with other Application Lifecycle Management (ALM) tools. This includes test execution tools such as functional and performance test tools in addition to source control, defect management, and code development tools.</description>
-    </item>
-    
-    <item>
-      <title>RDF Data Shapes</title>
-      <link>http://oslc.co/workgroups/rdf-data-shapes/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/rdf-data-shapes/</guid>
-      <description>The mission of the RDF Data Shapes Working Group is to produce a language for defining structural constraints on RDF graphs. In the same way that SPARQL made it possible to query RDF data, the product of the RDF Data Shapes WG will enable the definition of graph topologies for interface specification, code development, and data verification.</description>
-    </item>
-    
-    <item>
-      <title>Reconciliation</title>
-      <link>http://oslc.co/workgroups/reconciliation/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/reconciliation/</guid>
-      <description>This workgroup seeks to define a common set of resource definitions, properties and constraints on the values of these properties such that disparate tools can utilize to identify and reconcile their data.</description>
-    </item>
-    
-    <item>
-      <title>Requirements Management</title>
-      <link>http://oslc.co/workgroups/requirements-management/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://oslc.co/workgroups/requirements-management/</guid>
-      <description>Requirements Management (RM) resources define the requirements or capabilities of a system or the outcome of some programme of work. We use the term system entirely generally and without prejudice to software, hardware, IT, regulatory, business etc.
-Requirements are the basis for defining what the system stakeholders (users, customers, suppliers and so on) need from a system and also what the system must do in order to meet those needs, and how the surrounding processes must be orchestrated so that quality, scope and timescale objectives are satisfied.</description>
-    </item>
-    
-    <item>
       <title>Steering Committee</title>
       <link>http://oslc.co/workgroups/steering-committee/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://oslc.co/workgroups/steering-committee/</guid>
-      <description>The Steering Committee, now operating at OASIS, is the governing body of the OSLC community that approves new workgroups, approves specifications, de-commissions workgroups, and manages other changes in governance or participation across the community.</description>
+      <description></description>
     </item>
     
     <item>

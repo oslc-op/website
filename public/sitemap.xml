@@ -143,107 +143,17 @@
   </url>
   
   <url>
-    <loc>http://oslc.co/workgroups/alm-plm-interoperability/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/architecture-management/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/automation/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/automation-tc/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/change-management/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/change-and-configuration-management-tc/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/communications/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/core/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://oslc.co/workgroups/core-tc/</loc>
     <lastmod>2015-11-09T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://oslc.co/workgroups/embedded-systems/</loc>
+    <loc>http://oslc.co/workgroups/domains/</loc>
     <lastmod>2015-11-09T20:00:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://oslc.co/resources/video-20151109-1/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/human-factors/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/lifecycle-integration-patterns/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/linked-data-platform/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/mobile/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/promcode-tc/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/performance-monitoring/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/quality-management/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/rdf-data-shapes/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/reconciliation/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://oslc.co/workgroups/requirements-management/</loc>
     <lastmod>2015-11-09T20:00:00+02:00</lastmod>
   </url>
   
@@ -549,7 +459,7 @@
   
   <url>
     <loc>http://oslc.co/tags/user-group/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
