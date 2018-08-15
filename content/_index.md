@@ -126,6 +126,7 @@ supporters_title = "Supported By"
 supporters_outro = "And many more!"
 
 supporters = [
+  "ibm_logo.png",
   "airbus_logo.png",
   "mathworks_logo.png",
   "boeing_logo.png",
@@ -152,6 +153,7 @@ supporters = [
 ]
 
 supporters_size = [
+  "eighty",
   "ninety-five",
   "full",
   "full",
