@@ -31,26 +31,28 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 |-------|--------|--------------------|-------------|
 | [Core 3.0](http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part1-overview.html) | CS | OSLC Core TC | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
 | [Resource Shape 3.0](http://docs.oasis-open.org/oslc-core/oslc-core/v3.0/oslc-core-v3.0-part6-resource-shape.html) | CS | OSLC Core TC | Describes constraints on OSLC vocabularies for different proposes, including for OSLC itself. |
-| [OSLC Query 2.0](https://www.oasis-open.org/committees/download.php/61059/OSLC%20Core%20Query.pdf) | *Finalized* | OSLC Core TC | Defines a simple, implementation independent selection and projection query capability. |
-| [Tracked Resource Set 2.0](https://www.oasis-open.org/committees/download.php/61710/Tracked%20Resource%20Set%202.0.pdf)  | *Finalizing Draft* | OSLC Core TC | Allows servers to expose a set of resources whose state can be tracked by clients. |
+| [OSLC Query 3.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-core/trunk/specs/oslc-query.html) | WD | OSLC Core TC | Defines a simple, implementation independent selection and projection query capability. |
+| [Tracked Resource Set 3.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-core/trunk/specs/trs/tracked-resource-set.html)  | WD | OSLC Core TC | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Configuration Management 1.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-core/trunk/specs/config/oslc-config-mgt.html) | WD | OSLC Core TC | OSLC Configuration Management defines an RDF vocabulary and a set of REST APIs for managing versions and configurations of linked data resources from multiple domains. |
-| [Requirements Management 2.0](https://www.oasis-open.org/committees/download.php/61072/Requirements%20Management%202.0%20Final.pdf) | *Finalized* | OSLC Domains TC | Defines the OSLC services and vocabulary for the Requirements Management domain. |
-| [Change Management 3.0](http://htmlpreview.github.io/?https://github.com/oasis-tcs/oslc-domains/blob/master/cm/change-mgt.html) | CSPRD01 | OSLC Domains TC | Defines the OSLC services and vocabulary for the Change Management domain. |
-| [Quality Management 2.0](https://www.oasis-open.org/committees/download.php/61711/QmSpecificationV2.pdf) | *Finalized* | OSLC Domains TC | Defines the OSLC services and vocabulary for the Quality Management domain. |
-| [Architecture Management 2.0](https://www.oasis-open.org/committees/download.php/61061/Architecture%20Management%202.0%20Final.pdf) | *Finalized* | OSLC Domains TC | Defines the OSLC services and vocabulary for the Architecture Management domain. |
-| [Asset Management 2.0](https://www.oasis-open.org/committees/download.php/61063/Asset%20Management%202.0%20Final.pdf) | *Finalized* | OSLC Domains TC | Defines the OSLC services and vocabulary for the Asset Management domain. |
-| [Automation 2.0](https://www.oasis-open.org/committees/download.php/61052/Automation%202.0%20Final.pdf) | *Finalized* | OSLC Core TC | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
-| [Performance Monitoring 2.0](https://www.oasis-open.org/committees/download.php/61067/Performance%20Monitoring%202.0%20Final.pdf) | *Finalized* | OSLC Domains TC | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |  
+| [Requirements Management 2.1](http://docs.oasis-open.org/oslc-domains/oslc-rm/v2.1/oslc-rm-v2.1-part1-requirements-management-spec.html) | WD | OSLC Domains TC | Defines the OSLC services and vocabulary for the Requirements Management domain. |
+| [Change Management 3.0](http://docs.oasis-open.org/oslc-domains/cm/v3.0/cm-v3.0-part1-change-mgt.html) | CS | OSLC Domains TC | Defines the OSLC services and vocabulary for the Change Management domain. |
+| [Quality Management 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/qm/quality-management-spec.html) | WD | OSLC Domains TC | Defines the OSLC services and vocabulary for the Quality Management domain. |
+| [Architecture Management 2.1](http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/oslc-am-v2.1-part1-architecture-management-spec.html) | WD | OSLC Domains TC | Defines the OSLC services and vocabulary for the Architecture Management domain. |
+| [Asset Management 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/asset/asset-management-spec.html) | WD | OSLC Domains TC | Defines the OSLC services and vocabulary for the Asset Management domain. |
+| [Automation 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/auto/automation-spec.html) | WD | OSLC Core TC | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
+| [Performance Monitoring 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/perfmon/performance-monitoring-spec.html) | WD | OSLC Domains TC | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |  
 | [PROMCODE 1.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/WorkingDrafts/promcode-interface-v1.0-wd01_Chapter3.docx) | WD | OSLC PROMCODE TC | The PROMCODE (Project Management of Contracted Delivery for Software Supply Chains) defines OSLC services and vocabulary for exchanging project management information across organizational boundaries in support of Software Supply Chain (SSC) delivery. |        
 
-There are some additional OSLC documents that are currently inactive but could be sources of future specifications:
+There are some additional OSLC documents that are currently inactive but are candidates for migration and could be sources of future specifications:
 
-* [Reporting](https://www.oasis-open.org/committees/document.php?document_id=61060&wg_abbrev=oslc-core)
-* [Reconciliation](https://www.oasis-open.org/committees/document.php?document_id=61070&wg_abbrev=oslc-domains)
-* [Product Definition](https://www.oasis-open.org/committees/document.php?document_id=61068&wg_abbrev=oslc-domains)
-* [Estimation and Measurement](https://www.oasis-open.org/committees/document.php?document_id=61066&wg_abbrev=oslc-domains)
-* [Architecture Management 3.0](https://www.oasis-open.org/committees/document.php?document_id=61062&wg_abbrev=oslc-domains)
-* [Autiomation 2.1](https://www.oasis-open.org/committees/document.php?document_id=61053&wg_abbrev=oslc-core)
-* [Actions 2.0](https://www.oasis-open.org/committees/document.php?document_id=61051&wg_abbrev=oslc-core)
+* [Reconciliation](http://archive.oslc.co/wiki/reconciliation/OSLC-Reconciliation-Specification-Version-2.0/index.html)
+* [Estimation and Measurement](http://archive.oslc.co/wiki/estimation-and-measurement/Estimation-and-Measurement-Service-Version-1.0_-REST-API/index.html)
+* [Actions 2.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-core/trunk/specs/actions.html)
+
+Obsolete or abandoned specifications:
+
+* [Reporting](http://archive.oslc.co/bin/view/Main/ReportingSpecifications.html)
+* [Product Definition](http://archive.oslc.co/bin/view/Main/PlmSpecExtensions.html)
+
 
 Anyone interested in contributing to these specifications should join the applicable TC and propose additional work to add to the TC charter.
