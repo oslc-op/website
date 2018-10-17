@@ -708,17 +708,13 @@ Because you’ll see a lot of benefits. Developers will find that it makes it ea
         })
       })
     </script>
- 
-    <script type="text/javascript">
-      var baseurl = "/";
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
 
     <script>
       var lunrIndex;
       var pagesIndex;
       function initLunr() {
-        $.getJSON(baseurl + "resources/resources.json")
+        $.getJSON("/resources/resources.json")
           .done(function (index) {
             pagesIndex = index;
             lunrIndex = lunr(function(){
