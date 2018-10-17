@@ -603,7 +603,7 @@ And as of today, you’ll be able to see how it looks live. I’ll be rolling ou
 var lunrIndex;
 var pagesIndex;
 function initLunr() {
-  $.getJSON(baseurl + "news/news.json")
+  $.getJSON("/news/news.json")
     .done(function (index) {
       pagesIndex = index;
       lunrIndex = lunr(function(){
