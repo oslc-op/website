@@ -100,19 +100,6 @@ For a high-level overview of how to add OSLC support to software, we recommend o
     </item>
     
     <item>
-      <title>Get started with developing OSLC applications</title>
-      <link>http://oslc.co/resources/get-started-with-developing-oslc-applications/</link>
-      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://oslc.co/resources/get-started-with-developing-oslc-applications/</guid>
-      <description>“OSL-whaaaat now?”
-Open Services for Lifecycle Collaboration (OSLC) is a community that writes specifications to integrate software. Learn more at Why develop OSLC applications and at our main site.
-For a high-level overview of how to add OSLC support to software, we recommend our video &amp;ldquo;Getting started on implementing OSLC&amp;rdquo;:
-The description on YouTube includes a table of contents and links to references.
-Explore our tutorial For a more detailed look at what goes into OSLC support, read through our tutorial &amp;ldquo;Integrating Products with OSLC&amp;rdquo;, which walks you through building an adapter that adds OSLC support to the popular Bugzilla defect-tracking software.</description>
-    </item>
-    
-    <item>
       <title>Share</title>
       <link>http://oslc.co/contribute/ct-share/</link>
       <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
