@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 30 Aug 2017 15:20:56 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 30 Aug 2017 15:20:55 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>OSLC4JS</title>
       <link>http://open-services.net/resources/oslc4js/</link>
-      <pubDate>Wed, 30 Aug 2017 15:20:56 +0200</pubDate>
+      <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
       
       <guid>http://open-services.net/resources/oslc4js/</guid>
       <description>OSLC4JS is a set of related open source projects that support the creation and integration of Open Services for Lifecycle Collaboration (OSLC)-based client and server applications that leverage JavaScript and Node.js capabilities. OSLC4JS projects cover the complete end-to-end capabilities required to build, extend, and integrate web apps that exploit OSLC integration capabilities and linked data resources.

@@ -19,7 +19,7 @@
   
   <url>
     <loc>http://open-services.net/resources/oslc4js/</loc>
-    <lastmod>2017-08-30T15:20:56+02:00</lastmod>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
   </url>
   
   <url>
@@ -349,7 +349,7 @@
   
   <url>
     <loc>http://open-services.net/tags/no-tutorial/</loc>
-    <lastmod>2017-08-30T15:20:56+02:00</lastmod>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -442,7 +442,7 @@
   
   <url>
     <loc>http://open-services.net/tags/tool/</loc>
-    <lastmod>2017-08-30T15:20:56+02:00</lastmod>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -477,13 +477,13 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/categories/why/</loc>
+    <loc>http://open-services.net/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/why/</loc>
+    <loc>http://open-services.net/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
