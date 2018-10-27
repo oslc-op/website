@@ -18,7 +18,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@oslc">
         <meta name="twitter:title" content="{{ .Title }}">
-        <meta name="twitter:image" content="http://oslc.co{{- .Params.banner -}}"> {{ if .Keywords }}
+        <meta name="twitter:image" content="{{ .Site.baseURL }}{{- .Params.banner -}}"> {{ if .Keywords }}
         <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
         <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{ end }} {{ if .Description }}
         <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
@@ -37,8 +37,8 @@
       
       
         <!-- own styles -->
-        <link href="//open-services.net/css/third-party.css" rel="stylesheet" />
-        <link href="//open-services.net/css/oslc.css" rel="stylesheet" />
+        <link href="{{ .Site.baseURL }}/css/third-party.css" rel="stylesheet" />
+        <link href="{{ .Site.baseURL }}/css/oslc.css" rel="stylesheet" />
         <!-- Responsivity for older IE -->
         {{ `
         <!--[if lt IE 9]>
@@ -48,10 +48,10 @@
         ` | safeHTML }}
       
         <!-- Favicon and apple touch icons-->
-        <link rel="shortcut icon" href="//open-services.net/img/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="//open-services.net/img/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="{{ .Site.baseURL }}/img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="{{ .Site.baseURL }}/img/apple-touch-icon.png" />
       
-        <link rel="alternate" href="//open-services.net/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+        <link rel="alternate" href="{{ .Site.baseURL }}/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
       
       </head>
   <body>
@@ -73,9 +73,9 @@
     <!-- /#all -->
 
     <!-- scripts -->
-    <script src="//open-services.net/js/third-party.js"></script>
-    <script src="//open-services.net/js/base.js" ></script>
-    <script src="//open-services.net/js/lazy-load.js" ></script>
-    <script src="//open-services.net/js/redirect.js"></script>
+    <script src="{{ .Site.baseURL }}/js/third-party.js"></script>
+    <script src="{{ .Site.baseURL }}/js/base.js" ></script>
+    <script src="{{ .Site.baseURL }}/js/lazy-load.js" ></script>
+    <script src="{{ .Site.baseURL }}/js/redirect.js"></script>
   </body>
 </html>
