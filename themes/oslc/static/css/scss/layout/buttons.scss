@@ -79,6 +79,7 @@
   &:before {
     content: '';
     position: absolute;
+    pointer-events: none;
     top: 0;
     right: -50px;
     bottom: 0;
