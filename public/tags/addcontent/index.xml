@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Addcontent on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/tags/addcontent/</link>
+    <link>http://open-services.net/tags/addcontent/</link>
     <description>Recent content in Addcontent on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Thu, 22 Jun 2017 20:57:23 +0200</lastBuildDate>
     
-	<atom:link href="http://oslc.co/tags/addcontent/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/tags/addcontent/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Add to this Site</title>
-      <link>http://oslc.co/contribute/ct-content/</link>
+      <link>http://open-services.net/contribute/ct-content/</link>
       <pubDate>Thu, 22 Jun 2017 20:57:23 +0200</pubDate>
       
-      <guid>http://oslc.co/contribute/ct-content/</guid>
+      <guid>http://open-services.net/contribute/ct-content/</guid>
       <description></description>
     </item>
     

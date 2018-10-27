@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Working Groups on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/workgroups/</link>
+    <link>http://open-services.net/workgroups/</link>
     <description>Recent content in Working Groups on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 25 Sep 2017 20:13:23 +0200</lastBuildDate>
     
-	<atom:link href="http://oslc.co/workgroups/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/workgroups/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Core Technical Committee</title>
-      <link>http://oslc.co/workgroups/core-tc/</link>
+      <link>http://open-services.net/workgroups/core-tc/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/workgroups/core-tc/</guid>
+      <guid>http://open-services.net/workgroups/core-tc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Domains Technical Committee</title>
-      <link>http://oslc.co/workgroups/domains/</link>
+      <link>http://open-services.net/workgroups/domains/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/workgroups/domains/</guid>
+      <guid>http://open-services.net/workgroups/domains/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steering Committee</title>
-      <link>http://oslc.co/workgroups/steering-committee/</link>
+      <link>http://open-services.net/workgroups/steering-committee/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/workgroups/steering-committee/</guid>
+      <guid>http://open-services.net/workgroups/steering-committee/</guid>
       <description></description>
     </item>
     

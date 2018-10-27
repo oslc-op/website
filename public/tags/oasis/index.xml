@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oasis on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/tags/oasis/</link>
+    <link>http://open-services.net/tags/oasis/</link>
     <description>Recent content in Oasis on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 09 Nov 2015 20:00:00 +0200</lastBuildDate>
     
-	<atom:link href="http://oslc.co/tags/oasis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/tags/oasis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Steering Committee</title>
-      <link>http://oslc.co/workgroups/steering-committee/</link>
+      <link>http://open-services.net/workgroups/steering-committee/</link>
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/workgroups/steering-committee/</guid>
+      <guid>http://open-services.net/workgroups/steering-committee/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New OASIS OSLC Steering Committee Announced</title>
-      <link>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</link>
+      <link>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</link>
       <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/news/new-oasis-oslc-steering-committee-announced/</guid>
+      <guid>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</guid>
       <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded &amp;ndash; congratulations to the new and re-elected members!
 Also noteworthy is that as of this election, the number of Steering Committee members increased from 7 to 9. The expanded breadth and experience that is represented in the new Steering Committee will further enhance its ability to guide and serve the OSLC Member Section and community. A warm welcome to the OSLC Steering Committee for September 2015-2016:</description>
     </item>
     
     <item>
       <title>OASIS OSLC Steering Committee Elections Coming Soon</title>
-      <link>http://oslc.co/news/oasis-oslc-steering-committee-elections-coming-soon/</link>
+      <link>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</link>
       <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
+      <guid>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
       <description>Whether you live in the I/T or Systems world, software integration in heterogeneous environments can represent both a challenge (where do I even start?) and opportunity (how can I advance my environment to provide more value, deliver faster and with reduced risk?).
 Communities like openservices and OASIS OSLC collaboratively discuss lifecycle integration challenges and solutions that leverage open standards. Whether you&amp;rsquo;re here to contribute your knowledge and experience or to learn from others, we&amp;rsquo;re all in it together.</description>
     </item>

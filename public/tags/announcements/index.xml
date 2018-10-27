@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Announcements on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/tags/announcements/</link>
+    <link>http://open-services.net/tags/announcements/</link>
     <description>Recent content in Announcements on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 17 Nov 2015 10:00:00 +0200</lastBuildDate>
     
-	<atom:link href="http://oslc.co/tags/announcements/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/tags/announcements/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PROSTEP AG Announces OpenPDM OSLC Adapter</title>
-      <link>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
+      <link>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
       <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
+      <guid>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
       <description>PROSTEP would like to announce to the OSLC community, that there is an OpenPDM OSLC Adapter which enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems, e.g.:
 Ansys EKM Aras Innovator Autodesk Vault Dassault SmarTeam Dassault ENOVIA V6 Dassault ENOVIA VPM V4 MSC SimManager Oracle Agile ePLM PTC Windchill SAP PLM Siemens Teamcenter Engineering Siemens Teamcenter Enterprise Siemens Teamcenter UA The OpenPDM OSLC services can be integrated in any OSLC consuming applications.</description>
     </item>
     
     <item>
       <title>Learn more about Tasktop Sync 4.3 (July 2015)</title>
-      <link>http://oslc.co/news/learn-more-about-tasktop-sync/</link>
+      <link>http://open-services.net/news/learn-more-about-tasktop-sync/</link>
       <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/news/learn-more-about-tasktop-sync/</guid>
+      <guid>http://open-services.net/news/learn-more-about-tasktop-sync/</guid>
       <description>Tasktop, the leader in Software Lifecycle Integration (SLI) and creator of the Eclipse Mylyn open source tool, today announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.
 Tasktop products enable enterprises to achieve major gains by connecting everyone in the software lifecycle to create one efficient development and delivery team. With Tasktop solutions, everyone can use their various tools of choice and still collaborate in real time as if they were all working on a single platform.</description>
     </item>

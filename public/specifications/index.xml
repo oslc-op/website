@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Specifications on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/specifications/</link>
+    <link>http://open-services.net/specifications/</link>
     <description>Recent content in Specifications on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     
-	<atom:link href="http://oslc.co/specifications/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/specifications/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Surveys on OSLC - Open Services for Lifecycle Collaboration</title>
-    <link>http://oslc.co/tags/surveys/</link>
+    <link>http://open-services.net/tags/surveys/</link>
     <description>Recent content in Surveys on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 21 Jun 2016 10:00:00 +0200</lastBuildDate>
     
-	<atom:link href="http://oslc.co/tags/surveys/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://open-services.net/tags/surveys/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OLSC Survey Provides Insights into Needs for Software Integration Standards</title>
-      <link>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</link>
+      <link>http://open-services.net/news/oslc-survey-provides-insights-software-integration-standards/</link>
       <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
       
-      <guid>http://oslc.co/news/oslc-survey-provides-insights-software-integration-standards/</guid>
+      <guid>http://open-services.net/news/oslc-survey-provides-insights-software-integration-standards/</guid>
       <description>The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
 OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.</description>
     </item>
