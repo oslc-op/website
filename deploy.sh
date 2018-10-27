@@ -8,14 +8,11 @@ git checkout production
 echo "Updating Production branch"
 git pull origin production
 
-echo "Removing /public directory"
-rm -R public
-
 echo "Merging changes from Master"
 git pull origin master
 
 echo "Generate Hugo site"
-hugo -b http://oslc.co/ -t oslc
+hugo -b http://open-services.net/ -t oslc
 
 echo "Commiting changes"
 git add -A
