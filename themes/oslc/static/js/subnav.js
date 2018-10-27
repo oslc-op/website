@@ -72,12 +72,12 @@ $(document).ready(function(){
       window.location.hash = $(".sub_nav--item:nth-child("+(scroll+2)+")").attr('href');
       scroll++;
     } else {
-      if ($(window).scrollTop() > nav.items[scroll+1].position) {
+      if (scroll !== 3 && $(window).scrollTop() > nav.items[scroll+1].position) {
         $(".sub_nav--item:nth-child("+(scroll+1)+")").removeClass('active');
         $(".sub_nav--item:nth-child("+(scroll+2)+")").addClass('active');
         window.location.hash = $(".sub_nav--item:nth-child("+(scroll+2)+")").attr('href');
         scroll++;
-      } else if ($(window).scrollTop() < nav.items[scroll].position){
+      } else if (scroll !== -1 && $(window).scrollTop() < nav.items[scroll].position){
         $(".sub_nav--item:nth-child("+(scroll+1)+")").removeClass('active');
         $(".sub_nav--item:nth-child("+(scroll)+")").addClass('active');
         window.location.hash = 'about';
