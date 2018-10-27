@@ -14,4 +14,4 @@ __Why should I contribute?__
 
 Because you’ll see a lot of benefits. Developers will find that it makes it easy to add OSLC capabilities to any Node or Express Web application, including client and server components of that application. It will help you extend and integrate OSLC applications to support end-user scenarios and comprehensive cross-tool governance. 
 
-[Go](https://developer.ibm.com/open/openprojects/oslc4js/)
+[Go](http://oslc.github.io/developing-oslc-applications/oslc-open-source-node-projects.html)
