@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "//open-services.net"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
 theme = "oslc"
