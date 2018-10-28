@@ -22,6 +22,7 @@
   {{ else }}
   <meta property="twitter:image" content="http://open-services.net/img/logo.png" />
   {{ end }}
+  {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
   <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{ end }} {{ if .Description }}
   <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
