@@ -65,7 +65,7 @@ understand_data_4_paragraph = "Clients can use mashup applications to interact w
 understand_data_4_mashup = [
   "IBM RCLM",
   "IBM RELM",
-  "Memtor Graphics Context",
+  "Mentor Graphics Context",
   "Koneksys KLD"
 ]
 understand_data_4_mashup_urls = [
