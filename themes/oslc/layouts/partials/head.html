@@ -8,25 +8,24 @@
 
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Description }}" />
-  <meta property="og:image" content="https://oslc.github.io/img/logo.png" />
+  <meta property="og:url" content="{{ .URL }}/" />
+  {{ if .Params.banner }}
+  <meta property="og:image" content="https://open-services.net/{{ .Params.banner }}" />
+  {{ else }}
+  <meta property="og:image" content="https://open-services.net/img/logo.png" />
+  {{ end }}
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:description" content="{{ .Description }}" />
   <meta property="twitter:title" content="{{ .Title }}" />
-  <meta property="twitter:image" content="http://oslc.co{{- .Params.banner -}}" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@oslc">
-  <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:image" content="http://oslc.co{{- .Params.banner -}}"> {{ if .Keywords }}
+  {{ if .Params.banner }}
+  <meta property="twitter:image" content="http://open-services.net/{{ .Params.banner }}" />
+  {{ else }}
+  <meta property="twitter:image" content="http://open-services.net/img/logo.png" />
+  {{ end }}
   <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
   <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{ end }} {{ if .Description }}
   <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}"> {{ end }} {{ .Hugo.Generator }}
-
-  <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .URL }}/" />
-  <meta property="og:image" content="{{ .Site.Params.logo }}" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
