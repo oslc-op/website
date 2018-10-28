@@ -22,7 +22,7 @@ members = [
   "Jim Amsden",
   "Mark Schulte",
   "Martin Sarabura",
-  "Mats Berglund",
+  "Andrew Berezovskyi",
   "Rainer Ersch",
   "Wesley Coelho"
 ]
@@ -33,7 +33,7 @@ company = [
   "IBM",
   "Boeing",
   "PTC",
-  "Ericsson",
+  "KTH Royal Institute of Technology",
   "Siemems",
   "Tasktop Technologies"
 ]
