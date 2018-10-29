@@ -22,7 +22,7 @@ members = [
   "Jim Amsden",
   "Mark Schulte",
   "Martin Sarabura",
-  "Mats Berglund",
+  "Andrew Berezovskyi",
   "Rainer Ersch",
   "Wesley Coelho"
 ]
@@ -33,7 +33,7 @@ company = [
   "IBM",
   "Boeing",
   "PTC",
-  "Ericsson",
+  "KTH Royal Institute of Technology",
   "Siemems",
   "Tasktop Technologies"
 ]
@@ -76,7 +76,7 @@ supporters_type_3_list = [
   "Ericsson",
   "pure-systems GmbH",
   "Siemens AG",
-  "Swedish Royal Institute of Technology",
+  "KTH Royal Institute of Technology",
   "Tasktop Technologies Inc."
 ]
 supporters_type_3_url_list = [
