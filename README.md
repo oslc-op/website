@@ -1,7 +1,8 @@
 # oslc-site-hugo
 
-The Hugo static files for https://oslc.github.io.
+[![Discourse status](https://img.shields.io/discourse/https/meta.discourse.org/status.svg)](https://forum.open-services.net/)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/OSLC/chat)
 
-When passed through Hugo, the generated content will eventually end up at https://github.com/OSLC/oslc.github.io.
+The Hugo static files for http://open-services.net/.
 
-For the use of this website you can look in the user_guide.md file
+Please check out the [wiki](https://github.com/OSLC/oslc-site-hugo/wiki/Contributing-Setup) for instructions how to contribute.
