@@ -34,7 +34,7 @@ company = [
   "Boeing",
   "PTC",
   "KTH Royal Institute of Technology",
-  "Siemems",
+  "Siemens",
   "Tasktop Technologies"
 ]
 
