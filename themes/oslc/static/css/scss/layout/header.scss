@@ -1,8 +1,27 @@
+.oasis-header {
+  background: #232323;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  width: 100%;
+
+  img {
+    height: 26px
+  }
+}
+
 header{
   background: $white;
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 26px;
   z-index: 99;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
 
