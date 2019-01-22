@@ -53,7 +53,7 @@ understand_data_3_image = "link-data.svg"
 understand_data_3_paragraph = "Data from different sources can link to one another by referencing the other data's URL"
 
 understand_documents_4_image = "mashup-documents.svg"
-understand_documents_4_paragraph = "Clients can use mashup applications to interact with documents in the web (Search, Visualize, Analize, etc)"
+understand_documents_4_paragraph = "Clients can use mashup applications to interact with documents in the web (Search, Visualize, Analyze, etc)"
 understand_documents_4_mashup = [
   "Google Search",
   "Mozilla Firefox",
@@ -61,7 +61,7 @@ understand_documents_4_mashup = [
 ]
 
 understand_data_4_image = "mashup-data.svg"
-understand_data_4_paragraph = "Clients can use mashup applications to interact with data in the web (Search, Visualize, Analize, etc)"
+understand_data_4_paragraph = "Clients can use mashup applications to interact with data in the web (Search, Visualize, Analyze, etc)"
 understand_data_4_mashup = [
   "IBM RCLM",
   "IBM RELM",
