@@ -72,10 +72,11 @@ fieldset[disabled] a.btn {
 }
 
 .m-top{
-  margin-top:87px;
+  transition: 250ms all ease-in-out;
+  margin-top:105px;
 
   &--small {
-    margin-top: 66px !important;
+    margin-top: 84px !important;
   }
 }
 
@@ -102,6 +103,6 @@ img[data-src] {
 /* buttons */
 @media screen and (max-width: 768px){
   .m-top {
-    margin-top: 50px;
+    margin-top: 77px;
   }
 }

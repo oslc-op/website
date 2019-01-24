@@ -1,0 +1,29 @@
+.scrolled {
+    header {
+        top: 0;
+
+        .container {
+            height: 64px;
+
+            .nav__logo img {
+                height: 42px;
+            }
+        }
+    }
+
+    .m-top {
+        margin-top: 87px;
+    }
+
+    .sub_nav {
+        top: 64px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .scrolled {
+        .sub-nav {
+            top: 71px;
+        }
+    }
+}
