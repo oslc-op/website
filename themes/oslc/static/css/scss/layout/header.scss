@@ -159,11 +159,12 @@ header{
 @media screen and (max-width:768px){
   header {
     .container {
+      height: auto;
       .nav__logo {
         margin: 5px 0;
 
         img {
-          width: 118px;
+          height: 40px;
         }
       }
       .links {

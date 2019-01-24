@@ -123,13 +123,13 @@
 }
 
 .sub_nav {
-  transition: 250ms all ease-in-out;
+  transition: 350ms all;
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: fixed;
-  top: 102px;
+  top: 115px;
   
   width: 100%;
 
@@ -183,7 +183,7 @@
   }
 
   .sub_nav {
-    top: 71px;
+    top: 77px;
   }
 
   .content--section {
