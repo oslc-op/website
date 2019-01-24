@@ -123,12 +123,13 @@
 }
 
 .sub_nav {
+  transition: 250ms all ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: fixed;
-  top: 84px;
+  top: 102px;
   
   width: 100%;
 

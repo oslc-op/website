@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function (){
   // Mobile header
-  $(".menu-button").click(function(e){
+  $(".menu-button").click(function (e){
     e.preventDefault();
     $('.links').slideToggle();
   });
@@ -28,4 +28,18 @@ $(document).ready(function(){
       }
     }
   }
+
+  // scroll initializer 
+  if($(window).scrollTop() > 0) {
+    $("body").addClass("scrolled");
+  }
+  // scroll listener
+  $(window).scroll(function () {
+    console.log("scrolling" + scroll);
+    if($(window).scrollTop() > 0) {
+      $("body").addClass("scrolled");
+    } else {
+      $("body").removeClass("scrolled");
+    }
+  });
 });
