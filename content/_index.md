@@ -17,11 +17,11 @@ inspiredBy_subtitle = "Transition from a world of incompatible systems into a wo
 
 inspiredBy_before_title = "Before the Web"
 inspiredBy_before_image = "web-before.svg"
-inspiredBy_before_paragraph = "There were many hypertext systems. Those systems had no compatibility to one another. They also used different protocols to access and connect the documents. This made so that documents in System Type 1 could not link to documents in System Type 2."
+inspiredBy_before_paragraph = "There were many hypertext systems. Those systems had no compatibility to one another. They also used different protocols to access and connect the documents. Documents in System Type 1 could not link to documents in System Type 2."
 
 inspiredBy_after_title = "After the Web"
 inspiredBy_after_image = "web-after.svg"
-inspiredBy_after_paragraph = "HTML became the standard for documents in the web. Alongside with a standard protocol (HTTP) which determined how to access and connect documents. Now documents could link to others independently of where they were stored."
+inspiredBy_after_paragraph = "HTML became the standard to represent and connect documents. HTTP became the standard protocol to access documents. Documents can be linked independent of their physical location."
 
 
 understand_title = "Key Concepts of OSLC"
@@ -31,12 +31,12 @@ understand_documents_title = "The Web of Documents"
 understand_data_title = "The Web of Data"
 
 understand_documents_1_image = "html-file.svg"
-understand_documents_1_paragraph = "The web uses documents, standardized to .html, to define web pages. Documents in the web use URLs as identifiers"
+understand_documents_1_paragraph = "The Web uses documents, represented in HTML, to define web pages. Documents on the Web use URLs as identifiers"
 understand_documents_1_note = "URL represented by"
 understand_documents_1_icon = "fa-link"
 
 understand_data_1_image = "rdf-file.svg"
-understand_data_1_paragraph = "The web uses data, standardized to .RDF, to define data in the web. Data in the web use URLs as identifiers"
+understand_data_1_paragraph = "The Web uses data, represented in RDF, to define data in the Web. Data on the Web use URLs as identifiers"
 understand_data_1_note = "URL represented by"
 understand_data_1_icon = "fa-link"
 
@@ -53,7 +53,7 @@ understand_data_3_image = "link-data.svg"
 understand_data_3_paragraph = "Data from different sources can link to one another by referencing the other data's URL"
 
 understand_documents_4_image = "mashup-documents.svg"
-understand_documents_4_paragraph = "Clients can use mashup applications to interact with documents in the web (Search, Visualize, Analyze, etc)"
+understand_documents_4_paragraph = "Clients can use mashup applications to interact with documents in the Web (Search, Visualize, Analyze, etc)"
 understand_documents_4_mashup = [
   "Google Search",
   "Mozilla Firefox",
@@ -61,7 +61,7 @@ understand_documents_4_mashup = [
 ]
 
 understand_data_4_image = "mashup-data.svg"
-understand_data_4_paragraph = "Clients can use mashup applications to interact with data in the web (Search, Visualize, Analyze, etc)"
+understand_data_4_paragraph = "Clients can use mashup applications to interact with data in the Web (Search, Visualize, Analyze, etc)"
 understand_data_4_mashup = [
   "IBM RCLM",
   "IBM RELM",
