@@ -10,7 +10,7 @@ why_title = "Why OSLC?"
 mission_title = "Our Mission"
 mission_subtitle = "What we are trying to achieve"
 mission_content = [
-  "The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges."
+  "The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions, but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges."
 ]
 
 people_title = "Steering Committee"
@@ -109,11 +109,11 @@ faq_questions = [
 ]
 
 faq_answers = [
-  "There are many ways to become involved. You can contriute content to this site. You can become a member of a Working Group, or a Technical Committee contributor. You can deepen your participation and get nominated for the Steering Comittee. Join the discussions on Discourse. Write OSLC software, anything from reference implemntations to adapters. More details are on the Contribute page.",
+  "There are many ways to become involved. You can make technical contributions (anything from reporting bugs to writing reference implementations) via an OSLC GitHub repository. You can write a blog or article for this site. You can post questions and join discussions on the OSLC Forum. You can deepen your participation by serving on the OSLC Project Governing Board or Technical Steering Comittee. More details are on the Contribute page.",
   
-  "No - only for contributions to specifications or to elect or be elected for the Steering Committee.",
+  "No. Participation in OSLC is not tied to OASIS membership. Everyone is welcome to contribute technically. Organizations that want to ensure the sustainability of OSLC development (and have a seat on the OSLC Project Governing Board) are encouraged to become OSLC Sponsors.",
   
-  "No - the Web is neutral and can be used to share any information. OSLC data on the Web can describe any information in the same way as HTML documents can describe any information.",
+  "No. the Web is neutral and can be used to share any information. OSLC data on the Web can describe any information in the same way as HTML documents can describe any information.",
   
   "W3C is focused on shaping the future of the Internet Architecture. OASIS on the other hand focuses on the development, convergence and adoption of open standards for the global information society. OSLC uses and builds on the W3C REST Internet Architecture including HTTP and LDP. However, OSLC is a use of the REST architecture in support of lifecycle management tool integration, it does not contribute to that architecture.",
   
