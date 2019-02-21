@@ -25,6 +25,9 @@
           {{ range $index, $paragraphs := .Params.mission_content }}
             <p>{{ $paragraphs }}</p>
           {{ end }}
+          <p class="text-center">
+            OSLC is an <a href="https://oasis-open-projects.org/" target="_blank">OASIS Open Project</a>
+          </p>
         </div>
       </section>
 
@@ -103,9 +106,6 @@
           </div>
         </div>
       </section>
-      <p class="text-center" style="margin-bottom: 50px;">
-        OSLC is an <a href="https://oasis-open-projects.org/" target="_blank">OASIS Open Project</a>
-      </p>
     </div>
     <footer class="footer footer--inverse" id="footer">
       {{ partial "footer.html" . }}
