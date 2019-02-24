@@ -39,4 +39,4 @@ Link documents managed in Backend as related resource to OSLC CM entity
 Provide download for documents
 A very successful project was performed by PROSTEP at Bombardier Transportation. The IBM tool Rational Team Concert was integrated with Teamcenter Enterprise from Siemens PLM. Rational Team Concert is used for managing the creation and delivery of documents which are needed for the authorisation of their products by European Union (EU) or local country bodies. The requirements are managed in Rational Doors Next Generation. The documents are stored in their central PDM system Teamcenter and linked to the RTC tasks. Teamcenter Enterprise doesn’t provide a native OSLC service and is now enabled by the OpenPDM OSLC Adapter to be accessed by RTC via OSLC. The project was defined, performed and finished successfully in close cooperation with IBM.
 
-For more information see http://prostep.com
+For more information see http://prostep.us

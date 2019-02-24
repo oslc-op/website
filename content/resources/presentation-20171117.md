@@ -13,4 +13,4 @@ The PROSTEP OpenPDM OSLC Adapter makes your PLM system(s) available to the OSLC 
 
 This presentation provides details on the OpenPDM OSLC Adapter including overview, reference project and technical information. For more details  contact infocenter@prostep.com. 
 
-[Download](http://open-services.net/images/uploads/blog/OpenPDM_OSLC_Adapter_2015-11-05_%28EN%29.pdf)
+[Download](http://open-services.net/resources/OpenPDM_OSLC_Adapter_2015-11-05_%28EN%29.pdf)
