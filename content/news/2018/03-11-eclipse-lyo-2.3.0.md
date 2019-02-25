@@ -6,7 +6,7 @@ author_uri = "https://github.com/berezovskyi/"
 tags = []
 title = "Eclipse Lyo 2.3.0 release"
 banner = "img/news-default.jpg"
-url = "news/2017-eclipse-lyo-2.3.0/"
+url = "news/2018-eclipse-lyo-2.3.0/"
 +++
 
 Dear Lyo users,
