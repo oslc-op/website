@@ -1,6 +1,6 @@
 +++
 category = "announcements"
-date = "2017-08-03T18:17+02:00"
+date = "2017-08-03T18:17:00+02:00"
 author = "Andrew Berezovskyi"
 author_uri = "https://github.com/berezovskyi/"
 tags = []
