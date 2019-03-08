@@ -12,7 +12,11 @@
   <div class="post__content">
     <div class="post__paragraphs">
       <p>
-        {{ .Summary }}
+        {{ if .Params.summary }}
+          {{ .Params.summary }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
       </p>
       <a href=" {{ .Permalink }}" class="post__button button">Continue Reading</a>
     </div>

@@ -11,7 +11,11 @@
         <div class="new__info">
           <span class="new__date">{{ .Date.Format "Jan 2, 2006" }}</span>
           <div class="new__content">
-            {{ .Summary }}
+            {{ if .Params.summary }}
+              {{ .Params.summary }}
+            {{ else }}
+              {{ .Summary }}
+            {{ end }}
           </div>
         </div>
       </div>
