@@ -115,7 +115,7 @@ header{
   }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:1231px){
   header {
     .container {
       .links {
@@ -156,7 +156,7 @@ header{
   }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
   header {
     .container {
       height: auto;
@@ -202,6 +202,61 @@ header{
       .menu-button {
         span {
           font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:769px) and (max-width:1230px) {
+  .scrolled {
+    header {
+      .container {
+        .links {
+          top: 64px;
+        }
+      }
+    }
+  }
+  header {
+    .container {
+      height: 88px;
+      .nav__logo {
+
+        img {
+          height: 54px;
+        }
+      }
+      .links {
+        position: fixed;
+        top: 115px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $oslc-dark-blue;
+        padding-top: 20px;
+
+        .search-header, .nav__item--social {
+          justify-content: center;
+        }
+
+        .search-header {
+          padding-right: 0;
+
+          input{
+            background: transparent;
+            border-color: $white;
+            color: $white;
+            
+            &::placeholder {
+              color: $white;
+            }
+          }
+          button {
+            background: transparent;
+            color: $white;
+          }
         }
       }
     }
