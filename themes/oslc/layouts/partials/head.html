@@ -18,9 +18,9 @@
   <meta property="twitter:description" content="{{ .Description }}" />
   <meta property="twitter:title" content="{{ .Title }}" />
   {{ if .Params.banner }}
-  <meta property="twitter:image" content="http://open-services.net/{{ .Params.banner }}" />
+  <meta property="twitter:image" content="https://open-services.net/{{ .Params.banner }}" />
   {{ else }}
-  <meta property="twitter:image" content="http://open-services.net/img/logo.png" />
+  <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   {{ end }}
   {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
@@ -28,10 +28,7 @@
   <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}"> {{ end }} {{ .Hugo.Generator }}
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-
-  <!-- Bootstrap and Font Awesome css -->
-  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
 
 
   <!-- own styles -->
