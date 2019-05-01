@@ -1,10 +1,5 @@
 .section--benefits {
 
-  .container {
-    width: 1300px;
-    max-width: 1300px;
-  }
-
   .benefits_grid {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +31,7 @@
         margin-top: 0;
       }
     }
-  }  
+  }
 }
 
 .section--specs {
