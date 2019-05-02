@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>User Group on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>user group on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/user-group/</link>
-    <description>Recent content in User Group on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in user group on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 18 Aug 2015 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/user-group/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +17,7 @@
       <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/communication-user-group-is-back/</guid>
-      <description>The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC. As one participant said &amp;ldquo;Think of us as the newspaper for the city.&amp;rdquo; This is a perfect analogy of our intent to be indespensible to the community we serve and relevant to the broader audience. The Communication User Group will aims to deliver value, grows our community and provides the news that you need.</description>
+      <description>The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC.</description>
     </item>
     
   </channel>
