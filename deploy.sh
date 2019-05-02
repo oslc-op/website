@@ -6,10 +6,10 @@ echo "Switch to Production"
 git checkout production
 
 echo "Updating Production branch"
-git pull origin production
+git pull --rebase=false origin production
 
 echo "Merging changes from Master"
-git pull origin master
+git pull --rebase=false origin master
 
 echo "Generate Hugo site"
 hugo -b http://open-services.net/ -t oslc
