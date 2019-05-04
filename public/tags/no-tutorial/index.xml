@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>no-tutorial on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>No Tutorial on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/no-tutorial/</link>
-    <description>Recent content in no-tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in No Tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Wed, 30 Aug 2017 15:20:55 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/no-tutorial/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,9 @@
       <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
       
       <guid>http://open-services.net/resources/oslc4js/</guid>
-      <description>OSLC4JS is a set of related open source projects that support the creation and integration of OSLC-based client and server applications that leverage JavaScript and Node.js capabilities.</description>
+      <description>OSLC4JS is a set of related open source projects that support the creation and integration of Open Services for Lifecycle Collaboration (OSLC)-based client and server applications that leverage JavaScript and Node.js capabilities. OSLC4JS projects cover the complete end-to-end capabilities required to build, extend, and integrate web apps that exploit OSLC integration capabilities and linked data resources.
+Why should I contribute?
+Because you’ll see a lot of benefits. Developers will find that it makes it easy to add OSLC capabilities to any Node or Express Web application, including client and server components of that application.</description>
     </item>
     
     <item>
@@ -26,7 +29,7 @@
       <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
       
       <guid>http://open-services.net/resources/article-20170715/</guid>
-      <description>Integrating tools via standard interfaces</description>
+      <description>Most large organizations require dozens and sometimes hundreds of specialized software tools to manage the lifecycle of the physical products or software applications they create. It isn&amp;rsquo;t hard to imagine the monumental waste these organizations incur in attempting to manually coordinate the efforts of the teams that use these many disparate tools to create a single product. Open Services for Lifecycle Collaboration (OSLC) is an open community for creating specifications for integrating lifecycle activities across tools to address this problem.</description>
     </item>
     
     <item>
@@ -35,7 +38,8 @@
       <pubDate>Sat, 15 Jul 2017 14:54:23 +0200</pubDate>
       
       <guid>http://open-services.net/resources/website-20170825/</guid>
-      <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software</description>
+      <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software. This has much information relevant for the OSLC community.
+Visit</description>
     </item>
     
     <item>
@@ -44,7 +48,8 @@
       <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20170616-andrew/</guid>
-      <description>The latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains</description>
+      <description>In this video, Andrew Berezovskyi, a Lyo project lead will describe the latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains.
+  Lyo is an Eclipse project aimed at helping the community adopt OSLC specifications and build OSLC-compliant tools. Learn more about Lyo on https://www.eclipse.org/lyo/</description>
     </item>
     
     <item>
@@ -53,7 +58,7 @@
       <pubDate>Wed, 18 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151118-jad-ecs/</guid>
-      <description>Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC</description>
+      <description>In a lecture given in an OSLC workshop at the Embedded Conference Scandinavia, Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC. After watching the lecture, you will gain a solid understanding of the linked data fundamentals, have a comperehsive overview of various parts of OSLC and be ready to individually work through the workshop material for Eclipse Lyo, an SDK for implementing OSLC-compliant solutions.</description>
     </item>
     
     <item>
@@ -62,7 +67,8 @@
       <pubDate>Tue, 17 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/presentation-20171117/</guid>
-      <description>The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems.</description>
+      <description>The PROSTEP OpenPDM OSLC Adapter makes your PLM system(s) available to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems. The OpenPDM OSLC services can be integrated in any OSLC consuming applications. The gap between ALM and PLM can be closed.
+This presentation provides details on the OpenPDM OSLC Adapter including overview, reference project and technical information.</description>
     </item>
     
     <item>
@@ -71,7 +77,8 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151109-1/</guid>
-      <description>Webinar on integrating HP ALM and IBM RTC</description>
+      <description>Webinar on integrating HP ALM and IBM RTC, presented by Wesley Coelho, Director of Business Development at Tasktop Technologies, and Lance Knight, Director of Solution Architects at Tasktop.
+Watch</description>
     </item>
     
     <item>
@@ -80,7 +87,8 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/presentation-20171109/</guid>
-      <description>Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.</description>
+      <description>Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.
+View</description>
     </item>
     
     <item>
@@ -89,7 +97,8 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/article-20151109/</guid>
-      <description>Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement.</description>
+      <description>In this article, Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement. The conclusion is that flexibility and value are what drive integration decisions.
+Read</description>
     </item>
     
     <item>
@@ -98,7 +107,8 @@
       <pubDate>Mon, 09 Nov 2015 19:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151109-2/</guid>
-      <description>How Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync</description>
+      <description>In this webinar, Robert Elves, co-founder of Tasktop Technologies, describes how Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync.
+Watch</description>
     </item>
     
     <item>
@@ -107,7 +117,8 @@
       <pubDate>Mon, 21 Jan 2013 20:57:23 +0200</pubDate>
       
       <guid>http://open-services.net/resources/tool-20130121/</guid>
-      <description>A toolkit for developing OSLC consumers and providers for .NET environments</description>
+      <description>A toolkit for developing OSLC consumers and providers for .NET environments that contains the following tools:
+ OSLC4NET SDK, which is very similar to the OSLC4J component of Eclipse Lyo: you can model OSLC resources as .NET objects, annotate them with OSLC attributes, and use the REST services provided by ASP.NET MVC 4 for HTTP requests and request handling. OSLC Change Management consumer implementation in the form of a test suite  Go</description>
     </item>
     
     <item>
@@ -116,7 +127,8 @@
       <pubDate>Fri, 11 Nov 2011 20:57:23 +0200</pubDate>
       
       <guid>http://open-services.net/resources/tool-20111111/</guid>
-      <description>The Eclipse Lyo project focuses on providing an SDK to help the Eclipse community to adopt OSLC specifications and build OSLC-compliant tools.</description>
+      <description>The Eclipse Lyo project focuses on providing an SDK to help the Eclipse community to adopt OSLC specifications and build OSLC-compliant tools. The source code is available in a Git repository.
+ OSLC4J: A Java toolkit to help you build OSLC-ready Java applications Test suites: Verify that your OSLC implementations are compliant with the specifications Reference Implementations: See how OSLC functions with working samples  Go</description>
     </item>
     
   </channel>

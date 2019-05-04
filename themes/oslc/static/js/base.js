@@ -35,7 +35,6 @@ $(document).ready(function (){
   }
   // scroll listener
   $(window).scroll(function () {
-    console.log("scrolling" + scroll);
     if($(window).scrollTop() > 0) {
       $("body").addClass("scrolled");
     } else {

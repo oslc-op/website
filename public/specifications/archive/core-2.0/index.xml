@@ -6,6 +6,7 @@
     <description>Recent content on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     
 	<atom:link href="http://open-services.net/specifications/archive/core-2.0/index.xml" rel="self" type="application/rss+xml" />
     
