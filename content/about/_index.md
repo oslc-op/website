@@ -13,30 +13,26 @@ mission_content = [
   "The community is striving to pull together many diverse initiatives focused around application integration solutions to collaborate and partner with each other rather than compete. There are many organizations with different backgrounds sharing the vision of integrated engineering environments. Sometimes they are promoting different approaches than OSLC and linked data solutions, but the goal of the community is to openly discuss complementary approaches which can also be appropriate with the goal of improving the overall viability of standards/implementations for supporting industry integration challenges."
 ]
 
-people_title = "Steering Committee"
-people_subtitle = "The Steering Committee is responsible for all things OSLC"
-members = [
-  "Axel Reichwein",
-  "Bill Chown",
-  "Celine Sauvaget",
+people_title = "Leadership"
+people_subtitle = "Governance for the OSLC Open Project is managed by its Project Governing Board and its Technical Steering Committee. These two groups ensure that all OSLC stakeholders have a voice in decisions affecting the project and that the contributions of developers, corporate sponsors, and technology consumers are all valued."
+
+governing_title = "Project Governing Board"
+governing_subtitle = "The Project Governing Board provides top-level guidance and strategic direction for OSLC. The Board includes representatives from OSLC Sponsor organizations as well as the OSLC Technical Steering Committee."
+governing_members = [
   "Jim Amsden",
-  "Mark Schulte",
-  "Martin Sarabura",
+  "Bill Chown",
   "Andrew Berezovskyi",
-  "Rainer Ersch",
-  "Wesley Coelho"
+  "Axel Reichwein",
 ]
-company = [
-  "Koneksys",
-  "Mentor Graphics",
-  "Airbus",
+governing_company = [
   "IBM",
-  "Boeing",
-  "PTC",
   "KTH Royal Institute of Technology",
   "Siemens",
-  "Tasktop Technologies"
+  "Koneksys",
 ]
+
+committee_title = "Technical Steering Committee"
+committee_subtitle = "The Technical Steering Committee (TSC) directs the day-to-day technical activities of OSLC. TSC members include representatives from the developer community who are actively contributing to the project."
 
 supporters_title = "Supporters"
 supporters_subtitle = "The many supporters of OSLC"
