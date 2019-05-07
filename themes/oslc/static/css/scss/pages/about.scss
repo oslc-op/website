@@ -7,6 +7,15 @@
   }
 }
 
+.section--supporters{
+  &.sponsors {
+    .supporters--list .supporter {
+      width: 33.3333%;
+      padding: 10px 6%;
+    }
+  }
+} 
+
 .supporters--wrap {
   margin-bottom: 30px;
   .type {
@@ -56,9 +65,16 @@
 }
 
 @media screen and (max-width: 768px){
+  .sub_nav {
+    display: none;
+  }
+  
   .about_page {
-    .m-top {
-      margin-top: 99px;
+    // .m-top {
+    //   margin-top: 99px;
+    // }
+    .content--section {
+      padding-bottom: 0;
     }
 
     .mission {

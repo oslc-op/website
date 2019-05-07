@@ -34,58 +34,34 @@ governing_company = [
 committee_title = "Technical Steering Committee"
 committee_subtitle = "The Technical Steering Committee (TSC) directs the day-to-day technical activities of OSLC. TSC members include representatives from the developer community who are actively contributing to the project."
 
-supporters_title = "Supporters"
-supporters_subtitle = "The many supporters of OSLC"
-supporters_type_1_title = "Foundational Sponsor-level members"
-supporters_type_1_list = [
-  "IBM"
+sponsors_title = "Sponsors"
+sponsors_subtitle = "The OSLC Open Project relies on its Sponsors to fund development of the interoperability standards and open source tools that their organizations and customers depend on. To join this group of greatly appreciated organizations, visit our Open Project Sponsorship page or contact communications@oasis-open.org."
+
+sponsors_img_list = [
+  "airbus_logo.png",
+  "boeing_logo.png",
+  "dassault_logo.png",
+  "ibm_logo.png",
+  "koneksys_logo.png",
+  "tasktop_logo.png"
 ]
-supporters_type_1_url_list = [
-  "http://www.ibm.com/software"
+
+sponsors_img_size = [
+  "ninety-five",
+  "full",
+  "full",
+  "eighty",
+  "full",
+  "full"
 ]
-supporters_type_2_title = "Sponsor-level members"
-supporters_type_2_list = [
-  "ActewAGL Distribution",
-  "Cisco",
-  "Fujitsu Limited",
-  "PTC",
-  "Red Hat",
-  "Software AG",
-  "Boeing"
-]
-supporters_type_2_url_list = [
-  "https://www.actewagl.com.au/",
-  "https://www.cisco.com/",
-  "https://www.fujitsu.com/",
-  "https://www.ptc.com/",
-  "https://www.redhat.com/",
-  "https://www.softwareag.com/",
-  "https://www.boeing.com/"
-]
-supporters_type_3_title = "Contributor-level members"
-supporters_type_3_list = [
-  "Airbus",
-  "AIT Austrian Institute of Technology",
+
+sponsors_others_list = [
+  "Austrian Institute of Technology",
   "Bank of America",
-  "Dassault Systemes S.A.",
-  "EADS France",
-  "Ericsson",
-  "pure-systems GmbH",
-  "Siemens AG",
   "KTH Royal Institute of Technology",
-  "Tasktop Technologies Inc."
-]
-supporters_type_3_url_list = [
-  "https://www.airbus.com/",
-  "https://www.ait.ac.at/en/",
-  "https://www.bankofamerica.com/",
-  "https://www.3ds.com",
-  "https://www.eads.com",
-  "https://www.ericsson.com/en",
-  "https://www.pure-systems.com/",
-  "https://www.siemens.com",
-  "https://www.kth.se/en",
-  "https://www.tasktop.com/"
+  "Red Hat",
+  "Siemens",
+  "Software AG"
 ]
 
 faq_title = "Frequently Asked Questions"
