@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Video on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>video on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/video/</link>
-    <description>Recent content in Video on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in video on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Fri, 16 Jun 2017 09:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +17,7 @@
       <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20170616-andrew/</guid>
-      <description>In this video, Andrew Berezovskyi, a Lyo project lead will describe the latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains.
-  Lyo is an Eclipse project aimed at helping the community adopt OSLC specifications and build OSLC-compliant tools. Learn more about Lyo on https://www.eclipse.org/lyo/</description>
+      <description>The latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains</description>
     </item>
     
     <item>
@@ -28,7 +26,7 @@
       <pubDate>Wed, 18 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151118-jad-ecs/</guid>
-      <description>In a lecture given in an OSLC workshop at the Embedded Conference Scandinavia, Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC. After watching the lecture, you will gain a solid understanding of the linked data fundamentals, have a comperehsive overview of various parts of OSLC and be ready to individually work through the workshop material for Eclipse Lyo, an SDK for implementing OSLC-compliant solutions.</description>
+      <description>Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC</description>
     </item>
     
     <item>
@@ -37,8 +35,7 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151109-1/</guid>
-      <description>Webinar on integrating HP ALM and IBM RTC, presented by Wesley Coelho, Director of Business Development at Tasktop Technologies, and Lance Knight, Director of Solution Architects at Tasktop.
-Watch</description>
+      <description>Webinar on integrating HP ALM and IBM RTC</description>
     </item>
     
     <item>
@@ -47,8 +44,7 @@ Watch</description>
       <pubDate>Mon, 09 Nov 2015 19:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/video-20151109-2/</guid>
-      <description>In this webinar, Robert Elves, co-founder of Tasktop Technologies, describes how Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync.
-Watch</description>
+      <description>How Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync</description>
     </item>
     
   </channel>

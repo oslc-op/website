@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Steering Committee on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>steering committee on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/steering-committee/</link>
-    <description>Recent content in Steering Committee on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in steering committee on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 21 Jun 2016 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/steering-committee/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +17,7 @@
       <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/oslc-survey-provides-insights-software-integration-standards/</guid>
-      <description>The Open Services for Lifecycle Collaboration (OSLC) steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC. As part of that effort a survey of the community members was conducted and it highlights some interesting results about the needs of this group. You can find the full results of the survey at https://www.surveymonkey.com/results/SM-2XVJT6CR/.
-OSLC is an open community that builds standards to solve a vexing problem: How to integrate the specialized software used by different types of software and systems development practitioners so teams and their tools can work together.</description>
+      <description>The OSLC steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC.</description>
     </item>
     
     <item>
@@ -28,8 +26,7 @@ OSLC is an open community that builds standards to solve a vexing problem: How t
       <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</guid>
-      <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded &amp;ndash; congratulations to the new and re-elected members!
-Also noteworthy is that as of this election, the number of Steering Committee members increased from 7 to 9. The expanded breadth and experience that is represented in the new Steering Committee will further enhance its ability to guide and serve the OSLC Member Section and community. A warm welcome to the OSLC Steering Committee for September 2015-2016:</description>
+      <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded.</description>
     </item>
     
   </channel>
