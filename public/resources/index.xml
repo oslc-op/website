@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>OSLC Developer Guide</title>
+      <link>http://open-services.net/resources/developing-oslc-applications/</link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
+      <description>Tips for building an OSLC provider, and building an OSLC consumer application.</description>
+    </item>
+    
+    <item>
       <title>OSLC4JS</title>
       <link>http://open-services.net/resources/oslc4js/</link>
       <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>http://open-services.net/resources/website-20170825/</guid>
       <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software</description>
-    </item>
-    
-    <item>
-      <title>Developing OSLC Applications</title>
-      <link>http://open-services.net/resources/developing-oslc-applications/</link>
-      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
-      <description>Tips for building an OSLC provider, and building an OSLC consumer application.</description>
     </item>
     
     <item>

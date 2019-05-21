@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>OSLC Developer Guide</title>
+      <link>http://open-services.net/resources/developing-oslc-applications/</link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
+      <description>Tips for building an OSLC provider, and building an OSLC consumer application.</description>
+    </item>
+    
+    <item>
       <title>Eclipse Lyo 2.4.0 release</title>
       <link>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</link>
       <pubDate>Mon, 26 Nov 2018 21:00:00 +0200</pubDate>
@@ -116,15 +125,6 @@ The Lyo Toolchain Designer plugin is now officially released as part of the Lyo 
       
       <guid>http://open-services.net/contribute/ct-content/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Developing OSLC Applications</title>
-      <link>http://open-services.net/resources/developing-oslc-applications/</link>
-      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
-      <description>Tips for building an OSLC provider, and building an OSLC consumer application.</description>
     </item>
     
     <item>
