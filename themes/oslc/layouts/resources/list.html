@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  
+
   {{ partial "head.html" . }}
 
   <body>
@@ -16,7 +16,7 @@
       <section>
         <div class="container">
           <div class="resources--list">
-            {{ range .Paginator.Pages.ByPublishDate }}
+            {{ range .Paginator.Pages.ByPublishDate.Reverse }}
               {{ partial "resource-single.html" . }}
             {{ end }}
           </div>
@@ -104,7 +104,7 @@
         $(matches).each(function(index, e){
           $(e).css('display', 'block');
         });
-        
+
       }
       $(document).ready(function(){
         var result;
@@ -125,18 +125,18 @@
         $('#filter-by').change(function(){
           var matches = [];
           filterBy = $("select option:selected").text().toLowerCase();
-          
+
           if (filterBy == 'all') {
             $('.resource--item').css('display', 'block');
             $('#resource-hero').css('display', 'block');
           } else {
             $('#resource-hero').css('display', 'none');
-          
+
             $('.resource--item').each(function(index, elem){
               if ($(elem).attr('itemtype') === filterBy){
                 console.info($(elem).attr('itemtype'));
                 $(elem).css('display', 'block');
-                
+
               } else {
                 $(elem).css('display', 'none');
               }
