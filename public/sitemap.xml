@@ -36,17 +36,6 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/resources/tool-20111111/</loc>
-    <lastmod>2018-05-22T23:49:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tool/</loc>
-    <lastmod>2018-05-22T23:49:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://open-services.net/news/2018-eclipse-lyo-2.3.0/</loc>
     <lastmod>2018-03-11T18:17:00+02:00</lastmod>
   </url>
@@ -93,6 +82,12 @@
   <url>
     <loc>http://open-services.net/resources/oslc4js/</loc>
     <lastmod>2017-08-30T15:20:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tool/</loc>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
