@@ -58,13 +58,13 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/why/</loc>
+    <loc>http://open-services.net/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/categories/why/</loc>
+    <loc>http://open-services.net/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -482,11 +482,6 @@
   <url>
     <loc>http://open-services.net/resources/tool-20130121/</loc>
     <lastmod>2013-01-21T20:57:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/resources/tool-20111111/</loc>
-    <lastmod>2011-11-11T20:57:23+02:00</lastmod>
   </url>
   
   <url>

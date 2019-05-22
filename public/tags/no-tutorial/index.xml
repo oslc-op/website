@@ -119,14 +119,5 @@
       <description>A toolkit for developing OSLC consumers and providers for .NET environments</description>
     </item>
     
-    <item>
-      <title>Eclipse Lyo</title>
-      <link>http://open-services.net/resources/tool-20111111/</link>
-      <pubDate>Fri, 11 Nov 2011 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/resources/tool-20111111/</guid>
-      <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
-    </item>
-    
   </channel>
 </rss>
