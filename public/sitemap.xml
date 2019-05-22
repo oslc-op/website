@@ -3,14 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://open-services.net/resources/tool-20111111/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <loc>http://open-services.net/resources/oslc-primer/</loc>
+    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://open-services.net/tags/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tutorial/</loc>
+    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/resources/tool-20111111/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -69,13 +80,13 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/why/</loc>
+    <loc>http://open-services.net/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/categories/why/</loc>
+    <loc>http://open-services.net/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
