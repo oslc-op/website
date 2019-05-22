@@ -13,7 +13,7 @@
   {{ end }}
   {{ if in .Params.tags "presentation" }}
   <div class="resource--header green">
-    <span class="fa fa-line-chart"></span>  
+    <span class="fa fa-line-chart"></span>
     <h3 class="resource--type">Presentation</h3>
   </div>
   {{ end }}
@@ -65,6 +65,10 @@
     <span class="author"><i class="fa fa-calendar"></i> {{ .Date.Format "Jan 2, 2006"}}</span>
   </div>
   <div class="resource--buttons">
-    <a href=" {{ .Permalink }} " class="button">Details</a>
+      {{ if in .Params.tags "external" }}
+      <a href=" {{ .Params.external_uri }} " target="_blank" class="button">Open in a new tab</a>
+      {{ else }}
+      <a href=" {{ .Permalink }} " class="button">Read more</a>
+      {{ end }}
   </div>
 </div>
