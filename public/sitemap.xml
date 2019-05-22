@@ -3,20 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://open-services.net/resources/developing-oslc-applications/</loc>
-    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
+    <loc>http://open-services.net/resources/tool-20111111/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://open-services.net/tags/</loc>
-    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://open-services.net/tags/no-tutorial/</loc>
-    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tool/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/resources/developing-oslc-applications/</loc>
+    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
   </url>
   
   <url>
@@ -58,13 +69,13 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/categories/why/</loc>
+    <loc>http://open-services.net/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/why/</loc>
+    <loc>http://open-services.net/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -82,12 +93,6 @@
   <url>
     <loc>http://open-services.net/resources/oslc4js/</loc>
     <lastmod>2017-08-30T15:20:55+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tool/</loc>
-    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
