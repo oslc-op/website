@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>Eclipse Lyo</title>
+      <link>http://open-services.net/resources/tool-20111111/</link>
+      <pubDate>Tue, 22 May 2018 23:49:00 +0100</pubDate>
+      
+      <guid>http://open-services.net/resources/tool-20111111/</guid>
+      <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
+    </item>
+    
+    <item>
       <title>Eclipse Lyo 2.3.0 release</title>
       <link>http://open-services.net/news/2018-eclipse-lyo-2.3.0/</link>
       <pubDate>Sun, 11 Mar 2018 18:17:00 +0200</pubDate>
