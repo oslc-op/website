@@ -20,5 +20,14 @@
       <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
     </item>
     
+    <item>
+      <title>OSLC Developer Guide</title>
+      <link>http://open-services.net/resources/developing-oslc-applications/</link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
+      <description>All you need to know to build OSLC servers, and/or client applications.</description>
+    </item>
+    
   </channel>
 </rss>
