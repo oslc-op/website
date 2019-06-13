@@ -6,202 +6,14 @@
     <description>Recent content in Tags on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 22:20:00 +0000</lastBuildDate>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 17 Nov 2015 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>tutorial</title>
-      <link>http://open-services.net/tags/tutorial/</link>
-      <pubDate>Wed, 22 May 2019 22:20:00 +0000</pubDate>
-      
-      <guid>http://open-services.net/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>external</title>
-      <link>http://open-services.net/tags/external/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>http://open-services.net/tags/external/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>no-tutorial</title>
-      <link>http://open-services.net/tags/no-tutorial/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>http://open-services.net/tags/no-tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tool</title>
-      <link>http://open-services.net/tags/tool/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>http://open-services.net/tags/tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>website</title>
-      <link>http://open-services.net/tags/website/</link>
-      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>value</title>
-      <link>http://open-services.net/tags/value/</link>
-      <pubDate>Fri, 13 Oct 2017 20:47:03 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/value/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>why</title>
-      <link>http://open-services.net/tags/why/</link>
-      <pubDate>Fri, 13 Oct 2017 20:47:03 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/why/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>article</title>
-      <link>http://open-services.net/tags/article/</link>
-      <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/article/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>workinggroup</title>
-      <link>http://open-services.net/tags/workinggroup/</link>
-      <pubDate>Mon, 26 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/workinggroup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>join</title>
-      <link>http://open-services.net/tags/join/</link>
-      <pubDate>Sun, 25 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/join/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>evangelize</title>
-      <link>http://open-services.net/tags/evangelize/</link>
-      <pubDate>Sat, 24 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/evangelize/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>specifications</title>
-      <link>http://open-services.net/tags/specifications/</link>
-      <pubDate>Fri, 23 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/specifications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>addcontent</title>
-      <link>http://open-services.net/tags/addcontent/</link>
-      <pubDate>Thu, 22 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/addcontent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>share</title>
-      <link>http://open-services.net/tags/share/</link>
-      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/share/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>development</title>
-      <link>http://open-services.net/tags/development/</link>
-      <pubDate>Tue, 20 Jun 2017 20:57:23 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>video</title>
-      <link>http://open-services.net/tags/video/</link>
-      <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>steering committee</title>
-      <link>http://open-services.net/tags/steering-committee/</link>
-      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/steering-committee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>surveys</title>
-      <link>http://open-services.net/tags/surveys/</link>
-      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/surveys/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>core</title>
-      <link>http://open-services.net/tags/core/</link>
-      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/core/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oslc3</title>
-      <link>http://open-services.net/tags/oslc3/</link>
-      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/oslc3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>presentation</title>
-      <link>http://open-services.net/tags/presentation/</link>
-      <pubDate>Tue, 17 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/presentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adapters</title>
+      <title>Adapters</title>
       <link>http://open-services.net/tags/adapters/</link>
       <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
       
@@ -210,7 +22,16 @@
     </item>
     
     <item>
-      <title>announcements</title>
+      <title>Addcontent</title>
+      <link>http://open-services.net/tags/addcontent/</link>
+      <pubDate>Thu, 22 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/addcontent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Announcements</title>
       <link>http://open-services.net/tags/announcements/</link>
       <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
       
@@ -219,70 +40,16 @@
     </item>
     
     <item>
-      <title>plm</title>
-      <link>http://open-services.net/tags/plm/</link>
-      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
+      <title>Article</title>
+      <link>http://open-services.net/tags/article/</link>
+      <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
       
-      <guid>http://open-services.net/tags/plm/</guid>
+      <guid>http://open-services.net/tags/article/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>governance</title>
-      <link>http://open-services.net/tags/governance/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/governance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oasis</title>
-      <link>http://open-services.net/tags/oasis/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/oasis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>working group</title>
-      <link>http://open-services.net/tags/working-group/</link>
-      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/working-group/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>http://open-services.net/tags/software/</link>
-      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tasktop</title>
-      <link>http://open-services.net/tags/tasktop/</link>
-      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/tasktop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>election</title>
-      <link>http://open-services.net/tags/election/</link>
-      <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/election/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>communications</title>
+      <title>Communications</title>
       <link>http://open-services.net/tags/communications/</link>
       <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
       
@@ -291,25 +58,7 @@
     </item>
     
     <item>
-      <title>social</title>
-      <link>http://open-services.net/tags/social/</link>
-      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/social/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>user group</title>
-      <link>http://open-services.net/tags/user-group/</link>
-      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/user-group/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>community</title>
+      <title>Community</title>
       <link>http://open-services.net/tags/community/</link>
       <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
       
@@ -318,43 +67,7 @@
     </item>
     
     <item>
-      <title>members</title>
-      <link>http://open-services.net/tags/members/</link>
-      <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/members/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>http://open-services.net/tags/github/</link>
-      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>meta</title>
-      <link>http://open-services.net/tags/meta/</link>
-      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/meta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>redesign</title>
-      <link>http://open-services.net/tags/redesign/</link>
-      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/redesign/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conferences</title>
+      <title>Conferences</title>
       <link>http://open-services.net/tags/conferences/</link>
       <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
       
@@ -363,7 +76,70 @@
     </item>
     
     <item>
-      <title>ibm</title>
+      <title>Core</title>
+      <link>http://open-services.net/tags/core/</link>
+      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>http://open-services.net/tags/development/</link>
+      <pubDate>Tue, 20 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Election</title>
+      <link>http://open-services.net/tags/election/</link>
+      <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/election/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evangelize</title>
+      <link>http://open-services.net/tags/evangelize/</link>
+      <pubDate>Sat, 24 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/evangelize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>External</title>
+      <link>http://open-services.net/tags/external/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/tags/external/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://open-services.net/tags/github/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Governance</title>
+      <link>http://open-services.net/tags/governance/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/governance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ibm</title>
       <link>http://open-services.net/tags/ibm/</link>
       <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
       
@@ -372,11 +148,236 @@
     </item>
     
     <item>
-      <title>interconnect</title>
+      <title>Interconnect</title>
       <link>http://open-services.net/tags/interconnect/</link>
       <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/tags/interconnect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Join</title>
+      <link>http://open-services.net/tags/join/</link>
+      <pubDate>Sun, 25 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/join/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Members</title>
+      <link>http://open-services.net/tags/members/</link>
+      <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/members/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>http://open-services.net/tags/meta/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>No Tutorial</title>
+      <link>http://open-services.net/tags/no-tutorial/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/tags/no-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oasis</title>
+      <link>http://open-services.net/tags/oasis/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/oasis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oslc3</title>
+      <link>http://open-services.net/tags/oslc3/</link>
+      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/oslc3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plm</title>
+      <link>http://open-services.net/tags/plm/</link>
+      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/plm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>http://open-services.net/tags/presentation/</link>
+      <pubDate>Tue, 17 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redesign</title>
+      <link>http://open-services.net/tags/redesign/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/redesign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Share</title>
+      <link>http://open-services.net/tags/share/</link>
+      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/share/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social</title>
+      <link>http://open-services.net/tags/social/</link>
+      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/social/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://open-services.net/tags/software/</link>
+      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specifications</title>
+      <link>http://open-services.net/tags/specifications/</link>
+      <pubDate>Fri, 23 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/specifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steering Committee</title>
+      <link>http://open-services.net/tags/steering-committee/</link>
+      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/steering-committee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Surveys</title>
+      <link>http://open-services.net/tags/surveys/</link>
+      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/surveys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tasktop</title>
+      <link>http://open-services.net/tags/tasktop/</link>
+      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/tasktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>http://open-services.net/tags/tool/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>http://open-services.net/tags/tutorial/</link>
+      <pubDate>Wed, 22 May 2019 22:20:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>User Group</title>
+      <link>http://open-services.net/tags/user-group/</link>
+      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/user-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Value</title>
+      <link>http://open-services.net/tags/value/</link>
+      <pubDate>Fri, 13 Oct 2017 20:47:03 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/value/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>http://open-services.net/tags/video/</link>
+      <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>http://open-services.net/tags/website/</link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Why</title>
+      <link>http://open-services.net/tags/why/</link>
+      <pubDate>Fri, 13 Oct 2017 20:47:03 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/why/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Working Group</title>
+      <link>http://open-services.net/tags/working-group/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/working-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workinggroup</title>
+      <link>http://open-services.net/tags/workinggroup/</link>
+      <pubDate>Mon, 26 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/workinggroup/</guid>
       <description></description>
     </item>
     

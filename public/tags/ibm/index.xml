@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ibm on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>Ibm on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/ibm/</link>
-    <description>Recent content in ibm on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in Ibm on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 09 Feb 2015 12:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,7 @@
       <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/oslc-ibm-interconnect/</guid>
-      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one.</description>
+      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one. These conferences often contain a number of sessions and events with OSLC connect. As you are building your agenda for the conference, I wanted to highlight my sample agenda which has some key sessions that either talking directly about OSLC activities or other topics that are key to OSLC activities.</description>
     </item>
     
   </channel>
