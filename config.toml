@@ -30,12 +30,6 @@ disqus_url = ""
     name = "Specs"
     identifier = "specifications"
     url  = "/specifications"
-    weight = 2
-
-[[menu.main]]
-    name = "Working Groups"
-    identifier = "wgroups"
-    url = "/workgroups"
     weight = 3
 
 [[menu.main]]
@@ -47,12 +41,12 @@ disqus_url = ""
     name = "News"
     url  = "/news/"
     weight = 5
-        
+
 [[menu.main]]
-    name = "About Us"
+    name = "About"
     identifier = "about"
     url  = "/about"
-    weight = 6
+    weight = 2
 
 
 [[menu.main]]
@@ -65,7 +59,7 @@ disqus_url = ""
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/OSLC"
+    url = "https://github.com/oslc-op"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -73,12 +67,6 @@ disqus_url = ""
     name = "Twitter"
     url = "http://twitter.com/oslcNews"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
-
-[[menu.topbar]]
-    weight = 3
-    name = "Email"
-    url = "mailto:webmaster@open-services.net"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
 
  [params]
 
@@ -116,7 +104,7 @@ disqus_url = ""
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """This is a test site. For now, please refer to <a href="http://open-services.net">open-services.net</a>
       """
 
