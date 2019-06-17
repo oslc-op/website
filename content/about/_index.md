@@ -51,7 +51,7 @@ Current PGB members:
 - Andrew Berezovskyi (co-chair, KTH Royal Institute of Technology)
 - Bill Chown (Siemens)
 - Wesley Coelho (Tasktop Technologies)
-- Axel Reichwein (Axel Reichwein)
+- Axel Reichwein (Koneksys)
 
 ## Technical Steering Committee (TSC)
 
