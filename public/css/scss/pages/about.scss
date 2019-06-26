@@ -1,8 +1,11 @@
 .about_page {
 
   .content--section {
+    margin: 50px 0 70px;
+    padding: 0;
+
     .subtitle {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -14,7 +17,7 @@
       padding: 10px 6%;
     }
   }
-} 
+}
 
 .supporters--wrap {
   margin-bottom: 30px;
@@ -45,7 +48,7 @@
       &:hover {
         cursor: pointer;
       }
-      
+
       a {
         font-size: 18px;
         font-weight: 600;
@@ -68,7 +71,7 @@
   .sub_nav {
     display: none;
   }
-  
+
   .about_page {
     // .m-top {
     //   margin-top: 99px;

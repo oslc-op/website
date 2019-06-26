@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Website on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>website on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/website/</link>
-    <description>Recent content in Website on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in website on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 21 May 2019 10:16:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/website/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +17,7 @@
       <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
-      <description></description>
+      <description>All you need to know to build OSLC servers, and/or client applications.</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@
       <pubDate>Sat, 15 Jul 2017 14:54:23 +0200</pubDate>
       
       <guid>http://open-services.net/resources/website-20170825/</guid>
-      <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software. This has much information relevant for the OSLC community.
-Visit</description>
+      <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software</description>
     </item>
     
     <item>
@@ -37,8 +35,7 @@ Visit</description>
       <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/updated-design-rolling-out-gradually/</guid>
-      <description>As I mentioned almost a year ago, I’ve been plugging away at a new look and feel for this site. I have a project on GitHub; you can open issues or discuss the direction in general; you can look at proposed sample pages.
-And as of today, you’ll be able to see how it looks live. I’ll be rolling out elements of it gradually. There are a number of moving parts and I want to test thoroughly.</description>
+      <description>The updated site is live.</description>
     </item>
     
   </channel>

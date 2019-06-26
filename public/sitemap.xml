@@ -8,8 +8,38 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/</loc>
+    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tutorial/</loc>
+    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/tool-20111111/</loc>
     <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/external/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/no-tutorial/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tool/</loc>
+    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -18,7 +48,18 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/website/</loc>
+    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</loc>
+    <lastmod>2018-11-26T21:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/news/</loc>
     <lastmod>2018-11-26T21:00:00+02:00</lastmod>
   </url>
   
@@ -28,18 +69,37 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/categories/</loc>
+    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://open-services.net/specifications/vocabularies/</loc>
-    <lastmod>2017-10-02T18:23:03+02:00</lastmod>
+    <loc>http://open-services.net/tags/value/</loc>
+    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/workgroups/</loc>
-    <lastmod>2017-09-25T20:13:23+02:00</lastmod>
+    <loc>http://open-services.net/categories/why/</loc>
+    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/why/</loc>
+    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/specifications/vocabularies/</loc>
+    <lastmod>2017-10-02T18:23:03+02:00</lastmod>
   </url>
   
   <url>
@@ -68,6 +128,12 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/article/</loc>
+    <lastmod>2017-07-16T13:24:02+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/website-20170825/</loc>
     <lastmod>2017-07-15T14:54:23+02:00</lastmod>
   </url>
@@ -78,8 +144,20 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/workinggroup/</loc>
+    <lastmod>2017-06-26T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/contribute/ct-join/</loc>
     <lastmod>2017-06-25T20:57:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/join/</loc>
+    <lastmod>2017-06-25T20:57:23+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -88,13 +166,31 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/evangelize/</loc>
+    <lastmod>2017-06-24T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/contribute/ct-specifications/</loc>
     <lastmod>2017-06-23T20:57:23+02:00</lastmod>
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/specifications/</loc>
+    <lastmod>2017-06-23T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/contribute/ct-content/</loc>
     <lastmod>2017-06-22T20:57:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/addcontent/</loc>
+    <lastmod>2017-06-22T20:57:23+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -118,6 +214,12 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/share/</loc>
+    <lastmod>2017-06-21T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/about/</loc>
     <lastmod>2017-06-21T20:46:28+02:00</lastmod>
   </url>
@@ -128,8 +230,20 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/development/</loc>
+    <lastmod>2017-06-20T20:57:23+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/video-20170616-andrew/</loc>
     <lastmod>2017-06-16T09:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/video/</loc>
+    <lastmod>2017-06-16T09:00:00+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -148,8 +262,32 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/steering-committee/</loc>
+    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/surveys/</loc>
+    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/news/oslc3-update-what-how-why-important/</loc>
     <lastmod>2016-03-21T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/core/</loc>
+    <lastmod>2016-03-21T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/oslc3/</loc>
+    <lastmod>2016-03-21T10:00:00+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -163,27 +301,36 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/presentation/</loc>
+    <lastmod>2015-11-17T20:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</loc>
     <lastmod>2015-11-17T10:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://open-services.net/workgroups/core-tc/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
+    <loc>http://open-services.net/tags/adapters/</loc>
+    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/workgroups/domains/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
+    <loc>http://open-services.net/tags/announcements/</loc>
+    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/plm/</loc>
+    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://open-services.net/resources/video-20151109-1/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/workgroups/steering-committee/</loc>
     <lastmod>2015-11-09T20:00:00+02:00</lastmod>
   </url>
   
@@ -208,109 +355,20 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/software/</loc>
+    <lastmod>2015-11-09T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tasktop/</loc>
+    <lastmod>2015-11-09T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</loc>
     <lastmod>2015-10-06T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/news/communication-user-group-is-back/</loc>
-    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</loc>
-    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/news/updated-design-rolling-out-gradually/</loc>
-    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/news/oslc-ibm-interconnect/</loc>
-    <lastmod>2015-02-09T12:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/resources/tool-20130121/</loc>
-    <lastmod>2013-01-21T20:57:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/ns/readme/</loc>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/specifications/archive/core-2.0/readme/</loc>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/specifications/archive/core-2.0/</loc>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/adapters/</loc>
-    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/addcontent/</loc>
-    <lastmod>2017-06-22T20:57:23+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/announcements/</loc>
-    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/specifications/archive/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/article/</loc>
-    <lastmod>2017-07-16T13:24:02+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/communications/</loc>
-    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/community/</loc>
-    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/conferences/</loc>
-    <lastmod>2015-02-09T12:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/core/</loc>
-    <lastmod>2016-03-21T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/development/</loc>
-    <lastmod>2017-06-20T20:57:23+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -320,15 +378,54 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/evangelize/</loc>
-    <lastmod>2017-06-24T20:57:23+02:00</lastmod>
+    <loc>http://open-services.net/tags/oasis/</loc>
+    <lastmod>2015-10-06T10:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/external/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <loc>http://open-services.net/news/communication-user-group-is-back/</loc>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/communications/</loc>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/social/</loc>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/user-group/</loc>
+    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/community/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/members/</loc>
+    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/news/updated-design-rolling-out-gradually/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -338,8 +435,25 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/governance/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
+    <loc>http://open-services.net/tags/meta/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/redesign/</loc>
+    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/news/oslc-ibm-interconnect/</loc>
+    <lastmod>2015-02-09T12:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/conferences/</loc>
+    <lastmod>2015-02-09T12:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -356,31 +470,27 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/join/</loc>
-    <lastmod>2017-06-25T20:57:23+02:00</lastmod>
+    <loc>http://open-services.net/resources/tool-20130121/</loc>
+    <lastmod>2013-01-21T20:57:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/ns/readme/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/members/</loc>
-    <lastmod>2015-08-11T10:00:00+02:00</lastmod>
+    <loc>http://open-services.net/specifications/archive/core-2.0/readme/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/meta/</loc>
-    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
+    <loc>http://open-services.net/specifications/archive/core-2.0/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/news/</loc>
-    <lastmod>2018-11-26T21:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/no-tutorial/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
+    <loc>http://open-services.net/specifications/archive/</loc>
     <priority>0</priority>
   </url>
   
@@ -390,145 +500,7 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/oasis/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/oslc3/</loc>
-    <lastmod>2016-03-21T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/plm/</loc>
-    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/presentation/</loc>
-    <lastmod>2015-11-17T20:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/redesign/</loc>
-    <lastmod>2015-03-06T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/share/</loc>
-    <lastmod>2017-06-21T20:57:23+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/social/</loc>
-    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/software/</loc>
-    <lastmod>2015-11-09T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/specifications/</loc>
-    <lastmod>2017-06-23T20:57:23+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://open-services.net/specifications/</loc>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/steering-committee/</loc>
-    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/surveys/</loc>
-    <lastmod>2016-06-21T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/</loc>
-    <lastmod>2015-11-17T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tasktop/</loc>
-    <lastmod>2015-11-09T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tool/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tutorial/</loc>
-    <lastmod>2019-05-22T22:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/user-group/</loc>
-    <lastmod>2015-08-18T10:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/value/</loc>
-    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/video/</loc>
-    <lastmod>2017-06-16T09:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/website/</loc>
-    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/categories/why/</loc>
-    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/why/</loc>
-    <lastmod>2017-10-13T20:47:03+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/working-group/</loc>
-    <lastmod>2015-11-09T20:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/workinggroup/</loc>
-    <lastmod>2017-06-26T20:57:23+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
