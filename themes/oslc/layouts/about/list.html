@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  
+
   {{ partial "head.html" . }}
 
   <body>
@@ -12,10 +12,9 @@
       {{ partial "hero.html" . }}
 
       <nav class="sub_nav">
-        <a href="#mission" class="sub_nav--item active">Mission</a>
-        <a href="#people" class="sub_nav--item">Leadership</a>
-        <a href="#governing" class="sub_nav--item">Project Governing Board</a>
-        <a href="#committee" class="sub_nav--item">Technical Steering Committee</a>
+        <a href="#mission" class="sub_nav--item">Mission</a>
+        <a href="#participation" class="sub_nav--item">Participation</a>
+        <a href="#governance" class="sub_nav--item">Governance</a>
         <a href="#sponsors" class="sub_nav--item">Sponsors</a>
         <a href="#faq" class="sub_nav--item">FAQ</a>
       </nav>
@@ -24,58 +23,34 @@
         <div class="container">
           <h2 class="headline">{{ .Params.mission_title }}</h2>
           <p class="subtitle">{{ .Params.mission_subtitle }}</p>
-          {{ range $index, $paragraphs := .Params.mission_content }}
-            <p>{{ $paragraphs }}</p>
-          {{ end }}
-          <p class="text-center">
-            OSLC is an <a href="https://oasis-open-projects.org/" target="_blank">OASIS Open Project</a>
-          </p>
+
+          {{ .Params.mission_body | markdownify }}
+      </section>
+
+      <section id="participation-anchor" class="content--section participation">
+        <div class="container">
+          <h2 class="headline">{{ .Params.participation_title }}</h2>
+          <p class="subtitle">{{ .Params.participation_subtitle }}</p>
+
+          {{ .Params.participation_body | markdownify }}
         </div>
       </section>
 
-      <section id="people-anchor" class="content--section people">
+
+      <section id="leadership-anchor" class="content--section leadership">
         <div class="container">
-          <h2 class="headline">{{ .Params.people_title }}</h2>
-          <p class="subtitle">{{ .Params.people_subtitle }}</p>
-          <p class="text-center big__paragraph">
-            <a href="mailto:communications@oasis-open.org?subject=OSLC%20Project%20Governing%20Board" target="_blank">Contact OASIS</a> for more information about joining the OSLC Project Governing Board or the OSLC Technical Steering Committee.
-          </p>
-          <!-- <div class="row--list">
-            {{range $index, $member := .Params.members}}
-              {{ $company := index $.Params.company $index }}
-              <div class="item">
-                <p class="bigger">{{ $member }}</p>
-                <p>{{ $company }}</p>
-              </div>
-            {{ end }}
-          </div> -->
+          <h2 class="headline">{{ .Params.leadership_title }}</h2>
+          <p class="subtitle">{{ .Params.leadership_subtitle }}</p>
+
+          {{ .Params.leadership_body | markdownify }}
         </div>
       </section>
 
-      <section id="governing-anchor" class="content--section governing">
-        <div class="container">
-          <h2 class="headline">{{ .Params.governing_title }}</h2>
-          <p class="subtitle">{{ .Params.governing_subtitle }}</p>
-          <div class="text-center">
-            {{range $index, $member := .Params.governing_members}}
-              {{ $company := index $.Params.governing_company $index }}
-                <p class="big__paragraph">{{ $member }}, {{ $company }}</p>
-            {{ end }}
-          </div>
-        </div>
-      </section>
-
-      <section id="committee-anchor" class="content--section committee">
-        <div class="container">
-          <h2 class="headline">{{ .Params.committee_title }}</h2>
-          <p class="subtitle">{{ .Params.committee_subtitle }}</p>
-        </div>
-      </section>
 
       <section id="sponsors-anchor" class="content--section sponsors section--supporters">
         <div class="container">
           <h2 class="headline">{{ .Params.sponsors_title }}</h2>
-          <p class="subtitle">{{ .Params.sponsors_subtitle }}</p>
+          <p>{{ .Params.sponsors_subtitle }}</p>
 
 
           <div class="sponsors--wrap">
@@ -98,7 +73,16 @@
               </p>
             </div>
           </div>
-        </div>  
+        </div>
+      </section>
+
+      <section id="history-anchor" class="content--section history">
+        <div class="container">
+          <h2 class="headline">{{ .Params.history_title }}</h2>
+          <p class="subtitle">{{ .Params.history_subtitle }}</p>
+
+          {{ .Params.history_body | markdownify }}
+        </div>
       </section>
 
       <section id="faq-anchor" class="content--section faq">
@@ -113,7 +97,7 @@
                   <a class="collapse-toggle" data-target="#answer{{ $index }}">{{ $question }}</a>
                 </div>
                 <div id="answer{{ $index }}" class="answer">
-                  <p>{{ $answer }}</p>
+                  <p>{{ $answer | markdownify }}</p>
                 </div>
               </div>
             {{ end }}
