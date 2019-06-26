@@ -8,12 +8,12 @@
   &.gray {
     background: $gray-background;
   }
-  
+
   &.light-blue-gradient {
     background: -moz-linear-gradient(275deg, $oslc-light-blue 0%, $purple 50%, $oslc-dark-blue 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(275deg, $oslc-light-blue 0%,$purple 50%,$oslc-dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(175deg, $oslc-light-blue 0%,$purple 50%,$oslc-dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
-    
+
     .headline, .subtitle, p, span {
       color: $white;
     }
@@ -104,7 +104,7 @@
             width: 100%;
           }
         }
-        
+
         .item--text {
           margin-top: 35px;
 
@@ -130,7 +130,7 @@
 
   position: fixed;
   top: 115px;
-  
+
   width: 100%;
 
   background: $oslc-light-blue;
