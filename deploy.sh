@@ -2,6 +2,9 @@
 
 echo "Starting Deployment"
 
+git checkout master
+git push origin master
+
 echo "Switch to Production"
 git checkout production
 
