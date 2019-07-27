@@ -23,8 +23,9 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 | Title | Publisher | Description |
 |-------|--------------------|-------------|
-| [Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html) | OSLC Core TC (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
-| [Core 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/core/oslc-core.html) | OSLC OP | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
+| [Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html) | OSLC Core TC (closed) | Latest published draft of the OSLC 3 specification. |
+| [Core 2.0 Final](https://archive.open-services.net/bin/view/Main/OslcCoreSpecification.html) | OSLC Core WG (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
+| [Core 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/core/oslc-core.html) | OSLC OP | Current working draft of the OSLC 3 specification. |
 | [Query 3.0 CSPRD 01](https://docs.oasis-open.org/oslc-core/oslc-query/v3.0/csprd01/oslc-query-v3.0-csprd01.html) | OSLC Core TC (closed) | Defines a simple, implementation independent selection and projection query capability. |
 | [Query 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/query/oslc-query.html) | OSLC OP | Defines a simple, implementation independent selection and projection query capability. |
 | [Tracked Resource Set 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/trs/tracked-resource-set.html) | OSLC OP | Allows servers to expose a set of resources whose state can be tracked by clients. |
