@@ -6,10 +6,20 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2018 21:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 11:05:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OSLC Open Project announcement</title>
+      <link>http://open-services.net/news/0903-open-project/</link>
+      <pubDate>Tue, 03 Sep 2019 11:05:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/0903-open-project/</guid>
+      <description>We are pleased to announce a big step forward for OSLC!
+The most exciting thing that we heard throughout the OSLCfest 2018 conference was that people were eager to contribute and were asking for a simpler, more streamlined way to provide contributions and make their voices heard. After exploring several alternatives, the OSLC Steering Committee decided to shift ongoing work from the OASIS Technical Committees to a new OSLC Open Project under the recently-announced OASIS Open Project program.</description>
+    </item>
     
     <item>
       <title>Eclipse Lyo 2.4.0 release</title>

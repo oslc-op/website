@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://open-services.net/news/</loc>
+    <lastmod>2019-09-03T11:05:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/news/0903-open-project/</loc>
+    <lastmod>2019-09-03T11:05:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/oslc-primer/</loc>
     <lastmod>2019-05-22T22:20:00+00:00</lastmod>
   </url>
@@ -39,11 +49,6 @@
   
   <url>
     <loc>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</loc>
-    <lastmod>2018-11-26T21:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/news/</loc>
     <lastmod>2018-11-26T21:00:00+02:00</lastmod>
   </url>
   
