@@ -3,6 +3,7 @@
 echo "Starting Deployment"
 
 git checkout master
+rm -rf public/
 git pull origin master
 git push origin master
 
