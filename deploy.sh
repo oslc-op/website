@@ -3,7 +3,8 @@
 echo "Starting Deployment"
 
 git checkout master
-git push origin master
+git pull master
+#git push origin master
 
 echo "Switch to Production"
 git checkout production
@@ -15,6 +16,7 @@ echo "Merging changes from Master"
 git pull --rebase=false --no-edit origin master
 
 echo "Generate Hugo site"
+rm -rf public/
 hugo -b http://open-services.net/ -t oslc
 
 echo "Commiting changes"
