@@ -4,7 +4,7 @@ echo "Starting Deployment"
 
 git checkout master
 git pull origin master
-#git push origin master
+git push origin master
 
 echo "Switch to Production"
 git checkout production
