@@ -1,3 +1,6 @@
+# accidental deploy on master
+/public/
+
 .DS_Store
 *.swp
 node_modules
@@ -8,5 +11,11 @@ themes/oslc/static/css/.sass-cache
 *.sass-cache
 themes/oslc/static/css/oslc.css.map
 .idea
+<<<<<<< HEAD
 *.css.map
 *.sh
+||||||| merged common ancestors
+*.css.map
+=======
+*.css.map
+>>>>>>> b7d142807c826eee4d0b4a3b0062fb8f9ae60e73
