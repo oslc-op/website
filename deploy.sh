@@ -3,7 +3,7 @@
 echo "Starting Deployment"
 
 git checkout master
-git pull master
+git pull origin master
 #git push origin master
 
 echo "Switch to Production"
@@ -13,7 +13,7 @@ echo "Updating Production branch"
 git pull --rebase=false origin production
 
 echo "Merging changes from Master"
-git pull --rebase=false --no-edit origin master
+git pull --rebase=false --no-edit -s recursive -X theirs origin master
 
 echo "Generate Hugo site"
 rm -rf public/
