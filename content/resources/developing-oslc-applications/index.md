@@ -7,4 +7,5 @@ tags = ["website", "no-tutorial", "external"]
 title = "OSLC Developer Guide"
 summary = "All you need to know to build OSLC servers, and/or client applications."
 external_uri = "https://oslc.github.io/developing-oslc-applications/"
+headless = true
 +++
