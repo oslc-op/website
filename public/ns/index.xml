@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ns on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/ns/</link>
+    <description>Recent content in Ns on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://open-services.net/ns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://open-services.net/ns/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/ns/readme/</guid>
+      <description> Converting RDF files Use Jena command line tools to produce the files in other formats:
+riot --output turtle core.rdf &amp;gt; core.ttl  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Services for Lifecycle Collaboration on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/</link>
+    <description>Recent content in Open Services for Lifecycle Collaboration on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Jun 2017 20:57:23 +0200</lastBuildDate>
+    
+	<atom:link href="http://open-services.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSLC Primer</title>
+      <link>http://open-services.net/resources/oslc-primer/</link>
+      <pubDate>Wed, 22 May 2019 22:20:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/oslc-primer/</guid>
+      <description>Introduction to developing OSLC solutions</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo</title>
+      <link>http://open-services.net/resources/tool-20111111/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/tool-20111111/</guid>
+      <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo 2.4.0 release</title>
+      <link>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</link>
+      <pubDate>Mon, 26 Nov 2018 21:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</guid>
+      <description>Short summary Migration to Github is complete; Lyo now supports JSON-LD and Turtle; Lyo Designer generates OpenAPI/Swagger docs and adds modelling support for SHACL shapes. Lyo 2.4 is expected to be the last 2.x release. We also make a switch to a better changelog convention.
+✨ Added  JSON-LD support has been added to Lyo Core. Thanks to Ricardo Javier Herrera Ledesma from Koneksys for his effort! Lyo Designer now allows modelling SHACL shapes.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo 2.3.0 release</title>
+      <link>http://open-services.net/news/2018-eclipse-lyo-2.3.0/</link>
+      <pubDate>Sun, 11 Mar 2018 18:17:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/2018-eclipse-lyo-2.3.0/</guid>
+      <description>Dear Lyo users,
+It is my pleasure to announce on behalf of the project team that Lyo 2.3.0 has been released! 🚀
+The release artefacts are available on Maven and the Eclipse plugins are available from Lyo P2 repository.
+Notable changes:
+ 🔥 switch the SDK to use Jena 3.0 🔧 many improvements to Lyo Designer and code generator, including vocabulary modelling view, Turtle support out of the box and switch to user-friendly Bootstrap templates.</description>
+    </item>
+    
+    <item>
+      <title>OSLC4JS</title>
+      <link>http://open-services.net/resources/oslc4js/</link>
+      <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/oslc4js/</guid>
+      <description>OSLC4JS is a set of related open source projects that support the creation and integration of OSLC-based client and server applications that leverage JavaScript and Node.js capabilities.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo 2.2.0 release</title>
+      <link>http://open-services.net/news/2017-eclipse-lyo-2.2.0/</link>
+      <pubDate>Thu, 03 Aug 2017 18:17:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/2017-eclipse-lyo-2.2.0/</guid>
+      <description>We are delighted to announce today the Lyo 2.2.0 release! The artefacts are available immediately from the Eclipse maven repository, the Lyo Toolchain Designer is available for download from the Lyo P2 update site.
+Main features of the 2.2.0 release are:
+✨ Lyo Toolchain Designer plugin
+The Lyo Toolchain Designer plugin is now officially released as part of the Lyo project. Toolchain Designer allows you to graphically model a complete OSLC toolchain (including interactions between OSLC servers and clients), as well as a single server and/or client.</description>
+    </item>
+    
+    <item>
+      <title>Debunking the OSLC Link-Only Myth</title>
+      <link>http://open-services.net/resources/article-20170715/</link>
+      <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/article-20170715/</guid>
+      <description>Integrating tools via standard interfaces</description>
+    </item>
+    
+    <item>
+      <title>Beyond PLM</title>
+      <link>http://open-services.net/resources/website-20170825/</link>
+      <pubDate>Sat, 15 Jul 2017 14:54:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/website-20170825/</guid>
+      <description>A blog, by Oleg Shilovitsky, for the community of people looking for information about Engineering and Manufacturing Software</description>
+    </item>
+    
+    <item>
+      <title>Working Groups</title>
+      <link>http://open-services.net/contribute/ct-groups/</link>
+      <pubDate>Mon, 26 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-groups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Join the Conversation</title>
+      <link>http://open-services.net/contribute/ct-join/</link>
+      <pubDate>Sun, 25 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-join/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evangelise</title>
+      <link>http://open-services.net/contribute/ct-evangelise/</link>
+      <pubDate>Sat, 24 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-evangelise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Specifications</title>
+      <link>http://open-services.net/contribute/ct-specifications/</link>
+      <pubDate>Fri, 23 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-specifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Add to this Site</title>
+      <link>http://open-services.net/contribute/ct-content/</link>
+      <pubDate>Thu, 22 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Share</title>
+      <link>http://open-services.net/contribute/ct-share/</link>
+      <pubDate>Wed, 21 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-share/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>http://open-services.net/contribute/ct-development/</link>
+      <pubDate>Tue, 20 Jun 2017 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/contribute/ct-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New and updated tools in Eclipse Lyo: Toolchain Designer &amp; Lyo Store</title>
+      <link>http://open-services.net/resources/video-20170616-andrew/</link>
+      <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20170616-andrew/</guid>
+      <description>The latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo 2.1.2 release</title>
+      <link>http://open-services.net/news/2017-eclipse-lyo-2.1.2/</link>
+      <pubDate>Fri, 17 Mar 2017 23:21:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/2017-eclipse-lyo-2.1.2/</guid>
+      <description>Eclipse Lyo 2.1.2 is the first release since 2013 done by the new release team and fixes many issues in Lyo Core &amp;amp; Lyo Client.</description>
+    </item>
+    
+    <item>
+      <title>ALM-PLM Interoperability Survey</title>
+      <link>http://open-services.net/news/alm-plm-interoperability-survey/</link>
+      <pubDate>Mon, 27 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/alm-plm-interoperability-survey/</guid>
+      <description>Please participate in this survey, the results will help to initiate the ALM-PLM Interoperability Workflow Forum from the ProSTEP iViP Association</description>
+    </item>
+    
+    <item>
+      <title>OLSC Survey Provides Insights into Needs for Software Integration Standards</title>
+      <link>http://open-services.net/news/oslc-survey-provides-insights-software-integration-standards/</link>
+      <pubDate>Tue, 21 Jun 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslc-survey-provides-insights-software-integration-standards/</guid>
+      <description>The OSLC steering committee is gathering feedback from the community to help shape the future vision and mission for OSLC.</description>
+    </item>
+    
+    <item>
+      <title>OSLC3 Update: What is it, how is it different, and why is it important?</title>
+      <link>http://open-services.net/news/oslc3-update-what-how-why-important/</link>
+      <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslc3-update-what-how-why-important/</guid>
+      <description>The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC through collaborating organizations to provide the standards, APIs and tools that support integrated product, system and application lifecycle management.</description>
+    </item>
+    
+    <item>
+      <title>Linked Data and OSLC for Tool Interoperability</title>
+      <link>http://open-services.net/resources/video-20151118-jad-ecs/</link>
+      <pubDate>Wed, 18 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151118-jad-ecs/</guid>
+      <description>Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC</description>
+    </item>
+    
+    <item>
+      <title>PROSTEP OpenPDM OSLC Adapter Product Overview</title>
+      <link>http://open-services.net/resources/presentation-20171117/</link>
+      <pubDate>Tue, 17 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/presentation-20171117/</guid>
+      <description>The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems.</description>
+    </item>
+    
+    <item>
+      <title>PROSTEP AG Announces OpenPDM OSLC Adapter</title>
+      <link>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
+      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
+      <description>OpenPDM OSLC Adapter enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones.</description>
+    </item>
+    
+    <item>
+      <title>Get IBM RTC and HP ALM To Blend Together Like Peanut Butter and Jelly</title>
+      <link>http://open-services.net/resources/video-20151109-1/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151109-1/</guid>
+      <description>Webinar on integrating HP ALM and IBM RTC</description>
+    </item>
+    
+    <item>
+      <title>Tasktop: Helping a Center of Excellence live up to its name</title>
+      <link>http://open-services.net/resources/presentation-20171109/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/presentation-20171109/</guid>
+      <description>Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.</description>
+    </item>
+    
+    <item>
+      <title>Why Integration requires a combination of linking and syncing</title>
+      <link>http://open-services.net/resources/article-20151109/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/article-20151109/</guid>
+      <description>Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement.</description>
+    </item>
+    
+    <item>
+      <title>Tear Down the Walls Between Requirements, Development and Testing</title>
+      <link>http://open-services.net/resources/video-20151109-2/</link>
+      <pubDate>Mon, 09 Nov 2015 19:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151109-2/</guid>
+      <description>How Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync</description>
+    </item>
+    
+    <item>
+      <title>Learn more about Tasktop Sync 4.3 (July 2015)</title>
+      <link>http://open-services.net/news/learn-more-about-tasktop-sync/</link>
+      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/learn-more-about-tasktop-sync/</guid>
+      <description>Tasktop announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.</description>
+    </item>
+    
+    <item>
+      <title>New OASIS OSLC Steering Committee Announced</title>
+      <link>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</link>
+      <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</guid>
+      <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded.</description>
+    </item>
+    
+    <item>
+      <title>Extra, Extra, Communication User Group is Back</title>
+      <link>http://open-services.net/news/communication-user-group-is-back/</link>
+      <pubDate>Tue, 18 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/communication-user-group-is-back/</guid>
+      <description>The Open Services Communication User Group held its kickoff call on August 13. The team is positioned to highlight integration successes and communicate the benefits of OSLC.</description>
+    </item>
+    
+    <item>
+      <title>OASIS OSLC Steering Committee Elections Coming Soon</title>
+      <link>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</link>
+      <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
+      <description>If you&amp;rsquo;re interested in working with other leaders in this space and helping influence the direction and expansion of OSLC, consider becoming a member of OASIS OSLC Steering Committee.</description>
+    </item>
+    
+    <item>
+      <title>Pardon our dust: updated design rolling out gradually</title>
+      <link>http://open-services.net/news/updated-design-rolling-out-gradually/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/updated-design-rolling-out-gradually/</guid>
+      <description>The updated site is live.</description>
+    </item>
+    
+    <item>
+      <title>OSLC at IBM InterConnect 2015</title>
+      <link>http://open-services.net/news/oslc-ibm-interconnect/</link>
+      <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslc-ibm-interconnect/</guid>
+      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one.</description>
+    </item>
+    
+    <item>
+      <title>OSLC4Net</title>
+      <link>http://open-services.net/resources/tool-20130121/</link>
+      <pubDate>Mon, 21 Jan 2013 20:57:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/tool-20130121/</guid>
+      <description>A toolkit for developing OSLC consumers and providers for .NET environments</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://open-services.net/ns/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/ns/readme/</guid>
+      <description> Converting RDF files Use Jena command line tools to produce the files in other formats:
+riot --output turtle core.rdf &amp;gt; core.ttl  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://open-services.net/specifications/archive/core-2.0/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/specifications/archive/core-2.0/readme/</guid>
+      <description>The conversion is done via:
+pandoc --from twiki --to markdown_mmd -o _index.md source.twiki  </description>
+    </item>
+    
+  </channel>
+</rss>

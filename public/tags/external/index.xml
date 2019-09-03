@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>external on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/external/</link>
+    <description>Recent content in external on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2019 22:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://open-services.net/tags/external/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Eclipse Lyo</title>
+      <link>http://open-services.net/resources/tool-20111111/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/tool-20111111/</guid>
+      <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
+    </item>
+    
+    <item>
+      <title>OSLC Developer Guide</title>
+      <link></link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid></guid>
+      <description>All you need to know to build OSLC servers, and/or client applications.</description>
+    </item>
+    
+  </channel>
+</rss>

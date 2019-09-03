@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/tutorial/</link>
+    <description>Recent content in tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 May 2019 22:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://open-services.net/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSLC Primer</title>
+      <link>http://open-services.net/resources/oslc-primer/</link>
+      <pubDate>Wed, 22 May 2019 22:20:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/oslc-primer/</guid>
+      <description>Introduction to developing OSLC solutions</description>
+    </item>
+    
+  </channel>
+</rss>

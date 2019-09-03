@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conferences on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/conferences/</link>
+    <description>Recent content in conferences on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Feb 2015 12:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://open-services.net/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSLC at IBM InterConnect 2015</title>
+      <link>http://open-services.net/news/oslc-ibm-interconnect/</link>
+      <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslc-ibm-interconnect/</guid>
+      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one.</description>
+    </item>
+    
+  </channel>
+</rss>
