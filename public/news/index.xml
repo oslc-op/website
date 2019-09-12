@@ -6,10 +6,20 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Sep 2019 11:05:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 18:05:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OSLC Open Project first spec draft publication</title>
+      <link>http://open-services.net/news/0912-cm-psd03/</link>
+      <pubDate>Thu, 12 Sep 2019 18:05:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/0912-cm-psd03/</guid>
+      <description>We finally have some great news to share! After starting the OSLC Open Project in May 2019 and having a long summer with various people being off for vacations, we have prepared the first specification for publication, updated the templates and fixed major outstanding issues. The OSLC OP Project Governing Board has approved the publication of the Change Management 2.1 PSD (Project Specification Draft) 03.
+This specification defines the OSLC Change Management domain, a RESTful web services interface for the management of product change requests, activities, tasks and relationships between those and related resources such as requirements, test cases, or architectural resources.</description>
+    </item>
     
     <item>
       <title>OSLC Open Project announcement</title>
