@@ -1,0 +1,67 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rddl:  <http://www.rddl.org/> .
+
+<http://open-services.net/ns/basicProfile#Page>
+        a                 rdfs:Class ;
+        rdfs:comment      "A resource that represents a limited set of members of a Basic Profile Container." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "Page" .
+
+<http://open-services.net/ns/basicProfile/ldbp.rdf>
+        rddl:nature  rdfs: .
+
+<http://open-services.net/ns/basicProfile#pageOf>
+        a                 rdf:Property ;
+        rdfs:comment      "Associated a page with its container." ;
+        rdfs:domain       <http://open-services.net/ns/basicProfile#Page> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "pageOf" ;
+        rdfs:range        <http://open-services.net/ns/basicProfile#Container> .
+
+<http://open-services.net/ns/basicProfile#membershipPredicate>
+        a                 rdf:Property ;
+        rdfs:comment      "Indicates which predicate of the container should be used to determine the membership.\n\t\t" ;
+        rdfs:domain       <http://open-services.net/ns/basicProfile#Container> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "membershipPredicate" ;
+        rdfs:range        rdf:Property .
+
+<http://open-services.net/ns/basicProfile#Container>
+        a                 rdfs:Class ;
+        rdfs:comment      "A Basic Profile Resource (BPR) that also conforms to additional patterns \n\t\tand conventions in this document for managing membership." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "Container" .
+
+<http://open-services.net/ns/basicProfile#membershipSubject>
+        a                 rdf:Property ;
+        rdfs:comment      "Indicates which resource is the subject for the members of the container.\n\t\t" ;
+        rdfs:domain       <http://open-services.net/ns/basicProfile#Container> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "membershipSubject" ;
+        rdfs:range        rdf:Property .
+
+<http://open-services.net/ns/basicProfile#nextPage>
+        a                 rdf:Property ;
+        rdfs:comment      "From a known page, how to indicate the next or last page as rdf:nil.\n\t\t" ;
+        rdfs:domain       <http://open-services.net/ns/basicProfile#Page> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "nextPage" ;
+        rdfs:range        rdfs:Resource .
+
+<http://open-services.net/ns/basicProfile#>
+        a                    owl:Ontology ;
+        rdfs:label           "Linked Data Basic Profile (LDBP)" ;
+        rdfs:seeAlso         <http://open-services.net/ns/basicProfile/ldbp.rdf> , <http://www.ibm.com/developerworks/rational/library/basic-profile-linked-data/> , <http://www.w3.org/2011/09/LinkedData/> ;
+        dcterms:description  "\n\t\t\tAll vocabulary URIs defined in the Linked Data Basic Profile (LDBP) namespace.\n\t\t"^^rdf:XMLLiteral ;
+        dcterms:title        "The Linked Data Basic Profile (LDBP) Vocabulary\n\t\t" .
+
+<http://open-services.net/ns/basicProfile#containerSortPredicates>
+        a                 rdf:Property ;
+        rdfs:comment      "List of predicates that indicate the ascending order of the members in a page.\n\t\t" ;
+        rdfs:domain       <http://open-services.net/ns/basicProfile#Page> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/basicProfile#> ;
+        rdfs:label        "containerSortPredicates" ;
+        rdfs:range        rdf:List .

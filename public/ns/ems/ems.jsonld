@@ -160,20 +160,27 @@
     "label" : "service",
     "seeAlso" : "http://open-services.net/bin/view/Main/MetricsEMS10RestApiDataModel"
   } ],
-  "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "@id"
     },
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
       "@type" : "@id"
     },
-    "description" : "http://purl.org/dc/terms/description",
-    "title" : "http://purl.org/dc/terms/title",
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl" : "http://www.w3.org/2002/07/owl#",
     "dcterms" : "http://purl.org/dc/terms/",

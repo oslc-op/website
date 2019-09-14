@@ -242,27 +242,40 @@
     },
     "seeAlso" : "http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource"
   } ],
-  "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "@id"
     },
-    "modified" : "http://purl.org/dc/terms/modified",
-    "issued" : "http://purl.org/dc/terms/issued",
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
       "@type" : "@id"
     },
-    "description" : "http://purl.org/dc/terms/description",
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "hasBasicShape" : {
       "@id" : "http://open-services.net/ns/core#hasBasicShape",
       "@type" : "@id"
     },
-    "publisher" : "http://purl.org/dc/terms/publisher",
-    "title" : "http://purl.org/dc/terms/title",
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",

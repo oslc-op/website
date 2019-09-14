@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-services.net/ns/readme/</guid>
-      <description> Converting RDF files Use Jena command line tools to produce the files in other formats:
+      <description> Canonical sources  AM: XML Asset: XML Automation: XML LDBP: XML CM: XML Config: Turtle Core: XML EMS: XML Perfmon: XML QM: XML RM: XML  Converting RDF files Use Jena command line tools to produce the files in other formats:
 riot --output turtle core.rdf &amp;gt; core.ttl  </description>
     </item>
     

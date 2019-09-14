@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $('.archive-link').attr('href','http://archive.oslc.co'+location.pathname);
+  $('.archive-link').attr('href','https://archive.open-services.net'+location.pathname);
 })
