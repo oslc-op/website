@@ -89,6 +89,12 @@ img[data-src] {
   opacity: 0;
 }
 
+blockquote {
+  background-color: $gray-background;
+  padding: 5px 20px;
+  border-left: 5px $oslc-dark-blue solid;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1024px;

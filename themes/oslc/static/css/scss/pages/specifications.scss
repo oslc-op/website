@@ -1,7 +1,7 @@
 .specifications {
   margin: 40px 0 60px;
   background: $white;
-  
+
   .title {
     margin: 50px 0;
   }
@@ -9,6 +9,7 @@
   h1,h2,h3 {
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 20px;
   }
 
   p {
@@ -25,7 +26,8 @@
   }
 
   table {
-    margin: 20px 0;
+    width: inherit;
+    margin: 20px auto;
 
     tr {
       background: transparent;
