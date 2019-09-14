@@ -23,14 +23,14 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                             |
 | ----------------------: | :---------------------------------|
-| **Deployed vocabulary** | Core 2.0 Final                     |
-| **Publication date**    | ???                               |
+| **Deployed vocabulary** | Core 2.0 Final                    |
+| **Publication date**    | 30 May 2013                       |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
-| **Recommended prefix**  |`core`                             |
+| **Recommended prefix**  |`oslc`                             |
 | **Namespace URI**       |`http://open-services.net/ns/core#`|
-| **Turtle prefix**       |`@prefix core: <http://open-services.net/ns/core#>`|
-| **SPARQL prefix**       |`PREFIX core: <http://open-services.net/ns/core#>` |
-| **OSLC Query prefix**   |`core%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fcore%23` |
+| **Turtle prefix**       |`@prefix oslc: <http://open-services.net/ns/core#>`|
+| **SPARQL prefix**       |`PREFIX oslc: <http://open-services.net/ns/core#>` |
+| **OSLC Query prefix**   |`oslc%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fcore%23` |
 | **Specified Vocabulary**| [Core 2.0 Final vocabulary][core]     |
 
 ### OSLC Change Management
@@ -38,8 +38,8 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
 | **Deployed vocabulary** | CM 2.0 Final                                   |
-| **Publication date**    | ???                                            |
-| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Publication date**    | 19 November 2010 (errata 03 October 2013)          |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**     |
 | **Recommended prefix**  |`oslc_cm`                                           |
 | **Namespace URI**       |`http://open-services.net/ns/cm#`                   |
 | **Turtle prefix**       |`@prefix oslc_cm: <http://open-services.net/ns/cm#>`|
@@ -75,11 +75,11 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **OSLC Query prefix**   |`oslc_qm%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fqm%23` |
 | **Specified Vocabulary**| [QM 2.0 Final vocabulary][qm]                          |
 
-### OSLC Config
+### OSLC Configuration Management
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | CfgM 1.0 WD 01 (14 Sep 2019)                   |
+| **Deployed vocabulary** | CfgM 1.0 WD 01 (14 September 2019)                   |
 | **Status**              | **<span style="color: #f1c40f">DRAFT</span>**  |
 | **Recommended prefix**  |`oslc_config`                                   |
 | **Namespace URI**       |`http://open-services.net/ns/config#`           |
@@ -88,6 +88,61 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **OSLC Query prefix**   |`oslc_config%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fconfig%23` |
 | **Specified Vocabulary**| [CfgM 1.0 WD 01 vocabulary][config]                          |
 
+### OSLC Architecture Management
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | AM 2.0 Final                  |
+| **Publication date**    | 04 August 2011  (errata 10 September 2012)                                |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Recommended prefix**  |`oslc_am`                                   |
+| **Namespace URI**       |`http://open-services.net/ns/am#`           |
+| **Turtle prefix**       |`@prefix oslc_am: <http://open-services.net/ns/am#>`|
+| **SPARQL prefix**       |`PREFIX oslc_am: <http://open-services.net/ns/am#>` |
+| **OSLC Query prefix**   |`oslc_am%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fam%23` |
+| **Specified Vocabulary**| [AM 2.0 vocabulary][am]                          |
+
+### OSLC Asset Management
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | Asset 2.0 Final                  |
+| **Publication date**    | 25 September 2012                              |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Recommended prefix**  |`oslc_asset`                                   |
+| **Namespace URI**       |`http://open-services.net/ns/asset#`           |
+| **Turtle prefix**       |`@prefix oslc_asset: <http://open-services.net/ns/asset#>`|
+| **SPARQL prefix**       |`PREFIX oslc_asset: <http://open-services.net/ns/asset#>` |
+| **OSLC Query prefix**   |`oslc_asset%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fasset%23` |
+| **Specified Vocabulary**| [Asset 2.0 vocabulary][asset]                          |
+
+### OSLC Automation
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | Automation 2.0 Final                  |
+| **Publication date**    | 22 January 2013 (errata 17 July 2014)                                  |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Recommended prefix**  |`oslc_auto`                                   |
+| **Namespace URI**       |`http://open-services.net/ns/auto#`           |
+| **Turtle prefix**       |`@prefix oslc_auto: <http://open-services.net/ns/auto#>`|
+| **SPARQL prefix**       |`PREFIX oslc_auto: <http://open-services.net/ns/auto#>` |
+| **OSLC Query prefix**   |`oslc_auto%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fauto%23` |
+| **Specified Vocabulary**| [Automation 2.0 vocabulary][auto]                          |
+
+### OSLC Performance Monitoring
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | Performance Monitoring 2.0 Final                     |
+| **Publication date**    | 31 January 2014                                |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>** |
+| **Recommended prefix**  |`pm`                                            |
+| **Namespace URI**       |`http://open-services.net/ns/perfmon#`          |
+| **Turtle prefix**       |`@prefix pm: <http://open-services.net/ns/perfmon#>`|
+| **SPARQL prefix**       |`PREFIX pm: <http://open-services.net/ns/perfmon#>` |
+| **OSLC Query prefix**   |`pm%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fperfmon%23` |
+| **Specified Vocabulary**| [PerfMon 2.0 vocabulary][auto]                 |
 
 ### Linked Data Basic Profile
 
@@ -104,8 +159,11 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 [rm]: https://archive.open-services.net/bin/view/Main/RmSpecificationV2.html#RM_Resource_Definitions
 [qm]: https://archive.open-services.net/bin/view/Main/QmSpecificationV2.html#QM_Resource_Definitions
 [config]: https://oslc-op.github.io/oslc-specs/specs/config/config-vocab.html
+[am]: https://archive.open-services.net/wiki/architecture-management/OSLC-Architecture-Management-Specification-Version-2.0/index.html#AM-Resource-Definitions
+[asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
+[auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
 
-> **NB!** All namespace URIs support content negotiation. Acceptable RDF MIME types:
+> **NB!** All namespaces URIs support content negotiation. Acceptable RDF MIME types:
 >
 > - `text/turtle`
 > - `application/ld+json`
@@ -114,7 +172,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 ## Other OSLC Namespaces
 
-There may be many other domain vocabularies that are for whatever reason, not currently on an OASIS standards track. This could include:
+This could include:
 
 * Old open-services.net documents and vocabulary namespaces that were never completed.
 * Existing open-services.net documents and vocabularies that were at least partially completed, but are not currently targeted for migration to OASIS.
@@ -123,12 +181,23 @@ There may be many other domain vocabularies that are for whatever reason, not cu
 
 In order to foster open integration, we will allow additional domain vocabularies (ontology) and resource shapes to be published on open-services.net. The open-services.net administrator will review these vocabularies and publish them upon community request. These will be listed in the following table to help interested parties know what namespace names people are working on in order to avoid potential collisions.
 
-| Document | Namespace | RDF Schema | HTML |
-|----------|-----------|------------|------|
-| [AM 2.1](http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/oslc-am-v2.1-part1-architecture-management-spec.html) | [http://open-services.net/ns/am#](http://open-services.net/ns/am#) | [architecture-management-vocab.rdf](http://open-services.net/ns/am/architecture-management-vocab.rdf) | [Architecture Management Vocabulary](http://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/oslc-am-v2.1-part2-architecture-management-vocab.html) |
-| [Asset 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/asset/asset-management-spec.html) | [http://open-services.net/ns/asset#](http://open-services.net/ns/asset#) | [asset-management-vocab.rdf](http://open-services.net/ns/asset/asset-management-vocab.rdf) | [Asset Management Vocabulary](https://rawgit.com/oasis-tcs/oslc-domains/master/asset/asset-management-vocab.html) |
-| [Automation 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/auto/automation-spec.html) | [http://open-services.net/ns/auto#](http://open-services.net/ns/auto#) | [automation-vocab.rdf](http://open-services.net/ns/auto/automation-vocab.rdf) | [Automation Vocabulary](https://rawgit.com/oasis-tcs/oslc-domains/master/auto/automation-vocab.html) |
-| [PerfMon 2.1](https://rawgit.com/oasis-tcs/oslc-domains/master/perfmon/performance-monitoring-spec.html) | [http://open-services.net/ns/perfmon#](http://open-services.net/ns/perfmon#) | [performance-monitoring-vocab.rdf](http://open-services.net/ns/perfmon/performance-monitoring-vocab.rdf) | [Performance Monitoring Vocabulary](https://rawgit.com/oasis-tcs/oslc-domains/master/perfmon/performance-monitoring-vocab.html) |
-| [PROMCODE 1.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/WorkingDrafts/promcode-interface-v1.0-wd01_Chapter3.docx) |  |  |  |
-| [Estimation and Measurement](https://www.oasis-open.org/committees/document.php?document_id=61066&wg_abbrev=oslc-domains) | http://open-services.net/ns/ems# | [ems.rdf](../../ns/ems/ems.rdf) | |
+### OSLC Estimation and Measurement
 
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | Estimation and Measurement 1.0 Draft           |
+| **Publication date**    | 24 September 2014                              |
+| **Status**              | **<span style="color: #f1c40f">DRAFT</span>**  |
+| **Recommended prefix**  |`ems`                                           |
+| **Namespace URI**       |`http://open-services.net/ns/ems#`          |
+| **Turtle prefix**       |`@prefix ems: <http://open-services.net/ns/ems#>`|
+| **SPARQL prefix**       |`PREFIX ems: <http://open-services.net/ns/ems#>` |
+| **OSLC Query prefix**   |`ems%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fems%23` |
+| **Specified Vocabulary**| [EMS 1.0 vocabulary][ems]                      |
+
+[ems]: https://archive.open-services.net/wiki/estimation-and-measurement/EMS-1.0-REST-API-Data-Model/index.html
+
+### Unpublished vocabularies
+
+- `crvt`: [Common IT Resource Type Vocabulary Version 2.0](https://archive.open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/index.html)
+- `promcode`: [OSLC PROMCODE Specification Version 1.0](https://tools.oasis-open.org/version-control/svn/oslc-promcode/shape/trunk/spec.html#promcode-resource-definitions)
