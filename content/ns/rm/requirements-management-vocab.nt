@@ -1,0 +1,80 @@
+<http://open-services.net/ns/rm#implementedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#implementedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#implementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#implementedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#implementedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#implementedBy> <http://purl.org/dc/terms/description> "Expresses an implementation\n            relationship between entities."@en-GB .
+<http://open-services.net/ns/rm#implementedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which is a necessary or desirable aspect\n            of an implementation."@en-GB .
+<http://open-services.net/ns/rm#implementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "implementedBy"@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#trackedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#trackedBy> <http://purl.org/dc/terms/description> "Expresses a tracking relationship\n            between entities. For example, a change request may be said to track a\n            requirement, in that it governs the changes to a requirement according to some\n            process machinery."@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which in some way tracks or governs the\n            evolution of an entity."@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://www.w3.org/2000/01/rdf-schema#label> "trackedBy"@en-GB .
+<http://open-services.net/ns/rm#trackedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#Requirement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#Requirement> <http://open-services.net/ns/core#hasBasicShape> <http://open-services-net/shapes/rm#requirementShape> .
+<http://open-services.net/ns/rm#Requirement> <http://purl.org/dc/terms/modified> "2010-10-10"@en-GB .
+<http://open-services.net/ns/rm#Requirement> <http://purl.org/dc/terms/issued> "2010-10-10"@en-GB .
+<http://open-services.net/ns/rm#Requirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#Requirement> <http://purl.org/dc/terms/description> "Statement of\n            need."@en-GB .
+<http://open-services.net/ns/rm#Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en-GB .
+<http://open-services.net/ns/rm#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/rm#uses> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#uses> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#uses> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#uses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#uses> <http://purl.org/dc/terms/description> "Expresses a use relationship between\n            entities. For example, a requirement collection may use a\n            requirement."@en-GB .
+<http://open-services.net/ns/rm#uses> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which is used by another\n            resource."@en-GB .
+<http://open-services.net/ns/rm#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses"@en-GB .
+<http://open-services.net/ns/rm#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net> .
+<http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmHome> .
+<http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2> .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/modified> "2010-10-10"@en-GB .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/publisher> "Open Services for Lifecycle Collaboration\n            Community"@en-GB .
+<http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#comment> "To comment on this schema, please contact\n            rm@open-services.net."@en-GB .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/description> "This RDFS Schema defines the Open Services for Lifecycle\n            Collaboration Requirements Management and Definition vocabulary, also known\n            as OSLC RM. This vocabulary is part of the OSLC RM 2.0 specification, which is part\n            of the OSLC group of specifications. "@en-GB .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/title> "OSLC Namespace for terms in the\n            http://open-services.net/ns/rm# namespace"@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#elaboratedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#elaboratedBy> <http://purl.org/dc/terms/description> "Expresses an elaboration relationship\n            between entities. For example, a model element can elaborate a\n            requirement."@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which elaborates."@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "elaboratedBy"@en-GB .
+<http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#RequirementCollection> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#RequirementCollection> <http://open-services.net/ns/core#hasBasicShape> <http://open-services-net/shapes/rm#requirementCollectionShape> .
+<http://open-services.net/ns/rm#RequirementCollection> <http://purl.org/dc/terms/modified> "2010-10-10"@en-GB .
+<http://open-services.net/ns/rm#RequirementCollection> <http://purl.org/dc/terms/issued> "2010-10-10"@en-GB .
+<http://open-services.net/ns/rm#RequirementCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#RequirementCollection> <http://purl.org/dc/terms/description> "Collection of requirements. A\n            collection uses zero or more requirements."@en-GB .
+<http://open-services.net/ns/rm#RequirementCollection> <http://www.w3.org/2000/01/rdf-schema#label> "RequirementCollection"@en-GB .
+<http://open-services.net/ns/rm#RequirementCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/rm#specifiedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#specifiedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#specifiedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#specifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#specifiedBy> <http://purl.org/dc/terms/description> "Expresses a specification relationship\n            between entities. For example, a model element can specifiy a\n            requirement."@en-GB .
+<http://open-services.net/ns/rm#specifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which further clarifies or\n            specifies."@en-GB .
+<http://open-services.net/ns/rm#specifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "specifiedBy"@en-GB .
+<http://open-services.net/ns/rm#specifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#affectedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#affectedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#affectedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#affectedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#affectedBy> <http://purl.org/dc/terms/description> "Expresses an affects relationship\n            between entities. For example, a defect may be said to affect a\n            requirement."@en-GB .
+<http://open-services.net/ns/rm#affectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which in some way affects the object\n            entity."@en-GB .
+<http://open-services.net/ns/rm#affectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "affectedBy"@en-GB .
+<http://open-services.net/ns/rm#affectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/rm#validatedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/RmSpecificationV2#RequirementResource> .
+<http://open-services.net/ns/rm#validatedBy> <http://purl.org/dc/terms/modified> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#validatedBy> <http://purl.org/dc/terms/issued> "2008-01-14"@en-GB .
+<http://open-services.net/ns/rm#validatedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/rm#> .
+<http://open-services.net/ns/rm#validatedBy> <http://purl.org/dc/terms/description> "Expresses a validation relationship\n            between entities. For example, a test plan may be said to validated a requirement\n            collection."@en-GB .
+<http://open-services.net/ns/rm#validatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity which in some way\n            validates."@en-GB .
+<http://open-services.net/ns/rm#validatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "validatedBy"@en-GB .
+<http://open-services.net/ns/rm#validatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .

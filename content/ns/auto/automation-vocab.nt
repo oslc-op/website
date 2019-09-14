@@ -1,0 +1,138 @@
+<http://open-services.net/ns/auto#queued> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#queued> <http://www.w3.org/2000/01/rdf-schema#comment> "Primarily used to indicate an automation request or result is queued for additional\n\t\t    actions by the service provider." .
+<http://open-services.net/ns/auto#queued> <http://www.w3.org/2000/01/rdf-schema#label> "queued" .
+<http://open-services.net/ns/auto#queued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#pass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#pass> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation result represents a successful execution." .
+<http://open-services.net/ns/auto#pass> <http://www.w3.org/2000/01/rdf-schema#label> "pass" .
+<http://open-services.net/ns/auto#pass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#canceled> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#canceled> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate that an automation request or result has been canceled." .
+<http://open-services.net/ns/auto#canceled> <http://www.w3.org/2000/01/rdf-schema#label> "canceled" .
+<http://open-services.net/ns/auto#canceled> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationRequest> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationRequest> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate the state of the automation request based on values defined\n\t\t    by the service provider. Most often a read-only property. It is expected that this will\n\t\t    be a resource reference to a definition of a valid automation request state on the service provider." .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#label> "state" .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#AutomationPlan> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationPlan> .
+<http://open-services.net/ns/auto#AutomationPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "The Automation Plan resource" .
+<http://open-services.net/ns/auto#AutomationPlan> <http://www.w3.org/2000/01/rdf-schema#label> "AutomationPlan" .
+<http://open-services.net/ns/auto#AutomationPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#AutomationPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationRequest> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationRequest> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters provided when Automation Requests are created. These include parameters provided \n\t\t   by the creator of the Automation Request (whether by delegated UI or HTTP POST) and MAY include \n\t\t   additional parameters added by the service provider during Automation Request creation. See the \n\t\t   definition of the oslc_auto:parameterDefinition attribute of the Automation Plan for additional guidance \n\t\t   on determining which parameters are required. Creators of Automation Requests MAY provide parameters beyond \n\t\t   those defined in the Automation Plan without guarantee the service provider will recognize or honor them. \n\t\t   It is expected that this attribute is write-able on Automation Request creation and read-only thereafter." .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#label> "inputParameter" .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#initialParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#complete> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#complete> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate that an automation request or result is complete." .
+<http://open-services.net/ns/auto#complete> <http://www.w3.org/2000/01/rdf-schema#label> "complete" .
+<http://open-services.net/ns/auto#complete> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationPlan> .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationPlan> .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "The definition of a parameter for this Automation Plan. parameterDefinitions are either\n\t\t   a local (inline) or referenced resource and use the attributes (the range) of the oslc:Property\n\t\t   resource with one exception. When used in the context of an oslc_auto:parameterDefinition, the \n\t\t   cardinality of oslc:propertyDefinition becomes zero-or-one instead of exactly-one. Automation consumers \n\t\t   creating Automation Requests MUST use the oslc:occurs attribute of the parameterDefinition, if \n\t\t   present, to determine if a given parameter is required when creating the Automation Request. \n\t\t   If the oslc:occurs attribute indicates the parameter is required (exactly-one or one-or-more), the \n\t\t   service provider must guarantee the named parameter will be present in the Automation Result either \n\t\t   as an oslc_auto:inputParmeter when unmodified during execution, or as an oslc_auto:outputParameter \n\t\t   when modified during execution." .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "parameterDefinition" .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#parameterDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/2000/01/rdf-schema#comment> "A result contribution associated with this automation result. It is recommended that the\n\t\t    contribution be an inline resource which can be retrieved with the automation result. The recommended\n\t\t    attributes beyond the contribution itself are dcterms:title, dcterms:description and dcterms:type to\n\t\t    provide a description of the contribution which would be appropriate for display in a simple UI for \n\t\t    an automation result." .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/2000/01/rdf-schema#label> "hasContribution" .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#hasContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#AutomationResult> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#AutomationResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The Automation Result resource" .
+<http://open-services.net/ns/auto#AutomationResult> <http://www.w3.org/2000/01/rdf-schema#label> "AutomationResult" .
+<http://open-services.net/ns/auto#AutomationResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#AutomationResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/auto/auto.rdf> <http://www.rddl.org/nature> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationRequest> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationRequest> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate the desired state of the automation request based on values defined\n\t\t    by the service provider. " .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#label> "desiredState" .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#desiredState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#ParameterInstance> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_ParameterInstance> .
+<http://open-services.net/ns/auto#ParameterInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "The Automation Parameter Instance resource" .
+<http://open-services.net/ns/auto#ParameterInstance> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterInstance" .
+<http://open-services.net/ns/auto#ParameterInstance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#ParameterInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/auto#canceling> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#canceling> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate the service provider is in the process of canceling an automation request or result." .
+<http://open-services.net/ns/auto#canceling> <http://www.w3.org/2000/01/rdf-schema#label> "canceling" .
+<http://open-services.net/ns/auto#canceling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#new> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#new> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation request or result has just been created in the service\n\t\t    provider and has not yet been acted upon." .
+<http://open-services.net/ns/auto#new> <http://www.w3.org/2000/01/rdf-schema#label> "new" .
+<http://open-services.net/ns/auto#new> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate the verdict of the automation result based on values defined by the service\n\t\t    provider. Most often a read-only property. It is expected that this will be a resource reference to a \n\t\t    definition of a valid automation result verdict on the service provider." .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/2000/01/rdf-schema#label> "verdict" .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#verdict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "Automation Request which produced the Automation Result. It is likely that the target resource\n\t\t    will be an oslc_auto:AutomationResult but that is not necessarily the case." .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/2000/01/rdf-schema#label> "producedByAutomationRequest" .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#producedByAutomationRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#error> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#error> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation result has completed but did not run successfully due\n\t\t   to some error. This could be a timeout, automation coding error, network problem or other error\n\t\t   which prevented the automation from running successfully to a pass, warning or fail verdict." .
+<http://open-services.net/ns/auto#error> <http://www.w3.org/2000/01/rdf-schema#label> "error" .
+<http://open-services.net/ns/auto#error> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#fail> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#fail> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation result represents a failed execution." .
+<http://open-services.net/ns/auto#fail> <http://www.w3.org/2000/01/rdf-schema#label> "fail" .
+<http://open-services.net/ns/auto#fail> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#unavailable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#unavailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation result is in a state where a final verdict such as\n\t\t   oslc:auto_pass or oslc_auto:fail is not yet available. Usually used when the result is in a\n\t\t   state other than oslc_auto:complete." .
+<http://open-services.net/ns/auto#unavailable> <http://www.w3.org/2000/01/rdf-schema#label> "unavailable" .
+<http://open-services.net/ns/auto#unavailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#AutomationRequest> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationRequest> .
+<http://open-services.net/ns/auto#AutomationRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "The Automation Request resource" .
+<http://open-services.net/ns/auto#AutomationRequest> <http://www.w3.org/2000/01/rdf-schema#label> "AutomationRequest" .
+<http://open-services.net/ns/auto#AutomationRequest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#AutomationRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/auto#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/ns/auto/auto.rdf> .
+<http://open-services.net/ns/auto#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutomationHome> .
+<http://open-services.net/ns/auto#> <http://www.w3.org/2000/01/rdf-schema#label> "Automation" .
+<http://open-services.net/ns/auto#> <http://purl.org/dc/terms/description> "\n      All vocabulary URIs defined in the OSLC Automation namespace.\n    "^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/auto#> <http://purl.org/dc/terms/title> "The OSLC Automation Vocabulary" .
+<http://open-services.net/ns/auto#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "Automation Plan which the Automation Result reports on. It is likely that the target resource\n\t\t    will be an oslc_auto:AutomationPlan but that is not necessarily the case." .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#label> "reportsOnAutomationPlan" .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#reportsOnAutomationPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#inProgress> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#inProgress> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation request or result is active in the service provider." .
+<http://open-services.net/ns/auto#inProgress> <http://www.w3.org/2000/01/rdf-schema#label> "inProgress" .
+<http://open-services.net/ns/auto#inProgress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationResult> .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationResult> .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Automation Result output parameters are parameters associated with the result other than the\n\t\t   oslc_auto:inputParameter resources. These could be parameters added during automation execution by the\n\t\t   service provider or external agents. They could also be copies of input parameters with values changed\n\t\t   during execution." .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/2000/01/rdf-schema#label> "outputParameter" .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#additionalParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2#Resource_AutomationRequest> .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/auto#AutomationRequest> .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "Automation Plan run by the Automation Request. It is likely that the target resource will be an\n\t\t    oslc_auto:AutomationPlan but that is not necessarily the case. " .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#label> "executesAutomationPlan" .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
+<http://open-services.net/ns/auto#executesAutomationPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/auto#warning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/bin/view/Main/AutoSpecificationV2> .
+<http://open-services.net/ns/auto#warning> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to indicate an automation result represents an execution which encountered conditions\n\t\t   which prevented successful execution but did not result in a failed execution." .
+<http://open-services.net/ns/auto#warning> <http://www.w3.org/2000/01/rdf-schema#label> "warning" .
+<http://open-services.net/ns/auto#warning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/auto#> .
