@@ -1,0 +1,201 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rddl:  <http://www.rddl.org/> .
+
+<http://open-services.net/ns/cm#implementsRequirement>
+        a                 rdf:Property ;
+        rdfs:comment      "Implements associated Requirement. It is likely that the\n\t\t\ttarget resource will be an oslc_rm:Requirement but that is not\n\t\t\tnecessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "implementsRequirement" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#tracksRequirement>
+        a                 rdf:Property ;
+        rdfs:comment      "Tracks the associated Requirement or Requirement\n\t\t\tChangeSet resources. It is likely that the target resource will be an\n\t\t\toslc_rm:Requirement but that is not necessarily the case.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "tracksRequirement" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#affectsTestResult>
+        a                 rdf:Property ;
+        rdfs:comment      "Associated QM resource that is affected by this Change\n\t\t\tRequest. It is likely that the target resource will be an\n\t\t\toslc_qm:TestResult but that is not necessarily the case.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "affectsTestResult" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#approved>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the Change Request has been approved.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "approved" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#inprogress>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the Change Request in a state indicating\n\t\t\tthat active work is occurring." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "inprogress" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#relatedTestCase>
+        a                 rdf:Property ;
+        rdfs:comment      "Related QM test case resource. It is likely that the\n\t\t\ttarget resource will be an oslc_qm:TestCase but that is not\n\t\t\tnecessarily the case." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "relatedTestCase" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#>
+        a                    owl:Ontology ;
+        rdfs:label           "Change Management(CM)" ;
+        rdfs:seeAlso         <http://open-services.net/ns/cm/cm.rdf> , <http://open-services.net/bin/view/Main/CmSpecificationV2> , <http://open-services.net/bin/view/Main/CmHome> ;
+        dcterms:description  "\n\t\t\tAll vocabulary URIs defined in the OSLC\n\t\t\tChange Management (CM) namespace.\n\t\t"^^rdf:XMLLiteral ;
+        dcterms:title        "The OSLC Change Management(CM) Vocabulary\n\t\t" .
+
+<http://open-services.net/ns/cm#affectedByDefect>
+        a                 rdf:Property ;
+        rdfs:comment      "Change request is affected by a reported defect. It is\n\t\t\tlikely that the target resource will be an oslc_cm:ChangeRequest but\n\t\t\tthat is not necessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "affectedByDefect" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#verified>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the resolution or fix of the Change\n\t\t\tRequest has been verified." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "verified" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#fixed>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the Change Request has been fixed.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "fixed" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#closeDate>
+        a                 rdf:Property ;
+        rdfs:comment      "The date at which no further activity or work is\n\t\t\tintended to be conducted. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "closeDate" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#requirementsChangeRequest>
+        rdfs:comment      "used by RM tools for associating a change request for\n\t\t\tusage in tracking changes to a Requirements resource" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "requirementsChangeRequest" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Usage_Identifiers> .
+
+<http://open-services.net/ns/cm#status>
+        a                 rdf:Property ;
+        rdfs:comment      "Used to indicate the status of the change request based\n\t\t\ton values defined by the service provider. Most often a read-only\n\t\t\tproperty. Some possible values may include: 'Submitted', 'Done',\n\t\t\t'InProgress', etc." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "status" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#relatedChangeRequest>
+        a                 rdf:Property ;
+        rdfs:comment      "This relationship is loosely coupled and has no specific\n\t\t\tmeaning. It is likely that the target resource will be an\n\t\t\toslc_cm:ChangeRequest but that is not necessarily the case.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "relatedChangeRequest" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#closed>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the Change Request is completely done, no\n\t\t\tfurther fixes or fix verification is needed." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "closed" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#affectsPlanItem>
+        a                 rdf:Property ;
+        rdfs:comment      "Change request affects a plan item. It is likely that\n\t\t\tthe target resource will be an oslc_cm:ChangeRequest but that is not\n\t\t\tnecessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "affectsPlanItem" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#blocksTestExecutionRecord>
+        a                 rdf:Property ;
+        rdfs:comment      "Associated QM resource that is blocked by this Change\n\t\t\tRequest. It is likely that the target resource will be an\n\t\t\toslc_qm:TestExecutionRecord but that is not necessarily the case.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "blocksTestExecutionRecord" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#relatedTestPlan>
+        a                 rdf:Property ;
+        rdfs:comment      "Related QM test plan resource. It is likely that the\n\t\t\ttarget resource will be an oslc_qm:TestPlan but that is not\n\t\t\tnecessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "relatedTestPlan" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#ChangeRequest>
+        a                 rdfs:Class ;
+        rdfs:comment      "The CM Change Request resource" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "ChangeRequest" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#tracksChangeSet>
+        a                 rdf:Property ;
+        rdfs:comment      "Tracks SCM change set resource. It is likely that the\n\t\t\ttarget resource will be an oslc_scm:ChangeSet but that is not\n\t\t\tnecessarily the case." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "tracksChangeSet" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#task>
+        rdfs:comment      "used by QM and PPM tools for associating change requests\n\t\t\tinto executable and track-able items." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "task" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Usage_Identifiers> .
+
+<http://open-services.net/ns/cm#relatedTestScript>
+        a                 rdf:Property ;
+        rdfs:comment      "Related QM test script resource. It is likely that the\n\t\t\ttarget resource will be an oslc_qm:TestScript but that is not\n\t\t\tnecessarily the case." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "relatedTestScript" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#relatedTestExecutionRecord>
+        a                 rdf:Property ;
+        rdfs:comment      "Related to a QM test execution resource. It is likely\n\t\t\tthat the target resource will be an oslc_qm:TestExecutionRecord but\n\t\t\tthat is not necessarily the case." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "relatedTestExecutionRecord" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#reviewed>
+        a                 rdf:Property ;
+        rdfs:comment      "Whether or not the Change Request has been reviewed.\n\t\t" ;
+        rdfs:domain       <http://open-services.net/ns/cm#ChangeRequest> ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "reviewed" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm/cm.rdf>
+        rddl:nature  rdfs: .
+
+<http://open-services.net/ns/cm#affectsRequirement>
+        a                 rdf:Property ;
+        rdfs:comment      "Change request affecting a Requirement. It is likely\n\t\t\tthat the target resource will be an oslc_rm:Requirement but that is\n\t\t\tnot necessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "affectsRequirement" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#testedByTestCase>
+        a                 rdf:Property ;
+        rdfs:comment      "Test case by which this change request is tested. It is\n\t\t\tlikely that the target resource will be an oslc_qm:TestCase but that\n\t\t\tis not necessarily the case. " ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "testedByTestCase" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Resource_ChangeRequest> .
+
+<http://open-services.net/ns/cm#defect>
+        rdfs:comment      "primarily used by QM tools to report defects in testing.\n\t\t" ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "defect" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Usage_Identifiers> .
+
+<http://open-services.net/ns/cm#planItem>
+        rdfs:comment      "used by QM and PPM tools for associating change requests\n\t\t\tinto plans (project, release, sprint, etc)." ;
+        rdfs:isDefinedBy  <http://open-services.net/ns/cm#> ;
+        rdfs:label        "planItem" ;
+        rdfs:seeAlso      <http://open-services.net/bin/view/Main/CmSpecificationV2#Usage_Identifiers> .

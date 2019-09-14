@@ -469,14 +469,17 @@
     "@id" : "http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf",
     "nature" : "http://www.w3.org/2000/01/rdf-schema#"
   } ],
-  "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "@id"
     },
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type" : "@id"
@@ -497,7 +500,9 @@
       "@id" : "http://purl.org/dc/terms/description",
       "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
     },
-    "title" : "http://purl.org/dc/terms/title",
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
     "nature" : {
       "@id" : "http://www.rddl.org/nature",
       "@type" : "@id"

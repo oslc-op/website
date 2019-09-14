@@ -11,6 +11,14 @@ table {
     margin: .5em 0 .75em;
   }
 
+  tbody strong {
+    font-weight: 600;
+  }
+
+  tbody strong span {
+    font-weight: 700;
+  }
+
   tr {
     background: #f8f8f8;
     border: 1px solid #ddd;
@@ -20,7 +28,7 @@ table {
   th,
   td {
     padding: .625em;
-    text-align: center;
+    // text-align: center;
   }
 
   th {
@@ -81,5 +89,5 @@ table {
 }
 
 // @media screen and (max-width: 600px) {
-//   
+//
 // }

@@ -1,9 +1,9 @@
 @prefix qudt:  <http://qudt.org/1.1/schema/qudt> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ems:   <http://open-services.net/ns/ems#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix pm:    <http://open-services.net/ns/perfmon#> .
 @prefix rddl:  <http://www.rddl.org/> .
 
