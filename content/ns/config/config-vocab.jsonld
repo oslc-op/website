@@ -5,7 +5,7 @@
     "dateCopyrighted" : "2012-2015",
     "description" : "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources.",
     "license" : "TBD",
-    "source" : "http://tools.oasis-open.org/version-control/svn/oslc-ccm/trunk/specs/config-mgt/config-vocab.ttl",
+    "source" : "http://tools.oasis-open.org/version-control/svn/oslc-core/trunk/specs/config/config-vocab.ttl",
     "title" : "OSLC Configuration Management vocabulary",
     "preferredNamespacePrefix" : "oslc_config",
     "label" : "OSLC Configuration Management vocabulary"
@@ -49,18 +49,6 @@
     "isDefinedBy" : "http://open-services.net/ns/config#",
     "label" : "Configuration"
   }, {
-    "@id" : "oslc_config:ConfigurationMatch",
-    "@type" : "rdfs:Class",
-    "comment" : "Details of a single match for a given concept resource contained in the component of a configuration context, or one of the configurations contributed to that context.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "ConfigurationMatch"
-  }, {
-    "@id" : "oslc_config:ConfigurationMatches",
-    "@type" : "rdfs:Class",
-    "comment" : "Information about the matches for configurations of a component containing a resource.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "ConfigurationMatches"
-  }, {
     "@id" : "oslc_config:ConfigurationSettings",
     "@type" : "rdfs:Class",
     "comment" : "Information about settings and preferences for a Configuration Management service.",
@@ -77,7 +65,7 @@
     "@type" : "rdfs:Class",
     "comment" : "A configuration intended for use by a single agent, rather than shared.",
     "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "Contribution",
+    "label" : "PersonalConfiguration",
     "subClassOf" : "oslc_config:Configuration"
   }, {
     "@id" : "oslc_config:Removals",
@@ -105,6 +93,12 @@
     "label" : "Stream",
     "subClassOf" : "oslc_config:Configuration"
   }, {
+    "@id" : "oslc_config:UnboundSelections",
+    "@type" : "rdfs:Class",
+    "comment" : "An indicator that a set of selections are as-yet unbound concept resources as opposed to bound version resources.",
+    "isDefinedBy" : "http://open-services.net/ns/config#",
+    "label" : "UnboundSelections"
+  }, {
     "@id" : "oslc_config:VersionResource",
     "@type" : "rdfs:Class",
     "comment" : "This type is used as a marker for any version resource.",
@@ -124,12 +118,6 @@
     "isDefinedBy" : "http://open-services.net/ns/config#",
     "label" : "accepts",
     "range" : "oslc_config:Configuration"
-  }, {
-    "@id" : "oslc_config:allMatches",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used to request that all possible matches are found for a concept resource in one or more components in a configuration context.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "allMatches"
   }, {
     "@id" : "oslc_config:baselineOfStream",
     "@type" : "rdf:Property",
@@ -175,7 +163,7 @@
     "label" : "configuration"
   }, {
     "@id" : "oslc_config:configurationSettings",
-    "@type" : "rdfs:Property",
+    "@type" : "rdf:Property",
     "comment" : "A reference to information about settings and preferences for a Configuration Management service.",
     "isDefinedBy" : "http://open-services.net/ns/config#",
     "label" : "configurationSettings"
@@ -206,30 +194,11 @@
     "label" : "derivedFrom",
     "term_status" : "archaic"
   }, {
-    "@id" : "oslc_config:firstMatch",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used to request that only the first match is found for a concept resource in one or more components in a configuration context.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "firstMatch"
-  }, {
     "@id" : "oslc_config:globalConfigurationService",
     "@type" : "rdfs:Resource",
     "comment" : "An oslc:usage value marking a global configuration service.",
     "isDefinedBy" : "http://open-services.net/ns/config#",
     "label" : "globalConfigurationService"
-  }, {
-    "@id" : "oslc_config:match",
-    "@type" : "rdf:Property",
-    "comment" : "A reference to a match of a resource or component in a configuration.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "matchOrder",
-    "range" : "oslc_config:ConfigurationMatch"
-  }, {
-    "@id" : "oslc_config:matchOrder",
-    "@type" : "rdf:Property",
-    "comment" : "The ordering value for a configuration match.",
-    "isDefinedBy" : "http://open-services.net/ns/config#",
-    "label" : "match"
   }, {
     "@id" : "oslc_config:mutable",
     "@type" : "rdf:Property",
@@ -282,11 +251,16 @@
     "isDefinedBy" : "http://open-services.net/ns/config#",
     "label" : "versionId"
   } ],
-  "@id" : "urn:x-arq:DefaultGraphNode",
   "@context" : {
-    "comment" : "http://www.w3.org/2000/01/rdf-schema#comment",
-    "term_status" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
-    "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
       "@type" : "@id"
@@ -299,15 +273,25 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
     },
-    "dateCopyrighted" : "http://purl.org/dc/terms/dateCopyrighted",
-    "license" : "http://purl.org/dc/terms/license",
+    "dateCopyrighted" : {
+      "@id" : "http://purl.org/dc/terms/dateCopyrighted"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
     },
-    "preferredNamespacePrefix" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "description" : "http://purl.org/dc/terms/description",
-    "title" : "http://purl.org/dc/terms/title",
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
     "owl" : "http://www.w3.org/2002/07/owl#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
