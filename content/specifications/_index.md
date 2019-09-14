@@ -73,14 +73,14 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 There are some additional OSLC documents that are currently inactive but are candidates for migration and could be sources of future specifications:
 
-* [Reconciliation](http://archive.oslc.co/wiki/reconciliation/OSLC-Reconciliation-Specification-Version-2.0/index.html)
-* [Estimation and Measurement](http://archive.oslc.co/wiki/estimation-and-measurement/Estimation-and-Measurement-Service-Version-1.0_-REST-API/index.html)
+* [Reconciliation](https://archive.open-services.net/wiki/reconciliation/OSLC-Reconciliation-Specification-Version-2.0/index.html)
+* [Estimation and Measurement](https://archive.open-services.net/wiki/estimation-and-measurement/Estimation-and-Measurement-Service-Version-1.0_-REST-API/index.html)
 * [Actions 2.0](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-core/trunk/specs/actions.html)
 
 Obsolete or abandoned specifications:
 
-* [Reporting](http://archive.oslc.co/bin/view/Main/ReportingSpecifications.html)
-* [Product Definition](http://archive.oslc.co/bin/view/Main/PlmSpecExtensions.html)
+* [Reporting](https://archive.open-services.net/bin/view/Main/ReportingSpecifications.html)
+* [Product Definition](https://archive.open-services.net/bin/view/Main/PlmSpecExtensions.html)
 
 
 Anyone interested in contributing to these specifications should join the applicable TC and propose additional work to add to the TC charter.

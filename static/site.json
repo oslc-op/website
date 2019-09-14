@@ -692,7 +692,7 @@
     {
         "uri": "/../workgroups/lifecycle-integration-patterns",
         "title": "Lifecycle Integration Patterns",
-        "content": "\r\nThis working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges.\r\nExperienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.\r\n\r\n\r\nWiki : https://github.com/OSLC/lifecycle-integration-patterns/wiki\r\nIssues: https://github.com/OSLC/lifecycle-integration-patterns/issues\r\nForum : http://discourse.oslc.co/c/working-groups/lifecycle-integration-patterns\r\nWorkgroup leads : Rainer Ersch, Wesley Coelho\r\n",
+        "content": "\r\nThis working group will define a framework to support the creation and consumption of lifecycle patterns that will enable practitioners to apply OSLC specifications and concept and quickly locate solutions to common lifecycle integration challenges.\r\nExperienced users who have successfully appied OSLC in their environments are invited to share parts of their solution as additional patterns.\r\n\r\n\r\nWiki : https://github.com/OSLC/lifecycle-integration-patterns/wiki\r\nIssues: https://github.com/OSLC/lifecycle-integration-patterns/issues\r\nForum : https://forum.open-services.net/c/working-groups/lifecycle-integration-patterns\r\nWorkgroup leads : Rainer Ersch, Wesley Coelho\r\n",
         "tags": [
             "working group"
         ]
