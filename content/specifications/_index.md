@@ -6,6 +6,8 @@ heroSubtitle = ""
 
 The table below provides a convenient place to see the currently available OSLC specifications, their status, and links to the documents.  Many of these specifications are still under development so you should consult the actual documents for the most up to date information.
 
+> **The vocabularies for use in applications can be found on the [Vocabularies](vocabularies) page.**
+
 The titles below are abbreviated for convenience. The full titles a available from the linked documents. For multi-part specifications, typically only the main specification is listed. The other parts are available from that specification.
 
 Status refers to the OASIS Standards Track Work Products in the [OASIS Naming Directives](http://docs.oasis-open.org/specGuidelines/ndr/namingDirectives.html#stage)
@@ -23,7 +25,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 ## Active publications
 
 | Title | Publisher | Description |
-|-------|--------------------|-------------|
+|:-------:|:--------------------:|-------------|
 | [Change Management 3.0 PSD03](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/psd03/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
 | [Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html) | OSLC Core TC (closed) | Latest published draft of the OSLC 3 specification. |
 | [Core 2.0 Final](https://archive.open-services.net/bin/view/Main/OslcCoreSpecification.html) | OSLC Core WG (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
@@ -41,7 +43,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 ## Working drafts
 
 | Title | Publisher | Description |
-|-------|--------------------|-------------|
+|:-------:|:--------------------:|-------------|
 | [Requirements Management 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/rm/requirements-management-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Requirements Management domain. |
 | [Core 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/core/oslc-core.html) | OSLC OP | Current working draft of the OSLC 3 specification. |
 | [Query 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/query/oslc-query.html) | OSLC OP | Defines a simple, implementation independent selection and projection query capability. |
@@ -57,7 +59,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 ## Obsolete publications
 
 | Title | Publisher | Description |
-|-------|--------------------|-------------|
+|:-------:|:--------------------:|-------------|
 | _[Change Management 3.0 CS02](https://docs.oasis-open.org/oslc-domains/cm/v3.0/cs02/part1-change-mgt/cm-v3.0-cs02-part1-change-mgt.html)_ | OSLC Domains TC (closed) | Defines the OSLC services and vocabulary for the Change Management domain. |
 | _[Core 3.0 CSPRD 02](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd02/part1-overview/oslc-core-v3.0-csprd02-part1-overview.html)_ | OSLC Core TC (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
 | _[Core 3.0 CS 01](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/cs01/part1-overview/oslc-core-v3.0-cs01-part1-overview.html)_ | OSLC Core TC (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |

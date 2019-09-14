@@ -67,6 +67,11 @@ img {
 img[data-src] {
   opacity: 0; }
 
+blockquote {
+  background-color: #EFEFEF;
+  padding: 5px 20px;
+  border-left: 5px #375178 solid; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1024px; }
@@ -88,6 +93,10 @@ a {
 p, a {
   font-size: 16px; }
 
+code, pre, tt {
+  font-size: 16px;
+  font-family: "Cousine", "Courier", monospace; }
+
 .small-text {
   font-size: 14px; }
   .small-text a {
@@ -97,7 +106,7 @@ p, a {
   text-align: center; }
 
 h1, h2, h3, h4, h5 {
-  font-weight: normal; }
+  font-weight: 600; }
 
 .big__paragraph {
   font-size: 18px; }
@@ -377,14 +386,17 @@ table {
   table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em; }
+  table tbody strong {
+    font-weight: 600; }
+  table tbody strong span {
+    font-weight: 700; }
   table tr {
     background: #f8f8f8;
     border: 1px solid #ddd;
     padding: .35em; }
   table th,
   table td {
-    padding: .625em;
-    text-align: center; }
+    padding: .625em; }
   table th {
     font-size: .85em;
     letter-spacing: .1em;
@@ -1663,7 +1675,8 @@ table {
     margin: 50px 0; }
   .specifications h1, .specifications h2, .specifications h3 {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-top: 20px; }
   .specifications p {
     margin-bottom: 20px; }
   .specifications ul {
@@ -1672,7 +1685,8 @@ table {
     .specifications ul li {
       font-size: 16px; }
   .specifications table {
-    margin: 20px 0; }
+    width: inherit;
+    margin: 20px auto; }
     .specifications table tr {
       background: transparent; }
 
