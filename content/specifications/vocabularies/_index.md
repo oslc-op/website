@@ -163,12 +163,12 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
 [auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
 
-> **NB!** All namespaces URIs support content negotiation. Acceptable RDF MIME types:
+> **NB!** All namespace URIs support content negotiation. Acceptable RDF MIME types:
 >
 > - `text/turtle`
 > - `application/ld+json`
 > - `application/rdf+xml`
-> - `application/n+triples`
+> - `application/n-triples`
 
 ## Other OSLC Namespaces
 
