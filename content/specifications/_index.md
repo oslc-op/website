@@ -26,6 +26,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Quality Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/psd02/quality-management-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Change Management 3.0 PSD03](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/psd03/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
 | [Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html) | OSLC Core TC (closed) | Latest published draft of the OSLC 3 specification. |
 | [Core 2.0 Final](https://archive.open-services.net/bin/view/Main/OslcCoreSpecification.html) | OSLC Core WG (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
