@@ -51,6 +51,7 @@
         <div class="container">
           <h2 class="headline">{{ .Params.sponsors_title }}</h2>
           <p>{{ .Params.sponsors_subtitle }}</p>
+          {{ .Params.sponsors_body | markdownify }}
 
 
           <div class="sponsors--wrap">
