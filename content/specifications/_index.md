@@ -43,19 +43,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 ## Working drafts
 
-| Title | Publisher | Description |
-|:-------:|:--------------------:|-------------|
-| [Requirements Management 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/rm/requirements-management-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Requirements Management domain. |
-| [Core 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/core/oslc-core.html) | OSLC OP | Current working draft of the OSLC 3 specification. |
-| [Query 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/query/oslc-query.html) | OSLC OP | Defines a simple, implementation independent selection and projection query capability. |
-| [Tracked Resource Set 3.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/trs/tracked-resource-set.html) | OSLC OP | Allows servers to expose a set of resources whose state can be tracked by clients. |
-| [Configuration Management 1.0 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/config/oslc-config-mgt.html) | OSLC OP | OSLC Configuration Management defines an RDF vocabulary and a set of REST APIs for managing versions and configurations of linked data resources from multiple domains. |
-| [Quality Management 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/qm/quality-management-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Quality Management domain. |
-| [Asset Management 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/asset/asset-management-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Asset Management domain. |
-| [Automation 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/auto/automation-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
-| [Performance Monitoring 2.1 WD](https://raw.githack.com/oslc-op/oslc-specs/master/specs/perfmon/performance-monitoring-spec.html) | OSLC OP | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |
-| [PROMCODE 1.0 WD](https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/WorkingDrafts/promcode-interface-v1.0-wd01_Chapter3.docx) | OSLC PROMCODE TC | The PROMCODE (Project Management of Contracted Delivery for Software Supply Chains) defines OSLC services and vocabulary for exchanging project management information across organizational boundaries in support of Software Supply Chain (SSC) delivery. |
-
+See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a list of actively edited drafts. 
 
 ## Obsolete publications
 
