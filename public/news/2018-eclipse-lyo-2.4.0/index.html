@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/news-default.jpg" />
   
-    <meta name="generator" content="Hugo 0.58.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -106,14 +106,9 @@
     </div>
     <div class="post__content">
       <div class="post__paragraphs">
-        
-
-<h2 id="short-summary">Short summary</h2>
-
+        <h2 id="short-summary">Short summary</h2>
 <p>Migration to Github is complete; Lyo now supports JSON-LD and Turtle; Lyo Designer generates OpenAPI/Swagger docs and adds modelling support for SHACL shapes. Lyo 2.4 is expected to be the last 2.x release. We also make a switch to a <a href="https://keepachangelog.com/en/1.0.0/">better changelog convention</a>.</p>
-
-<h2 id="added">✨ Added</h2>
-
+<h2 id="-added">✨ Added</h2>
 <ul>
 <li>JSON-LD support has been added to Lyo Core. Thanks to Ricardo Javier Herrera Ledesma from Koneksys for his effort!</li>
 <li>Lyo Designer now allows modelling SHACL shapes. Code generation of SHACL shapes has not been implemented yet. If this is something you need, get in touch! Thanks to Yash Khatri from SCANIA for this contribution.</li>
@@ -124,15 +119,10 @@
 <li>A <a href="https://github.com/eclipse/lyo">lyo</a> repository has been added to manage all cross-cutting issues that span multiple repos.</li>
 <li><a href="https://kotlinlang.org">Kotlin</a> is now used for unit tests in Lyo Core.</li>
 </ul>
-
 <p><strong>Swagger Docs</strong></p>
-
-<p><img src="../../img/news/2018-lyo_2.4.0_swagger.png" alt="" /></p>
-
+<p><img src="../../img/news/2018-lyo_2.4.0_swagger.png" alt=""></p>
 <p>To begin generating docs yourself, head over to the <a href="https://wiki.eclipse.org/Lyo/creating_OSLC4J_project#OpenApi.2FSwagger_Support_.28Optional.29">page on Lyo wiki</a>.</p>
-
-<h2 id="changed">🔥 Changed</h2>
-
+<h2 id="-changed">🔥 Changed</h2>
 <ul>
 <li>Lyo Core now depends on Jena 3.6 (Lyo 2.3 depends on Jena 3.0.1 and that was a breaking change). This was needed to add support for JSON-LD.</li>
 <li>Lyo Designer no longer alters your identifiers. Shapes using spaces in their titles are affected.</li>
@@ -141,7 +131,6 @@
 <li>All repos have been migrated over to Github. You can get an overview of all projects <a href="https://github.com/eclipse/lyo">here</a>.</li>
 <li>As part of the migration, the folder layout has been updated to use the same directory names as the artefact IDs.</li>
 <li>The following artefacts have been moved across repositories:
-
 <ul>
 <li><code>oslc4j-registry</code> (from Core to to Server)</li>
 <li><code>oslc4j-wink</code> (from Core to to Server)</li>
@@ -154,84 +143,57 @@
 <li><code>org.eclipse.lyo.samples.excel</code> (from Server to to <a href="https://github.com/OSLC/lyo-samples">OSLC/lyo-samples</a>)</li>
 <li><code>oslc4j-bugzilla-sample</code> (from Docs to to <a href="https://github.com/OSLC/lyo-samples">OSLC/lyo-samples</a>)</li>
 <li><code>trs4j-bugzilla-sample</code> (from Docs to to <a href="https://github.com/OSLC/lyo-samples">OSLC/lyo-samples</a>)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p><strong>Other changes</strong></p>
-
 <ul>
 <li><a href="https://github.com/eclipse/lyo.designer/issues/15">Accept any kind of Sets, return HashSets · Issue #15 · eclipse/lyo.designer</a></li>
 </ul>
-
-<h2 id="deprecated">👋 Deprecated</h2>
-
+<h2 id="-deprecated">👋 Deprecated</h2>
 <ul>
 <li>HTML-related methods in the resource classes. Generator will not produce them in the next major version of Lyo.</li>
 <li>Wink support is deprecated and will be replaced with Jersey in the next major release</li>
 <li>Perl client is no longer maintained and will be removed in the next major release</li>
 </ul>
-
-<h2 id="removed">🗑️ Removed</h2>
-
+<h2 id="-removed">🗑️ Removed</h2>
 <p>No removals were done that materially affect the artefacts that are part of the release. Lyo 2.4.0 versioning adheres to <a href="https://semver.org">Semantic Versioning 2.0.0</a> (but earlier 2.x releases of Lyo have introduced certain braking changes, such as the upgrade to Jena 3 in Lyo 2.3).</p>
-
 <p><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=532688">Bug 532688</a> removes support for <a href="https://archive.open-services.net/wiki/core/Delegated-User-Interface-Dialogs-3.0/#Window-Name-Protocol">Window Name protocol</a> for Delegated UI communication. The feature has been broken at least since 2.1.0 and contained potential security vulnerability as reported by Rahul Singh (IBM). IE11+ and all modern browsers support the Post Message protocol. <strong>NB!</strong> If you are still using Window Name protocol, get in touch (details are at the bottom).</p>
-
 <p>Lyo Designer 2.4 no longer supports Eclipse Neon (released on June 22, 2016) and older releases.</p>
-
 <p>Most of the sample code have been moved to the <a href="https://github.com/OSLC/lyo-samples">OSLC/lyo-samples</a> repository. Note that the sample code has not been part of the released artefacts previously.</p>
-
-<h2 id="fixed">🐜 Fixed</h2>
-
+<h2 id="-fixed">🐜 Fixed</h2>
 <p><strong>Core</strong></p>
-
 <ul>
 <li><a href="https://github.com/eclipse/lyo.core/pull/14">Bug 533213 - rdf:Seq deserialization in JMH contains no elements by neormx · Pull Request #14 · eclipse/lyo.core</a></li>
 </ul>
-
 <p><strong>Client</strong></p>
-
 <ul>
 <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=529618">529618 – Override all OslcClient#getResource(&hellip;) in OslcOAuthClient</a></li>
 </ul>
-
 <p><strong>Designer</strong></p>
-
 <ul>
 <li><a href="https://github.com/eclipse/lyo.designer/issues/18">When classes &amp; property names use reserve names, RDF names get messed up too · Issue #18 · eclipse/lyo.designer</a></li>
 <li><a href="https://github.com/eclipse/lyo.designer/issues/19">AdaptorInterface palette labels should lose the prefix · Issue #19 · eclipse/lyo.designer</a></li>
 <li><a href="https://github.com/eclipse/lyo.designer/issues/24">Ambiguous methods created for the Creation Factory in the Mgr class · Issue #24 · eclipse/lyo.designer</a></li>
 <li><a href="https://github.com/eclipse/lyo.designer/issues/36">Extra semicolon inserted in the SP Info class if the instance id was customised · Issue #36 · eclipse/lyo.designer</a></li>
 </ul>
-
 <p><strong>Store</strong></p>
-
 <ul>
 <li><a href="https://github.com/eclipse/lyo.store/issues/31">asking for a resource/subject with a URI that does not exist in teh store causes an exception · Issue #31 · eclipse/lyo.store</a></li>
 <li><a href="https://github.com/eclipse/lyo.store/issues/24">Get 1st level blank nodes along with referencing resource. · Issue #24 · eclipse/lyo.store</a></li>
 </ul>
-
 <p><strong>Validation</strong></p>
-
 <ul>
 <li><a href="https://github.com/eclipse/lyo.validation/issues/16">Exception caused when creating an oslc-shape out of the shacl-shape class annotations - using JMH · Issue #16 · eclipse/lyo.validation</a></li>
 <li><a href="https://github.com/eclipse/lyo.validation/issues/17">Fix datatype of ShaclIn · Issue #17 · eclipse/lyo.validation</a></li>
 </ul>
-
-<h2 id="security">🔐 Security</h2>
-
+<h2 id="-security">🔐 Security</h2>
 <p>A potential XSS vulnerability in the OSLC Creation and Selection dialogs have been fixed in <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=532687">Bug 532687</a>. Thanks to Rahul Singh from IBM for disclosure. Also, there was a potential XSS vulnerability in the broken Window Name protocol implementation; the support for it has been removed as described above.</p>
-
-<h2 id="get-in-touch">🙋 Get in touch</h2>
-
+<h2 id="-get-in-touch">🙋 Get in touch</h2>
 <p>We value you feedback! The best place to share it is the <a href="https://forum.open-services.net/c/sdks/lyo">Lyo forum on the open-services.net</a> but a few other places work as well (though we are <a href="https://github.com/eclipse/lyo/issues/6">in process</a> of winding most of them down)! You are also welcome to comment on <a href="https://docs.google.com/document/d/1sPEuunUqg2PKt7GYCACv1IdCIAeZl6vVeDf2vwiNgy8/edit?usp=sharing">Lyo 4.0 roadmap</a> draft!</p>
-
 <p><strong>Lyo no longer uses Eclipse Bugzilla for issue management.</strong> Please file any issues directly on the Github repositories.</p>
-
 <h2 id="other-information">Other information</h2>
-
 <p><strong>Release date:</strong> 2018-11-25 (release review approved on 2018-11-21).</p>
-
 <ul>
 <li><a href="https://projects.eclipse.org/projects/technology.lyo/releases/2.4.0">Lyo 2.4 official release page on Eclipse</a></li>
 <li><a href="https://github.com/eclipse/lyo/issues/2">Lyo 2.4 release issue on Github</a></li>

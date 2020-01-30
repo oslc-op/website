@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ns on OSLC - Open Services for Lifecycle Collaboration</title>
@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-services.net/ns/readme/</guid>
-      <description> Canonical sources  AM: XML Asset: XML Automation: XML LDBP: XML CM: XML Config: Turtle Core: XML EMS: XML Perfmon: XML QM: XML RM: XML  Converting RDF files Use Jena command line tools to produce the files in other formats:
-riot --output turtle core.rdf &amp;gt; core.ttl  </description>
+      <description>Canonical sources  AM: XML Asset: XML Automation: XML LDBP: XML CM: XML Config: Turtle Core: XML EMS: XML Perfmon: XML QM: XML RM: XML  Converting RDF files Use Jena command line tools to produce the files in other formats:
+riot --output turtle core.rdf &amp;gt; core.ttl </description>
     </item>
     
   </channel>

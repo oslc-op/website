@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>interconnect on OSLC - Open Services for Lifecycle Collaboration</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 09 Feb 2015 12:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/oslc-ibm-interconnect/</guid>
-      <description>Coming in a couple weeks is IBM&amp;rsquo;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one.</description>
+      <description>Coming in a couple weeks is IBM&#39;s new InterConnect conference which brings together past IBM events (Innovate, Pulse, Impact) into one.</description>
     </item>
     
   </channel>

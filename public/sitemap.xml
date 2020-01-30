@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -33,26 +33,6 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/external/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/no-tutorial/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/tool/</loc>
-    <lastmod>2019-05-22T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://open-services.net/tags/website/</loc>
-    <lastmod>2019-05-21T10:16:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://open-services.net/news/2018-eclipse-lyo-2.4.0/</loc>
     <lastmod>2018-11-26T21:00:00+02:00</lastmod>
   </url>
@@ -73,7 +53,17 @@
   </url>
   
   <url>
+    <loc>http://open-services.net/tags/no-tutorial/</loc>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/oslc4js/</loc>
+    <lastmod>2017-08-30T15:20:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/tool/</loc>
     <lastmod>2017-08-30T15:20:55+02:00</lastmod>
   </url>
   
@@ -104,6 +94,11 @@
   
   <url>
     <loc>http://open-services.net/resources/website-20170825/</loc>
+    <lastmod>2017-07-15T14:54:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://open-services.net/tags/website/</loc>
     <lastmod>2017-07-15T14:54:23+02:00</lastmod>
   </url>
   

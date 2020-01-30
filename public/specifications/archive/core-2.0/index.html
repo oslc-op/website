@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   
-    <meta name="generator" content="Hugo 0.58.1" />
+    <meta name="generator" content="Hugo 0.62.2" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -106,49 +106,34 @@
       <main class="main specifications">
         <div class="container">
           <div class="content">
-            
-
-<h1 id="open-services-for-lifecycle-collaboration-core-specification-version-2-0">Open Services for Lifecycle Collaboration Core Specification Version 2.0</h1>
-
+            <h1 id="open-services-for-lifecycle-collaboration-core-specification-version-20">Open Services for Lifecycle Collaboration Core Specification Version 2.0</h1>
 <blockquote>
 <p><strong>WARNING! This page is a browser-friendly version of the <a href="https://www.oasis-open.org/apps/org/workgroup/oslc-core/download.php/61054/Oslc%20Core%202.0%20Final.pdf">Core 2.0
 specification archived on
 OASIS</a>.</strong></p>
 </blockquote>
-
 <p><strong>Authors</strong></p>
-
 <ul>
 <li>Dave Johnson, Steve Speicher</li>
 </ul>
-
 <p><strong>Contributors</strong></p>
-
 <ul>
 <li>The <a href="OslcCore">OSLC Core Specification Workgroup</a></li>
 </ul>
-
 <p><strong>License</strong></p>
-
-<p><img src="http://i.creativecommons.org/l/by/3.0/us/88x31.png" alt="" />
+<p><img src="http://i.creativecommons.org/l/by/3.0/us/88x31.png" alt="">
 This work is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution
 License</a>.</p>
-
 <p><strong>Notation and Conventions</strong></p>
-
 <p>The key words &ldquo;MUST&rdquo;, &ldquo;MUST NOT&rdquo;, &ldquo;REQUIRED, SHALL&rdquo;, &ldquo;SHALL NOT&rdquo;,
 &ldquo;SHOULD&rdquo;, &ldquo;SHOULD NOT&rdquo;, &ldquo;RECOMMENDED&rdquo;, &ldquo;MAY&rdquo; and &ldquo;OPTIONAL&rdquo; in this
 document are to be interpreted as described in
 <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC-2119</a>. This document is a
 mixture of normative and informative text. See the <a href="#TheGlossary">the
 glossary</a> below for definitions of these terms.</p>
-
-<hr />
-
+<hr>
 <h1 id="overview">Overview</h1>
-
 <p><em>(this section is informative)</em></p>
-
 <p>The Open Services for Lifecycle Collaboration (OSLC) initiative is
 creating a family of web services specifications for products, services
 and other tools that support all phases of the software and product
@@ -158,7 +143,6 @@ and Product Life-cycle Management (PLM). Each part of the lifecycle or
 domain has its own group and specification, for example there are Change
 Management, Quality Management, Estimation &amp; Measurement and more. Each
 of the domain specifications are built upon this core specification.</p>
-
 <p>This OSLC Core Specification sets out the common features that every
 OSLC Service can be expected to support using terminology from the World
 Wide Web Consortium (W3C). New terminology that we introduce can be
@@ -166,7 +150,6 @@ found in the glossary section below. This specification is mostly about
 OSLC Services, it specifies what OSLC Services MUST, SHOULD and MAY do.
 It also contains some required behaviors for OSLC clients and rules for
 OSLC domain specifications that extend this specification.</p>
-
 <p>OSLC Services are accessible via a Service Provider Resource that
 describes the Services offered. Each Service can provide Creation
 Factories for resource creation, Query Capabilities for resource query
@@ -176,25 +159,19 @@ offer Resource Shapes that describe the properties of resources managed
 by the service. This is illustrated in the diagram below. See the
 section below on Service Provider Resources for further discussion of
 these concepts.</p>
-
 <p><strong>Figure #1: OSLC Core Specification concepts and relationships</strong></p>
-
-<p><img alt="Diagram of OSLC concepts"
-src="../../../img/specifications/core-2.0/oslc-core-overview.png"/></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>This specification establishes terminology and rules for defining
 resources in terms of the property names and value-types that are
 allowed and required. OSLC domain specifications are expected to use
 these rules and terminologies to describe their resources. See the OSLC
 Defined Resources section for more on this topic.</p>
-
 <p>This specification also sets out rules for creating resource
 representations in RDF/XML, JSON, Atom and Turtle formats. OSLC domain
 specifications are expected to refer to these rules when specifying how
 their resources are to be represented. See the OSLC Defined Resource
 Representations section for the representation rules and examples of
 each format.</p>
-
 <p>#AboutTheVersionNumber <strong>About the version number.</strong> We use the version
 number &ldquo;2.0&rdquo; even though there has never been an OSLC Core Version 1.0
 specification. We do this because this OSLC Core specification was
@@ -202,24 +179,19 @@ written after a series of version 1.0 domain specifications were
 finalized by OSLC workgroups. The version 2.0 domain specifications will
 all be based on this Core specification and <em>to avoid confusion</em> this
 specification will also be known as Version 2.0.</p>
-
 <p><strong>About RDF</strong>. The resource and property-based data model used in OSLC
 resources is based on the Resource Description Framework (RDF) and OSLC
 requires RDF representations, but OSLC uses a small number of RDF
 concepts and does not require implementers to provide an RDF
 triple-store or a SPARQL query-engine.</p>
-
 <h2 id="design-considerations">Design considerations</h2>
-
 <p>The core philosophies of OSLC are to build on the powerful and scalable
 architecture of the World Wide Web and to do the simplest possible
 things that will work.</p>
-
 <p><strong>Build on the WWW</strong>. OSLC builds on the architecture of the WWW and
 follows the REST architectural pattern. This means that OSLC Services
 provide a uniform HTTP interface, OSLC URIs are stable and opaque and,
 in simple terms, OSLC works like the web.</p>
-
 <p><strong>Keep things simple</strong>. Doing the simplest things that will possibly
 work means a couple of different things in regard to OSLC. It means
 starting with simple and existing concepts. For example, we model
@@ -229,109 +201,84 @@ well-known specifications, but also carefully limiting the number of
 other specifications that we reference. This simplicity is intended to
 enable loose coupling and to make life easier for everybody: OSLC domain
 work groups, OSLC Service implementers and OSLC client developers.</p>
-
 <p><strong>Accommodate different schemas</strong>. Because of the breadth of the OSLC
 domains, spanning lifecycle and platforms, OSLC has to work for systems
 with very different data schemas or no schemas at all. Flexibility is
 needed, but some OSLC Services must be able to offer information about
 resource properties so that clients can learn which are allowed and
 required for resource creation, query and reporting.</p>
-
 <p><strong>Accommodate different representations</strong>. Different client platforms
 might require or at least prefer different representations. For example,
 in the browser a JSON or Atom format representation might work best.
 OSLC Services will all support RDF/XML and may support other formats
 including JSON, Atom and Turtle.</p>
-
 <p><strong>Align with the W3C Linked Data initiative</strong>. Instead of defining a new
 data model, OSLC’s resource and property-value approach is based on
 industry standard Resource Description Framework (RDF) data model. This
 model allows OSLC to keep things simple, build on the WWW and
 accommodate different schemas.</p>
-
 <h2 id="glossary-of-terms">Glossary of terms</h2>
-
 <p>This is a guide to some of the terminology used in this document. The
 following definitions are standard W3C concepts. OSLC uses these
 concepts without modification – their definitions are summarized here
 for the convenience of the reader. See <a href="http://www.w3c.org">http://www.w3c.org</a>.</p>
-
 <ul>
 <li><strong>Resource</strong>: A network data object or service that can be
 identified by a URI. Resources may be available in multiple
 representations (e.g. multiple languages, data formats,
 size, resolutions) or vary in other ways. (reference: HTTP)</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>Representation</strong>: An HTTP payload entity, included in an HTTP
 response, that is subject to content negotiation. There may exist
 multiple representations. associated with a particular HTTP
 response status. (reference: HTTP)</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>URI</strong>: Uniform Resource Identifiers are simply formatted strings
 which identify&ndash;via name, location, or any other characteristic &ndash; a
 resource (reference: URI Syntax)</li>
 </ul>
-
 <p>Here are the OSLC specific terms used in this specification.</p>
-
 <p>(these definitions are normative)</p>
-
 <ul>
 <li><strong>OSLC Domain</strong>: an OSLC Domain is one ALM or PLM topic area such as
 Change Management, Requirements management or Automation. Each OSLC
 Domain will have its own OSLC specification that complies with this
 Core specification.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Service</strong>: a set of capabilities that enable a web client to
 create, retrieve, update and delete resources managed by an ALM or
 PLM product or online service offering and associated with one
 OSLC Domain.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Service Provider</strong>: a product or online service offering that
 provides an implementation of one or more OSLC Services, which may
 themselves implement different OSLC Domain specifications.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Resource</strong>: a resource that is managed by an OSLC Service,
 may have properties and may link to other resources including those
 provided by other OSLC Services.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Defined Resource</strong>: a resource that is defined by an OSLC
 specification, see OSLC Defined Resources below.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Defined Properties</strong>: resource properties that are defined by
 an OSLC specification, defined by an OSLC Resource Shape or both.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Resource Shape</strong>: defines the set of OSLC Properties expected
 in a resource for specific operations (i.e. creation, update
@@ -340,34 +287,26 @@ and optionality. Examples of such operations include OSLC Creation
 Resource and Query Resource. Other examples might include
 applications that display data in tables.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Creation Factory</strong>. A creation factory provides a URI used to
 create new resources via HTTP POST and may also provide Resource
 Shapes that describe the types of resources that may be created.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Query</strong> <strong>Capability</strong>: A query capability provides a base
 URI for forming query resource URIs and, optionally, Resource Shapes
 that describe the property values that may be used in query
 expressions and returned in query results.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>OSLC Response Info Resource</strong>: An OSLC Defined Resource that
 provides information about a paged resource representation, e.g. the
 next page in a multi-page query result representation.</li>
 </ul>
-
 <p>Here are some industry terms that we use in this specification:</p>
-
 <ul>
 <li><strong>Application Lifecycle Management (ALM)</strong>: ALM is the marriage of
 business management to software engineering made possible by tools
@@ -380,10 +319,8 @@ lifecycle of a product from its conception, through design and
 manufacture, to service and disposal (from
 <a href="http://en.wikipedia.org/wiki/Product_lifecycle_management">http://en.wikipedia.org/wiki/Product_lifecycle_management</a>).</li>
 </ul>
-
 <p>And finally, we use the following two terms to describe portions of the
 OSLC Core specification:</p>
-
 <ul>
 <li><strong>Normative</strong>. Normative sections of this document set forth
 requirements that must be met to establish conformance with the OSLC
@@ -395,9 +332,7 @@ dependent on the fact of implementation, but, if implemented, that
 implementation is as prescribed in this specification. Contrast
 with informative.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>Informative</strong>. Informative text provides background
 or explanation. Contrast with Normative. It should be clear which
@@ -406,46 +341,36 @@ absence of RFC-2119 keywords. Sections that are purely informative
 will be marked as informative. Informative text that might be
 mistaken for normative will also be marked.</li>
 </ul>
-
-<hr />
-
+<hr>
 <h1 id="oslc-defined-resources">OSLC Defined Resources</h1>
-
 <p>An OSLC Resource is a resource managed by an OSLC Service. An OSLC
 Resource is typically something like a Change Request, a Requirement or
 some other ALM or PLM artifact or record, but an OSLC Resource could
 also be a video or a presentation file. The resource’s storage medium is
 unconstrained by OSLC, e.g. it could be stored in a relational database,
 a flat-file on disk, a source code control system, or in any other way.</p>
-
 <p>An OSLC Service can manage any type of resource; OSLC specifications
 only constrain an OSLC Service’s behavior with respect to resource types
 it manages that are defined by OSLC specifications (OSLC Defined
 Resources). OSLC Defined Resources may be specified in any OSLC
 specification, including this document. Resources are defined by the
 properties that are allowed and required in the resource.</p>
-
 <h2 id="oslc-defined-resources-1">OSLC Defined Resources</h2>
-
 <p>OSLC uses a simple model of resources with property values intended to
 be consistent with the Resource Description Framework (RDF) data model
 (reference: RDF Concepts). OSLC also builds upon the Extensible Markup
 Language (XML) namespace mechanism (reference: XML Namespaces).</p>
-
 <p>When specifying a resource or a property, OSLC Specifications define its
 type as a URI which can be decomposed into a namespace URI and a name.
 We abbreviate type URIs as Prefixed Names (reference: Prefixed Names),
 which are represented in XML as QNames. The namespace used for resources
 defined in this specification is defined as follows:</p>
-
 <ul>
 <li>Namespace URI: <code>http://open-services.net/ns/core#</code></li>
 <li>Default Prefix: <code>oslc</code></li>
 </ul>
-
 <p>When defining an OSLC Resource type, OSLC Specifications <strong>MUST</strong>
 provide the following information:</p>
-
 <ul>
 <li><strong>Name</strong> (String): name of the resource which <strong>MUST</strong> be valid as
 the Local Name part of a QName (reference: XML Namespaces).</li>
@@ -455,17 +380,13 @@ of the Namespace URI in the specification that defines the resource.
 For example, the resource named Service (defined below) gets the
 Type URI of <code>http://open-services.net/ns/core#Service</code>.</li>
 </ul>
-
 <p>Once a resource type is defined, its allowed and required properties can
 be defined.</p>
-
 <p>Regardless of any property definitions, providers and clients MAY impose
 implementation-specific limits on resources they accept. For example,
 they are not required to accept/create/store resources whose RDF triples
 contain objects with arbitrarily large literal values.</p>
-
 <h3 id="defining-oslc-properties">Defining OSLC Properties</h3>
-
 <p>OSLC Specifications <strong>MAY</strong> provide a list of properties allowed and/or
 required for a particular domain and operation on an OSLC Defined
 Resource; if no operation is specified, then the list &lt;br
@@ -473,7 +394,6 @@ Resource; if no operation is specified, then the list &lt;br
 Specifications that provide a list of properties and constraints on them
 <strong>SHOULD</strong> provide the following information for each property that they
 define.</p>
-
 <ul>
 <li><strong>Name</strong>: name of the property which <strong>MUST</strong> be valid as the Local
 Name part of a QName (reference: XML Namespaces).</li>
@@ -485,7 +405,6 @@ Providers Section) defines a property named <code>domain</code> with the URI of
 <code>http://open-services.net/ns/core#domain</code></li>
 <li><strong>Description</strong>: Description of the property.</li>
 <li><strong>Occurs</strong>: value <strong>MUST</strong> be one of:
-
 <ul>
 <li><a href="http://open-services.net/ns/core#Exactly-one"> <code>http://open-services.net/ns/core#Exactly-one</code>
 </a></li>
@@ -495,14 +414,13 @@ Providers Section) defines a property named <code>domain</code> with the URI of
 </a></li>
 <li><a href="http://open-services.net/ns/core#One-or-many"> <code>http://open-services.net/ns/core#One-or-many</code>
 </a></li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Value-types</strong>: A property <strong>MAY</strong> allow multiple value-types and a
 value <strong>MUST</strong> satisfy one or more of them. Each value-type <strong>MUST</strong>
 be a URI that corresponds to one of the following:
-
 <ul>
 <li>Literal value-types:
-
 <ul>
 <li><strong>Boolean</strong>: a boolean type as specified by XSD Boolean (
 <code>http://www.w3.org/2001/XMLSchema#boolean</code>, reference:
@@ -528,9 +446,9 @@ XSD Datatypes).</li>
 <li><strong>XMLLiteral</strong>: a Literal XML value ( <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
 <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</code>
 </a>).</li>
-</ul></li>
+</ul>
+</li>
 <li>Resource value-types:
-
 <ul>
 <li><strong>Resource</strong>: value is a resource at a specified URI (i.e. a
 URI Reference) ( <a href="http://open-services.net/ns/core#Resource">
@@ -544,8 +462,10 @@ inside the resource being defined (i.e. a Blank Node) ( <a href="http://open-ser
 Resource</strong> as defined above ( <a href="http://open-services.net/ns/core#AnyResource">
 <code>http://open-services.net/ns/core#AnyResource</code>
 </a> ).</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><strong>Representation</strong>: for properties with a resource value-type, OSLC
 specifications should also specify how the resource will
 be represented. The options are <a href="http://open-services.net/ns/core#Reference">
@@ -571,7 +491,6 @@ Appendix C.</li>
 <li><strong>Read-only</strong>: Boolean indication of whether or not clients are
 permitted to replace the property’s value after the resource has
 been created. Allowable values are: true, false, unspecified.
-
 <ul>
 <li><strong>True</strong> indicates that providers <strong>SHOULD NOT</strong> permit clients
 to change the property’s value after the resource has
@@ -580,25 +499,21 @@ been created.</li>
 change the property’s value after the resource has been created.</li>
 <li><strong>Unspecified</strong> indicates that the domain specification leaves
 the choice up to provider implementations.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>In the rest of this document we will define OSLC resources as described
 above. The below section titled OSLC Defined Resource Representations
 defines how OSLC resources are to be represented in RDF/XML, JSON and
 other formats.</p>
-
 <p>OSLC Services that wish to provide the information above in a
-machine-readable format <strong>MAY</strong> use OSLC Resource Shapes, see <a href="OSLC Core Spec Appendix A">Appendix
-A: Common Properties and Resources</a> for more
+machine-readable format <strong>MAY</strong> use OSLC Resource Shapes, see [Appendix
+A: Common Properties and Resources](OSLC Core Spec Appendix A) for more
 information.</p>
-
 <p>NOTE: we do not mention Internationalization of strings here because we
 expect standard HTTP content-negotiation and representation (e.g.
 <code>xml:lang</code>) mechanisms to be used for such.</p>
-
 <h2 id="unknown-properties-and-content">Unknown properties and content</h2>
-
 <p>For OSLC Defined Resources, clients <strong>SHOULD</strong> assume that an OSLC
 Service will discard unknown property values. An OSLC Service <strong>MAY</strong>
 discard property values that are not part of the resource definition or
@@ -609,53 +524,38 @@ resource back and compare the HTTP response header ETag value and
 contents with its expectations. The Service <strong>SHOULD</strong> <strong>NOT</strong> return an
 error code for unrecognized content. A Service <strong>MUST</strong> return an error
 code if recognized content is invalid.</p>
-
 <p>The rule is different for clients. When doing an update, OSLC clients
 <strong>MUST</strong> preserve any unknown property-values and other content in OSLC
 Defined Resources.</p>
-
 <p>See following section on Resource Update.</p>
-
 <h2 id="resource-operations">Resource Operations</h2>
-
 <p>OSLC Services use HTTP for create, retrieve, update and delete
 operations on resources. OSLC Services <strong>MUST</strong> comply with the HTTP
 specification (reference: HTTP).</p>
-
 <h3 id="resource-creation">Resource Creation</h3>
-
 <p>(this section is informative)</p>
-
 <p>To create an OSLC Defined Resource, or any type of resource managed by
 an OSLC Service, an OSLC client HTTP POSTs a representation of that
 resource to a Creation URI. See the section on <a href="#Creation_Factories">Creation
 Factories</a> for more information.</p>
-
 <h3 id="resource-removal">Resource Removal</h3>
-
 <p>(this section is informative)</p>
-
 <p>To delete an OSLC Defined Resource, or any type of resource managed by a
-service, a client performs an HTTP DELETE on the resource&rsquo;s URI.</p>
-
+service, a client performs an HTTP DELETE on the resource's URI.</p>
 <h3 id="resource-update">Resource Update</h3>
-
 <p>To update an OSLC Resource in an OSLC Service, a client fetches a
 representation of that resource via HTTP GET. The client updates the
 representation and then uses HTTP PUT to send the new representation to
-the resource&rsquo;s URI.</p>
-
+the resource's URI.</p>
 <p>Recall from <a href="#Unknown_properties_and_content">OSLC Defined Resources: Unknown properties and
 content</a> above that, when doing an
 update, OSLC clients must preserve any unknown property-values and other
 content in OSLC Defined Resources.</p>
-
 <p>Because the update process involves first getting a resource, modifying
 it and then later putting it back to the server there is the possibility
 of a conflict, e.g. some other client may have have updated the resource
 since the GET. To mitigate this problem, OSLC Services <strong>SHOULD</strong> use
 the HTTP <code>If-Match</code> header:</p>
-
 <ul>
 <li>If the HTTP <code>If-Match</code> header is missing OSLC Services <strong>SHOULD</strong>
 return HTTP Bad Request (400) status code to indicate that the
@@ -668,38 +568,31 @@ not match.</li>
 is some other problem or conflict with the update then OSLC Services
 <strong>MAY</strong> return an HTTP Conflict (409) to indicate that problem.</li>
 </ul>
-
 <p>Note that section <a href="#Error_Responses">Error Responses</a> below, we specify
 that when an error occurs and useful information can be provided to
 clients OSLC Services <strong>SHOULD</strong> return error information in the body of
 the response.</p>
-
 <h2 id="resource-paging">Resource Paging</h2>
-
 <p>OSLC Services <strong>MAY</strong> support a technique called Resource Paging to
 enable clients to retrieve resources one page at a time.</p>
-
 <p>When a client requests a resource, the client can expect that the entire
 resource will be returned in the response, with all property values.
 This can be problematic because, in some cases, resources may be so
 large that a client might not want to retrieve the entire resource in
 one HTTP response.</p>
-
 <p>One solution for response size-sensitive Clients is to check size before
 loading. Clients that do not wish to load large resources can use the
 HTTP HEAD method to determine the size of a resource and, according to
-the rules of HTTP the server&rsquo;s <strong>SHOULD</strong> include an HTTP Content-Length
+the rules of HTTP the server's <strong>SHOULD</strong> include an HTTP Content-Length
 header that indicates the size of the resource as the &ldquo;decimal number of
 OCTETs.&rdquo; If the size is too large, a client can choose not to retrieve
 the resource.</p>
-
-<p>Another solution is to use Resource Paging; here&rsquo;s how it works. To get
+<p>Another solution is to use Resource Paging; here's how it works. To get
 a paged version of a resource, a client adds the
 &ldquo;key<code>value&quot; pair =oslc.paging=true</code> to the query component of the
 resource URI and the server <strong>MAY</strong> respond by returning a
 representation that contains partial information about the resource;
-only a subset of the resource&rsquo;s property values.</p>
-
+only a subset of the resource's property values.</p>
 <p>When a page is returned and it is <strong>NOT</strong> the last page in the sequence,
 then it <strong>SHOULD</strong> include an <code>oslc:ResponseInfo</code> (defined below), which
 that contains a resource-valued property <code>oslc:nextPage</code> that links to a
@@ -707,83 +600,68 @@ resource that represents the next page of property-values. Because
 paging is unstable (see below), by the time a client follows an
 <code>oslc:nextPage</code> link there may no longe be a next page, in this case the
 server <strong>MAY</strong> respond with an HTTP 404 Page Not Found status code.</p>
-
 <p>A client can also request paging by adding the
 &ldquo;key<code>value&quot; pair =oslc.pageSize</code> to the query string component of the
 resource URI. By adding this, a client requests that the server respond
 with a specific number of property values. For example,
 <code>oslc.pageSize=20</code> indicates to the server that the client would like 20
 values per page. OSLC Services <strong>MAY</strong> ignore <code>oslc.pageSize</code>.</p>
-
 <p>When Resource Paging is used, the values of a multi-valued property
 <strong>MAY</strong> be split across resource pages. Each property value <strong>MUST</strong> be
 represented in its entirety and not split across multiple partial
 resource pages.</p>
-
 <h3 id="provider-response-size-limitations">Provider response-size limitations</h3>
-
 <p>When a client requests a resource that an OSLC Service considers to be
 too large to return in one response and the client has not indicated
 that it desires paging (via oslc.paging or oslc.pageSize), the OSLC
 Service <strong>MAY</strong> redirect the client to a representation that contains
 partial information about the resource, as follows:</p>
-
 <ul>
 <li>The OSLC Service receives an HTTP GET request for a resource that
 exceeds size limits and URL does not include <code>oslc.paging</code> or an
 <code>oslc.pageSize</code> key/value pair.</li>
 <li>The OSLC Service returns an HTTP Status 302 redirect a URL that does
 include the key/values for paging, as follows:
-
 <ul>
 <li>If the client did not indicate paging, the new redirect URL
 <strong>MUST</strong> include the <code>oslc.paging</code> pair.</li>
 <li>If the client indicated a page size, then the redirect URL
 <strong>MUST</strong> include the <code>oslc.pageSize</code> pair with a size value that
 is acceptable to the service.</li>
-</ul></li>
+</ul>
+</li>
 <li>The client <strong>MAY</strong> choose to follow the redirect and receive a
 representation that contains partial information about the resource.</li>
 </ul>
-
 <p>On receiving a resource representation, OSLC Clients <strong>SHOULD</strong> check
 for the presence of an <code>oslc:nextPage</code> value to determine if the
 representation contains partial information about the resource. If the
 value is present, then paging is in effect and the representation
 contains partial information about the resource.</p>
-
 <h3 id="unstable-paging">Unstable Paging</h3>
-
 <p>Because HTTP is a stateless protocol and OSLC Services manage resources
 that can change frequently, OSLC clients <strong>SHOULD</strong> assume that
 resources can change as they page through them using the <code>oslc:nextPage</code>
 mechanism.</p>
-
 <h3 id="stable-paging">Stable Paging</h3>
-
 <p>Some OSLC Services might wish to guarantee stable paging, meaning that
 the chain of <code>oslc:nextPage</code> links in a resource represent a snapshot in
 time and will not change as the client pages through them. OSLC
 specifications that require stable paging <strong>SHOULD</strong> state this
 requirement and specify to which resources it applies.</p>
-
 <p>Note that because stable paging implementations are based on server-side
 state, it is possible that such state will expire. Implementations
 <strong>MAY</strong> use the HTTP response code 410 (Expired) to indicate to clients
 that the next-page link they requested has expired.</p>
-
 <h3 id="response-information">Response Information</h3>
-
 <p>Resource representations returned via Resource Paging <strong>MUST</strong> include a
 resource of type <code>oslc:ResponseInfo</code>, as defined in this section. A
 response info resource representation describes information about a
 paged HTTP response body in which it appears.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>ResponseInfo</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#ResponseInfo</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -796,7 +674,6 @@ paged HTTP response body in which it appears.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -807,7 +684,6 @@ paged HTTP response body in which it appears.</p>
 <td align="left">n/a</td>
 <td align="left">Title of the response</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:description</code></td>
 <td align="left">zero-or-one</td>
@@ -817,7 +693,6 @@ paged HTTP response body in which it appears.</p>
 <td align="left">n/a</td>
 <td align="left">Description of response</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:nextPage</code></td>
 <td align="left">zero-or-one</td>
@@ -827,7 +702,6 @@ paged HTTP response body in which it appears.</p>
 <td align="left"><code>any</code></td>
 <td align="left">Link to next page of response</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:totalCount</code></td>
 <td align="left">zero-or-one</td>
@@ -839,72 +713,55 @@ paged HTTP response body in which it appears.</p>
 </tr>
 </tbody>
 </table>
-
 <p>The subject resource URI of the <code>oslc:ResponseInfo</code> resource
 representation will be the HTTP request URI, or URI from subsequent
 redirects. The response representation may also include properties from
 subject resources different from the one identified by the request URI.</p>
-
-<p>Here&rsquo;s an example, using the OSLC Core RDF/XML representation guidance,
+<p>Here's an example, using the OSLC Core RDF/XML representation guidance,
 that illustrates how the <code>oslc:ResponseInfo</code> resource representation is
 included in addition to the blog entry resource representation.</p>
-
 <p><strong>Example: Resource Paging, partial response with response info resource
 representation</strong></p>
-
 <p>Example URI:
 <code>http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</code></p>
-
 <blockquote>
 <p>&lt;verbatim&gt; &lt;rdf:RDF
-xmlns:oslc_blog=&ldquo;<a href="http://open-services.net/ns/bogus/blogs#&quot;">http://open-services.net/ns/bogus/blogs#&quot;</a>
-xmlns:rdf=&ldquo;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;">http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</a>
-xmlns:foaf=&rdquo;<a href="http://http://xmlns.com/foaf/0.1/">http://http://xmlns.com/foaf/0.1/</a>&ldquo;
-xmlns:dcterms=&rdquo;<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>&ldquo;&gt;</p>
-
+xmlns:oslc_blog=&quot;http://open-services.net/ns/bogus/blogs#&rdquo;
+xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&rdquo;
+xmlns:foaf=&quot;<a href="http://http://xmlns.com/foaf/0.1/">http://http://xmlns.com/foaf/0.1/</a>&rdquo;
+xmlns:dcterms=&quot;<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>&rdquo;&gt;</p>
 <p>&lt;oslc_blog:Entry
-rdf:about=&rdquo;<a href="http://example.com/blogs/entry/1">http://example.com/blogs/entry/1</a>&ldquo;&gt;
+rdf:about=&quot;<a href="http://example.com/blogs/entry/1">http://example.com/blogs/entry/1</a>&rdquo;&gt;
 &lt;/oslc_blog:Entry&gt;</p>
-
 <p>&lt;oslc:ResponseInfo
-rdf:about=&rdquo;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</a>&ldquo;&gt;
+rdf:about=&quot;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</a>&rdquo;&gt;
 &lt;oslc:nextPage
-rdf:resource=&rdquo;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3</a>&ldquo;
+rdf:resource=&quot;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3</a>&rdquo;
 /&gt; &lt;/oslc:ResponseInfo&gt;</p>
-
 <p>&lt;/rdf:RDF&gt; &lt;/verbatim&gt;</p>
 </blockquote>
-
 <p>Refer to the OSLC Defined Resource Representation guidance for an
 explanation of how the response info resource may be represented in
 RDF/XML.</p>
-
 <h2 id="selective-property-values">Selective Property Values</h2>
-
 <p>OSLC Services <strong>MAY</strong> support a technique called Selective Properties to
 enable clients to retrieve only selected property values.</p>
-
 <p>By adding the key<code>value pair =oslc.properties</code>, specified below, to a
 resource URI, a client can request a new resource with a subset of the
-original resource&rsquo;s values. Here&rsquo;s how the selective properties values
+original resource's values. Here's how the selective properties values
 <code>oslc.properties</code> and <code>oslc.prefix</code> work.</p>
-
-<h3 id="oslc-properties">oslc.properties</h3>
-
+<h3 id="oslcproperties">oslc.properties</h3>
 <p>The <code>oslc.properties</code> key=value pair lets you specify the set of
 properties to be included in the response. Both immediate and nested
 properties may be specified. A nested property is a property that
 belongs to the resource referenced by another property. Nested
 properties are enclosed in brace brackets, and this nesting may be done
 recursively, i.e. a nested property may contain other nested properties.</p>
-
 <p>For example, suppose we have a bug report resource at the following URL:</p>
-
 <blockquote>
 <pre><code> http://example.com/bugs/4242
 </code></pre>
 </blockquote>
-
 <p>Suppose this bug resource has properties such as <code>dcterms:title</code>,
 <code>dcterms:description</code>, and <code>dcterms:creator</code>, and that <code>dcterms:creator</code>
 refers to a person resource that has properties such as <code>foaf:givenName</code>
@@ -913,17 +770,13 @@ report that includes its <code>dcterms:title</code> and the <code>foaf:givenName
 <code>foaf:familyName</code> of the person refered to by its <code>dcterms:creator</code>. The
 following URL illustrates the use of the <code>oslc.properties</code> query value
 to include those properties:</p>
-
 <blockquote>
 <pre><code>http://example.com/bugs/4242?oslc.properties=dcterms:title,dcterms:creator{foaf:givenName,foaf:familyName}
 </code></pre>
 </blockquote>
-
 <p><strong>Syntax</strong></p>
-
 <p>The <code>oslc.properties</code> pair is defined by the <code>oslc_properties</code> term in
 the following BNF grammar:</p>
-
 <blockquote>
 <pre><code>oslc_properties ::= &quot;oslc.properties=&quot; properties
 properties      ::= property (&quot;,&quot; property)*
@@ -934,9 +787,7 @@ identifier      ::= PrefixedName
 PrefixedName    ::= /* see &quot;SPARQL Query Lanaguage for RDF&quot;, http://www.w3.org/TR/rdf-sparql-query/#rPrefixedName */
 </code></pre>
 </blockquote>
-
-<h3 id="oslc-prefix">oslc.prefix</h3>
-
+<h3 id="oslcprefix">oslc.prefix</h3>
 <p>In our examples of <code>oslc.properties</code>, property names include a URI
 prefix, i.e. <code>dcterms:</code> or <code>foaf:</code>. An OSLC Service <strong>SHOULD</strong> predefine
 URI prefixes for its properties. Here we assume that OSLC has predefined
@@ -948,17 +799,13 @@ requests. The <code>oslc.prefix</code> value lets you specify URI prefixes used 
 property names. For example, suppose the <code>foaf:</code> prefix was not
 predefined. The following URL illustrates the use of the <code>oslc.prefix</code>
 value to define it:</p>
-
 <blockquote>
 <pre><code>http://example.com/bugs/4242?oslc.prefix=foaf=&lt;http://xmlns.com/foaf/0.1/&gt;&amp;oslc.properties=foaf:lastName,...
 </code></pre>
 </blockquote>
-
 <p><strong>Syntax</strong></p>
-
 <p>The syntax of the <code>oslc.prefix</code> is defined by the <code>oslc_prefix</code> term in
 the following BNF grammar:</p>
-
 <blockquote>
 <pre><code>oslc_prefix ::= &quot;oslc.prefix=&quot; prefix_defs
 prefix_defs ::= prefix_def (&quot;,&quot; prefix_def)*
@@ -968,60 +815,44 @@ PN_PREFIX   ::= /* see &quot;SPARQL Query Lanaguage for RDF&quot;, http://www.w3
 uri_ref_esc ::= /* an angle bracket-delimited URI reference in which &gt; and \ are \-escaped. */
 </code></pre>
 </blockquote>
-
 <h2 id="common-properties">Common Properties</h2>
-
 <p>OSLC domains specifications are strongly encouraged to use the common
 properties approved by the OSLC Core Workgroup (See
-<a href="OSLC Core Spec Appendix A">OSLC Core Spec Appendix A</a>) rather than
+[OSLC Core Spec Appendix A](OSLC Core Spec Appendix A)) rather than
 defining new properties.</p>
-
-<hr />
-
+<hr>
 <h1 id="service-provider-resources">Service Provider Resources</h1>
-
 <p>OSLC Services are accessible via a Service Provider Resource that
 describes each service, which domain specifications the service
 implements as well as the creation, query and delegated UI capabilities
 of each service.</p>
-
 <p>Additionally, a provider may offer a Service Provider Catalog that lists
 related Service Providers.</p>
-
 <h2 id="conceptual-model">Conceptual Model</h2>
-
 <p>The conceptual model of Service Provider Catalog and Service Provider
 resources is simple. They are both resources with property values. The
 values allowed and required in each type of resource are defined below.</p>
-
 <p>The diagram below illustrates the Service Provider Catalog and Service
 Provider concepts and relationships. As you can see there are two
 Resources defined: Service Provider Catalog and Service Provider. There
 are also a set of Local In-Line Resources that are used inside the
 Resources to define namespaces, OAuth configurations, contributors as
 well as services and their capabilities.</p>
-
 <p><strong>Figure #2: Service Provider concepts and relationships</strong></p>
-
-<p><img alt="Service Provider concepts and relationships"
-src="<http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg>&ldquo;
+<p>&lt;img alt=&quot;Service Provider concepts and relationships&rdquo;
+src=&quot;<a href="http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg">http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg</a>&rdquo;
 /&gt;</p>
-
 <p>Next, we will formally define the Service Provider Catalog and Service
 Provider resources.</p>
-
 <h3 id="resource-service-provider-catalog">Resource: Service Provider Catalog</h3>
-
 <p>An OSLC implementation that offers one or more Service Provider
 resources (see below), MAY also provide Service Provider Catalog to
 enable OSLC clients to find Service Providers offered. These catalogs
 may contain other nested catalogs as well as service providers.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>ServiceProviderCatalog</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#ServiceProviderCatalog</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1034,7 +865,6 @@ may contain other nested catalogs as well as service providers.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1045,7 +875,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left">n/a</td>
 <td align="left">Title of the service provider catalog</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:description</code></td>
 <td align="left">zero-or-one</td>
@@ -1055,7 +884,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left">n/a</td>
 <td align="left">Description of the service provider catalog</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:publisher</code></td>
 <td align="left">zero-or-one</td>
@@ -1065,7 +893,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
 <td align="left">Describes the software product that provides the implementation.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:domain</code></td>
 <td align="left">zero-or-many</td>
@@ -1075,7 +902,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left">n/a</td>
 <td align="left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:serviceProvider</code></td>
 <td align="left">zero-or-many</td>
@@ -1085,7 +911,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left"><a href="#Resource_Service_Provider"> <code>oslc:ServiceProvider</code> </a></td>
 <td align="left">A service offered by the service provider.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:serviceProviderCatalog</code></td>
 <td align="left">zero-or-many</td>
@@ -1095,7 +920,6 @@ may contain other nested catalogs as well as service providers.</p>
 <td align="left"><a href="#Resource_Service_Provider_Catalog"> <code>oslc:ServiceProviderCatalog</code> </a></td>
 <td align="left">Additional service provider catalog.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:oauthConfiguration</code></td>
 <td align="left">zero-or-many</td>
@@ -1107,17 +931,13 @@ may contain other nested catalogs as well as service providers.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-service-provider">Resource: Service Provider</h3>
-
 <p>A Service Provider describes a set of services offered by an OSLC
 implementation.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>ServiceProvider</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#ServiceProvider</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1130,7 +950,6 @@ implementation.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1141,7 +960,6 @@ implementation.</p>
 <td align="left">n/a</td>
 <td align="left">Title of the service provider</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:description</code></td>
 <td align="left">zero-or-one</td>
@@ -1151,7 +969,6 @@ implementation.</p>
 <td align="left">n/a</td>
 <td align="left">Description of the service provider</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:publisher</code></td>
 <td align="left">zero-or-one</td>
@@ -1161,7 +978,6 @@ implementation.</p>
 <td align="left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
 <td align="left">Describes the software product that provides the implementation.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:service</code></td>
 <td align="left">one-or-many</td>
@@ -1171,7 +987,6 @@ implementation.</p>
 <td align="left"><a href="#Resource_Service"> <code>oslc:Service</code> </a></td>
 <td align="left">Describes a service offered by the service provider.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:details</code></td>
 <td align="left">zero-or-many</td>
@@ -1181,7 +996,6 @@ implementation.</p>
 <td align="left"><code>any</code></td>
 <td align="left">A URL that may be used to retrieve a web page to determine additional details about the service provider.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:prefixDefinition</code></td>
 <td align="left">zero-or-many</td>
@@ -1191,7 +1005,6 @@ implementation.</p>
 <td align="left"><a href="#Resource_Prefix_Definition"> <code>oslc:PrefixDefinition</code> </a></td>
 <td align="left">Defines a namespace prefix for use in JSON representations and in forming OSLC Query Syntax strings.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:oauthConfiguration</code></td>
 <td align="left">zero-or-one</td>
@@ -1203,17 +1016,13 @@ implementation.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-service">Resource: Service</h3>
-
 <p>A Service describes the specific services offered by an implementation
 of an OSLC specification.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>Service</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#Service</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1226,7 +1035,6 @@ of an OSLC specification.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:domain</code></td>
@@ -1237,7 +1045,6 @@ of an OSLC specification.</p>
 <td align="left">n/a</td>
 <td align="left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:creationFactory</code></td>
 <td align="left">zero-or-many</td>
@@ -1247,7 +1054,6 @@ of an OSLC specification.</p>
 <td align="left"><a href="#Resource_Creation_Factory"> <code>oslc:CreationFactory</code> </a></td>
 <td align="left">Enables clients to create new resources</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:queryCapability</code></td>
 <td align="left">zero-or-many</td>
@@ -1257,7 +1063,6 @@ of an OSLC specification.</p>
 <td align="left"><a href="#Resource_Query_Capability"> <code>oslc:QueryCapability</code> </a></td>
 <td align="left">Enables clients query across a collection of resources</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:selectionDialog</code></td>
 <td align="left">zero-or-many</td>
@@ -1267,7 +1072,6 @@ of an OSLC specification.</p>
 <td align="left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
 <td align="left">Enables clients to select a resource via UI</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:creationDialog</code></td>
 <td align="left">zero-or-many</td>
@@ -1277,7 +1081,6 @@ of an OSLC specification.</p>
 <td align="left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
 <td align="left">Enables clients to create a resource via UI</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:usage</code></td>
 <td align="left">zero-or-many</td>
@@ -1289,17 +1092,13 @@ of an OSLC specification.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-creation-factory">Resource: Creation Factory</h3>
-
 <p>A Creation Factory describes a creation factory, capable of creating new
 resources via HTTP POST.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>CreationFactory</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#CreationFactory</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1312,7 +1111,6 @@ resources via HTTP POST.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1323,7 +1121,6 @@ resources via HTTP POST.</p>
 <td align="left">n/a</td>
 <td align="left">Title string that could be used for display</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:label</code></td>
 <td align="left">zero-or-one</td>
@@ -1333,7 +1130,6 @@ resources via HTTP POST.</p>
 <td align="left">n/a</td>
 <td align="left">Very short label for use in menu items</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:creation</code></td>
 <td align="left">exactly-one</td>
@@ -1343,7 +1139,6 @@ resources via HTTP POST.</p>
 <td align="left">n/a</td>
 <td align="left">To create a new resource via the factory, post it to this URI</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:resourceShape</code></td>
 <td align="left">zero-or-many</td>
@@ -1353,7 +1148,6 @@ resources via HTTP POST.</p>
 <td align="left"><a href="OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource"> <code>oslc:ResourceShape</code> </a></td>
 <td align="left">A Creation Factory <strong>MAY</strong> provide Resource Shapes that describe shapes of resources that may be created.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:resourceType</code></td>
 <td align="left">zero-or-many</td>
@@ -1361,9 +1155,8 @@ resources via HTTP POST.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:usage</code></td>
 <td align="left">zero-or-many</td>
@@ -1375,17 +1168,13 @@ resources via HTTP POST.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-query-capability">Resource: Query Capability</h3>
-
 <p>A Query Capability describes a query capability, capable of querying
 resources via HTTP GET or POST.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>QueryCapability</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#QueryCapability</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1398,7 +1187,6 @@ resources via HTTP GET or POST.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1409,7 +1197,6 @@ resources via HTTP GET or POST.</p>
 <td align="left">n/a</td>
 <td align="left">Title string that could be used for display</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:label</code></td>
 <td align="left">zero-or-one</td>
@@ -1419,7 +1206,6 @@ resources via HTTP GET or POST.</p>
 <td align="left">n/a</td>
 <td align="left">Very short label for use in menu items</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:queryBase</code></td>
 <td align="left">exactly-one</td>
@@ -1429,7 +1215,6 @@ resources via HTTP GET or POST.</p>
 <td align="left">n/a</td>
 <td align="left">The base URI to use for queries. Queries are invoked via HTTP GET on a query URI formed by appending a key=value pair to the base URI, as described in Query Capabilities section.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:resourceShape</code></td>
 <td align="left">zero-or-one</td>
@@ -1439,7 +1224,6 @@ resources via HTTP GET or POST.</p>
 <td align="left">n/a</td>
 <td align="left">The Query Capability <strong>SHOULD</strong> provide a Resource Shape that describes the query base URI.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:resourceType</code></td>
 <td align="left">zero-or-many</td>
@@ -1447,9 +1231,8 @@ resources via HTTP GET or POST.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:usage</code></td>
 <td align="left">zero-or-many</td>
@@ -1461,17 +1244,13 @@ resources via HTTP GET or POST.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-dialog">Resource: Dialog</h3>
-
 <p>A Dialog describes a delegated user interface (UI) which can be used to
 allow a user to interactively create a new resource or pick a resource.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>Dialog</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#Dialog</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1484,7 +1263,6 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1495,7 +1273,6 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">n/a</td>
 <td align="left">Title string that could be used for display</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:label</code></td>
 <td align="left">zero-or-one</td>
@@ -1505,7 +1282,6 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">n/a</td>
 <td align="left">Very short label for use in menu items</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:dialog</code></td>
 <td align="left">exactly-one</td>
@@ -1515,7 +1291,6 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">n/a</td>
 <td align="left">The URI of the dialog</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:hintWidth</code></td>
 <td align="left">zero-or-one</td>
@@ -1523,9 +1298,8 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:hintHeight</code></td>
 <td align="left">zero-or-one</td>
@@ -1533,9 +1307,8 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:resourceType</code></td>
 <td align="left">zero-or-many</td>
@@ -1543,9 +1316,8 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:usage</code></td>
 <td align="left">zero-or-many</td>
@@ -1557,17 +1329,13 @@ allow a user to interactively create a new resource or pick a resource.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-publisher">Resource: Publisher</h3>
-
 <p>A Publisher identifies and describes the software product that provides
 the OSLC implementation.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>Publisher</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#Publisher</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1580,7 +1348,6 @@ the OSLC implementation.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>dcterms:title</code></td>
@@ -1591,7 +1358,6 @@ the OSLC implementation.</p>
 <td align="left">n/a</td>
 <td align="left">Title string that could be used for display</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:label</code></td>
 <td align="left">zero-or-one</td>
@@ -1601,7 +1367,6 @@ the OSLC implementation.</p>
 <td align="left">n/a</td>
 <td align="left">Very short label for use in menu items</td>
 </tr>
-
 <tr>
 <td align="left"><code>dcterms:identifier</code></td>
 <td align="left">exactly-one</td>
@@ -1611,7 +1376,6 @@ the OSLC implementation.</p>
 <td align="left">n/a</td>
 <td align="left">A URN that uniquely identifies the implementation</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:icon</code></td>
 <td align="left">zero-or-one</td>
@@ -1623,18 +1387,14 @@ the OSLC implementation.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-prefix-definition">Resource: Prefix Definition</h3>
-
 <p>Service Providers <strong>MUST</strong> provide a Prefix Definition for each prefix
 supported by the service. Each Prefix Definition defines a namespace
 prefix that clients <strong>MAY</strong> use in forming OSLC Query Syntax strings.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>PrefixDefinition</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#PrefixDefinition</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1647,7 +1407,6 @@ prefix that clients <strong>MAY</strong> use in forming OSLC Query Syntax string
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:prefix</code></td>
@@ -1658,7 +1417,6 @@ prefix that clients <strong>MAY</strong> use in forming OSLC Query Syntax string
 <td align="left">n/a</td>
 <td align="left">Namespace prefix to be used for this namespace</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:prefixBase</code></td>
 <td align="left">exactly-one</td>
@@ -1670,18 +1428,14 @@ prefix that clients <strong>MAY</strong> use in forming OSLC Query Syntax string
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-oauth-configuration">Resource: OAuth Configuration</h3>
-
 <p>Service Providers that support OAuth Authentication <strong>SHOULD</strong> provide a
 way for clients to automatically discover the three OAuth URIs necessary
 to act as an OAuth Consumer.</p>
-
 <ul>
 <li><strong>Name</strong>: <code>OAuthConfiguration</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#OAuthConfiguration</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -1694,7 +1448,6 @@ to act as an OAuth Consumer.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:oauthRequestTokenURI</code></td>
@@ -1705,7 +1458,6 @@ to act as an OAuth Consumer.</p>
 <td align="left">n/a</td>
 <td align="left">URI for obtaining OAuth request token</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:authorizationURI</code></td>
 <td align="left">exactly-one</td>
@@ -1715,7 +1467,6 @@ to act as an OAuth Consumer.</p>
 <td align="left">n/a</td>
 <td align="left">URI for obtaining OAuth authorization</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:oauthAccessTokenURI</code></td>
 <td align="left">exactly-one</td>
@@ -1727,21 +1478,16 @@ to act as an OAuth Consumer.</p>
 </tr>
 </tbody>
 </table>
-
 <p>The next sections cover the Creation Factory and Query Capability in
 more detail.</p>
-
-<hr />
-
+<hr>
 <h1 id="creation-factories">Creation Factories</h1>
-
 <p>An OSLC Service can provide one or more creation factory to enable the
 creation of new resources. A creation factory provides a Creation URI
 used to create new resources via HTTP POST and may also provide Resource
 Shapes that describe the types of resources that may be created. To
 create a new OSLC Resource, an OSLC client POSTs a representation of
-that resource to a Creation Factory&rsquo;s Creation URI.</p>
-
+that resource to a Creation Factory's Creation URI.</p>
 <ul>
 <li>An HTTP POST of content to a Creation URI <strong>SHOULD</strong> result in the
 creation of a new resource or an explanation of why creation did not
@@ -1750,16 +1496,13 @@ occur via the appropriate HTTP status code.</li>
 <strong>SHOULD</strong> include a HTTP Location header that specifies the URI of
 the newly created resource.</li>
 </ul>
-
 <h2 id="creating-an-oslc-defined-resource">Creating an OSLC Defined Resource</h2>
-
 <p>To create an OSLC Defined Resource, an OSLC Client first forms an
 representation of that resource including the desired and required
 property values. A client can learn what properties are allowed in a new
 OSLC Defined Resource via the OSLC specification that defines or, in
 some cases via a Resource Shape resource. Next the client uses HTTP POST
 to post that representation to a Creation URI.</p>
-
 <ul>
 <li>The response to a successful HTTP POST of a representation to a
 Creation Resource URI <strong>MAY</strong> include a representation of the newly
@@ -1767,34 +1510,27 @@ created resource.</li>
 <li>The resource returned <strong>MAY</strong> contain changes to properties made by
 the server or new properties added by the server.</li>
 </ul>
-
 <h1 id="query-capabilities">Query Capabilities</h1>
-
 <p>An OSLC Service may provide one or more Query Capabilities to enable
 query of resources. A Query Capability provides a base URI for forming
 Query Resource URIs and <strong>MAY</strong> provide Resource Shapes that describe
 the property values that may be expected in the resources that are
 queryable via the query capability. Thus, Query Capabilities provide a
 way to discover the resources managed by an OSLC Service.</p>
-
 <p>In a Query Capability, the base URI, as defined by the <code>oslc:queryBase</code>
 property, is itself a resource managed by the service and it acts as the
 starting subject resource for the queries based on it. Since the list
 may contain hundreds of thousands of members, queries are used to filter
 the list for members that satisfy certain conditions, e.g. the bugs that
 have high priority and were created this week.</p>
-
 <h2 id="conceptual-model-1">Conceptual Model</h2>
-
 <p>To perform a query an OSLC client first creates a URI by starting with a
-Query Capability&rsquo;s base URI as a base and adding a URI Query String to
+Query Capability's base URI as a base and adding a URI Query String to
 express the query criteria. The OSLC client then uses HTTP GET to
 request a Query Resource representation of the query results. The Query
 Resource representation will contain property values about the query and
 a collection of resources that match the query criteria.</p>
-
 <h4 id="http-get-queries">HTTP GET Queries</h4>
-
 <p>To perform an HTTP GET query, an OSLC client starts with the base URI as
 defined by the <code>oslc:queryBase</code> property of a Query Capability, and
 appends to it query parameters in a syntax supported by the service. The
@@ -1805,37 +1541,28 @@ Services <strong>MUST</strong> support query responses in RDF/XML format (media 
 <code>application/rdf+xml</code>) and <strong>MAY</strong> support other formats. OSLC Services
 <strong>SHOULD</strong> support the Query Syntax defined in this specification, but
 <strong>MAY</strong> support other syntaxes.</p>
-
 <h2 id="query-syntax">Query Syntax</h2>
-
 <p>A query URI can be formed by adding a query string to the end of the
-Query Capability&rsquo;s base URI (or by sending the query string in the
+Query Capability's base URI (or by sending the query string in the
 request body when using HTTP POST). The syntax used to express the query
 criteria in that string is specified by each OSLC domain specification.</p>
-
 <p>The <a href="OSLCCoreSpecQuery">OSLC Core Spec Query Specification</a> document
 defines a standard set of OSLC query parameters that other OSLC domain
 specifications <strong>MAY</strong> use to query resources.</p>
-
 <h3 id="query-specification-errors">Query Specification errors</h3>
-
 <p>If there is an error in the specification of the query, whether the
 query is specified by key=value pairs in the HTTP GET URL or key=value
 pairs in the body of an HTTP POST, then the provider <strong>MUST</strong> respond
 with an error. The error response should be an HTTP 400 Bad Request
 error and an explanation of the error in the OSLC Error Response format
 (see Error Responses below).</p>
-
-<hr />
-
+<hr>
 <h1 id="delegated-user-interface-dialogs">Delegated User Interface Dialogs</h1>
-
 <p>OSLC specifications target specific integration scenarios. In some
 cases, allowing one product to delegate to a user interface defined in
 another product is a more effective way to support a use case than an
 HTTP interface that can only be accessed programmatically. There are two
 cases where this is especially true:</p>
-
 <ul>
 <li><strong>Resource creation</strong>: when a user of a web application needs to
 create a new resource in an OSLC Service Provider. In this case the
@@ -1849,7 +1576,6 @@ resource selection and the provider notifies the application when a
 resource or resources has been selected or if the selection
 was canceled.</li>
 </ul>
-
 <p>To support these two cases, below we define OSLC Delegated User
 Interface (UI) Dialogs. Delegated UI Dialogs are a technique where one
 provider can embed a creation or selection UI into another using a
@@ -1857,18 +1583,11 @@ combination of an HTML &lt;iframe&gt; and JavaScript code. The diagram
 below illustrates how delegated UI dialogs work in a scenario where
 Provider A wants to allow a user to select or create a resource managed
 by Provider B.</p>
-
 <p><strong>Figure #3: Delegated UI Dialog interactions</strong></p>
-
-<p><img alt="Delegated UI Dialogs"
-src="../../../img/specifications/core-2.0/oslc-delegated.png"/></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Next, the details of the Delegated UI Dialog protocol.</p>
-
 <h3 id="terminology">Terminology</h3>
-
 <p>The following terms are used in discussions of Delegated UI Dialogs:</p>
-
 <ul>
 <li><strong>UI Consumer</strong> - a web application that is embedding a Delegated UI
 Dialog from an OSLC Service Provider. This consumer could be a web
@@ -1876,40 +1595,31 @@ page, with the Delegated UI Dialog loaded into an iframe or a native
 application, e.g. an IDE like Eclipse, that is embedding a web
 browser component.</li>
 </ul>
-
-<!-- -->
-
+<!-- raw HTML omitted -->
 <ul>
 <li><strong>UI Provider</strong> - an OSLC Service provider that offers one or more
 Delegated UI Dialogs. These dialogs will be specified in the
-provider&rsquo;s Service Provider resource.</li>
+provider's Service Provider resource.</li>
 </ul>
-
 <p>The next sections explain how Delegated UI Dialogs work.</p>
-
 <h2 id="post-message-and-window-name-protocols">Post Message and Window Name protocols</h2>
-
 <p>To support the widest range of web browsers, we define two different
-protocols for communicating the information about the user&rsquo;s action from
+protocols for communicating the information about the user's action from
 the UI Provider and back to the UI Consumer. These are the Post Message
 and Window Name protocols described below.</p>
-
 <p>In both the Post Message and Window Name protocols, the way that a UI
 Consumer includes a Delegated UI Dialog in an HTML page is to create an
 <code>iframe</code> and specify the <code>src</code> as the URI of the Delegated UI Dialog to
 be included. The UI Consumer indicates the protocol to be used by
 appending one of the two fragment identifiers below to the URI:</p>
-
 <ul>
 <li><code>#oslc-core-postMessage-1.0</code> - Indicates that the Post Message
 protocol is to be used</li>
 <li><code>#oslc-core-windowName-1.0</code> - Indicates that the Window Name
 protocol is to be used</li>
 </ul>
-
 <p>The JavaScript code example below shows now a UI Provider can determine
 which protocol is in use:</p>
-
 <blockquote>
 <pre><code>    if (window.location.hash == '#oslc-core-windowName-1.0') {
         // Window Name protocol in use
@@ -1918,13 +1628,10 @@ which protocol is in use:</p>
     }
 </code></pre>
 </blockquote>
-
 <h4 id="iframe-creation-considerations">iframe Creation Considerations</h4>
-
 <p>Regardless of the protocol in effect, it is recommended that UI
 Consumers follow the below iframe creation guidelines to provide a more
 seamless user experience:</p>
-
 <ul>
 <li>Embed the <code>iframe</code> within a <code>div</code> element, with height and width set
 based on the relative length values specified in the Service
@@ -1932,29 +1639,22 @@ Resource that declares the Delegated UI Dialog.</li>
 <li>Set the <code>iframe</code> border size to &lsquo;0&rsquo;</li>
 <li>Set the <code>iframe</code> scrolling to &lsquo;auto&rsquo;</li>
 </ul>
-
 <p>Next, the details for each of the two protocols.</p>
-
 <h3 id="post-message-protocol">Post Message Protocol</h3>
-
 <p>The Post Message protocol relies on the HTML5 function
 <code>window.postMessage()</code> (reference: HTML5), available in the latest or
 pending releases of most browsers. UI Consumers must anticipate other,
 unrelated uses of postMessage(), and should ignore messages not
 conforming to this protocol.</p>
-
 <p>Typically, the embedded page will be loaded in a window inside another
 window, such as a iframe inside some surrounding webpage. In such cases,
 <code>postMessage()</code> must be called on that parent window. But in a native
 application, an outer page is not needed and the embedded page may be
-shown directly in the browser&rsquo;s &ldquo;root&rdquo; window. When the embedded page
+shown directly in the browser's &ldquo;root&rdquo; window. When the embedded page
 has no parent window, it must call <code>postMessage()</code> on its own window.</p>
-
 <p>Here are the responsibilities of the UI Consumer and UI Provider in Post
 Message protocol.</p>
-
-<h4 id="the-ui-consumer-s-responsibilities">The UI Consumer&rsquo;s responsibilities</h4>
-
+<h4 id="the-ui-consumers-responsibilities">The UI Consumer's responsibilities</h4>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. Append
 the fragment identifier #oslc-core-postMessage-1.0 to the URL to
@@ -1964,38 +1664,31 @@ Dialog. 1 Listen for window &lsquo;message&rsquo; events, ignoring events from o
 sources or not prefixed with &ldquo;oslc-response:&rdquo; 1 When message from
 Delegated UI Dialog indicates user completed action, free resources and
 handle action.</p>
-
-<h4 id="the-ui-provider-s-responsibilities">The UI Provider&rsquo;s responsibilities</h4>
-
+<h4 id="the-ui-providers-responsibilities">The UI Provider's responsibilities</h4>
 <p>1 Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection. 1 Allow the user to
 perform resource creation or selection. 1 Once the user has created,
 selected or canceled, send notification using <code>postMessage()</code> to the
-page&rsquo;s parent window, passed in <code>event.data</code> string, that is prefixed
+page's parent window, passed in <code>event.data</code> string, that is prefixed
 with &ldquo;oslc-response:&rdquo; See below for the two possible response formats,
 one for resource selection and one for creation. 1 If the page is not
-parented, then the message is posted to the page&rsquo;s own window. The page
+parented, then the message is posted to the page's own window. The page
 must ignore this message to itself.</p>
-
 <p>The below JavaScript code example shows how a UI Provider page would
 send a response using <code>postMessage()</code> and taking into account the fact
 that some pages are not parented.</p>
-
 <blockquote>
 <pre><code>   function respondWithPostMessage(/*string*/ response) {
       (window.parent | window).postMessage(&quot;oslc-response:&quot; + response, &quot;*&quot;);
    }
 </code></pre>
 </blockquote>
-
 <p>Now, the Window Name protocol.</p>
-
 <h3 id="window-name-protocol">Window Name Protocol</h3>
-
 <p>The Window Name protocol uses the HTML DOM <code>window.name</code> property to
 communicate the response (reference: Window Object) from the UI Provider
 to the UI Consumer. This special property of window maintains its value
-even as the window navigates to a different origin, but the ifame&rsquo;s
+even as the window navigates to a different origin, but the ifame's
 <code>window.name</code> can only be read when the accessing window shares the same
 origin. For this to happen, when the embedded page is finished it must
 set the <code>window.name</code> and also change the <code>window.location</code> to a page
@@ -2003,26 +1696,21 @@ with the same origin as the outer frame. This not only allows the UI
 Consumer to access the result, but also fires an event telling the UI
 Consumer when to do so. This return location is passed to the embedded
 page using the <code>window.name</code> property.</p>
-
 <p>Here are the responsibilities of the UI Consumer and UI Provider in
 Window Name protocol.</p>
-
-<h4 id="the-ui-consumer-s-responsibilities-1">The UI Consumer&rsquo;s responsibilities</h4>
-
+<h4 id="the-ui-consumers-responsibilities-1">The UI Consumer's responsibilities</h4>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. Append
 the fragment identifier #oslc-core-windowName-1.0 to the URL to
 indicate that Window Name is the desired protocol. 1 On the iframe, set
-the frame&rsquo;s <code>window.name</code> to indicate the Return URL. 1 On the iframe,
+the frame's <code>window.name</code> to indicate the Return URL. 1 On the iframe,
 Listen for &lsquo;onload&rsquo; events 1 When an &lsquo;onload&rsquo; event occures an the
-frame&rsquo;s location is equal to the Return URL then read the response from
+frame's location is equal to the Return URL then read the response from
 the window.name.</p>
-
 <p>The following Javascript code illustrates the protocol. The code for the
 <code>destroyFrame()</code>, <code>handleMessage()</code> and <code>displayFrame()</code> methods are not
 provided in this example, but should be obvious to a JavaScript
 developer. The UI Consumer must provide these methods.</p>
-
 <blockquote>
 <pre><code>    var pickerURL = ... // URL of Provider's Delegated UI Dialog
     var returnURL = ... // Consumer's Return URL
@@ -2071,25 +1759,20 @@ developer. The UI Consumer must provide these methods.</p>
    }
 </code></pre>
 </blockquote>
-
-<h4 id="the-ui-provider-s-responsibilities-1">The UI Provider&rsquo;s responsibilities</h4>
-
+<h4 id="the-ui-providers-responsibilities-1">The UI Provider's responsibilities</h4>
 <p>As soon as the embedded page has loaded, perform the following:</p>
-
 <p>1 <em>Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection.</em> 1 <em>Read the Return URL
-from the window.name variable</em> 1 &lt;span style=&ldquo;font-family:
+from the window.name variable</em> 1 &lt;span style=&quot;font-family:
 Verdana,Arial,Helvetica,sans-serif; font-size: small&rdquo;&gt;Allow user to
 perform resource creation or selection.&lt;/span&gt; 1 Once user has
-created, selected or canceled, communicate the user&rsquo;s response by
+created, selected or canceled, communicate the user's response by
 setting the window.name variable to the response. See below for the two
 possible response formats, one for resource selection and one for
 creation. 1 Indicate that user has responded by setting the
 window.location to the Return URL specified by the UI Consumer.</p>
-
 <p>The JavaScript example below shows a UI Provider notifying its UI
 Consumer after a user has responded.</p>
-
 <blockquote>
 <pre><code>function respondWithWindowName(/*string*/ response) {
    // Step #2: read the return URL
@@ -2103,28 +1786,22 @@ Consumer after a user has responded.</p>
 }
 </code></pre>
 </blockquote>
-
 <h2 id="resource-selection">Resource Selection</h2>
-
 <p>Resource Selection can be used when a UI Consumer wants to allow a user
 to pick a resource that is managed by an OSLC Service. Using either the
 Post Message or Window Name protocols defined above, the UI Consumer
 uses an iframe to embed a selection dialog that is provided by the
 service, then awaits notification that the user has selected a resource.</p>
-
 <p>To enable Resource Selection, an OSLC Service <strong>MUST</strong> provide in its
 Service Resource a value for the <code>oslc:selectionDialog</code> property. The
 property value will include a <code>oslc:dialogURI</code> property that indicates
 the URI of the selection dialog.</p>
-
 <p>Regardless of how the response from the UI Provider is conveyed to the
 UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
-
 <ul>
 <li><strong>Name:</strong> <code>results</code></li>
 <li><strong>URI:</strong> <code>http://open-services.net/ns/core#results</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -2137,7 +1814,6 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>rdf:resource</code></td>
@@ -2148,7 +1824,6 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <td align="left">n/a</td>
 <td align="left">URI of the resource selected or created</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:label</code></td>
 <td align="left">zero-or-one</td>
@@ -2160,11 +1835,8 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 </tr>
 </tbody>
 </table>
-
 <p>An empty array indicates that the resource selector has been canceled</p>
-
 <p>An example Resource Selection response:</p>
-
 <blockquote>
 <pre><code>{
     &quot;oslc:results&quot; : [{
@@ -2178,27 +1850,21 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 }
 </code></pre>
 </blockquote>
-
 <h2 id="resource-creation-1">Resource Creation</h2>
-
 <p>Resource Creation can be used when a UI Consumer wants to allow a user
 to create a new resource that is managed by an OSLC Service. Using
 either the Post Message or Window Name protocols defined above, the UI
 Consumer uses an iframe to embed a creation dialog that is provided by
 the service, then awaits notification that the user has created a
 resource.</p>
-
 <p>To enable Resource Creation, an OSLC Service <strong>MUST</strong> provide in its
 Service Resource a value for the <code>oslc:creationDialog</code> property. The
 property value will include a <code>oslc:dialogURI</code> property that indicates
 the URI of the creation dialog.</p>
-
 <p>Regardless of how the response from the UI Provider is conveyed to the
 UI Consumer, the response <strong>SHOULD</strong> be formatted as defined by
 <code>oslc:results</code></p>
-
 <p>Example:</p>
-
 <blockquote>
 <pre><code>{
     &quot;oslc:results&quot; : [ {
@@ -2212,9 +1878,7 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as defined by
 }
 </code></pre>
 </blockquote>
-
 <h3 id="prefilling-creation-dialogs">Prefilling Creation Dialogs</h3>
-
 <p>Service providers <strong>MAY</strong> support receiving a POST request whose content
 body is a resource representation to the Creation Dialog URI to retrieve
 a URI that represents the embedded page to be used. Service providers
@@ -2223,9 +1887,7 @@ response header <code>Location</code> whose value is the URI to request the newl
 created form. After some elapsed time, service providers <strong>MAY</strong> respond
 with a 404 (Not Found), 410 (Gone) or 3xx (Redirect) to an HTTP GET
 request for these URIs.</p>
-
 <h2 id="dialog-resizing">Dialog Resizing</h2>
-
 <p>Delegated UI dialogs receive their initial size (dimensions) based on
 the <code>oslc:hintWidth</code> and <code>oslc:hintHeight</code> properties described in
 <code>oslc:Dialog</code> resource description. There are cases where UI Provider
@@ -2233,61 +1895,49 @@ recognizes that the initial size of a Delegated UI dialog is not
 sufficient and needs a way to ask the UI Consumer to resize the dialog.
 In this section we specify a mechanism that enables dialog resizing, but
 only when Post Message Protocol is used.</p>
-
-<p>Consumers <strong>MAY</strong> honor a dialog&rsquo;s ability to dynamically resize. Those
+<p>Consumers <strong>MAY</strong> honor a dialog's ability to dynamically resize. Those
 that do (a) <strong>MUST</strong> use Post Message Protocol, (b) <strong>MUST</strong> use the
-<code>oslc:resize</code> value instead of any static width or height, and and &copy;
+<code>oslc:resize</code> value instead of any static width or height, and and (c)
 <strong>MUST</strong> register a handler to receive dialog resize messages sent by
 the dialog Provider and adjust the size of the dialog accordingly.</p>
-
 <p>Since a dialog is allowed to resize itself any number of times, the
 Consumer <strong>MUST</strong> keep a handler registered and react appropriately each
 time it received a dialog resize message from that dialog.</p>
-
 <p>UI Providers <strong>SHOULD NOT</strong> request sizes larger than 95% of the current
 <a href="http://www.w3.org/TR/CSS2/visuren.html#viewport">viewport</a>, to avoid
 covering the entire viewport with the dialog.</p>
-
 <p>Here are the responsibilities of the UI Consumer and UI Provider in
 dialog resizing.</p>
-
-<h3 id="the-ui-consumer-s-responsibilities-2">The UI Consumer&rsquo;s responsibilities</h3>
-
+<h3 id="the-ui-consumers-responsibilities-2">The UI Consumer's responsibilities</h3>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. 1 Add a
 &lsquo;message&rsquo; listener to the outer window to receive messages from the
 Delegated UI Dialog. 1 Listen for window &lsquo;message&rsquo; events, ignoring
-events from other sources or not prefixed with &ldquo;oslc-resize:&ldquo;. Multiple
+events from other sources or not prefixed with &ldquo;oslc-resize:&quot;. Multiple
 resize &lsquo;message&rsquo; events may be sent while the dialog is visible. 1 When
 message from Delegated UI Dialog indicates user completed action, free
 resources and handle action.</p>
-
-<h3 id="the-ui-provider-s-responsibilities-2">The UI Provider&rsquo;s responsibilities</h3>
-
+<h3 id="the-ui-providers-responsibilities-2">The UI Provider's responsibilities</h3>
 <p>1 Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection. 1 Allow the user to
 perform resource creation or selection. 1 Once the Provider needs to
-resize the dialog, send notification using <code>postMessage()</code> to the page&rsquo;s
+resize the dialog, send notification using <code>postMessage()</code> to the page's
 parent window, passed in <code>event.data</code> string, that is prefixed with
-&ldquo;oslc-resize:&ldquo;. Multiple resize messages may be sent. See below for the
+&ldquo;oslc-resize:&quot;. Multiple resize messages may be sent. See below for the
 response format. 1 If the page is not parented, then the message is
-posted to the page&rsquo;s own window. The page must ignore this message to
+posted to the page's own window. The page must ignore this message to
 itself.</p>
-
 <p>The below JavaScript code example shows how a UI Provider page would
 send a response using <code>postMessage()</code> and taking into account the fact
 that some pages are not parented.</p>
-
 <blockquote>
 <pre><code>   function respondWithPostMessage(/*string*/ resize_response) {
       (window.parent | window).postMessage(&quot;oslc-resize:&quot; + resize_response, &quot;*&quot;);
    }
 </code></pre>
 </blockquote>
-
 <p>Regardless of how the response from the UI Provider is conveyed to the
 UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
-
 <table>
 <thead>
 <tr>
@@ -2300,7 +1950,6 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:hintHeight</code></td>
@@ -2309,9 +1958,8 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">New dialog height size. Height size <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
+<td align="left">New dialog height size. Height size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:hintWidth</code></td>
 <td align="left">exactly-one</td>
@@ -2319,14 +1967,12 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">New dialog width size. Width size <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
+<td align="left">New dialog width size. Width size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
 </tr>
 </tbody>
 </table>
-
 <p>An example Dialog Resize response with new height of &lsquo;600px&rsquo; and a width
 of &lsquo;400px&rsquo;:</p>
-
 <blockquote>
 <pre><code>{
     &quot;oslc:hintHeight&quot; : &quot;600px&quot;,
@@ -2334,72 +1980,49 @@ of &lsquo;400px&rsquo;:</p>
 }
 </code></pre>
 </blockquote>
-
 <p>That brings us to the end of the Delegated UI section. Next up, another
 UI related topic.</p>
-
-<hr />
-
+<hr>
 <h1 id="user-interface-previews">User Interface Previews</h1>
-
 <p>OSLC providers <strong>MAY</strong> support a technique known as User Interface (UI)
 Preview, that can be used to show a user in-context information when
 displaying a link to a resource, and to show more information when the
-user&rsquo;s mouse lingers over the link.</p>
-
+user's mouse lingers over the link.</p>
 <p>OSLC providers which offer UI Preview <strong>MUST</strong> do so in accordance with
 the <a href="OslcCoreUiPreview">OSLC Core UI Preview Specification</a>.</p>
-
-<hr />
-
+<hr>
 <h1 id="authentication">Authentication</h1>
-
 <p>OSLC Services use standard web protocols for authentication. OSLC
 Services can use HTTP Basic Authentication, OAuth or both.</p>
-
 <h2 id="http-basic-authentication">HTTP Basic Authentication</h2>
-
 <p>OSLC Services <strong>MAY</strong> protect resources with HTTP Basic Authentication.
 OSLC Services that use HTTP Basic Authentication <strong>SHOULD</strong> do so only
 via SSL.</p>
-
 <h2 id="oauth-authentication">OAuth Authentication</h2>
-
 <p>OSLC Services <strong>MAY</strong> protect resources with OAuth Authentication.</p>
-
 <h2 id="form-based-authentication">Form Based Authentication</h2>
-
 <p>OSLC Services <strong>MAY</strong> use other authentication mechanisms, including
 those common described as Form Based Authentication. OSLC Services that
 choose to use other authentication mechanisms are responsible for
 specifying how those mechanisms work.</p>
-
-<hr />
-
+<hr>
 <h1 id="error-responses">Error Responses</h1>
-
 <p>OSLC Services the standard mechanisms of HTTP to report status and error
 codes to clients. When an error occurs and useful information can be
 provided to clients OSLC Services <strong>SHOULD</strong> return error information in
 the body of the response.</p>
-
 <p>OSLC Services <strong>SHOULD</strong> use the Error resource defined below as the
 basis for forming error responses. OSLC Services <strong>SHOULD</strong> return an
 Error resource using the same representation requested by the client via
 the HTTP Accept header.</p>
-
 <h2 id="conceptual-model-2">Conceptual Model</h2>
-
 <p>The following OSLC Defined Resource can be used as the basis for forming
 an error response.</p>
-
 <h3 id="resource-error">Resource: Error</h3>
-
 <ul>
 <li><strong>Name</strong>: <code>Error</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#Error</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -2412,7 +2035,6 @@ an error response.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:statusCode</code></td>
@@ -2423,7 +2045,6 @@ an error response.</p>
 <td align="left">n/a</td>
 <td align="left">The HTTP status code reported with the error.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:message</code></td>
 <td align="left">exactly-one</td>
@@ -2433,7 +2054,6 @@ an error response.</p>
 <td align="left">n/a</td>
 <td align="left">An informative message describing the error that occurred.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:extendedError</code></td>
 <td align="left">zero-or-one</td>
@@ -2445,14 +2065,11 @@ an error response.</p>
 </tr>
 </tbody>
 </table>
-
 <h3 id="resource-extended-error">Resource: Extended Error</h3>
-
 <ul>
 <li><strong>Name</strong>: <code>ExtendedError</code></li>
 <li><strong>URI</strong>: <code>http://open-services.net/ns/core#ExtendedError</code></li>
 </ul>
-
 <table>
 <thead>
 <tr>
@@ -2465,7 +2082,6 @@ an error response.</p>
 <th align="left">Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left"><code>oslc:moreInfo</code></td>
@@ -2476,7 +2092,6 @@ an error response.</p>
 <td align="left">Any</td>
 <td align="left">A resource giving more information on the error <strong>SHOULD</strong> be of an HTML content-type.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:rel</code></td>
 <td align="left">zero-or-one</td>
@@ -2486,7 +2101,6 @@ an error response.</p>
 <td align="left">n/a</td>
 <td align="left">If present and set to &lsquo;alternate&rsquo; then indicates that work-around is provided, behavior for other values is undefined.</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:hintWidth</code></td>
 <td align="left">zero-or-one</td>
@@ -2494,9 +2108,8 @@ an error response.</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
-
 <tr>
 <td align="left"><code>oslc:hintHeight</code></td>
 <td align="left">zero-or-one</td>
@@ -2504,40 +2117,32 @@ an error response.</p>
 <td align="left">String</td>
 <td align="left">n/a</td>
 <td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <strong><em>relative length units</em></strong> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
 </tbody>
 </table>
-
-<hr />
-
+<hr>
 <h1 id="specification-versioning">Specification Versioning</h1>
-
 <p>One of the goals of the OSLC initiative is to mitigate or eliminate the
 need for lock-step version upgrades, where clients or services target
 one version of a specification and break when new versions are
 introduced &ndash; requiring all services to be upgraded simultaneously.</p>
-
 <p>In this section we specify a version header that will enable old
 &ldquo;Version 1&rdquo; OSLC clients to continue to work and share the same resource
 URIs as used by clients that specifically target the Core. And we
 establish rules that will enable clients to continue to work as new
 versions of specifications are introduced.</p>
-
 <h2 id="supporting-pre-core-clients">Supporting pre-Core clients</h2>
-
 <p>We anticipate that the OSLC Core and domain specifications will each be
 versioned independently and each version will be assigned a version
 number, but we would like to avoid exposing version numbers in OSLC
 implementations. There is one use case that requires version information
 to be exposed. We must ensure that old OSLC &ldquo;Version 1&rdquo; clients continue
 to work.</p>
-
 <p>To enable OSLC Service specifications to evolve without breaking
 existing clients, we introduce an HTTP Header, <code>OSLC-Core-Version</code> set
 to the Core specification version number <code>&quot;2.0&quot;</code>. We expect clients that
 target the Core to send this HTTP header.</p>
-
 <ul>
 <li>If the <code>OSLC-Core-Version</code> header is present and set to a version
 that the service can support, then the service <strong>MUST</strong> return a
@@ -2549,24 +2154,19 @@ version that it can return.</li>
 <li>If the <code>OSLC-Core-Version</code> header is not present then the OSLC
 Service <strong>SHOULD</strong> respond by returning a resource that conforms to
 the earliest or most compatible (as determined by
-the implementation) specification version&rsquo;s representation. Services
+the implementation) specification version's representation. Services
 that never offered an OSLC Version 1 interface can ignore
 this restriction.</li>
 <li>When returning an OSLC Defined Resource, OSLC Services <strong>MUST</strong>
 return the <code>OSLC-Core-Version</code> header set to the Core specification
 with which the representation complies.</li>
 </ul>
-
 <h2 id="rules-for-new-versions-of-oslc-specifications">Rules for new versions of OSLC specifications</h2>
-
 <p>When specifying a new version of an OSLC specification the rule is this:</p>
-
 <p><strong>A new version of an OSLC specification is not allowed to introduce
 changes that will break old clients.</strong></p>
-
 <p>Here are some guidelines for OSLC workgroups defining new specifications
 or upgrades to existing ones:</p>
-
 <ul>
 <li>If you believe that you need a property but cannot agree on the
 value-type, then this is a strong indication that you should not
@@ -2588,39 +2188,30 @@ that already exist.</li>
 restrictions should not break clients. But it is not possible to
 relax restrictions on services, because clients expect to find the
 required fields and if they are missing, clients will break.</li>
-<li>Before defining a new property within your OSLC domain&rsquo;s namespace
+<li>Before defining a new property within your OSLC domain's namespace
 consult the list of common properties in
-<a href="OSLC Core Spec Appendix A">OSLC Core Spec Appendix A</a> to see if
+[OSLC Core Spec Appendix A](OSLC Core Spec Appendix A) to see if
 using a common property would be more appropriate.</li>
 </ul>
-
 <h2 id="migrating-to-the-core-specification">Migrating to the Core Specification</h2>
-
 <p>Most of the first OSLC specifications were developed before this Core
 specification existed and do not implement versioning as described above
 and so must use some other mechanism to migrate to the OSLC Core v1.0
 specification.</p>
-
 <p>OSLC implementations that wish to continue to support old pre-Core OSLC
 or OSLC v1.0 specifications can do so by keeping the old implementation
 in place and adding the new OSLC Core v1 implementation with different
 service provider, query capability and creation factory URIs.</p>
-
-<hr />
-
-<p>&lt;a name=&ldquo;OslcDefinedResourceRepresentations&rdquo;
-title=&ldquo;OslcDefinedResourceRepresentations&rdquo;&gt;&lt;/a&gt;</p>
-
+<hr>
+<p>&lt;a name=&quot;OslcDefinedResourceRepresentations&rdquo;
+title=&quot;OslcDefinedResourceRepresentations&rdquo;&gt;&lt;/a&gt;</p>
 <h1 id="oslc-defined-resource-representations">OSLC Defined Resource Representations</h1>
-
 <p>This section specifies what resource representations are required for
 OSLC resources, some requirements for providing representations and some
 rational for the requirement that OSLC Services provide RDF/XML
 representations.</p>
-
 <p>OSLC resource representations come in many forms and are subject to
 standard HTTP mechanisms for content negotiation.</p>
-
 <p>OSLC domain specifications (1) <strong>SHOULD</strong> require the representations
 needed for the specific scenarios that they are addressing and (2)
 <strong>SHOULD</strong> recognize that different representations are appropriate for
@@ -2629,26 +2220,22 @@ best addressed by JSON or Atom format representations. For these
 reasons, OSLC Services <strong>MAY</strong> provide and accept standard or emerging
 standard formats such as XML, JSON, HTML, Turtle and the Atom
 Syndication Format.</p>
-
 <p>OSLC domain specifications are also expected to follow common practices
 and conventions that are in concert with existing industry standards and
 offer consistency across domains. All of the OSLC specifications are
 built upon the standard RDF data model, allowing OSLC to align with the
-W3C&rsquo;s Linked Data initiative. In addition, all OSLC specifications have
+W3C's Linked Data initiative. In addition, all OSLC specifications have
 adopted the convention to illustrate RDF/XML representations and will
 typically require RDF/XML representations to enable consistency across
 OSLC implementations. For those reasons, OSLC Services <strong>SHOULD</strong>
 provide and accept RDF/XML representations for each OSLC resource.</p>
-
 <p>Though the OSLC Core workgroup does provide guidance on how to form
 RDF/XML representations using a subset of RDF/XML (reference: <a href="OSLCCoreSpecAppendixRepresentations">Appendix
 B - Representation Guidance and
 Examples</a>), OSLC clients <strong>SHOULD
 NOT</strong> assume any specific form of RDF/XML. It is <strong>RECOMMENDED</strong> that
 OSLC Services also provide an HTML representation for each resource.</p>
-
 <h3 id="use-standard-content-types">Use standard content-types</h3>
-
 <p>Note that existing standard content-types are used, e.g.
 <code>application/rdf+xml</code> and <code>application/json</code>, in this document and no
 new content-types are introduced (except for the one introduced in the
@@ -2656,50 +2243,35 @@ new content-types are introduced (except for the one introduced in the
 specifications are strongly encouraged to follow this pattern &ndash; use
 standard and existing content-types and avoid inventing new
 content-types for existing formats.</p>
-
 <p>In past OSLC specifications we defined a specific RDF/XML format for
 each resource defined and gave each its own content-type. This implied
 to consumers that each resource had a different format when in reality
 they were all standard RDF/XML. Using different content-types makes it
 more difficult to write generic tools, crawlers and other services that
 work across all data.</p>
-
 <h3 id="order-of-property-values-insignificant">Order of property values insignificant</h3>
-
 <p>This specification defines how OSLC property values are to be
 represented in a variety of formats. Except in the case of a sorted
 Query Response, the ordering of property values is insignificant. OSLC
 clients and service providers <strong>MUST</strong> not place any significance on the
 ordering of property values in representations.</p>
-
 <h3 id="use-absolute-uris">Use Absolute URIs</h3>
-
 <p>OSLC representations <strong>MUST</strong> use absolute URIs in all cases except XML
 representations, where the <code>xml:base</code> attribute may be used to allow
 relative URIs to be resolved to absolute form (reference: XML Base).</p>
-
 <p>Before a resource representation that uses xml:base is posted to an OSLC
 Service for creation, it may include relative URIs that cannot be
 resolved until the OSLC Service has received, created and assigned a URI
 to the new resource.</p>
-
 <h1 id="appendix-a-common-properties-and-resources">Appendix A: Common Properties and Resources</h1>
-
-<p>See separate page <a href="OSLC Core Spec Appendix A">OSLC Core Spec Appendix A</a></p>
-
+<p>See separate page [OSLC Core Spec Appendix A](OSLC Core Spec Appendix A)</p>
 <h1 id="appendix-b-representation-guidance-and-examples">Appendix B: Representation Guidance and Examples</h1>
-
 <p>See separate page <a href="OSLCCoreSpecAppendixRepresentations">OSLC Core Spec Appendix
 B</a></p>
-
 <h1 id="appendix-c-guidance-on-links-and-relationships">Appendix C: Guidance on Links and Relationships</h1>
-
 <p>See separate page <a href="OslcCoreSpecAppendixLinks">OSLC Core Spec Appendix C</a></p>
-
 <h1 id="appendix-d-references">Appendix D: References</h1>
-
 <p>These are the specifications referenced by the OSLC Core Specification.</p>
-
 <ul>
 <li>BNF <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">Backus-Naur
 Form</a></li>

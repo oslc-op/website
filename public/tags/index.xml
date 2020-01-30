@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on OSLC - Open Services for Lifecycle Collaboration</title>
@@ -21,18 +21,9 @@
     </item>
     
     <item>
-      <title>external</title>
-      <link>http://open-services.net/tags/external/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>http://open-services.net/tags/external/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>no-tutorial</title>
       <link>http://open-services.net/tags/no-tutorial/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
       
       <guid>http://open-services.net/tags/no-tutorial/</guid>
       <description></description>
@@ -41,18 +32,9 @@
     <item>
       <title>tool</title>
       <link>http://open-services.net/tags/tool/</link>
-      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Aug 2017 15:20:55 +0200</pubDate>
       
       <guid>http://open-services.net/tags/tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>website</title>
-      <link>http://open-services.net/tags/website/</link>
-      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
-      
-      <guid>http://open-services.net/tags/website/</guid>
       <description></description>
     </item>
     
@@ -62,6 +44,15 @@
       <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
       
       <guid>http://open-services.net/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
+      <link>http://open-services.net/tags/website/</link>
+      <pubDate>Sat, 15 Jul 2017 14:54:23 +0200</pubDate>
+      
+      <guid>http://open-services.net/tags/website/</guid>
       <description></description>
     </item>
     
