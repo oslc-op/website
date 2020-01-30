@@ -43,7 +43,7 @@ These two groups ensure that all OSLC stakeholders have a voice in decisions aff
 
 ## Project Governing Board (PGB)
 
-The Project Governing Board provides top-level guidance and strategic direction for OSLC. The Board includes representatives from OSLC Sponsor organizations as well as the OSLC Technical Steering Committee.
+The Project Governing Board provides top-level guidance and strategic direction for OSLC. The Board includes those representatives from OSLC Sponsors that have committed to the [Entity Contributor Licensing Agreement](https://www.oasis-open.org/resources/projects/cla/projects-entity-cla). [Learn how to join the OSLC Project Governing Board](mailto:communications@oasis-open.org).
 
 Current PGB members:
 
@@ -66,7 +66,11 @@ Current TSC members:
 """
 
 sponsors_title = "Sponsors"
-sponsors_subtitle = "The OSLC Open Project relies on its Sponsors to fund development of the interoperability standards and open source tools that their organizations and customers depend on. To join this group of greatly appreciated organizations, visit our Open Project Sponsorship page or contact communications@oasis-open.org."
+sponsors_subtitle = ""
+sponsors_body = """
+The OSLC Open Project relies on its Sponsors to fund development of the interoperability standards and open source tools that their organizations and customers depend on. Support for the OSLC Open Project is provided by these organizations. Organizations that have committed to the [OSLC Entity Contributor Licensing Agreement](https://www.oasis-open.org/resources/projects/cla/projects-entity-cla) are listed [here](https://www.oasis-open.org/resources/projects/cla/projects-view-entity-cla). [Learn how to become an OSLC Sponsor.](mailto:communications@oasis-open.org)
+
+"""
 
 sponsors_img_list = [
   "airbus_logo.png",
@@ -109,7 +113,7 @@ To learn more about the formative years of OSLC, watch this video from John Wieg
 
 <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.fr/videos/embed/e28698fa-07eb-48a8-841b-afa4a6c42dfc" frameborder="0" allowfullscreen></iframe>
 
-In 2019, OASIS OSLC Member Section, OASIS OSLC Steering Committee and OASIS OSLC Core and Domains Techical Committees were closed in favour of the newly started OSLC Open Project.
+In 2019, OASIS OSLC Member Section, OASIS OSLC Steering Committee and OASIS OSLC Core and Domains Technical Committees were closed in favour of the newly started OSLC Open Project.
 """
 
 faq_title = "Frequently Asked Questions"
@@ -129,7 +133,7 @@ faq_questions = [
 ]
 
 faq_answers = [
-  "There are many ways to become involved. You can make technical contributions (anything from reporting bugs to writing reference implementations) via an OSLC GitHub repository. You can write a blog or article for this site. You can post questions and join discussions on the OSLC Forum. You can deepen your participation by serving on the OSLC Project Governing Board or Technical Steering Comittee. More details are on the Contribute page.",
+  "There are many ways to become involved. You can make technical contributions (anything from reporting bugs to writing reference implementations) via an OSLC GitHub repository. You can write a blog or article for this site. You can post questions and join discussions on the OSLC Forum. You can deepen your participation by serving on the OSLC Project Governing Board or Technical Steering Committee. More details are on the Contribute page.",
 
   "No. Participation in OSLC is not tied to OASIS membership. Everyone is welcome to contribute technically. Organizations that want to ensure the sustainability of OSLC development (and have a seat on the OSLC Project Governing Board) are encouraged to become OSLC Sponsors.",
 
