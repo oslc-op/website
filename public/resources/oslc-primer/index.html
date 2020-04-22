@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.69.0" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -107,7 +107,7 @@
   </ul>
 
   <ul>
-    <li><a href="#what-does-a-serviceprovider-resource-actually-look-like">What does a ServiceProvider resource actually look like?</a></li>
+    <li><a href="#what-does-a-serviceprovider-resource-actually-look-like">What does a <code>ServiceProvider</code> resource actually look like?</a></li>
     <li><a href="#what-does-a-querybase-resource-look-like">What does a queryBase resource look like?</a></li>
   </ul>
 
@@ -408,7 +408,7 @@ toolA:defect1
 <p>Finding information by performing a <code>GET</code> on a web of OSLC resources or on a ServiceProvider is a powerful, general mechanism, but sometimes it is inconvenient or inefficient to find specific information this way. To help with this problem, OSLC provides 2 distinct query mechanisms to find information in resources faster.</p>
 <h2 id="starting-from-an-oslc-resource-url">Starting from an OSLC Resource URL</h2>
 <p>OSLC implementations may support a technique called Selective Properties to enable clients to retrieve only selected property values of a specific resource. For each resource whose URL is <code>&lt;url&gt;</code>, an OSLC implementation may define a set of related resources whose URLs are of the form <code>&lt;url&gt;?oslc:properties= </code>. Each of these resources is a related resource whose representation contains the specified subset of triples of the resource whose URL is <code>&lt;url&gt;</code> and/or related resources.</p>
-<p>Here's how the selective properties values <code>oslc.properties</code> and <code>oslc.prefix</code> work.</p>
+<p>Here&rsquo;s how the selective properties values <code>oslc.properties</code> and <code>oslc.prefix</code> work.</p>
 <h3 id="oslcproperties">oslc.properties</h3>
 <p>The <code>oslc.properties key=value</code> pair portion of the URL lets you specify the resource with the set of properties you wish to retrieve. Both immediate and nested properties may be specified. A nested property is a property that belongs to the resource referenced by a property value in another resource. Nested properties are enclosed in brace brackets, and this nesting may be done recursively, i.e. a nested property may contain other nested properties.</p>
 <p>For example, suppose we have a bug report resource at the following URL:</p>
@@ -605,22 +605,22 @@ Of course, if the state of the resources in the tool fits well with the relation
     <span style="color:#f92672">&lt;oslc:Compact</span>
         <span style="color:#a6e22e">rdf:about=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345&#34;</span><span style="color:#f92672">&gt;</span>
 
-        <span style="color:#f92672">&lt;dcterms:title</span><span style="color:#f92672">&gt;</span> 12345: &amp;lt;s&amp;gt;Null pointer exception during startup&amp;lt;/s&amp;gt; <span style="color:#f92672">&lt;/dcterms:title&gt;</span>
-        <span style="color:#f92672">&lt;oslc:shortTitle</span><span style="color:#f92672">&gt;</span> 12345 <span style="color:#f92672">&lt;/oslc:shortTitle&gt;</span>
+        <span style="color:#f92672">&lt;dcterms:title&gt;</span> 12345: &amp;lt;s&amp;gt;Null pointer exception during startup&amp;lt;/s&amp;gt; <span style="color:#f92672">&lt;/dcterms:title&gt;</span>
+        <span style="color:#f92672">&lt;oslc:shortTitle&gt;</span> 12345 <span style="color:#f92672">&lt;/oslc:shortTitle&gt;</span>
         <span style="color:#f92672">&lt;oslc:icon</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/icons/defect.jpg&#34;</span> <span style="color:#f92672">/&gt;</span>
 
-        <span style="color:#f92672">&lt;oslc:smallPreview</span><span style="color:#f92672">&gt;</span>
-            <span style="color:#f92672">&lt;oslc:Preview</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;oslc:smallPreview&gt;</span>
+            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
                 <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=small&#34;</span> <span style="color:#f92672">/&gt;</span>
             <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
         <span style="color:#f92672">&lt;/oslc:smallPreview&gt;</span>
 
 
-        <span style="color:#f92672">&lt;oslc:largePreview</span><span style="color:#f92672">&gt;</span>
-            <span style="color:#f92672">&lt;oslc:Preview</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;oslc:largePreview&gt;</span>
+            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
                 <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=large&#34;</span> <span style="color:#f92672">/&gt;</span>
-                <span style="color:#f92672">&lt;oslc:hintWidth</span><span style="color:#f92672">&gt;</span> 60em <span style="color:#f92672">&lt;/oslc:hintWidth&gt;</span>
-                <span style="color:#f92672">&lt;oslc:hintHeight</span><span style="color:#f92672">&gt;</span> 20em <span style="color:#f92672">&lt;/oslc:hintHeight&gt;</span>
+                <span style="color:#f92672">&lt;oslc:hintWidth&gt;</span> 60em <span style="color:#f92672">&lt;/oslc:hintWidth&gt;</span>
+                <span style="color:#f92672">&lt;oslc:hintHeight&gt;</span> 20em <span style="color:#f92672">&lt;/oslc:hintHeight&gt;</span>
             <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
         <span style="color:#f92672">&lt;/oslc:largePreview&gt;</span>
 
@@ -663,7 +663,7 @@ Of course, if the state of the resources in the tool fits well with the relation
         <div class="footer__item footer__item--social">
           <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
           <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
-          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
+          <a target="_blank" href="https://www.linkedin.com/groups/3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
           <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
         </div>
       </div>

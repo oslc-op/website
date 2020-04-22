@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.69.0" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -541,12 +541,12 @@ Factories</a> for more information.</p>
 <h3 id="resource-removal">Resource Removal</h3>
 <p>(this section is informative)</p>
 <p>To delete an OSLC Defined Resource, or any type of resource managed by a
-service, a client performs an HTTP DELETE on the resource's URI.</p>
+service, a client performs an HTTP DELETE on the resource&rsquo;s URI.</p>
 <h3 id="resource-update">Resource Update</h3>
 <p>To update an OSLC Resource in an OSLC Service, a client fetches a
 representation of that resource via HTTP GET. The client updates the
 representation and then uses HTTP PUT to send the new representation to
-the resource's URI.</p>
+the resource&rsquo;s URI.</p>
 <p>Recall from <a href="#Unknown_properties_and_content">OSLC Defined Resources: Unknown properties and
 content</a> above that, when doing an
 update, OSLC clients must preserve any unknown property-values and other
@@ -583,16 +583,16 @@ one HTTP response.</p>
 <p>One solution for response size-sensitive Clients is to check size before
 loading. Clients that do not wish to load large resources can use the
 HTTP HEAD method to determine the size of a resource and, according to
-the rules of HTTP the server's <strong>SHOULD</strong> include an HTTP Content-Length
+the rules of HTTP the server&rsquo;s <strong>SHOULD</strong> include an HTTP Content-Length
 header that indicates the size of the resource as the &ldquo;decimal number of
 OCTETs.&rdquo; If the size is too large, a client can choose not to retrieve
 the resource.</p>
-<p>Another solution is to use Resource Paging; here's how it works. To get
+<p>Another solution is to use Resource Paging; here&rsquo;s how it works. To get
 a paged version of a resource, a client adds the
 &ldquo;key<code>value&quot; pair =oslc.paging=true</code> to the query component of the
 resource URI and the server <strong>MAY</strong> respond by returning a
 representation that contains partial information about the resource;
-only a subset of the resource's property values.</p>
+only a subset of the resource&rsquo;s property values.</p>
 <p>When a page is returned and it is <strong>NOT</strong> the last page in the sequence,
 then it <strong>SHOULD</strong> include an <code>oslc:ResponseInfo</code> (defined below), which
 that contains a resource-valued property <code>oslc:nextPage</code> that links to a
@@ -717,7 +717,7 @@ paged HTTP response body in which it appears.</p>
 representation will be the HTTP request URI, or URI from subsequent
 redirects. The response representation may also include properties from
 subject resources different from the one identified by the request URI.</p>
-<p>Here's an example, using the OSLC Core RDF/XML representation guidance,
+<p>Here&rsquo;s an example, using the OSLC Core RDF/XML representation guidance,
 that illustrates how the <code>oslc:ResponseInfo</code> resource representation is
 included in addition to the blog entry resource representation.</p>
 <p><strong>Example: Resource Paging, partial response with response info resource
@@ -748,7 +748,7 @@ RDF/XML.</p>
 enable clients to retrieve only selected property values.</p>
 <p>By adding the key<code>value pair =oslc.properties</code>, specified below, to a
 resource URI, a client can request a new resource with a subset of the
-original resource's values. Here's how the selective properties values
+original resource&rsquo;s values. Here&rsquo;s how the selective properties values
 <code>oslc.properties</code> and <code>oslc.prefix</code> work.</p>
 <h3 id="oslcproperties">oslc.properties</h3>
 <p>The <code>oslc.properties</code> key=value pair lets you specify the set of
@@ -1155,7 +1155,7 @@ resources via HTTP POST.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
 <td align="left"><code>oslc:usage</code></td>
@@ -1231,7 +1231,7 @@ resources via HTTP GET or POST.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
 <td align="left"><code>oslc:usage</code></td>
@@ -1316,7 +1316,7 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <td align="left">Resource</td>
 <td align="left">Reference</td>
 <td align="left">n/a</td>
-<td align="left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource's <code>rdf:type</code> property.</td>
+<td align="left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
 <td align="left"><code>oslc:usage</code></td>
@@ -1487,7 +1487,7 @@ creation of new resources. A creation factory provides a Creation URI
 used to create new resources via HTTP POST and may also provide Resource
 Shapes that describe the types of resources that may be created. To
 create a new OSLC Resource, an OSLC client POSTs a representation of
-that resource to a Creation Factory's Creation URI.</p>
+that resource to a Creation Factory&rsquo;s Creation URI.</p>
 <ul>
 <li>An HTTP POST of content to a Creation URI <strong>SHOULD</strong> result in the
 creation of a new resource or an explanation of why creation did not
@@ -1525,7 +1525,7 @@ the list for members that satisfy certain conditions, e.g. the bugs that
 have high priority and were created this week.</p>
 <h2 id="conceptual-model-1">Conceptual Model</h2>
 <p>To perform a query an OSLC client first creates a URI by starting with a
-Query Capability's base URI as a base and adding a URI Query String to
+Query Capability&rsquo;s base URI as a base and adding a URI Query String to
 express the query criteria. The OSLC client then uses HTTP GET to
 request a Query Resource representation of the query results. The Query
 Resource representation will contain property values about the query and
@@ -1543,7 +1543,7 @@ Services <strong>MUST</strong> support query responses in RDF/XML format (media 
 <strong>MAY</strong> support other syntaxes.</p>
 <h2 id="query-syntax">Query Syntax</h2>
 <p>A query URI can be formed by adding a query string to the end of the
-Query Capability's base URI (or by sending the query string in the
+Query Capability&rsquo;s base URI (or by sending the query string in the
 request body when using HTTP POST). The syntax used to express the query
 criteria in that string is specified by each OSLC domain specification.</p>
 <p>The <a href="OSLCCoreSpecQuery">OSLC Core Spec Query Specification</a> document
@@ -1599,12 +1599,12 @@ browser component.</li>
 <ul>
 <li><strong>UI Provider</strong> - an OSLC Service provider that offers one or more
 Delegated UI Dialogs. These dialogs will be specified in the
-provider's Service Provider resource.</li>
+provider&rsquo;s Service Provider resource.</li>
 </ul>
 <p>The next sections explain how Delegated UI Dialogs work.</p>
 <h2 id="post-message-and-window-name-protocols">Post Message and Window Name protocols</h2>
 <p>To support the widest range of web browsers, we define two different
-protocols for communicating the information about the user's action from
+protocols for communicating the information about the user&rsquo;s action from
 the UI Provider and back to the UI Consumer. These are the Post Message
 and Window Name protocols described below.</p>
 <p>In both the Post Message and Window Name protocols, the way that a UI
@@ -1650,11 +1650,11 @@ conforming to this protocol.</p>
 window, such as a iframe inside some surrounding webpage. In such cases,
 <code>postMessage()</code> must be called on that parent window. But in a native
 application, an outer page is not needed and the embedded page may be
-shown directly in the browser's &ldquo;root&rdquo; window. When the embedded page
+shown directly in the browser&rsquo;s &ldquo;root&rdquo; window. When the embedded page
 has no parent window, it must call <code>postMessage()</code> on its own window.</p>
 <p>Here are the responsibilities of the UI Consumer and UI Provider in Post
 Message protocol.</p>
-<h4 id="the-ui-consumers-responsibilities">The UI Consumer's responsibilities</h4>
+<h4 id="the-ui-consumers-responsibilities">The UI Consumer&rsquo;s responsibilities</h4>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. Append
 the fragment identifier #oslc-core-postMessage-1.0 to the URL to
@@ -1664,15 +1664,15 @@ Dialog. 1 Listen for window &lsquo;message&rsquo; events, ignoring events from o
 sources or not prefixed with &ldquo;oslc-response:&rdquo; 1 When message from
 Delegated UI Dialog indicates user completed action, free resources and
 handle action.</p>
-<h4 id="the-ui-providers-responsibilities">The UI Provider's responsibilities</h4>
+<h4 id="the-ui-providers-responsibilities">The UI Provider&rsquo;s responsibilities</h4>
 <p>1 Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection. 1 Allow the user to
 perform resource creation or selection. 1 Once the user has created,
 selected or canceled, send notification using <code>postMessage()</code> to the
-page's parent window, passed in <code>event.data</code> string, that is prefixed
+page&rsquo;s parent window, passed in <code>event.data</code> string, that is prefixed
 with &ldquo;oslc-response:&rdquo; See below for the two possible response formats,
 one for resource selection and one for creation. 1 If the page is not
-parented, then the message is posted to the page's own window. The page
+parented, then the message is posted to the page&rsquo;s own window. The page
 must ignore this message to itself.</p>
 <p>The below JavaScript code example shows how a UI Provider page would
 send a response using <code>postMessage()</code> and taking into account the fact
@@ -1688,7 +1688,7 @@ that some pages are not parented.</p>
 <p>The Window Name protocol uses the HTML DOM <code>window.name</code> property to
 communicate the response (reference: Window Object) from the UI Provider
 to the UI Consumer. This special property of window maintains its value
-even as the window navigates to a different origin, but the ifame's
+even as the window navigates to a different origin, but the ifame&rsquo;s
 <code>window.name</code> can only be read when the accessing window shares the same
 origin. For this to happen, when the embedded page is finished it must
 set the <code>window.name</code> and also change the <code>window.location</code> to a page
@@ -1698,14 +1698,14 @@ Consumer when to do so. This return location is passed to the embedded
 page using the <code>window.name</code> property.</p>
 <p>Here are the responsibilities of the UI Consumer and UI Provider in
 Window Name protocol.</p>
-<h4 id="the-ui-consumers-responsibilities-1">The UI Consumer's responsibilities</h4>
+<h4 id="the-ui-consumers-responsibilities-1">The UI Consumer&rsquo;s responsibilities</h4>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. Append
 the fragment identifier #oslc-core-windowName-1.0 to the URL to
 indicate that Window Name is the desired protocol. 1 On the iframe, set
-the frame's <code>window.name</code> to indicate the Return URL. 1 On the iframe,
+the frame&rsquo;s <code>window.name</code> to indicate the Return URL. 1 On the iframe,
 Listen for &lsquo;onload&rsquo; events 1 When an &lsquo;onload&rsquo; event occures an the
-frame's location is equal to the Return URL then read the response from
+frame&rsquo;s location is equal to the Return URL then read the response from
 the window.name.</p>
 <p>The following Javascript code illustrates the protocol. The code for the
 <code>destroyFrame()</code>, <code>handleMessage()</code> and <code>displayFrame()</code> methods are not
@@ -1759,14 +1759,14 @@ developer. The UI Consumer must provide these methods.</p>
    }
 </code></pre>
 </blockquote>
-<h4 id="the-ui-providers-responsibilities-1">The UI Provider's responsibilities</h4>
+<h4 id="the-ui-providers-responsibilities-1">The UI Provider&rsquo;s responsibilities</h4>
 <p>As soon as the embedded page has loaded, perform the following:</p>
 <p>1 <em>Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection.</em> 1 <em>Read the Return URL
 from the window.name variable</em> 1 &lt;span style=&quot;font-family:
 Verdana,Arial,Helvetica,sans-serif; font-size: small&rdquo;&gt;Allow user to
 perform resource creation or selection.&lt;/span&gt; 1 Once user has
-created, selected or canceled, communicate the user's response by
+created, selected or canceled, communicate the user&rsquo;s response by
 setting the window.name variable to the response. See below for the two
 possible response formats, one for resource selection and one for
 creation. 1 Indicate that user has responded by setting the
@@ -1895,7 +1895,7 @@ recognizes that the initial size of a Delegated UI dialog is not
 sufficient and needs a way to ask the UI Consumer to resize the dialog.
 In this section we specify a mechanism that enables dialog resizing, but
 only when Post Message Protocol is used.</p>
-<p>Consumers <strong>MAY</strong> honor a dialog's ability to dynamically resize. Those
+<p>Consumers <strong>MAY</strong> honor a dialog&rsquo;s ability to dynamically resize. Those
 that do (a) <strong>MUST</strong> use Post Message Protocol, (b) <strong>MUST</strong> use the
 <code>oslc:resize</code> value instead of any static width or height, and and (c)
 <strong>MUST</strong> register a handler to receive dialog resize messages sent by
@@ -1908,7 +1908,7 @@ time it received a dialog resize message from that dialog.</p>
 covering the entire viewport with the dialog.</p>
 <p>Here are the responsibilities of the UI Consumer and UI Provider in
 dialog resizing.</p>
-<h3 id="the-ui-consumers-responsibilities-2">The UI Consumer's responsibilities</h3>
+<h3 id="the-ui-consumers-responsibilities-2">The UI Consumer&rsquo;s responsibilities</h3>
 <p>1 Include the Delegated UI Dialog via iframe (i.e setting iframe src to
 the URI of the Delegated UI Dialog) or via an embedded browser. 1 Add a
 &lsquo;message&rsquo; listener to the outer window to receive messages from the
@@ -1917,15 +1917,15 @@ events from other sources or not prefixed with &ldquo;oslc-resize:&quot;. Multip
 resize &lsquo;message&rsquo; events may be sent while the dialog is visible. 1 When
 message from Delegated UI Dialog indicates user completed action, free
 resources and handle action.</p>
-<h3 id="the-ui-providers-responsibilities-2">The UI Provider's responsibilities</h3>
+<h3 id="the-ui-providers-responsibilities-2">The UI Provider&rsquo;s responsibilities</h3>
 <p>1 Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection. 1 Allow the user to
 perform resource creation or selection. 1 Once the Provider needs to
-resize the dialog, send notification using <code>postMessage()</code> to the page's
+resize the dialog, send notification using <code>postMessage()</code> to the page&rsquo;s
 parent window, passed in <code>event.data</code> string, that is prefixed with
 &ldquo;oslc-resize:&quot;. Multiple resize messages may be sent. See below for the
 response format. 1 If the page is not parented, then the message is
-posted to the page's own window. The page must ignore this message to
+posted to the page&rsquo;s own window. The page must ignore this message to
 itself.</p>
 <p>The below JavaScript code example shows how a UI Provider page would
 send a response using <code>postMessage()</code> and taking into account the fact
@@ -1987,7 +1987,7 @@ UI related topic.</p>
 <p>OSLC providers <strong>MAY</strong> support a technique known as User Interface (UI)
 Preview, that can be used to show a user in-context information when
 displaying a link to a resource, and to show more information when the
-user's mouse lingers over the link.</p>
+user&rsquo;s mouse lingers over the link.</p>
 <p>OSLC providers which offer UI Preview <strong>MUST</strong> do so in accordance with
 the <a href="OslcCoreUiPreview">OSLC Core UI Preview Specification</a>.</p>
 <hr>
@@ -2154,7 +2154,7 @@ version that it can return.</li>
 <li>If the <code>OSLC-Core-Version</code> header is not present then the OSLC
 Service <strong>SHOULD</strong> respond by returning a resource that conforms to
 the earliest or most compatible (as determined by
-the implementation) specification version's representation. Services
+the implementation) specification version&rsquo;s representation. Services
 that never offered an OSLC Version 1 interface can ignore
 this restriction.</li>
 <li>When returning an OSLC Defined Resource, OSLC Services <strong>MUST</strong>
@@ -2188,7 +2188,7 @@ that already exist.</li>
 restrictions should not break clients. But it is not possible to
 relax restrictions on services, because clients expect to find the
 required fields and if they are missing, clients will break.</li>
-<li>Before defining a new property within your OSLC domain's namespace
+<li>Before defining a new property within your OSLC domain&rsquo;s namespace
 consult the list of common properties in
 [OSLC Core Spec Appendix A](OSLC Core Spec Appendix A) to see if
 using a common property would be more appropriate.</li>
@@ -2224,7 +2224,7 @@ Syndication Format.</p>
 and conventions that are in concert with existing industry standards and
 offer consistency across domains. All of the OSLC specifications are
 built upon the standard RDF data model, allowing OSLC to align with the
-W3C's Linked Data initiative. In addition, all OSLC specifications have
+W3C&rsquo;s Linked Data initiative. In addition, all OSLC specifications have
 adopted the convention to illustrate RDF/XML representations and will
 typically require RDF/XML representations to enable consistency across
 OSLC implementations. For those reasons, OSLC Services <strong>SHOULD</strong>
@@ -2316,7 +2316,7 @@ Edition</a></li>
         <div class="footer__item footer__item--social">
           <a target="_blank" href="https://github.com/oslc"><span class="fa fa-github fa-lg"></span></a>
           <a target="_blank" href="https://twitter.com/oslcNews"><span class="fa fa-twitter fa-lg"></span></a>
-          <a target="_blank" href="https://www.linkedin.com/groups/OSLC-Open-Services-Lifecycle-Collaboration-3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
+          <a target="_blank" href="https://www.linkedin.com/groups/3957829"><span class="fa fa-linkedin-square fa-lg"></span></a>
           <a target="_blank" href="https://www.youtube.com/c/OpenServicesDotNet"><span class="fa fa-youtube-play fa-lg"></span></a>
         </div>
       </div>
