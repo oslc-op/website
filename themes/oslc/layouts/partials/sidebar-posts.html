@@ -5,7 +5,7 @@
     <input name="search" id="search-input" type="text">
     <span class="fa fa-search"></span>
   </div>
-
+  
   <div class="search__item">
     <button id="search-button" class="search__button button">Search</button>
   </div>
@@ -17,7 +17,7 @@
     <label for="">Filter</label>
     <select name="categories" id="categories-news">
       <option class="categories__option" selected>Select a category</option>
-      <option class="categories__option" value="all">All</option>
+      <option class="categories__option" value="all">All</option>      
       <option class="categories__option" value="events">Events</option>
       <option class="categories__option" value="announcements">Announcements</option>
       <option class="categories__option" value="updates">Updates</option>
@@ -57,124 +57,124 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.2/lunr.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  var lunrIndex;
-  var pagesIndex;
-  function initLunr() {
-    $.getJSON("/news/news.json")
-      .done(function (index) {
-        pagesIndex = index;
-        lunrIndex = lunr(function () {
-          this.ref('uri');
-          this.field('title', {
-            boost: 15
-          });
-          this.field('tags', {
-            boost: 10
-          });
-          this.field("content", {
-            boost: 5
-          });
+var lunrIndex;
+var pagesIndex;
+function initLunr() {
+  $.getJSON("/news/news.json")
+    .done(function (index) {
+      pagesIndex = index;
+      lunrIndex = lunr(function(){
+        this.ref('uri');
+        this.field('title', {
+          boost: 15
+        });
+        this.field('tags', {
+          boost: 10
+        });
+        this.field("content", {
+          boost: 5
+        });
 
-          pagesIndex.forEach(function (page) {
-            this.add(page);
-          }, this);
-        })
-        lunrIndex.pipeline.remove(lunrIndex.stemmer)
-        console.info(lunrIndex);
+        pagesIndex.forEach(function (page) {
+          this.add(page);
+        }, this);
       })
-      .fail(function (jqxhr, textStatus, error) {
-        var err = textStatus + ", " + error;
-        console.error("Error getting Hugo index flie:", err);
-      });
-  }
-
-  function search(query) {
-    return lunrIndex.search(query).map(function (result) {
-      return pagesIndex.filter(function (page) {
-        return page.uri === result.ref;
-      })[0];
+      lunrIndex.pipeline.remove(lunrIndex.stemmer)
+      console.info(lunrIndex);
+    })
+    .fail(function (jqxhr, textStatus, error) {
+      var err = textStatus + ", " + error;
+      console.error("Error getting Hugo index flie:", err);
     });
-  }
+}
 
-  function results(r) {
-    var matches = [];
+function search(query) {
+  return lunrIndex.search(query).map(function (result) {
+    return pagesIndex.filter(function (page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
 
-    $('.posts .post').each(function (index, elem) {
-      $(elem).hide();
-      for (var i = 0; i < r.length; i++) {
-        if (elem.title === r[i].title) {
-          matches.push(elem)
-          $(elem).css('display', 'none')
-        }
+function results(r) {
+  var matches = [];
+
+  $('.posts .post').each(function(index, elem){
+    $(elem).hide();
+    for (var i = 0; i < r.length; i++) {
+      if (elem.title === r[i].title) {
+        matches.push(elem)
+        $(elem).css('display', 'none')
       }
-    })
-
-    if (!r.length) {
-      $('.posts col-sm-8').prepend('<h1 style="text-align:center;">0 items found</h1>')
-    } else if (r.length == 1) {
-      $('.posts col-sm-8').prepend('<h1 style="text-align:center;">1 item found</h1>')
-    } else {
-      $('.posts col-sm-8').prepend('<h1 style="text-align:center;">' + r.length + ' items found</h1>')
     }
+  })
 
-
-    $(matches).each(function (index, e) {
-      $(e).css('display', 'block');
-    })
+  if (!r.length) {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">0 items found</h1>')
+  } else if (r.length == 1) {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">1 item found</h1>')
+  } else {
+    $('.posts col-sm-8').prepend('<h1 style="text-align:center;">'+ r.length + ' items found</h1>')
   }
+  
 
-  $(document).ready(function () {
+  $(matches).each(function(index, e){
+    $(e).css('display', 'block');
+  })
+}
 
-    var result;
-    var filterBy;
+$(document).ready(function(){
 
-    initLunr();
-    $('#categories-news').val('all');
-    $('#search-input').keypress(function (e) {
-      if (e.which === 13) {
-        result = search($(this).val());
-        console.info('result ', result)
-        results(result)
-      }
-    })
+  var result;
+  var filterBy;
 
-    $('#search-button').click(function () {
-      if ($('#search-input').val() !== '') {
-        var searchBy = $('#search-input').val();
-        result = search(searchBy);
-        results(result)
-      }
-    })
+  initLunr();
+  $('#categories-news').val('all');
+  $('#search-input').keypress(function(e){
+    if (e.which === 13) {
+      result = search($(this).val());
+      console.info('result ', result)
+      results(result)
+    }
+  })
 
-    $('#categories-news').change(function () {
-      // window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
+  $('#search-button').click(function(){
+    if ($('#search-input').val() !== '') {
+      var searchBy = $('#search-input').val();
+      result = search(searchBy);
+      results(result)
+    }
+  })
 
-      filterBy = $("#categories-news option:selected").text().toLowerCase();
+  $('#categories-news').change(function(){
+    // window.location.href = baseurl + 'news/' + $("#categories-news option:selected").text().toLowerCase();
 
+    filterBy = $("#categories-news option:selected").text().toLowerCase();
+      
       if (filterBy == 'all') {
         $('.posts .post').css('display', 'block');
       } else {
-
-        $('.posts .post').each(function (index, elem) {
-          if ($(elem).attr('itemtype') === filterBy) {
+      
+        $('.posts .post').each(function(index, elem){
+          if ($(elem).attr('itemtype') === filterBy){
             console.info($(elem).attr('itemtype'));
             $(elem).css('display', 'block');
-
+            
           } else {
             $(elem).css('display', 'none');
           }
         })
       }
-    });
-
-    $('#search-input').on('change keyup', function (event) {
-      console.info('event ', event)
-      if ($('#search-input').val() === '') {
-        $('.posts .post').each(function (index, elem) {
-          $(elem).css('display', 'block');
-        })
-      }
-    })
   });
+
+  $('#search-input').on('change keyup', function(event){
+    console.info('event ', event)
+    if ($('#search-input').val() === '') {
+      $('.posts .post').each(function(index, elem){
+        $(elem).css('display', 'block');
+      })
+    }
+  })
+});
 
 </script>
