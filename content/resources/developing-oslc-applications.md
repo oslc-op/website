@@ -1,7 +1,7 @@
 +++
 category = "website"
 date = "2019-05-21T10:16:00+02:00"
-author = "OSLC Community"
+author = "OSzLC Community"
 author_uri = ""
 tags = ["website", "no-tutorial", "external"]
 title = "OSLC Developer Guide"
