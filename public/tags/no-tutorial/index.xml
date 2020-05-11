@@ -6,26 +6,35 @@
     <description>Recent content in no-tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 20:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/no-tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>A survey of commercial tools with OSLC support</title>
+      <link>http://open-services.net/resources/tools-survey-2020/</link>
+      <pubDate>Mon, 11 May 2020 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/tools-survey-2020/</guid>
+      <description>A survey of commercial tools that provide OSLC support. The survey describes in detail which OSLC capabilities are supported to which tools.</description>
+    </item>
+    
+    <item>
       <title>Eclipse Lyo</title>
-      <link></link>
+      <link>http://open-services.net/resources/tool-20111111/</link>
       <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
       
-      <guid></guid>
+      <guid>http://open-services.net/resources/tool-20111111/</guid>
       <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
     </item>
     
     <item>
       <title>OSLC Developer Guide</title>
-      <link></link>
+      <link>http://open-services.net/resources/developing-oslc-applications/</link>
       <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
       
-      <guid></guid>
+      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
       <description>All you need to know to build OSLC servers, and/or client applications.</description>
     </item>
     

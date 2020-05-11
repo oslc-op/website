@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>A survey of commercial tools with OSLC support</title>
+      <link>http://open-services.net/resources/tools-survey-2020/</link>
+      <pubDate>Mon, 11 May 2020 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/tools-survey-2020/</guid>
+      <description>A survey of commercial tools that provide OSLC support. The survey describes in detail which OSLC capabilities are supported to which tools.</description>
+    </item>
+    
+    <item>
       <title>OSLC Open Project first spec draft publication</title>
       <link>http://open-services.net/news/0912-cm-psd03/</link>
       <pubDate>Thu, 12 Sep 2019 18:05:00 +0200</pubDate>
@@ -38,6 +47,24 @@ The most exciting thing that we heard throughout the OSLCfest 2018 conference wa
       
       <guid>http://open-services.net/resources/oslc-primer/</guid>
       <description>Introduction to developing OSLC solutions</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Lyo</title>
+      <link>http://open-services.net/resources/tool-20111111/</link>
+      <pubDate>Wed, 22 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/tool-20111111/</guid>
+      <description>The Eclipse Lyo project provides an SDK to help Java developers adopt OSLC specifications and build OSLC-compliant tools.</description>
+    </item>
+    
+    <item>
+      <title>OSLC Developer Guide</title>
+      <link>http://open-services.net/resources/developing-oslc-applications/</link>
+      <pubDate>Tue, 21 May 2019 10:16:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/developing-oslc-applications/</guid>
+      <description>All you need to know to build OSLC servers, and/or client applications.</description>
     </item>
     
     <item>
