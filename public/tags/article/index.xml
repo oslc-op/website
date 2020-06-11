@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>article on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>Article on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/article/</link>
-    <description>Recent content in article on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in Article on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 11 May 2020 20:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/article/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,8 @@
       <pubDate>Mon, 11 May 2020 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/tools-survey-2020/</guid>
-      <description>A survey of commercial tools that provide OSLC support. The survey describes in detail which OSLC capabilities are supported to which tools.</description>
+      <description>This survey presents a list of commercial tools that provide OSLC support. The survey describes in detail which OSLC capabilities are supported to which tools.
+View the survey online. A report that summarises this survey, as well as give general reflections over OSLC implemenation can be found as &amp;gt;J. El-khoury, &amp;ldquo;An Analysis of the OASIS OSLC Integration Standard, for a Cross-disciplinary Integrated Development Environment : Analysis of market penetration, performance and prospects,&amp;rdquo; , TRITA-ITM-RP, 978-91-7873-525-9, 2020.</description>
     </item>
     
     <item>
@@ -26,7 +28,7 @@
       <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
       
       <guid>http://open-services.net/resources/article-20170715/</guid>
-      <description>Integrating tools via standard interfaces</description>
+      <description>Most large organizations require dozens and sometimes hundreds of specialized software tools to manage the lifecycle of the physical products or software applications they create. It isn&amp;rsquo;t hard to imagine the monumental waste these organizations incur in attempting to manually coordinate the efforts of the teams that use these many disparate tools to create a single product. Open Services for Lifecycle Collaboration (OSLC) is an open community for creating specifications for integrating lifecycle activities across tools to address this problem.</description>
     </item>
     
     <item>
@@ -35,7 +37,8 @@
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/article-20151109/</guid>
-      <description>Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement.</description>
+      <description>In this article, Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement. The conclusion is that flexibility and value are what drive integration decisions.
+Read</description>
     </item>
     
   </channel>

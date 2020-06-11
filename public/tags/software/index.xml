@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>software on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>Software on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/software/</link>
-    <description>Recent content in software on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in Software on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 09 Nov 2015 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/software/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +18,8 @@
       <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/learn-more-about-tasktop-sync/</guid>
-      <description>Tasktop announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.</description>
+      <description>Tasktop, the leader in Software Lifecycle Integration (SLI) and creator of the Eclipse Mylyn open source tool, today announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.
+Tasktop products enable enterprises to achieve major gains by connecting everyone in the software lifecycle to create one efficient development and delivery team. With Tasktop solutions, everyone can use their various tools of choice and still collaborate in real time as if they were all working on a single platform.</description>
     </item>
     
   </channel>

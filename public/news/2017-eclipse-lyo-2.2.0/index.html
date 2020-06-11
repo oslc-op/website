@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/news-default.jpg" />
   
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.30.2" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -80,6 +80,7 @@
             <a href="../../contribute/" class="nav__item">Contribute</a>
           
           
+          <a href="http://oslcfest.org" target="_blank" class="nav__item">OSLC Fest</a>
           <a href="https://forum.open-services.net" target="_blank" class="nav__item">Forum</a>
         </div>
       </div>
@@ -107,16 +108,27 @@
     <div class="post__content">
       <div class="post__paragraphs">
         <p>We are delighted to announce today the Lyo 2.2.0 release! The artefacts are available immediately from the <a href="https://repo.eclipse.org/content/repositories/lyo-releases/org/eclipse/lyo/">Eclipse maven repository</a>, the Lyo Toolchain Designer is available for download from the <a href="http://download.eclipse.org/lyo/p2/releases/2.2.0">Lyo P2 update site</a>.</p>
+
 <p>Main features of the 2.2.0 release are:</p>
+
 <p>✨ <strong>Lyo Toolchain Designer plugin</strong></p>
+
 <p>The Lyo Toolchain Designer plugin is now officially released as part of the Lyo project. Toolchain Designer allows you to graphically model a complete OSLC toolchain (including interactions between OSLC servers and clients), as well as a single server and/or client. From such models, the Lyo Code Generator can then automatically generate an almost complete OSLC4J-compliant Java web project. To model and generate your first toolchain, follow the <a href="https://wiki.eclipse.org/Lyo/ToolchainModellingAndCodeGenerationWorkshop">Lyo Designer tutorial</a>.</p>
+
 <p>✨ <strong>Lyo Store</strong></p>
+
 <p>Lyo Store allows you to persist OSLC resources into SPARQL triplestore of your choice, through ORM-like operations. Lyo Store can be used to provide capabilities such as caching, SPARQL queries, etc. Start by going through an <a href="https://wiki.eclipse.org/Lyo/Store">introductory Lyo Store tutorial</a>.</p>
+
 <p>🔥 <strong>Maven only</strong></p>
+
 <p>OSLC4J projects rely now only on Maven for configuration. If you work from source code using Eclipse, please follow the <a href="https://wiki.eclipse.org/Lyo/ContributorsGettingStarted">instructions</a> for working <a href="https://wiki.eclipse.org/Lyo/modelling_and_generation/working_from_source_code">from source</a>.</p>
+
 <p>🔧 <strong>Fixes</strong></p>
+
 <p>Logging has been fixed (Bug 513477): the logging library implementation (eg slf4j-log4j12) is not included in the JARs now (also all direct uses of Log4j have been rewritten to use SLF4J API). We also work around old Jena versions that bundle logging library implementations. In order to make sure that no logging messages disappear from your applications, make sure to include at least one SLF4J logging backend in your application (and configure it if needed). If you have a Log4j configuration file in your application, you can add the drop-in dependency towards slf4j-log4j12 to have logging work as before. If you are just starting with a new application, we recommend you to try slf4j-simple, which requires zero configuration.</p>
+
 <p>The following bugs were fixed:</p>
+
 <ul>
 <li>Bug 517298 - Generated createResourceShape method on a Resource class produces wrong URIs</li>
 <li>Bug 494933 - Architecture resource and link type resources not possible to unmarshall</li>
@@ -126,6 +138,7 @@
 <li>Bug 430390 - Missing call to resolve path parameters in method-path annotation for CreationFactory annotation</li>
 <li>Bug 519818 - Update jena-core version to 2.13 in all projects</li>
 </ul>
+
 <p>Best regards,
 Andrew, Jad, and Jim</p>
 
