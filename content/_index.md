@@ -179,6 +179,8 @@ supporters_size = [
   "full"
 ]
 
+oslcfest_title = "OSLC Fest"
+oslcfest_subtitle = "The OSLCFest is the place to learn first hand from OSLC experts about existing and upcoming OSLC solutions, open-source projects and standards. Click on the link bellow to visit the event Web page, where you can find videos and presentations from past events."
 
 news_title = "Latest News"
 news_subtitle = "Announcements, Articles, Updates, and many more!"
