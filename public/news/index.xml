@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 12 Sep 2019 18:05:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OSLCFest 2020</title>
+      <link>http://open-services.net/news/oslcfest/</link>
+      <pubDate>Fri, 19 Jun 2020 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslcfest/</guid>
+      <description>The OSLCFest took place on May 18-20, 2020. There were a total of 20 presentations on OSLC, including 8 presentations by tool vendors. The recording of the talks of the OSLCFest 2020 (http://www.oslcfest.org/) can be found on YouTube: Day1: https://www.youtube.com/watch?v=FxMAyHqEay8 Day2: https://www.youtube.com/watch?v=tz35ecvqLlQ Day3: https://youtu.be/t1AJg8HAEn4</description>
+    </item>
     
     <item>
       <title>OSLC Open Project first spec draft publication</title>

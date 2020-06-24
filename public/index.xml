@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>OSLCFest 2020</title>
+      <link>http://open-services.net/news/oslcfest/</link>
+      <pubDate>Fri, 19 Jun 2020 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oslcfest/</guid>
+      <description>The OSLCFest took place on May 18-20, 2020. There were a total of 20 presentations on OSLC, including 8 presentations by tool vendors. The recording of the talks of the OSLCFest 2020 (http://www.oslcfest.org/) can be found on YouTube: Day1: https://www.youtube.com/watch?v=FxMAyHqEay8 Day2: https://www.youtube.com/watch?v=tz35ecvqLlQ Day3: https://youtu.be/t1AJg8HAEn4</description>
+    </item>
+    
+    <item>
       <title>A survey of commercial tools with OSLC support</title>
       <link>http://open-services.net/resources/tools-survey-2020/</link>
       <pubDate>Mon, 11 May 2020 20:00:00 +0200</pubDate>

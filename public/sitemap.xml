@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://open-services.net/news/oslcfest/</loc>
+    <lastmod>2020-06-19T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://open-services.net/resources/tools-survey-2020/</loc>
     <lastmod>2020-05-11T20:00:00+02:00</lastmod>
   </url>
@@ -364,7 +369,7 @@
   
   <url>
     <loc>http://open-services.net/news/</loc>
-    <lastmod>2019-09-12T18:05:00+02:00</lastmod>
+    <lastmod>2020-06-19T10:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -497,13 +502,13 @@
   </url>
   
   <url>
-    <loc>http://open-services.net/categories/why/</loc>
+    <loc>http://open-services.net/tags/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://open-services.net/tags/why/</loc>
+    <loc>http://open-services.net/categories/why/</loc>
     <lastmod>2017-10-13T20:47:03+02:00</lastmod>
     <priority>0</priority>
   </url>
