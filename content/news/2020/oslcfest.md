@@ -1,6 +1,6 @@
 +++
 category = "events"
-date = "2020-06-19T10:00:00+02:00"
+date = "2020-06-24T10:00:00+02:00"
 author = "Gabriel Fernandes"
 author_uri = "https://www.linkedin.com/in/gabriel-fac/"
 tags = []
