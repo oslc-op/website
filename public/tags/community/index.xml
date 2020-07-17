@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Community on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>community on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/community/</link>
-    <description>Recent content in Community on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in community on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 11 Aug 2015 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/community/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +17,7 @@
       <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
-      <description>Whether you live in the I/T or Systems world, software integration in heterogeneous environments can represent both a challenge (where do I even start?) and opportunity (how can I advance my environment to provide more value, deliver faster and with reduced risk?).
-Communities like openservices and OASIS OSLC collaboratively discuss lifecycle integration challenges and solutions that leverage open standards. Whether you&amp;rsquo;re here to contribute your knowledge and experience or to learn from others, we&amp;rsquo;re all in it together.</description>
+      <description>If you&amp;rsquo;re interested in working with other leaders in this space and helping influence the direction and expansion of OSLC, consider becoming a member of OASIS OSLC Steering Committee.</description>
     </item>
     
   </channel>

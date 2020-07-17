@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Core on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>core on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/core/</link>
-    <description>Recent content in Core on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in core on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Mon, 21 Mar 2016 10:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/core/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +17,7 @@
       <pubDate>Mon, 21 Mar 2016 10:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/news/oslc3-update-what-how-why-important/</guid>
-      <description>Open Services for Life-cycle Collaboration or OSLC defines a set of standard capabilities enabling loosely coupled, open and scalable point-to-point integration between heterogeneous software development tools. OSLC allows users to work seamlessly across their preferred tools and does not require complex interchange of data between tools that may result in information redundancy and maintenance issues.
-The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC through collaborating organizations to provide the standards, APIs and tools that support integrated product, system and application lifecycle management.</description>
+      <description>The OASIS OSLC Core 3.0 Specifications represent the continued evolution of OSLC through collaborating organizations to provide the standards, APIs and tools that support integrated product, system and application lifecycle management.</description>
     </item>
     
   </channel>

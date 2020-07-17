@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Presentation on OSLC - Open Services for Lifecycle Collaboration</title>
+    <title>presentation on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/tags/presentation/</link>
-    <description>Recent content in Presentation on OSLC - Open Services for Lifecycle Collaboration</description>
+    <description>Recent content in presentation on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2017 OSLC; all rights reserved.</copyright>
     <lastBuildDate>Tue, 17 Nov 2015 20:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://open-services.net/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +17,7 @@
       <pubDate>Tue, 17 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/presentation-20171117/</guid>
-      <description>The PROSTEP OpenPDM OSLC Adapter makes your PLM system(s) available to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones. The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems. The OpenPDM OSLC services can be integrated in any OSLC consuming applications. The gap between ALM and PLM can be closed.
-This presentation provides details on the OpenPDM OSLC Adapter including overview, reference project and technical information.</description>
+      <description>The adapter is an add-on for the OpenPDM integration framework which provides connectors to a wide range of systems.</description>
     </item>
     
     <item>
@@ -28,8 +26,7 @@ This presentation provides details on the OpenPDM OSLC Adapter including overvie
       <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
       
       <guid>http://open-services.net/resources/presentation-20171109/</guid>
-      <description>Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.
-View</description>
+      <description>Tasktop Sync Case Study on enabling the customer to increase both velocity AND quality.</description>
     </item>
     
   </channel>
