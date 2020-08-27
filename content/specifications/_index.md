@@ -26,11 +26,11 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Query 3.0 PSD 01](docs.oasis-open-projects.org/oslc-op/query/v3.0/psd01/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. |
 | [Quality Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/psd02/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Change Management 3.0 PSD03](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/psd03/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
 | [Core 3.0 PSD 04](https://docs.oasis-open-projects.org/oslc-op/core/v3.0/psd04/oslc-core.html) | **OSLC Open Project** | Latest published draft of the OSLC 3 specification. |
 | [Core 2.0 Final](https://archive.open-services.net/bin/view/Main/OslcCoreSpecification.html) | OSLC Core WG (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
-| [Query 3.0 CSPRD 01](https://docs.oasis-open.org/oslc-core/oslc-query/v3.0/csprd01/oslc-query-v3.0-csprd01.html) | OSLC Core TC (closed) | Defines a simple, implementation independent selection and projection query capability. |
 | [Tracked Resource Set 2.0 Finalized Draft](https://archive.open-services.net/wiki/core/TrackedResourceSet-2.0/) | OSLC Core WG (closed) | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Requirements Management 2.0 Final](https://archive.open-services.net/wiki/requirements-management/OSLC-Requirements-Management-Specification-version-2.0/index.html) | OSLC Requirements Management WG (closed) | Defines the OSLC services and vocabulary for the Requirements Management domain. |
 | [Requirements Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/psd02/requirements-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Requirements Management domain. |
@@ -49,6 +49,7 @@ See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Query 3.0 CSPRD 01](https://docs.oasis-open.org/oslc-core/oslc-query/v3.0/csprd01/oslc-query-v3.0-csprd01.html) | OSLC Core TC (closed) | Defines a simple, implementation independent selection and projection query capability. |
 | _[Change Management 3.0 CS02](https://docs.oasis-open.org/oslc-domains/cm/v3.0/cs02/part1-change-mgt/cm-v3.0-cs02-part1-change-mgt.html)_ | OSLC Domains TC (closed) | Defines the OSLC services and vocabulary for the Change Management domain. |
 | _[Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html)_ | OSLC Core TC (closed) | Latest published draft of the OSLC 3 specification. |
 | _[Core 3.0 CSPRD 02](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd02/part1-overview/oslc-core-v3.0-csprd02-part1-overview.html)_ | OSLC Core TC (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
