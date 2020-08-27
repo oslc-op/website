@@ -22,7 +22,7 @@ Status refers to the OASIS Standards Track Work Products in the [OASIS Naming Di
 
 Note: The open-services.net specifications that are being migrated to OASIS by the OSLC Domains TC are strictly a document maintenance exercise. That is, a *Final* open-service.net specification may appear as an OASIS CSD with different formatting, but will have the same specification normative content. Migration of these documents to OASIS will therefore have no impact on implementations. open-services.net specifications that do not yet have at least OASIS CSD status will reference the existing (PDF) open-services.net specification, and the status will be shown in *italics*.
 
-## Active publications
+## Active Publications
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
@@ -41,11 +41,11 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 | [Performance Monitoring 2.0 Final](https://archive.open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/index.html) | OSLC Performance Monitoring WG (closed) | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |
 
 
-## Working drafts
+## Working Drafts
 
 See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a list of actively edited drafts. 
 
-## Obsolete publications
+## Obsolete Publications
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
