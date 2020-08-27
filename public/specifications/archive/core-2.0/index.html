@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   
-    <meta name="generator" content="Hugo 0.71.0" />
+    <meta name="generator" content="Hugo 0.74.3" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -1914,7 +1914,7 @@ dialog resizing.</p>
 the URI of the Delegated UI Dialog) or via an embedded browser. 1 Add a
 &lsquo;message&rsquo; listener to the outer window to receive messages from the
 Delegated UI Dialog. 1 Listen for window &lsquo;message&rsquo; events, ignoring
-events from other sources or not prefixed with &ldquo;oslc-resize:&quot;. Multiple
+events from other sources or not prefixed with &ldquo;oslc-resize:&rdquo;. Multiple
 resize &lsquo;message&rsquo; events may be sent while the dialog is visible. 1 When
 message from Delegated UI Dialog indicates user completed action, free
 resources and handle action.</p>
@@ -1924,7 +1924,7 @@ interface for resource creation or selection. 1 Allow the user to
 perform resource creation or selection. 1 Once the Provider needs to
 resize the dialog, send notification using <code>postMessage()</code> to the page&rsquo;s
 parent window, passed in <code>event.data</code> string, that is prefixed with
-&ldquo;oslc-resize:&quot;. Multiple resize messages may be sent. See below for the
+&ldquo;oslc-resize:&rdquo;. Multiple resize messages may be sent. See below for the
 response format. 1 If the page is not parented, then the message is
 posted to the page&rsquo;s own window. The page must ignore this message to
 itself.</p>
