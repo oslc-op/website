@@ -6,11 +6,7 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OSLCFest 2020</title>
       <link>http://open-services.net/news/oslcfest/</link>

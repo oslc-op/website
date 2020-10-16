@@ -6,11 +6,7 @@
     <description>Recent content in tasktop on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2015 10:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="http://open-services.net/tags/tasktop/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 Nov 2015 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/tasktop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn more about Tasktop Sync 4.3 (July 2015)</title>
       <link>http://open-services.net/news/learn-more-about-tasktop-sync/</link>

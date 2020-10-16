@@ -6,11 +6,7 @@
     <description>Recent content in presentation on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2015 20:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="http://open-services.net/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 17 Nov 2015 20:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PROSTEP OpenPDM OSLC Adapter Product Overview</title>
       <link>http://open-services.net/resources/presentation-20171117/</link>

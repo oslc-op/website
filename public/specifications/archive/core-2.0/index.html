@@ -21,7 +21,7 @@
   
   <meta property="twitter:image" content="https://open-services.net/img/logo.png" />
   
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.76.5" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
@@ -666,51 +666,51 @@ paged HTTP response body in which it appears.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XML Literal</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title of the response</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XML Literal</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title of the response</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:description</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XML Literal</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Description of response</td>
+<td style="text-align:left"><code>dcterms:description</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XML Literal</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Description of response</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:nextPage</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left"><code>any</code></td>
-<td align="left">Link to next page of response</td>
+<td style="text-align:left"><code>oslc:nextPage</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left"><code>any</code></td>
+<td style="text-align:left">Link to next page of response</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:totalCount</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Integer</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">This optional property indicates the total number of results across all pages, its value should be non-negative. In the context of a query resource, this value <strong>SHOULD</strong> be the total number of results, i.e. the number of resources that match the query. In the context of other resources, the value <strong>SHOULD</strong> be the total number of property values (i.e. RDF triples) of the resource. Unless Stable Paging is in effect, the total count <strong>MAY</strong> vary as a client retrieves subsequent pages.</td>
+<td style="text-align:left"><code>oslc:totalCount</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">This optional property indicates the total number of results across all pages, its value should be non-negative. In the context of a query resource, this value <strong>SHOULD</strong> be the total number of results, i.e. the number of resources that match the query. In the context of other resources, the value <strong>SHOULD</strong> be the total number of property values (i.e. RDF triples) of the resource. Unless Stable Paging is in effect, the total count <strong>MAY</strong> vary as a client retrieves subsequent pages.</td>
 </tr>
 </tbody>
 </table>
@@ -727,15 +727,15 @@ representation</strong></p>
 <code>http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</code></p>
 <blockquote>
 <p>&lt;verbatim&gt; &lt;rdf:RDF
-xmlns:oslc_blog=&quot;http://open-services.net/ns/bogus/blogs#&rdquo;
-xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&rdquo;
+xmlns:oslc_blog=&ldquo;<a href="http://open-services.net/ns/bogus/blogs">http://open-services.net/ns/bogus/blogs</a>#&rdquo;
+xmlns:rdf=&ldquo;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">http://www.w3.org/1999/02/22-rdf-syntax-ns</a>#&rdquo;
 xmlns:foaf=&quot;<a href="http://http://xmlns.com/foaf/0.1/">http://http://xmlns.com/foaf/0.1/</a>&rdquo;
-xmlns:dcterms=&quot;<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>&rdquo;&gt;</p>
+xmlns:dcterms=&quot;<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>&quot;&gt;</p>
 <p>&lt;oslc_blog:Entry
-rdf:about=&quot;<a href="http://example.com/blogs/entry/1">http://example.com/blogs/entry/1</a>&rdquo;&gt;
+rdf:about=&quot;<a href="http://example.com/blogs/entry/1">http://example.com/blogs/entry/1</a>&quot;&gt;
 &lt;/oslc_blog:Entry&gt;</p>
 <p>&lt;oslc:ResponseInfo
-rdf:about=&quot;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</a>&rdquo;&gt;
+rdf:about=&quot;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=2</a>&quot;&gt;
 &lt;oslc:nextPage
 rdf:resource=&quot;<a href="http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3">http://example.com/blogs/entry/1?oslc.paging=true&amp;pageno=3</a>&rdquo;
 /&gt; &lt;/oslc:ResponseInfo&gt;</p>
@@ -840,8 +840,8 @@ are also a set of Local In-Line Resources that are used inside the
 Resources to define namespaces, OAuth configurations, contributors as
 well as services and their capabilities.</p>
 <p><strong>Figure #2: Service Provider concepts and relationships</strong></p>
-<p>&lt;img alt=&quot;Service Provider concepts and relationships&rdquo;
-src=&quot;<a href="http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg">http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg</a>&rdquo;
+<p>&lt;img alt=&ldquo;Service Provider concepts and relationships&rdquo;
+src=&quot;<a href="http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg">http://open-services.net/pub/Main/OslcCoreSpecification/oslc-core-providers.graffle__Canvas_1.jpg</a>&quot;
 /&gt;</p>
 <p>Next, we will formally define the Service Provider Catalog and Service
 Provider resources.</p>
@@ -857,78 +857,78 @@ may contain other nested catalogs as well as service providers.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title of the service provider catalog</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title of the service provider catalog</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:description</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Description of the service provider catalog</td>
+<td style="text-align:left"><code>dcterms:description</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Description of the service provider catalog</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:publisher</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
-<td align="left">Describes the software product that provides the implementation.</td>
+<td style="text-align:left"><code>dcterms:publisher</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
+<td style="text-align:left">Describes the software product that provides the implementation.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:domain</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
+<td style="text-align:left"><code>oslc:domain</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:serviceProvider</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Either</td>
-<td align="left"><a href="#Resource_Service_Provider"> <code>oslc:ServiceProvider</code> </a></td>
-<td align="left">A service offered by the service provider.</td>
+<td style="text-align:left"><code>oslc:serviceProvider</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Either</td>
+<td style="text-align:left"><a href="#Resource_Service_Provider"> <code>oslc:ServiceProvider</code> </a></td>
+<td style="text-align:left">A service offered by the service provider.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:serviceProviderCatalog</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Either</td>
-<td align="left"><a href="#Resource_Service_Provider_Catalog"> <code>oslc:ServiceProviderCatalog</code> </a></td>
-<td align="left">Additional service provider catalog.</td>
+<td style="text-align:left"><code>oslc:serviceProviderCatalog</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Either</td>
+<td style="text-align:left"><a href="#Resource_Service_Provider_Catalog"> <code>oslc:ServiceProviderCatalog</code> </a></td>
+<td style="text-align:left">Additional service provider catalog.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:oauthConfiguration</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_OAuth_Configuration"> <code>oslc:OAuthConfiguration</code> </a></td>
-<td align="left">Defines the three OAuth URIs required for a client to act as an OAuth consumer.</td>
+<td style="text-align:left"><code>oslc:oauthConfiguration</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_OAuth_Configuration"> <code>oslc:OAuthConfiguration</code> </a></td>
+<td style="text-align:left">Defines the three OAuth URIs required for a client to act as an OAuth consumer.</td>
 </tr>
 </tbody>
 </table>
@@ -942,78 +942,78 @@ implementation.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title of the service provider</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title of the service provider</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:description</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Description of the service provider</td>
+<td style="text-align:left"><code>dcterms:description</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Description of the service provider</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:publisher</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
-<td align="left">Describes the software product that provides the implementation.</td>
+<td style="text-align:left"><code>dcterms:publisher</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_Publisher"> <code>oslc:Publisher</code> </a></td>
+<td style="text-align:left">Describes the software product that provides the implementation.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:service</code></td>
-<td align="left">one-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_Service"> <code>oslc:Service</code> </a></td>
-<td align="left">Describes a service offered by the service provider.</td>
+<td style="text-align:left"><code>oslc:service</code></td>
+<td style="text-align:left">one-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_Service"> <code>oslc:Service</code> </a></td>
+<td style="text-align:left">Describes a service offered by the service provider.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:details</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left"><code>any</code></td>
-<td align="left">A URL that may be used to retrieve a web page to determine additional details about the service provider.</td>
+<td style="text-align:left"><code>oslc:details</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left"><code>any</code></td>
+<td style="text-align:left">A URL that may be used to retrieve a web page to determine additional details about the service provider.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:prefixDefinition</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_Prefix_Definition"> <code>oslc:PrefixDefinition</code> </a></td>
-<td align="left">Defines a namespace prefix for use in JSON representations and in forming OSLC Query Syntax strings.</td>
+<td style="text-align:left"><code>oslc:prefixDefinition</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_Prefix_Definition"> <code>oslc:PrefixDefinition</code> </a></td>
+<td style="text-align:left">Defines a namespace prefix for use in JSON representations and in forming OSLC Query Syntax strings.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:oauthConfiguration</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">Inline</td>
-<td align="left"><a href="#Resource_OAuth_Configuration"> <code>oslc:OAuthConfiguration</code> </a></td>
-<td align="left">Defines the three OAuth URIs required for a client to act as an OAuth consumer.</td>
+<td style="text-align:left"><code>oslc:oauthConfiguration</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">Inline</td>
+<td style="text-align:left"><a href="#Resource_OAuth_Configuration"> <code>oslc:OAuthConfiguration</code> </a></td>
+<td style="text-align:left">Defines the three OAuth URIs required for a client to act as an OAuth consumer.</td>
 </tr>
 </tbody>
 </table>
@@ -1027,69 +1027,69 @@ of an OSLC specification.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:domain</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
+<td style="text-align:left"><code>oslc:domain</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:creationFactory</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">n/a</td>
-<td align="left"><a href="#Resource_Creation_Factory"> <code>oslc:CreationFactory</code> </a></td>
-<td align="left">Enables clients to create new resources</td>
+<td style="text-align:left"><code>oslc:creationFactory</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left"><a href="#Resource_Creation_Factory"> <code>oslc:CreationFactory</code> </a></td>
+<td style="text-align:left">Enables clients to create new resources</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:queryCapability</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">n/a</td>
-<td align="left"><a href="#Resource_Query_Capability"> <code>oslc:QueryCapability</code> </a></td>
-<td align="left">Enables clients query across a collection of resources</td>
+<td style="text-align:left"><code>oslc:queryCapability</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left"><a href="#Resource_Query_Capability"> <code>oslc:QueryCapability</code> </a></td>
+<td style="text-align:left">Enables clients query across a collection of resources</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:selectionDialog</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">n/a</td>
-<td align="left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
-<td align="left">Enables clients to select a resource via UI</td>
+<td style="text-align:left"><code>oslc:selectionDialog</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
+<td style="text-align:left">Enables clients to select a resource via UI</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:creationDialog</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Local Resource</td>
-<td align="left">n/a</td>
-<td align="left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
-<td align="left">Enables clients to create a resource via UI</td>
+<td style="text-align:left"><code>oslc:creationDialog</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Local Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left"><a href="#Resource_Dialog"> <code>oslc:Dialog</code> </a></td>
+<td style="text-align:left">Enables clients to create a resource via UI</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:usage</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Resource</td>
-<td align="left">n/a</td>
-<td align="left">An identifier URI for the domain specified usage of this service. If a service provider has multiple services, it may designate the primary or default one that should be used with a property value of <code>http://open-services.net/ns/core#default</code></td>
+<td style="text-align:left"><code>oslc:usage</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">An identifier URI for the domain specified usage of this service. If a service provider has multiple services, it may designate the primary or default one that should be used with a property value of <code>http://open-services.net/ns/core#default</code></td>
 </tr>
 </tbody>
 </table>
@@ -1103,69 +1103,69 @@ resources via HTTP POST.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title string that could be used for display</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title string that could be used for display</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:label</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Very short label for use in menu items</td>
+<td style="text-align:left"><code>oslc:label</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Very short label for use in menu items</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:creation</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">To create a new resource via the factory, post it to this URI</td>
+<td style="text-align:left"><code>oslc:creation</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">To create a new resource via the factory, post it to this URI</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:resourceShape</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left"><a href="OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource"> <code>oslc:ResourceShape</code> </a></td>
-<td align="left">A Creation Factory <strong>MAY</strong> provide Resource Shapes that describe shapes of resources that may be created.</td>
+<td style="text-align:left"><code>oslc:resourceShape</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left"><a href="OSLCCoreSpecAppendixA#oslc_ResourceShape_Resource"> <code>oslc:ResourceShape</code> </a></td>
+<td style="text-align:left">A Creation Factory <strong>MAY</strong> provide Resource Shapes that describe shapes of resources that may be created.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:resourceType</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td style="text-align:left"><code>oslc:resourceType</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:usage</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Resource</td>
-<td align="left">n/a</td>
-<td align="left">An identifier URI for the domain specified usage of this creation factory. If a service provides multiple creation factories, it may designate the primary or default one that should be used with a property value of <code>http://open-services.net/ns/core#default</code></td>
+<td style="text-align:left"><code>oslc:usage</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">An identifier URI for the domain specified usage of this creation factory. If a service provides multiple creation factories, it may designate the primary or default one that should be used with a property value of <code>http://open-services.net/ns/core#default</code></td>
 </tr>
 </tbody>
 </table>
@@ -1179,69 +1179,69 @@ resources via HTTP GET or POST.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title string that could be used for display</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title string that could be used for display</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:label</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Very short label for use in menu items</td>
+<td style="text-align:left"><code>oslc:label</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Very short label for use in menu items</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:queryBase</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The base URI to use for queries. Queries are invoked via HTTP GET on a query URI formed by appending a key=value pair to the base URI, as described in Query Capabilities section.</td>
+<td style="text-align:left"><code>oslc:queryBase</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The base URI to use for queries. Queries are invoked via HTTP GET on a query URI formed by appending a key=value pair to the base URI, as described in Query Capabilities section.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:resourceShape</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The Query Capability <strong>SHOULD</strong> provide a Resource Shape that describes the query base URI.</td>
+<td style="text-align:left"><code>oslc:resourceShape</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The Query Capability <strong>SHOULD</strong> provide a Resource Shape that describes the query base URI.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:resourceType</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td style="text-align:left"><code>oslc:resourceType</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:usage</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">An identifier URI for the domain specified usage of this query capability. If a service provides multiple query capabilities, it may designate the primary or default one that should be used with a property value of <code>http://open-services/ns/core#default</code></td>
+<td style="text-align:left"><code>oslc:usage</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">An identifier URI for the domain specified usage of this query capability. If a service provides multiple query capabilities, it may designate the primary or default one that should be used with a property value of <code>http://open-services/ns/core#default</code></td>
 </tr>
 </tbody>
 </table>
@@ -1255,78 +1255,78 @@ allow a user to interactively create a new resource or pick a resource.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title string that could be used for display</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title string that could be used for display</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:label</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Very short label for use in menu items</td>
+<td style="text-align:left"><code>oslc:label</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Very short label for use in menu items</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:dialog</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The URI of the dialog</td>
+<td style="text-align:left"><code>oslc:dialog</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The URI of the dialog</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:hintWidth</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td style="text-align:left"><code>oslc:hintWidth</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:hintHeight</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td style="text-align:left"><code>oslc:hintHeight</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:resourceType</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
+<td style="text-align:left"><code>oslc:resourceType</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource&rsquo;s <code>rdf:type</code> property.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:usage</code></td>
-<td align="left">zero-or-many</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">An identifier URI for the domain specified usage of this dialog. If a service provides multiple selection or creation dialogs, it may designate the primary or default one that should be used with a property value of <code>http://open-services/ns/core#default</code></td>
+<td style="text-align:left"><code>oslc:usage</code></td>
+<td style="text-align:left">zero-or-many</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">An identifier URI for the domain specified usage of this dialog. If a service provides multiple selection or creation dialogs, it may designate the primary or default one that should be used with a property value of <code>http://open-services/ns/core#default</code></td>
 </tr>
 </tbody>
 </table>
@@ -1340,51 +1340,51 @@ the OSLC implementation.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>dcterms:title</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">XMLLiteral</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Title string that could be used for display</td>
+<td style="text-align:left"><code>dcterms:title</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">XMLLiteral</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Title string that could be used for display</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:label</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Very short label for use in menu items</td>
+<td style="text-align:left"><code>oslc:label</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Very short label for use in menu items</td>
 </tr>
 <tr>
-<td align="left"><code>dcterms:identifier</code></td>
-<td align="left">exactly-one</td>
-<td align="left">unspecified</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">A URN that uniquely identifies the implementation</td>
+<td style="text-align:left"><code>dcterms:identifier</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">unspecified</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">A URN that uniquely identifies the implementation</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:icon</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">reference</td>
-<td align="left">n/a</td>
-<td align="left">URL to an icon file that represents the provider. This icon should be a favicon format and 16x16 pixels in size</td>
+<td style="text-align:left"><code>oslc:icon</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">URL to an icon file that represents the provider. This icon should be a favicon format and 16x16 pixels in size</td>
 </tr>
 </tbody>
 </table>
@@ -1399,33 +1399,33 @@ prefix that clients <strong>MAY</strong> use in forming OSLC Query Syntax string
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:prefix</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Namespace prefix to be used for this namespace</td>
+<td style="text-align:left"><code>oslc:prefix</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Namespace prefix to be used for this namespace</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:prefixBase</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">The base URI of the namespace</td>
+<td style="text-align:left"><code>oslc:prefixBase</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The base URI of the namespace</td>
 </tr>
 </tbody>
 </table>
@@ -1440,42 +1440,42 @@ to act as an OAuth Consumer.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:oauthRequestTokenURI</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">URI for obtaining OAuth request token</td>
+<td style="text-align:left"><code>oslc:oauthRequestTokenURI</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">URI for obtaining OAuth request token</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:authorizationURI</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">URI for obtaining OAuth authorization</td>
+<td style="text-align:left"><code>oslc:authorizationURI</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">URI for obtaining OAuth authorization</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:oauthAccessTokenURI</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">URI for obtaining OAuth access token</td>
+<td style="text-align:left"><code>oslc:oauthAccessTokenURI</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">URI for obtaining OAuth access token</td>
 </tr>
 </tbody>
 </table>
@@ -1764,7 +1764,7 @@ developer. The UI Consumer must provide these methods.</p>
 <p>As soon as the embedded page has loaded, perform the following:</p>
 <p>1 <em>Provide Delegated UI Dialog, an HTML page that provides a user
 interface for resource creation or selection.</em> 1 <em>Read the Return URL
-from the window.name variable</em> 1 &lt;span style=&quot;font-family:
+from the window.name variable</em> 1 &lt;span style=&ldquo;font-family:
 Verdana,Arial,Helvetica,sans-serif; font-size: small&rdquo;&gt;Allow user to
 perform resource creation or selection.&lt;/span&gt; 1 Once user has
 created, selected or canceled, communicate the user&rsquo;s response by
@@ -1806,33 +1806,33 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>rdf:resource</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">n/a</td>
-<td align="left">URI of the resource selected or created</td>
+<td style="text-align:left"><code>rdf:resource</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">URI of the resource selected or created</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:label</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Short label describing the resource selected</td>
+<td style="text-align:left"><code>oslc:label</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Short label describing the resource selected</td>
 </tr>
 </tbody>
 </table>
@@ -1942,33 +1942,33 @@ UI Consumer, the response <strong>SHOULD</strong> be formatted as follows:</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:hintHeight</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">New dialog height size. Height size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
+<td style="text-align:left"><code>oslc:hintHeight</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">New dialog height size. Height size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:hintWidth</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">New dialog width size. Width size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
+<td style="text-align:left"><code>oslc:hintWidth</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">New dialog width size. Width size <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size)</td>
 </tr>
 </tbody>
 </table>
@@ -2027,42 +2027,42 @@ an error response.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:statusCode</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">The HTTP status code reported with the error.</td>
+<td style="text-align:left"><code>oslc:statusCode</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">The HTTP status code reported with the error.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:message</code></td>
-<td align="left">exactly-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">An informative message describing the error that occurred.</td>
+<td style="text-align:left"><code>oslc:message</code></td>
+<td style="text-align:left">exactly-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">An informative message describing the error that occurred.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:extendedError</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Either</td>
-<td align="left">Either</td>
-<td align="left"><code>oslc:ExtendedError</code></td>
-<td align="left">Extended error information</td>
+<td style="text-align:left"><code>oslc:extendedError</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Either</td>
+<td style="text-align:left">Either</td>
+<td style="text-align:left"><code>oslc:ExtendedError</code></td>
+<td style="text-align:left">Extended error information</td>
 </tr>
 </tbody>
 </table>
@@ -2074,51 +2074,51 @@ an error response.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Prefixed Name</th>
-<th align="left">Occurs</th>
-<th align="left">Read-only</th>
-<th align="left">Value-type</th>
-<th align="left">Represen-tation</th>
-<th align="left">Range</th>
-<th align="left">Description</th>
+<th style="text-align:left">Prefixed Name</th>
+<th style="text-align:left">Occurs</th>
+<th style="text-align:left">Read-only</th>
+<th style="text-align:left">Value-type</th>
+<th style="text-align:left">Represen-tation</th>
+<th style="text-align:left">Range</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>oslc:moreInfo</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">Resource</td>
-<td align="left">Reference</td>
-<td align="left">Any</td>
-<td align="left">A resource giving more information on the error <strong>SHOULD</strong> be of an HTML content-type.</td>
+<td style="text-align:left"><code>oslc:moreInfo</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">Resource</td>
+<td style="text-align:left">Reference</td>
+<td style="text-align:left">Any</td>
+<td style="text-align:left">A resource giving more information on the error <strong>SHOULD</strong> be of an HTML content-type.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:rel</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">If present and set to &lsquo;alternate&rsquo; then indicates that work-around is provided, behavior for other values is undefined.</td>
+<td style="text-align:left"><code>oslc:rel</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">If present and set to &lsquo;alternate&rsquo; then indicates that work-around is provided, behavior for other values is undefined.</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:hintWidth</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td style="text-align:left"><code>oslc:hintWidth</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
 <tr>
-<td align="left"><code>oslc:hintHeight</code></td>
-<td align="left">zero-or-one</td>
-<td align="left">True</td>
-<td align="left">String</td>
-<td align="left">n/a</td>
-<td align="left">n/a</td>
-<td align="left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
+<td style="text-align:left"><code>oslc:hintHeight</code></td>
+<td style="text-align:left">zero-or-one</td>
+<td style="text-align:left">True</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">n/a</td>
+<td style="text-align:left">Values <strong>MUST</strong> be expressed in <em><strong>relative length units</strong></em> as defined in the <a href="http://www.w3.org/TR/2009/CR-CSS2-20090423/syndata.html#length-units">W3C Cascading Style Sheets Specification (CSS 2.1)</a> Em and ex units are interpreted relative to the default system font (at 100% size).</td>
 </tr>
 </tbody>
 </table>
@@ -2204,8 +2204,8 @@ or OSLC v1.0 specifications can do so by keeping the old implementation
 in place and adding the new OSLC Core v1 implementation with different
 service provider, query capability and creation factory URIs.</p>
 <hr>
-<p>&lt;a name=&quot;OslcDefinedResourceRepresentations&rdquo;
-title=&quot;OslcDefinedResourceRepresentations&rdquo;&gt;&lt;/a&gt;</p>
+<p>&lt;a name=&ldquo;OslcDefinedResourceRepresentations&rdquo;
+title=&ldquo;OslcDefinedResourceRepresentations&rdquo;&gt;&lt;/a&gt;</p>
 <h1 id="oslc-defined-resource-representations">OSLC Defined Resource Representations</h1>
 <p>This section specifies what resource representations are required for
 OSLC resources, some requirements for providing representations and some

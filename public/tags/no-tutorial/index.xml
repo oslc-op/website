@@ -6,11 +6,7 @@
     <description>Recent content in no-tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 20:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="http://open-services.net/tags/no-tutorial/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 May 2020 20:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/no-tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A survey of commercial tools with OSLC support</title>
       <link>http://open-services.net/resources/tools-survey-2020/</link>

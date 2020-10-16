@@ -6,11 +6,7 @@
     <description>Recent content in video on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jun 2017 09:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="http://open-services.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 16 Jun 2017 09:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New and updated tools in Eclipse Lyo: Toolchain Designer &amp; Lyo Store</title>
       <link>http://open-services.net/resources/video-20170616-andrew/</link>
