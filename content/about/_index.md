@@ -73,12 +73,11 @@ The OSLC Open Project relies on its Sponsors to fund development of the interope
 """
 
 sponsors_img_list = [
-  "airbus_logo.png",
+  "accenture_logo.png",
   "boeing_logo.png",
   "dassault_logo.png",
   "ibm_logo.png",
-  "koneksys_logo.png",
-  "tasktop_logo.png"
+  "koneksys_logo.png"
 ]
 
 sponsors_img_size = [
@@ -92,8 +91,13 @@ sponsors_img_size = [
 
 sponsors_others_list = [
   "Austrian Institute of Technology",
+  "Axel Reichwein",
   "Bank of America",
+  "Cisco Systems",
+  "Ericsson",
+  "Fujitsu Limited",
   "KTH Royal Institute of Technology",
+  "pure-systems GmbH",
   "Red Hat",
   "Siemens",
   "Software AG"
