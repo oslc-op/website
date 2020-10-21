@@ -13,10 +13,10 @@ The titles below are abbreviated for convenience. The full titles a available fr
 Status refers to the OASIS Standards Track Work Products in the [OASIS Naming Directives](http://docs.oasis-open.org/specGuidelines/ndr/namingDirectives.html#stage)
 
 * Working Draft (WD) \[not approved, no official status\]
-* Committee Specification Draft (CSD)
-* Committee Specification Public Review Draft (CSPRD)
-* Committee Specification (CS)
-* Candidate OASIS Standard (COS)
+* Project Specification Draft (PSD)
+<!-- * Committee Specification Public Review Draft (CSPRD) -->
+* Project Specification (PS)
+* Candidate for OASIS Standard (COS)
 * OASIS Standard (OS)
 * *Final* Indicates an open-services.net OSLC specification that has not yet been migrated to OASIS.
 
