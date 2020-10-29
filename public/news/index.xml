@@ -6,7 +6,18 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2020 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSLC OP publishes four new Project Specifications</title>
+      <link>http://open-services.net/news/newprjspecs/</link>
+      <pubDate>Tue, 13 Oct 2020 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/newprjspecs/</guid>
+      <description>OASIS is pleased to announce that OSLC Core v3.0, OSLC Query v3.0, OSLC Requirements Management v2.1, and OSLC Change Management v3.0 are now approved \OASIS Project Specifications. These join the previously announced OSLC Quality Management v2.1 as the first approved Project Specifications from the Open Projects program.
+OSLC Core defines the overall approach to Open Services for Lifecycle Collaboration that extend and complement the W3C Linked Data Platform.
+OSLC Query provides a mechanism for a client to search for RDF resources.</description>
+    </item>
+    
     <item>
       <title>OSLCFest 2020</title>
       <link>http://open-services.net/news/oslcfest/</link>
