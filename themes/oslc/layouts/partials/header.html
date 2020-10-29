@@ -4,7 +4,7 @@
     <div class="container container__big">
       <a href="/">
         <div class="nav__logo">
-          <img src="/img/logo.png" alt="Logo">
+          <img src="/img/logo.png" alt="Logo" />
         </div>
       </a>
       <div class="links">
@@ -16,11 +16,15 @@
             </button>
           </div> -->
           {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="nav__item">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="nav__item">{{ .Name }}</a>
           {{ end }}
-          
-          <a href="http://oslcfest.org" target="_blank" class="nav__item">OSLC Fest</a>
-          <a href="https://forum.open-services.net" target="_blank" class="nav__item">Forum</a>
+
+          <a
+            href="https://forum.open-services.net"
+            target="_blank"
+            class="nav__item"
+            >Forum</a
+          >
         </div>
       </div>
       <div class="menu-button">

@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
   {{ partial "head.html" . }}
 
   <body>
-
     <div id="page" class="page">
-     
-        {{ partial "header.html" . }}
+      <!-- prettier-ignore -->
+      {{ partial "header.html" . }}
 
-        {{ partial "hero.html" . }}
+      {{ partial "hero.html" . }}
 
-        {{ partial "homepage/digital-thread.html" . }}
+      {{ partial "homepage/digital-thread.html" . }}
 
-        {{ partial "homepage/the-web.html" . }}
-        
-        {{ partial "homepage/understand.html" . }}
+      {{ partial "homepage/the-web.html" . }}
+      
+      {{ partial "homepage/understand.html" . }}
 
-        {{ partial "homepage/benefits.html" . }}
+      {{ partial "homepage/benefits.html" . }}
 
-        {{ partial "homepage/specifications.html" . }}
+      {{ partial "homepage/specifications.html" . }}
 
-        {{ partial "homepage/supporters.html" . }}
+      {{ partial "homepage/supporters.html" . }}
 
-        {{ partial "homepage/oslcfest.html" . }}
+      <!-- {{ partial "homepage/oslcfest.html" . }} -->
 
-        {{ partial "homepage/news.html" . }}
+      {{ partial "homepage/news.html" . }}
     </div>
 
     <footer class="footer footer--inverse">
@@ -36,12 +34,11 @@
     <!-- scripts -->
     {{ partial "scripts.html" }}
     <script>
-      (function(){
-          $('.new__content').each(function(index, element){
-              $clamp(element,{clamp: 5, useNativeClamp: false});
-          });
+      (function () {
+        $(".new__content").each(function (index, element) {
+          $clamp(element, { clamp: 5, useNativeClamp: false });
+        });
       })();
-
     </script>
   </body>
 </html>
