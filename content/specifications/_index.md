@@ -49,6 +49,11 @@ See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Query 3.0 PSD 01](https://docs.oasis-open-projects.org/oslc-op/query/v3.0/psd01/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. |
+| [Quality Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/psd02/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
+| [Change Management 3.0 PSD03](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/psd03/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
+| [Core 3.0 PSD 04](https://docs.oasis-open-projects.org/oslc-op/core/v3.0/psd04/oslc-core.html) | **OSLC Open Project** | Latest published draft of the OSLC 3 specification. |
+| [Requirements Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/psd02/requirements-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Requirements Management domain. |
 | [Query 3.0 CSPRD 01](https://docs.oasis-open.org/oslc-core/oslc-query/v3.0/csprd01/oslc-query-v3.0-csprd01.html) | OSLC Core TC (closed) | Defines a simple, implementation independent selection and projection query capability. |
 | _[Change Management 3.0 CS02](https://docs.oasis-open.org/oslc-domains/cm/v3.0/cs02/part1-change-mgt/cm-v3.0-cs02-part1-change-mgt.html)_ | OSLC Domains TC (closed) | Defines the OSLC services and vocabulary for the Change Management domain. |
 | _[Core 3.0 CSPRD 03](https://docs.oasis-open.org/oslc-core/oslc-core/v3.0/csprd03/part1-overview/oslc-core-v3.0-csprd03-part1-overview.html)_ | OSLC Core TC (closed) | Latest published draft of the OSLC 3 specification. |
