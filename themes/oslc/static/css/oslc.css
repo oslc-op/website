@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: center; }
   .oasis-header img {
-    height: 27px; }
+    height: 25px; }
 
 header {
   transition: 250ms all ease-in-out;
