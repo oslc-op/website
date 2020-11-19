@@ -27,12 +27,11 @@ jobs:
         uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          git config --global user.email "webmaster@open-services.net"
-          git config --global user.name "GH Deploy Action"
 
       - name: Hugo Deploy
         run: |
+          git config --global user.email "webmaster@open-services.net"
+          git config --global user.name "GH Deploy Action"
           # just a test
           ssh -o "StrictHostKeyChecking=no" root@open-services.net 'cd /var/www/oslc.co ; git log --name-status HEAD^..HEAD'
           ./deploy.sh
