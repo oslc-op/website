@@ -32,4 +32,4 @@ jobs:
         run: |
           # just a test
           ssh -o "StrictHostKeyChecking=no" root@open-services.net 'cd /var/www/oslc.co ; git log --name-status HEAD^..HEAD'
-          #./deploy.sh
+          ./deploy.sh
