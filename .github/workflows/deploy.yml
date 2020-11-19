@@ -27,6 +27,9 @@ jobs:
         uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          git config --global user.email "webmaster@open-services.net"
+          git config --global user.name "GH Deploy Action"
 
       - name: Hugo Deploy
         run: |
