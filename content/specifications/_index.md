@@ -26,6 +26,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Architecture Management 2.1 PSD01](https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Architecture Management domain. |
 | [Query 3.0 PS01](https://docs.oasis-open-projects.org/oslc-op/query/v3.0/ps01/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. |
 | [Quality Management 2.1 PS01](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Change Management 3.0 PS01](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
@@ -35,7 +36,6 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 | [Requirements Management 2.0 Final](https://archive.open-services.net/wiki/requirements-management/OSLC-Requirements-Management-Specification-version-2.0/index.html) | OSLC Requirements Management WG (closed) | Defines the OSLC services and vocabulary for the Requirements Management domain. |
 | [Requirements Management 2.1 PS01](https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Requirements Management domain. |
 | [Quality Management 2.0 Final](https://archive.open-services.net/bin/view/Main/QmSpecificationV2.html) | OSLC Quality Management WG (closed) | Defines the OSLC services and vocabulary for the Quality Management domain. |
-| [Architecture Management 2.1 CS01](https://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/cs01/part1-architecture-management-spec/oslc-am-v2.1-cs01-part1-architecture-management-spec.html) | OSLC Domains TC (closed) | Defines the OSLC services and vocabulary for the Architecture Management domain. |
 | [Asset Management 2.0 Final](https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html) | OSLC Asset Management WG (closed) | Defines the OSLC services and vocabulary for the Asset Management domain. |
 | [Automation 2.0 Final](https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html) | OSLC Automation WG (closed) | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
 | [Performance Monitoring 2.0 Final](https://archive.open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/index.html) | OSLC Performance Monitoring WG (closed) | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |
@@ -49,6 +49,7 @@ See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Architecture Management 2.1 CS01](https://docs.oasis-open.org/oslc-domains/oslc-am/v2.1/cs01/part1-architecture-management-spec/oslc-am-v2.1-cs01-part1-architecture-management-spec.html) | OSLC Domains TC (closed) | Defines the OSLC services and vocabulary for the Architecture Management domain. |
 | [Query 3.0 PSD 01](https://docs.oasis-open-projects.org/oslc-op/query/v3.0/psd01/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. |
 | [Quality Management 2.1 PSD 02](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/psd02/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Change Management 3.0 PSD03](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/psd03/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. |
