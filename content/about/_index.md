@@ -49,8 +49,6 @@ Current PGB members:
 
 - Jim Amsden (co-chair, IBM)
 - Andrew Berezovskyi (co-chair, KTH Royal Institute of Technology)
-- Bill Chown (Siemens)
-- Wesley Coelho (Tasktop Technologies)
 - Axel Reichwein (Koneksys)
 
 ## Technical Steering Committee (TSC)
