@@ -30,10 +30,12 @@
     property="twitter:image"
     content="https://open-services.net/img/logo.png"
   />
-  {{ end }} {{ if .Keywords }} <meta name="keywords" content="{{ delimit
-  .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }} <meta
-  name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{
-  end }} {{ if .Description }}
+  {{ end }}
+  {{ if .Keywords }} <meta name="keywords" content="{{ delimit .Keywords " , " }}">
+  {{ else if .Site.Params.DefaultKeywords }}
+  <meta
+  name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}">
+  {{ end }} {{ if .Description }}
   <meta name="description" content="{{ .Description }}" />
   {{ else if .Site.Params.DefaultDescription }}
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}" />
