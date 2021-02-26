@@ -1,0 +1,46 @@
+<http://open-services.net/ns/basicProfile#Page> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource that represents a limited set of members of a Basic Profile Container." .
+<http://open-services.net/ns/basicProfile#Page> <http://www.w3.org/2000/01/rdf-schema#label> "Page" .
+<http://open-services.net/ns/basicProfile#Page> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/basicProfile/ldbp.rdf> <http://www.rddl.org/nature> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://open-services.net/ns/basicProfile#Container> .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://open-services.net/ns/basicProfile#Page> .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Associated a page with its container." .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/2000/01/rdf-schema#label> "pageOf" .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#pageOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://open-services.net/ns/basicProfile#Container> .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which predicate of the container should be used to determine the membership.\n\t\t" .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/2000/01/rdf-schema#label> "membershipPredicate" .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#membershipPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A Basic Profile Resource (BPR) that also conforms to additional patterns \n\t\tand conventions in this document for managing membership." .
+<http://open-services.net/ns/basicProfile#Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container" .
+<http://open-services.net/ns/basicProfile#Container> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://open-services.net/ns/basicProfile#Container> .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which resource is the subject for the members of the container.\n\t\t" .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/2000/01/rdf-schema#label> "membershipSubject" .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#membershipSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://open-services.net/ns/basicProfile#Page> .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/2000/01/rdf-schema#comment> "From a known page, how to indicate the next or last page as rdf:nil.\n\t\t" .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/2000/01/rdf-schema#label> "nextPage" .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#nextPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/basicProfile#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/ns/basicProfile/ldbp.rdf> .
+<http://open-services.net/ns/basicProfile#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ibm.com/developerworks/rational/library/basic-profile-linked-data/> .
+<http://open-services.net/ns/basicProfile#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2011/09/LinkedData/> .
+<http://open-services.net/ns/basicProfile#> <http://www.w3.org/2000/01/rdf-schema#label> "Linked Data Basic Profile (LDBP)" .
+<http://open-services.net/ns/basicProfile#> <http://purl.org/dc/terms/description> "\n\t\t\tAll vocabulary URIs defined in the Linked Data Basic Profile (LDBP) namespace.\n\t\t"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/basicProfile#> <http://purl.org/dc/terms/title> "The Linked Data Basic Profile (LDBP) Vocabulary\n\t\t" .
+<http://open-services.net/ns/basicProfile#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://open-services.net/ns/basicProfile#Page> .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/2000/01/rdf-schema#comment> "List of predicates that indicate the ascending order of the members in a page.\n\t\t" .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/2000/01/rdf-schema#label> "containerSortPredicates" .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/basicProfile#> .
+<http://open-services.net/ns/basicProfile#containerSortPredicates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .

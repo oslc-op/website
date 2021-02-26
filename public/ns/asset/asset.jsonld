@@ -1,0 +1,175 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/asset#",
+    "@type" : "owl:Ontology",
+    "description" : "\n\t\t\tAll vocabulary URIs defined in the OSLC\n\t\t\tAsset Management (Asset) namespace.\n\t\t",
+    "title" : "The OSLC Asset Management(Asset) Vocabulary\n\t\t",
+    "label" : "Asset Management(Asset)",
+    "seeAlso" : [ "http://open-services.net/ns/asset/asset.rdf", "http://open-services.net/bin/view/Main/AssetMgSpecificationV2", "http://open-services.net/bin/view/Main/AssetHome" ]
+  }, {
+    "@id" : "http://open-services.net/ns/asset#Artifact",
+    "@type" : "rdfs:Class",
+    "comment" : "The Artifact fragment",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "Artifact",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Artifact"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#Asset",
+    "@type" : "rdfs:Class",
+    "comment" : "The Asset resource",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#artifact",
+    "@type" : "rdf:Property",
+    "comment" : "The multi valued list of artifacts.\n\t\t",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "artifact",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#artifactFactory",
+    "@type" : "rdf:Property",
+    "comment" : "Resource URI used to post new artifacts to the asset.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "artifactFactory",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#categorization",
+    "@type" : "rdf:Property",
+    "comment" : "\tA categorization to classify an asset. The category schema values are \n\t\t    defined by the service provider. This specification does not define the resource for this \n\t\t    property, however it should contain a dcterms:title property.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "categorization",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#content",
+    "@type" : "rdf:Property",
+    "comment" : "The media resource reference URI (the artifact bytes).\n\t\t",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "content",
+    "range" : "http://open-services.net/ns/asset#Artifact",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Artifact"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#guid",
+    "@type" : "rdf:Property",
+    "comment" : "An identifier for the asset. Assigned by the service provider\n\t\t    when a resource is created. Different versions of the same asset will \n\t\t    share the same identifier.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "guid",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#identifier",
+    "@type" : "rdf:Property",
+    "comment" : "A unique identifier for a resource. Assigned by the service provider when \n\t\t\ta resource is created. ",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "identifier",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#manufacturer",
+    "@type" : "rdf:Property",
+    "comment" : "The name of the asset manufacturer.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "manufacturer",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#model",
+    "@type" : "rdf:Property",
+    "comment" : "The value of the asset model.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "model",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#relationshipType",
+    "@type" : "rdf:Property",
+    "comment" : "The type of this relationship from the perspective of the \n\t\t    oslc_asset:relatedAsset resource based on values defined by the service provider.\n\t\t    This specification does not define the resource for this property, however it \n\t\t    should contain a dcterms:title property.\n\t\t",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "relationshipType",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#serialNumber",
+    "@type" : "rdf:Property",
+    "comment" : "The serial number assigned by the asset manufacturer.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "serialNumber",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#size",
+    "@type" : "rdf:Property",
+    "comment" : "The size of the artifact media resource in bytes.\n\t\t",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "size",
+    "range" : "http://open-services.net/ns/asset#Artifact",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Artifact"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#state",
+    "@type" : "rdf:Property",
+    "comment" : "Used to indicate the state of the asset based on values defined by the service provider. \n\t\tThis specification does not define the resource for this property, however it should contain a \n\t\tdcterms:title property.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "state",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#tag",
+    "@type" : "rdf:Property",
+    "comment" : "Specifies the asset tag value for an Asset. Asset tags are typically human \n\t\t    readable labels. For hardware assets, these tags are durable, securely attached to \n\t\t    equipment, and may also be readable by barcode and/or RFID.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "tag",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset#version",
+    "@type" : "rdf:Property",
+    "comment" : "The version of the asset. Possible values may include '1.0', \n\t\t    '2.0', etc.",
+    "isDefinedBy" : "http://open-services.net/ns/asset#",
+    "label" : "version",
+    "range" : "http://open-services.net/ns/asset#Asset",
+    "seeAlso" : "http://open-services.net/bin/view/Main/AssetMgSpecificationV2#Asset"
+  }, {
+    "@id" : "http://open-services.net/ns/asset/asset.rdf",
+    "nature" : "http://www.w3.org/2000/01/rdf-schema#"
+  } ],
+  "@context" : {
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "nature" : {
+      "@id" : "http://www.rddl.org/nature",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "rddl" : "http://www.rddl.org/"
+  }
+}

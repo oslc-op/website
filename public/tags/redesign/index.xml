@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redesign on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/redesign/</link>
+    <description>Recent content in redesign on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2015 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/redesign/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pardon our dust: updated design rolling out gradually</title>
+      <link>http://open-services.net/news/updated-design-rolling-out-gradually/</link>
+      <pubDate>Fri, 06 Mar 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/updated-design-rolling-out-gradually/</guid>
+      <description>The updated site is live.</description>
+    </item>
+    
+  </channel>
+</rss>

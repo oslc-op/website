@@ -1,0 +1,101 @@
+.about_page {
+
+  .content--section {
+    margin: 50px 0 70px;
+    padding: 0;
+
+    .subtitle {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.section--supporters{
+  &.sponsors {
+    .supporters--list .supporter {
+      width: 33.3333%;
+      padding: 10px 6%;
+    }
+  }
+}
+
+.supporters--wrap {
+  margin-bottom: 30px;
+  .type {
+    text-align: center;
+    color: $oslc-dark-blue;
+    font-weight: bold;
+  }
+
+  .row--list {
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 20px 0;
+    }
+  }
+}
+
+.faq {
+
+  .faq__item {
+    margin-bottom: 30px;
+
+    .question__title {
+      padding: 10px 0;
+      &:hover {
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #2c65bb;
+      }
+    }
+
+    .answer {
+      display: none;
+
+      p {
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .sub_nav {
+    display: none;
+  }
+
+  .about_page {
+    // .m-top {
+    //   margin-top: 99px;
+    // }
+    .content--section {
+      padding-bottom: 0;
+    }
+
+    .mission {
+      p {
+        text-align: justify;
+
+        &.subtitle {
+          text-align: center;
+        }
+      }
+    }
+
+    .people, .supporters {
+      .row--list {
+        .item {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

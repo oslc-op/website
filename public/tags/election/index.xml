@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>election on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/election/</link>
+    <description>Recent content in election on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Oct 2015 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/election/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New OASIS OSLC Steering Committee Announced</title>
+      <link>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</link>
+      <pubDate>Tue, 06 Oct 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/new-oasis-oslc-steering-committee-announced/</guid>
+      <description>The September 2015 elections for the OASIS OSLC Steering Committee have concluded.</description>
+    </item>
+    
+    <item>
+      <title>OASIS OSLC Steering Committee Elections Coming Soon</title>
+      <link>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</link>
+      <pubDate>Tue, 11 Aug 2015 10:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/oasis-oslc-steering-committee-elections-coming-soon/</guid>
+      <description>If you&amp;rsquo;re interested in working with other leaders in this space and helping influence the direction and expansion of OSLC, consider becoming a member of OASIS OSLC Steering Committee.</description>
+    </item>
+    
+  </channel>
+</rss>

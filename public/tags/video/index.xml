@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/video/</link>
+    <description>Recent content in video on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jun 2017 09:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New and updated tools in Eclipse Lyo: Toolchain Designer &amp; Lyo Store</title>
+      <link>http://open-services.net/resources/video-20170616-andrew/</link>
+      <pubDate>Fri, 16 Jun 2017 09:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20170616-andrew/</guid>
+      <description>The latest support tools that were contributed to Eclipse Lyo, which will further aim the development of OSLC adaptors and toolchains</description>
+    </item>
+    
+    <item>
+      <title>Linked Data and OSLC for Tool Interoperability</title>
+      <link>http://open-services.net/resources/video-20151118-jad-ecs/</link>
+      <pubDate>Wed, 18 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151118-jad-ecs/</guid>
+      <description>Jad El-khoury explains the OSLC standard, the underlying linked data technologies that constitute a foundation for the OSLC</description>
+    </item>
+    
+    <item>
+      <title>Get IBM RTC and HP ALM To Blend Together Like Peanut Butter and Jelly</title>
+      <link>http://open-services.net/resources/video-20151109-1/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151109-1/</guid>
+      <description>Webinar on integrating HP ALM and IBM RTC</description>
+    </item>
+    
+    <item>
+      <title>Tear Down the Walls Between Requirements, Development and Testing</title>
+      <link>http://open-services.net/resources/video-20151109-2/</link>
+      <pubDate>Mon, 09 Nov 2015 19:00:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/resources/video-20151109-2/</guid>
+      <description>How Business Analysts using Rational Requirements Composer can successfully create and revise Requirements while automatically keeping the Testing team up-to-date on the latest changes through the use of Tasktop Sync</description>
+    </item>
+    
+  </channel>
+</rss>
