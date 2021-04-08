@@ -1,29 +1,52 @@
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rddl:  <http://www.rddl.org/> .
+# Copyright 2020 OASIS Open
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-<http://open-services.net/ns/am#>
-        a                    owl:Ontology ;
-        rdfs:label           "Architecture Management(AM)" ;
-        rdfs:seeAlso         <http://open-services.net/ns/am/am.rdf> , <http://open-services.net/bin/view/Main/AmSpecV2> , <http://open-services.net/bin/view/Main/AmHome> ;
-        dcterms:description  "\n\t\t\tAll vocabulary URIs defined in the OSLC Architecture Management (AM) namespace.\n\t\t"^^rdf:XMLLiteral ;
-        dcterms:title        "The OSLC Architecture Management(AM) Vocabulary" .
+@prefix dcterms:     <http://purl.org/dc/terms/> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann:        <http://purl.org/vocab/vann/> .
 
-<http://open-services.net/ns/am#LinkType>
-        a                 rdfs:Class ;
-        rdfs:comment      "A locally managed resource that describes a link type predicate that might otherwise not be directly resolvable." ;
-        rdfs:isDefinedBy  <http://open-services.net/ns/am#> ;
-        rdfs:label        "Link Type" ;
-        rdfs:seeAlso      <http://open-services.net/bin/view/Main/AmSpecV2#Resource_Link_Type_Resource_LTR> .
+@prefix oslc_am:    <http://open-services.net/ns/am#> .
 
-<http://open-services.net/ns/am#Resource>
+# The ontology
+
+oslc_am:
+  a owl:Ontology ;
+  dcterms:title "OSLC Architecture Management (AM) Vocabulary" ;
+  rdfs:label "OSLC Architecture Management (AM) Vocabulary" ;
+  dcterms:description "All vocabulary URIs defined in the OSLC Architecture Management (AM) namespace."^^rdf:XMLLiteral ;
+  vann:preferredNamespacePrefix "oslc_am" ;
+  dcterms:publisher <https://open-services.net/about/> ;
+  dcterms:issued "2020-09-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+  dcterms:source <https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-vocab.ttl> ;
+  dcterms:isPartOf <https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-spec.html> ;
+  dcterms:hasVersion "PSD01" .
+
+
+oslc_am:Resource
         a                 rdfs:Class ;
         rdfs:comment      "A generic architecture resource.  A resource of this type is likely to be a model or design artifact." ;
-        rdfs:isDefinedBy  <http://open-services.net/ns/am#> ;
-        rdfs:label        "Architecture Resource" ;
-        rdfs:seeAlso      <http://open-services.net/bin/view/Main/AmSpecV2#Resource_Architecture_Management> .
+        rdfs:isDefinedBy  oslc_am: ;
+        rdfs:label        "Architecture Resource" .
 
-<http://open-services.net/ns/am/am.rdf>
-        rddl:nature  rdfs: .
+oslc_am:LinkType
+        a                 rdfs:Class ;
+        rdfs:comment      "A locally managed resource that describes a link type predicate that might otherwise not be directly resolvable." ;
+        rdfs:isDefinedBy  oslc_am: ;
+        rdfs:label        "Link Type" .
+
+# Link properties that are in common use.
+

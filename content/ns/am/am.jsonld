@@ -2,58 +2,78 @@
   "@graph" : [ {
     "@id" : "http://open-services.net/ns/am#",
     "@type" : "owl:Ontology",
-    "description" : "\n\t\t\tAll vocabulary URIs defined in the OSLC Architecture Management (AM) namespace.\n\t\t",
-    "title" : "The OSLC Architecture Management(AM) Vocabulary",
-    "label" : "Architecture Management(AM)",
-    "seeAlso" : [ "http://open-services.net/ns/am/am.rdf", "http://open-services.net/bin/view/Main/AmSpecV2", "http://open-services.net/bin/view/Main/AmHome" ]
+    "description" : "All vocabulary URIs defined in the OSLC Architecture Management (AM) namespace.",
+    "hasVersion" : "PSD01",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-spec.html",
+    "issued" : "2020-09-17",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-vocab.ttl",
+    "title" : "OSLC Architecture Management (AM) Vocabulary",
+    "preferredNamespacePrefix" : "oslc_am",
+    "label" : "OSLC Architecture Management (AM) Vocabulary"
   }, {
-    "@id" : "http://open-services.net/ns/am#LinkType",
+    "@id" : "oslc_am:LinkType",
     "@type" : "rdfs:Class",
     "comment" : "A locally managed resource that describes a link type predicate that might otherwise not be directly resolvable.",
     "isDefinedBy" : "http://open-services.net/ns/am#",
-    "label" : "Link Type",
-    "seeAlso" : "http://open-services.net/bin/view/Main/AmSpecV2#Resource_Link_Type_Resource_LTR"
+    "label" : "Link Type"
   }, {
-    "@id" : "http://open-services.net/ns/am#Resource",
+    "@id" : "oslc_am:Resource",
     "@type" : "rdfs:Class",
     "comment" : "A generic architecture resource.  A resource of this type is likely to be a model or design artifact.",
     "isDefinedBy" : "http://open-services.net/ns/am#",
-    "label" : "Architecture Resource",
-    "seeAlso" : "http://open-services.net/bin/view/Main/AmSpecV2#Resource_Architecture_Management"
-  }, {
-    "@id" : "http://open-services.net/ns/am/am.rdf",
-    "nature" : "http://www.w3.org/2000/01/rdf-schema#"
+    "label" : "Architecture Resource"
   } ],
   "@context" : {
-    "seeAlso" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
       "@type" : "@id"
     },
-    "label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "description" : {
       "@id" : "http://purl.org/dc/terms/description",
       "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
     },
-    "title" : {
-      "@id" : "http://purl.org/dc/terms/title"
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
     },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
       "@type" : "@id"
     },
-    "nature" : {
-      "@id" : "http://www.rddl.org/nature",
-      "@type" : "@id"
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "oslc_am" : "http://open-services.net/ns/am#",
     "owl" : "http://www.w3.org/2002/07/owl#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "rddl" : "http://www.rddl.org/"
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/"
   }
 }
