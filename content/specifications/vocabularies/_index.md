@@ -23,15 +23,16 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                             |
 | ----------------------: | :---------------------------------|
-| **Deployed vocabulary** | Core 2.0 Final                    |
-| **Publication date**    | 30 May 2013                       |
-| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Deployed vocabulary** | Core 3.0 PS01                    |
+| **Publication date**    | 17 September 2020                       |
+| **Status**              | **<span style="color: #2ecc71">Project Specification</span>**|
 | **Recommended prefix**  |`oslc`                             |
 | **Namespace URI**       |`http://open-services.net/ns/core#`|
 | **Turtle prefix**       |`@prefix oslc: <http://open-services.net/ns/core#>`|
 | **SPARQL prefix**       |`PREFIX oslc: <http://open-services.net/ns/core#>` |
 | **OSLC Query prefix**   |`oslc%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fcore%23` |
-| **Specified Vocabulary**| [Core 2.0 Final vocabulary][core]     |
+| **Specified Vocabulary**| [Core 3.0 Vocabulary][core]     |
+| **OSLC Constraints**| [Core 3.0 Constraints](https://docs.oasis-open-projects.org/oslc-op/core/v3.0/core-shapes.html)     |
 
 ### OSLC Change Management
 
