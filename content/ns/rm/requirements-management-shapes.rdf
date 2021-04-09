@@ -1,0 +1,495 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:oslc="http://open-services.net/ns/core#"
+    xmlns:oslc_rm="http://open-services.net/ns/rm#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <oslc:ResourceShapeConstraints rdf:about="http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints">
+    <dcterms:description rdf:parseType="Literal">Resource Shape Constraints defined in the OSLC RM 2.1 specification.</dcterms:description>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2020-09-03</dcterms:issued>
+    <dcterms:title>OSLC Requirements Management (RM) Resource Shape Constraints</dcterms:title>
+    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html"/>
+    <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-shapes.ttl"/>
+    <rdfs:label>OSLC Requirements Management (RM) Resource Shape Constraints</rdfs:label>
+    <dcterms:hasVersion>PS01</dcterms:hasVersion>
+  </oslc:ResourceShapeConstraints>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/rm/shapes/2.1#RequirementShape">
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#type">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <oslc:name>type</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#satisfies">
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#satisfies"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>satisfies</oslc:name>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">The object is satisfied by the subject.</dcterms:description>
+        <dcterms:title>satisfies</dcterms:title>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#title">
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <dcterms:description rdf:parseType="Literal">Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:name>title</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#trackedBy">
+        <oslc:name>trackedBy</oslc:name>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#trackedBy"/>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a change request, which tracks this requirement.</dcterms:description>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <dcterms:title>trackedBy</dcterms:title>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#instanceShape">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">Resource Shape that provides hints as to resource property value-types and allowed values.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#instanceShape"/>
+        <oslc:name>instanceShape</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#modified">
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <dcterms:description rdf:parseType="Literal">Timestamp of last resource modification (reference: Dublin Core).</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/modified"/>
+        <oslc:name>modified</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#constrainedBy">
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#constrainedBy"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">The subject is constrained by the object. For example, a functional requirement is constrained by a safety requirement.</dcterms:description>
+        <dcterms:title>constrainedBy</dcterms:title>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>constrainedBy</oslc:name>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#identifier">
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <dcterms:description rdf:parseType="Literal">An identifier for a resource. This identifier may be unique with a scope that is defined by the RM provider. Assigned by the service provider when a resource is created. Not intended for end-user display.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:name>identifier</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#constrains">
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <dcterms:title>constrains</dcterms:title>
+        <oslc:name>constrains</oslc:name>
+        <dcterms:description rdf:parseType="Literal">The object is constrained by the subject.</dcterms:description>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#constrains"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#elaborates">
+        <oslc:name>elaborates</oslc:name>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:title></dcterms:title>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#elaborates"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <dcterms:description rdf:parseType="Literal">The object is elaborated by the subject.</dcterms:description>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#subject">
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <dcterms:description rdf:parseType="Literal">Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/subject"/>
+        <oslc:name>subject</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#created">
+        <dcterms:description rdf:parseType="Literal">Timestamp of resource creation (reference: Dublin Core).</dcterms:description>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/created"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>created</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:description rdf:parseType="Literal">A condition or capability needed by a stakeholder, or imposed by a solution component,
+to address a need, solve a problem, achieve an objective,
+or to satisfy a contract, standard, specification, or other formally imposed documents.</dcterms:description>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#specifiedBy">
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:name>specifiedBy</oslc:name>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#specifiedBy"/>
+        <dcterms:description rdf:parseType="Literal">The subject is specified by the object. For example, a requirement is elaborated by a model element.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <dcterms:title></dcterms:title>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#satisfiedBy">
+        <dcterms:title>satisfiedBy</dcterms:title>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#satisfiedBy"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The subject is satisfied by the object. For example, a user requirement is satisfied by a system requirement.</dcterms:description>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:name>satisfiedBy</oslc:name>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#affectedBy">
+        <dcterms:description rdf:parseType="Literal">The subject is affected by the object, such as a defect or issue.</dcterms:description>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#affectedBy"/>
+        <dcterms:title>affectedBy</dcterms:title>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:name>affectedBy</oslc:name>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#shortTitle">
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#shortTitle"/>
+        <dcterms:description rdf:parseType="Literal">Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>shortTitle</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#decomposedBy">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#decomposedBy"/>
+        <dcterms:description rdf:parseType="Literal">The subject is decomposed by the object. For example, a system requirement is decomposed into a collection of system requirements.</dcterms:description>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:title>decomposedBy</dcterms:title>
+        <oslc:name>decomposedBy</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#validatedBy">
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a test case, which validates this requirement.</dcterms:description>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#validatedBy"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:name>validatedBy</oslc:name>
+        <dcterms:title>validatedBy</dcterms:title>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#elaboratedBy">
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>elaboratedBy</oslc:name>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The subject is elaborated by the object. For example, a user requirement is elaborated by use case.</dcterms:description>
+        <dcterms:title></dcterms:title>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#elaboratedBy"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#creator">
+        <dcterms:description rdf:parseType="Literal">Creator(s) of resource (reference: Dublin Core). It is likely that the target resource will be an &lt;code&gt;foaf:Person&lt;/code&gt; but that is not necessarily the case.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/creator"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:name>creator</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#specifies">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#specifies"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>specifies</oslc:name>
+        <dcterms:title>specifies</dcterms:title>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">The object is specified by the subject.</dcterms:description>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#description">
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <dcterms:description rdf:parseType="Literal">Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <oslc:name>description</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#implementedBy">
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#implementedBy"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:name>implementedBy</oslc:name>
+        <dcterms:title>implementedBy</dcterms:title>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a change request, which implements this requirement.</dcterms:description>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#serviceProvider">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The scope of a resource is a URI for the resource's OSLC Service Provider.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#ServiceProvider"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#serviceProvider"/>
+        <oslc:name>serviceProvider</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#decomposes">
+        <dcterms:description rdf:parseType="Literal">The object is decomposed by the subject.</dcterms:description>
+        <dcterms:title>decomposes</dcterms:title>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#decomposes"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:name>decomposes</oslc:name>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#contributor">
+        <dcterms:description rdf:parseType="Literal">Contributor(s) to resource (reference: Dublin Core). It is likely that the target resource will be a &lt;code&gt;foaf:Person&lt;/code&gt; but that is not necessarily the case.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:name>contributor</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:title>Statement of need.</dcterms:title>
+    <oslc:describes rdf:resource="http://open-services.net/ns/rm#Requirement"/>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/rm/shapes/2.1#RequirementCollectionShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#decomposes"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/rm#RequirementCollection"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#constrains"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-satisfiedBy">
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>satisfiedBy</oslc:name>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#satisfiedBy"/>
+        <dcterms:title>satisfiedBy</dcterms:title>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The subject is satisfied by the object. For example, a collection of user requirements is satisfied by a requirement collection of system requirements.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-elaboratedBy">
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#elaboratedBy"/>
+        <dcterms:title></dcterms:title>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">The subject is elaborated by the object. For example, a collection of user requirements elaborates a business need, or a model elaborates a collection of system requirements.</dcterms:description>
+        <oslc:name>elaboratedBy</oslc:name>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-trackedBy">
+        <dcterms:title>trackedBy</dcterms:title>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>trackedBy</oslc:name>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a change request, which manages this requirement collection.</dcterms:description>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#trackedBy"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#description"/>
+    <dcterms:title>A collection of Requirements.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#serviceProvider"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#shortTitle"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#elaborates"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-implementedBy">
+        <oslc:name>implementedBy</oslc:name>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:title>implementedBy</dcterms:title>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#implementedBy"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a change request, which implements this requirement collection.</dcterms:description>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#identifier"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#uses">
+        <dcterms:title></dcterms:title>
+        <dcterms:description rdf:parseType="Literal">A collection uses a resource - the resource is in the requirement collection.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#uses"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>uses</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#modified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#affectedBy"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-constrainedBy">
+        <oslc:name>constrainedBy</oslc:name>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#constrainedBy"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:title>constrainedBy</dcterms:title>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">The subject is constrained by the object. For example, a requirement collection is constrained by a requirement collection.</dcterms:description>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#specifies"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-decomposedBy">
+        <oslc:name>decomposedBy</oslc:name>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#decomposedBy"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <dcterms:description rdf:parseType="Literal">The subject is decomposed by the object. For example, a collection of business requirements is decomposed by a collection of user requirements.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <dcterms:title>decomposedBy</dcterms:title>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-validatedBy">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <dcterms:title>validatedBy</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Resource, such as a test plan, which validates this requirement collection.</dcterms:description>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#validatedBy"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>validatedBy</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#satisfies"/>
+    <dcterms:description rdf:parseType="Literal">A grouping or collection of related requirements for any purpose.</dcterms:description>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#rc-specifiedBy">
+        <oslc:range rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <dcterms:title></dcterms:title>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >false</oslc:readOnly>
+        <oslc:name>specifiedBy</oslc:name>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/rm#specifiedBy"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <dcterms:description rdf:parseType="Literal">The subject is specified by the object. For example, a model element might make a requirement collection more precise.</dcterms:description>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#type"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#title"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#subject"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/rm/shapes/2.1#created"/>
+  </oslc:ResourceShape>
+</rdf:RDF>
