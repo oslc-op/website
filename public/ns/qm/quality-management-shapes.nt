@@ -1,0 +1,1182 @@
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#name> "instanceShape" .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://purl.org/dc/terms/title> "Instance Shape"@en .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://purl.org/dc/terms/title> "Instance Shape" .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ResourceShape> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://purl.org/dc/terms/description> "Resource Shape that provides hints as to resource property value-types and allowed values." .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+_:B63c5b281f37d86e2662e69ce61db4a46 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B25a7309cf132cc7a5df7f1e54b2df212 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B388b893ebda05c42ca32aede101689be .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B2bf7d4392d986498125d96d6b5ca846d .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://purl.org/dc/terms/description> "Defines a program or list of steps used to conduct a test." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bb619ed29ccbc1ef43313dc1d38349b02 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Be8c4248f480e27d637decef7c0d171d2 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bc2a1142c7659f6cec8b4da42da6f6f44 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bc6f7f08f4fda5011077d90dd2a267355 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://purl.org/dc/terms/title> "QM Test Script" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://purl.org/dc/terms/title> "QM Test Script"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B659de8c4eefb0e0293e34a06e531c5da .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B0bce09f99a42632b15e247378d5de6f1 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bd9128f627459ad18e8acddd0746ebe0c .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B3303c3577b059749e05375b04c6722cb .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bc9e87b2a2a36b60c5853f4d55ee75719 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:B8591850e1c31b55a98ed78e87a01a001 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Bdef3974ec51e556f764a4d939c1172b1 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/qm#TestScript> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> <http://open-services.net/ns/core#property> _:Baac9f3cdff7f3ae9917bcf56eab79a09 .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://purl.org/dc/terms/title> "Title"@en .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://purl.org/dc/terms/title> "Title" .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#name> "title" .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B34138312ec6c3fc41e95b6c7ffb915c6 <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element." .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://purl.org/dc/terms/description> "Test Script executed to produce the Test Result. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case." .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestScript> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#executesTestScript> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://open-services.net/ns/core#name> "executesTestScript" .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://purl.org/dc/terms/title> "Executes Test Script"@en .
+_:B8ad3bb0af1ba09c3d016b6da31dd2785 <http://purl.org/dc/terms/title> "Executes Test Script" .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#blockedByChangeRequest> .
+_:Bd15b69ca003c695547922c8d41522aef <http://purl.org/dc/terms/description> "Change Request that prevents execution of the Test Execution Record. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#name> "blockedByChangeRequest" .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd15b69ca003c695547922c8d41522aef <http://purl.org/dc/terms/title> "Blocked by Change Request"@en .
+_:Bd15b69ca003c695547922c8d41522aef <http://purl.org/dc/terms/title> "Blocked by Change Request" .
+_:Bd15b69ca003c695547922c8d41522aef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd15b69ca003c695547922c8d41522aef <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#name> "serviceProvider" .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ServiceProvider> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://purl.org/dc/terms/title> "Service Provider"@en .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://purl.org/dc/terms/title> "Service Provider" .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#serviceProvider> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://purl.org/dc/terms/description> "The scope of a resource is a link to the resource's OSLC Service Provider." .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1ed29b9700dc01bdf389aeea1d3be312 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ServiceProvider> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://purl.org/dc/terms/title> "Description"@en .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://purl.org/dc/terms/title> "Description" .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element." .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#name> "description" .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B50f30cf3e1f77d6a87d40fd74a73493f <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://purl.org/dc/terms/title> "Created"@en .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://purl.org/dc/terms/title> "Created" .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/created> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#name> "created" .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://purl.org/dc/terms/description> "Timestamp of resource creation (reference: Dublin Core)." .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B230bea82430060dbd9e1c1ce2105f262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://purl.org/dc/terms/title> "Related Change Request"@en .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://purl.org/dc/terms/title> "Related Change Request" .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#relatedChangeRequest> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#name> "relatedChangeRequest" .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2f9953a65024d11876efaeb49ddbe347 <http://purl.org/dc/terms/description> "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#name> "modified" .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://purl.org/dc/terms/description> "Timestamp of latest resource modification (reference: Dublin Core)." .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://purl.org/dc/terms/title> "Modified"@en .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://purl.org/dc/terms/title> "Modified" .
+_:B4d02fe6638329dfd31d90994d1723ac2 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#name> "creator" .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/creator> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://purl.org/dc/terms/description> "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://purl.org/dc/terms/title> "Creator"@en .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://purl.org/dc/terms/title> "Creator" .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B2e0ed0101b4549a7ba3da73c6e7b6c46 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://purl.org/dc/terms/description> "Test Plan that the Test Execution Record reports on. It is likely that the target resource will be an oslc_qm:TestPlan but that is not necessarily the case." .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#name> "reportsOnTestPlan" .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#reportsOnTestPlan> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://purl.org/dc/terms/title> "Reports on Test Plan" .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://purl.org/dc/terms/title> "Reports on Test Plan"@en .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B71f7015353d0f6f130080c6eddc05fb0 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestPlan> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://purl.org/dc/terms/description> "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#name> "creator" .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://purl.org/dc/terms/title> "Creator"@en .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://purl.org/dc/terms/title> "Creator" .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/creator> .
+_:Bf1296748745e4b8b6adf71223a2ecbee <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestCase> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://purl.org/dc/terms/description> "Test Case that the Test Result reports on. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case." .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://purl.org/dc/terms/title> "Reports on Test Case"@en .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://purl.org/dc/terms/title> "Reports on Test Case" .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#reportsOnTestCase> .
+_:B6b81a38225d1a6c8bf153c6c12f45790 <http://open-services.net/ns/core#name> "reportsOnTestCase" .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#name> "type" .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://purl.org/dc/terms/description> "The resource type URIs." .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://purl.org/dc/terms/title> "Type"@en .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://purl.org/dc/terms/title> "Type" .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestExecutionRecord> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B05e2d9f9a19776828f82f37bcf4752dd <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#name> "runsOnTestEnvironment" .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://purl.org/dc/terms/description> "Indicates the environment details of the test case for this execution record." .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestExecutionRecord> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#runsOnTestEnvironment> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://purl.org/dc/terms/title> "Runs on Test Environment"@en .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://purl.org/dc/terms/title> "Runs on Test Environment" .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Baa39aa2b257db161805073ab30f0ed89 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/rm#Requirement> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://purl.org/dc/terms/description> "Requirement that is validated by the Test Case. It is likely that the target resource will be an oslc_rm:Requirement but that is not necessarily the case." .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#name> "validatesRequirement" .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#range> <http://open-services.net/ns/rm#Requirement> .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://purl.org/dc/terms/title> "Validates Requirement"@en .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://purl.org/dc/terms/title> "Validates Requirement" .
+_:Bb8d29f94229d3b3ee946474d0db9d511 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#validatesRequirement> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#name> "identifier" .
+_:Be554b81eec067347123076ecd969d844 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Be554b81eec067347123076ecd969d844 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be554b81eec067347123076ecd969d844 <http://purl.org/dc/terms/description> "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display." .
+_:Be554b81eec067347123076ecd969d844 <http://purl.org/dc/terms/title> "Identifier"@en .
+_:Be554b81eec067347123076ecd969d844 <http://purl.org/dc/terms/title> "Identifier" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bf1296748745e4b8b6adf71223a2ecbee .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bd21b249eda83b0bacd37c4d42a9c2f54 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B957b785cedf21bd883541513ae071813 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bf7cb7dfeebcf7f008507fe2bdb422fd6 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B7c3be26023dd30c33e501d0ecd51e958 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bad44e44349f0fb24c321bfc0e1154f05 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B55f11467cbc2ffa30538d7444dd4c531 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://purl.org/dc/terms/title> "QM Test Case" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bccd5aff6340ff59b552f7502d113fd5e .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://purl.org/dc/terms/title> "QM Test Case"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B051260f27baa72ada9c77b449fb2555b .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://purl.org/dc/terms/description> "Defines the criteria which determine whether a system exhibits the correct behavior under a specific set of circumstances." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B3ff5ccec21b2bb2b9eab4be4599a6360 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/qm#TestCase> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B6fdaebd3248786aa13520d6d6b6776e4 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bb8d29f94229d3b3ee946474d0db9d511 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B7b9835c18064c9f10152f1f7bf28936b .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bfe5928f42754172d19ded644d582cf4b .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:Bbdbb6aa57c905e9cbf3308d50270241c .
+<https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> <http://open-services.net/ns/core#property> _:B9eed38f26b39ce9da856007b4ef51893 .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://purl.org/dc/terms/title> "Relation"@en .
+_:B2c4f0f806038ad904541107fc2af4481 <http://purl.org/dc/terms/title> "Relation" .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/relation> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://purl.org/dc/terms/description> "Related resource or resources to the resource." .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#name> "relation" .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B2c4f0f806038ad904541107fc2af4481 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://purl.org/dc/terms/title> "Type"@en .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://purl.org/dc/terms/title> "Type" .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://purl.org/dc/terms/description> "The resource type URIs." .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#name> "type" .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestCase> .
+_:Bd21b249eda83b0bacd37c4d42a9c2f54 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#name> "identifier" .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://purl.org/dc/terms/title> "Identifier"@en .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://purl.org/dc/terms/title> "Identifier" .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B7b9835c18064c9f10152f1f7bf28936b <http://purl.org/dc/terms/description> "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display." .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#name> "executionInstructions" .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://purl.org/dc/terms/title> "Execution Instructions"@en .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://purl.org/dc/terms/title> "Execution Instructions" .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#executionInstructions> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://purl.org/dc/terms/description> "Instructions for executing the test script. Note that the value of Occurs is undefined. The resource shape document provided by the QM service provider may be consulted for its value." .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Baac9f3cdff7f3ae9917bcf56eab79a09 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#name> "shortId" .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://purl.org/dc/terms/description> "A short identifier for the resource.  Typically the integer shown in the web UI." .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortId> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://purl.org/dc/terms/title> "Short id"@en .
+_:Bbdbb6aa57c905e9cbf3308d50270241c <http://purl.org/dc/terms/title> "Short id" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B791fce6059a58448e2917d7a48a30fff .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B28e2b668444e54c8b9c407344cd92d42 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:Beba61519f57b557b20251bae6854e023 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B34138312ec6c3fc41e95b6c7ffb915c6 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B876785a9336b2752b887b984ae586ce2 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:Bbc4bffb08b3ab00955d8183a516ec9d6 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B96011e005865a68c35edc2419e1cba9f .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B63c5b281f37d86e2662e69ce61db4a46 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B2f9953a65024d11876efaeb49ddbe347 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B6edd4b2d890e2990ac2052d97d815514 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://purl.org/dc/terms/title> "QM Test Plan" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://purl.org/dc/terms/title> "QM Test Plan"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B20c017f72309cd9b2308f7ba5bdacaf1 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://purl.org/dc/terms/description> "Defines the overall process and strategy for testing a system." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B50f30cf3e1f77d6a87d40fd74a73493f .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B1ed29b9700dc01bdf389aeea1d3be312 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/qm#TestPlan> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> <http://open-services.net/ns/core#property> _:B63d645b1c3ec1a80e405b39a4a122255 .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortId> .
+_:B5c1ee07050e2302208387d8157e2123b <http://purl.org/dc/terms/description> "A short identifier for the resource.  Typically the integer shown in the web UI." .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#name> "shortId" .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5c1ee07050e2302208387d8157e2123b <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5c1ee07050e2302208387d8157e2123b <http://purl.org/dc/terms/title> "Short id" .
+_:B5c1ee07050e2302208387d8157e2123b <http://purl.org/dc/terms/title> "Short id"@en .
+_:B5c1ee07050e2302208387d8157e2123b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#name> "relation" .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://purl.org/dc/terms/title> "Relation"@en .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://purl.org/dc/terms/title> "Relation" .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://purl.org/dc/terms/description> "Related resource or resources to the resource." .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/relation> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bb619ed29ccbc1ef43313dc1d38349b02 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://purl.org/dc/terms/title> "Modified"@en .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://purl.org/dc/terms/title> "Modified" .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://purl.org/dc/terms/description> "Timestamp of latest resource modification (reference: Dublin Core)." .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#name> "modified" .
+_:B648a40bcf43b78bbd63da3a2a038da9a <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#name> "runsOnTestEnvironment" .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Beba61519f57b557b20251bae6854e023 <http://purl.org/dc/terms/description> "The test environment that the Test Plan will be run on." .
+_:Beba61519f57b557b20251bae6854e023 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestExecutionRecord> .
+_:Beba61519f57b557b20251bae6854e023 <http://purl.org/dc/terms/title> "Runs on Test Environment"@en .
+_:Beba61519f57b557b20251bae6854e023 <http://purl.org/dc/terms/title> "Runs on Test Environment" .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Beba61519f57b557b20251bae6854e023 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#runsOnTestEnvironment> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#name> "identifier" .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://purl.org/dc/terms/description> "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display." .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bc065c25c190538fcb10765bdde7e770f <http://purl.org/dc/terms/title> "Identifier" .
+_:Bc065c25c190538fcb10765bdde7e770f <http://purl.org/dc/terms/title> "Identifier"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://purl.org/dc/terms/title> "QM Test Result"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://purl.org/dc/terms/title> "QM Test Result" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://purl.org/dc/terms/description> "Describes the outcome of attempting to execute a test." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B9bb432c8cceceb898a5fb36c5ac9eb3e .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B2c4f0f806038ad904541107fc2af4481 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B1b82960b242ac14259912705f6d7d5d8 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B2c7453e03c2487b09dcd1175ed75d995 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B7b739e809c7fdfb113662614a4d2b4bd .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B2e0ed0101b4549a7ba3da73c6e7b6c46 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:Bc065c25c190538fcb10765bdde7e770f .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:Be347d2857423874550d68a7cbadd3258 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B7fa0dfa3a0fc1961ce78a21834bf4e0d .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B5f251f5f3a18cfb95ff324892d9608f8 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/qm#TestResult> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B648a40bcf43b78bbd63da3a2a038da9a .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B8ad3bb0af1ba09c3d016b6da31dd2785 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:Bdd3341fa87783180aae53a2b27a7d763 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B6b81a38225d1a6c8bf153c6c12f45790 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B65fa20563f2288180a57d424378f89fb .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B5c1ee07050e2302208387d8157e2123b .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:B7b61d3d0b8c8184565c9a5484be5d033 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestResultShape> <http://open-services.net/ns/core#property> _:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ServiceProvider> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#serviceProvider> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ServiceProvider> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#name> "serviceProvider" .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://purl.org/dc/terms/title> "Service Provider"@en .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://purl.org/dc/terms/title> "Service Provider" .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://purl.org/dc/terms/description> "The scope of a resource is a link to the resource's OSLC Service Provider." .
+_:Bee04f22e60b3730a2ed0536742f8f4d4 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.perm_failed" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.incomplete" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#status> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.error" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://purl.org/dc/terms/description> "Used to indicate the state of the Test Result based on values defined by the service provider. Most often a read-only property." .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.failed" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.inconclusive" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.part_blocked" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://purl.org/dc/terms/title> "Status"@en .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://purl.org/dc/terms/title> "Status" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.deferred" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#name> "status" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.passed" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#allowedValue> "com.ibm.rqm.execution.common.state.blocked" .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7fa0dfa3a0fc1961ce78a21834bf4e0d <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://purl.org/dc/terms/title> "Instance Shape"@en .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://purl.org/dc/terms/title> "Instance Shape" .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#name> "instanceShape" .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://purl.org/dc/terms/description> "Resource Shape that provides hints as to resource property value-types and allowed values." .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ResourceShape> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B5f251f5f3a18cfb95ff324892d9608f8 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://purl.org/dc/terms/description> "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://purl.org/dc/terms/title> "Contributor"@en .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#name> "contributor" .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://purl.org/dc/terms/title> "Contributor" .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9eed38f26b39ce9da856007b4ef51893 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/contributor> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://purl.org/dc/terms/title> "Relation"@en .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://purl.org/dc/terms/title> "Relation" .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/relation> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://purl.org/dc/terms/description> "Related resource or resources to the resource." .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#name> "relation" .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B63d645b1c3ec1a80e405b39a4a122255 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B957b785cedf21bd883541513ae071813 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestScript> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#name> "usesTestScript" .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#usesTestScript> .
+_:B957b785cedf21bd883541513ae071813 <http://purl.org/dc/terms/title> "Uses Test Script"@en .
+_:B957b785cedf21bd883541513ae071813 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B957b785cedf21bd883541513ae071813 <http://purl.org/dc/terms/title> "Uses Test Script" .
+_:B957b785cedf21bd883541513ae071813 <http://purl.org/dc/terms/description> "Test Script used by the Test Case. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case." .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#name> "identifier" .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://purl.org/dc/terms/title> "Identifier"@en .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://purl.org/dc/terms/title> "Identifier" .
+_:Bc5592ae8f8b9f8512d9e40dd9c2c4e3f <http://purl.org/dc/terms/description> "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display." .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#name> "title" .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://purl.org/dc/terms/title> "Title"@en .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://purl.org/dc/terms/title> "Title" .
+_:Bc2a1142c7659f6cec8b4da42da6f6f44 <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element." .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#name> "type" .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://purl.org/dc/terms/title> "Type"@en .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://purl.org/dc/terms/title> "Type" .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestScript> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://purl.org/dc/terms/description> "The resource type URIs." .
+_:B25a7309cf132cc7a5df7f1e54b2df212 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://purl.org/dc/terms/title> "Modified"@en .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://purl.org/dc/terms/title> "Modified" .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#name> "modified" .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://purl.org/dc/terms/description> "Timestamp of latest resource modification (reference: Dublin Core)." .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bad44e44349f0fb24c321bfc0e1154f05 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://purl.org/dc/terms/title> "Created" .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://purl.org/dc/terms/title> "Created"@en .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://purl.org/dc/terms/description> "Timestamp of resource creation (reference: Dublin Core)." .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/created> .
+_:Bdd3341fa87783180aae53a2b27a7d763 <http://open-services.net/ns/core#name> "created" .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#name> "title" .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element." .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://purl.org/dc/terms/title> "Title"@en .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://purl.org/dc/terms/title> "Title" .
+_:B7b61d3d0b8c8184565c9a5484be5d033 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B96011e005865a68c35edc2419e1cba9f <http://purl.org/dc/terms/title> "Short id"@en .
+_:B96011e005865a68c35edc2419e1cba9f <http://purl.org/dc/terms/title> "Short id" .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#name> "shortId" .
+_:B96011e005865a68c35edc2419e1cba9f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortId> .
+_:B96011e005865a68c35edc2419e1cba9f <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B96011e005865a68c35edc2419e1cba9f <http://purl.org/dc/terms/description> "A short identifier for the resource.  Typically the integer shown in the web UI." .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://purl.org/dc/terms/title> "Related Change Request"@en .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://purl.org/dc/terms/title> "Related Change Request" .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://purl.org/dc/terms/description> "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#name> "relatedChangeRequest" .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#relatedChangeRequest> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf8167a0b45b0367a81a93db533eef0b8 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#name> "creator" .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/creator> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B22533f60a57400d7f18916019db4bb2e <http://purl.org/dc/terms/description> "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:B22533f60a57400d7f18916019db4bb2e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B22533f60a57400d7f18916019db4bb2e <http://purl.org/dc/terms/title> "Creator"@en .
+_:B22533f60a57400d7f18916019db4bb2e <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B22533f60a57400d7f18916019db4bb2e <http://purl.org/dc/terms/title> "Creator" .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://purl.org/dc/terms/description> "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/creator> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#name> "creator" .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://purl.org/dc/terms/title> "Creator"@en .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://purl.org/dc/terms/title> "Creator" .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6edd4b2d890e2990ac2052d97d815514 <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://purl.org/dc/terms/title> "Contributor"@en .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://purl.org/dc/terms/title> "Contributor" .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/contributor> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#name> "contributor" .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B2e75efaa9557c53335f23e442bf1bc85 <http://purl.org/dc/terms/description> "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B05e2d9f9a19776828f82f37bcf4752dd .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Bf8167a0b45b0367a81a93db533eef0b8 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B256ce6cd98ee8409eaf5c9a0cd78265f .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B24cbc3c8761fb55f9d4d685bf25de0a9 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/qm#TestExecutionRecord> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B71f7015353d0f6f130080c6eddc05fb0 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Bd15b69ca003c695547922c8d41522aef .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Be554b81eec067347123076ecd969d844 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B4d02fe6638329dfd31d90994d1723ac2 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B2e75efaa9557c53335f23e442bf1bc85 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://purl.org/dc/terms/description> "Planning for execution of a test." .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B22533f60a57400d7f18916019db4bb2e .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Bf11703bc1b0033ec7042b8aa1126e7d7 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://purl.org/dc/terms/title> "QM Test Execution Record" .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B230bea82430060dbd9e1c1ce2105f262 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://purl.org/dc/terms/title> "QM Test Execution Record"@en .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B2e2e24a033b4f48ac7028b89631eedf8 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B07d4e70ef489b15af1d59d05130a826b .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:B02880846bbd4932f555dc7290b430fc0 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Bc783e6e2cf188f1d94b480ce9c1a87d1 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Bee04f22e60b3730a2ed0536742f8f4d4 .
+<https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> <http://open-services.net/ns/core#property> _:Baa39aa2b257db161805073ab30f0ed89 .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://purl.org/dc/terms/description> "A short identifier for the resource.  Typically the integer shown in the web UI." .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortId> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#name> "shortId" .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://purl.org/dc/terms/title> "Short id"@en .
+_:B0bce09f99a42632b15e247378d5de6f1 <http://purl.org/dc/terms/title> "Short id" .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#name> "contributor" .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/contributor> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://purl.org/dc/terms/title> "Contributor"@en .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://purl.org/dc/terms/title> "Contributor" .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://purl.org/dc/terms/description> "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:Bd9128f627459ad18e8acddd0746ebe0c <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element." .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://open-services.net/ns/core#name> "description" .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://purl.org/dc/terms/title> "Description"@en .
+_:B24cbc3c8761fb55f9d4d685bf25de0a9 <http://purl.org/dc/terms/title> "Description" .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://purl.org/dc/terms/description> "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://purl.org/dc/terms/title> "Creator"@en .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://purl.org/dc/terms/title> "Creator" .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/creator> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#name> "creator" .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:Bdef3974ec51e556f764a4d939c1172b1 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://purl.org/dc/terms/title> "Modified"@en .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://purl.org/dc/terms/title> "Modified" .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#name> "modified" .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://purl.org/dc/terms/description> "Timestamp of latest resource modification (reference: Dublin Core)." .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc6f7f08f4fda5011077d90dd2a267355 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://purl.org/dc/terms/description> "Related resource or resources to the resource." .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://purl.org/dc/terms/title> "Relation" .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://purl.org/dc/terms/title> "Relation"@en .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/relation> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#name> "relation" .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bf11703bc1b0033ec7042b8aa1126e7d7 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#testsChangeRequest> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://purl.org/dc/terms/title> "Tests Change Request"@en .
+_:Bfe5928f42754172d19ded644d582cf4b <http://purl.org/dc/terms/title> "Tests Change Request" .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#name> "testsChangeRequest" .
+_:Bfe5928f42754172d19ded644d582cf4b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bfe5928f42754172d19ded644d582cf4b <http://purl.org/dc/terms/description> "Change Request tested by the Test Case. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:Bfe5928f42754172d19ded644d582cf4b <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ResourceShape> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://purl.org/dc/terms/description> "Resource Shape that provides hints as to resource property value-types and allowed values." .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://purl.org/dc/terms/title> "Instance Shape"@en .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://purl.org/dc/terms/title> "Instance Shape" .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#name> "instanceShape" .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+_:B7c3be26023dd30c33e501d0ecd51e958 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+_:B876785a9336b2752b887b984ae586ce2 <http://purl.org/dc/terms/description> "Timestamp of latest resource modification (reference: Dublin Core)." .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/modified> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B876785a9336b2752b887b984ae586ce2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B876785a9336b2752b887b984ae586ce2 <http://open-services.net/ns/core#name> "modified" .
+_:B876785a9336b2752b887b984ae586ce2 <http://purl.org/dc/terms/title> "Modified"@en .
+_:B876785a9336b2752b887b984ae586ce2 <http://purl.org/dc/terms/title> "Modified" .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#name> "created" .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://purl.org/dc/terms/title> "Created"@en .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://purl.org/dc/terms/title> "Created" .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/created> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be8c4248f480e27d637decef7c0d171d2 <http://purl.org/dc/terms/description> "Timestamp of resource creation (reference: Dublin Core)." .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestCase> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#usesTestCase> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#name> "usesTestCase" .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://purl.org/dc/terms/description> "Test Case used by the Test Plan. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case." .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://purl.org/dc/terms/title> "Uses Test Case"@en .
+_:Bbc4bffb08b3ab00955d8183a516ec9d6 <http://purl.org/dc/terms/title> "Uses Test Case" .
+_:B3303c3577b059749e05375b04c6722cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B3303c3577b059749e05375b04c6722cb <http://purl.org/dc/terms/title> "Instance Shape"@en .
+_:B3303c3577b059749e05375b04c6722cb <http://purl.org/dc/terms/title> "Instance Shape" .
+_:B3303c3577b059749e05375b04c6722cb <http://purl.org/dc/terms/description> "Resource Shape that provides hints as to resource property value-types and allowed values." .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ResourceShape> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#name> "instanceShape" .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B3303c3577b059749e05375b04c6722cb <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestResult> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://purl.org/dc/terms/title> "Type"@en .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://purl.org/dc/terms/title> "Type" .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#name> "type" .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://purl.org/dc/terms/description> "The resource type URIs." .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bf3c864788e9f6dc1ef2d0ca3d3ee0c37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#affectedByChangeRequest> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B65fa20563f2288180a57d424378f89fb <http://purl.org/dc/terms/title> "Affected by Change Request"@en .
+_:B65fa20563f2288180a57d424378f89fb <http://purl.org/dc/terms/title> "Affected by Change Request" .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#name> "affectedByChangeRequest" .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B65fa20563f2288180a57d424378f89fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B65fa20563f2288180a57d424378f89fb <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B65fa20563f2288180a57d424378f89fb <http://purl.org/dc/terms/description> "Change request that affects the Test Result. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Be347d2857423874550d68a7cbadd3258 <http://purl.org/dc/terms/title> "Produced by Test Execution Record"@en .
+_:Be347d2857423874550d68a7cbadd3258 <http://purl.org/dc/terms/title> "Produced by Test Execution Record" .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#producedByTestExecutionRecord> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestExecutionRecord> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be347d2857423874550d68a7cbadd3258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be347d2857423874550d68a7cbadd3258 <http://purl.org/dc/terms/description> "Test Execution Record that the Test Result was produced by. It is likely that the target resource will be an oslc_qm:TestExecutionRecord but that is not necessarily the case." .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#name> "producedByTestExecutionRecord" .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be347d2857423874550d68a7cbadd3258 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#name> "title" .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://purl.org/dc/terms/title> "Title"@en .
+_:B07d4e70ef489b15af1d59d05130a826b <http://purl.org/dc/terms/title> "Title" .
+_:B07d4e70ef489b15af1d59d05130a826b <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B07d4e70ef489b15af1d59d05130a826b <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element." .
+_:B388b893ebda05c42ca32aede101689be <http://purl.org/dc/terms/description> "The scope of a resource is a link to the resource's OSLC Service Provider." .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ServiceProvider> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B388b893ebda05c42ca32aede101689be <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B388b893ebda05c42ca32aede101689be <http://purl.org/dc/terms/title> "Service Provider" .
+_:B388b893ebda05c42ca32aede101689be <http://purl.org/dc/terms/title> "Service Provider"@en .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#name> "serviceProvider" .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ServiceProvider> .
+_:B388b893ebda05c42ca32aede101689be <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#serviceProvider> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#name> "relatedChangeRequest" .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#relatedChangeRequest> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://purl.org/dc/terms/description> "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://purl.org/dc/terms/title> "Related Change Request"@en .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://purl.org/dc/terms/title> "Related Change Request" .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bf7cb7dfeebcf7f008507fe2bdb422fd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://purl.org/dc/terms/description> "The scope of a resource is a link to the resource's OSLC Service Provider." .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://purl.org/dc/terms/title> "Service Provider"@en .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ServiceProvider> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://purl.org/dc/terms/title> "Service Provider" .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ServiceProvider> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#serviceProvider> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#name> "serviceProvider" .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bccd5aff6340ff59b552f7502d113fd5e <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B791fce6059a58448e2917d7a48a30fff <http://purl.org/dc/terms/title> "Validates Requirement Collection"@en .
+_:B791fce6059a58448e2917d7a48a30fff <http://purl.org/dc/terms/title> "Validates Requirement Collection" .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#name> "validatesRequirementCollection" .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/rm#RequirementCollection> .
+_:B791fce6059a58448e2917d7a48a30fff <http://purl.org/dc/terms/description> "Requirement Collection that is validated by the Test Plan. It is likely that the target resource will be an oslc_rm:RequirementCollection but that is not necessarily the case." .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B791fce6059a58448e2917d7a48a30fff <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#range> <http://open-services.net/ns/rm#RequirementCollection> .
+_:B791fce6059a58448e2917d7a48a30fff <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#validatesRequirementCollection> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestExecutionRecord> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://purl.org/dc/terms/title> "Runs on Test Environment"@en .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://purl.org/dc/terms/title> "Runs on Test Environment" .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#name> "runsOnTestEnvironment" .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://purl.org/dc/terms/description> "Configuration associated with the execution work item executed to generate the execution result." .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#runsOnTestEnvironment> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2c7453e03c2487b09dcd1175ed75d995 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/rm#Requirement> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#name> "validatesRequirement" .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#range> <http://open-services.net/ns/rm#Requirement> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://purl.org/dc/terms/title> "Validates Requirement"@en .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://purl.org/dc/terms/title> "Validates Requirement" .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://purl.org/dc/terms/description> "Requirement that is validated by the Test Script. It is likely that the target resource will be an oslc_rm:Requirement but that is not necessarily the case." .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#validatesRequirement> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc9e87b2a2a36b60c5853f4d55ee75719 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://purl.org/dc/terms/title> "Identifier" .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://purl.org/dc/terms/title> "Identifier"@en .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://purl.org/dc/terms/description> "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display." .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#name> "identifier" .
+_:B659de8c4eefb0e0293e34a06e531c5da <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://purl.org/dc/terms/title> "Contributor"@en .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://purl.org/dc/terms/title> "Contributor" .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://purl.org/dc/terms/description> "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/contributor> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#name> "contributor" .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Be0b0f9ea04ac86aefb1d2e9ccb90c2fe <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShapeConstraints> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Quality Management (QM) Resource Shape Constraints" .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/hasVersion> "PS01" .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/title> "OSLC Quality Management (QM) Resource Shape Constraints" .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-shapes.ttl> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/description> "Resource Shape Constraints defined in the OSLC QM 2.1 specification."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<https://open-services.net/ns/qm/shapes/2.1/#> <http://purl.org/dc/terms/issued> "2020-08-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://purl.org/dc/terms/title> "Description"@en .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://purl.org/dc/terms/title> "Description" .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element." .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#name> "description" .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B6fdaebd3248786aa13520d6d6b6776e4 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://purl.org/dc/terms/title> "Description"@en .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://purl.org/dc/terms/title> "Description" .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://open-services.net/ns/core#name> "description" .
+_:B8591850e1c31b55a98ed78e87a01a001 <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element." .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#name> "relatedChangeRequest" .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://purl.org/dc/terms/title> "Related Change Request"@en .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://purl.org/dc/terms/title> "Related Change Request" .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#range> <http://open-services.net/ns/cm#ChangeRequest> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://purl.org/dc/terms/description> "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case." .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#relatedChangeRequest> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B2bf7d4392d986498125d96d6b5ca846d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ServiceProvider> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ServiceProvider> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#serviceProvider> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#name> "serviceProvider" .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://purl.org/dc/terms/title> "Service Provider"@en .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://purl.org/dc/terms/title> "Service Provider" .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://purl.org/dc/terms/description> "The scope of a resource is a link to the resource's OSLC Service Provider." .
+_:B1b82960b242ac14259912705f6d7d5d8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestPlan> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://purl.org/dc/terms/title> "Type"@en .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://purl.org/dc/terms/title> "Type" .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#name> "type" .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B28e2b668444e54c8b9c407344cd92d42 <http://purl.org/dc/terms/description> "The resource type URIs." .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestCase> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#name> "runsTestCase" .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://purl.org/dc/terms/title> "Runs Test Case"@en .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://purl.org/dc/terms/description> "Test Case run by the Test Execution Record. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case." .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#runsTestCase> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://purl.org/dc/terms/title> "Runs Test Case" .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B2e2e24a033b4f48ac7028b89631eedf8 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B051260f27baa72ada9c77b449fb2555b <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element." .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B051260f27baa72ada9c77b449fb2555b <http://purl.org/dc/terms/title> "Title"@en .
+_:B051260f27baa72ada9c77b449fb2555b <http://purl.org/dc/terms/title> "Title" .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B051260f27baa72ada9c77b449fb2555b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B051260f27baa72ada9c77b449fb2555b <http://open-services.net/ns/core#name> "title" .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://purl.org/dc/terms/description> "Timestamp of resource creation (reference: Dublin Core)." .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#name> "created" .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/created> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://purl.org/dc/terms/title> "Created"@en .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://purl.org/dc/terms/title> "Created" .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B55f11467cbc2ffa30538d7444dd4c531 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://purl.org/dc/terms/title> "Executes Test Script"@en .
+_:B02880846bbd4932f555dc7290b430fc0 <http://purl.org/dc/terms/description> "Test Script executed by the Test Execution Record. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case." .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#name> "executesTestScript" .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestScript> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#executesTestScript> .
+_:B02880846bbd4932f555dc7290b430fc0 <http://purl.org/dc/terms/title> "Executes Test Script" .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#readOnly> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#valueShape> <http://xmlns.com/foaf/0.1/Person> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#name> "contributor" .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/contributor> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://purl.org/dc/terms/title> "Contributor"@en .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://purl.org/dc/terms/title> "Contributor" .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://purl.org/dc/terms/description> "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case." .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#range> <http://xmlns.com/foaf/0.1/Person> .
+_:B7b739e809c7fdfb113662614a4d2b4bd <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://purl.org/dc/terms/title> "Reports on Test Plan"@en .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://purl.org/dc/terms/title> "Reports on Test Plan" .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#range> <http://open-services.net/ns/qm#TestPlan> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://purl.org/dc/terms/description> "Test Plan that the Test Result reports on. It is likely that the target resource will be an oslc_qm:TestPlan but that is not necessarily the case." .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#name> "reportsOnTestPlan" .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#valueShape> <https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/qm#reportsOnTestPlan> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B9bb432c8cceceb898a5fb36c5ac9eb3e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://purl.org/dc/terms/title> "Relation"@en .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://purl.org/dc/terms/title> "Relation" .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/relation> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://purl.org/dc/terms/description> "Related resource or resources to the resource." .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#name> "relation" .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B3ff5ccec21b2bb2b9eab4be4599a6360 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#name> "instanceShape" .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://purl.org/dc/terms/title> "Instance Shape"@en .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://purl.org/dc/terms/title> "Instance Shape" .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#instanceShape> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/core#ResourceShape> .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://purl.org/dc/terms/description> "Resource Shape that provides hints as to resource property value-types and allowed values." .
+_:B256ce6cd98ee8409eaf5c9a0cd78265f <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#ResourceShape> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/created> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://purl.org/dc/terms/title> "Created"@en .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://purl.org/dc/terms/title> "Created" .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://purl.org/dc/terms/description> "Timestamp of resource creation (reference: Dublin Core)." .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#name> "created" .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#hidden> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:B20c017f72309cd9b2308f7ba5bdacaf1 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://purl.org/dc/terms/description> "A short identifier for the resource.  Typically the integer shown in the web UI." .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://purl.org/dc/terms/title> "Short id"@en .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://purl.org/dc/terms/title> "Short id" .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortId> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#hidden> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#name> "shortId" .
+_:Bc783e6e2cf188f1d94b480ce9c1a87d1 <http://open-services.net/ns/core#isMemberProperty> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
