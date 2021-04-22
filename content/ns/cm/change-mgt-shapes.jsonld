@@ -1,0 +1,443 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#",
+    "@type" : "oslc:ResourceShapeConstraints",
+    "description" : "Constraints on vocabulary terms defined in the OSLC Change Management (CM) namespace.",
+    "hasVersion" : "PS01",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html",
+    "issued" : "2020-09-17",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-shapes.ttl",
+    "title" : "The OSLC Change Management(CM) Constraints",
+    "label" : "The OSLC Change Management(CM) Constraints"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#ChangeNoticeShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:ChangeNotice",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#severity", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#subject", "http://open-services.net/ns/cm/shapes/3.0#verified", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#modified", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem", "http://open-services.net/ns/cm/shapes/3.0#status" ],
+    "dcterms:description" : "Represents an assignment notification of a change request. May be used also to bestow authority onto the assigned user to effect the changes.",
+    "title" : "A notification of a change request that requires authorization to address."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#ChangeRequestShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:ChangeRequest",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#modified", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#subject", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#implementsRequirement", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#status", "http://open-services.net/ns/cm/shapes/3.0#verified", "http://open-services.net/ns/cm/shapes/3.0#tracksRequirement", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect" ],
+    "title" : "A general type for records in a Change Management."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#DefectShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:Defect",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#subject", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#modified", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#verified", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#severity", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#status", "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem" ],
+    "dcterms:description" : "Used to report defects in testing.",
+    "title" : "A software or product defect."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#EnhancementShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:Enhancement",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#implementsRequirement", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect", "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#verified", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#modified", "http://open-services.net/ns/cm/shapes/3.0#status", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#subject" ],
+    "title" : "A request for new functionality."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#ReviewTaskShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:ReviewTask",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#tracksRequirement", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#status", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#verified", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#subject", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#modified" ],
+    "dcterms:description" : "A review task can be used to request and approve changes to requirements, test plans, test cases or other resources.",
+    "title" : "A request to make a changes and review the change."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#TaskShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_cm:Task",
+    "property" : [ "http://open-services.net/ns/cm/shapes/3.0#authorizer", "http://open-services.net/ns/cm/shapes/3.0#modified", "http://open-services.net/ns/cm/shapes/3.0#discussedBy", "http://open-services.net/ns/cm/shapes/3.0#state", "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet", "http://open-services.net/ns/cm/shapes/3.0#closeDate", "http://open-services.net/ns/cm/shapes/3.0#title", "http://open-services.net/ns/cm/shapes/3.0#priority", "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement", "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect", "http://open-services.net/ns/cm/shapes/3.0#fixed", "http://open-services.net/ns/cm/shapes/3.0#shortTitle", "http://open-services.net/ns/cm/shapes/3.0#closed", "http://open-services.net/ns/cm/shapes/3.0#serviceProvider", "http://open-services.net/ns/cm/shapes/3.0#parent", "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem", "http://open-services.net/ns/cm/shapes/3.0#created", "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest", "http://open-services.net/ns/cm/shapes/3.0#reviewed", "http://open-services.net/ns/cm/shapes/3.0#approved", "http://open-services.net/ns/cm/shapes/3.0#instanceShape", "http://open-services.net/ns/cm/shapes/3.0#contributor", "http://open-services.net/ns/cm/shapes/3.0#subject", "http://open-services.net/ns/cm/shapes/3.0#creator", "http://open-services.net/ns/cm/shapes/3.0#inProgress", "http://open-services.net/ns/cm/shapes/3.0#identifier", "http://open-services.net/ns/cm/shapes/3.0#type", "http://open-services.net/ns/cm/shapes/3.0#description", "http://open-services.net/ns/cm/shapes/3.0#status" ],
+    "dcterms:description" : "Used to track assigned work that to be completed within a certain time.",
+    "title" : "An executable and trackable activity."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#affectedByDefect",
+    "@type" : "oslc:Property",
+    "name" : "affectedByDefect",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:affectedByDefect",
+    "range" : "oslc_cm:Defect",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Change request is affected by a reported defect. It is likely that the target resource will be an <code>oslc_cm:Defect</code> but that is not necessarily the case.",
+    "title" : "Affected by Defect"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem",
+    "@type" : "oslc:Property",
+    "name" : "affectsPlanItem",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:affectsPlanItem",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Change request affects plan item.",
+    "title" : "Affects PlanItem"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#affectsRequirement",
+    "@type" : "oslc:Property",
+    "name" : "affectsRequirement",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:affectsRequirement",
+    "range" : "oslc_rm:Requirement",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Change request affecting a Requirement. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.",
+    "title" : "Affects Requirement"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#approved",
+    "@type" : "oslc:Property",
+    "name" : "approved",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:approved",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the Change Request has been approved."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#authorizer",
+    "@type" : "oslc:Property",
+    "name" : "authorizer",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:authorizer",
+    "range" : "foaf:Agent",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Agents who are responsible authorizing and/or has authorized effort to be expended to address a set of child change requests."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#closeDate",
+    "@type" : "oslc:Property",
+    "name" : "closeDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:closeDate",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "The date at which no further activity or work is intended to be conducted."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#closed",
+    "@type" : "oslc:Property",
+    "name" : "closed",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:closed",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the Change Request is completely done, no further fixes or fix verification is needed."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#contributor",
+    "@type" : "oslc:Property",
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "oslc:Any",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "The person(s) who are responsible for the work needed to complete the change request (reference: Dublin Core). It is likely that the target resource will be a <code>foaf:Person</code> but that is not necessarily the case."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#created",
+    "@type" : "oslc:Property",
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core)."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#creator",
+    "@type" : "oslc:Property",
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "oslc:Any",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be a <code>foaf:Person</code> but that is not necessarily the case."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#description",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#discussedBy",
+    "@type" : "oslc:Property",
+    "name" : "discussedBy",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:discussedBy",
+    "range" : "oslc:Discussion",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A series of notes and comments about this change request."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#fixed",
+    "@type" : "oslc:Property",
+    "name" : "fixed",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:fixed",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the Change Request has been fixed."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#identifier",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#implementsRequirement",
+    "@type" : "oslc:Property",
+    "name" : "implementsRequirement",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:implementsRequirement",
+    "range" : "oslc_rm:Requirement",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Implements associated Requirement. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.",
+    "title" : "Implements Requirement"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#inProgress",
+    "@type" : "oslc:Property",
+    "name" : "inProgress",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:inProgress",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the Change Request in a state indicating that active work is occurring. If oslc_cm:inProgress is true, then oslc_cm:fixed and oslc_cm:closed must also be false."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#instanceShape",
+    "@type" : "oslc:Property",
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#modified",
+    "@type" : "oslc:Property",
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core)."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#parent",
+    "@type" : "oslc:Property",
+    "name" : "parent",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:parent",
+    "range" : "oslc_cm:ChangeRequest",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "The related parent change requests of the subject change request. Establishes a parent/child relationship between change requests.",
+    "title" : "Parent of Change Request"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#priority",
+    "@type" : "oslc:Property",
+    "name" : "priority",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:priority",
+    "range" : "oslc_cm:Priority",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Priority of this change request."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest",
+    "@type" : "oslc:Property",
+    "name" : "relatedChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:relatedChangeRequest",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "This relationship is loosely coupled and has no specific meaning.",
+    "title" : "Related ChangeRequest"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#reviewed",
+    "@type" : "oslc:Property",
+    "name" : "reviewed",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:reviewed",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the Change Request has been reviewed."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#serviceProvider",
+    "@type" : "oslc:Property",
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A link to the resource's OSLC Service Provider. There may be cases when the\nsubject resource is available from a service provider that implements multiple domain\nspecifications, which could result in multiple values for this property."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#severity",
+    "@type" : "oslc:Property",
+    "name" : "severity",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:severity",
+    "range" : "oslc_cm:Severity",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Severity or criticality of this change request."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#shortTitle",
+    "@type" : "oslc:Property",
+    "name" : "shortTitle",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:shortTitle",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.",
+    "title" : "Short title"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#state",
+    "@type" : "oslc:Property",
+    "name" : "state",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:state",
+    "range" : "oslc_cm:State",
+    "description" : "Used to indicate the state of the change request. This property is often read-only, but could be changed using OSLC Actions."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#status",
+    "@type" : "oslc:Property",
+    "name" : "status",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:status",
+    "valueType" : "xsd:string",
+    "description" : "Used to indicate the status of the change request. This property is often read-only."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#subject",
+    "@type" : "oslc:Property",
+    "name" : "subject",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:subject",
+    "valueType" : "xsd:string",
+    "description" : "Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#title",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) or often a single line summary of the resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet",
+    "@type" : "oslc:Property",
+    "name" : "tracksChangeSet",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:tracksChangeSet",
+    "range" : "oslc_config:ChangeSet",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Tracks a resource that represents a set of changes on the resource.",
+    "title" : "Tracks Change Set"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#tracksRequirement",
+    "@type" : "oslc:Property",
+    "name" : "tracksRequirement",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_cm:tracksRequirement",
+    "range" : "oslc_rm:Requirement",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Tracks the associated Requirement or Requirement ChangeSet resources. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.",
+    "title" : "Tracks Requirement"
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#type",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs, at least one of which should be oslc_cm:ChangeRequest."
+  }, {
+    "@id" : "http://open-services.net/ns/cm/shapes/3.0#verified",
+    "@type" : "oslc:Property",
+    "name" : "verified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_cm:verified",
+    "valueType" : "xsd:boolean",
+    "description" : "Whether or not the resolution or fix of the Change Request has been verified."
+  } ],
+  "@context" : {
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "representation" : {
+      "@id" : "http://open-services.net/ns/core#representation",
+      "@type" : "@id"
+    },
+    "valueType" : {
+      "@id" : "http://open-services.net/ns/core#valueType",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://open-services.net/ns/core#range",
+      "@type" : "@id"
+    },
+    "propertyDefinition" : {
+      "@id" : "http://open-services.net/ns/core#propertyDefinition",
+      "@type" : "@id"
+    },
+    "occurs" : {
+      "@id" : "http://open-services.net/ns/core#occurs",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://open-services.net/ns/core#name"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "property" : {
+      "@id" : "http://open-services.net/ns/core#property",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://open-services.net/ns/core#describes",
+      "@type" : "@id"
+    },
+    "readOnly" : {
+      "@id" : "http://open-services.net/ns/core#readOnly",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://open-services.net/ns/cm/shapes/3.0#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc_config" : "http://open-services.net/ns/config#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "oslc_rm" : "http://open-services.net/ns/rm#",
+    "oslc_cm" : "http://open-services.net/ns/cm#",
+    "oslc" : "http://open-services.net/ns/core#"
+  }
+}
