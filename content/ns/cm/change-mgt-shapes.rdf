@@ -1,0 +1,551 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:oslc="http://open-services.net/ns/core#"
+    xmlns="http://open-services.net/ns/cm/shapes/3.0#"
+    xmlns:oslc_config="http://open-services.net/ns/config#"
+    xmlns:oslc_cm="http://open-services.net/ns/cm#"
+    xmlns:oslc_rm="http://open-services.net/ns/rm#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#ReviewTaskShape">
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest">
+        <dcterms:title>Related ChangeRequest</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">This relationship is loosely coupled and has no specific meaning.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#relatedChangeRequest"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>relatedChangeRequest</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect">
+        <dcterms:title>Affected by Defect</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Change request is affected by a reported defect. It is likely that the target resource will be an <code>oslc_cm:Defect</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/cm#Defect"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#affectedByDefect"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>affectedByDefect</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#creator">
+        <dcterms:description rdf:parseType="Literal">Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be a <code>foaf:Person</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#Any"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/creator"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>creator</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem">
+        <dcterms:title>Affects PlanItem</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Change request affects plan item.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#affectsPlanItem"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>affectsPlanItem</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:title>A request to make a changes and review the change.</dcterms:title>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#approved">
+        <dcterms:description rdf:parseType="Literal">Whether or not the Change Request has been approved.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#approved"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>approved</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#tracksRequirement">
+        <dcterms:title>Tracks Requirement</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Tracks the associated Requirement or Requirement ChangeSet resources. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/rm#Requirement"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#tracksRequirement"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>tracksRequirement</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#closed">
+        <dcterms:description rdf:parseType="Literal">Whether or not the Change Request is completely done, no further fixes or fix verification is needed.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#closed"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>closed</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#fixed">
+        <dcterms:description rdf:parseType="Literal">Whether or not the Change Request has been fixed.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#fixed"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>fixed</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#status">
+        <dcterms:description rdf:parseType="Literal">Used to indicate the status of the change request. This property is often read-only.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#status"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>status</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#instanceShape">
+        <dcterms:description rdf:parseType="Literal">Resource Shape that provides hints as to resource property value-types and allowed values.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#ResourceShape"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#instanceShape"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>instanceShape</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#discussedBy">
+        <dcterms:description rdf:parseType="Literal">A series of notes and comments about this change request.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#Discussion"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#discussedBy"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>discussedBy</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#reviewed">
+        <dcterms:description rdf:parseType="Literal">Whether or not the Change Request has been reviewed.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#reviewed"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>reviewed</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#authorizer">
+        <dcterms:description rdf:parseType="Literal">Agents who are responsible authorizing and/or has authorized effort to be expended to address a set of child change requests.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#authorizer"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <oslc:name>authorizer</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#closeDate">
+        <dcterms:description rdf:parseType="Literal">The date at which no further activity or work is intended to be conducted.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#closeDate"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>closeDate</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#type">
+        <dcterms:description rdf:parseType="Literal">The resource type URIs, at least one of which should be oslc_cm:ChangeRequest.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>type</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#description">
+        <dcterms:description rdf:parseType="Literal">Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>description</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#ReviewTask"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#serviceProvider">
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description rdf:parseType="Literal">A link to the resource's OSLC Service Provider. There may be cases when the
+subject resource is available from a service provider that implements multiple domain
+specifications, which could result in multiple values for this property.</dcterms:description>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#ServiceProvider"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#serviceProvider"/>
+        <oslc:name>serviceProvider</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#verified">
+        <dcterms:description rdf:parseType="Literal">Whether or not the resolution or fix of the Change Request has been verified.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#verified"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>verified</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:description>A review task can be used to request and approve changes to requirements, test plans, test cases or other resources.</dcterms:description>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#parent">
+        <dcterms:title>Parent of Change Request</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">The related parent change requests of the subject change request. Establishes a parent/child relationship between change requests.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/cm#ChangeRequest"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#parent"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>parent</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet">
+        <dcterms:title>Tracks Change Set</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Tracks a resource that represents a set of changes on the resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/config#ChangeSet"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#tracksChangeSet"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>tracksChangeSet</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#priority">
+        <dcterms:description rdf:parseType="Literal">Priority of this change request.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/cm#Priority"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#priority"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>priority</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#contributor">
+        <dcterms:description rdf:parseType="Literal">The person(s) who are responsible for the work needed to complete the change request (reference: Dublin Core). It is likely that the target resource will be a <code>foaf:Person</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/core#Any"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>contributor</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#title">
+        <dcterms:description rdf:parseType="Literal">Title (reference: Dublin Core) or often a single line summary of the resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>title</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#shortTitle">
+        <dcterms:title>Short title</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#shortTitle"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>shortTitle</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#identifier">
+        <dcterms:description rdf:parseType="Literal">A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>identifier</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#subject">
+        <dcterms:description rdf:parseType="Literal">Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/subject"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>subject</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#inProgress">
+        <dcterms:description rdf:parseType="Literal">Whether or not the Change Request in a state indicating that active work is occurring. If oslc_cm:inProgress is true, then oslc_cm:fixed and oslc_cm:closed must also be false.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#inProgress"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>inProgress</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#created">
+        <dcterms:description rdf:parseType="Literal">Timestamp of resource creation (reference: Dublin Core).</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/created"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>created</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#state">
+        <dcterms:description rdf:parseType="Literal">Used to indicate the state of the change request. This property is often read-only, but could be changed using OSLC Actions.</dcterms:description>
+        <oslc:range rdf:resource="http://open-services.net/ns/cm#State"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#state"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>state</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement">
+        <dcterms:title>Affects Requirement</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Change request affecting a Requirement. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/rm#Requirement"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#affectsRequirement"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>affectsRequirement</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#modified">
+        <dcterms:description rdf:parseType="Literal">Timestamp of latest resource modification (reference: Dublin Core).</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+        >true</oslc:readOnly>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/modified"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>modified</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#EnhancementShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#priority"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closeDate"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#implementsRequirement">
+        <dcterms:title>Implements Requirement</dcterms:title>
+        <dcterms:description rdf:parseType="Literal">Implements associated Requirement. It is likely that the target resource will be an <code>oslc_rm:Requirement</code> but that is not necessarily the case.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/rm#Requirement"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#implementsRequirement"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>implementsRequirement</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#state"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#reviewed"/>
+    <dcterms:title>A request for new functionality.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#description"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#inProgress"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#fixed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#authorizer"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#parent"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#serviceProvider"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#title"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#verified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#approved"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#type"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#shortTitle"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#discussedBy"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#modified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#created"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#Enhancement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#identifier"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#subject"/>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#TaskShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#authorizer"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#modified"/>
+    <dcterms:title>An executable and trackable activity.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#discussedBy"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#state"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closeDate"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#title"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#priority"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement"/>
+    <dcterms:description>Used to track assigned work that to be completed within a certain time.</dcterms:description>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#Task"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#fixed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#shortTitle"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#serviceProvider"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#parent"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#created"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#reviewed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#approved"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#subject"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#inProgress"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#identifier"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#type"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#description"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
+  </oslc:ResourceShape>
+  <oslc:ResourceShapeConstraints rdf:about="http://open-services.net/ns/cm/shapes/3.0#">
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-shapes.ttl"/>
+    <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2020-09-17</dcterms:issued>
+    <dcterms:hasVersion>PS01</dcterms:hasVersion>
+    <dcterms:title>The OSLC Change Management(CM) Constraints</dcterms:title>
+    <dcterms:description rdf:parseType="Literal">Constraints on vocabulary terms defined in the OSLC Change Management (CM) namespace.</dcterms:description>
+    <rdfs:label>The OSLC Change Management(CM) Constraints</rdfs:label>
+    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
+  </oslc:ResourceShapeConstraints>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#DefectShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#fixed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#subject"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#Defect"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#serviceProvider"/>
+    <dcterms:description>Used to report defects in testing.</dcterms:description>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#reviewed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#approved"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#inProgress"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closeDate"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#description"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#modified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#state"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#verified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#type"/>
+    <dcterms:title>A software or product defect.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#discussedBy"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#title"/>
+    <oslc:property>
+      <oslc:Property rdf:about="http://open-services.net/ns/cm/shapes/3.0#severity">
+        <dcterms:description rdf:parseType="Literal">Severity or criticality of this change request.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/cm#Severity"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/cm#severity"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>severity</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#shortTitle"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#created"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#parent"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#identifier"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#priority"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#authorizer"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem"/>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#ChangeRequestShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#fixed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#modified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#approved"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#state"/>
+    <dcterms:title>A general type for records in a Change Management.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#authorizer"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#subject"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#parent"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#type"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#serviceProvider"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#priority"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#implementsRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#reviewed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#discussedBy"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#identifier"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#created"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#verified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#title"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closeDate"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#shortTitle"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#ChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#inProgress"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#description"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect"/>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/cm/shapes/3.0#ChangeNoticeShape">
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#priority"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#tracksChangeSet"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#identifier"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#severity"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#title"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#inProgress"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#fixed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#instanceShape"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#authorizer"/>
+    <oslc:describes rdf:resource="http://open-services.net/ns/cm#ChangeNotice"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closeDate"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#reviewed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#subject"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#verified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#approved"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#parent"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#discussedBy"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsRequirement"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#description"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#creator"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#created"/>
+    <dcterms:description>Represents an assignment notification of a change request. May be used also to bestow authority onto the assigned user to effect the changes.</dcterms:description>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#type"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#relatedChangeRequest"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectedByDefect"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#contributor"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#state"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#serviceProvider"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#modified"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#closed"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#shortTitle"/>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#affectsPlanItem"/>
+    <dcterms:title>A notification of a change request that requires authorization to address.</dcterms:title>
+    <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
+  </oslc:ResourceShape>
+</rdf:RDF>
