@@ -6,7 +6,17 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2020 10:00:00 +0200</lastBuildDate><atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 May 2021 18:25:00 +0200</lastBuildDate><atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change Management v3.0 approved as the first OASIS Standard from an Open Project</title>
+      <link>http://open-services.net/news/chg-mgmt-oasis-stnd/</link>
+      <pubDate>Thu, 27 May 2021 18:25:00 +0200</pubDate>
+      
+      <guid>http://open-services.net/news/chg-mgmt-oasis-stnd/</guid>
+      <description>OASIS is pleased to announce that the Call for Consent has closed and, effective 26 May 2021, OSLC Change Management Version 3.0 is an OASIS Standard according to the Call for Consent procedure. Project Administration will now undertake the final tasks of preparing and loading the standard.
+Change Management Version 3.0 was one of the first approved Project Specifications to come out of the new OASIS Open Project Program and its first OASIS Standard.</description>
+    </item>
+    
     <item>
       <title>OSLC OP publishes four new Project Specifications</title>
       <link>http://open-services.net/news/newprjspecs/</link>
