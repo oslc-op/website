@@ -119,15 +119,15 @@
 <http://open-services.net/ns/cm#affectsRequirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/cm#> .
 <http://open-services.net/ns/cm#affectsRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/cm#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_cm" .
-<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html> .
-<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-vocab.ttl> .
-<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/issued> "2020-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.ttl> .
 <http://open-services.net/ns/cm#> <http://www.w3.org/2000/01/rdf-schema#label> "The OSLC Change Management(CM) Vocabulary" .
+<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html> .
 <http://open-services.net/ns/cm#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://open-services.net/ns/cm#> <http://purl.org/dc/terms/title> "The OSLC Change Management(CM) Vocabulary" .
+<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/issued> "2021-05-27"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://open-services.net/ns/cm#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
 <http://open-services.net/ns/cm#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in the OSLC Change Management (CM) namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/hasVersion> "PS01" .
+<http://open-services.net/ns/cm#> <http://purl.org/dc/terms/hasVersion> "OS" .
 <http://open-services.net/ns/cm#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
 <http://open-services.net/ns/cm#ReviewTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A request to make a change and review the change." .
 <http://open-services.net/ns/cm#ReviewTask> <http://www.w3.org/2000/01/rdf-schema#label> "ReviewTask" .

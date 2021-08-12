@@ -419,12 +419,12 @@ specifications, which could result in multiple values for this property.</dcterm
     <oslc:property rdf:resource="http://open-services.net/ns/cm/shapes/3.0#status"/>
   </oslc:ResourceShape>
   <oslc:ResourceShapeConstraints rdf:about="http://open-services.net/ns/cm/shapes/3.0#">
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html"/>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-shapes.ttl"/>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html"/>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2020-09-17</dcterms:issued>
-    <dcterms:hasVersion>PS01</dcterms:hasVersion>
+    >2021-05-27</dcterms:issued>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-shapes.ttl"/>
     <dcterms:title>The OSLC Change Management(CM) Constraints</dcterms:title>
     <dcterms:description rdf:parseType="Literal">Constraints on vocabulary terms defined in the OSLC Change Management (CM) namespace.</dcterms:description>
     <rdfs:label>The OSLC Change Management(CM) Constraints</rdfs:label>

@@ -17,14 +17,15 @@
     "@id" : "http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints",
     "@type" : "oslc:ResourceShapeConstraints",
     "description" : "Resource Shape Constraints defined in the OSLC RM 2.1 specification.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html",
-    "issued" : "2020-09-03",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html",
+    "issued" : "2021-06-21",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-shapes.ttl",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-shapes.ttl",
     "title" : "OSLC Requirements Management (RM) Resource Shape Constraints",
-    "label" : "OSLC Requirements Management (RM) Resource Shape Constraints"
+    "label" : "OSLC Requirements Management (RM) Resource Shape Constraints",
+    "seeAlso" : "https://github.com/oslc-op/oslc-specs/blob/master/specs/rm/requirements-management-shapes.ttl"
   }, {
     "@id" : "http://open-services.net/ns/rm/shapes/2.1#affectedBy",
     "@type" : "oslc:Property",
@@ -121,7 +122,7 @@
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "dcterms:description",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element."
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. <span class=\"conformance\">It SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</span>"
   }, {
     "@id" : "http://open-services.net/ns/rm/shapes/2.1#elaboratedBy",
     "@type" : "oslc:Property",
@@ -323,7 +324,7 @@
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "oslc:shortTitle",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element."
+    "description" : "Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. <span class=\"conformance\">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span>"
   }, {
     "@id" : "http://open-services.net/ns/rm/shapes/2.1#specifiedBy",
     "@type" : "oslc:Property",
@@ -364,7 +365,7 @@
     "occurs" : "oslc:Exactly-one",
     "propertyDefinition" : "dcterms:title",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element."
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. <span class=\"conformance\">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span>"
   }, {
     "@id" : "http://open-services.net/ns/rm/shapes/2.1#trackedBy",
     "@type" : "oslc:Property",
@@ -453,37 +454,41 @@
       "@id" : "http://open-services.net/ns/core#describes",
       "@type" : "@id"
     },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "isPartOf" : {
       "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
       "@type" : "@id"
     },
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source",
-      "@type" : "@id"
-    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
-    },
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "oslc_rm" : "http://open-services.net/ns/rm#",
-    "oslc" : "http://open-services.net/ns/core#"
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/"
   }
 }
