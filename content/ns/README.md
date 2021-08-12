@@ -4,13 +4,13 @@
 - Asset: XML
 - Automation: XML
 - LDBP: XML
-- CM: XML
+- CM: Turtle
 - Config: Turtle
-- Core: Turtl
+- Core: Turtle
 - EMS: XML
 - Perfmon: XML
 - QM: XML
-- RM: XML
+- RM: Turtle
 
 # Converting RDF files
 
