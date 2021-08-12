@@ -23,14 +23,14 @@
 <http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Expresses an elaboration relationship between entities, where the object entity elaborates the subject entity. For example, a requirement is elaborated by a model element." .
 <http://open-services.net/ns/rm#elaboratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/oslc-op/oslc-specs/blob/master/specs/rm/requirements-management-vocab.ttl> .
-<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html> .
-<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/issued> "2020-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-vocab.ttl> .
 <http://open-services.net/ns/rm#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-vocab.ttl> .
-<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/hasVersion> "PS01" .
 <http://open-services.net/ns/rm#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/issued> "2021-06-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html> .
 <http://open-services.net/ns/rm#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
 <http://open-services.net/ns/rm#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_rm" .
+<http://open-services.net/ns/rm#> <http://purl.org/dc/terms/hasVersion> "OS" .
 <http://open-services.net/ns/rm#> <http://purl.org/dc/terms/title> "OSLC Requirements Management (RM) Vocabulary" .
 <http://open-services.net/ns/rm#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Requirements Management (RM) Vocabulary" .
 <http://open-services.net/ns/rm#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in the OSLC Requirements Management (RM) namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .

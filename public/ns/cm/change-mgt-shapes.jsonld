@@ -3,12 +3,12 @@
     "@id" : "http://open-services.net/ns/cm/shapes/3.0#",
     "@type" : "oslc:ResourceShapeConstraints",
     "description" : "Constraints on vocabulary terms defined in the OSLC Change Management (CM) namespace.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html",
-    "issued" : "2020-09-17",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html",
+    "issued" : "2021-05-27",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-shapes.ttl",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-shapes.ttl",
     "title" : "The OSLC Change Management(CM) Constraints",
     "label" : "The OSLC Change Management(CM) Constraints"
   }, {
@@ -407,9 +407,8 @@
       "@id" : "http://purl.org/dc/terms/isPartOf",
       "@type" : "@id"
     },
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source",
-      "@type" : "@id"
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
@@ -419,8 +418,9 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -430,14 +430,14 @@
       "@type" : "@id"
     },
     "@vocab" : "http://open-services.net/ns/cm/shapes/3.0#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "oslc_config" : "http://open-services.net/ns/config#",
-    "foaf" : "http://xmlns.com/foaf/0.1/",
     "oslc_rm" : "http://open-services.net/ns/rm#",
-    "oslc_cm" : "http://open-services.net/ns/cm#",
-    "oslc" : "http://open-services.net/ns/core#"
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "oslc_cm" : "http://open-services.net/ns/cm#"
   }
 }
