@@ -145,7 +145,7 @@
 <http://open-services.net/ns/rm/shapes/2.1#elaborates> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#AnyResource> .
 <http://open-services.net/ns/rm/shapes/2.1#elaborates> <http://purl.org/dc/terms/description> "The object is elaborated by the subject."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/rm/shapes/2.1#title> <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/rm/shapes/2.1#title> <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/rm/shapes/2.1#title> <http://purl.org/dc/terms/description> "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. <span class=\"conformance\">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/rm/shapes/2.1#title> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
 <http://open-services.net/ns/rm/shapes/2.1#title> <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
 <http://open-services.net/ns/rm/shapes/2.1#title> <http://open-services.net/ns/core#name> "title" .
@@ -227,7 +227,7 @@
 <http://open-services.net/ns/rm/shapes/2.1#decomposedBy> <http://open-services.net/ns/core#name> "decomposedBy" .
 <http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core#shortTitle> .
-<http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://purl.org/dc/terms/description> "Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://purl.org/dc/terms/description> "Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. <span class=\"conformance\">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
 <http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://open-services.net/ns/core#name> "shortTitle" .
 <http://open-services.net/ns/rm/shapes/2.1#shortTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
@@ -289,15 +289,16 @@
 <http://open-services.net/ns/rm/shapes/2.1#affectedBy> <http://open-services.net/ns/core#name> "affectedBy" .
 <http://open-services.net/ns/rm/shapes/2.1#affectedBy> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShapeConstraints> .
+<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-shapes.ttl> .
+<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/issued> "2021-06-21"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/description> "Resource Shape Constraints defined in the OSLC RM 2.1 specification."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/issued> "2020-09-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/hasVersion> "OS" .
+<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html> .
+<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/oslc-op/oslc-specs/blob/master/specs/rm/requirements-management-shapes.ttl> .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/title> "OSLC Requirements Management (RM) Resource Shape Constraints" .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
-<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html> .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
-<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-shapes.ttl> .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Requirements Management (RM) Resource Shape Constraints" .
-<http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints> <http://purl.org/dc/terms/hasVersion> "PS01" .
 <http://open-services.net/ns/rm/shapes/2.1#rc-specifiedBy> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core#AnyResource> .
 <http://open-services.net/ns/rm/shapes/2.1#rc-specifiedBy> <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
 <http://open-services.net/ns/rm/shapes/2.1#rc-specifiedBy> <http://purl.org/dc/terms/title> "" .
@@ -368,7 +369,7 @@
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShape> <http://purl.org/dc/terms/title> "Statement of need." .
 <http://open-services.net/ns/rm/shapes/2.1#RequirementShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/rm#Requirement> .
 <http://open-services.net/ns/rm/shapes/2.1#description> <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/rm/shapes/2.1#description> <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/rm/shapes/2.1#description> <http://purl.org/dc/terms/description> "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. <span class=\"conformance\">It SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</span>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/rm/shapes/2.1#description> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
 <http://open-services.net/ns/rm/shapes/2.1#description> <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
 <http://open-services.net/ns/rm/shapes/2.1#description> <http://open-services.net/ns/core#name> "description" .

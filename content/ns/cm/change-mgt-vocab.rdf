@@ -8,15 +8,15 @@
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://open-services.net/ns/cm#">
     <vann:preferredNamespacePrefix>oslc_cm</vann:preferredNamespacePrefix>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html"/>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-vocab.ttl"/>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2020-09-17</dcterms:issued>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.ttl"/>
     <rdfs:label>The OSLC Change Management(CM) Vocabulary</rdfs:label>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html"/>
     <dcterms:title>The OSLC Change Management(CM) Vocabulary</dcterms:title>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2021-05-27</dcterms:issued>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
     <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC Change Management (CM) namespace.</dcterms:description>
-    <dcterms:hasVersion>PS01</dcterms:hasVersion>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://open-services.net/ns/cm#ChangeNotice">

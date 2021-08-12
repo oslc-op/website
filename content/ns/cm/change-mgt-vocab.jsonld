@@ -3,12 +3,12 @@
     "@id" : "http://open-services.net/ns/cm#",
     "@type" : "owl:Ontology",
     "description" : "All vocabulary URIs defined in the OSLC Change Management (CM) namespace.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-spec.html",
-    "issued" : "2020-09-17",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html",
+    "issued" : "2021-05-27",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/ps01/change-mgt-vocab.ttl",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.ttl",
     "title" : "The OSLC Change Management(CM) Vocabulary",
     "preferredNamespacePrefix" : "oslc_cm",
     "label" : "The OSLC Change Management(CM) Vocabulary"
@@ -415,20 +415,20 @@
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
-    "isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf",
-      "@type" : "@id"
-    },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
     },
-    "issued" : {
-      "@id" : "http://purl.org/dc/terms/issued",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
     },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
@@ -446,9 +446,9 @@
       "@type" : "@id"
     },
     "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dcterms" : "http://purl.org/dc/terms/",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "vann" : "http://purl.org/vocab/vann/",
     "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
     "oslc_cm" : "http://open-services.net/ns/cm#"
