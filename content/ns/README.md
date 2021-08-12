@@ -6,7 +6,7 @@
 - LDBP: XML
 - CM: Turtle
 - Config: Turtle
-- Core: Turtl
+- Core: Turtle
 - EMS: XML
 - Perfmon: XML
 - QM: XML
