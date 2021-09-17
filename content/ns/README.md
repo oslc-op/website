@@ -11,6 +11,7 @@
 - Perfmon: XML
 - QM: XML
 - RM: Turtle
+- TRS: Turtle
 
 # Converting RDF files
 
