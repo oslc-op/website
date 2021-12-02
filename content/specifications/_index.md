@@ -33,7 +33,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 | [Configuration Management 1.0 PSD 01](https://docs.oasis-open-projects.org/oslc-op/config/v1.0/psd01/oslc-config-mgt.html) | **OSLC Open Project** | OSLC Configuration Management defines an RDF vocabulary and a set of REST APIs for managing versions and configurations of linked data resources from multiple domains. |
 | [Tracked Resource Set 3.0 PSD01](https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/psd01/tracked-resource-set.html) |  **OSLC Open Project**  | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Tracked Resource Set 2.0 Finalized Draft](https://archive.open-services.net/wiki/core/TrackedResourceSet-2.0/) | OSLC Core WG (closed) | Allows servers to expose a set of resources whose state can be tracked by clients. |
-| [Architecture Management 2.1 PSD01](https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Architecture Management domain. |
+| [Architecture Management 2.1 PS01](https://docs.oasis-open-projects.org/oslc-op/am/v3.0/ps01/architecture-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Architecture Management domain. |
 | [Quality Management 2.1 PS01](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Quality Management 2.0 Final](https://archive.open-services.net/bin/view/Main/QmSpecificationV2.html) | OSLC Quality Management WG (closed) | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Asset Management 2.0 Final](https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html) | OSLC Asset Management WG (closed) | Defines the OSLC services and vocabulary for the Asset Management domain. |
@@ -49,6 +49,7 @@ See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Architecture Management 2.1 PSD01](https://docs.oasis-open-projects.org/oslc-op/am/v3.0/psd01/architecture-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Architecture Management domain. |
 | [Query 3.0 PS01](https://docs.oasis-open-projects.org/oslc-op/query/v3.0/ps01/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. |
 | [Core 3.0 PS02](https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps02/oslc-core.html) | **OSLC Open Project** | Latest published revision of the OSLC 3 specification. |
 | [Core 2.0 Final](https://archive.open-services.net/bin/view/Main/OslcCoreSpecification.html) | OSLC Core WG (closed) | A collection of specifications that defines the basic patterns, protocols and capabilities of OSLC clients and servers. |
