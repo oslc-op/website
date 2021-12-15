@@ -23,7 +23,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                             |
 | ----------------------: | :---------------------------------|
-| **Deployed vocabulary** | Core 3.0 Final                    |
+| **Deployed vocabulary** | Core 3.0 OASIS Standard           |
 | **Publication date**    | 26 August 2021                    |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc`                             |
@@ -31,13 +31,13 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **Turtle prefix**       |`@prefix oslc: <http://open-services.net/ns/core#>`|
 | **SPARQL prefix**       |`PREFIX oslc: <http://open-services.net/ns/core#>` |
 | **OSLC Query prefix**   |`oslc%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fcore%23` |
-| **Specified Vocabulary**| [Core 3.0 Final vocabulary][core]     |
+| **Specified Vocabulary**| [Core 3.0 OS vocabulary][core]     |
 
 ### OSLC Change Management
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | CM 3.0 Final                                   |
+| **Deployed vocabulary** | CM 3.0 OASIS Standard                          |
 | **Publication date**    | 26 May 2021                                    |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**     |
 | **Recommended prefix**  |`oslc_cm`                                           |
@@ -45,13 +45,13 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **Turtle prefix**       |`@prefix oslc_cm: <http://open-services.net/ns/cm#>`|
 | **SPARQL prefix**       |`PREFIX oslc_cm: <http://open-services.net/ns/cm#>` |
 | **OSLC Query prefix**   |`oslc_cm%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fcm%23` |
-| **Specified Vocabulary**| [CM 3.0 Final vocabulary][cm]                          |
+| **Specified Vocabulary**| [CM 3.0 OS vocabulary][cm]                          |
 
 ### OSLC Requirements Management
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | RM 2.1 Final                                   |
+| **Deployed vocabulary** | RM 2.1 OASIS Standard                          |
 | **Publication date**    | 21 June 2021                                   |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc_rm`                                           |
@@ -59,13 +59,13 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **Turtle prefix**       |`@prefix oslc_rm: <http://open-services.net/ns/rm#>`|
 | **SPARQL prefix**       |`PREFIX oslc_rm: <http://open-services.net/ns/rm#>` |
 | **OSLC Query prefix**   |`oslc_rm%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Frm%23` |
-| **Specified Vocabulary**| [RM 2.1 Final vocabulary][rm]                          |
+| **Specified Vocabulary**| [RM 2.1 OS vocabulary][rm]                          |
 
 ### OSLC Quality Management
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | QM 2.1 PS01                                    |
+| **Deployed vocabulary** | QM 2.1 Project Specification 01                |
 | **Publication date**    | 27 August 2020                                 |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc_qm`                                           |
@@ -79,7 +79,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | Config 1.0 PSD01                               |
+| **Deployed vocabulary** | Config 1.0 Project Specification Draft 01      |
 | **Publication date**    | 2 September 2021                               |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>** |
 | **Recommended prefix**  |`oslc_config`                                   |
@@ -93,7 +93,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | AM 3.0 PS01                                    |
+| **Deployed vocabulary** | AM 3.0 Project Specification 01                |
 | **Publication date**    | 30 September 2021                              |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc_am`                                   |
