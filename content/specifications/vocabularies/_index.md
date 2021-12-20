@@ -160,7 +160,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 [rm]: https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-vocab.html
 [qm]: https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-vocab.html
 [config]: https://docs.oasis-open-projects.org/oslc-op/config/v1.0/psd01/config-vocab.html
-[am]: https://docs.oasis-open-projects.org/oslc-op/am/v3.0/ps01/architecture-management-shapes.html
+[am]: https://docs.oasis-open-projects.org/oslc-op/am/v3.0/ps01/architecture-management-vocab.html
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
 [auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
 
