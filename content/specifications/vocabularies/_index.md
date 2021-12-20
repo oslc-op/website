@@ -155,10 +155,10 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **See**                 | [https://www.w3.org/TR/ldp/](https://www.w3.org/TR/ldp/) |
 
 
-[core]: https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/core-shapes.html
-[cm]: https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-shapes.html
-[rm]: https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-shapes.html
-[qm]: https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-shapes.html
+[core]: https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/core-vocab.html
+[cm]: https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.html
+[rm]: https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-vocab.html
+[qm]: https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-vocab.html
 [config]: https://docs.oasis-open-projects.org/oslc-op/config/v1.0/psd01/config-vocab.html
 [am]: https://docs.oasis-open-projects.org/oslc-op/am/v3.0/ps01/architecture-management-shapes.html
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
