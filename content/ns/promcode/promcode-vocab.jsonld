@@ -1,0 +1,340 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/promcode#",
+    "@type" : "owl:Ontology",
+    "description" : "All vocabulary URIs defined in The OSLC PROMCODE namespace.",
+    "hasVersion" : "CSD01",
+    "isPartOf" : "https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html",
+    "issued" : "2021-03-23",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-vocab.ttl",
+    "title" : "The OASIS OSLC Project Management of Contracted Delivery (OSLC PROMCODE) Vocabulary",
+    "preferredNamespacePrefix" : "oslc_promcode",
+    "label" : "The OSLC PROMCODE Vocabulary"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Artifact",
+    "@type" : "rdfs:Class",
+    "comment" : "Artifact is a subclass of ManagedItem class. An Artifact resource is a work product that is produced in a project such as design documents, source code, test report, and so on.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Artifact",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Issue",
+    "@type" : "rdfs:Class",
+    "comment" : "Issue is a subclass of ManagedItem. An Issue resource represents a situation that must be resolved in order to meet the objectives\r\nof a project. Issue resources shared between an acquirer and a supplier must be managed.\r\nInternal issues which must be resolved by a supplier alone may not be shared.\r\nFailure to resolve the situation may result in negative\r\nconsequences for the project, such as a schedule delay.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Issue",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#IssueCollection",
+    "@type" : "rdfs:Class",
+    "comment" : "IssueCollection is a subclass of ManagedItemCollection. An IssueCollection resource is a collection of Issue resources. Once an Issue resource is collected, it continues to be included in the collection regardless of its state value.\r\nDepending on the situation, a collection may collect all Issues resources to be shared in the project on a specific date, or it may collect only certain Issues resources of some categories, such as certain status, priority, those related to a ScopeItem resource, and so on.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "IssueCollection",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItemCollection"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#ManagedItem",
+    "@type" : "rdfs:Class",
+    "comment" : "ManagedItem is a super class which abstracts its five concrete subclasses, that are, ScopeItem, WorkItem, Artifact, Issue, and Risk.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#ManagedItemCollection",
+    "@type" : "rdfs:Class",
+    "comment" : "A ManagedItemCollection resource is a collection of ManagedItem resources of a specific interest. \r\nA resource in the collection can be a resource of any subclass of ManagedItems, that is, ScopeItem, WorkItem, Artifact, Issue, or Risk.  \r\nManagedItemCollection has four concrete subclasses which are Plan, Report, IssueCollection, and RiskCollection. \r\nA ManagedItemCollection resource is linked to a Project resource it belongs to. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "ManagedItemCollection"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Measure",
+    "@type" : "rdfs:Class",
+    "comment" : "A Measure resource represents an observation of some measurable aspect of an Artifact. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Measure"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Measurement",
+    "@type" : "rdfs:Class",
+    "comment" : "A Measurement resource has a link to an Artifact resource and a link to measure resources that represent actual measures of the Artifact. It also has the date on which the measures are taken.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Measurement"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Plan",
+    "@type" : "rdfs:Class",
+    "comment" : "A Plan resource is a collection of ScopeItem resources, WorkItem resources and Artifact resources with associated Measure resources. A Plan resource represents a project plan that is agreed on between an acquirer and a supplier at project initiation.\r\n\tPlan is a subclass of ManagedItemCollection. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Plan",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItemCollection"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Project",
+    "@type" : "rdfs:Class",
+    "comment" : "A Project resource represents the information on the project including the name of the project, the descriptions of the project, and start and end dates, both planned and actual, of the project.\r\nA Project resource also specifies the metric and the unit of size of ScopeItem resources, each of which is unique in the project. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Project"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Report",
+    "@type" : "rdfs:Class",
+    "comment" : "A Report resource represents a project status information reported by a supplier to an acquirer at agreed timing as a project report. \r\nIt is a ManagedItemCollection resource that collects ScopeItem resources, WorkItem resources, and Artifact resources whose properties are reported in the report.\r\nIt is also linked to Measurement resources that represent the quality data of the Artifact resources collected in the ManagedItemCollection resource. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Report",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItemCollection"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#Risk",
+    "@type" : "rdfs:Class",
+    "comment" : "Risk is a subclass of ManagedItem. A Risk resource represents a potential problem that must be controlled in order to meet the objectives of a project. Shared risks between an acquirer and a supplier must be managed.\r\nInternal risks which must be resolved by a supplier alone may not be shared.\r\nFailure to control the potential problem may result in negative \r\nconsequences for the project, such as a schedule delay.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "Risk",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#RiskCollection",
+    "@type" : "rdfs:Class",
+    "comment" : "RiskCollection is a subclass of ManagedItemCollection. A RiskCollection resource is a collection, or a snapshot of shared risks.\r\nShared risks of resolved status continue to be included in the collection.\r\nOnly Risk resources can be collected in a RiskCollection resource.\r\nExamples are a collection of all Risk resources of the project on a specific date, a collection of Risk resources of some category, such as certain status, certain priority, related ScopeItem, and so on.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "RiskCollection",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItemCollection"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#ScopeItem",
+    "@type" : "rdfs:Class",
+    "comment" : "ScopeItem is a subclass of ManagedItem. A ScopeItem resource defines the scope of the work to be included in a project. \r\nIt defines the binding between an acquirer and a supplier for the project.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "ScopeItem",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#WorkItem",
+    "@type" : "rdfs:Class",
+    "comment" : "WorkItem is a subclass of ManagedItem. A WorkItem resource describes the work to be performed in a contract. \r\nIt defines the work to be performed to create a (part of) content described by a ScopeItem. \r\nThe work may typically include cost, schedule, and resource requirements.\r\nThe set of all WorkItem resources in a project might form a work breakdown structure.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "WorkItem",
+    "subClassOf" : "http://open-services.net/ns/promcode#ManagedItem"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#actualEndDate",
+    "@type" : "rdf:Property",
+    "comment" : "actualEndDate is either a property of a WorkItem resource or a Project resource. It is the actual end date of the work described by the WorkItem resource or of the project described by the Project resource. Its value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "actualEndDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#actualSize",
+    "@type" : "rdf:Property",
+    "comment" : "actualSize is a property actual development size of the scope described by the ScopeItem resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "actualSize"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#actualStartDate",
+    "@type" : "rdf:Property",
+    "comment" : "actualStartDate is  either a property of a WorkItem resource or a Project resource.\r\nIt is the actual start date of the work described by the WorkItem resource or of the project described by the Project resource.\r\nIts value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "actualStartDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#belongsTo",
+    "@type" : "rdf:Property",
+    "comment" : "belongsTo is a relation between ManagedItemCollections and a Project resource. \r\nAn acquirer and a supplier may operate multiple projects in parallel. \r\nThis relation is used to identify which collection belongs to which project.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "belongsTo"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#collects",
+    "@type" : "rdf:Property",
+    "comment" : "collects is a relation between a ManagedItemCollection resource and ManagedItem resources. \r\nA Plan resource and a Report resource collect any combination of resources of ScopeItem, WorkItem and Artifact.\r\nAn IssueCollection resource collects only Issue resources and a RiskCollection collects only Risk resources.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "collects"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#correspondsTo",
+    "@type" : "rdf:Property",
+    "comment" : "correspondsTo is a relation between a Plan resource and a Report resource. \r\n\tA Report resource has at most one correspondsTo relation to a Plan resource.\r\nIf a new Plan resource is created, a Report resource may need to be related to the new Plan resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "correspondsTo"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#identifiedBy",
+    "@type" : "rdf:Property",
+    "comment" : "identifiedBy is a relation between a Risk resource and ManagedItem resources.\r\nA Risk may be identified by one or more ManagedItem resources.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "identifiedBy"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#identifiedDate",
+    "@type" : "rdf:Property",
+    "comment" : "identifiedDate is an optional property of a Risk resource.\r\nIt is the identified date of the Risk resource.\r\nIts value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "identifiedDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#includes",
+    "@type" : "rdf:Property",
+    "comment" : "includes is a relation between a Report resource and Measurement resources. A Measurement resource linked from the Report resource measures a quality value of the Artifact resource in the collection of the ManagedItem resources of the Report resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "includes"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#isPartOf",
+    "@type" : "rdf:Property",
+    "comment" : "isPartOf is a relation between a resource of type Artifact, ScopeItem or WorkItem and other resources of the same type. \r\nIt represents the parent and child relationship of ManagedItem resources of the same type.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "isPartOf"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#measures",
+    "@type" : "rdf:Property",
+    "comment" : "measures is a relation between a Measurement resource and an Artifact resource.\r\nA Measurement measures an Artifact.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "measures"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#metricOfMeasure",
+    "@type" : "rdf:Property",
+    "comment" : "metricOfMeasure is a relation between a Measure resource and a Metric resource.\r\nIt defines a metric of Measure. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "metricOfMeasure"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#metricOfScopeItemSize",
+    "@type" : "rdf:Property",
+    "comment" : "metricOfScopeItemSize is a relation between a Project resource and a Metric resource.\r\nIt defines a metric of the size which all the ScopeItem resources in the project refer to. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "metricOfScopeItemSize"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#observes",
+    "@type" : "rdf:Property",
+    "comment" : "observes is a relation between a Measurement resource and a Measure resource.\r\nOne Measurement observes zero or many Measures.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "observes"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#plannedEndDate",
+    "@type" : "rdf:Property",
+    "comment" : "plannedEndDate is either a property of a WorkItem resource or a Project resource.\r\nIt is the planned end date of the work described by the WorkItem resource or of the project described by the Project resource.\r\nIts value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "plannedEndDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#plannedSize",
+    "@type" : "rdf:Property",
+    "comment" : "plannedSize is a property on the estimated development size of the scope described by a ScopeItem resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "plannedSize"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#plannedStartDate",
+    "@type" : "rdf:Property",
+    "comment" : "plannedStartDate is either a property of a WorkItem resource or of a Project resource.\r\nIt is the planned start date of the work described by the WorkItem resource or of the project described by the Project resource.\r\nIts value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "plannedStartDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#producedFor",
+    "@type" : "rdf:Property",
+    "comment" : "producedFor is a relation between an Artifact resource and a ScopeItem resource or a WorkItem resource.\r\nArtifact resources are produced as deliverables of the scope defined by a ScopeItem resource or the result of implementing the work described by a WorkItem resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "producedFor"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#raisedBy",
+    "@type" : "rdf:Property",
+    "comment" : "raisedBy is a relation between an Issue resource and ManagedItem resources.\r\nAn Issue may be raised by one or more ManagedItem resources.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "raisedBy"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#raisedDate",
+    "@type" : "rdf:Property",
+    "comment" : "raisedDate is an optional property of an Issue resource.\r\nIt is the raised date of the Issue resource.\r\nIts value is a dateTime.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "raisedDate"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#representedBy",
+    "@type" : "rdf:Property",
+    "comment" : "representedBy is a relation between a WorkItem resource and a person in charge.\r\nA work item may be represented by a person who acts as the contact for the work item.\r\nThis person is responsible for the progress of the work described by the WorkItem resource.\r\nThis person may or may not actually do the required work.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "representedBy"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#requiredBy",
+    "@type" : "rdf:Property",
+    "comment" : "requiredBy is a relation either between a WorkItem resource and an Artifact resource, or between a WorkItem resource and a ScopeItem resource.\r\nA WorkItem resource, such as reviewing the design, is required for producing an Artifact resource such as a review record.\r\nA WorkItem resource may also be required to implement the scope described by a ScopeItem resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "requiredBy"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#sequenceNumber",
+    "@type" : "rdf:Property",
+    "comment" : "sequenceNumber is a unique number which represents the position of the resource in a sequential order of all the resources of each subclass of ManagedItem.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "sequenceNumber"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#stateOfIssue",
+    "@type" : "rdf:Property",
+    "comment" : "stateOfIssue is a relation between an Issue resource and a State resource.\r\nThe State resource defines a set of values which represent the state of an issue resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "stateOfIssue"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#stateOfRisk",
+    "@type" : "rdf:Property",
+    "comment" : "stateOfRisk is a relation between a Risk resource and a State resource.\r\nThe State resource defines a set of values which represent the state of a Risk resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "stateOfRisk"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#targets",
+    "@type" : "rdf:Property",
+    "comment" : "targets is a relation between an Artifact resource and a Measure resource. The Measure resource represents a target goal of quality measure of the Artificat resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "targets"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#unitOfMeasure",
+    "@type" : "rdf:Property",
+    "comment" : "unitOfMeasure is a relation between a Measure resource and a Unit resource. \r\nIt is a unit of volume. \r\nIf an acquirer sums up the same type of measures in a report, the value should be converted according to the unit.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "unitOfMeasure"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#unitOfScopeItemSize",
+    "@type" : "rdf:Property",
+    "comment" : "unitOfScopeItemSize is a relation between a Project resource and a Unit resource. \r\nIt defines a unit of size which all the ScopeItem resources refer to in the project. ",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "unitOfScopeItemSize"
+  }, {
+    "@id" : "http://open-services.net/ns/promcode#valueOfMeasure",
+    "@type" : "rdf:Property",
+    "comment" : "valueOfMeasure is a property that represents a value for a Measure resource.",
+    "isDefinedBy" : "http://open-services.net/ns/promcode#",
+    "label" : "valueOfMeasure"
+  } ],
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "@vocab" : "http://open-services.net/ns/promcode#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}
