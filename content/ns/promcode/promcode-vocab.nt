@@ -147,7 +147,7 @@
 <http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/isPartOf> <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> .
 <http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/issued> "2021-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in The OSLC PROMCODE namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/hasVersion> "CSD01" .
+<http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/hasVersion> "CS02" .
 <http://open-services.net/ns/promcode#> <http://www.w3.org/2000/01/rdf-schema#label> "The OSLC PROMCODE Vocabulary" .
 <http://open-services.net/ns/promcode#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_promcode" .
 <http://open-services.net/ns/promcode#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .

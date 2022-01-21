@@ -3,7 +3,7 @@
     "@id" : "http://open-services.net/ns/promcode#",
     "@type" : "owl:Ontology",
     "description" : "All vocabulary URIs defined in The OSLC PROMCODE namespace.",
-    "hasVersion" : "CSD01",
+    "hasVersion" : "CS02",
     "isPartOf" : "https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html",
     "issued" : "2021-03-23",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",

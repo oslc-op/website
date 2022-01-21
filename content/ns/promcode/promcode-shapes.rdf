@@ -14,20 +14,27 @@
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
     <dcterms:source rdf:resource="https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl"/>
     <rdfs:label>OSLC PROMCODE Constraints</rdfs:label>
-    <dcterms:hasVersion>CSD01</dcterms:hasVersion>
+    <dcterms:hasVersion>CS02</dcterms:hasVersion>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
     <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC PROMCODE namespace.</dcterms:description>
   </oslc:ResourceShapeConstraints>
   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#RiskCollection">
     <oslc:property>
       <oslc:Property>
-        <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
-        <oslc:name>type</oslc:name>
+        <dcterms:description>A date on which this &lt;code&gt;RiskCollection&lt;/code&gt; resource collects member resources.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/date"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>date</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A title string of this &lt;code&gt;RiskCollection&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>title</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -38,13 +45,24 @@
           <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Project">
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>&lt;code&gt;actualEndDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource that describes actual end date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+                <dcterms:description>&lt;code&gt;plannedEndDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource. It is the planned end date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
                 <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualEndDate"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedEndDate"/>
                 <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>actualEndDate</oslc:name>
+                <oslc:name>plannedEndDate</oslc:name>
               </oslc:Property>
             </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;metricOfScopeItemSize&lt;/code&gt; is a property that describes a metric of properties of &lt;code&gt;plannedSize.&lt;/code&gt; and &lt;code&gt;actualSize&lt;/code&gt; of &lt;code&gt;ScopeItem&lt;/code&gt;.  The value can be any resource, but it is expected to have information on the desired metric for all the &lt;code&gt;ScopeItem&lt;/code&gt; resources of the project.</dcterms:description>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#metricOfScopeItemSize"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>metricOfScopeItemSize</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Project</code> resource.</dcterms:title>
             <oslc:property>
               <oslc:Property>
                 <dcterms:description>A title string for a &lt;code&gt;Project&lt;/code&gt; resource.</dcterms:description>
@@ -56,12 +74,11 @@
             </oslc:property>
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>&lt;code&gt;unitOfScopeItemSize&lt;/code&gt; is a property that describes a unit of size of properties of &lt;code&gt;plannedSize.&lt;/code&gt; and &lt;code&gt;actualSize&lt;/code&gt; of &lt;code&gt;ScopeItem&lt;/code&gt;.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the &lt;code&gt;ScopeItem&lt;/code&gt; resources in the project. </dcterms:description>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#unitOfScopeItemSize"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>unitOfScopeItemSize</oslc:name>
+                <dcterms:description>A unique identifier for a &lt;code&gt;Project&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>identifier</oslc:name>
               </oslc:Property>
             </oslc:property>
             <oslc:property>
@@ -73,24 +90,15 @@
                 <oslc:name>source</oslc:name>
               </oslc:Property>
             </oslc:property>
-            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Project</code> resource.</dcterms:title>
+            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Project"/>
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>&lt;code&gt;metricOfScopeItemSize&lt;/code&gt; is a property that describes a metric of properties of &lt;code&gt;plannedSize.&lt;/code&gt; and &lt;code&gt;actualSize&lt;/code&gt; of &lt;code&gt;ScopeItem&lt;/code&gt;.  The value can be any resource, but it is expected to have information on the desired metric for all the &lt;code&gt;ScopeItem&lt;/code&gt; resources of the project.</dcterms:description>
+                <dcterms:description>&lt;code&gt;unitOfScopeItemSize&lt;/code&gt; is a property that describes a unit of size of properties of &lt;code&gt;plannedSize.&lt;/code&gt; and &lt;code&gt;actualSize&lt;/code&gt; of &lt;code&gt;ScopeItem&lt;/code&gt;.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the &lt;code&gt;ScopeItem&lt;/code&gt; resources in the project. </dcterms:description>
                 <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
                 <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#metricOfScopeItemSize"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#unitOfScopeItemSize"/>
                 <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>metricOfScopeItemSize</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;plannedStartDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource. It is the planned start date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedStartDate"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>plannedStartDate</oslc:name>
+                <oslc:name>unitOfScopeItemSize</oslc:name>
               </oslc:Property>
             </oslc:property>
             <oslc:property>
@@ -104,14 +112,22 @@
             </oslc:property>
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>A unique identifier for a &lt;code&gt;Project&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>identifier</oslc:name>
+                <dcterms:description>&lt;code&gt;actualEndDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource that describes actual end date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualEndDate"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>actualEndDate</oslc:name>
               </oslc:Property>
             </oslc:property>
-            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Project"/>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;plannedStartDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource. It is the planned start date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedStartDate"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>plannedStartDate</oslc:name>
+              </oslc:Property>
+            </oslc:property>
             <oslc:property>
               <oslc:Property>
                 <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource to help a human understand the project.</dcterms:description>
@@ -132,15 +148,6 @@
                 <oslc:name>type</oslc:name>
               </oslc:Property>
             </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;plannedEndDate&lt;/code&gt; is a property of a &lt;code&gt;Project&lt;/code&gt; resource. It is the planned end date of the project. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedEndDate"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>plannedEndDate</oslc:name>
-              </oslc:Property>
-            </oslc:property>
           </oslc:ResourceShape>
         </oslc:valueShape>
         <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
@@ -152,92 +159,47 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
+        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>description</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
+        <oslc:name>type</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#RiskCollection"/>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A unique identifier for a &lt;code&gt;RiskCollection&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>identifier</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>RiskCollection</code> resource.</dcterms:title>
+    <oslc:property>
+      <oslc:Property>
         <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between a &lt;code&gt;RiskCollection&lt;/code&gt; resource and a &lt;code&gt;Risk&lt;/code&gt; resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
         <oslc:valueShape>
           <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Risk">
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>&lt;code&gt;identifiedDate&lt;/code&gt; is the date on which the risk was identified.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#identifiedDate"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>identifiedDate</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A title string for a &lt;code&gt;Risk&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>title</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Risk"/>
-            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Risk</code> resource.</dcterms:title>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;stateOfRisk&lt;/code&gt; is a property that defines the state of a &lt;code&gt;Risk&lt;/code&gt; resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk.</dcterms:description>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
                 <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#stateOfRisk"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>stateOfRisk</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;Risk&lt;/code&gt; resources of the project.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>sequenceNumber</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A string that identifies the &lt;code&gt;Risk&lt;/code&gt; resource that is a source of this &lt;code&gt;Risk&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>source</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human to understand the resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>description</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A unique identifier for a &lt;code&gt;Risk&lt;/code&gt; resource. </dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>identifier</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-                <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-                <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
-                <oslc:name>type</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <oslc:name>identifiedBy</oslc:name>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
                 <dcterms:description>&lt;code&gt;identifiedBy&lt;/code&gt; is a relation between a &lt;code&gt;Risk&lt;/code&gt; resource and a resource of type &lt;code&gt;ScopeItem&lt;/code&gt;, &lt;code&gt;WorkItem&lt;/code&gt;, &lt;code&gt;Artifact&lt;/code&gt;, &lt;code&gt;Risk&lt;/code&gt; or &lt;code&gt;Issue&lt;/code&gt;. A &lt;code&gt;Risk&lt;/code&gt; resource may be identified by one or more resources.</dcterms:description>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
                 <oslc:valueShape>
                   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem">
                     <dcterms:title rdf:parseType="Literal">Shape resource for <code>ManagedItem</code>.</dcterms:title>
@@ -301,14 +263,90 @@
                     <oslc:describes rdf:resource="http://open-services.net/ns/promcode#ManagedItem"/>
                   </oslc:ResourceShape>
                 </oslc:valueShape>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#identifiedBy"/>
+                <oslc:name>identifiedBy</oslc:name>
                 <oslc:range rdf:resource="http://open-services.net/ns/promcode#Issue"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#identifiedBy"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
                 <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A string that identifies the &lt;code&gt;Risk&lt;/code&gt; resource that is a source of this &lt;code&gt;Risk&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>source</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+                <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+                <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
+                <oslc:name>type</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Risk"/>
+            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Risk</code> resource.</dcterms:title>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;Risk&lt;/code&gt; resources of the project.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>sequenceNumber</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human to understand the resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>description</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;stateOfRisk&lt;/code&gt; is a property that defines the state of a &lt;code&gt;Risk&lt;/code&gt; resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk.</dcterms:description>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
                 <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#stateOfRisk"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>stateOfRisk</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;identifiedDate&lt;/code&gt; is the date on which the risk was identified.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#identifiedDate"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>identifiedDate</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A title string for a &lt;code&gt;Risk&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>title</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A unique identifier for a &lt;code&gt;Risk&lt;/code&gt; resource. </dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>identifier</oslc:name>
               </oslc:Property>
             </oslc:property>
           </oslc:ResourceShape>
@@ -322,49 +360,11 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>description</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
         <dcterms:description>A string that identifies the &lt;code&gt;RiskCollection&lt;/code&gt; resource that is a source of this &lt;code&gt;RiskCollection&lt;/code&gt; resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
         <oslc:name>source</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A title string of this &lt;code&gt;RiskCollection&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>title</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#RiskCollection"/>
-    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>RiskCollection</code> resource.</dcterms:title>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A date on which this &lt;code&gt;RiskCollection&lt;/code&gt; resource collects member resources.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/date"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>date</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A unique identifier for a &lt;code&gt;RiskCollection&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>identifier</oslc:name>
       </oslc:Property>
     </oslc:property>
   </oslc:ResourceShape>
@@ -382,6 +382,18 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
+        <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between the &lt;code&gt;IssueCollection&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this &lt;code&gt;IssueCollection&lt;/code&gt; resource belongs to. </dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>belongsTo</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
         <dcterms:description>A date on which this &lt;code&gt;IssueCollection&lt;/code&gt; resource collects &lt;code&gt;Issue&lt;/code&gt; resources.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/date"/>
@@ -389,6 +401,7 @@
         <oslc:name>date</oslc:name>
       </oslc:Property>
     </oslc:property>
+    <dcterms:title rdf:parseType="Literal">Shape resource of an <code>IssueCollection</code> resource.</dcterms:title>
     <oslc:property>
       <oslc:Property>
         <dcterms:description>A unique identifier of the resource.</dcterms:description>
@@ -407,35 +420,31 @@
         <oslc:name>description</oslc:name>
       </oslc:Property>
     </oslc:property>
-    <dcterms:title rdf:parseType="Literal">Shape resource of an <code>IssueCollection</code> resource.</dcterms:title>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A title string of this &lt;code&gt;IssueCollection&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>title</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between the &lt;code&gt;IssueCollection&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this &lt;code&gt;IssueCollection&lt;/code&gt; resource belongs to. </dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>belongsTo</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#IssueCollection"/>
     <oslc:property>
       <oslc:Property>
         <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between an &lt;code&gt;IssueCollection&lt;/code&gt; resource and an &lt;code&gt;Issue&lt;/code&gt; resource. An &lt;code&gt;IssueCollection&lt;/code&gt; resource collects only &lt;code&gt;Issue&lt;/code&gt; resources.</dcterms:description>
         <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
         <oslc:valueShape>
           <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Issue">
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A title string for the resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>title</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A unique identifier for the &lt;code&gt;Issue&lt;/code&gt; resource. </dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>identifier</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <dcterms:title rdf:parseType="Literal">Shape resource of an <code>Issue</code> resource.</dcterms:title>
             <oslc:property>
               <oslc:Property>
                 <dcterms:description>A string that identifies the &lt;code&gt;Issue&lt;/code&gt; resource that is a source of this &lt;code&gt;Issue&lt;/code&gt; resource.</dcterms:description>
@@ -447,11 +456,11 @@
             </oslc:property>
             <oslc:property>
               <oslc:Property>
-                <dcterms:description>A title string for the resource.</dcterms:description>
+                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the &lt;code&gt;Issue&lt;/code&gt; resource.</dcterms:description>
                 <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
                 <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>title</oslc:name>
+                <oslc:name>description</oslc:name>
               </oslc:Property>
             </oslc:property>
             <oslc:property>
@@ -467,6 +476,22 @@
             </oslc:property>
             <oslc:property>
               <oslc:Property>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+                <oslc:name>raisedBy</oslc:name>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#raisedBy"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Issue"/>
+                <dcterms:description>&lt;code&gt;raisedBy&lt;/code&gt; is a relation between an &lt;code&gt;Issue&lt;/code&gt; resource and other resources of type &lt;code&gt;ScopeItem&lt;/code&gt;, &lt;code&gt;WorkItem&lt;/code&gt;, &lt;code&gt;Artifact&lt;/code&gt;, &lt;code&gt;Risk&lt;/code&gt; and &lt;code&gt;Issue&lt;/code&gt;. An &lt;code&gt;Issue&lt;/code&gt; resource may be raised by one or more resources.</dcterms:description>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
+                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
                 <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;Issue&lt;/code&gt; resources in the project.</dcterms:description>
                 <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
                 <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
@@ -474,7 +499,7 @@
                 <oslc:name>sequenceNumber</oslc:name>
               </oslc:Property>
             </oslc:property>
-            <dcterms:title rdf:parseType="Literal">Shape resource of an <code>Issue</code> resource.</dcterms:title>
+            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Issue"/>
             <oslc:property>
               <oslc:Property>
                 <dcterms:description>&lt;code&gt;stateOfIssue&lt;/code&gt; is a property that defines the state of an &lt;code&gt;Issue&lt;/code&gt; resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of issue.</dcterms:description>
@@ -483,41 +508,6 @@
                 <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#stateOfIssue"/>
                 <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
                 <oslc:name>stateOfIssue</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the &lt;code&gt;Issue&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>description</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#raisedBy"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:name>raisedBy</oslc:name>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Issue"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-                <dcterms:description>&lt;code&gt;raisedBy&lt;/code&gt; is a relation between an &lt;code&gt;Issue&lt;/code&gt; resource and other resources of type &lt;code&gt;ScopeItem&lt;/code&gt;, &lt;code&gt;WorkItem&lt;/code&gt;, &lt;code&gt;Artifact&lt;/code&gt;, &lt;code&gt;Risk&lt;/code&gt; and &lt;code&gt;Issue&lt;/code&gt;. An &lt;code&gt;Issue&lt;/code&gt; resource may be raised by one or more resources.</dcterms:description>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Issue"/>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A unique identifier for the &lt;code&gt;Issue&lt;/code&gt; resource. </dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>identifier</oslc:name>
               </oslc:Property>
             </oslc:property>
             <oslc:property>
@@ -540,6 +530,16 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
+        <dcterms:description>A title string of this &lt;code&gt;IssueCollection&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>title</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#IssueCollection"/>
+    <oslc:property>
+      <oslc:Property>
         <dcterms:description>A string that identifies the &lt;code&gt;IssueCollection&lt;/code&gt; resource that is a source of this &lt;code&gt;IssueCollection&lt;/code&gt; resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
@@ -552,11 +552,11 @@
     <dcterms:title rdf:parseType="Literal">Shape resource of <code>ManagedItemCollection</code>.</dcterms:title>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+        <dcterms:description>A title string of this &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>description</oslc:name>
+        <oslc:name>title</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -572,33 +572,11 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between the &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. </dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>belongsTo</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#ManagedItemCollection"/>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A string that identifies the &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource that is a source of this &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
+        <dcterms:description>A unique identifier for a &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>source</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A title string of this &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>title</oslc:name>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>identifier</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -612,138 +590,60 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
+        <dcterms:description>A string that identifies the &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource that is a source of this &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>source</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#ManagedItemCollection"/>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between the &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. </dcterms:description>
         <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Issue"/>
-        <dcterms:description>&lt;code&gt;ManagedItem&lt;/code&gt; resources included in this &lt;code&gt;ManagedItemCollection&lt;/code&gt;. A &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource collects resources of type &lt;code&gt;ScopeItem&lt;/code&gt;, &lt;code&gt;WorkItem&lt;/code&gt;, &lt;code&gt;Artifact&lt;/code&gt;, &lt;code&gt;Risk&lt;/code&gt;, and &lt;code&gt;Issue&lt;/code&gt;.</dcterms:description>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-        <oslc:name>collects</oslc:name>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>belongsTo</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>A unique identifier for a &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>identifier</oslc:name>
+        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>description</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Issue"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Risk"/>
+        <dcterms:description>&lt;code&gt;ManagedItem&lt;/code&gt; resources included in this &lt;code&gt;ManagedItemCollection&lt;/code&gt;. A &lt;code&gt;ManagedItemCollection&lt;/code&gt; resource collects resources of type &lt;code&gt;ScopeItem&lt;/code&gt;, &lt;code&gt;WorkItem&lt;/code&gt;, &lt;code&gt;Artifact&lt;/code&gt;, &lt;code&gt;Risk&lt;/code&gt;, and &lt;code&gt;Issue&lt;/code&gt;.</dcterms:description>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:name>collects</oslc:name>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
       </oslc:Property>
     </oslc:property>
   </oslc:ResourceShape>
   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Report">
-    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Report"/>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;correspondsTo&lt;/code&gt; is a relation between a &lt;code&gt;Report&lt;/code&gt; resource and a &lt;code&gt;Plan&lt;/code&gt; resource. A &lt;code&gt;Report&lt;/code&gt; resource has at most one &lt;code&gt;correspondsTo&lt;/code&gt; relation to the corresponding a &lt;code&gt;Plan&lt;/code&gt; resource. If a plan is changed and a new &lt;code&gt;Plan&lt;/code&gt; resource is created, the &lt;code&gt;Report&lt;/code&gt; may need to be linked to the new &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:valueShape>
-          <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Plan">
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between a &lt;code&gt;Plan&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. </dcterms:description>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>belongsTo</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A string that identifies the &lt;code&gt;Plan&lt;/code&gt; resource that is a source of this &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>source</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Plan"/>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-                <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-                <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
-                <oslc:name>type</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-                <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between a &lt;code&gt;Plan&lt;/code&gt; resource and resources, where each linked resource from the &lt;code&gt;Plan&lt;/code&gt; resource is a &lt;code&gt;Scopeitem&lt;/code&gt; resource, a &lt;code&gt;WorkItem&lt;/code&gt;resource or an &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
-                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-                <oslc:name>collects</oslc:name>
-                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A title string of this &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>title</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A date on which this &lt;code&gt;Plan&lt;/code&gt; resource collects member resources.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/date"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>date</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Plan</code> resource</dcterms:title>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                <oslc:name>description</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-            <oslc:property>
-              <oslc:Property>
-                <dcterms:description>A unique identifier for a &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
-                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                <oslc:name>identifier</oslc:name>
-              </oslc:Property>
-            </oslc:property>
-          </oslc:ResourceShape>
-        </oslc:valueShape>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Plan"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#correspondsTo"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>correspondsTo</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A title string of this &lt;code&gt;Report&lt;/code&gt; resource.</dcterms:description>
+        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>title</oslc:name>
+        <oslc:name>description</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -768,11 +668,125 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <dcterms:description>&lt;code&gt;correspondsTo&lt;/code&gt; is a relation between a &lt;code&gt;Report&lt;/code&gt; resource and a &lt;code&gt;Plan&lt;/code&gt; resource. A &lt;code&gt;Report&lt;/code&gt; resource has at most one &lt;code&gt;correspondsTo&lt;/code&gt; relation to the corresponding a &lt;code&gt;Plan&lt;/code&gt; resource. If a plan is changed and a new &lt;code&gt;Plan&lt;/code&gt; resource is created, the &lt;code&gt;Report&lt;/code&gt; may need to be linked to the new &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:valueShape>
+          <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Plan">
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description rdf:parseType="Literal">The resource type URIs.</dcterms:description>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+                <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+                <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
+                <oslc:name>type</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Plan"/>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A unique identifier for a &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>identifier</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A title string of this &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>title</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>description</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
+                <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between a &lt;code&gt;Plan&lt;/code&gt; resource and resources, where each linked resource from the &lt;code&gt;Plan&lt;/code&gt; resource is a &lt;code&gt;Scopeitem&lt;/code&gt; resource, a &lt;code&gt;WorkItem&lt;/code&gt;resource or an &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+                <oslc:name>collects</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between a &lt;code&gt;Plan&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resource. </dcterms:description>
+                <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
+                <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+                <oslc:range rdf:resource="http://open-services.net/ns/promcode#Project"/>
+                <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#belongsTo"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                <oslc:name>belongsTo</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Plan</code> resource</dcterms:title>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A string that identifies the &lt;code&gt;Plan&lt;/code&gt; resource that is a source of this &lt;code&gt;Plan&lt;/code&gt; resource.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>source</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+            <oslc:property>
+              <oslc:Property>
+                <dcterms:description>A date on which this &lt;code&gt;Plan&lt;/code&gt; resource collects member resources.</dcterms:description>
+                <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/date"/>
+                <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                <oslc:name>date</oslc:name>
+              </oslc:Property>
+            </oslc:property>
+          </oslc:ResourceShape>
+        </oslc:valueShape>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Plan"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#correspondsTo"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>description</oslc:name>
+        <oslc:name>correspondsTo</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A title string of this &lt;code&gt;Report&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>title</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Report"/>
+    <oslc:property>
+      <oslc:Property>
+        <oslc:name>collects</oslc:name>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between the &lt;code&gt;Report&lt;/code&gt; resource and resources, where each linked resource from the &lt;code&gt;Plan&lt;/code&gt; resource is a &lt;code&gt;ScopeItem&lt;/code&gt; resource, a &lt;code&gt;WorkItem&lt;/code&gt;resource or an &lt;code&gt;Artifact&lt;/code&gt; resource. The &lt;code&gt;Report&lt;/code&gt; resource collects a subset of resources collected by the &lt;code&gt;Plan&lt;/code&gt; resource that is linked by &lt;code&gt;correspondsTo&lt;/code&gt; property.</dcterms:description>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -784,6 +798,16 @@
         <oslc:name>date</oslc:name>
       </oslc:Property>
     </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A unique identifier for a &lt;code&gt;Report&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>identifier</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Report</code> resource</dcterms:title>
     <oslc:property>
       <oslc:Property>
         <dcterms:description>&lt;code&gt;includes&lt;/code&gt; is a relation between this &lt;code&gt;Report&lt;/code&gt; resource and &lt;code&gt;Measurement&lt;/code&gt; resources.   A &lt;code&gt;Measurement&lt;/code&gt; resource linked by &lt;code&gt;includes&lt;/code&gt; from this resource must measure an &lt;code&gt;Artifact&lt;/code&gt; resource that is linked by &lt;code&gt;collects&lt;/code&gt; property of this &lt;code&gt;Report&lt;/code&gt; resource.</dcterms:description>
@@ -808,6 +832,7 @@
                 <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
                 <oslc:valueShape>
                   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Measure">
+                    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Measure</code> resource</dcterms:title>
                     <oslc:property>
                       <oslc:Property>
                         <dcterms:description>&lt;code&gt;valueOfMeasure&lt;/code&gt; is a property that represents a value for the &lt;code&gt;Measure&lt;/code&gt; resource.</dcterms:description>
@@ -815,16 +840,6 @@
                         <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#valueOfMeasure"/>
                         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
                         <oslc:name>valueOfMeasure</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Measure</code> resource</dcterms:title>
-                    <oslc:property>
-                      <oslc:Property>
-                        <dcterms:description>A unique identifier for the &lt;code&gt;Measure&lt;/code&gt; resource. </dcterms:description>
-                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                        <oslc:name>identifier</oslc:name>
                       </oslc:Property>
                     </oslc:property>
                     <oslc:property>
@@ -841,6 +856,25 @@
                     </oslc:property>
                     <oslc:property>
                       <oslc:Property>
+                        <dcterms:description>&lt;code&gt;unitOfMeasure&lt;/code&gt; is a property that defines a unit of measure of this &lt;code&gt;Measure&lt;/code&gt; resource. The value is any resource, but is expected to have information on the unit of measure of this &lt;code&gt;Measure&lt;/code&gt; resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc.</dcterms:description>
+                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
+                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
+                        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#unitOfMeasure"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                        <oslc:name>unitOfMeasure</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
+                        <dcterms:description>A unique identifier for the &lt;code&gt;Measure&lt;/code&gt; resource. </dcterms:description>
+                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                        <oslc:name>identifier</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
                         <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
                         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
                         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
@@ -848,6 +882,7 @@
                         <oslc:name>description</oslc:name>
                       </oslc:Property>
                     </oslc:property>
+                    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Measure"/>
                     <oslc:property>
                       <oslc:Property>
                         <dcterms:description>A title string of this &lt;code&gt;Measure&lt;/code&gt; resource.</dcterms:description>
@@ -857,17 +892,6 @@
                         <oslc:name>title</oslc:name>
                       </oslc:Property>
                     </oslc:property>
-                    <oslc:property>
-                      <oslc:Property>
-                        <dcterms:description>&lt;code&gt;unitOfMeasure&lt;/code&gt; is a property that defines a unit of measure of this &lt;code&gt;Measure&lt;/code&gt; resource. The value is any resource, but is expected to have information on the unit of measure of this &lt;code&gt;Measure&lt;/code&gt; resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc.</dcterms:description>
-                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
-                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-                        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#unitOfMeasure"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                        <oslc:name>unitOfMeasure</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Measure"/>
                     <oslc:property>
                       <oslc:Property>
                         <dcterms:description>&lt;code&gt;metricOfMeasure&lt;/code&gt; is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this &lt;code&gt;Measure&lt;/code&gt; resource.</dcterms:description>
@@ -895,6 +919,31 @@
                   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#Artifact">
                     <oslc:property>
                       <oslc:Property>
+                        <dcterms:description rdf:parseType="Literal"
+                        >The resource type URIs.</dcterms:description>
+                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+                        <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+                        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
+                        <oslc:name>type</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
+                        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+                        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+                        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#producedFor"/>
+                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+                        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+                        <dcterms:description>&lt;code&gt;producedFor&lt;/code&gt; is a relation between an &lt;code&gt;Artifact&lt;/code&gt; resource and a &lt;code&gt;ScopeItem&lt;/code&gt; resource or a &lt;code&gt;WorkItem&lt;/code&gt; resource. &lt;code&gt;Artifact&lt;/code&gt; is produced as a result of implementation of the &lt;code&gt;ScopeItem&lt;/code&gt; resources or as a result of the work described by the &lt;code&gt;WorkItem&lt;/code&gt; resource.</dcterms:description>
+                        <oslc:name>producedFor</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
                         <dcterms:description>&lt;code&gt;targets&lt;/code&gt; is a relation between an &lt;code&gt;Artifact&lt;/code&gt; resource and a &lt;code&gt;Measure&lt;/code&gt; resource. The representation of this property is inline.</dcterms:description>
                         <oslc:valueType rdf:resource="http://open-services.net/ns/core#AnyResource"/>
                         <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Measure"/>
@@ -903,6 +952,26 @@
                         <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#targets"/>
                         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
                         <oslc:name>targets</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <dcterms:title rdf:parseType="Literal">Shape resource of an <code>Artifact</code> resource.</dcterms:title>
+                    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
+                    <oslc:property>
+                      <oslc:Property>
+                        <dcterms:description>A string that identifies the &lt;code&gt;Artifact&lt;/code&gt; resource that is a source of this &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
+                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                        <oslc:name>source</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
+                        <dcterms:description>A unique identifier for the &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
+                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+                        <oslc:name>identifier</oslc:name>
                       </oslc:Property>
                     </oslc:property>
                     <oslc:property>
@@ -919,51 +988,6 @@
                     </oslc:property>
                     <oslc:property>
                       <oslc:Property>
-                        <dcterms:description>A unique identifier for the &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
-                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-                        <oslc:name>identifier</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <dcterms:title rdf:parseType="Literal">Shape resource of an <code>Artifact</code> resource.</dcterms:title>
-                    <oslc:property>
-                      <oslc:Property>
-                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#producedFor"/>
-                        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-                        <dcterms:description>&lt;code&gt;producedFor&lt;/code&gt; is a relation between an &lt;code&gt;Artifact&lt;/code&gt; resource and a &lt;code&gt;ScopeItem&lt;/code&gt; resource or a &lt;code&gt;WorkItem&lt;/code&gt; resource. &lt;code&gt;Artifact&lt;/code&gt; is produced as a result of implementation of the &lt;code&gt;ScopeItem&lt;/code&gt; resources or as a result of the work described by the &lt;code&gt;WorkItem&lt;/code&gt; resource.</dcterms:description>
-                        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-                        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-                        <oslc:name>producedFor</oslc:name>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-                      </oslc:Property>
-                    </oslc:property>
-                    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-                    <oslc:property>
-                      <oslc:Property>
-                        <dcterms:description rdf:parseType="Literal"
-                        >The resource type URIs.</dcterms:description>
-                        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-                        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-                        <oslc:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-                        <oslc:propertyDefinition rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#One-or-many"/>
-                        <oslc:name>type</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <oslc:property>
-                      <oslc:Property>
-                        <dcterms:description>A string that identifies the &lt;code&gt;Artifact&lt;/code&gt; resource that is a source of this &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
-                        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                        <oslc:name>source</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <oslc:property>
-                      <oslc:Property>
                         <dcterms:description>A title string of the resource.</dcterms:description>
                         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
                         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
@@ -973,20 +997,20 @@
                     </oslc:property>
                     <oslc:property>
                       <oslc:Property>
-                        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-                        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-                        <oslc:name>description</oslc:name>
-                      </oslc:Property>
-                    </oslc:property>
-                    <oslc:property>
-                      <oslc:Property>
                         <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all &lt;code&gt;Artifact&lt;/code&gt; resources of the project.</dcterms:description>
                         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
                         <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
                         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
                         <oslc:name>sequenceNumber</oslc:name>
+                      </oslc:Property>
+                    </oslc:property>
+                    <oslc:property>
+                      <oslc:Property>
+                        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+                        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+                        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+                        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+                        <oslc:name>description</oslc:name>
                       </oslc:Property>
                     </oslc:property>
                   </oslc:ResourceShape>
@@ -1037,30 +1061,6 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#collects"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-        <dcterms:description>&lt;code&gt;collects&lt;/code&gt; is a relation between the &lt;code&gt;Report&lt;/code&gt; resource and resources, where each linked resource from the &lt;code&gt;Plan&lt;/code&gt; resource is a &lt;code&gt;ScopeItem&lt;/code&gt; resource, a &lt;code&gt;WorkItem&lt;/code&gt;resource or an &lt;code&gt;Artifact&lt;/code&gt; resource. The &lt;code&gt;Report&lt;/code&gt; resource collects a subset of resources collected by the &lt;code&gt;Plan&lt;/code&gt; resource that is linked by &lt;code&gt;correspondsTo&lt;/code&gt; property.</dcterms:description>
-        <oslc:name>collects</oslc:name>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Either"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-      </oslc:Property>
-    </oslc:property>
-    <dcterms:title rdf:parseType="Literal">Shape resource of a <code>Report</code> resource</dcterms:title>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A unique identifier for a &lt;code&gt;Report&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>identifier</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
         <dcterms:description>&lt;code&gt;belongsTo&lt;/code&gt; is a relation between this &lt;code&gt;Report&lt;/code&gt; resource and a &lt;code&gt;Project&lt;/code&gt; resources. </dcterms:description>
         <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
         <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#Project"/>
@@ -1075,23 +1075,30 @@
   <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#ScopeItem">
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;isPartOf&lt;/code&gt; is a relation between a child &lt;code&gt;ScopeItem&lt;/code&gt; resource and its parent &lt;code&gt;ScopeItem&lt;/code&gt; resource. A &lt;code&gt;ScopeItem&lt;/code&gt; resource may have multiple child &lt;code&gt;ScopeItem&lt;/code&gt; resources.</dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ScopeItem"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#isPartOf"/>
+        <dcterms:description>A title string for a &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>isPartOf</oslc:name>
+        <oslc:name>title</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
+        <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;ScopeItem&lt;/code&gt; resources of the project.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>description</oslc:name>
+        <oslc:name>sequenceNumber</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A string that identifies the &lt;code&gt;ScopeItem&lt;/code&gt; resource that is a source of this &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>source</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -1105,30 +1112,23 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
+        <dcterms:description>&lt;code&gt;isPartOf&lt;/code&gt; is a relation between a child &lt;code&gt;ScopeItem&lt;/code&gt; resource and its parent &lt;code&gt;ScopeItem&lt;/code&gt; resource. A &lt;code&gt;ScopeItem&lt;/code&gt; resource may have multiple child &lt;code&gt;ScopeItem&lt;/code&gt; resources.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ScopeItem"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#isPartOf"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>isPartOf</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
         <dcterms:description>A unique identifier for a &lt;code&gt;ScopeItem&lt;/code&gt; resource. </dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
         <oslc:name>identifier</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:describes rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;ScopeItem&lt;/code&gt; resources of the project.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>sequenceNumber</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>&lt;code&gt;actualSize&lt;/code&gt; is a property for actual development size for a &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualSize"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>actualSize</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -1144,35 +1144,55 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>A title string for a &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
+        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>title</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A string that identifies the &lt;code&gt;ScopeItem&lt;/code&gt; resource that is a source of this &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/source"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>source</oslc:name>
+        <oslc:name>description</oslc:name>
       </oslc:Property>
     </oslc:property>
     <dcterms:title rdf:parseType="Literal">Shape resource of a <code>ScopeItem</code> resource</dcterms:title>
-  </oslc:ResourceShape>
-  <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#WorkItem">
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>A unique identifier for the &lt;code&gt;WorkItem&lt;/code&gt; resource. </dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
-        <oslc:name>identifier</oslc:name>
+        <dcterms:description>&lt;code&gt;actualSize&lt;/code&gt; is a property for actual development size for a &lt;code&gt;ScopeItem&lt;/code&gt; resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualSize"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>actualSize</oslc:name>
       </oslc:Property>
     </oslc:property>
+  </oslc:ResourceShape>
+  <oslc:ResourceShape rdf:about="http://open-services.net/ns/promcode/shapes/1.0#WorkItem">
     <oslc:describes rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;WorkItem&lt;/code&gt; resources of the project.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>sequenceNumber</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>&lt;code&gt;plannedEndDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the planned end date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedEndDate"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>plannedEndDate</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>&lt;code&gt;plannedStartDate&lt;/code&gt; is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedStartDate"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
+        <oslc:name>plannedStartDate</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <dcterms:title>Shape resource of a &lt;code&gt;WorkItem&lt;/code&gt; resource</dcterms:title>
+    <oslc:name>WorkItem</oslc:name>
     <oslc:property>
       <oslc:Property>
         <dcterms:description>A string that identifies the &lt;code&gt;WorkItem&lt;/code&gt; resource that is a source of this &lt;code&gt;WorkItem&lt;/code&gt; resource.</dcterms:description>
@@ -1184,43 +1204,11 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;isPartOf&lt;/code&gt; is a relation between a child &lt;code&gt;WorkItem&lt;/code&gt; resource and its parent &lt;code&gt;WorkItem&lt;/code&gt; resource. A &lt;code&gt;WorkItem&lt;/code&gt; resource may have multiple child &lt;code&gt;WorkItem&lt;/code&gt; resources.</dcterms:description>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#WorkItem"/>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#isPartOf"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>isPartOf</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>description</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <dcterms:title>Shape resource of a &lt;code&gt;WorkItem&lt;/code&gt; resource</dcterms:title>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>&lt;code&gt;actualEndDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the actual end date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+        <dcterms:description>&lt;code&gt;actualStartDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the actual start date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
         <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualEndDate"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualStartDate"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>actualEndDate</oslc:name>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:name>WorkItem</oslc:name>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>&lt;code&gt;plannedEndDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the planned end date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedEndDate"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>plannedEndDate</oslc:name>
+        <oslc:name>actualStartDate</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -1246,20 +1234,45 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;plannedStartDate&lt;/code&gt; is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#plannedStartDate"/>
+        <dcterms:description>&lt;code&gt;isPartOf&lt;/code&gt; is a relation between a child &lt;code&gt;WorkItem&lt;/code&gt; resource and its parent &lt;code&gt;WorkItem&lt;/code&gt; resource. A &lt;code&gt;WorkItem&lt;/code&gt; resource may have multiple child &lt;code&gt;WorkItem&lt;/code&gt; resources.</dcterms:description>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#WorkItem"/>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#WorkItem"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#isPartOf"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>plannedStartDate</oslc:name>
+        <oslc:name>isPartOf</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <dcterms:description>&lt;code&gt;actualStartDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the actual start date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualStartDate"/>
+        <dcterms:description>A unique identifier for the &lt;code&gt;WorkItem&lt;/code&gt; resource. </dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
+        <oslc:name>identifier</oslc:name>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>&lt;code&gt;requiredBy&lt;/code&gt; is a relation between this &lt;code&gt;WorkItem&lt;/code&gt; resource and a &lt;code&gt;ScopeItem&lt;/code&gt; resource or an &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
+        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
+        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
+        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
+        <oslc:name>requiredBy</oslc:name>
+        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#requiredBy"/>
+        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
+      </oslc:Property>
+    </oslc:property>
+    <oslc:property>
+      <oslc:Property>
+        <dcterms:description>&lt;code&gt;dcterms:description&lt;/code&gt; is a property to help a human understand the resource.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+        <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>actualStartDate</oslc:name>
+        <oslc:name>description</oslc:name>
       </oslc:Property>
     </oslc:property>
     <oslc:property>
@@ -1273,24 +1286,11 @@
     </oslc:property>
     <oslc:property>
       <oslc:Property>
-        <oslc:valueType rdf:resource="http://open-services.net/ns/core#Resource"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#Artifact"/>
-        <oslc:range rdf:resource="http://open-services.net/ns/promcode#ScopeItem"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#requiredBy"/>
-        <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-many"/>
-        <dcterms:description>&lt;code&gt;requiredBy&lt;/code&gt; is a relation between this &lt;code&gt;WorkItem&lt;/code&gt; resource and a &lt;code&gt;ScopeItem&lt;/code&gt; resource or an &lt;code&gt;Artifact&lt;/code&gt; resource.</dcterms:description>
-        <oslc:valueShape rdf:resource="http://open-services.net/ns/promcode/shapes/1.0#ManagedItem"/>
-        <oslc:name>requiredBy</oslc:name>
-        <oslc:representation rdf:resource="http://open-services.net/ns/core#Reference"/>
-      </oslc:Property>
-    </oslc:property>
-    <oslc:property>
-      <oslc:Property>
-        <dcterms:description>A unique number assigned to this resource which represents a position in the sequential order of all the &lt;code&gt;WorkItem&lt;/code&gt; resources of the project.</dcterms:description>
-        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#sequenceNumber"/>
+        <dcterms:description>&lt;code&gt;actualEndDate&lt;/code&gt; is a property of a &lt;code&gt;WorkItem&lt;/code&gt; resource. It is the actual end date of the work item. Its value is of type &lt;code&gt;xsd:dateTime&lt;/code&gt;.</dcterms:description>
+        <oslc:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/promcode#actualEndDate"/>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
-        <oslc:name>sequenceNumber</oslc:name>
+        <oslc:name>actualEndDate</oslc:name>
       </oslc:Property>
     </oslc:property>
   </oslc:ResourceShape>

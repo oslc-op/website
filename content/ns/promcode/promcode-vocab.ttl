@@ -31,7 +31,7 @@
 	vann:preferredNamespacePrefix "oslc_promcode" ;
 	dcterms:publisher <https://open-services.net/about/> ;
 	dcterms:source <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-vocab.ttl> ;
-	dcterms:hasVersion "CSD01" ;
+	dcterms:hasVersion "CS02" ;
 	dcterms:issued "2021-03-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	dcterms:isPartOf <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> ;
 	dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> .
