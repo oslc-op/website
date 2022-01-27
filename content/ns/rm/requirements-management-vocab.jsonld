@@ -3,12 +3,12 @@
     "@id" : "http://open-services.net/ns/rm#",
     "@type" : "owl:Ontology",
     "description" : "All vocabulary URIs defined in the OSLC Requirements Management (RM) namespace.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html",
-    "issued" : "2020-09-03",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html",
+    "issued" : "2021-06-21",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-vocab.ttl",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-vocab.ttl",
     "title" : "OSLC Requirements Management (RM) Vocabulary",
     "preferredNamespacePrefix" : "oslc_rm",
     "label" : "OSLC Requirements Management (RM) Vocabulary",
@@ -131,23 +131,20 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "@id"
     },
-    "isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf",
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
     },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source",
-      "@type" : "@id"
-    },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
-    },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
       "@type" : "@id"
     },
     "license" : {
@@ -157,6 +154,9 @@
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
     },
@@ -164,11 +164,11 @@
       "@id" : "http://purl.org/dc/terms/description",
       "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
     },
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl" : "http://www.w3.org/2002/07/owl#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "vann" : "http://purl.org/vocab/vann/",
-    "oslc_rm" : "http://open-services.net/ns/rm#"
+    "oslc_rm" : "http://open-services.net/ns/rm#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/"
   }
 }

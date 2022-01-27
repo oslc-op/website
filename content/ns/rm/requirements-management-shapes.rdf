@@ -6,16 +6,17 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <oslc:ResourceShapeConstraints rdf:about="http://open-services.net/ns/rm/shapes/2.1#RequirementShapeConstraints">
-    <dcterms:description rdf:parseType="Literal">Resource Shape Constraints defined in the OSLC RM 2.1 specification.</dcterms:description>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-shapes.ttl"/>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2020-09-03</dcterms:issued>
+    >2021-06-21</dcterms:issued>
+    <dcterms:description rdf:parseType="Literal">Resource Shape Constraints defined in the OSLC RM 2.1 specification.</dcterms:description>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/oslc-op/oslc-specs/blob/master/specs/rm/requirements-management-shapes.ttl"/>
     <dcterms:title>OSLC Requirements Management (RM) Resource Shape Constraints</dcterms:title>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-spec.html"/>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/ps01/requirements-management-shapes.ttl"/>
     <rdfs:label>OSLC Requirements Management (RM) Resource Shape Constraints</rdfs:label>
-    <dcterms:hasVersion>PS01</dcterms:hasVersion>
   </oslc:ResourceShapeConstraints>
   <oslc:ResourceShape rdf:about="http://open-services.net/ns/rm/shapes/2.1#RequirementShape">
     <oslc:property>
@@ -45,7 +46,7 @@
     <oslc:property>
       <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#title">
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <dcterms:description rdf:parseType="Literal">Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</dcterms:description>
+        <dcterms:description rdf:parseType="Literal">Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. <span class="conformance">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span></dcterms:description>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Exactly-one"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/title"/>
         <oslc:name>title</oslc:name>
@@ -211,7 +212,7 @@ or to satisfy a contract, standard, specification, or other formally imposed doc
       <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#shortTitle">
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
         <oslc:propertyDefinition rdf:resource="http://open-services.net/ns/core#shortTitle"/>
-        <dcterms:description rdf:parseType="Literal">Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</dcterms:description>
+        <dcterms:description rdf:parseType="Literal">Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. <span class="conformance">It SHOULD include only content that is valid inside an XHTML &lt;span&gt; element.</span></dcterms:description>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
         <oslc:name>shortTitle</oslc:name>
       </oslc:Property>
@@ -286,7 +287,7 @@ or to satisfy a contract, standard, specification, or other formally imposed doc
     <oslc:property>
       <oslc:Property rdf:about="http://open-services.net/ns/rm/shapes/2.1#description">
         <oslc:valueType rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
-        <dcterms:description rdf:parseType="Literal">Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</dcterms:description>
+        <dcterms:description rdf:parseType="Literal">Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. <span class="conformance">It SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element.</span></dcterms:description>
         <oslc:occurs rdf:resource="http://open-services.net/ns/core#Zero-or-one"/>
         <oslc:propertyDefinition rdf:resource="http://purl.org/dc/terms/description"/>
         <oslc:name>description</oslc:name>
