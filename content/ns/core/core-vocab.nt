@@ -54,7 +54,7 @@
 <http://open-services.net/ns/core#Zero-or-many> <http://www.w3.org/2000/01/rdf-schema#label> "Zero-or-many" .
 <http://open-services.net/ns/core#Zero-or-many> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#Zero-or-many> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Cardinality> .
-<http://open-services.net/ns/core#LocalResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource MUST be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document." .
+<http://open-services.net/ns/core#LocalResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource must be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document." .
 <http://open-services.net/ns/core#LocalResource> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
 <http://open-services.net/ns/core#LocalResource> <http://www.w3.org/2000/01/rdf-schema#label> "LocalResource" .
 <http://open-services.net/ns/core#LocalResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
@@ -123,7 +123,7 @@
 <http://open-services.net/ns/core#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
 <http://open-services.net/ns/core#comment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://open-services.net/ns/core#occurs> <http://www.w3.org/2000/01/rdf-schema#comment> "MUST be either http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many." .
+<http://open-services.net/ns/core#occurs> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the values http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many." .
 <http://open-services.net/ns/core#occurs> <http://www.w3.org/2000/01/rdf-schema#label> "occurs" .
 <http://open-services.net/ns/core#occurs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#occurs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -147,7 +147,7 @@
 <http://open-services.net/ns/core#ResourceShapeConstraints> <http://www.w3.org/2000/01/rdf-schema#label> "ResourceShapeConstraints" .
 <http://open-services.net/ns/core#ResourceShapeConstraints> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#ResourceShapeConstraints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://open-services.net/ns/core#Inline> <http://www.w3.org/2000/01/rdf-schema#comment> "The representation of the object resource MUST be present in the representation of the described resource." .
+<http://open-services.net/ns/core#Inline> <http://www.w3.org/2000/01/rdf-schema#comment> "The representation of the object resource must be present in the representation of the described resource." .
 <http://open-services.net/ns/core#Inline> <http://www.w3.org/2000/01/rdf-schema#label> "Inline" .
 <http://open-services.net/ns/core#Inline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#Inline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Representation> .
@@ -220,7 +220,7 @@
 <http://open-services.net/ns/core#publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher" .
 <http://open-services.net/ns/core#publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://open-services.net/ns/core#initialHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size)." .
+<http://open-services.net/ns/core#initialHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values are expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size)." .
 <http://open-services.net/ns/core#initialHeight> <http://www.w3.org/2000/01/rdf-schema#label> "initialHeight" .
 <http://open-services.net/ns/core#initialHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
 <http://open-services.net/ns/core#initialHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
@@ -235,15 +235,15 @@
 <http://open-services.net/ns/core#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/core#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc" .
 <http://open-services.net/ns/core#> <http://purl.org/dc/terms/title> "The OSLC Core Vocabulary" .
-<http://open-services.net/ns/core#> <http://purl.org/dc/terms/issued> "2020-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://open-services.net/ns/core#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/oslc-core.html> .
+<http://open-services.net/ns/core#> <http://purl.org/dc/terms/issued> "2021-08-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://open-services.net/ns/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://open-services.net/ns/core#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/core-vocab.ttl> .
 <http://open-services.net/ns/core#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in the OSLC Core namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/core#> <http://purl.org/dc/terms/source> <https://github.com/oslc-op/oslc-specs/blob/master/specs/core/core-vocab.ttl> .
 <http://open-services.net/ns/core#> <http://www.w3.org/2000/01/rdf-schema#label> "The OSLC Core Vocabulary" .
+<http://open-services.net/ns/core#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/oslc-core.html> .
 <http://open-services.net/ns/core#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
+<http://open-services.net/ns/core#> <http://purl.org/dc/terms/hasVersion> "OS" .
 <http://open-services.net/ns/core#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
-<http://open-services.net/ns/core#> <http://purl.org/dc/terms/hasVersion> "PS01" .
 <http://open-services.net/ns/core#message> <http://www.w3.org/2000/01/rdf-schema#comment> "An informative message describing the error that occurred." .
 <http://open-services.net/ns/core#message> <http://www.w3.org/2000/01/rdf-schema#label> "message" .
 <http://open-services.net/ns/core#message> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
@@ -260,11 +260,15 @@
 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "propertyDefinition" .
 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/core#cause> <http://www.w3.org/2000/01/rdf-schema#comment> "An error that is a cause of this error." .
+<http://open-services.net/ns/core#cause> <http://www.w3.org/2000/01/rdf-schema#label> "cause" .
+<http://open-services.net/ns/core#cause> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
+<http://open-services.net/ns/core#cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/core#valueShape> <http://www.w3.org/2000/01/rdf-schema#comment> "if the value-type is a resource type, then Property MAY provide a shape value to indicate the Resource Shape that applies to the resource." .
 <http://open-services.net/ns/core#valueShape> <http://www.w3.org/2000/01/rdf-schema#label> "valueShape" .
 <http://open-services.net/ns/core#valueShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#valueShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://open-services.net/ns/core#moreInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource giving more information on the error SHOULD be of an HTML content-type." .
+<http://open-services.net/ns/core#moreInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "{{A resource giving more information on the error, with an HTML content-type." .
 <http://open-services.net/ns/core#moreInfo> <http://www.w3.org/2000/01/rdf-schema#label> "moreInfo" .
 <http://open-services.net/ns/core#moreInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#moreInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
@@ -456,7 +460,7 @@
 <http://open-services.net/ns/core#Exactly-one> <http://www.w3.org/2000/01/rdf-schema#label> "Exactly-one" .
 <http://open-services.net/ns/core#Exactly-one> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#Exactly-one> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Cardinality> .
-<http://open-services.net/ns/core#AnyResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource MUST be identified with either a URI or a blank node." .
+<http://open-services.net/ns/core#AnyResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource can be identified with either a URI or a blank node." .
 <http://open-services.net/ns/core#AnyResource> <http://www.w3.org/2000/01/rdf-schema#label> "AnyResource" .
 <http://open-services.net/ns/core#AnyResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#AnyResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceValueType> .
@@ -464,7 +468,7 @@
 <http://open-services.net/ns/core#ImpactFollowsLink> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#ImpactFollowsLink> <http://www.w3.org/2000/01/rdf-schema#comment> "The property represents a dependency from subject to object." .
 <http://open-services.net/ns/core#ImpactFollowsLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ImpactType> .
-<http://open-services.net/ns/core#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource MUST be identified with a URI." .
+<http://open-services.net/ns/core#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "The object resource must be identified with a URI." .
 <http://open-services.net/ns/core#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
 <http://open-services.net/ns/core#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/core#> .
 <http://open-services.net/ns/core#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceValueType> .

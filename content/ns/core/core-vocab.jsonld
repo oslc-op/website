@@ -3,12 +3,12 @@
     "@id" : "http://open-services.net/ns/core#",
     "@type" : "owl:Ontology",
     "description" : "All vocabulary URIs defined in the OSLC Core namespace.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/oslc-core.html",
-    "issued" : "2020-09-17",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/oslc-core.html",
+    "issued" : "2021-08-26",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/core-vocab.ttl",
+    "source" : "https://github.com/oslc-op/oslc-specs/blob/master/specs/core/core-vocab.ttl",
     "title" : "The OSLC Core Vocabulary",
     "preferredNamespacePrefix" : "oslc",
     "label" : "The OSLC Core Vocabulary"
@@ -29,7 +29,7 @@
     "rdf:type" : {
       "@id" : "oslc:ResourceValueType"
     },
-    "comment" : "The object resource MUST be identified with either a URI or a blank node.",
+    "comment" : "The object resource can be identified with either a URI or a blank node.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "AnyResource"
   }, {
@@ -135,7 +135,7 @@
     "rdf:type" : {
       "@id" : "oslc:Representation"
     },
-    "comment" : "The representation of the object resource MUST be present in the representation of the described resource.",
+    "comment" : "The representation of the object resource must be present in the representation of the described resource.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "Inline"
   }, {
@@ -143,7 +143,7 @@
     "rdf:type" : {
       "@id" : "oslc:ResourceValueType"
     },
-    "comment" : "The object resource MUST be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document.",
+    "comment" : "The object resource must be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "LocalResource",
     "term_status" : "archaic"
@@ -218,7 +218,7 @@
     "rdf:type" : {
       "@id" : "oslc:ResourceValueType"
     },
-    "comment" : "The object resource MUST be identified with a URI.",
+    "comment" : "The object resource must be identified with a URI.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "Resource"
   }, {
@@ -324,6 +324,12 @@
     "comment" : "URI for obtaining OAuth authorization.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "authorizationURI"
+  }, {
+    "@id" : "oslc:cause",
+    "@type" : "rdf:Property",
+    "comment" : "An error that is a cause of this error.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "cause"
   }, {
     "@id" : "oslc:comment",
     "@type" : "rdf:Property",
@@ -483,7 +489,7 @@
   }, {
     "@id" : "oslc:initialHeight",
     "@type" : "rdf:Property",
-    "comment" : "Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size).",
+    "comment" : "Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values are expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size).",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "initialHeight",
     "term_status" : "archaic"
@@ -538,7 +544,7 @@
   }, {
     "@id" : "oslc:moreInfo",
     "@type" : "rdf:Property",
-    "comment" : "A resource giving more information on the error SHOULD be of an HTML content-type.",
+    "comment" : "{{A resource giving more information on the error, with an HTML content-type.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "moreInfo"
   }, {
@@ -574,7 +580,7 @@
   }, {
     "@id" : "oslc:occurs",
     "@type" : "rdf:Property",
-    "comment" : "MUST be either http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many.",
+    "comment" : "One of the values http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many.",
     "isDefinedBy" : "http://open-services.net/ns/core#",
     "label" : "occurs"
   }, {
@@ -795,39 +801,39 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf",
-      "@type" : "@id"
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
     },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
     },
-    "description" : {
-      "@id" : "http://purl.org/dc/terms/description",
-      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
       "@type" : "@id"
     },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
-    },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
     },
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl" : "http://www.w3.org/2002/07/owl#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
     "vann" : "http://purl.org/vocab/vann/",
-    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
-    "oslc" : "http://open-services.net/ns/core#"
+    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#"
   }
 }
