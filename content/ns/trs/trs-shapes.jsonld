@@ -1,0 +1,284 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#",
+    "@type" : "oslc:ResourceShapeConstraints",
+    "dateCopyrighted" : "2012-2021",
+    "description" : "Shapes for resources defined by OSLC TRS.",
+    "hasVersion" : "PSD",
+    "isPartOf" : "https://oslc-op.github.io/oslc-specs/specs/trs/tracked-resource-set.html",
+    "issued" : "2021-08-26",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://github.com/oslc-op/oslc-specs/blob/master/specs/trs/trs-shapes.ttl",
+    "title" : "Resource Shapes for OSLC TRS",
+    "label" : "Resource Shapes for OSLC TRS"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#BaseShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "trs:Base",
+    "property" : [ "http://open-services.net/ns/trs/shapes/3.0#memberRelation", "http://open-services.net/ns/trs/shapes/3.0#member", "http://open-services.net/ns/trs/shapes/3.0#cutoffEvent", "http://open-services.net/ns/trs/shapes/3.0#btype" ],
+    "description" : "A Base is an ldp:DirectContainer that enumerates the members of a Tracked Resource Set at the time the Base was computed.",
+    "title" : "The shape of a Base"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : [ "trs:Creation", "trs:Modification" ],
+    "property" : [ "http://open-services.net/ns/trs/shapes/3.0#patchBeforeEtag", "http://open-services.net/ns/trs/shapes/3.0#order", "http://open-services.net/ns/trs/shapes/3.0#patchRdfPatch", "http://open-services.net/ns/trs/shapes/3.0#changed", "http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag", "http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom" ],
+    "description" : "Represents the creation or modification of a resource at a point in time.",
+    "title" : "The shape of a Creation or Modification event"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#ChangeLogShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "trs:ChangeLog",
+    "property" : [ "http://open-services.net/ns/trs/shapes/3.0#previous", "http://open-services.net/ns/trs/shapes/3.0#change" ],
+    "description" : "A Change Log describes what resources have been created, modified or deleted, and when.",
+    "title" : "The shape of a ChangeLog"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "trs:Deletion",
+    "property" : [ "http://open-services.net/ns/trs/shapes/3.0#order", "http://open-services.net/ns/trs/shapes/3.0#changed" ],
+    "description" : "Represents the deletion of resource at a point in time.",
+    "title" : "Deletion Event"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#TrackedResourceSetShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "trs:TrackedResourceSet",
+    "property" : [ "http://open-services.net/ns/trs/shapes/3.0#changeLog", "http://open-services.net/ns/trs/shapes/3.0#base", "http://open-services.net/ns/trs/shapes/3.0#type" ],
+    "description" : "A Tracked Resource Set provides a representation of the current state of a set of Tracked Resources.",
+    "title" : "The shape of a TrackedResourceSet"
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#base",
+    "@type" : "oslc:Property",
+    "name" : "base",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "trs:base",
+    "range" : "trs:Base",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An enumeration of the resources in the Tracked Resource Set. {{This SHOULD be a reference to a separate resource, not returned inline with the Tracked Resource Set itself}}."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#btype",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A resource type URI. Clients can infer a resource type of <code>trs:Base</code>, or its superclass <code>ldp:DirectContainer</code>."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#change",
+    "@type" : "oslc:Property",
+    "name" : "change",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "trs:change",
+    "range" : [ "trs:Modification", "trs:Creation", "trs:Deletion" ],
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:Resource",
+    "description" : "An inline resource describing a change to a Tracked Resource.\n{{Change Events MUST have URIs (i.e., they cannot be blank nodes) to allow clients to recognize entries they have seen before.}}\n{{The URI is used to identify an event; it need not be dereferenceable, and MAY be a URN.}}\n{{The URI of a Change Event MUST be guaranteed unique, even if order numbers get reused in the wake of a Server rollback}}."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#changeLog",
+    "@type" : "oslc:Property",
+    "name" : "changeLog",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "trs:changeLog",
+    "range" : "trs:ChangeLog",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A Change Log providing an ordered series of incremental adjustments to the Tracked Resource Set.\n{{The Tracked Resource Set representation MUST contain the triples for the referenced Change Log\n(i.e., via a blank node, or an inline named resource),\nincluding the Change Events for the first page of changes}}."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#changed",
+    "@type" : "oslc:Property",
+    "name" : "changed",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "trs:changed",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource that has been created, modified, or deleted."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#cutoffEvent",
+    "@type" : "oslc:Property",
+    "name" : "cutoffEvent",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "trs:cutoffEvent",
+    "range" : [ "trs:Creation", "trs:Deletion", "trs:Modification" ],
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "The URI of an entry in the Change Log at and after which all changes have already been included in the Base."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#member",
+    "@type" : "oslc:Property",
+    "name" : "member",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "ldp:member",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A Tracked Resource that is a member of the Tracked Resource Set.\n<code>ldp:member</code> is the preferred predicate,\nbut the actual predicate is indicated by <code>ldp:hasMemberRelation</code>."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#memberRelation",
+    "@type" : "oslc:Property",
+    "name" : "hasMemberRelation",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "ldp:hasMemberRelation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The membership predicate for this Base container."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#order",
+    "@type" : "oslc:Property",
+    "name" : "order",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "trs:order",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A non-negative integer number indicating the sequence in time of the Change Event.}} {{There MAY be gaps in the sequence}}, but {{a more recent Change Event MUST have a larger number than any preceding Change Event}}."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag",
+    "@type" : "oslc:Property",
+    "name" : "afterETag",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "trspatch:afterETag",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "This property, when present, gives the final HTTP entity tag of the resource referenced in the <code>trs:changed property</code> - the entity-tag value that would have been returned in the HTTP ETag response header if the resource had been retrieved immediately after the change.\nClients can use this as the expected <code>trspatch:beforeETag</code> value in a chain of patch events for a tracked resource."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#patchBeforeEtag",
+    "@type" : "oslc:Property",
+    "name" : "beforeETag",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "trspatch:beforeETag",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "This property, when present, gives the initial HTTP entity tag of the antecedent resource for a patch event. This is the entity-tag value that would be returned in the HTTP ETag response header if the antecedent resource had been retrieved immediately before the change.\nIf this property is missing, or if the entity-tag value does not match the current state of the antecedent resource, the patch should be ignored and the event treated as a normal modification event."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom",
+    "@type" : "oslc:Property",
+    "name" : "createdFrom",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "trspatch:createdFrom",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "{{This property MUST NOT be present unless the <code>trspatch:rdfPatch</code> property is also present}}, indicating this change event is annotated with a patch.\nThis property, when present, identifies the antecedent resource to be used to define the \"before\" state of the patch. If omitted, the antecedent resource is the resource referenced in the <code>trs:changed</code> property."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#patchRdfPatch",
+    "@type" : "oslc:Property",
+    "name" : "rdfPatch",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "trspatch:rdfPatch",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "This property, when present, describes a patch to be applied to the antecedent resource’s RDF representation. A patch cannot describe a change to the non-RDF contents of a resource.\nThe result of applying the patch describes the representation of the resource referenced in the <code>trs:changed</code> property immediately after this change event.\nThis property is used with <code>trs:Modification</code> and <code>trs:Creation Change Events</code>; it is not meaningful for <code>trs:Deletion</code> Change Events. The format of the patch property is defined at <a href=\"#trs-patch\">TRS Patch</a>."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#previous",
+    "@type" : "oslc:Property",
+    "name" : "previous",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "trs:previous",
+    "range" : "trs:ChangeLog",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "The continuation of the Change Log, containing the next group of chronologically earlier Change Events."
+  }, {
+    "@id" : "http://open-services.net/ns/trs/shapes/3.0#type",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A resource type URI. {{A tracked resource set MUST have at least the resource type `trs:TrackedResourceSet`}}."
+  } ],
+  "@context" : {
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "readOnly" : {
+      "@id" : "http://open-services.net/ns/core#readOnly",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "range" : {
+      "@id" : "http://open-services.net/ns/core#range",
+      "@type" : "@id"
+    },
+    "valueType" : {
+      "@id" : "http://open-services.net/ns/core#valueType",
+      "@type" : "@id"
+    },
+    "representation" : {
+      "@id" : "http://open-services.net/ns/core#representation",
+      "@type" : "@id"
+    },
+    "occurs" : {
+      "@id" : "http://open-services.net/ns/core#occurs",
+      "@type" : "@id"
+    },
+    "propertyDefinition" : {
+      "@id" : "http://open-services.net/ns/core#propertyDefinition",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://open-services.net/ns/core#name"
+    },
+    "property" : {
+      "@id" : "http://open-services.net/ns/core#property",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://open-services.net/ns/core#describes",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "dateCopyrighted" : {
+      "@id" : "http://purl.org/dc/terms/dateCopyrighted"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://open-services.net/ns/trs/shapes/3.0#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "trs" : "http://open-services.net/ns/core/trs#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "trspatch" : "http://open-services.net/ns/core/trspatch#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "ldp" : "http://www.w3.org/ns/ldp#"
+  }
+}
