@@ -10,14 +10,14 @@
     <vann:preferredNamespacePrefix>oslc</vann:preferredNamespacePrefix>
     <dcterms:title>The OSLC Core Vocabulary</dcterms:title>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2020-09-17</dcterms:issued>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/oslc-core.html"/>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/core/v3.0/ps01/core-vocab.ttl"/>
+    >2021-08-26</dcterms:issued>
     <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC Core namespace.</dcterms:description>
+    <dcterms:source rdf:resource="https://github.com/oslc-op/oslc-specs/blob/master/specs/core/core-vocab.ttl"/>
     <rdfs:label>The OSLC Core Vocabulary</rdfs:label>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/oslc-core.html"/>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <dcterms:hasVersion>PS01</dcterms:hasVersion>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://open-services.net/ns/core#ResourceValueType">
     <rdfs:comment>Specifies how an object reference is represented in a document.</rdfs:comment>
@@ -255,7 +255,7 @@ total count MAY vary as a client retrieves subsequent pages.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/core#moreInfo">
-    <rdfs:comment>A resource giving more information on the error SHOULD be of an HTML content-type.</rdfs:comment>
+    <rdfs:comment>{{A resource giving more information on the error, with an HTML content-type.</rdfs:comment>
     <rdfs:label>moreInfo</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
@@ -296,7 +296,7 @@ which service is the default usage.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/core#initialHeight">
-    <rdfs:comment>Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size).</rdfs:comment>
+    <rdfs:comment>Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values are expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size).</rdfs:comment>
     <rdfs:label>initialHeight</rdfs:label>
     <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
@@ -315,6 +315,11 @@ supporting sorting of the RDF results.</rdfs:comment>
   <rdf:Property rdf:about="http://open-services.net/ns/core#document">
     <rdfs:comment>The URI of an HTML document to be used for the preview.</rdfs:comment>
     <rdfs:label>document</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://open-services.net/ns/core#cause">
+    <rdfs:comment>An error that is a cause of this error.</rdfs:comment>
+    <rdfs:label>cause</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/core#message">
@@ -572,7 +577,7 @@ match, and sort them in descending order of score.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/core#occurs">
-    <rdfs:comment>MUST be either http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many.</rdfs:comment>
+    <rdfs:comment>One of the values http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many.</rdfs:comment>
     <rdfs:label>occurs</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </rdf:Property>
@@ -582,17 +587,17 @@ match, and sort them in descending order of score.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </oslc:Representation>
   <oslc:ResourceValueType rdf:about="http://open-services.net/ns/core#Resource">
-    <rdfs:comment>The object resource MUST be identified with a URI.</rdfs:comment>
+    <rdfs:comment>The object resource must be identified with a URI.</rdfs:comment>
     <rdfs:label>Resource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </oslc:ResourceValueType>
   <oslc:ResourceValueType rdf:about="http://open-services.net/ns/core#AnyResource">
-    <rdfs:comment>The object resource MUST be identified with either a URI or a blank node.</rdfs:comment>
+    <rdfs:comment>The object resource can be identified with either a URI or a blank node.</rdfs:comment>
     <rdfs:label>AnyResource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </oslc:ResourceValueType>
   <oslc:ResourceValueType rdf:about="http://open-services.net/ns/core#LocalResource">
-    <rdfs:comment>The object resource MUST be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document.</rdfs:comment>
+    <rdfs:comment>The object resource must be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document.</rdfs:comment>
     <vs:term_status>archaic</vs:term_status>
     <rdfs:label>LocalResource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
@@ -618,7 +623,7 @@ match, and sort them in descending order of score.</rdfs:comment>
     <rdfs:comment>The property represents a dependency from object to subject.</rdfs:comment>
   </oslc:ImpactType>
   <oslc:Representation rdf:about="http://open-services.net/ns/core#Inline">
-    <rdfs:comment>The representation of the object resource MUST be present in the representation of the described resource.</rdfs:comment>
+    <rdfs:comment>The representation of the object resource must be present in the representation of the described resource.</rdfs:comment>
     <rdfs:label>Inline</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/core#"/>
   </oslc:Representation>
