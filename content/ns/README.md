@@ -19,3 +19,7 @@
 2. Go into a folder in the NS.
 3. Run `../../../bin/conneg.sh original.ttl`.
 4. Make sure exit code is `0` and the files are intact.
+
+# Checking all files
+
+   find . -type f -print0 | xargs -0 -I{} riot --check --strict --sink {}
