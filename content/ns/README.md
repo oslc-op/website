@@ -22,4 +22,8 @@
 
 # Checking all files
 
-   find . -type f -print0 | xargs -0 -I{} riot --check --strict --sink {}
+   find . -type f -regextype posix-extended -regex '.*\.(nt|jsonld|xml|rdf|ttl)' -print0 | xargs -0 -I{} riot --check --strict --sink {}
+
+Or, faster:
+
+   find . -type f -regextype posix-extended -regex '.*\.(nt|jsonld|xml|rdf|ttl)' -print | parallel --gnu echo {} ';' riot --check --strict --sink {}           
