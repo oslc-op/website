@@ -2,7 +2,7 @@
 # Committee Specification 
 # 10 November 2021
 # Copyright (c) OASIS Open 2021. All Rights Reserved.
-# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/
+# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/
 # Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-spec.html
 # TC IPR Statement: https://www.oasis-open.org/committees/oslc-promcode/ipr.php 
 
