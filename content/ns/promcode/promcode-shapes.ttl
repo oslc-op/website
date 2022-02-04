@@ -35,7 +35,7 @@
   dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dcterms:source <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl> ;
   dcterms:isPartOf <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> ;
-  dcterms:hasVersion "CS03" .
+  dcterms:hasVersion "CS0" .
 
 :IssueCollection a oslc:ResourceShape ;
     oslc:describes oslc_promcode:IssueCollection ;
