@@ -1,9 +1,9 @@
 # OSLC PROMCODE Version 1.0
-# Committee Specification Draft
-# 2 November 2021
+# Committee Specification 
+# 10 November 2021
 # Copyright (c) OASIS Open 2021. All Rights Reserved.
-# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs01/
-# Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/promcode-spec.html
+# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/
+# Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-spec.html
 # TC IPR Statement: https://www.oasis-open.org/committees/oslc-promcode/ipr.php 
 
 # This document is a part of specification being provided under the RF on Limited Terms Mode of 
@@ -35,7 +35,7 @@
   dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dcterms:source <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl> ;
   dcterms:isPartOf <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> ;
-  dcterms:hasVersion "CS02" .
+  dcterms:hasVersion "CS03" .
 
 :IssueCollection a oslc:ResourceShape ;
     oslc:describes oslc_promcode:IssueCollection ;
