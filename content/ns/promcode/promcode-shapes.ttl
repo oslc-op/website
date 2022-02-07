@@ -31,7 +31,7 @@
   rdfs:label "OSLC PROMCODE Constraints" ;
   dcterms:description "All vocabulary URIs defined in the OSLC PROMCODE namespace."^^rdf:XMLLiteral ;
   dcterms:publisher <https://open-services.net/about/> ;
-  dcterms:issued "2021-03-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  dcterms:issued "2021-11-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
   dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
   dcterms:source <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl> ;
   dcterms:isPartOf <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> ;
