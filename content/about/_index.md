@@ -43,7 +43,7 @@ These two groups ensure that all OSLC stakeholders have a voice in decisions aff
 
 ## Project Governing Board (PGB)
 
-The Project Governing Board provides top-level guidance and strategic direction for OSLC. The Board includes those representatives from OSLC Sponsors that have committed to the [Entity Contributor Licensing Agreement](https://www.oasis-open.org/resources/projects/cla/projects-entity-cla). [Learn how to join the OSLC Project Governing Board](mailto:communications@oasis-open.org).
+The Project Governing Board provides top-level guidance and strategic direction for OSLC. The Board includes those representatives from OSLC Sponsors that have committed to the Entity Contributor Licensing Agreement. [Learn how to join the OSLC Project Governing Board](mailto:communications@oasis-open.org).
 
 Current PGB members:
 
@@ -66,7 +66,7 @@ Current TSC members:
 sponsors_title = "Sponsors"
 sponsors_subtitle = ""
 sponsors_body = """
-The OSLC Open Project relies on its Sponsors to fund development of the interoperability standards and open source tools that their organizations and customers depend on. Support for the OSLC Open Project is provided by these organizations. Organizations that have committed to the [OSLC Entity Contributor Licensing Agreement](https://www.oasis-open.org/resources/projects/cla/projects-entity-cla) are listed [here](https://www.oasis-open.org/resources/projects/cla/projects-view-entity-cla). [Learn how to become an OSLC Sponsor.](mailto:communications@oasis-open.org)
+The OSLC Open Project relies on its Sponsors to fund development of the interoperability standards and open source tools that their organizations and customers depend on. Support for the OSLC Open Project is provided by these organizations. Organizations that have committed to the [OSLC Entity Contributor Licensing Agreement](https://www.oasis-open.org/open-projects/cla/) are listed [here](https://community.oasis-open.org/s/searchdirectory?id=a233l0000038IIo). [Learn how to become an OSLC Sponsor.](mailto:communications@oasis-open.org)
 
 """
 
