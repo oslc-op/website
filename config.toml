@@ -27,32 +27,36 @@ disqus_url = ""
     weight = 1
 
 [[menu.main]]
-    name = "Specs"
-    identifier = "specifications"
-    url  = "/specifications"
+    name = "Get started"
+    url  = "https://oslc.github.io/developing-oslc-applications/"
     weight = 3
 
 [[menu.main]]
-    name = "Resources"
-    url  = "/resources/"
-    weight = 4
+    name = "Specs"
+    identifier = "specifications"
+    url  = "/specifications"
+    weight = 5
 
 [[menu.main]]
     name = "News"
     url  = "/news/"
-    weight = 5
+    weight = 7
+
+[[menu.main]]
+    name = "Resources"
+    url  = "/resources/"
+    weight = 9
 
 [[menu.main]]
     name = "About"
     identifier = "about"
     url  = "/about"
-    weight = 2
-
+    weight = 11
 
 [[menu.main]]
     name = "Contribute"
     url  = "/contribute/"
-    weight = 7
+    weight = 13
 
 # Top bar social links menu
 
@@ -62,18 +66,18 @@ disqus_url = ""
     url = "https://github.com/oslc-op"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
-[[menu.topbar]]
-    weight = 2
-    name = "Twitter"
-    url = "http://twitter.com/oslcNews"
-    pre = "<i class='fa fa-2x fa-twitter'></i>"
+# [[menu.topbar]]
+#     weight = 2
+#     name = "Twitter"
+#     url = "http://twitter.com/oslcNews"
+#     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
  [params]
 
     # Google Maps API key (if not set will default to not passing a key.)
     googleMapsApiKey = ""
 
-    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "oslc"
 
     # Since this template is static, the contact form uses www.formspree.io as a
@@ -88,11 +92,11 @@ disqus_url = ""
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
     #
-    # Enable the contact form by entering your Formspree.io email
+    # Enable the contact form by entering your Formspree.io email
     email = "your@email.com"
 
     about_us = "<p>An open community building practical specifications for integrating data.</p>"
-    copyright = "Copyright (c) 2017 OSLC; all rights reserved."
+    copyright = "Copyright (c) 2022 OSLC; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
