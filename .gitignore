@@ -1,4 +1,5 @@
 .DS_Store
+*.lock
 *.swp
 node_modules
 static/node_modules
