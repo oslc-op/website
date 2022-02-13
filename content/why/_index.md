@@ -25,7 +25,7 @@ OSLC allows you to provide:
 - provide rich UIs from your tool for use in 3rd-party tools for seamless linked data workflow;
 - and many other features that your customers would appreciate.
 
-A [number of other products used in ALM/PLM already implement OSLC](http://open-services.net/software/) and your OSLC-enabled tool can integrate with many of them without extra development effort.
+A [number of other products used in ALM/PLM already implement OSLC](https://open-services.net/resources/tools-survey-2020/) and your OSLC-enabled tool can integrate with many of them without extra development effort.
 
 ## ..  a Tool Buyer
 
