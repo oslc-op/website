@@ -31,386 +31,386 @@
   rdfs:label "OSLC PROMCODE Constraints" ;
   dcterms:description "All vocabulary URIs defined in the OSLC PROMCODE namespace."^^rdf:XMLLiteral ;
   dcterms:publisher <https://open-services.net/about/> ;
-  dcterms:issued "2021-11-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
+  dcterms:issued "2022-02-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
   dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
-  dcterms:source <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl> ;
-  dcterms:isPartOf <https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html> ;
-  dcterms:hasVersion "CS02" .
+  dcterms:source <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-shapes.ttl> ;
+  dcterms:isPartOf <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-spec.html> ;
+  dcterms:hasVersion "CS03" .
 
 :IssueCollection a oslc:ResourceShape ;
     oslc:describes oslc_promcode:IssueCollection ;
 
     oslc:property [  a oslc:Property ;
-					 oslc:name "belongsTo" ;
-					 oslc:occurs oslc:Exactly-one ;
-					 oslc:propertyDefinition oslc_promcode:belongsTo ;
-					 oslc:range oslc_promcode:Project ;
-					 oslc:representation oslc:Reference ;
-					 oslc:valueShape :Project ;
-					 oslc:valueType oslc:Resource ;
-					 dcterms:description "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to. " 
-				  ] ;
-	oslc:property [ a oslc:Property ;
-				    oslc:name "collects" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:collects ;
-				    oslc:range oslc_promcode:Issue ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :Issue ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>collects</code> is a relation between an <code>IssueCollection</code> resource and an <code>Issue</code> resource. An <code>IssueCollection</code> resource collects only <code>Issue</code> resources." 
-				  ];
-	oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "A date on which this <code>IssueCollection</code> resource collects <code>Issue</code> resources." 
-				   ];
+                     oslc:name "belongsTo" ;
+                     oslc:occurs oslc:Exactly-one ;
+                     oslc:propertyDefinition oslc_promcode:belongsTo ;
+                     oslc:range oslc_promcode:Project ;
+                     oslc:representation oslc:Reference ;
+                     oslc:valueShape :Project ;
+                     oslc:valueType oslc:Resource ;
+                     dcterms:description "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to. " 
+                  ] ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource."
+                    oslc:name "collects" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:collects ;
+                    oslc:range oslc_promcode:Issue ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :Issue ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>collects</code> is a relation between an <code>IssueCollection</code> resource and an <code>Issue</code> resource. An <code>IssueCollection</code> resource collects only <code>Issue</code> resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier of the resource." 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "A date on which this <code>IssueCollection</code> resource collects <code>Issue</code> resources." 
+                   ];
+    oslc:property [ a oslc:Property ;
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource."
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>IssueCollection</code> resource that is a source of this <code>IssueCollection</code> resource."
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier of the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>IssueCollection</code> resource."
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>IssueCollection</code> resource that is a source of this <code>IssueCollection</code> resource."
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>IssueCollection</code> resource."
+                  ];
+    oslc:property [ a oslc:Property ;
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
                   ];
     dcterms:title "Shape resource of an <code>IssueCollection</code> resource."^^rdf:XMLLiteral .
 
 :ManagedItemCollection a oslc:ResourceShape ;
     oslc:describes oslc_promcode:ManagedItemCollection ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "belongsTo" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:belongsTo ;
-				    oslc:range oslc_promcode:Project ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Project ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource. " 
+                    oslc:name "belongsTo" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:belongsTo ;
+                    oslc:range oslc_promcode:Project ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Project ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource. " 
                   ];
                   
     oslc:property [ a oslc:Property ;
-				    oslc:name "collects" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:collects ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:Issue,
-				        oslc_promcode:Risk,
-				        oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>ManagedItem</code> resources included in this <code>ManagedItemCollection</code>. A <code>ManagedItemCollection</code> resource collects resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code>, and <code>Issue</code>." 
+                    oslc:name "collects" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:collects ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:Issue,
+                        oslc_promcode:Risk,
+                        oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>ManagedItem</code> resources included in this <code>ManagedItemCollection</code>. A <code>ManagedItemCollection</code> resource collects resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code>, and <code>Issue</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "A date on which this <code>ManagedItemCollection </code>resource collects member resources." 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "A date on which this <code>ManagedItemCollection </code>resource collects member resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>ManagedItemCollection</code> resource." 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>ManagedItemCollection</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>ManagedItemCollection</code> resource that is a source of this <code>ManagedItemCollection</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>ManagedItemCollection</code> resource that is a source of this <code>ManagedItemCollection</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>ManagedItemCollection</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>ManagedItemCollection</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     dcterms:title "Shape resource of <code>ManagedItemCollection</code>."^^rdf:XMLLiteral .
 
 :Report a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Report ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "belongsTo" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:belongsTo ;
-				    oslc:range oslc_promcode:Project ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Project ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources. "
+                    oslc:name "belongsTo" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:belongsTo ;
+                    oslc:range oslc_promcode:Project ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Project ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources. "
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "collects" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:collects ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>collects</code> is a relation between the <code>Report</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>ScopeItem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource. The <code>Report</code> resource collects a subset of resources collected by the <code>Plan</code> resource that is linked by <code>correspondsTo</code> property." 
+                    oslc:name "collects" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:collects ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>collects</code> is a relation between the <code>Report</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>ScopeItem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource. The <code>Report</code> resource collects a subset of resources collected by the <code>Plan</code> resource that is linked by <code>correspondsTo</code> property." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "correspondsTo" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:correspondsTo ;
-				    oslc:range oslc_promcode:Plan ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Plan ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>correspondsTo</code> is a relation between a <code>Report</code> resource and a <code>Plan</code> resource. A <code>Report</code> resource has at most one <code>correspondsTo</code> relation to the corresponding a <code>Plan</code> resource. If a plan is changed and a new <code>Plan</code> resource is created, the <code>Report</code> may need to be linked to the new <code>Plan</code> resource." 
+                    oslc:name "correspondsTo" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:correspondsTo ;
+                    oslc:range oslc_promcode:Plan ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Plan ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>correspondsTo</code> is a relation between a <code>Report</code> resource and a <code>Plan</code> resource. A <code>Report</code> resource has at most one <code>correspondsTo</code> relation to the corresponding a <code>Plan</code> resource. If a plan is changed and a new <code>Plan</code> resource is created, the <code>Report</code> may need to be linked to the new <code>Plan</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "A date on which this <code>Report</code> resource collects member resources." 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "A date on which this <code>Report</code> resource collects member resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>Report</code> resource." 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>Report</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Report</code> resource that is a source of this <code>Report</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Report</code> resource that is a source of this <code>Report</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>Report</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>Report</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "includes" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:includes ;
-				    oslc:range oslc_promcode:Measurement ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :Measurement ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>includes</code> is a relation between this <code>Report</code> resource and <code>Measurement</code> resources.   A <code>Measurement</code> resource linked by <code>includes</code> from this resource must measure an <code>Artifact</code> resource that is linked by <code>collects</code> property of this <code>Report</code> resource." 
+                    oslc:name "includes" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:includes ;
+                    oslc:range oslc_promcode:Measurement ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :Measurement ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>includes</code> is a relation between this <code>Report</code> resource and <code>Measurement</code> resources.   A <code>Measurement</code> resource linked by <code>includes</code> from this resource must measure an <code>Artifact</code> resource that is linked by <code>collects</code> property of this <code>Report</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     dcterms:title "Shape resource of a <code>Report</code> resource"^^rdf:XMLLiteral .
 
 :RiskCollection a oslc:ResourceShape ;
     oslc:describes oslc_promcode:RiskCollection ;
     oslc:property [ a oslc:Property ;
-    				oslc:name "belongsTo" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:belongsTo ;
-				    oslc:range oslc_promcode:Project ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Project ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>belongsTo</code> is a relation between the <code>RiskCollection</code> resource and a <code>Project</code> resource." 
+                    oslc:name "belongsTo" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:belongsTo ;
+                    oslc:range oslc_promcode:Project ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Project ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>belongsTo</code> is a relation between the <code>RiskCollection</code> resource and a <code>Project</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "collects" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:collects ;
-				    oslc:range oslc_promcode:Risk ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :Risk ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>collects</code> is a relation between a <code>RiskCollection</code> resource and a <code>Risk</code> resource." 
+                    oslc:name "collects" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:collects ;
+                    oslc:range oslc_promcode:Risk ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :Risk ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>collects</code> is a relation between a <code>RiskCollection</code> resource and a <code>Risk</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "A date on which this <code>RiskCollection</code> resource collects member resources." 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "A date on which this <code>RiskCollection</code> resource collects member resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>RiskCollection</code> resource."
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>RiskCollection</code> resource."
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>RiskCollection</code> resource that is a source of this <code>RiskCollection</code> resource."
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>RiskCollection</code> resource that is a source of this <code>RiskCollection</code> resource."
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>RiskCollection</code> resource."
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>RiskCollection</code> resource."
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
                   ];
     dcterms:title "Shape resource of a <code>RiskCollection</code> resource."^^rdf:XMLLiteral .
 
 :Issue a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Issue ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the <code>Issue</code> resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the <code>Issue</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for the <code>Issue</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for the <code>Issue</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Issue</code> resource that is a source of this <code>Issue</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Issue</code> resource that is a source of this <code>Issue</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for the resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Issue</code> resources in the project." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Issue</code> resources in the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "raisedBy" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:raisedBy ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:Issue,
-				        oslc_promcode:Risk,
-				        oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>raisedBy</code> is a relation between an <code>Issue</code> resource and other resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> and <code>Issue</code>. An <code>Issue</code> resource may be raised by one or more resources." 
+                    oslc:name "raisedBy" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:raisedBy ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:Issue,
+                        oslc_promcode:Risk,
+                        oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>raisedBy</code> is a relation between an <code>Issue</code> resource and other resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> and <code>Issue</code>. An <code>Issue</code> resource may be raised by one or more resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "raisedDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:raisedDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>raisedDate</code> is an optional property of an <code>Issue</code> resource. It is the raised date of the <code>Issue</code> resource. Its value is a <code>dateTime</code>." 
+                    oslc:name "raisedDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:raisedDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>raisedDate</code> is an optional property of an <code>Issue</code> resource. It is the raised date of the <code>Issue</code> resource. Its value is a <code>dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "stateOfIssue" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:stateOfIssue ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>stateOfIssue</code> is a property that defines the state of an <code>Issue</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of issue." 
+                    oslc:name "stateOfIssue" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:stateOfIssue ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>stateOfIssue</code> is a property that defines the state of an <code>Issue</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of issue." 
                   ];
     dcterms:title "Shape resource of an <code>Issue</code> resource."^^rdf:XMLLiteral .
 
@@ -418,54 +418,54 @@
 :Measurement a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Measurement ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made.  " 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made.  " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for the <code>Measurement</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for the <code>Measurement</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "measures" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:measures ;
-				    oslc:range oslc_promcode:Artifact ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Artifact ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>measures</code> is a relation between a <code>Measurement</code> resource and an <code>Artifact</code> resource. The measurement represented by the resource is on the artifact represented by the <code>Artifact</code> resource." 
+                    oslc:name "measures" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:measures ;
+                    oslc:range oslc_promcode:Artifact ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Artifact ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>measures</code> is a relation between a <code>Measurement</code> resource and an <code>Artifact</code> resource. The measurement represented by the resource is on the artifact represented by the <code>Artifact</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "observes" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:observes ;
-				    oslc:range oslc_promcode:Measure ;
-				    oslc:representation oslc:Inline ;
-				    oslc:valueShape :Measure ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>observes</code> is a relation between a <code>Measurement</code> resource and a <code>Measure</code> resource. One <code>Measurement</code> resource observes zero or many <code>Measure</code> resources. The representation of this property is inline." 
+                    oslc:name "observes" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:observes ;
+                    oslc:range oslc_promcode:Measure ;
+                    oslc:representation oslc:Inline ;
+                    oslc:valueShape :Measure ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>observes</code> is a relation between a <code>Measurement</code> resource and a <code>Measure</code> resource. One <code>Measurement</code> resource observes zero or many <code>Measure</code> resources. The representation of this property is inline." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral
                   ];
     dcterms:title "Shape resource of a <code>Measurement</code> resource"^^rdf:XMLLiteral .
 
@@ -473,70 +473,70 @@
 :Plan a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Plan ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "belongsTo" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:belongsTo ;
-				    oslc:range oslc_promcode:Project ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Project ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource. " 
+                    oslc:name "belongsTo" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:belongsTo ;
+                    oslc:range oslc_promcode:Project ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Project ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "collects" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:collects ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>collects</code> is a relation between a <code>Plan</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>Scopeitem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource." 
+                    oslc:name "collects" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:collects ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>collects</code> is a relation between a <code>Plan</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>Scopeitem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "date" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:date ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "A date on which this <code>Plan</code> resource collects member resources." 
+                    oslc:name "date" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:date ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "A date on which this <code>Plan</code> resource collects member resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>Plan</code> resource." 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>Plan</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Plan</code> resource that is a source of this <code>Plan</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Plan</code> resource that is a source of this <code>Plan</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>Plan</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>Plan</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     dcterms:title "Shape resource of a <code>Plan</code> resource"^^rdf:XMLLiteral .
 
@@ -544,77 +544,77 @@
 :Risk a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Risk ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human to understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human to understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>Risk</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>Risk</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Risk</code> resource that is a source of this <code>Risk</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Risk</code> resource that is a source of this <code>Risk</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for a <code>Risk</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for a <code>Risk</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifiedBy" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:identifiedBy ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:Issue,
-				        oslc_promcode:Risk,
-				        oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>identifiedBy</code> is a relation between a <code>Risk</code> resource and a resource of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> or <code>Issue</code>. A <code>Risk</code> resource may be identified by one or more resources." 
+                    oslc:name "identifiedBy" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:identifiedBy ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:Issue,
+                        oslc_promcode:Risk,
+                        oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>identifiedBy</code> is a relation between a <code>Risk</code> resource and a resource of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> or <code>Issue</code>. A <code>Risk</code> resource may be identified by one or more resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifiedDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:identifiedDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>identifiedDate</code> is the date on which the risk was identified." 
+                    oslc:name "identifiedDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:identifiedDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>identifiedDate</code> is the date on which the risk was identified." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Risk</code> resources of the project." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Risk</code> resources of the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "stateOfRisk" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:stateOfRisk ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>stateOfRisk</code> is a property that defines the state of a <code>Risk</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk." 
+                    oslc:name "stateOfRisk" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:stateOfRisk ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>stateOfRisk</code> is a property that defines the state of a <code>Risk</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk." 
                   ];
     dcterms:title "Shape resource of a <code>Risk</code> resource."^^rdf:XMLLiteral .
 
@@ -622,447 +622,446 @@
 :Measure a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Measure ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for the <code>Measure</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for the <code>Measure</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of this <code>Measure</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of this <code>Measure</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "metricOfMeasure" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:metricOfMeasure ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>metricOfMeasure</code> is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this <code>Measure</code> resource." 
+                    oslc:name "metricOfMeasure" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:metricOfMeasure ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>metricOfMeasure</code> is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this <code>Measure</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "unitOfMeasure" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:unitOfMeasure ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>unitOfMeasure</code> is a property that defines a unit of measure of this <code>Measure</code> resource. The value is any resource, but is expected to have information on the unit of measure of this <code>Measure</code> resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc." 
+                    oslc:name "unitOfMeasure" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:unitOfMeasure ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>unitOfMeasure</code> is a property that defines a unit of measure of this <code>Measure</code> resource. The value is any resource, but is expected to have information on the unit of measure of this <code>Measure</code> resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "valueOfMeasure" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition oslc_promcode:valueOfMeasure ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "<code>valueOfMeasure</code> is a property that represents a value for the <code>Measure</code> resource." 
+                    oslc:name "valueOfMeasure" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition oslc_promcode:valueOfMeasure ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "<code>valueOfMeasure</code> is a property that represents a value for the <code>Measure</code> resource." 
                   ];
     dcterms:title "Shape resource of a <code>Measure</code> resource"^^rdf:XMLLiteral .
 
 :WorkItem a oslc:ResourceShape ;
     oslc:describes oslc_promcode:WorkItem ;
-    oslc:name "WorkItem" ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "actualEndDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:actualEndDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>actualEndDate</code> is a property of a <code>WorkItem</code> resource. It is the actual end date of the work item. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "actualEndDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:actualEndDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>actualEndDate</code> is a property of a <code>WorkItem</code> resource. It is the actual end date of the work item. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "actualStartDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:actualStartDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>actualStartDate</code> is a property of a <code>WorkItem</code> resource. It is the actual start date of the work item. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "actualStartDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:actualStartDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>actualStartDate</code> is a property of a <code>WorkItem</code> resource. It is the actual start date of the work item. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for the <code>WorkItem</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for the <code>WorkItem</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>WorkItem</code> resource that is a source of this <code>WorkItem</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>WorkItem</code> resource that is a source of this <code>WorkItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for the <code>WorkItem</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for the <code>WorkItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "isPartOf" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:isPartOf ;
-				    oslc:range oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :WorkItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>isPartOf</code> is a relation between a child <code>WorkItem</code> resource and its parent <code>WorkItem</code> resource. A <code>WorkItem</code> resource may have multiple child <code>WorkItem</code> resources." 
+                    oslc:name "isPartOf" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:isPartOf ;
+                    oslc:range oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :WorkItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>isPartOf</code> is a relation between a child <code>WorkItem</code> resource and its parent <code>WorkItem</code> resource. A <code>WorkItem</code> resource may have multiple child <code>WorkItem</code> resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>WorkItem</code> resources of the project." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>WorkItem</code> resources of the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "plannedEndDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:plannedEndDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>plannedEndDate</code> is a property of a <code>WorkItem</code> resource. It is the planned end date of the work item. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "plannedEndDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:plannedEndDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>plannedEndDate</code> is a property of a <code>WorkItem</code> resource. It is the planned end date of the work item. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "plannedStartDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:plannedStartDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>plannedStartDate</code> is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "plannedStartDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:plannedStartDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>plannedStartDate</code> is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "representedBy" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:representedBy ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource. " 
+                    oslc:name "representedBy" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:representedBy ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "requiredBy" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:requiredBy ;
-				    oslc:range oslc_promcode:Artifact,
-				        oslc_promcode:ScopeItem ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :ManagedItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>requiredBy</code> is a relation between this <code>WorkItem</code> resource and a <code>ScopeItem</code> resource or an <code>Artifact</code> resource." 
+                    oslc:name "requiredBy" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:requiredBy ;
+                    oslc:range oslc_promcode:Artifact,
+                        oslc_promcode:ScopeItem ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :ManagedItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>requiredBy</code> is a relation between this <code>WorkItem</code> resource and a <code>ScopeItem</code> resource or an <code>Artifact</code> resource." 
                   ];
     dcterms:title "Shape resource of a <code>WorkItem</code> resource" .
 
 :Artifact a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Artifact ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for the <code>Artifact</code> resource." 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for the <code>Artifact</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Artifact</code> resource that is a source of this <code>Artifact</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Artifact</code> resource that is a source of this <code>Artifact</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string of the resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string of the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "isPartOf" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:isPartOf ;
-				    oslc:range oslc_promcode:Artifact ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :Artifact ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>isPartOf</code> is a relation between a child <code>Artifact</code> resource and its parent <code>Artifact</code> resource. An <code>Artifact</code> resource may have multiple child <code>WorkItem</code> resources." 
+                    oslc:name "isPartOf" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:isPartOf ;
+                    oslc:range oslc_promcode:Artifact ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :Artifact ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>isPartOf</code> is a relation between a child <code>Artifact</code> resource and its parent <code>Artifact</code> resource. An <code>Artifact</code> resource may have multiple child <code>WorkItem</code> resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all <code>Artifact</code> resources of the project." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all <code>Artifact</code> resources of the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "producedFor" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:producedFor ;
-				    oslc:range oslc_promcode:ScopeItem,
-				        oslc_promcode:WorkItem ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :ManagedItem;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>producedFor</code> is a relation between an <code>Artifact</code> resource and a <code>ScopeItem</code> resource or a <code>WorkItem</code> resource. <code>Artifact</code> is produced as a result of implementation of the <code>ScopeItem</code> resources or as a result of the work described by the <code>WorkItem</code> resource." 
+                    oslc:name "producedFor" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:producedFor ;
+                    oslc:range oslc_promcode:ScopeItem,
+                        oslc_promcode:WorkItem ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :ManagedItem;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>producedFor</code> is a relation between an <code>Artifact</code> resource and a <code>ScopeItem</code> resource or a <code>WorkItem</code> resource. <code>Artifact</code> is produced as a result of implementation of the <code>ScopeItem</code> resources or as a result of the work described by the <code>WorkItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "targets" ;
-				    oslc:occurs oslc:Zero-or-many ;
-				    oslc:propertyDefinition oslc_promcode:targets ;
-				    oslc:range oslc_promcode:Measure ;
-				    oslc:representation oslc:Inline ;
-				    oslc:valueShape :Measure ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>targets</code> is a relation between an <code>Artifact</code> resource and a <code>Measure</code> resource. The representation of this property is inline." 
+                    oslc:name "targets" ;
+                    oslc:occurs oslc:Zero-or-many ;
+                    oslc:propertyDefinition oslc_promcode:targets ;
+                    oslc:range oslc_promcode:Measure ;
+                    oslc:representation oslc:Inline ;
+                    oslc:valueShape :Measure ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>targets</code> is a relation between an <code>Artifact</code> resource and a <code>Measure</code> resource. The representation of this property is inline." 
                   ];
     dcterms:title "Shape resource of an <code>Artifact</code> resource."^^rdf:XMLLiteral .
 
 :ScopeItem a oslc:ResourceShape ;
     oslc:describes oslc_promcode:ScopeItem ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "actualSize" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:actualSize ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "<code>actualSize</code> is a property for actual development size for a <code>ScopeItem</code> resource." 
+                    oslc:name "actualSize" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:actualSize ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "<code>actualSize</code> is a property for actual development size for a <code>ScopeItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>ScopeItem</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>ScopeItem</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>ScopeItem</code> resource that is a source of this <code>ScopeItem</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>ScopeItem</code> resource that is a source of this <code>ScopeItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for a <code>ScopeItem</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for a <code>ScopeItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "isPartOf" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:isPartOf ;
-				    oslc:range oslc_promcode:ScopeItem ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueShape :ScopeItem ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "<code>isPartOf</code> is a relation between a child <code>ScopeItem</code> resource and its parent <code>ScopeItem</code> resource. A <code>ScopeItem</code> resource may have multiple child <code>ScopeItem</code> resources." 
+                    oslc:name "isPartOf" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:isPartOf ;
+                    oslc:range oslc_promcode:ScopeItem ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueShape :ScopeItem ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "<code>isPartOf</code> is a relation between a child <code>ScopeItem</code> resource and its parent <code>ScopeItem</code> resource. A <code>ScopeItem</code> resource may have multiple child <code>ScopeItem</code> resources." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>ScopeItem</code> resources of the project." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to this resource which represents a position in the sequential order of all the <code>ScopeItem</code> resources of the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "plannedSize" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:plannedSize ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "<code>plannedSize</code> is a property for estimated development size for a <code>ScopeItem</code> resource." 
+                    oslc:name "plannedSize" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:plannedSize ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "<code>plannedSize</code> is a property for estimated development size for a <code>ScopeItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     dcterms:title "Shape resource of a <code>ScopeItem</code> resource"^^rdf:XMLLiteral .
 
 :ManagedItem a oslc:ResourceShape ;
     oslc:describes oslc_promcode:ManagedItem ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property to help a human understand the resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>ManagedItem</code> resource. " 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>ManagedItem</code> resource. " 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>ManagedItem</code> resource that is a source of this <code>ManagedItem</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>ManagedItem</code> resource that is a source of this <code>ManagedItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for a <code>ManagedItem</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for a <code>ManagedItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "sequenceNumber" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
-				    oslc:valueType xsd:decimal ;
-				    dcterms:description "A unique number assigned to the resource which represents a position in the sequential order of resources of the same type of <code>ManagedItem</code>." 
+                    oslc:name "sequenceNumber" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:sequenceNumber ;
+                    oslc:valueType xsd:decimal ;
+                    dcterms:description "A unique number assigned to the resource which represents a position in the sequential order of resources of the same type of <code>ManagedItem</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     dcterms:title "Shape resource for <code>ManagedItem</code>."^^rdf:XMLLiteral .
 
 :Project a oslc:ResourceShape ;
     oslc:describes oslc_promcode:Project ;
     oslc:property [ a oslc:Property ;
-				    oslc:name "actualEndDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:actualEndDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>actualEndDate</code> is a property of a <code>Project</code> resource that describes actual end date of the project. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "actualEndDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:actualEndDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>actualEndDate</code> is a property of a <code>Project</code> resource that describes actual end date of the project. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "actualStartDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:actualStartDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>actualStartDate</code> is a property of a <code>Project</code> resource. It is the actual start date of the project. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "actualStartDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:actualStartDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>actualStartDate</code> is a property of a <code>Project</code> resource. It is the actual start date of the project. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "description" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:description ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "<code>dcterms:description</code> is a property of a <code>Project</code> resource to help a human understand the project." 
+                    oslc:name "description" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:description ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "<code>dcterms:description</code> is a property of a <code>Project</code> resource to help a human understand the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "identifier" ;
-				    oslc:occurs oslc:Exactly-one ;
-				    oslc:propertyDefinition dcterms:identifier ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A unique identifier for a <code>Project</code> resource." 
+                    oslc:name "identifier" ;
+                    oslc:occurs oslc:Exactly-one ;
+                    oslc:propertyDefinition dcterms:identifier ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A unique identifier for a <code>Project</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "source" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:source ;
-				    oslc:valueType xsd:string ;
-				    dcterms:description "A string that identifies the <code>Project</code> resource that is a source of this <code>Project</code> resource." 
+                    oslc:name "source" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:source ;
+                    oslc:valueType xsd:string ;
+                    dcterms:description "A string that identifies the <code>Project</code> resource that is a source of this <code>Project</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "title" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition dcterms:title ;
-				    oslc:valueType rdf:XMLLiteral ;
-				    dcterms:description "A title string for a <code>Project</code> resource." 
+                    oslc:name "title" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition dcterms:title ;
+                    oslc:valueType rdf:XMLLiteral ;
+                    dcterms:description "A title string for a <code>Project</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "metricOfScopeItemSize" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:metricOfScopeItemSize ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>metricOfScopeItemSize</code> is a property that describes a metric of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired metric for all the <code>ScopeItem</code> resources of the project." 
+                    oslc:name "metricOfScopeItemSize" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:metricOfScopeItemSize ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>metricOfScopeItemSize</code> is a property that describes a metric of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired metric for all the <code>ScopeItem</code> resources of the project." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "plannedEndDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:plannedEndDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>plannedEndDate</code> is a property of a <code>Project</code> resource. It is the planned end date of the project. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "plannedEndDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:plannedEndDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>plannedEndDate</code> is a property of a <code>Project</code> resource. It is the planned end date of the project. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "plannedStartDate" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:plannedStartDate ;
-				    oslc:valueType xsd:dateTime ;
-				    dcterms:description "<code>plannedStartDate</code> is a property of a <code>Project</code> resource. It is the planned start date of the project. Its value is of type <code>xsd:dateTime</code>." 
+                    oslc:name "plannedStartDate" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:plannedStartDate ;
+                    oslc:valueType xsd:dateTime ;
+                    dcterms:description "<code>plannedStartDate</code> is a property of a <code>Project</code> resource. It is the planned start date of the project. Its value is of type <code>xsd:dateTime</code>." 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "type" ;
-				    oslc:occurs oslc:One-or-many ;
-				    oslc:propertyDefinition rdf:type ;
-				    oslc:range rdfs:Class ;
-				    oslc:representation oslc:Reference ;
-				    oslc:valueType oslc:Resource ;
-				    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
+                    oslc:name "type" ;
+                    oslc:occurs oslc:One-or-many ;
+                    oslc:propertyDefinition rdf:type ;
+                    oslc:range rdfs:Class ;
+                    oslc:representation oslc:Reference ;
+                    oslc:valueType oslc:Resource ;
+                    dcterms:description "The resource type URIs."^^rdf:XMLLiteral 
                   ];
     oslc:property [ a oslc:Property ;
-				    oslc:name "unitOfScopeItemSize" ;
-				    oslc:occurs oslc:Zero-or-one ;
-				    oslc:propertyDefinition oslc_promcode:unitOfScopeItemSize ;
-				    oslc:representation oslc:Either ;
-				    oslc:valueType oslc:AnyResource ;
-				    dcterms:description "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project. " 
+                    oslc:name "unitOfScopeItemSize" ;
+                    oslc:occurs oslc:Zero-or-one ;
+                    oslc:propertyDefinition oslc_promcode:unitOfScopeItemSize ;
+                    oslc:representation oslc:Either ;
+                    oslc:valueType oslc:AnyResource ;
+                    dcterms:description "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project. " 
                   ];
     dcterms:title "Shape resource of a <code>Project</code> resource."^^rdf:XMLLiteral .
 
