@@ -7,14 +7,14 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <oslc:ResourceShapeConstraints rdf:about="http://open-services.net/ns/promcode/shapes/1.0#">
-    <dcterms:isPartOf rdf:resource="https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html"/>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-spec.html"/>
     <dcterms:title>OSLC PROMCODE Constraints</dcterms:title>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
     >2021-03-23</dcterms:issued>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <dcterms:source rdf:resource="https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-shapes.ttl"/>
     <rdfs:label>OSLC PROMCODE Constraints</rdfs:label>
-    <dcterms:hasVersion>CS02</dcterms:hasVersion>
+    <dcterms:hasVersion>CS03</dcterms:hasVersion>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
     <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC PROMCODE namespace.</dcterms:description>
   </oslc:ResourceShapeConstraints>
