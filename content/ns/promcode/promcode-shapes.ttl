@@ -48,7 +48,7 @@
                      oslc:representation oslc:Reference ;
                      oslc:valueShape :Project ;
                      oslc:valueType oslc:Resource ;
-                     dcterms:description "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to. " 
+                     dcterms:description "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to." 
                   ] ;
     oslc:property [ a oslc:Property ;
                     oslc:name "collects" ;
@@ -116,7 +116,7 @@
                     oslc:representation oslc:Reference ;
                     oslc:valueShape :Project ;
                     oslc:valueType oslc:Resource ;
-                    dcterms:description "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource. " 
+                    dcterms:description "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource." 
                   ];
                   
     oslc:property [ a oslc:Property ;
@@ -189,7 +189,7 @@
                     oslc:representation oslc:Reference ;
                     oslc:valueShape :Project ;
                     oslc:valueType oslc:Resource ;
-                    dcterms:description "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources. "
+                    dcterms:description "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources."
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "collects" ;
@@ -351,7 +351,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for the <code>Issue</code> resource. " 
+                    dcterms:description "A unique identifier for the <code>Issue</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "source" ;
@@ -422,7 +422,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:date ;
                     oslc:valueType xsd:dateTime ;
-                    dcterms:description "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made.  " 
+                    dcterms:description "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "description" ;
@@ -436,7 +436,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for the <code>Measurement</code> resource. " 
+                    dcterms:description "A unique identifier for the <code>Measurement</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "measures" ;
@@ -480,7 +480,7 @@
                     oslc:representation oslc:Reference ;
                     oslc:valueShape :Project ;
                     oslc:valueType oslc:Resource ;
-                    dcterms:description "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource. " 
+                    dcterms:description "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "collects" ;
@@ -555,7 +555,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for a <code>Risk</code> resource. " 
+                    dcterms:description "A unique identifier for a <code>Risk</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "source" ;
@@ -633,7 +633,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for the <code>Measure</code> resource. " 
+                    dcterms:description "A unique identifier for the <code>Measure</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "title" ;
@@ -704,7 +704,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for the <code>WorkItem</code> resource. " 
+                    dcterms:description "A unique identifier for the <code>WorkItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "source" ;
@@ -766,7 +766,7 @@
                     oslc:propertyDefinition oslc_promcode:representedBy ;
                     oslc:representation oslc:Either ;
                     oslc:valueType oslc:AnyResource ;
-                    dcterms:description "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource. " 
+                    dcterms:description "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "requiredBy" ;
@@ -881,7 +881,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for a <code>ScopeItem</code> resource. " 
+                    dcterms:description "A unique identifier for a <code>ScopeItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "source" ;
@@ -946,7 +946,7 @@
                     oslc:occurs oslc:Exactly-one ;
                     oslc:propertyDefinition dcterms:identifier ;
                     oslc:valueType xsd:string ;
-                    dcterms:description "A unique identifier for a <code>ManagedItem</code> resource. " 
+                    dcterms:description "A unique identifier for a <code>ManagedItem</code> resource." 
                   ];
     oslc:property [ a oslc:Property ;
                     oslc:name "source" ;
@@ -1061,7 +1061,7 @@
                     oslc:propertyDefinition oslc_promcode:unitOfScopeItemSize ;
                     oslc:representation oslc:Either ;
                     oslc:valueType oslc:AnyResource ;
-                    dcterms:description "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project. " 
+                    dcterms:description "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project." 
                   ];
     dcterms:title "Shape resource of a <code>Project</code> resource."^^rdf:XMLLiteral .
 
