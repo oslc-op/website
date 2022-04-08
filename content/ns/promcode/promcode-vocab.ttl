@@ -1,9 +1,9 @@
 # OSLC PROMCODE Version 1.0
-# Committee Specification 
-# 15 February 2022
+# OSIS Standard
+# 11 March 2022
 # Copyright (c) OASIS Open 2021. All Rights Reserved.
-# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/
-# Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-spec.html
+# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/
+# Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html
 # TC IPR Statement: https://www.oasis-open.org/committees/oslc-promcode/ipr.php 
 
 # This document is a part of specification being provided under the RF on Limited Terms Mode of 
@@ -30,10 +30,10 @@
 	dcterms:description "All vocabulary URIs defined in The OSLC PROMCODE namespace."^^rdf:XMLLiteral ;
 	vann:preferredNamespacePrefix "oslc_promcode" ;
 	dcterms:publisher <https://open-services.net/about/> ;
-	dcterms:source <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-vocab.ttl> ;
-	dcterms:hasVersion "CS03" ;
+	dcterms:source <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.ttl> ;
+	dcterms:hasVersion "OS" ;
 	dcterms:issued "2022-02-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	dcterms:isPartOf <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-spec.html> ;
+	dcterms:isPartOf <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html> ;
 	dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> .
 	
 # classes	
