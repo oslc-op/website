@@ -2,30 +2,174 @@
   "@graph" : [ {
     "@id" : "_:b0",
     "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for the <code>Measurement</code> resource."
+  }, {
+    "@id" : "_:b1",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+  }, {
+    "@id" : "_:b10",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b100",
+    "@type" : "oslc:Property",
     "name" : "source",
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "dcterms:source",
     "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>ManagedItem</code> resource that is a source of this <code>ManagedItem</code> resource."
+    "description" : "A string that identifies the <code>Risk</code> resource that is a source of this <code>Risk</code> resource."
   }, {
-    "@id" : "_:b1",
+    "@id" : "_:b101",
     "@type" : "oslc:Property",
-    "name" : "actualStartDate",
+    "name" : "sequenceNumber",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:actualStartDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>actualStartDate</code> is a property of a <code>WorkItem</code> resource. It is the actual start date of the work item. Its value is of type <code>xsd:dateTime</code>."
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Risk</code> resources of the project."
   }, {
-    "@id" : "_:b10",
+    "@id" : "_:b102",
     "@type" : "oslc:Property",
-    "name" : "stateOfRisk",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b103",
+    "@type" : "oslc:Property",
+    "name" : "collects",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:collects",
+    "range" : [ "oslc_promcode:Issue", "oslc_promcode:WorkItem", "oslc_promcode:ScopeItem", "oslc_promcode:Artifact", "oslc_promcode:Risk" ],
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>ManagedItem</code> resources included in this <code>ManagedItemCollection</code>. A <code>ManagedItemCollection</code> resource collects resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code>, and <code>Issue</code>."
+  }, {
+    "@id" : "_:b104",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string for a <code>Risk</code> resource."
+  }, {
+    "@id" : "_:b105",
+    "@type" : "oslc:Property",
+    "name" : "isPartOf",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:isPartOf",
+    "range" : "oslc_promcode:Artifact",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Artifact",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>isPartOf</code> is a relation between a child <code>Artifact</code> resource and its parent <code>Artifact</code> resource. An <code>Artifact</code> resource may have multiple child <code>WorkItem</code> resources."
+  }, {
+    "@id" : "_:b106",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string of the resource."
+  }, {
+    "@id" : "_:b107",
+    "@type" : "oslc:Property",
+    "name" : "raisedDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:raisedDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>raisedDate</code> is an optional property of an <code>Issue</code> resource. It is the raised date of the <code>Issue</code> resource. Its value is a <code>dateTime</code>."
+  }, {
+    "@id" : "_:b108",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>Project</code> resource that is a source of this <code>Project</code> resource."
+  }, {
+    "@id" : "_:b109",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
     "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "oslc_promcode:stateOfRisk",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>ManagedItem</code> resource."
+  }, {
+    "@id" : "_:b11",
+    "@type" : "oslc:Property",
+    "name" : "metricOfMeasure",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:metricOfMeasure",
     "representation" : "oslc:Either",
     "valueType" : "oslc:AnyResource",
-    "description" : "<code>stateOfRisk</code> is a property that defines the state of a <code>Risk</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk."
+    "description" : "<code>metricOfMeasure</code> is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this <code>Measure</code> resource."
   }, {
-    "@id" : "_:b100",
+    "@id" : "_:b110",
+    "@type" : "oslc:Property",
+    "name" : "identifiedDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:identifiedDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>identifiedDate</code> is the date on which the risk was identified."
+  }, {
+    "@id" : "_:b111",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human to understand the resource."
+  }, {
+    "@id" : "_:b112",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string for a <code>Project</code> resource."
+  }, {
+    "@id" : "_:b113",
+    "@type" : "oslc:Property",
+    "name" : "plannedStartDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:plannedStartDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>plannedStartDate</code> is a property of a <code>Project</code> resource. It is the planned start date of the project. Its value is of type <code>xsd:dateTime</code>."
+  }, {
+    "@id" : "_:b114",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for the <code>Issue</code> resource."
+  }, {
+    "@id" : "_:b115",
     "@type" : "oslc:Property",
     "name" : "stateOfIssue",
     "occurs" : "oslc:Zero-or-one",
@@ -34,189 +178,38 @@
     "valueType" : "oslc:AnyResource",
     "description" : "<code>stateOfIssue</code> is a property that defines the state of an <code>Issue</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of issue."
   }, {
-    "@id" : "_:b101",
-    "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
-  }, {
-    "@id" : "_:b102",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b103",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>ScopeItem</code> resource that is a source of this <code>ScopeItem</code> resource."
-  }, {
-    "@id" : "_:b104",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b105",
-    "@type" : "oslc:Property",
-    "name" : "actualSize",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:actualSize",
-    "valueType" : "xsd:decimal",
-    "description" : "<code>actualSize</code> is a property for actual development size for a <code>ScopeItem</code> resource."
-  }, {
-    "@id" : "_:b106",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b107",
-    "@type" : "oslc:Property",
-    "name" : "raisedBy",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:raisedBy",
-    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:Artifact", "oslc_promcode:Issue", "oslc_promcode:WorkItem", "oslc_promcode:Risk" ],
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>raisedBy</code> is a relation between an <code>Issue</code> resource and other resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> and <code>Issue</code>. An <code>Issue</code> resource may be raised by one or more resources."
-  }, {
-    "@id" : "_:b108",
-    "@type" : "oslc:Property",
-    "name" : "plannedEndDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:plannedEndDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>plannedEndDate</code> is a property of a <code>Project</code> resource. It is the planned end date of the project. Its value is of type <code>xsd:dateTime</code>."
-  }, {
-    "@id" : "_:b109",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>ManagedItemCollection</code> resource."
-  }, {
-    "@id" : "_:b11",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>Issue</code> resource that is a source of this <code>Issue</code> resource."
-  }, {
-    "@id" : "_:b110",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b111",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>Artifact</code> resource that is a source of this <code>Artifact</code> resource."
-  }, {
-    "@id" : "_:b112",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string for the resource."
-  }, {
-    "@id" : "_:b113",
-    "@type" : "oslc:Property",
-    "name" : "belongsTo",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "oslc_promcode:belongsTo",
-    "range" : "oslc_promcode:Project",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource. "
-  }, {
-    "@id" : "_:b114",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>Project</code> resource."
-  }, {
-    "@id" : "_:b115",
-    "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
-  }, {
     "@id" : "_:b116",
     "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
+    "name" : "description",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Risk</code> resources of the project."
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the <code>Issue</code> resource."
   }, {
     "@id" : "_:b117",
     "@type" : "oslc:Property",
-    "name" : "identifiedBy",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:identifiedBy",
-    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:Artifact", "oslc_promcode:Risk", "oslc_promcode:Issue", "oslc_promcode:WorkItem" ],
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>identifiedBy</code> is a relation between a <code>Risk</code> resource and a resource of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> or <code>Issue</code>. A <code>Risk</code> resource may be identified by one or more resources."
+    "name" : "actualEndDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:actualEndDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>actualEndDate</code> is a property of a <code>Project</code> resource that describes actual end date of the project. Its value is of type <code>xsd:dateTime</code>."
   }, {
     "@id" : "_:b118",
     "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
+    "name" : "metricOfScopeItemSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:metricOfScopeItemSize",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "<code>metricOfScopeItemSize</code> is a property that describes a metric of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired metric for all the <code>ScopeItem</code> resources of the project."
   }, {
     "@id" : "_:b119",
     "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
+    "name" : "description",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Issue</code> resources in the project."
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
   }, {
     "@id" : "_:b12",
     "@type" : "oslc:Property",
@@ -228,13 +221,21 @@
   }, {
     "@id" : "_:b120",
     "@type" : "oslc:Property",
-    "name" : "plannedStartDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:plannedStartDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>plannedStartDate</code> is a property of a <code>Project</code> resource. It is the planned start date of the project. Its value is of type <code>xsd:dateTime</code>."
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>ManagedItemCollection</code> resource."
   }, {
     "@id" : "_:b13",
+    "@type" : "oslc:Property",
+    "name" : "valueOfMeasure",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_promcode:valueOfMeasure",
+    "valueType" : "xsd:decimal",
+    "description" : "<code>valueOfMeasure</code> is a property that represents a value for the <code>Measure</code> resource."
+  }, {
+    "@id" : "_:b14",
     "@type" : "oslc:Property",
     "name" : "unitOfMeasure",
     "occurs" : "oslc:Zero-or-one",
@@ -243,72 +244,81 @@
     "valueType" : "oslc:AnyResource",
     "description" : "<code>unitOfMeasure</code> is a property that defines a unit of measure of this <code>Measure</code> resource. The value is any resource, but is expected to have information on the unit of measure of this <code>Measure</code> resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc."
   }, {
-    "@id" : "_:b14",
-    "@type" : "oslc:Property",
-    "name" : "valueOfMeasure",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "oslc_promcode:valueOfMeasure",
-    "valueType" : "xsd:decimal",
-    "description" : "<code>valueOfMeasure</code> is a property that represents a value for the <code>Measure</code> resource."
-  }, {
     "@id" : "_:b15",
     "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string of this <code>Measure</code> resource."
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
   }, {
     "@id" : "_:b16",
     "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
   }, {
     "@id" : "_:b17",
     "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b18",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>Issue</code> resource that is a source of this <code>Issue</code> resource."
+  }, {
+    "@id" : "_:b19",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string of this <code>IssueCollection</code> resource."
+  }, {
+    "@id" : "_:b2",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string for a <code>ManagedItem</code> resource."
+  }, {
+    "@id" : "_:b20",
+    "@type" : "oslc:Property",
+    "name" : "plannedSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:plannedSize",
+    "valueType" : "xsd:decimal",
+    "description" : "<code>plannedSize</code> is a property for estimated development size for a <code>ScopeItem</code> resource."
+  }, {
+    "@id" : "_:b21",
+    "@type" : "oslc:Property",
     "name" : "identifier",
     "occurs" : "oslc:Exactly-one",
     "propertyDefinition" : "dcterms:identifier",
     "valueType" : "xsd:string",
-    "description" : "A unique identifier for the <code>Measure</code> resource. "
+    "description" : "A unique identifier for the <code>Artifact</code> resource."
   }, {
-    "@id" : "_:b18",
-    "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to the resource which represents a position in the sequential order of resources of the same type of <code>ManagedItem</code>."
-  }, {
-    "@id" : "_:b19",
-    "@type" : "oslc:Property",
-    "name" : "unitOfScopeItemSize",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:unitOfScopeItemSize",
-    "representation" : "oslc:Either",
-    "valueType" : "oslc:AnyResource",
-    "description" : "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project. "
-  }, {
-    "@id" : "_:b2",
-    "@type" : "oslc:Property",
-    "name" : "collects",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:collects",
-    "range" : [ "oslc_promcode:Risk", "oslc_promcode:ScopeItem", "oslc_promcode:WorkItem", "oslc_promcode:Issue", "oslc_promcode:Artifact" ],
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>ManagedItem</code> resources included in this <code>ManagedItemCollection</code>. A <code>ManagedItemCollection</code> resource collects resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code>, and <code>Issue</code>."
-  }, {
-    "@id" : "_:b20",
+    "@id" : "_:b22",
     "@type" : "oslc:Property",
     "name" : "type",
     "occurs" : "oslc:One-or-many",
@@ -321,153 +331,15 @@
       "@value" : "The resource type URIs."
     }
   }, {
-    "@id" : "_:b21",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string of the resource."
-  }, {
-    "@id" : "_:b22",
-    "@type" : "oslc:Property",
-    "name" : "isPartOf",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:isPartOf",
-    "range" : "oslc_promcode:ScopeItem",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ScopeItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>isPartOf</code> is a relation between a child <code>ScopeItem</code> resource and its parent <code>ScopeItem</code> resource. A <code>ScopeItem</code> resource may have multiple child <code>ScopeItem</code> resources."
-  }, {
     "@id" : "_:b23",
     "@type" : "oslc:Property",
-    "name" : "date",
+    "name" : "plannedStartDate",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:date",
+    "propertyDefinition" : "oslc_promcode:plannedStartDate",
     "valueType" : "xsd:dateTime",
-    "description" : "A date on which this <code>ManagedItemCollection </code>resource collects member resources."
+    "description" : "<code>plannedStartDate</code> is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type <code>xsd:dateTime</code>."
   }, {
     "@id" : "_:b24",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the <code>Issue</code> resource."
-  }, {
-    "@id" : "_:b25",
-    "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all <code>Artifact</code> resources of the project."
-  }, {
-    "@id" : "_:b26",
-    "@type" : "oslc:Property",
-    "name" : "representedBy",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:representedBy",
-    "representation" : "oslc:Either",
-    "valueType" : "oslc:AnyResource",
-    "description" : "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource. "
-  }, {
-    "@id" : "_:b27",
-    "@type" : "oslc:Property",
-    "name" : "identifiedDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:identifiedDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>identifiedDate</code> is the date on which the risk was identified."
-  }, {
-    "@id" : "_:b28",
-    "@type" : "oslc:Property",
-    "name" : "raisedDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:raisedDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>raisedDate</code> is an optional property of an <code>Issue</code> resource. It is the raised date of the <code>Issue</code> resource. Its value is a <code>dateTime</code>."
-  }, {
-    "@id" : "_:b29",
-    "@type" : "oslc:Property",
-    "name" : "isPartOf",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:isPartOf",
-    "range" : "oslc_promcode:Artifact",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Artifact",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>isPartOf</code> is a relation between a child <code>Artifact</code> resource and its parent <code>Artifact</code> resource. An <code>Artifact</code> resource may have multiple child <code>WorkItem</code> resources."
-  }, {
-    "@id" : "_:b3",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string for a <code>ScopeItem</code> resource."
-  }, {
-    "@id" : "_:b30",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b31",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>ManagedItem</code> resource. "
-  }, {
-    "@id" : "_:b32",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b33",
-    "@type" : "oslc:Property",
-    "name" : "collects",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:collects",
-    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:Artifact", "oslc_promcode:WorkItem" ],
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>collects</code> is a relation between the <code>Report</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>ScopeItem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource. The <code>Report</code> resource collects a subset of resources collected by the <code>Plan</code> resource that is linked by <code>correspondsTo</code> property."
-  }, {
-    "@id" : "_:b34",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>Report</code> resource."
-  }, {
-    "@id" : "_:b35",
-    "@type" : "oslc:Property",
-    "name" : "date",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:date",
-    "valueType" : "xsd:dateTime",
-    "description" : "A date on which this <code>Report</code> resource collects member resources."
-  }, {
-    "@id" : "_:b36",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string of this <code>Report</code> resource."
-  }, {
-    "@id" : "_:b37",
     "@type" : "oslc:Property",
     "name" : "belongsTo",
     "occurs" : "oslc:Exactly-one",
@@ -476,9 +348,47 @@
     "representation" : "oslc:Reference",
     "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
     "valueType" : "oslc:Resource",
-    "description" : "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources. "
+    "description" : "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to."
   }, {
-    "@id" : "_:b38",
+    "@id" : "_:b25",
+    "@type" : "oslc:Property",
+    "name" : "belongsTo",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_promcode:belongsTo",
+    "range" : "oslc_promcode:Project",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources."
+  }, {
+    "@id" : "_:b26",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>Report</code> resource."
+  }, {
+    "@id" : "_:b27",
+    "@type" : "oslc:Property",
+    "name" : "collects",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:collects",
+    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:WorkItem", "oslc_promcode:Artifact" ],
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>collects</code> is a relation between the <code>Report</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>ScopeItem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource. The <code>Report</code> resource collects a subset of resources collected by the <code>Plan</code> resource that is linked by <code>correspondsTo</code> property."
+  }, {
+    "@id" : "_:b28",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string of this <code>Report</code> resource."
+  }, {
+    "@id" : "_:b29",
     "@type" : "oslc:Property",
     "name" : "source",
     "occurs" : "oslc:Zero-or-one",
@@ -486,31 +396,15 @@
     "valueType" : "xsd:string",
     "description" : "A string that identifies the <code>Report</code> resource that is a source of this <code>Report</code> resource."
   }, {
-    "@id" : "_:b39",
+    "@id" : "_:b3",
     "@type" : "oslc:Property",
-    "name" : "correspondsTo",
+    "name" : "date",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:correspondsTo",
-    "range" : "oslc_promcode:Plan",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Plan",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>correspondsTo</code> is a relation between a <code>Report</code> resource and a <code>Plan</code> resource. A <code>Report</code> resource has at most one <code>correspondsTo</code> relation to the corresponding a <code>Plan</code> resource. If a plan is changed and a new <code>Plan</code> resource is created, the <code>Report</code> may need to be linked to the new <code>Plan</code> resource."
+    "propertyDefinition" : "dcterms:date",
+    "valueType" : "xsd:dateTime",
+    "description" : "A date on which this <code>Report</code> resource collects member resources."
   }, {
-    "@id" : "_:b4",
-    "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
-  }, {
-    "@id" : "_:b40",
+    "@id" : "_:b30",
     "@type" : "oslc:Property",
     "name" : "includes",
     "occurs" : "oslc:Zero-or-many",
@@ -521,78 +415,50 @@
     "valueType" : "oslc:Resource",
     "description" : "<code>includes</code> is a relation between this <code>Report</code> resource and <code>Measurement</code> resources.   A <code>Measurement</code> resource linked by <code>includes</code> from this resource must measure an <code>Artifact</code> resource that is linked by <code>collects</code> property of this <code>Report</code> resource."
   }, {
-    "@id" : "_:b41",
+    "@id" : "_:b31",
     "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>Risk</code> resource that is a source of this <code>Risk</code> resource."
-  }, {
-    "@id" : "_:b42",
-    "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
-  }, {
-    "@id" : "_:b43",
-    "@type" : "oslc:Property",
-    "name" : "measures",
+    "name" : "date",
     "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "oslc_promcode:measures",
-    "range" : "oslc_promcode:Artifact",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Artifact",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>measures</code> is a relation between a <code>Measurement</code> resource and an <code>Artifact</code> resource. The measurement represented by the resource is on the artifact represented by the <code>Artifact</code> resource."
+    "propertyDefinition" : "dcterms:date",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made."
   }, {
-    "@id" : "_:b44",
+    "@id" : "_:b32",
     "@type" : "oslc:Property",
-    "name" : "collects",
+    "name" : "observes",
     "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:collects",
-    "range" : "oslc_promcode:Risk",
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Risk",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>collects</code> is a relation between a <code>RiskCollection</code> resource and a <code>Risk</code> resource."
-  }, {
-    "@id" : "_:b45",
-    "@type" : "oslc:Property",
-    "name" : "targets",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:targets",
+    "propertyDefinition" : "oslc_promcode:observes",
     "range" : "oslc_promcode:Measure",
     "representation" : "oslc:Inline",
     "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Measure",
     "valueType" : "oslc:AnyResource",
-    "description" : "<code>targets</code> is a relation between an <code>Artifact</code> resource and a <code>Measure</code> resource. The representation of this property is inline."
+    "description" : "<code>observes</code> is a relation between a <code>Measurement</code> resource and a <code>Measure</code> resource. One <code>Measurement</code> resource observes zero or many <code>Measure</code> resources. The representation of this property is inline."
   }, {
-    "@id" : "_:b46",
+    "@id" : "_:b33",
     "@type" : "oslc:Property",
-    "name" : "metricOfScopeItemSize",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:metricOfScopeItemSize",
-    "representation" : "oslc:Either",
-    "valueType" : "oslc:AnyResource",
-    "description" : "<code>metricOfScopeItemSize</code> is a property that describes a metric of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired metric for all the <code>ScopeItem</code> resources of the project."
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>Project</code> resource."
   }, {
-    "@id" : "_:b47",
+    "@id" : "_:b34",
     "@type" : "oslc:Property",
-    "name" : "date",
+    "name" : "description",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:date",
-    "valueType" : "xsd:dateTime",
-    "description" : "A date on which this <code>Plan</code> resource collects member resources."
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property of a <code>Project</code> resource to help a human understand the project."
   }, {
-    "@id" : "_:b48",
+    "@id" : "_:b35",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>Risk</code> resource."
+  }, {
+    "@id" : "_:b36",
     "@type" : "oslc:Property",
     "name" : "type",
     "occurs" : "oslc:One-or-many",
@@ -605,55 +471,90 @@
       "@value" : "The resource type URIs."
     }
   }, {
-    "@id" : "_:b49",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>Project</code> resource that is a source of this <code>Project</code> resource."
-  }, {
-    "@id" : "_:b5",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>RiskCollection</code> resource."
-  }, {
-    "@id" : "_:b50",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>Risk</code> resource. "
-  }, {
-    "@id" : "_:b51",
-    "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>ScopeItem</code> resources of the project."
-  }, {
-    "@id" : "_:b52",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>RiskCollection</code> resource that is a source of this <code>RiskCollection</code> resource."
-  }, {
-    "@id" : "_:b53",
+    "@id" : "_:b37",
     "@type" : "oslc:Property",
     "name" : "title",
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "dcterms:title",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string of this <code>IssueCollection</code> resource."
+    "description" : "A title string for a <code>ScopeItem</code> resource."
   }, {
-    "@id" : "_:b54",
+    "@id" : "_:b38",
+    "@type" : "oslc:Property",
+    "name" : "sequenceNumber",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to the resource which represents a position in the sequential order of resources of the same type of <code>ManagedItem</code>."
+  }, {
+    "@id" : "_:b39",
+    "@type" : "oslc:Property",
+    "name" : "stateOfRisk",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_promcode:stateOfRisk",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "<code>stateOfRisk</code> is a property that defines the state of a <code>Risk</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk."
+  }, {
+    "@id" : "_:b4",
+    "@type" : "oslc:Property",
+    "name" : "sequenceNumber",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all <code>Artifact</code> resources of the project."
+  }, {
+    "@id" : "_:b40",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b41",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+  }, {
+    "@id" : "_:b42",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>ScopeItem</code> resource."
+  }, {
+    "@id" : "_:b43",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b44",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+  }, {
+    "@id" : "_:b45",
     "@type" : "oslc:Property",
     "name" : "requiredBy",
     "occurs" : "oslc:Zero-or-many",
@@ -663,6 +564,93 @@
     "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
     "valueType" : "oslc:Resource",
     "description" : "<code>requiredBy</code> is a relation between this <code>WorkItem</code> resource and a <code>ScopeItem</code> resource or an <code>Artifact</code> resource."
+  }, {
+    "@id" : "_:b46",
+    "@type" : "oslc:Property",
+    "name" : "actualEndDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:actualEndDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>actualEndDate</code> is a property of a <code>WorkItem</code> resource. It is the actual end date of the work item. Its value is of type <code>xsd:dateTime</code>."
+  }, {
+    "@id" : "_:b47",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>RiskCollection</code> resource that is a source of this <code>RiskCollection</code> resource."
+  }, {
+    "@id" : "_:b48",
+    "@type" : "oslc:Property",
+    "name" : "producedFor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:producedFor",
+    "range" : [ "oslc_promcode:WorkItem", "oslc_promcode:ScopeItem" ],
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>producedFor</code> is a relation between an <code>Artifact</code> resource and a <code>ScopeItem</code> resource or a <code>WorkItem</code> resource. <code>Artifact</code> is produced as a result of implementation of the <code>ScopeItem</code> resources or as a result of the work described by the <code>WorkItem</code> resource."
+  }, {
+    "@id" : "_:b49",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+  }, {
+    "@id" : "_:b5",
+    "@type" : "oslc:Property",
+    "name" : "representedBy",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:representedBy",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource."
+  }, {
+    "@id" : "_:b50",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string of this <code>RiskCollection</code> resource."
+  }, {
+    "@id" : "_:b51",
+    "@type" : "oslc:Property",
+    "name" : "identifiedBy",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:identifiedBy",
+    "range" : [ "oslc_promcode:Risk", "oslc_promcode:Issue", "oslc_promcode:WorkItem", "oslc_promcode:Artifact", "oslc_promcode:ScopeItem" ],
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>identifiedBy</code> is a relation between a <code>Risk</code> resource and a resource of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> or <code>Issue</code>. A <code>Risk</code> resource may be identified by one or more resources."
+  }, {
+    "@id" : "_:b52",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>Plan</code> resource."
+  }, {
+    "@id" : "_:b53",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier of the resource."
+  }, {
+    "@id" : "_:b54",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for the <code>WorkItem</code> resource."
   }, {
     "@id" : "_:b55",
     "@type" : "oslc:Property",
@@ -677,11 +665,11 @@
   }, {
     "@id" : "_:b56",
     "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
     "valueType" : "xsd:string",
-    "description" : "A unique identifier for the <code>WorkItem</code> resource. "
+    "description" : "A string that identifies the <code>WorkItem</code> resource that is a source of this <code>WorkItem</code> resource."
   }, {
     "@id" : "_:b57",
     "@type" : "oslc:Property",
@@ -693,50 +681,13 @@
   }, {
     "@id" : "_:b58",
     "@type" : "oslc:Property",
-    "name" : "sequenceNumber",
+    "name" : "actualStartDate",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:sequenceNumber",
-    "valueType" : "xsd:decimal",
-    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>WorkItem</code> resources of the project."
+    "propertyDefinition" : "oslc_promcode:actualStartDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>actualStartDate</code> is a property of a <code>WorkItem</code> resource. It is the actual start date of the work item. Its value is of type <code>xsd:dateTime</code>."
   }, {
     "@id" : "_:b59",
-    "@type" : "oslc:Property",
-    "name" : "actualEndDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:actualEndDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>actualEndDate</code> is a property of a <code>WorkItem</code> resource. It is the actual end date of the work item. Its value is of type <code>xsd:dateTime</code>."
-  }, {
-    "@id" : "_:b6",
-    "@type" : "oslc:Property",
-    "name" : "plannedSize",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:plannedSize",
-    "valueType" : "xsd:decimal",
-    "description" : "<code>plannedSize</code> is a property for estimated development size for a <code>ScopeItem</code> resource."
-  }, {
-    "@id" : "_:b60",
-    "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
-  }, {
-    "@id" : "_:b61",
-    "@type" : "oslc:Property",
-    "name" : "plannedStartDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:plannedStartDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>plannedStartDate</code> is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type <code>xsd:dateTime</code>."
-  }, {
-    "@id" : "_:b62",
     "@type" : "oslc:Property",
     "name" : "plannedEndDate",
     "occurs" : "oslc:Zero-or-one",
@@ -744,15 +695,42 @@
     "valueType" : "xsd:dateTime",
     "description" : "<code>plannedEndDate</code> is a property of a <code>WorkItem</code> resource. It is the planned end date of the work item. Its value is of type <code>xsd:dateTime</code>."
   }, {
-    "@id" : "_:b63",
+    "@id" : "_:b6",
     "@type" : "oslc:Property",
-    "name" : "actualStartDate",
+    "name" : "correspondsTo",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:actualStartDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>actualStartDate</code> is a property of a <code>Project</code> resource. It is the actual start date of the project. Its value is of type <code>xsd:dateTime</code>."
+    "propertyDefinition" : "oslc_promcode:correspondsTo",
+    "range" : "oslc_promcode:Plan",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Plan",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>correspondsTo</code> is a relation between a <code>Report</code> resource and a <code>Plan</code> resource. A <code>Report</code> resource has at most one <code>correspondsTo</code> relation to the corresponding a <code>Plan</code> resource. If a plan is changed and a new <code>Plan</code> resource is created, the <code>Report</code> may need to be linked to the new <code>Plan</code> resource."
   }, {
-    "@id" : "_:b64",
+    "@id" : "_:b60",
+    "@type" : "oslc:Property",
+    "name" : "sequenceNumber",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>WorkItem</code> resources of the project."
+  }, {
+    "@id" : "_:b61",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>ManagedItem</code> resource that is a source of this <code>ManagedItem</code> resource."
+  }, {
+    "@id" : "_:b62",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+  }, {
+    "@id" : "_:b63",
     "@type" : "oslc:Property",
     "name" : "type",
     "occurs" : "oslc:One-or-many",
@@ -765,82 +743,18 @@
       "@value" : "The resource type URIs."
     }
   }, {
+    "@id" : "_:b64",
+    "@type" : "oslc:Property",
+    "name" : "targets",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:targets",
+    "range" : "oslc_promcode:Measure",
+    "representation" : "oslc:Inline",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Measure",
+    "valueType" : "oslc:AnyResource",
+    "description" : "<code>targets</code> is a relation between an <code>Artifact</code> resource and a <code>Measure</code> resource. The representation of this property is inline."
+  }, {
     "@id" : "_:b65",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>Plan</code> resource that is a source of this <code>Plan</code> resource."
-  }, {
-    "@id" : "_:b66",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string for a <code>Risk</code> resource."
-  }, {
-    "@id" : "_:b67",
-    "@type" : "oslc:Property",
-    "name" : "actualEndDate",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:actualEndDate",
-    "valueType" : "xsd:dateTime",
-    "description" : "<code>actualEndDate</code> is a property of a <code>Project</code> resource that describes actual end date of the project. Its value is of type <code>xsd:dateTime</code>."
-  }, {
-    "@id" : "_:b68",
-    "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string for a <code>ManagedItem</code> resource."
-  }, {
-    "@id" : "_:b69",
-    "@type" : "oslc:Property",
-    "name" : "date",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:date",
-    "valueType" : "xsd:dateTime",
-    "description" : "A date on which this <code>IssueCollection</code> resource collects <code>Issue</code> resources."
-  }, {
-    "@id" : "_:b7",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>ScopeItem</code> resource. "
-  }, {
-    "@id" : "_:b70",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier of the resource."
-  }, {
-    "@id" : "_:b71",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>IssueCollection</code> resource that is a source of this <code>IssueCollection</code> resource."
-  }, {
-    "@id" : "_:b72",
-    "@type" : "oslc:Property",
-    "name" : "belongsTo",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "oslc_promcode:belongsTo",
-    "range" : "oslc_promcode:Project",
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to. "
-  }, {
-    "@id" : "_:b73",
     "@type" : "oslc:Property",
     "name" : "collects",
     "occurs" : "oslc:Zero-or-many",
@@ -851,7 +765,7 @@
     "valueType" : "oslc:Resource",
     "description" : "<code>collects</code> is a relation between an <code>IssueCollection</code> resource and an <code>Issue</code> resource. An <code>IssueCollection</code> resource collects only <code>Issue</code> resources."
   }, {
-    "@id" : "_:b74",
+    "@id" : "_:b66",
     "@type" : "oslc:Property",
     "name" : "description",
     "occurs" : "oslc:Zero-or-one",
@@ -859,49 +773,61 @@
     "valueType" : "rdf:XMLLiteral",
     "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
   }, {
-    "@id" : "_:b75",
+    "@id" : "_:b67",
     "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
-    "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
+    "name" : "date",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:date",
+    "valueType" : "xsd:dateTime",
+    "description" : "A date on which this <code>IssueCollection</code> resource collects <code>Issue</code> resources."
   }, {
-    "@id" : "_:b76",
+    "@id" : "_:b68",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>IssueCollection</code> resource that is a source of this <code>IssueCollection</code> resource."
+  }, {
+    "@id" : "_:b69",
+    "@type" : "oslc:Property",
+    "name" : "belongsTo",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_promcode:belongsTo",
+    "range" : "oslc_promcode:Project",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource."
+  }, {
+    "@id" : "_:b7",
     "@type" : "oslc:Property",
     "name" : "description",
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "dcterms:description",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property of a <code>Project</code> resource to help a human understand the project."
+    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
   }, {
-    "@id" : "_:b77",
+    "@id" : "_:b70",
     "@type" : "oslc:Property",
-    "name" : "type",
-    "occurs" : "oslc:One-or-many",
-    "propertyDefinition" : "rdf:type",
-    "range" : "rdfs:Class",
-    "representation" : "oslc:Reference",
+    "name" : "collects",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:collects",
+    "range" : "oslc_promcode:Risk",
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Risk",
     "valueType" : "oslc:Resource",
-    "description" : {
-      "@type" : "rdf:XMLLiteral",
-      "@value" : "The resource type URIs."
-    }
+    "description" : "<code>collects</code> is a relation between a <code>RiskCollection</code> resource and a <code>Risk</code> resource."
   }, {
-    "@id" : "_:b78",
+    "@id" : "_:b71",
     "@type" : "oslc:Property",
-    "name" : "title",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:title",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string of this <code>RiskCollection</code> resource."
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a <code>RiskCollection</code> resource."
   }, {
-    "@id" : "_:b79",
+    "@id" : "_:b72",
     "@type" : "oslc:Property",
     "name" : "date",
     "occurs" : "oslc:Zero-or-one",
@@ -909,15 +835,7 @@
     "valueType" : "xsd:dateTime",
     "description" : "A date on which this <code>RiskCollection</code> resource collects member resources."
   }, {
-    "@id" : "_:b8",
-    "@type" : "oslc:Property",
-    "name" : "source",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>WorkItem</code> resource that is a source of this <code>WorkItem</code> resource."
-  }, {
-    "@id" : "_:b80",
+    "@id" : "_:b73",
     "@type" : "oslc:Property",
     "name" : "belongsTo",
     "occurs" : "oslc:Exactly-one",
@@ -928,15 +846,7 @@
     "valueType" : "oslc:Resource",
     "description" : "<code>belongsTo</code> is a relation between the <code>RiskCollection</code> resource and a <code>Project</code> resource."
   }, {
-    "@id" : "_:b81",
-    "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
-  }, {
-    "@id" : "_:b82",
+    "@id" : "_:b74",
     "@type" : "oslc:Property",
     "name" : "type",
     "occurs" : "oslc:One-or-many",
@@ -949,42 +859,39 @@
       "@value" : "The resource type URIs."
     }
   }, {
-    "@id" : "_:b83",
+    "@id" : "_:b75",
     "@type" : "oslc:Property",
     "name" : "title",
     "occurs" : "oslc:Zero-or-one",
     "propertyDefinition" : "dcterms:title",
     "valueType" : "rdf:XMLLiteral",
-    "description" : "A title string for a <code>Project</code> resource."
+    "description" : "A title string for the resource."
   }, {
-    "@id" : "_:b84",
+    "@id" : "_:b76",
     "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for the <code>Artifact</code> resource."
-  }, {
-    "@id" : "_:b85",
-    "@type" : "oslc:Property",
-    "name" : "producedFor",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:producedFor",
-    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:WorkItem" ],
-    "representation" : "oslc:Reference",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>producedFor</code> is a relation between an <code>Artifact</code> resource and a <code>ScopeItem</code> resource or a <code>WorkItem</code> resource. <code>Artifact</code> is produced as a result of implementation of the <code>ScopeItem</code> resources or as a result of the work described by the <code>WorkItem</code> resource."
-  }, {
-    "@id" : "_:b86",
-    "@type" : "oslc:Property",
-    "name" : "source",
+    "name" : "actualStartDate",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:source",
-    "valueType" : "xsd:string",
-    "description" : "A string that identifies the <code>ManagedItemCollection</code> resource that is a source of this <code>ManagedItemCollection</code> resource."
+    "propertyDefinition" : "oslc_promcode:actualStartDate",
+    "valueType" : "xsd:dateTime",
+    "description" : "<code>actualStartDate</code> is a property of a <code>Project</code> resource. It is the actual start date of the project. Its value is of type <code>xsd:dateTime</code>."
   }, {
-    "@id" : "_:b87",
+    "@id" : "_:b77",
+    "@type" : "oslc:Property",
+    "name" : "sequenceNumber",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Issue</code> resources in the project."
+  }, {
+    "@id" : "_:b78",
+    "@type" : "oslc:Property",
+    "name" : "date",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:date",
+    "valueType" : "xsd:dateTime",
+    "description" : "A date on which this <code>ManagedItemCollection </code>resource collects member resources."
+  }, {
+    "@id" : "_:b79",
     "@type" : "oslc:Property",
     "name" : "title",
     "occurs" : "oslc:Zero-or-one",
@@ -992,7 +899,28 @@
     "valueType" : "rdf:XMLLiteral",
     "description" : "A title string of this <code>ManagedItemCollection</code> resource."
   }, {
-    "@id" : "_:b88",
+    "@id" : "_:b8",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "A title string of this <code>Measure</code> resource."
+  }, {
+    "@id" : "_:b80",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b81",
     "@type" : "oslc:Property",
     "name" : "title",
     "occurs" : "oslc:Zero-or-one",
@@ -1000,7 +928,26 @@
     "valueType" : "rdf:XMLLiteral",
     "description" : "A title string of this <code>Plan</code> resource."
   }, {
-    "@id" : "_:b89",
+    "@id" : "_:b82",
+    "@type" : "oslc:Property",
+    "name" : "date",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:date",
+    "valueType" : "xsd:dateTime",
+    "description" : "A date on which this <code>Plan</code> resource collects member resources."
+  }, {
+    "@id" : "_:b83",
+    "@type" : "oslc:Property",
+    "name" : "collects",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:collects",
+    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:Artifact", "oslc_promcode:WorkItem" ],
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>collects</code> is a relation between a <code>Plan</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>Scopeitem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource."
+  }, {
+    "@id" : "_:b84",
     "@type" : "oslc:Property",
     "name" : "description",
     "occurs" : "oslc:Zero-or-one",
@@ -1008,35 +955,7 @@
     "valueType" : "rdf:XMLLiteral",
     "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
   }, {
-    "@id" : "_:b9",
-    "@type" : "oslc:Property",
-    "name" : "metricOfMeasure",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "oslc_promcode:metricOfMeasure",
-    "representation" : "oslc:Either",
-    "valueType" : "oslc:AnyResource",
-    "description" : "<code>metricOfMeasure</code> is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this <code>Measure</code> resource."
-  }, {
-    "@id" : "_:b90",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for a <code>Plan</code> resource."
-  }, {
-    "@id" : "_:b91",
-    "@type" : "oslc:Property",
-    "name" : "collects",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:collects",
-    "range" : [ "oslc_promcode:ScopeItem", "oslc_promcode:WorkItem", "oslc_promcode:Artifact" ],
-    "representation" : "oslc:Either",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
-    "valueType" : "oslc:Resource",
-    "description" : "<code>collects</code> is a relation between a <code>Plan</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>Scopeitem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource."
-  }, {
-    "@id" : "_:b92",
+    "@id" : "_:b85",
     "@type" : "oslc:Property",
     "name" : "belongsTo",
     "occurs" : "oslc:Exactly-one",
@@ -1045,44 +964,25 @@
     "representation" : "oslc:Reference",
     "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
     "valueType" : "oslc:Resource",
-    "description" : "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource. "
+    "description" : "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource."
   }, {
-    "@id" : "_:b93",
+    "@id" : "_:b86",
     "@type" : "oslc:Property",
-    "name" : "observes",
-    "occurs" : "oslc:Zero-or-many",
-    "propertyDefinition" : "oslc_promcode:observes",
-    "range" : "oslc_promcode:Measure",
-    "representation" : "oslc:Inline",
-    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Measure",
-    "valueType" : "oslc:AnyResource",
-    "description" : "<code>observes</code> is a relation between a <code>Measurement</code> resource and a <code>Measure</code> resource. One <code>Measurement</code> resource observes zero or many <code>Measure</code> resources. The representation of this property is inline."
-  }, {
-    "@id" : "_:b94",
-    "@type" : "oslc:Property",
-    "name" : "identifier",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:identifier",
-    "valueType" : "xsd:string",
-    "description" : "A unique identifier for the <code>Measurement</code> resource. "
-  }, {
-    "@id" : "_:b95",
-    "@type" : "oslc:Property",
-    "name" : "description",
+    "name" : "source",
     "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human understand the resource."
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>Plan</code> resource that is a source of this <code>Plan</code> resource."
   }, {
-    "@id" : "_:b96",
+    "@id" : "_:b87",
     "@type" : "oslc:Property",
-    "name" : "date",
-    "occurs" : "oslc:Exactly-one",
-    "propertyDefinition" : "dcterms:date",
+    "name" : "plannedEndDate",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:plannedEndDate",
     "valueType" : "xsd:dateTime",
-    "description" : "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made.  "
+    "description" : "<code>plannedEndDate</code> is a property of a <code>Project</code> resource. It is the planned end date of the project. Its value is of type <code>xsd:dateTime</code>."
   }, {
-    "@id" : "_:b97",
+    "@id" : "_:b88",
     "@type" : "oslc:Property",
     "name" : "type",
     "occurs" : "oslc:One-or-many",
@@ -1095,21 +995,121 @@
       "@value" : "The resource type URIs."
     }
   }, {
-    "@id" : "_:b98",
+    "@id" : "_:b89",
+    "@type" : "oslc:Property",
+    "name" : "measures",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_promcode:measures",
+    "range" : "oslc_promcode:Artifact",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#Artifact",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>measures</code> is a relation between a <code>Measurement</code> resource and an <code>Artifact</code> resource. The measurement represented by the resource is on the artifact represented by the <code>Artifact</code> resource."
+  }, {
+    "@id" : "_:b9",
     "@type" : "oslc:Property",
     "name" : "identifier",
     "occurs" : "oslc:Exactly-one",
     "propertyDefinition" : "dcterms:identifier",
     "valueType" : "xsd:string",
-    "description" : "A unique identifier for the <code>Issue</code> resource. "
+    "description" : "A unique identifier for the <code>Measure</code> resource."
+  }, {
+    "@id" : "_:b90",
+    "@type" : "oslc:Property",
+    "name" : "unitOfScopeItemSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:unitOfScopeItemSize",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project."
+  }, {
+    "@id" : "_:b91",
+    "@type" : "oslc:Property",
+    "name" : "raisedBy",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_promcode:raisedBy",
+    "range" : [ "oslc_promcode:Risk", "oslc_promcode:WorkItem", "oslc_promcode:Artifact", "oslc_promcode:Issue", "oslc_promcode:ScopeItem" ],
+    "representation" : "oslc:Either",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>raisedBy</code> is a relation between an <code>Issue</code> resource and other resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> and <code>Issue</code>. An <code>Issue</code> resource may be raised by one or more resources."
+  }, {
+    "@id" : "_:b92",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>Artifact</code> resource that is a source of this <code>Artifact</code> resource."
+  }, {
+    "@id" : "_:b93",
+    "@type" : "oslc:Property",
+    "name" : "actualSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:actualSize",
+    "valueType" : "xsd:decimal",
+    "description" : "<code>actualSize</code> is a property for actual development size for a <code>ScopeItem</code> resource."
+  }, {
+    "@id" : "_:b94",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>ScopeItem</code> resource that is a source of this <code>ScopeItem</code> resource."
+  }, {
+    "@id" : "_:b95",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
+  }, {
+    "@id" : "_:b96",
+    "@type" : "oslc:Property",
+    "name" : "sequenceNumber",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:sequenceNumber",
+    "valueType" : "xsd:decimal",
+    "description" : "A unique number assigned to this resource which represents a position in the sequential order of all the <code>ScopeItem</code> resources of the project."
+  }, {
+    "@id" : "_:b97",
+    "@type" : "oslc:Property",
+    "name" : "isPartOf",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_promcode:isPartOf",
+    "range" : "oslc_promcode:ScopeItem",
+    "representation" : "oslc:Reference",
+    "valueShape" : "http://open-services.net/ns/promcode/shapes/1.0#ScopeItem",
+    "valueType" : "oslc:Resource",
+    "description" : "<code>isPartOf</code> is a relation between a child <code>ScopeItem</code> resource and its parent <code>ScopeItem</code> resource. A <code>ScopeItem</code> resource may have multiple child <code>ScopeItem</code> resources."
+  }, {
+    "@id" : "_:b98",
+    "@type" : "oslc:Property",
+    "name" : "source",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:source",
+    "valueType" : "xsd:string",
+    "description" : "A string that identifies the <code>ManagedItemCollection</code> resource that is a source of this <code>ManagedItemCollection</code> resource."
   }, {
     "@id" : "_:b99",
     "@type" : "oslc:Property",
-    "name" : "description",
-    "occurs" : "oslc:Zero-or-one",
-    "propertyDefinition" : "dcterms:description",
-    "valueType" : "rdf:XMLLiteral",
-    "description" : "<code>dcterms:description</code> is a property to help a human to understand the resource."
+    "name" : "type",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "The resource type URIs."
+    }
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#",
     "@type" : "oslc:ResourceShapeConstraints",
@@ -1117,98 +1117,97 @@
       "@type" : "rdf:XMLLiteral",
       "@value" : "All vocabulary URIs defined in the OSLC PROMCODE namespace."
     },
-    "hasVersion" : "CS02",
-    "isPartOf" : "https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/spec.html",
-    "issued" : "2021-03-23",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html",
+    "issued" : "2022-03-11",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://tools.oasis-open.org/version-control/browse/wsvn/oslc-promcode/shape/trunk/promcode-shapes.ttl",
+    "source" : "https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-shapes.ttl",
     "dcterms:title" : "OSLC PROMCODE Constraints",
     "label" : "OSLC PROMCODE Constraints"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Artifact",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Artifact",
-    "property" : [ "_:b84", "_:b82", "_:b25", "_:b110", "_:b21", "_:b111", "_:b45", "_:b85", "_:b29" ],
+    "property" : [ "_:b22", "_:b105", "_:b16", "_:b4", "_:b64", "_:b48", "_:b92", "_:b106", "_:b21" ],
     "title" : "Shape resource of an <code>Artifact</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Issue",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Issue",
-    "property" : [ "_:b11", "_:b100", "_:b118", "_:b28", "_:b119", "_:b107", "_:b112", "_:b98", "_:b24" ],
+    "property" : [ "_:b114", "_:b77", "_:b115", "_:b75", "_:b116", "_:b107", "_:b36", "_:b18", "_:b91" ],
     "title" : "Shape resource of an <code>Issue</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#IssueCollection",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:IssueCollection",
-    "property" : [ "_:b53", "_:b69", "_:b70", "_:b71", "_:b72", "_:b73", "_:b74", "_:b75" ],
+    "property" : [ "_:b65", "_:b19", "_:b15", "_:b53", "_:b24", "_:b66", "_:b67", "_:b68" ],
     "title" : "Shape resource of an <code>IssueCollection</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItem",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:ManagedItem",
-    "property" : [ "_:b101", "_:b18", "_:b68", "_:b0", "_:b31", "_:b102" ],
+    "property" : [ "_:b43", "_:b38", "_:b2", "_:b61", "_:b109", "_:b41" ],
     "title" : "Shape resource for <code>ManagedItem</code>."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:ManagedItemCollection",
-    "property" : [ "_:b113", "_:b23", "_:b87", "_:b109", "_:b86", "_:b2", "_:b48", "_:b106" ],
+    "property" : [ "_:b119", "_:b103", "_:b79", "_:b78", "_:b102", "_:b69", "_:b98", "_:b120" ],
     "title" : "Shape resource of <code>ManagedItemCollection</code>."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Measure",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Measure",
-    "property" : [ "_:b12", "_:b9", "_:b13", "_:b14", "_:b15", "_:b16", "_:b17" ],
+    "property" : [ "_:b8", "_:b9", "_:b10", "_:b11", "_:b12", "_:b13", "_:b14" ],
     "title" : "Shape resource of a <code>Measure</code> resource"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Measurement",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Measurement",
-    "property" : [ "_:b42", "_:b93", "_:b43", "_:b94", "_:b95", "_:b96" ],
+    "property" : [ "_:b88", "_:b32", "_:b89", "_:b0", "_:b7", "_:b31" ],
     "title" : "Shape resource of a <code>Measurement</code> resource"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Plan",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Plan",
-    "property" : [ "_:b65", "_:b64", "_:b88", "_:b89", "_:b47", "_:b90", "_:b91", "_:b92" ],
+    "property" : [ "_:b52", "_:b80", "_:b81", "_:b82", "_:b83", "_:b84", "_:b85", "_:b86" ],
     "title" : "Shape resource of a <code>Plan</code> resource"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Project",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Project",
-    "property" : [ "_:b19", "_:b49", "_:b67", "_:b83", "_:b76", "_:b63", "_:b20", "_:b108", "_:b120", "_:b114", "_:b46" ],
+    "property" : [ "_:b117", "_:b87", "_:b108", "_:b112", "_:b90", "_:b113", "_:b118", "_:b99", "_:b33", "_:b76", "_:b34" ],
     "title" : "Shape resource of a <code>Project</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Report",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Report",
-    "property" : [ "_:b4", "_:b32", "_:b33", "_:b34", "_:b35", "_:b36", "_:b37", "_:b38", "_:b39", "_:b40" ],
+    "property" : [ "_:b25", "_:b6", "_:b26", "_:b27", "_:b28", "_:b17", "_:b29", "_:b1", "_:b3", "_:b30" ],
     "title" : "Shape resource of a <code>Report</code> resource"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#Risk",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:Risk",
-    "property" : [ "_:b10", "_:b115", "_:b41", "_:b66", "_:b27", "_:b50", "_:b116", "_:b117", "_:b99" ],
+    "property" : [ "_:b110", "_:b35", "_:b104", "_:b111", "_:b51", "_:b100", "_:b39", "_:b63", "_:b101" ],
     "title" : "Shape resource of a <code>Risk</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#RiskCollection",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:RiskCollection",
-    "property" : [ "_:b5", "_:b77", "_:b44", "_:b78", "_:b79", "_:b52", "_:b80", "_:b81" ],
+    "property" : [ "_:b70", "_:b71", "_:b72", "_:b73", "_:b47", "_:b74", "_:b62", "_:b50" ],
     "title" : "Shape resource of a <code>RiskCollection</code> resource."
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#ScopeItem",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:ScopeItem",
-    "property" : [ "_:b22", "_:b103", "_:b104", "_:b105", "_:b6", "_:b51", "_:b3", "_:b97", "_:b7" ],
+    "property" : [ "_:b37", "_:b20", "_:b93", "_:b94", "_:b42", "_:b95", "_:b96", "_:b97", "_:b44" ],
     "title" : "Shape resource of a <code>ScopeItem</code> resource"
   }, {
     "@id" : "http://open-services.net/ns/promcode/shapes/1.0#WorkItem",
     "@type" : "oslc:ResourceShape",
     "describes" : "oslc_promcode:WorkItem",
-    "name" : "WorkItem",
-    "property" : [ "_:b54", "_:b55", "_:b30", "_:b1", "_:b26", "_:b56", "_:b8", "_:b57", "_:b58", "_:b59", "_:b60", "_:b61", "_:b62" ],
+    "property" : [ "_:b54", "_:b40", "_:b55", "_:b56", "_:b57", "_:b5", "_:b23", "_:b58", "_:b45", "_:b49", "_:b59", "_:b46", "_:b60" ],
     "dcterms:title" : "Shape resource of a <code>WorkItem</code> resource"
   } ],
   "@context" : {
@@ -1230,16 +1229,16 @@
     "name" : {
       "@id" : "http://open-services.net/ns/core#name"
     },
-    "range" : {
-      "@id" : "http://open-services.net/ns/core#range",
-      "@type" : "@id"
-    },
     "representation" : {
       "@id" : "http://open-services.net/ns/core#representation",
       "@type" : "@id"
     },
     "valueShape" : {
       "@id" : "http://open-services.net/ns/core#valueShape",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://open-services.net/ns/core#range",
       "@type" : "@id"
     },
     "property" : {
@@ -1254,6 +1253,9 @@
       "@id" : "http://open-services.net/ns/core#describes",
       "@type" : "@id"
     },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
     "isPartOf" : {
       "@id" : "http://purl.org/dc/terms/isPartOf",
       "@type" : "@id"
@@ -1262,19 +1264,16 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
     },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
