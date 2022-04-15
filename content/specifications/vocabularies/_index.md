@@ -145,6 +145,20 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **OSLC Query prefix**   |`pm%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fperfmon%23` |
 | **Specified Vocabulary**| [PerfMon 2.0 vocabulary][auto]                 |
 
+### OSLC PROMCODE
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | PROMCODE 1.0                     |
+| **Publication date**    | 11 March 2022                                |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE (OASIS Standard)</span>** |
+| **Recommended prefix**  |`oslc_promcode`                                            |
+| **Namespace URI**       |`http://open-services.net/ns/promcode#`          |
+| **Turtle prefix**       |`@prefix oslc_promcode: <http://open-services.net/ns/promcode#>`|
+| **SPARQL prefix**       |`PREFIX oslc_promcode: <http://open-services.net/ns/promcode#>` |
+| **OSLC Query prefix**   |`oslc_promcode%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fpromcode%23` |
+| **Specified Vocabulary**| [PROMCODE 1.0 vocabulary][promcode]                 |
+
 ### Linked Data Basic Profile
 
 | Property                | Value                                          |
@@ -163,6 +177,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 [am]: https://docs.oasis-open-projects.org/oslc-op/am/v3.0/ps01/architecture-management-vocab.html
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
 [auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
+[promcode]: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-vocab.html
 
 > **NB!** All namespace URIs support content negotiation. Acceptable RDF MIME types:
 >
@@ -201,4 +216,6 @@ In order to foster open integration, we will allow additional domain vocabularie
 ### Unpublished vocabularies
 
 - `crvt`: [Common IT Resource Type Vocabulary Version 2.0](https://archive.open-services.net/wiki/reconciliation/Common-IT-Resource-Type-Vocabulary-Version-2.0/index.html)
+<!--
 - `promcode`: [OSLC PROMCODE Specification Version 1.0](https://tools.oasis-open.org/version-control/svn/oslc-promcode/shape/trunk/spec.html#promcode-resource-definitions)
+-->
