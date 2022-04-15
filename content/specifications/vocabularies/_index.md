@@ -150,8 +150,8 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
 | **Deployed vocabulary** | PROMCODE 1.0                     |
-| **Publication date**    | 10 November 2021                                |
-| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>** |
+| **Publication date**    | 11 March 2022                                |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE (OASIS Standard)</span>** |
 | **Recommended prefix**  |`oslc_promcode`                                            |
 | **Namespace URI**       |`http://open-services.net/ns/promcode#`          |
 | **Turtle prefix**       |`@prefix oslc_promcode: <http://open-services.net/ns/promcode#>`|
