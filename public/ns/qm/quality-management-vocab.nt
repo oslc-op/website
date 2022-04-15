@@ -51,17 +51,17 @@
 <http://open-services.net/ns/qm#validatesRequirementCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "Requirement Collection that is validated by the Test Plan. It is likely that the target resource will be an oslc_rm:RequirementCollection but that is not necessarily the case." .
 <http://open-services.net/ns/qm#validatesRequirementCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/qm#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/oslc-op/oslc-specs/blob/master/specs/qm/quality-management-vocab.ttl> .
+<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/hasVersion> "OS" .
 <http://open-services.net/ns/qm#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-vocab.ttl> .
+<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-vocab.ttl> .
 <http://open-services.net/ns/qm#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
-<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/hasVersion> "PS01" .
 <http://open-services.net/ns/qm#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
 <http://open-services.net/ns/qm#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Quality Management (QM) Vocabulary" .
 <http://open-services.net/ns/qm#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_qm" .
 <http://open-services.net/ns/qm#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in the OSLC Quality Management (QM) namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-spec.html> .
 <http://open-services.net/ns/qm#> <http://purl.org/dc/terms/title> "OSLC Quality Management (QM) Vocabulary" .
-<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/issued> "2020-08-27"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html> .
+<http://open-services.net/ns/qm#> <http://purl.org/dc/terms/issued> "2022-01-19"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://open-services.net/ns/qm#TestScript> <http://www.w3.org/2000/01/rdf-schema#label> "TestScript" .
 <http://open-services.net/ns/qm#TestScript> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/qm#> .
 <http://open-services.net/ns/qm#TestScript> <http://www.w3.org/2000/01/rdf-schema#comment> "The QM Test Script resource." .
