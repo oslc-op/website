@@ -32,7 +32,7 @@
 	dcterms:publisher <https://open-services.net/about/> ;
 	dcterms:source <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.ttl> ;
 	dcterms:hasVersion "OS" ;
-	dcterms:issued "2022-02-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dcterms:issued "2022-03-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	dcterms:isPartOf <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html> ;
 	dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> .
 	
