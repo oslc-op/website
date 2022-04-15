@@ -11,7 +11,7 @@
 
   <meta property="og:title" content="OSLC Primer" />
   <meta property="og:description" content="" />
-  <meta property="og:url" content="/resources/oslc-primer//" />
+  <meta property="og:url" content="http://open-services.net/resources/oslc-primer//" />
   
   <meta property="og:image" content="https://open-services.net/img/logo.png" />
   
@@ -24,7 +24,7 @@
     content="https://open-services.net/img/logo.png"
   />
   
-    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="generator" content="Hugo 0.97.0" />
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800"
@@ -272,7 +272,7 @@
 <p>In the simplest case, the creation URI and the queryBase URI will in fact be the same URL.</p>
 <p>ServiceProviders have a third important property – dialog – that is the foundation of the second major OSLC integration technique based on invocation of HTML web user interface dialogs of one tool by another. Dialogs are discussed in a separate section of this primer.</p>
 <p>You might think from the preceding description that the simplest ServiceProvider example might look something like the following, in Turtle notation.</p>
-<pre><code>@prefix oslc: &lt;http://open-service.net/ns/core#&gt;.
+<pre tabindex="0"><code>@prefix oslc: &lt;http://open-service.net/ns/core#&gt;.
 &lt;http://acme.com/toolA/container1&gt;
     a oslc:ServiceProvider;
     oslc:creation &lt;http://acme.com/toolA/container1/contents&gt;;
@@ -282,7 +282,7 @@
 <p>In order to satisfy these requirements, OSLC introduces three additional concepts – Service, CreationFactory and QueryCapability. These are not primary concepts in OSLC and their instances are never independent HTTP resources with their own URLs. These three concepts are more like “structured data types” whose instances are used as property values in the state of a ServiceProvider - you should think of Service, CreationFactory and QueryCapability as technical details of the way the state of a ServiceProvider is organized rather than central OSLC concepts. QueryCapability allows properties to be associated with a queryBase URI, CreationFactory allows properties to be associated with a creation URI and Service allows (actually, requires) creation URIs and queryBase URIs to be grouped by OSLC domain.</p>
 <p>Because of these additional concepts, our simplest ServiceProvider actually looks like this:</p>
 <p>Example 1:</p>
-<pre><code>@prefix oslc: &lt;http://open-service.net/ns/core#&gt;.
+<pre tabindex="0"><code>@prefix oslc: &lt;http://open-service.net/ns/core#&gt;.
 &lt;http://acme.com/toolA/container1&gt; a oslc:ServiceProvider;
     oslc:service
         [a oslc:Service;
@@ -307,13 +307,12 @@
 <p>The queryBase resource identified by a queryBase URI of a ServiceProvider is an RDF Container resource that lists resources in the ServiceProvider.</p>
 <p>If a ServiceProvider has multiple queryBases, it is undefined which queryBases a resource will show up in after being POSTed to a creation URI.</p>
 <p>The representation of the queryBase is a standard RDF Container representation using the rdfs:member predicate. (<code>http://www.w3.org/TR/rdf-schema/#ch_member</code> ) For example, if I have an OSLC container with the URL <code>http://acme.com/oslc/container/1</code>) it might have the following representation:</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
 &lt;http://acme.com/oslc/container/1&gt;
     &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/000000000&gt;;
     # … 999999998 more triples here …
     &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/999999999&gt;.
-
 </code></pre><p>OSLC does not recognize or recommend the use of other forms of RDF Container such as Bag and Seq because they are not friendly to SPARQL query. This follows standard linked data guidance for RDF usage (e.g. <a href="http://linkeddatabook.com/editions/1.0/#htoc16">http://linkeddatabook.com/editions/1.0/#htoc16</a>).</p>
 <p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecification1cfb.html?sortcol=table;up=#Service_Provider_Resources">ServiceProvider Resources</a> in the OSLC Core specification</p>
 <h1 id="resources-inside-a-serviceprovider">Resources inside a ServiceProvider</h1>
@@ -355,15 +354,14 @@
 <p>The representation of <code>&lt;url&gt;?oslc.paging=true</code> will contain a subset of the triples that define the state of the resource whose URL is <code>&lt;url&gt;</code>. The subject of those triples will be <code>&lt;url&gt;</code>, not <code>&lt;url&gt;?oslc.paging=true</code>. In addition, the representation of <code>&lt;url&gt;?oslc.paging=true</code> may include a few triples whose subject is <code>&lt;url&gt;?oslc.paging=true</code>itself. Examples are triples whose predicate is <code>oslc:nextPage</code>, <code>dcterms:description</code> and so on.</p>
 <p>Note that pagination is only defined for resources whose state can be expressed in RDF as a set of RDF triples. Pagination is undefined for resources whose state cannot be represented in RDF. Pure binary resources, encrypted resources, or digitally signed resources might be examples. The representation of a Page is defined by first paginating the underlying triples that express the state of the resource being paginated, and then performing whatever standard mapping is used to map from each page of triples to the requested representation. In other words, we do not paginate the representations; we paginate the RDF resource state itself and then create the representations of each page in whatever media type is requested. This provides a general specification for both RDF and non-RDF representations of pages of RDF resources. Examples of non-RDF representations are HTML and JSON.</p>
 <p>For example, if I have an OSLC container with the URL <code>http://acme.com/oslc/container/1</code>, it might have the following representation (in Turtle notation):</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
 &lt;http://acme.com/oslc/container/1&gt;
     &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/000000000&gt;.
     # … 999999998 more triples here …
     &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/999999999&gt;.
-
 </code></pre><p>This representation has a billion triples and over 90 billion characters, which might be a bit big. Assuming that the implementation that backs this resource supports paging, a client can chose instead to <code>GET</code> the related resource <code>http://acme.com/oslc/container/1?oslc.paging=true</code>. The representation of this latter resource would look like this:</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
 &lt;http://acme.com/oslc/container/1&gt;
 &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/000000000&gt;.
@@ -371,12 +369,10 @@
 &lt;rdfs:member&gt; &lt;http://acme.com/oslc/resource/000000099&gt;.
 # pay attention to the subject URL of the following triple
 &lt;http://acme.com/oslc/container/1?oslc:paging=true&gt; &lt;oslc:nextPage&gt; &lt;http://acme.com/oslc/xxxxxxxxx/page2&gt;.
-
 </code></pre><p>As you can see, the representation of this smaller “firstPage” resource contains the first 100 triples that you would have gotten in the representation of the large resource in exactly the same form - the same subject, predicate and object - as in the representation of the large resource. In addition, it contains another triple - whose subject is the “firstPage” resource itself, not the bigger resource - that provides the URL of a third resource that will contain the next page of triples from the bigger resource. The format of the URLs of the second and subsequent pages (if they exist) is not defined by the OSLC specification – an OSLC implementation can use whichever URL it pleases. Note that although this example shows the triples in a precise order for purposes of simplicity and clarity of the example, there is no concept of ordering of triples in RDF, so the triples can be in any order both within and across pages.</p>
 <p>As illustrated above, when a page is returned it will include the triple:</p>
-<pre><code>
+<pre tabindex="0"><code>
 &lt;url of current page&gt; oslc:nextPage &lt;url of next page&gt;.
-
 </code></pre><p>You can tell when you are on the last page by the absence of an <code>oslc:nextPage</code> triple.</p>
 <p>Because paging is unstable (see below), by the time a client follows an <code>oslc:nextPage</code>link there may no longer be a next page. The OSLC server implementation in this case may respond with an HTTP 404 error.</p>
 <p>The OSLC specification permits <code>&lt;url&gt;?oslc.pageSize=n</code> as an alias for <code>&lt;url&gt;?oslc.paging=true</code>. Because it is just an alias, it has exactly the same meaning and behavior. An OSLC server implementation may (but is not obliged to) adjust the number of triples on the first and subsequent pages based on the value of <code>n</code>.</p>
@@ -396,7 +392,7 @@
 <p>Although we’re all very familiar with this model from relational databases and object-oriented programming, it is not the “natural” model of RDF, nor is it the model of the natural world. This model says that if you are of type X, you must have these properties. RDF and the natural world work the other way around – if you have these properties, you must be of type X. This is why there is no standard RDF vocabulary that can express the equivalent of <code>ResourceShapes</code>.</p>
 <p>OWL is a separate RDF-based standard which, at first glance, appears to solve the same problem as <code>ResourceShapes</code>. However, OWL, like RDF Schema, infers new triples from a given set of triples. OWL lets you specify inference rules about properties and types, including rules of the form &ldquo;if you have these properties, you must be of type X&rdquo;. In contrast, <code>ResourceShapes</code> lets you specify the constraints that a given set of triples must have. In relational database terms, <code>ResourceShapes</code> are similar to <code>TABLE</code> definitions and integrity constraints while OWL rules are similar to <code>VIEW</code> definitions.</p>
 <p>To help you understand how ResourceShapes work, below is an example shape for a fictional &ldquo;Tool A&rdquo; which exists at the URL <code>http://acme.com/toolA/resourceShape1</code>. You can see, below, the shape describes a Defect resource <code>(http://acme.com/toolA/Defect)</code>and three properties. The first is the standard Dublin Core &ldquo;<code>title</code>&rdquo; predicate, which is optional. The second is a Tool A-specific property called &ldquo;<code>priority</code>&rdquo; and the third is another Tool A-specific property called &ldquo;<code>defectiveComponent&gt;</code>.&rdquo; The priority property definition also defines three allowed values for setting severities of high, medium and low.</p>
-<pre><code>@prefix oslc:  &lt;http://open-services.net/ns/core#&gt; .
+<pre tabindex="0"><code>@prefix oslc:  &lt;http://open-services.net/ns/core#&gt; .
 @prefix xsd:   &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
 
@@ -404,39 +400,38 @@
   a     oslc:ResourceShape ;
   oslc:describes  &lt;http://acme.com/toolA/Defect&gt; ;
   oslc:property   [ a      oslc:Property ;
-        oslc:name    &quot;title&quot; ;
+        oslc:name    &#34;title&#34; ;
         oslc:occurs    oslc:Zero-or-many ;
         oslc:propertyDefinition  dcterms:title ;
         oslc:valueType     xsd:String ;
-        dcterms:title    &quot;details for dcterms:title property&quot;
+        dcterms:title    &#34;details for dcterms:title property&#34;
       ] ;
   oslc:property   [ a      oslc:Property ;
         oslc:allowedValue  &lt;http://acme.com/toolA/high&gt; , &lt;http://acme.com/toolA/medium&gt; , &lt;http://acme.com/toolA/low&gt; ;
-        oslc:name    &quot;priority&quot; ;
+        oslc:name    &#34;priority&#34; ;
         oslc:occurs    oslc:Exactly-one ;
         oslc:propertyDefinition  &lt;http://acme.com/toolA/priority&gt; ;
         oslc:valueType     oslc:Resource ;
-        dcterms:title    &quot;details for priority property&quot;
+        dcterms:title    &#34;details for priority property&#34;
       ] ;
   oslc:property   [ a      oslc:Property ;
-        oslc:name    &quot;defectiveComponent&quot; ;
+        oslc:name    &#34;defectiveComponent&#34; ;
         oslc:occurs    oslc:Zero-or-many ;
         oslc:propertyDefinition  &lt;http://acme.com/toolA/defectiveComponent&gt; ;
         oslc:range     &lt;http://acme.com/toolA/Component&gt; ;
         oslc:valueType     oslc:Resource ;
-        dcterms:title    &quot;details for component property&quot;
+        dcterms:title    &#34;details for component property&#34;
       ] ;
-  dcterms:title   &quot;Shape of resources of type Defect&quot; .
+  dcterms:title   &#34;Shape of resources of type Defect&#34; .
 </code></pre><p>And below is an example Defect resource representation that provides the three properties specified by the shape.</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix dcterms: &lt;http://purl.org/dc/terms/&gt;.
 @prefix toolA:   &lt;http://acme.com/toolA/&gt;.
 toolA:defect1
     a toolA:Defect;
-    dcterms:title &quot;Server failure during startup&quot;;
+    dcterms:title &#34;Server failure during startup&#34;;
     toolA:priority toolA:high;
     toolA:defectiveComponent &lt;http://acme.com/toolA/comp/Server&gt;.
-
 </code></pre><blockquote>
 <p><strong>Guidance – implement simple validations for create and update</strong></p>
 <p>OSLC implementations should try to make it easy for programmatic clients to create and update resources. If OSLC implementations associate a lot of very complex validation rules that need to be satisfied in order for an update or creation to be accepted, it becomes difficult or impossible for a client to use the protocol without extensive additional information specific to the tool that needs to be communicated outside of the OSLC specifications. The preferred approach for tools is to allow creation and update based on the sort of simple validations that can be communicated programmatically through a <code>ResourceShape</code>. Additional checks that are required to implement more complex policies and constraints should result in the resource being flagged as requiring more attention, but should not cause the basic create or update to fail.</p>
@@ -451,27 +446,25 @@ toolA:defect1
 <h3 id="oslcproperties">oslc.properties</h3>
 <p>The <code>oslc.properties key=value</code> pair portion of the URL lets you specify the resource with the set of properties you wish to retrieve. Both immediate and nested properties may be specified. A nested property is a property that belongs to the resource referenced by a property value in another resource. Nested properties are enclosed in brace brackets, and this nesting may be done recursively, i.e. a nested property may contain other nested properties.</p>
 <p>For example, suppose we have a bug report resource at the following URL:</p>
-<pre><code>
+<pre tabindex="0"><code>
 http://example.com/proj1/4242
-
 </code></pre><p>Suppose this bug resource has properties such as <code>dcterms:title</code>, <code>dcterms:description</code>, and <code>dcterms:creator</code>, and that <code>dcterms:creator</code> refers to a <code>foaf:Person</code> resource that has properties such as <code>foaf:givenName</code> and <code>foaf:familyName</code>. Suppose you want to retrieve a resource that includes the <code>dcterms:title</code> of the bug report and the <code>foaf:givenName</code> and <code>foaf:familyName</code> of the person referred to by the bug report’s <code>dcterms:creator</code>. The following URL illustrates the use of <code>oslc.properties</code> in the query string of a URL to include those properties:</p>
-<pre><code>http://example.com/proj1/4242?oslc.properties=dcterms:title,dcterms:creator{foaf:givenName,foaf:familyName}
+<pre tabindex="0"><code>http://example.com/proj1/4242?oslc.properties=dcterms:title,dcterms:creator{foaf:givenName,foaf:familyName}
 </code></pre><p>This URL identifies a resource whose representation contains exactly the desired information. The representation would look like this:</p>
-<pre><code>@prefix dcterms: &lt;http://purl.org/dc/terms/&gt;.
+<pre tabindex="0"><code>@prefix dcterms: &lt;http://purl.org/dc/terms/&gt;.
 @prefix foaf: &lt;http://http://xmlns.com/foaf/0.1/&gt;.
-&lt;http://example.com/proj1/4242&gt; dcterms:title &quot;Bug 4242&quot;.
+&lt;http://example.com/proj1/4242&gt; dcterms:title &#34;Bug 4242&#34;.
 &lt;http://example.com/proj1/4242&gt; dcterms:creator &lt;http://example.com/users/1&gt;.
-&lt;http://example.com/users/1&gt; foaf:givenName &quot;Dave&quot;.
-&lt;http://example.com/users/1&gt; foaf:familyName &quot;Johnson&quot;.
+&lt;http://example.com/users/1&gt; foaf:givenName &#34;Dave&#34;.
+&lt;http://example.com/users/1&gt; foaf:familyName &#34;Johnson&#34;.
 </code></pre><h3 id="oslcprefix">oslc.prefix</h3>
 <p>Languages such as Turtle and SPARQL let you define URI prefixes (e.g. <code>dcterms:</code>) so you can represent URIs more compactly (e.g. <code>dcterms:title</code>). The use of compact URIs is also convenient when writing query strings. OSLC domain specifications predefine some prefixes for this purpose. For example, the <code>oslc.properties</code> query string assumes that <code>dcterms:</code> and <code>foaf:</code> have been predefined. However, OSLC domain implementations may add new properties and so it is not possible to predefine all prefixes. To handle this situation, you can define additional prefixes in the query string using <code>oslc.prefix</code>.</p>
 <p>Suppose that foaf: was not predefined in the above example. You add its definition to the query string as follows (line breaks added for formatting marked with <code>//</code>):</p>
-<pre><code>
+<pre tabindex="0"><code>
 http://example.com/proj1/4242 //
     ?oslc.prefix=foaf=&lt;http://xmlns.com/foaf/0.1/&gt; //
     &amp;oslc.properties= //
     dcterms:title,dcterms:creator{foaf:givenName,foaf:familyName}.
-
 </code></pre><h2 id="starting-from-a-serviceprovider">Starting from a ServiceProvider</h2>
 <p>The section entitled Starting from an OSLC Resource URL describes how to efficiently extract information from a graph of resources if you have the URL of a specific resource to start from. There is also an important case where the starting point is a ServiceProvider.</p>
 <p>In addition to providing queryBases for a ServiceProvider, an OSLC implementation may provide additional resources that allow clients to find selective subsets of the resources and resource properties in queryBases. The URLs of these resources are constructed by adding a query component to the URL of the queryBase rather than to the URL of an OSLC resource. This can be much more convenient and efficient than performing a <code>GET</code>on the whole container, or paging through the container.</p>
@@ -479,7 +472,7 @@ http://example.com/proj1/4242 //
 <p>The <a href="https://archive.open-services.net/bin/view/Main/OSLCCoreSpecQuery.html">OSLC Core Spec Query Specification</a> document defines a standard set of OSLC query parameters.</p>
 <h3 id="query-example">Query example</h3>
 <p>In the following examples, assume a ServiceProvider that contains bug reports (and potentially other resources) for a particular project. Assume also that those bug reports point to user accounts. The user accounts could be in the same ServiceProvider as the bug reports, but since the same accounts may be used to identify users in multiple projects, it’s more likely they are held somewhere else. The URL of the queryBase for the ServiceProvider is <code>http://example.com/proj1</code> and the queryBase resource looks like this:</p>
-<pre><code>
+<pre tabindex="0"><code>
 # the query base for proj1
 &lt;http://example.com/proj1&gt;
     rdfs:member
@@ -490,50 +483,47 @@ http://example.com/proj1/4242 //
         &lt;http://example.com/proj1/4246&gt; ,
         &lt;http://example.com/proj1/4247&gt; ,
         &lt;http://example.com/proj1/4248&gt; .
-
 </code></pre><p>The actual bug report resources look like the following:</p>
-<pre><code>
+<pre tabindex="0"><code>
 # representation of http://example.com/proj1/4242
 &lt;http://example.com/proj1/4242&gt;
-    dcterms:title &quot;Bug 4242&quot; ;
+    dcterms:title &#34;Bug 4242&#34; ;
     dcterms:creator &lt;http://example.com/users/1&gt; .
 
 # representation of http://example.com/proj1/4243
 &lt;http://example.com/proj1/4243&gt;
-    dcterms:title &quot;Bug 4243&quot; ;
+    dcterms:title &#34;Bug 4243&#34; ;
     dcterms:creator &lt;http://example.com/users/2&gt; .
 
 # representation of http://example.com/proj1/4244
 &lt;http://example.com/proj1/4244&gt;
-    dcterms:title &quot;Bug 4244&quot; ;
+    dcterms:title &#34;Bug 4244&#34; ;
     dcterms:creator &lt;http://example.com/users/3&gt; .
 
 # representation of http://example.com/proj1/4245
 &lt;http://example.com/proj1/4245&gt;
-    dcterms:title &quot;Bug 4245&quot; ;
+    dcterms:title &#34;Bug 4245&#34; ;
     dcterms:creator &lt;http://example.com/users/1&gt; .
 
 # representation of http://example.com/proj1/4246
 &lt;http://example.com/proj1/4246&gt;
-    dcterms:title &quot;Bug 4246&quot; ;
+    dcterms:title &#34;Bug 4246&#34; ;
     dcterms:creator &lt;http://example.com/users/2&gt; .
 
 # representation of http://example.com/proj1/4247
 &lt;http://example.com/proj1/4247&gt;
-    dcterms:title &quot;Bug 4247&quot; ;
+    dcterms:title &#34;Bug 4247&#34; ;
     dcterms:creator &lt;http://example.com/users/3&gt; .
 
 # representation of http://example.com/proj1/4248
 &lt;http://example.com/proj1/4248&gt;
-    dcterms:title &quot;Bug 4248&quot; ;
+    dcterms:title &#34;Bug 4248&#34; ;
     dcterms:creator &lt;http://example.com/users/1&gt; .
-
 </code></pre><p>Suppose now that we use the query syntax to compose the following URL.</p>
-<pre><code>
+<pre tabindex="0"><code>
 http://example.com/proj1?oslc.where=dcterms:creator=&lt;http:example.com/users/1&gt;
-
 </code></pre><p>This URL identifies a resource that contains a subset of the queryBase information, as shown here:</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;.
 
 &lt;http://example.com/proj1&gt;
@@ -541,43 +531,38 @@ http://example.com/proj1?oslc.where=dcterms:creator=&lt;http:example.com/users/1
         &lt;http://example.com/proj1/4242&gt; ,
         &lt;http://example.com/proj1/4245&gt; ,
         &lt;http://example.com/proj1/4248&gt; .
-
 </code></pre><p>The example above selected a subset of bug reports based on a property of the bug reports themselves. It is possible to further restrict the list by selecting based on a property of the user resources that the bug reports reference, as shown below. The URL of the query resource is this:</p>
-<pre><code>
-http://example.com/proj1?oslc.where=dcterms:creator{foaf:givenName=&quot;Martin&quot; and foaf:familyName=&quot;Nally&quot;}
-
+<pre tabindex="0"><code>
+http://example.com/proj1?oslc.where=dcterms:creator{foaf:givenName=&#34;Martin&#34; and foaf:familyName=&#34;Nally&#34;}
 </code></pre><p>And its representation is this:</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 
 &lt;http://example.com/proj1&gt;
     rdfs:member
         &lt;http://example.com/proj1/4243&gt; ,
         &lt;http://example.com/proj1/4246&gt; .
-
 </code></pre><p>For the purposes of this example, assume the user accounts look like this:</p>
-<pre><code>
+<pre tabindex="0"><code>
 # user 1
 &lt;http://example.com/users/1&gt; a foaf:Person ,
-    foaf:givenName &quot;Dave&quot; ;
-    foaf:familyName &quot;Johnston&quot; .
+    foaf:givenName &#34;Dave&#34; ;
+    foaf:familyName &#34;Johnston&#34; .
 
 # user 2
 &lt;http://example.com/users/2&gt; a foaf:Person ,
-    foaf:givenName &quot;Martin&quot; ;
-    foaf:familyName &quot;Nally&quot; .
+    foaf:givenName &#34;Martin&#34; ;
+    foaf:familyName &#34;Nally&#34; .
 
 # user 3
 &lt;http://example.com/users/3&gt; a foaf:Person ,
-    foaf:givenName &quot;Arthur&quot; ;
-    foaf:familyName &quot;Ryman&quot; .
-
+    foaf:givenName &#34;Arthur&#34; ;
+    foaf:familyName &#34;Ryman&#34; .
 </code></pre><p>It is also possible to use query to retrieve property values for the bugs and users, not just a list of bugs, as shown in the following example. The URL of the query resource is</p>
-<pre><code>
+<pre tabindex="0"><code>
 http://example.com/proj1?oslc.where=dcterms:creator=&lt;http:example.com/users/3&gt;&amp;oslc.select=dcterms:title
-
 </code></pre><p>And the resulting representation is this:</p>
-<pre><code>
+<pre tabindex="0"><code>
 @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -588,11 +573,10 @@ http://example.com/proj1?oslc.where=dcterms:creator=&lt;http:example.com/users/3
         &lt;http://example.com/proj1/4247&gt; .
 
 &lt;http://example.com/proj1/4244&gt;
-    dcterms:title &quot;Bug 4244&quot; .
+    dcterms:title &#34;Bug 4244&#34; .
 
 &lt;http://example.com/proj1/4247&gt;
-    dcterms:title &quot;Bug 4247&quot; .
-
+    dcterms:title &#34;Bug 4247&#34; .
 </code></pre><h2 id="additional-query-capabilities">Additional Query Capabilities</h2>
 <p>In addition to the capabilities illustrated in these examples, Query includes syntax for inequality operators (<code>!=, &lt;=, &gt;=, &lt;, &gt;</code>), the ability to test that a value is an element within a set of values, ordering of results, and full-text searches. See the specification for details.</p>
 <blockquote>
@@ -634,38 +618,38 @@ Of course, if the state of the resources in the tool fits well with the relation
 </ul>
 <p>OSLC requires that this information be returned in RDF/XML format - other RDF or non-RDF representations are not allowed.</p>
 <h2 id="ui-preview-example">UI Preview example</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
-
-<span style="color:#f92672">&lt;rdf:RDF</span>
-    <span style="color:#a6e22e">xmlns:rdf=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#34;</span>
-    <span style="color:#a6e22e">xmlns:dcterms=</span><span style="color:#e6db74">&#34;http://purl.org/dc/terms/&#34;</span>
-    <span style="color:#a6e22e">xmlns:oslc=</span><span style="color:#e6db74">&#34;http://open-services.net/ns/core#&#34;</span><span style="color:#f92672">&gt;</span>
-
-    <span style="color:#f92672">&lt;oslc:Compact</span>
-        <span style="color:#a6e22e">rdf:about=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345&#34;</span><span style="color:#f92672">&gt;</span>
-
-        <span style="color:#f92672">&lt;dcterms:title&gt;</span> 12345: &amp;lt;s&amp;gt;Null pointer exception during startup&amp;lt;/s&amp;gt; <span style="color:#f92672">&lt;/dcterms:title&gt;</span>
-        <span style="color:#f92672">&lt;oslc:shortTitle&gt;</span> 12345 <span style="color:#f92672">&lt;/oslc:shortTitle&gt;</span>
-        <span style="color:#f92672">&lt;oslc:icon</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/icons/defect.jpg&#34;</span> <span style="color:#f92672">/&gt;</span>
-
-        <span style="color:#f92672">&lt;oslc:smallPreview&gt;</span>
-            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
-                <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=small&#34;</span> <span style="color:#f92672">/&gt;</span>
-            <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
-        <span style="color:#f92672">&lt;/oslc:smallPreview&gt;</span>
-
-
-        <span style="color:#f92672">&lt;oslc:largePreview&gt;</span>
-            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
-                <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=large&#34;</span> <span style="color:#f92672">/&gt;</span>
-                <span style="color:#f92672">&lt;oslc:hintWidth&gt;</span> 60em <span style="color:#f92672">&lt;/oslc:hintWidth&gt;</span>
-                <span style="color:#f92672">&lt;oslc:hintHeight&gt;</span> 20em <span style="color:#f92672">&lt;/oslc:hintHeight&gt;</span>
-            <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
-        <span style="color:#f92672">&lt;/oslc:largePreview&gt;</span>
-
-    <span style="color:#f92672">&lt;/oslc:Compact&gt;</span>
-<span style="color:#f92672">&lt;/rdf:RDF&gt;</span>
-</code></pre></div><p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#User_Interface_Previews">UI Preview</a> in the OSLC Core specification.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;rdf:RDF</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:rdf=</span><span style="color:#e6db74">&#34;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:dcterms=</span><span style="color:#e6db74">&#34;http://purl.org/dc/terms/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xmlns:oslc=</span><span style="color:#e6db74">&#34;http://open-services.net/ns/core#&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;oslc:Compact</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rdf:about=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dcterms:title&gt;</span> 12345: &amp;lt;s&amp;gt;Null pointer exception during startup&amp;lt;/s&amp;gt; <span style="color:#f92672">&lt;/dcterms:title&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;oslc:shortTitle&gt;</span> 12345 <span style="color:#f92672">&lt;/oslc:shortTitle&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;oslc:icon</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/icons/defect.jpg&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;oslc:smallPreview&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=small&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/oslc:smallPreview&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;oslc:largePreview&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;oslc:Preview&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;oslc:document</span> <span style="color:#a6e22e">rdf:resource=</span><span style="color:#e6db74">&#34;http://example.com/bugs/12345?hover=large&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;oslc:hintWidth&gt;</span> 60em <span style="color:#f92672">&lt;/oslc:hintWidth&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&lt;oslc:hintHeight&gt;</span> 20em <span style="color:#f92672">&lt;/oslc:hintHeight&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&lt;/oslc:Preview&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/oslc:largePreview&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/oslc:Compact&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/rdf:RDF&gt;</span>
+</span></span></code></pre></div><p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#User_Interface_Previews">UI Preview</a> in the OSLC Core specification.</p>
 <h1 id="oauth">OAuth</h1>
 <p>OSLC does not mandate a particular approach to authentication and access control, but it acknowledges the existence and use of OAuth. Use of OAuth requires a client to know 3 fixed URLs that are used to negotiate tokens. OSLC defines a resource, OAuthConfiguration, for holding these URLs, and defines an optional property on both ServiceProvider and ServiceProviderCatalog for holding OAuthConfiguration values. Clients will still need to consult the documentation specific to a tool to know whether OAuth is supported by the tool, and if so where the tool will store the OAuth URLs.</p>
 <p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#OAuth_Authentication">OAuth</a> in the OSLC Core specification.</p>
