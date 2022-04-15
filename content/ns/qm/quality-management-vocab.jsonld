@@ -3,12 +3,12 @@
     "@id" : "http://open-services.net/ns/qm#",
     "@type" : "owl:Ontology",
     "description" : "All vocabulary URIs defined in the OSLC Quality Management (QM) namespace.",
-    "hasVersion" : "PS01",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html",
-    "issued" : "2020-08-27",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-spec.html",
+    "issued" : "2022-01-19",
     "license" : "http://www.apache.org/licenses/LICENSE-2.0",
     "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-vocab.ttl",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-vocab.ttl",
     "title" : "OSLC Quality Management (QM) Vocabulary",
     "preferredNamespacePrefix" : "oslc_qm",
     "label" : "OSLC Quality Management (QM) Vocabulary",
@@ -170,6 +170,9 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
       "@type" : "@id"
     },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source",
       "@type" : "@id"
@@ -177,9 +180,6 @@
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher",
       "@type" : "@id"
-    },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license",
@@ -192,6 +192,10 @@
       "@id" : "http://purl.org/dc/terms/description",
       "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
     },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
     },
@@ -199,15 +203,11 @@
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf",
-      "@type" : "@id"
-    },
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl" : "http://www.w3.org/2002/07/owl#",
-    "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "vann" : "http://purl.org/vocab/vann/",
-    "oslc" : "http://open-services.net/ns/core#"
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/"
   }
 }
