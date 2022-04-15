@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all,follow">
-        <meta name="googlebot" content="index,follow,snippet,archive">
+        <meta name="googlebot" content="noindex,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ .Title }} | OSLC</title>
         <meta name="author" content="{{ .Site.Author.name }}" />
       
-        <meta property="og:title" content="{{ .Title }}" />
+        <!-- <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:description" content="{{ .Description }}" />
         <meta property="og:image" content="https://oslc.github.io/img/logo.png" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -22,13 +22,13 @@
         <meta name="keywords" content="{{ delimit .Keywords " , " }}"> {{ else if .Site.Params.DefaultKeywords }}
         <meta name="keywords" content="{{ delimit .Site.Params.DefaultKeywords " , " }}"> {{ end }} {{ if .Description }}
         <meta name="description" content="{{ .Description }}"> {{ else if .Site.Params.DefaultDescription }}
-        <meta name="description" content="{{ .Site.Params.DefaultDescription }}"> {{ end }} {{ .Hugo.Generator }}
+        <meta name="description" content="{{ .Site.Params.DefaultDescription }}"> {{ end }} {{ hugo.Generator }} -->
       
         <!-- Facebook OpenGraph tags -->
-        <meta property="og:title" content="{{ .Title }}" />
+        <!-- <meta property="og:title" content="{{ .Title }}" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="{{ .URL }}/" />
-        <meta property="og:image" content="{{ .Site.Params.logo }}" />
+        <meta property="og:url" content="{{ .Permalink }}/" />
+        <meta property="og:image" content="{{ .Site.Params.logo }}" /> -->
       
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
       
