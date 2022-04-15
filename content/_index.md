@@ -149,7 +149,8 @@ supporters = [
   "lyo_logo.png",
   "biglever_logo.jpg",
   "dspace_logo.png",
-  "koneksys_logo.png"
+  "koneksys_logo.png",
+  "unicom_logo.png"
 ]
 
 supporters_size = [
