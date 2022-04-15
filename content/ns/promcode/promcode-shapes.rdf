@@ -10,7 +10,7 @@
     <dcterms:isPartOf rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html"/>
     <dcterms:title>OSLC PROMCODE Constraints</dcterms:title>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2021-03-23</dcterms:issued>
+    >2022-03-11</dcterms:issued>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
     <dcterms:source rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-shapes.ttl"/>
     <rdfs:label>OSLC PROMCODE Constraints</rdfs:label>
