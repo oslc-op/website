@@ -9,15 +9,15 @@
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <owl:Ontology rdf:about="http://open-services.net/ns/promcode#">
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-spec.html"/>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html"/>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
     >2021-03-23</dcterms:issued>
     <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in The OSLC PROMCODE namespace.</dcterms:description>
-    <dcterms:hasVersion>CS03</dcterms:hasVersion>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
     <rdfs:label>The OSLC PROMCODE Vocabulary</rdfs:label>
     <vann:preferredNamespacePrefix>oslc_promcode</vann:preferredNamespacePrefix>
     <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <dcterms:source rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs03/promcode-vocab.ttl"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.ttl"/>
     <dcterms:title>The OASIS OSLC Project Management of Contracted Delivery (OSLC PROMCODE) Vocabulary</dcterms:title>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://open-services.net/ns/promcode#Project">
