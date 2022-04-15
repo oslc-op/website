@@ -1,0 +1,1018 @@
+_:B55e5064170630ee0ff3ff78b62e22092 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://open-services.net/ns/core#name> "type" .
+_:B55e5064170630ee0ff3ff78b62e22092 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://purl.org/dc/terms/description> "A unique identifier for the <code>Measurement</code> resource." .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://open-services.net/ns/core#name> "identifier" .
+_:Bb0ed8acd3cc13c33070fe2d9f4814e0b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the <code>Issue</code> resource." .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://open-services.net/ns/core#name> "description" .
+_:Bc9f466019a47eafead47c5e2c3476fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B51f79e8380211fee1f241b793121f079 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B51f79e8380211fee1f241b793121f079 <http://open-services.net/ns/core#name> "type" .
+_:B51f79e8380211fee1f241b793121f079 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc402e5314a0c4816195a339171ce354a <http://purl.org/dc/terms/description> "A unique identifier for a <code>Risk</code> resource." .
+_:Bc402e5314a0c4816195a339171ce354a <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bc402e5314a0c4816195a339171ce354a <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bc402e5314a0c4816195a339171ce354a <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc402e5314a0c4816195a339171ce354a <http://open-services.net/ns/core#name> "identifier" .
+_:Bc402e5314a0c4816195a339171ce354a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B89cf9d23420e1995a083e876c124d197 <http://purl.org/dc/terms/description> "A unique identifier for a <code>Report</code> resource." .
+_:B89cf9d23420e1995a083e876c124d197 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B89cf9d23420e1995a083e876c124d197 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B89cf9d23420e1995a083e876c124d197 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B89cf9d23420e1995a083e876c124d197 <http://open-services.net/ns/core#name> "identifier" .
+_:B89cf9d23420e1995a083e876c124d197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Ba2179c14e026201852b7698e872011df <http://purl.org/dc/terms/description> "A string that identifies the <code>Artifact</code> resource that is a source of this <code>Artifact</code> resource." .
+_:Ba2179c14e026201852b7698e872011df <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Ba2179c14e026201852b7698e872011df <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:Ba2179c14e026201852b7698e872011df <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Ba2179c14e026201852b7698e872011df <http://open-services.net/ns/core#name> "source" .
+_:Ba2179c14e026201852b7698e872011df <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://open-services.net/ns/core#name> "description" .
+_:Bd3ac5890c4492691beb6b9ef40fbd295 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#identifiedBy> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#name> "identifiedBy" .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Issue> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Risk> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://purl.org/dc/terms/description> "<code>identifiedBy</code> is a relation between a <code>Risk</code> resource and a resource of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> or <code>Issue</code>. A <code>Risk</code> resource may be identified by one or more resources." .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bbc0b4b935f2eaa6557d1f731243da5bf <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://purl.org/dc/terms/description> "A unique number assigned to this resource which represents a position in the sequential order of all <code>Artifact</code> resources of the project." .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:B69e98ec836c770cba6ed977ad2e3778e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://open-services.net/ns/core#name> "type" .
+_:B547aab04a94aa4110ae43c3516eabfe3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://purl.org/dc/terms/description> "<code>isPartOf</code> is a relation between a child <code>ScopeItem</code> resource and its parent <code>ScopeItem</code> resource. A <code>ScopeItem</code> resource may have multiple child <code>ScopeItem</code> resources." .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#isPartOf> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://open-services.net/ns/core#name> "isPartOf" .
+_:Bd2ed8aa5658fafc5120ee8c7d8c89284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://open-services.net/ns/core#name> "type" .
+_:B18dc3ff63a53e3e2bf86a097a591951d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B9ba09995e174d0ed6e356144728d8368 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B7ab3e1b4d02b4eded9e0b2499533b940 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:Bb7a99b7853d7ceddfa7d0619060b0d70 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://purl.org/dc/terms/title> "Shape resource of a <code>Measure</code> resource"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B2b4ad5837e27e79d23981f69790a7158 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B6f1f56046f703e8b676ee01140f5de37 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B414d03b6e6ef8ed78dd710ae26ddcc1a .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#property> _:B0be3f442e534c77e549696b6a694c6c8 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measure> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Measure> .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://purl.org/dc/terms/description> "<code>actualEndDate</code> is a property of a <code>WorkItem</code> resource. It is the actual end date of the work item. Its value is of type <code>xsd:dateTime</code>." .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#actualEndDate> .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://open-services.net/ns/core#name> "actualEndDate" .
+_:Bd1b7fea1cee3532aa757d919d55b9e1e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://purl.org/dc/terms/description> "A unique identifier of the resource." .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://open-services.net/ns/core#name> "identifier" .
+_:B8c1fcef5403dd62a8ff0533c6456f3e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#name> "requiredBy" .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#requiredBy> .
+_:Bafc4af30a494133daa2ed59659c49582 <http://purl.org/dc/terms/description> "<code>requiredBy</code> is a relation between this <code>WorkItem</code> resource and a <code>ScopeItem</code> resource or an <code>Artifact</code> resource." .
+_:Bdbc87687773b862bb631962362c918f7 <http://purl.org/dc/terms/description> "A unique identifier for a <code>Project</code> resource." .
+_:Bdbc87687773b862bb631962362c918f7 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bdbc87687773b862bb631962362c918f7 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bdbc87687773b862bb631962362c918f7 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bdbc87687773b862bb631962362c918f7 <http://open-services.net/ns/core#name> "identifier" .
+_:Bdbc87687773b862bb631962362c918f7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://purl.org/dc/terms/description> "<code>actualStartDate</code> is a property of a <code>Project</code> resource. It is the actual start date of the project. Its value is of type <code>xsd:dateTime</code>." .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#actualStartDate> .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://open-services.net/ns/core#name> "actualStartDate" .
+_:Bfdd01a7a41007fab88fd7f54e175470a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://purl.org/dc/terms/description> "A unique number assigned to this resource which represents a position in the sequential order of all the <code>ScopeItem</code> resources of the project." .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:B40fac6b2b61c9bb347f592d2fc7b5392 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://purl.org/dc/terms/description> "<code>valueOfMeasure</code> is a property that represents a value for the <code>Measure</code> resource." .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#valueOfMeasure> .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://open-services.net/ns/core#name> "valueOfMeasure" .
+_:B2b4ad5837e27e79d23981f69790a7158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://purl.org/dc/terms/description> "A title string of this <code>ManagedItemCollection</code> resource." .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://open-services.net/ns/core#name> "title" .
+_:B8257801c4e8e95fdc8bc5c00dc736e61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://purl.org/dc/terms/description> "A string that identifies the <code>Issue</code> resource that is a source of this <code>Issue</code> resource." .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://open-services.net/ns/core#name> "source" .
+_:Bcb8dce71692308afd28e993360f3cca9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://purl.org/dc/terms/description> "A date on which this <code>RiskCollection</code> resource collects member resources." .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://open-services.net/ns/core#name> "date" .
+_:Bd31f4fc5a6a04130bc277688b674be8b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://purl.org/dc/terms/description> "A unique identifier for a <code>ScopeItem</code> resource." .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://open-services.net/ns/core#name> "identifier" .
+_:Bc5016bcc8d3ade799426cb5f313f2820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B2b918bb23d87d189a48667998e92544c <http://purl.org/dc/terms/description> "A unique identifier for the <code>Artifact</code> resource." .
+_:B2b918bb23d87d189a48667998e92544c <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B2b918bb23d87d189a48667998e92544c <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B2b918bb23d87d189a48667998e92544c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B2b918bb23d87d189a48667998e92544c <http://open-services.net/ns/core#name> "identifier" .
+_:B2b918bb23d87d189a48667998e92544c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://purl.org/dc/terms/description> "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Risk</code> resources of the project." .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:B5bf918fa90eb2b858c842bd00cfc6ac4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B28a8e441714696d5d85c084b538c3166 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:Bf7c0100b6c5a2b90016a8875efa280bc .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Report> .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B89cf9d23420e1995a083e876c124d197 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B4ff915be2cf7ec12cacac12d2446ece5 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B4d07cb287c3bee4da29c7bf6cc20aca1 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://purl.org/dc/terms/title> "Shape resource of a <code>Report</code> resource"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:Bb26f7e22a8c83c602e0aa9ff089fec63 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B245f92076999a3b284f18ea3c97978b2 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B19a7ae618c3eaa93b5f54a51b6698a36 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B4df3c184c2daa4032e118d99205f07a9 .
+<http://open-services.net/ns/promcode/shapes/1.0#Report> <http://open-services.net/ns/core#property> _:B914641fc18c12afd332d4e1593cbecf7 .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://purl.org/dc/terms/description> "A unique identifier for a <code>ManagedItemCollection</code> resource." .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://open-services.net/ns/core#name> "identifier" .
+_:B3b8b46f73addf2dc79a5931ddc019f31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be4545857e858e4c8661bf7a4349415bf <http://purl.org/dc/terms/description> "<code>stateOfRisk</code> is a property that defines the state of a <code>Risk</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of the risk." .
+_:Be4545857e858e4c8661bf7a4349415bf <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Be4545857e858e4c8661bf7a4349415bf <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Be4545857e858e4c8661bf7a4349415bf <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#stateOfRisk> .
+_:Be4545857e858e4c8661bf7a4349415bf <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Be4545857e858e4c8661bf7a4349415bf <http://open-services.net/ns/core#name> "stateOfRisk" .
+_:Be4545857e858e4c8661bf7a4349415bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://purl.org/dc/terms/description> "<code>targets</code> is a relation between an <code>Artifact</code> resource and a <code>Measure</code> resource. The representation of this property is inline." .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Measure> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Inline> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Measure> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#targets> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://open-services.net/ns/core#name> "targets" .
+_:B5c35f9cf251aa7f3e2313394529897b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://purl.org/dc/terms/description> "A title string of this <code>Report</code> resource." .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://open-services.net/ns/core#name> "title" .
+_:Bb26f7e22a8c83c602e0aa9ff089fec63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://purl.org/dc/terms/description> "A string that identifies the <code>ManagedItemCollection</code> resource that is a source of this <code>ManagedItemCollection</code> resource." .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://open-services.net/ns/core#name> "source" .
+_:B0823d9c1c18120efe053b26e8accaf73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://purl.org/dc/terms/description> "A string that identifies the <code>ManagedItem</code> resource that is a source of this <code>ManagedItem</code> resource." .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://open-services.net/ns/core#name> "source" .
+_:B64b84a2e40d2bed66e929741f3cee113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://purl.org/dc/terms/description> "A date on which this <code>IssueCollection</code> resource collects <code>Issue</code> resources." .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://open-services.net/ns/core#name> "date" .
+_:B37b2aab47c8c583e35ee307bd30e24f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://open-services.net/ns/core#name> "description" .
+_:B768aa8715b81ba0115a966fe0a6e9740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://purl.org/dc/terms/description> "A string that identifies the <code>IssueCollection</code> resource that is a source of this <code>IssueCollection</code> resource." .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://open-services.net/ns/core#name> "source" .
+_:B9a51b9bf1aa7630e883e8492ffb6ee14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://purl.org/dc/terms/description> "<code>actualStartDate</code> is a property of a <code>WorkItem</code> resource. It is the actual start date of the work item. Its value is of type <code>xsd:dateTime</code>." .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#actualStartDate> .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://open-services.net/ns/core#name> "actualStartDate" .
+_:Bc1bd879f2c7d200ca5efe04b71836b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://open-services.net/ns/core#name> "type" .
+_:B7ef398d7d3a2fd4aa94827a8d2030c95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B245f92076999a3b284f18ea3c97978b2 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B245f92076999a3b284f18ea3c97978b2 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B245f92076999a3b284f18ea3c97978b2 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B245f92076999a3b284f18ea3c97978b2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B245f92076999a3b284f18ea3c97978b2 <http://open-services.net/ns/core#name> "description" .
+_:B245f92076999a3b284f18ea3c97978b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://purl.org/dc/terms/description> "<code>isPartOf</code> is a relation between a child <code>WorkItem</code> resource and its parent <code>WorkItem</code> resource. A <code>WorkItem</code> resource may have multiple child <code>WorkItem</code> resources." .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#WorkItem> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#isPartOf> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://open-services.net/ns/core#name> "isPartOf" .
+_:B54a86259771ce2d9b1cc72ac59293a89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://open-services.net/ns/core#name> "description" .
+_:B7ab3e1b4d02b4eded9e0b2499533b940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B28a8e441714696d5d85c084b538c3166 <http://purl.org/dc/terms/description> "<code>belongsTo</code> is a relation between this <code>Report</code> resource and a <code>Project</code> resources." .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Project> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Project> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#belongsTo> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B28a8e441714696d5d85c084b538c3166 <http://open-services.net/ns/core#name> "belongsTo" .
+_:B28a8e441714696d5d85c084b538c3166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://open-services.net/ns/core#name> "type" .
+_:Bd1fb6e48a86be7bd556ecb752ec4b021 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://purl.org/dc/terms/description> "A string that identifies the <code>Risk</code> resource that is a source of this <code>Risk</code> resource." .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://open-services.net/ns/core#name> "source" .
+_:Bb2445bf1b5a4b5d60f9bf851063a1bfa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B508948fd8521844faed1026e5128013b <http://purl.org/dc/terms/description> "<code>date</code> is a property of a <code>Measurement</code> resource. It is the date on which the measurement was made." .
+_:B508948fd8521844faed1026e5128013b <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B508948fd8521844faed1026e5128013b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:B508948fd8521844faed1026e5128013b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B508948fd8521844faed1026e5128013b <http://open-services.net/ns/core#name> "date" .
+_:B508948fd8521844faed1026e5128013b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bec4d07128acd926073a6f8d921027f37 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:Bec4d07128acd926073a6f8d921027f37 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bec4d07128acd926073a6f8d921027f37 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Bec4d07128acd926073a6f8d921027f37 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bec4d07128acd926073a6f8d921027f37 <http://open-services.net/ns/core#name> "description" .
+_:Bec4d07128acd926073a6f8d921027f37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B02e707182311609b426034d3501f7e2f <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B02e707182311609b426034d3501f7e2f <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B02e707182311609b426034d3501f7e2f <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B02e707182311609b426034d3501f7e2f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B02e707182311609b426034d3501f7e2f <http://open-services.net/ns/core#name> "description" .
+_:B02e707182311609b426034d3501f7e2f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Issue> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#name> "collects" .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Risk> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://purl.org/dc/terms/description> "<code>ManagedItem</code> resources included in this <code>ManagedItemCollection</code>. A <code>ManagedItemCollection</code> resource collects resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code>, and <code>Issue</code>." .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#collects> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B261f586b8f9287e521c860c9920b8f5e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#WorkItem> .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B37cef8f6dcea3690f83eff76e43f0d40 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://purl.org/dc/terms/title> "Shape resource of a <code>WorkItem</code> resource" .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Ba15bb5e3299fd23101037ec2698f19f1 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Bc1bd879f2c7d200ca5efe04b71836b47 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Bafc4af30a494133daa2ed59659c49582 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Bc84a81679549ad2d9165b154908e7727 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B54a86259771ce2d9b1cc72ac59293a89 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B5b72d290b47f4a295509515528747f54 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B59043df4123dabd7c375563d0ac27657 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Bc50c7ea1cc0fcb50a1234d91818d54e9 .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B29677ed6f24c7333f013839c8fc467bb .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B4c0658fa33c24e5d9a0f6a3937d856ca .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:Bd1b7fea1cee3532aa757d919d55b9e1e .
+<http://open-services.net/ns/promcode/shapes/1.0#WorkItem> <http://open-services.net/ns/core#property> _:B74801a71f148c3844e82f38457d83af0 .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://purl.org/dc/terms/description> "<code>plannedStartDate</code> is a property of a <code>Project</code> resource. It is the planned start date of the project. Its value is of type <code>xsd:dateTime</code>." .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#plannedStartDate> .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://open-services.net/ns/core#name> "plannedStartDate" .
+_:Bcfc1162ef2349ce274c139526bb00763 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://open-services.net/ns/core#name> "description" .
+_:Bfef79ac7e246aa066b12c80a4b7f971a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://purl.org/dc/terms/description> "A title string for a <code>ManagedItem</code> resource." .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://open-services.net/ns/core#name> "title" .
+_:B69eb1e98e2c675d720129ece2e4face2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://purl.org/dc/terms/description> "A title string of this <code>RiskCollection</code> resource." .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://open-services.net/ns/core#name> "title" .
+_:Bb5f52ea6264873ad75e8fd9ca5c991f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://purl.org/dc/terms/description> "<code>collects</code> is a relation between the <code>Report</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>ScopeItem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource. The <code>Report</code> resource collects a subset of resources collected by the <code>Plan</code> resource that is linked by <code>correspondsTo</code> property." .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#collects> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B4d07cb287c3bee4da29c7bf6cc20aca1 <http://open-services.net/ns/core#name> "collects" .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://purl.org/dc/terms/description> "A string that identifies the <code>Report</code> resource that is a source of this <code>Report</code> resource." .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://open-services.net/ns/core#name> "source" .
+_:B4ff915be2cf7ec12cacac12d2446ece5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://purl.org/dc/terms/title> "Shape resource of an <code>IssueCollection</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:Bd3ac5890c4492691beb6b9ef40fbd295 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:B37b2aab47c8c583e35ee307bd30e24f4 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:B8c1fcef5403dd62a8ff0533c6456f3e7 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:Bbdae1576b5990f9490941dd6229929e9 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:Be62ce7946303a8cec35d07444360a9ba .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:Bb55e2c03ae668537b127e5bf5dc136d1 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:B25afbc14f0800bf82dd18457dd2df7a6 .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#IssueCollection> .
+<http://open-services.net/ns/promcode/shapes/1.0#IssueCollection> <http://open-services.net/ns/core#property> _:B9a51b9bf1aa7630e883e8492ffb6ee14 .
+_:B9870034932b78bbc6b53bed9a74b518c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://purl.org/dc/terms/description> "<code>producedFor</code> is a relation between an <code>Artifact</code> resource and a <code>ScopeItem</code> resource or a <code>WorkItem</code> resource. <code>Artifact</code> is produced as a result of implementation of the <code>ScopeItem</code> resources or as a result of the work described by the <code>WorkItem</code> resource." .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#producedFor> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#name> "producedFor" .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:B9870034932b78bbc6b53bed9a74b518c <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://purl.org/dc/terms/description> "<code>representedBy</code> is a relation between the <code>WorkItem</code> resource and a resource that represents a person responsible for the progress of the work described by this resource. The value is any resource, but is expected to describe a person such as a <code>foaf:Person</code> resource." .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#representedBy> .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://open-services.net/ns/core#name> "representedBy" .
+_:Bc50c7ea1cc0fcb50a1234d91818d54e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bd1fb5998fc085bb33522d611295856d1 .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Ba960d39984d2fd045989630f2e55db43 .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bcc347182d736d339890542d4f63d36c1 .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bb411d71c8a9c8670ee081ff13571c78f .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#RiskCollection> .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:B76ff793aed80eda4de243ef0e45f2adb .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://purl.org/dc/terms/title> "Shape resource of a <code>RiskCollection</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bd31f4fc5a6a04130bc277688b674be8b .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bd8da326e0ebc464d4c319f97098b2254 .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://open-services.net/ns/core#property> _:Bb5f52ea6264873ad75e8fd9ca5c991f3 .
+<http://open-services.net/ns/promcode/shapes/1.0#RiskCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://purl.org/dc/terms/description> "A unique identifier for the <code>Measure</code> resource." .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://open-services.net/ns/core#name> "identifier" .
+_:B0be3f442e534c77e549696b6a694c6c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://purl.org/dc/terms/description> "<code>collects</code> is a relation between an <code>IssueCollection</code> resource and an <code>Issue</code> resource. An <code>IssueCollection</code> resource collects only <code>Issue</code> resources." .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Issue> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Issue> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#collects> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://open-services.net/ns/core#name> "collects" .
+_:Bbdae1576b5990f9490941dd6229929e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc84a81679549ad2d9165b154908e7727 <http://purl.org/dc/terms/description> "<code>plannedStartDate</code> is a property of WorkItem resource. It is the planned start date of the work item. Its value is of type <code>xsd:dateTime</code>." .
+_:Bc84a81679549ad2d9165b154908e7727 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bc84a81679549ad2d9165b154908e7727 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#plannedStartDate> .
+_:Bc84a81679549ad2d9165b154908e7727 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc84a81679549ad2d9165b154908e7727 <http://open-services.net/ns/core#name> "plannedStartDate" .
+_:Bc84a81679549ad2d9165b154908e7727 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://open-services.net/ns/core#name> "type" .
+_:Bb55e2c03ae668537b127e5bf5dc136d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B87e280409365d1ed02f296f1f9c68975 <http://purl.org/dc/terms/description> "A date on which this <code>ManagedItemCollection </code>resource collects member resources." .
+_:B87e280409365d1ed02f296f1f9c68975 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B87e280409365d1ed02f296f1f9c68975 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:B87e280409365d1ed02f296f1f9c68975 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B87e280409365d1ed02f296f1f9c68975 <http://open-services.net/ns/core#name> "date" .
+_:B87e280409365d1ed02f296f1f9c68975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://purl.org/dc/terms/description> "A string that identifies the <code>Project</code> resource that is a source of this <code>Project</code> resource." .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://open-services.net/ns/core#name> "source" .
+_:Bb1b00968b2bcd18e7ccb13d173a9f1ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://open-services.net/ns/core#name> "type" .
+_:B8b3510b68dda8b6830d22847f90961d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://open-services.net/ns/core#name> "type" .
+_:B84f8101196c62588f9fa8756bdbd84f2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8f802f8302717244d35b8e03fba381ae <http://purl.org/dc/terms/description> "<code>raisedDate</code> is an optional property of an <code>Issue</code> resource. It is the raised date of the <code>Issue</code> resource. Its value is a <code>dateTime</code>." .
+_:B8f802f8302717244d35b8e03fba381ae <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B8f802f8302717244d35b8e03fba381ae <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#raisedDate> .
+_:B8f802f8302717244d35b8e03fba381ae <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B8f802f8302717244d35b8e03fba381ae <http://open-services.net/ns/core#name> "raisedDate" .
+_:B8f802f8302717244d35b8e03fba381ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Plan> .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:Bfef793558c63d5e796216f43d0958ca4 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:Bfef79ac7e246aa066b12c80a4b7f971a .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:B584cc899e0c48f20c1d36ff11798c878 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://purl.org/dc/terms/title> "Shape resource of a <code>Plan</code> resource"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:B5e2421ca571b7ecb498f69b876644925 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:B51f79e8380211fee1f241b793121f079 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:B7d8d2cef24f4804897b5fed4c5bf0854 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:B1baeb928729be9042a5d607ba9f9b688 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://open-services.net/ns/core#property> _:Bb0654511c8cf6767df2e410e7375da27 .
+<http://open-services.net/ns/promcode/shapes/1.0#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://purl.org/dc/terms/description> "A title string for a <code>ScopeItem</code> resource." .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://open-services.net/ns/core#name> "title" .
+_:B5ab25b110ce2dbcce68e7e3342e3242e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://purl.org/dc/terms/title> "Shape resource of a <code>Measurement</code> resource"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:B18dc3ff63a53e3e2bf86a097a591951d .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:Bb80dc5767e32d138adafeb6150e0516e .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:B405d96c78ba72a3784af953afecb96aa .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:Bb0ed8acd3cc13c33070fe2d9f4814e0b .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:B768aa8715b81ba0115a966fe0a6e9740 .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#property> _:B508948fd8521844faed1026e5128013b .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Measurement> .
+<http://open-services.net/ns/promcode/shapes/1.0#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://purl.org/dc/terms/description> "<code>belongsTo</code> is a relation between the <code>IssueCollection</code> resource and a <code>Project</code> resource. An acquirer and a supplier may have multiple projects in operation. The Project resource linked is used to identify the project this <code>IssueCollection</code> resource belongs to." .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Project> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Project> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#belongsTo> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Be62ce7946303a8cec35d07444360a9ba <http://open-services.net/ns/core#name> "belongsTo" .
+_:Be62ce7946303a8cec35d07444360a9ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://purl.org/dc/terms/description> "A unique identifier for a <code>Plan</code> resource." .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://open-services.net/ns/core#name> "identifier" .
+_:Bfef793558c63d5e796216f43d0958ca4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://open-services.net/ns/core#name> "type" .
+_:Ba15bb5e3299fd23101037ec2698f19f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://purl.org/dc/terms/description> "<code>stateOfIssue</code> is a property that defines the state of an <code>Issue</code> resource. The value is any resource, but is expected to describe its state such as open, action taken, monitored and closed, to represent the state of issue." .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#stateOfIssue> .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://open-services.net/ns/core#name> "stateOfIssue" .
+_:B9b53dc5b573880c8e2e964c7da85bbf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://purl.org/dc/terms/description> "A unique identifier for the <code>WorkItem</code> resource." .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://open-services.net/ns/core#name> "identifier" .
+_:B37cef8f6dcea3690f83eff76e43f0d40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8052d52f136feaee4f23c7af139ef37d <http://purl.org/dc/terms/description> "A unique identifier for the <code>Issue</code> resource." .
+_:B8052d52f136feaee4f23c7af139ef37d <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B8052d52f136feaee4f23c7af139ef37d <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B8052d52f136feaee4f23c7af139ef37d <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B8052d52f136feaee4f23c7af139ef37d <http://open-services.net/ns/core#name> "identifier" .
+_:B8052d52f136feaee4f23c7af139ef37d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://purl.org/dc/terms/description> "<code>unitOfMeasure</code> is a property that defines a unit of measure of this <code>Measure</code> resource. The value is any resource, but is expected to have information on the unit of measure of this <code>Measure</code> resource, describing whether the metric is a rate, a ratio, a quantity, a time, etc." .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#unitOfMeasure> .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://open-services.net/ns/core#name> "unitOfMeasure" .
+_:Bb7a99b7853d7ceddfa7d0619060b0d70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://purl.org/dc/terms/description> "<code>belongsTo</code> is a relation between a <code>Plan</code> resource and a <code>Project</code> resource." .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Project> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Project> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#belongsTo> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://open-services.net/ns/core#name> "belongsTo" .
+_:B584cc899e0c48f20c1d36ff11798c878 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://purl.org/dc/terms/description> "A unique number assigned to the resource which represents a position in the sequential order of resources of the same type of <code>ManagedItem</code>." .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:Bd61526d2ce531703b65130ecdb8541d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://open-services.net/ns/core#name> "description" .
+_:B0f257af85a9ede4752b9a14d01888f59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:Bd2ed8aa5658fafc5120ee8c7d8c89284 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B9f7541c5bf51ce06b7e36ad863274852 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B5ab25b110ce2dbcce68e7e3342e3242e .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B40fac6b2b61c9bb347f592d2fc7b5392 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#ScopeItem> .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B90181ec27f86273ad8721f08bd58267e .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B9ab0988d6001846b2b6451d75dfbfbf8 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B0f257af85a9ede4752b9a14d01888f59 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:Bc5016bcc8d3ade799426cb5f313f2820 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://open-services.net/ns/core#property> _:B547aab04a94aa4110ae43c3516eabfe3 .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://purl.org/dc/terms/title> "Shape resource of a <code>ScopeItem</code> resource"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#ScopeItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://purl.org/dc/terms/description> "<code>belongsTo</code> is a relation between the <code>ManagedItemCollection</code> resource and a <code>Project</code> resource." .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Project> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Project> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#belongsTo> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://open-services.net/ns/core#name> "belongsTo" .
+_:B5862867b0647c17cc43c62a7610a7f5f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#collects> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#name> "collects" .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:Bb0654511c8cf6767df2e410e7375da27 <http://purl.org/dc/terms/description> "<code>collects</code> is a relation between a <code>Plan</code> resource and resources, where each linked resource from the <code>Plan</code> resource is a <code>Scopeitem</code> resource, a <code>WorkItem</code>resource or an <code>Artifact</code> resource." .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://purl.org/dc/terms/description> "<code>collects</code> is a relation between a <code>RiskCollection</code> resource and a <code>Risk</code> resource." .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Risk> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Risk> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#collects> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://open-services.net/ns/core#name> "collects" .
+_:Bb411d71c8a9c8670ee081ff13571c78f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B88a15b7ddb5f3bc85b8611b29f3422ed .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B69e98ec836c770cba6ed977ad2e3778e .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B9870034932b78bbc6b53bed9a74b518c .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://purl.org/dc/terms/title> "Shape resource of an <code>Artifact</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:Bec4d07128acd926073a6f8d921027f37 .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B63f66fe925ac217c71df1ee3b432ccef .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Artifact> .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B5c35f9cf251aa7f3e2313394529897b4 .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:Ba2179c14e026201852b7698e872011df .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B43a92422cc370feccf724763941313c1 .
+<http://open-services.net/ns/promcode/shapes/1.0#Artifact> <http://open-services.net/ns/core#property> _:B2b918bb23d87d189a48667998e92544c .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://purl.org/dc/terms/description> "A string that identifies the <code>ScopeItem</code> resource that is a source of this <code>ScopeItem</code> resource." .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://open-services.net/ns/core#name> "source" .
+_:B9ab0988d6001846b2b6451d75dfbfbf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://purl.org/dc/terms/description> "<code>plannedSize</code> is a property for estimated development size for a <code>ScopeItem</code> resource." .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#plannedSize> .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://open-services.net/ns/core#name> "plannedSize" .
+_:B9f7541c5bf51ce06b7e36ad863274852 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://purl.org/dc/terms/description> "A title string for the <code>WorkItem</code> resource." .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://open-services.net/ns/core#name> "title" .
+_:B4c0658fa33c24e5d9a0f6a3937d856ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://purl.org/dc/terms/description> "A string that identifies the <code>RiskCollection</code> resource that is a source of this <code>RiskCollection</code> resource." .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://open-services.net/ns/core#name> "source" .
+_:Bd1fb5998fc085bb33522d611295856d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://purl.org/dc/terms/description> "<code>includes</code> is a relation between this <code>Report</code> resource and <code>Measurement</code> resources.   A <code>Measurement</code> resource linked by <code>includes</code> from this resource must measure an <code>Artifact</code> resource that is linked by <code>collects</code> property of this <code>Report</code> resource." .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Measurement> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Measurement> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#includes> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://open-services.net/ns/core#name> "includes" .
+_:B4df3c184c2daa4032e118d99205f07a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human to understand the resource." .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://open-services.net/ns/core#name> "description" .
+_:Be7de6d48aebdb993f1ea1f837c35509c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://purl.org/dc/terms/description> "A title string for the resource." .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://open-services.net/ns/core#name> "title" .
+_:B229931ab4593e99cfba8fba5ef8660e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://purl.org/dc/terms/description> "<code>identifiedDate</code> is the date on which the risk was identified." .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#identifiedDate> .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://open-services.net/ns/core#name> "identifiedDate" .
+_:Bc515a30ab2045bf803773aa4c65bcad1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://purl.org/dc/terms/description> "A string that identifies the <code>Plan</code> resource that is a source of this <code>Plan</code> resource." .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://open-services.net/ns/core#name> "source" .
+_:B7d8d2cef24f4804897b5fed4c5bf0854 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://open-services.net/ns/core#name> "type" .
+_:Bd8da326e0ebc464d4c319f97098b2254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B43a92422cc370feccf724763941313c1 <http://purl.org/dc/terms/description> "<code>isPartOf</code> is a relation between a child <code>Artifact</code> resource and its parent <code>Artifact</code> resource. An <code>Artifact</code> resource may have multiple child <code>WorkItem</code> resources." .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Artifact> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/isPartOf> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B43a92422cc370feccf724763941313c1 <http://open-services.net/ns/core#name> "isPartOf" .
+_:B43a92422cc370feccf724763941313c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://purl.org/dc/terms/title> "Shape resource for <code>ManagedItem</code>."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:B84f8101196c62588f9fa8756bdbd84f2 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:Bd61526d2ce531703b65130ecdb8541d7 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:B69eb1e98e2c675d720129ece2e4face2 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:B64b84a2e40d2bed66e929741f3cee113 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:Bf695dc8233f7718fe86b49b2eba4d2bf .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#property> _:B02e707182311609b426034d3501f7e2f .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#ManagedItem> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://purl.org/dc/terms/description> "<code>observes</code> is a relation between a <code>Measurement</code> resource and a <code>Measure</code> resource. One <code>Measurement</code> resource observes zero or many <code>Measure</code> resources. The representation of this property is inline." .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Measure> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Inline> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Measure> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#observes> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://open-services.net/ns/core#name> "observes" .
+_:Bb80dc5767e32d138adafeb6150e0516e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://open-services.net/ns/core#name> "description" .
+_:B195b65489b34b62bfcf2c0c195d1281b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B74801a71f148c3844e82f38457d83af0 <http://purl.org/dc/terms/description> "<code>plannedEndDate</code> is a property of a <code>WorkItem</code> resource. It is the planned end date of the work item. Its value is of type <code>xsd:dateTime</code>." .
+_:B74801a71f148c3844e82f38457d83af0 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B74801a71f148c3844e82f38457d83af0 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#plannedEndDate> .
+_:B74801a71f148c3844e82f38457d83af0 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B74801a71f148c3844e82f38457d83af0 <http://open-services.net/ns/core#name> "plannedEndDate" .
+_:B74801a71f148c3844e82f38457d83af0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bc402e5314a0c4816195a339171ce354a .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:B5bf918fa90eb2b858c842bd00cfc6ac4 .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Risk> .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://purl.org/dc/terms/title> "Shape resource of a <code>Risk</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bd1fb6e48a86be7bd556ecb752ec4b021 .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Be4545857e858e4c8661bf7a4349415bf .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bb2445bf1b5a4b5d60f9bf851063a1bfa .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Be7de6d48aebdb993f1ea1f837c35509c .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bc515a30ab2045bf803773aa4c65bcad1 .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bbc0b4b935f2eaa6557d1f731243da5bf .
+<http://open-services.net/ns/promcode/shapes/1.0#Risk> <http://open-services.net/ns/core#property> _:Bb3f661ebfde24cdfcba91356cc2b794b .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://purl.org/dc/terms/description> "A unique identifier for a <code>ManagedItem</code> resource." .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://open-services.net/ns/core#name> "identifier" .
+_:Bf695dc8233f7718fe86b49b2eba4d2bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B405d96c78ba72a3784af953afecb96aa <http://purl.org/dc/terms/description> "<code>measures</code> is a relation between a <code>Measurement</code> resource and an <code>Artifact</code> resource. The measurement represented by the resource is on the artifact represented by the <code>Artifact</code> resource." .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Artifact> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#measures> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B405d96c78ba72a3784af953afecb96aa <http://open-services.net/ns/core#name> "measures" .
+_:B405d96c78ba72a3784af953afecb96aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B5b72d290b47f4a295509515528747f54 <http://purl.org/dc/terms/description> "A unique number assigned to this resource which represents a position in the sequential order of all the <code>WorkItem</code> resources of the project." .
+_:B5b72d290b47f4a295509515528747f54 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B5b72d290b47f4a295509515528747f54 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:B5b72d290b47f4a295509515528747f54 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B5b72d290b47f4a295509515528747f54 <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:B5b72d290b47f4a295509515528747f54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://purl.org/dc/terms/description> "A unique number assigned to this resource which represents a position in the sequential order of all the <code>Issue</code> resources in the project." .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#sequenceNumber> .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://open-services.net/ns/core#name> "sequenceNumber" .
+_:Ba06ee7641a807115004d5ef740e6dd53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/hasVersion> "OS" .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/title> "OSLC PROMCODE Constraints" .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/issued> "2022-03-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/source> <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-shapes.ttl> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC PROMCODE Constraints" .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShapeConstraints> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
+<http://open-services.net/ns/promcode/shapes/1.0#> <http://purl.org/dc/terms/description> "All vocabulary URIs defined in the OSLC PROMCODE namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:B8a8eb752127e4985baa6e4b153cafc0c .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bbe8416747dde22b6a5355226d2027cf8 .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bdbc87687773b862bb631962362c918f7 .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bcc60926564ec762eb5985fb90d19e77c .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://purl.org/dc/terms/title> "Shape resource of a <code>Project</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:B8b3510b68dda8b6830d22847f90961d3 .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Project> .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bb1b00968b2bcd18e7ccb13d173a9f1ee .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bcaeaf38a83a2253ea7be941f52aa4daa .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bfdd01a7a41007fab88fd7f54e175470a .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bcfc1162ef2349ce274c139526bb00763 .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:B4e36e3d526801487c66501af189d1545 .
+<http://open-services.net/ns/promcode/shapes/1.0#Project> <http://open-services.net/ns/core#property> _:Bfa7d935334ec5d262154a42575c008f3 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B8052d52f136feaee4f23c7af139ef37d .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B7ef398d7d3a2fd4aa94827a8d2030c95 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://purl.org/dc/terms/title> "Shape resource of an <code>Issue</code> resource."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B63efe8491483f8f3fcc09f3da86effbe .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:Ba06ee7641a807115004d5ef740e6dd53 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B229931ab4593e99cfba8fba5ef8660e9 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:Bc9f466019a47eafead47c5e2c3476fb5 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B9b53dc5b573880c8e2e964c7da85bbf8 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:B8f802f8302717244d35b8e03fba381ae .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#property> _:Bcb8dce71692308afd28e993360f3cca9 .
+<http://open-services.net/ns/promcode/shapes/1.0#Issue> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#Issue> .
+_:B29677ed6f24c7333f013839c8fc467bb <http://purl.org/dc/terms/description> "A string that identifies the <code>WorkItem</code> resource that is a source of this <code>WorkItem</code> resource." .
+_:B29677ed6f24c7333f013839c8fc467bb <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B29677ed6f24c7333f013839c8fc467bb <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/source> .
+_:B29677ed6f24c7333f013839c8fc467bb <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B29677ed6f24c7333f013839c8fc467bb <http://open-services.net/ns/core#name> "source" .
+_:B29677ed6f24c7333f013839c8fc467bb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://purl.org/dc/terms/description> "<code>belongsTo</code> is a relation between the <code>RiskCollection</code> resource and a <code>Project</code> resource." .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Project> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Project> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#belongsTo> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:Bcc347182d736d339890542d4f63d36c1 <http://open-services.net/ns/core#name> "belongsTo" .
+_:Bcc347182d736d339890542d4f63d36c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://purl.org/dc/terms/description> "A unique identifier for a <code>RiskCollection</code> resource." .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#string> .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/identifier> .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://open-services.net/ns/core#name> "identifier" .
+_:B76ff793aed80eda4de243ef0e45f2adb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://purl.org/dc/terms/description> "<code>plannedEndDate</code> is a property of a <code>Project</code> resource. It is the planned end date of the project. Its value is of type <code>xsd:dateTime</code>." .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#plannedEndDate> .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://open-services.net/ns/core#name> "plannedEndDate" .
+_:Bcc60926564ec762eb5985fb90d19e77c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://purl.org/dc/terms/description> "A title string of this <code>Plan</code> resource." .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://open-services.net/ns/core#name> "title" .
+_:B1baeb928729be9042a5d607ba9f9b688 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Ba960d39984d2fd045989630f2e55db43 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:Ba960d39984d2fd045989630f2e55db43 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Ba960d39984d2fd045989630f2e55db43 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:Ba960d39984d2fd045989630f2e55db43 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Ba960d39984d2fd045989630f2e55db43 <http://open-services.net/ns/core#name> "description" .
+_:Ba960d39984d2fd045989630f2e55db43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://open-services.net/ns/core#name> "type" .
+_:B19a7ae618c3eaa93b5f54a51b6698a36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://open-services.net/ns/core#name> "type" .
+_:B88a15b7ddb5f3bc85b8611b29f3422ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B5e2421ca571b7ecb498f69b876644925 <http://purl.org/dc/terms/description> "A date on which this <code>Plan</code> resource collects member resources." .
+_:B5e2421ca571b7ecb498f69b876644925 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B5e2421ca571b7ecb498f69b876644925 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:B5e2421ca571b7ecb498f69b876644925 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B5e2421ca571b7ecb498f69b876644925 <http://open-services.net/ns/core#name> "date" .
+_:B5e2421ca571b7ecb498f69b876644925 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://purl.org/dc/terms/description> "A title string for a <code>Project</code> resource." .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://open-services.net/ns/core#name> "title" .
+_:Bbe8416747dde22b6a5355226d2027cf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://purl.org/dc/terms/description> "<code>actualEndDate</code> is a property of a <code>Project</code> resource that describes actual end date of the project. Its value is of type <code>xsd:dateTime</code>." .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#actualEndDate> .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://open-services.net/ns/core#name> "actualEndDate" .
+_:Bcaeaf38a83a2253ea7be941f52aa4daa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://purl.org/dc/terms/description> "A title string for a <code>Risk</code> resource." .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://open-services.net/ns/core#name> "title" .
+_:Bb3f661ebfde24cdfcba91356cc2b794b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://purl.org/dc/terms/description> "A title string of this <code>Measure</code> resource." .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://open-services.net/ns/core#name> "title" .
+_:B414d03b6e6ef8ed78dd710ae26ddcc1a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://purl.org/dc/terms/description> "<code>correspondsTo</code> is a relation between a <code>Report</code> resource and a <code>Plan</code> resource. A <code>Report</code> resource has at most one <code>correspondsTo</code> relation to the corresponding a <code>Plan</code> resource. If a plan is changed and a new <code>Plan</code> resource is created, the <code>Report</code> may need to be linked to the new <code>Plan</code> resource." .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#Plan> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Plan> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#correspondsTo> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://open-services.net/ns/core#name> "correspondsTo" .
+_:Bf7c0100b6c5a2b90016a8875efa280bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://purl.org/dc/terms/description> "The resource type URIs."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Reference> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#One-or-many> .
+_:B9ba09995e174d0ed6e356144728d8368 <http://open-services.net/ns/core#name> "type" .
+_:B9ba09995e174d0ed6e356144728d8368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://purl.org/dc/terms/title> "Shape resource of <code>ManagedItemCollection</code>."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B55e5064170630ee0ff3ff78b62e22092 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B3b8b46f73addf2dc79a5931ddc019f31 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B5862867b0647c17cc43c62a7610a7f5f .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/promcode#ManagedItemCollection> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B195b65489b34b62bfcf2c0c195d1281b .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B8257801c4e8e95fdc8bc5c00dc736e61 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B87e280409365d1ed02f296f1f9c68975 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B0823d9c1c18120efe053b26e8accaf73 .
+<http://open-services.net/ns/promcode/shapes/1.0#ManagedItemCollection> <http://open-services.net/ns/core#property> _:B261f586b8f9287e521c860c9920b8f5e .
+_:B4e36e3d526801487c66501af189d1545 <http://purl.org/dc/terms/description> "<code>metricOfScopeItemSize</code> is a property that describes a metric of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired metric for all the <code>ScopeItem</code> resources of the project." .
+_:B4e36e3d526801487c66501af189d1545 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B4e36e3d526801487c66501af189d1545 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B4e36e3d526801487c66501af189d1545 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#metricOfScopeItemSize> .
+_:B4e36e3d526801487c66501af189d1545 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B4e36e3d526801487c66501af189d1545 <http://open-services.net/ns/core#name> "metricOfScopeItemSize" .
+_:B4e36e3d526801487c66501af189d1545 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B90181ec27f86273ad8721f08bd58267e <http://purl.org/dc/terms/description> "<code>actualSize</code> is a property for actual development size for a <code>ScopeItem</code> resource." .
+_:B90181ec27f86273ad8721f08bd58267e <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:B90181ec27f86273ad8721f08bd58267e <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#actualSize> .
+_:B90181ec27f86273ad8721f08bd58267e <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B90181ec27f86273ad8721f08bd58267e <http://open-services.net/ns/core#name> "actualSize" .
+_:B90181ec27f86273ad8721f08bd58267e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://purl.org/dc/terms/description> "A date on which this <code>Report</code> resource collects member resources." .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/date> .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://open-services.net/ns/core#name> "date" .
+_:B914641fc18c12afd332d4e1593cbecf7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Risk> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://purl.org/dc/terms/description> "<code>raisedBy</code> is a relation between an <code>Issue</code> resource and other resources of type <code>ScopeItem</code>, <code>WorkItem</code>, <code>Artifact</code>, <code>Risk</code> and <code>Issue</code>. An <code>Issue</code> resource may be raised by one or more resources." .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#WorkItem> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Issue> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#raisedBy> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#ScopeItem> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-many> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#range> <http://open-services.net/ns/promcode#Artifact> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#name> "raisedBy" .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B63efe8491483f8f3fcc09f3da86effbe <http://open-services.net/ns/core#valueShape> <http://open-services.net/ns/promcode/shapes/1.0#ManagedItem> .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://purl.org/dc/terms/description> "<code>unitOfScopeItemSize</code> is a property that describes a unit of size of properties of <code>plannedSize.</code> and <code>actualSize</code> of <code>ScopeItem</code>.  The value can be any resource, but it is expected to have information on the desired unit of size, describing whether the metric is a rate, a ratio, a quantity, a time, and so on for all the <code>ScopeItem</code> resources in the project." .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#unitOfScopeItemSize> .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://open-services.net/ns/core#name> "unitOfScopeItemSize" .
+_:Bfa7d935334ec5d262154a42575c008f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://purl.org/dc/terms/description> "A title string of this <code>IssueCollection</code> resource." .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://open-services.net/ns/core#name> "title" .
+_:B25afbc14f0800bf82dd18457dd2df7a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property of a <code>Project</code> resource to help a human understand the project." .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://open-services.net/ns/core#name> "description" .
+_:B8a8eb752127e4985baa6e4b153cafc0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://purl.org/dc/terms/description> "A title string of the resource." .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/title> .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://open-services.net/ns/core#name> "title" .
+_:B63f66fe925ac217c71df1ee3b432ccef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B59043df4123dabd7c375563d0ac27657 <http://purl.org/dc/terms/description> "<code>dcterms:description</code> is a property to help a human understand the resource." .
+_:B59043df4123dabd7c375563d0ac27657 <http://open-services.net/ns/core#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+_:B59043df4123dabd7c375563d0ac27657 <http://open-services.net/ns/core#propertyDefinition> <http://purl.org/dc/terms/description> .
+_:B59043df4123dabd7c375563d0ac27657 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B59043df4123dabd7c375563d0ac27657 <http://open-services.net/ns/core#name> "description" .
+_:B59043df4123dabd7c375563d0ac27657 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://purl.org/dc/terms/description> "<code>metricOfMeasure</code> is a property that defines a metric of measure of this resource. The value is any resource, but is expected to have information on the metric of this <code>Measure</code> resource." .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#AnyResource> .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://open-services.net/ns/core#representation> <http://open-services.net/ns/core#Either> .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/promcode#metricOfMeasure> .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Zero-or-one> .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://open-services.net/ns/core#name> "metricOfMeasure" .
+_:B6f1f56046f703e8b676ee01140f5de37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .

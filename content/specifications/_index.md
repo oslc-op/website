@@ -38,6 +38,7 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 | [Asset Management 2.0 Final](https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html) | OSLC Asset Management WG (closed) | Defines the OSLC services and vocabulary for the Asset Management domain. |
 | [Automation 2.0 Final](https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html) | OSLC Automation WG (closed) | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
 | [Performance Monitoring 2.0 Final](https://archive.open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/index.html) | OSLC Performance Monitoring WG (closed) | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |
+| [Promcode 1.0 CS02](https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-spec.html) | OSLC PROMCODE TC | The latest published version of the OSLC services and vocabulary for Project Management for Contracted Software Delivery. Committee Specification |
 
 
 ## Working Drafts

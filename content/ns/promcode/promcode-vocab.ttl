@@ -1,0 +1,341 @@
+# OSLC PROMCODE Version 1.0
+# OSIS Standard
+# 11 March 2022
+# Copyright (c) OASIS Open 2021. All Rights Reserved.
+# Source: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/
+# Latest stage of narrative specification: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html
+# TC IPR Statement: https://www.oasis-open.org/committees/oslc-promcode/ipr.php 
+
+# This document is a part of specification being provided under the RF on Limited Terms Mode of 
+# the OASIS IPR Policy, the mode chosen when the Technical Committee was established. For information 
+# on whether any patents have been disclosed that may be essential to implementing this specification, 
+# and any offers of patent licensing terms, please refer to the Intellectual Property Rights section 
+# of the TC’s web page (https://www.oasis-open.org/committees/oslc-promcode/ipr.php). 
+
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oslc: <http://open-services.net/ns/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+@prefix : <http://open-services.net/ns/promcode#> .
+
+:
+	a owl:Ontology ;
+	dcterms:title "The OASIS OSLC Project Management of Contracted Delivery (OSLC PROMCODE) Vocabulary" ;
+	rdfs:label "The OSLC PROMCODE Vocabulary" ;
+	dcterms:description "All vocabulary URIs defined in The OSLC PROMCODE namespace."^^rdf:XMLLiteral ;
+	vann:preferredNamespacePrefix "oslc_promcode" ;
+	dcterms:publisher <https://open-services.net/about/> ;
+	dcterms:source <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.ttl> ;
+	dcterms:hasVersion "OS" ;
+	dcterms:issued "2022-03-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dcterms:isPartOf <https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html> ;
+	dcterms:license <http://www.apache.org/licenses/LICENSE-2.0> .
+	
+# classes	
+
+:Artifact
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItem ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Artifact" ;
+	rdfs:comment """Artifact is a subclass of ManagedItem class. An Artifact resource is a work product that is produced in a project such as design documents, source code, test report, and so on.""" .
+
+:Issue
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItem ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Issue" ;
+	rdfs:comment """Issue is a subclass of ManagedItem. An Issue resource represents a situation that must be resolved in order to meet the objectives of a project. Issue resources shared between an acquirer and a supplier must be managed.  Internal issues which must be resolved by a supplier alone may not be shared.  Failure to resolve the situation may result in negative consequences for the project, such as a schedule delay.""" .
+
+:IssueCollection
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItemCollection ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "IssueCollection" ;
+	rdfs:comment """IssueCollection is a subclass of ManagedItemCollection. An IssueCollection resource is a collection of Issue resources. Once an Issue resource is collected, it continues to be included in the collection regardless of its state value. Depending on the situation, a collection may collect all Issues resources to be shared in the project on a specific date, or it may collect only certain Issues resources of some categories, such as certain status, priority, those related to a ScopeItem resource, and so on.""" .
+
+
+:ManagedItem
+	a rdfs:Class ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "ManagedItem" ;
+	rdfs:comment """ManagedItem is a super class which abstracts its five concrete subclasses, that are, ScopeItem, WorkItem, Artifact, Issue, and Risk.""" .
+
+:ManagedItemCollection
+	a rdfs:Class ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "ManagedItemCollection" ;
+	rdfs:comment """A ManagedItemCollection resource is a collection of ManagedItem resources of a specific interest.  A resource in the collection can be a resource of any subclass of ManagedItems, that is, ScopeItem, WorkItem, Artifact, Issue, or Risk.  ManagedItemCollection has four concrete subclasses which are Plan, Report, IssueCollection, and RiskCollection.  A ManagedItemCollection resource is linked to a Project resource it belongs to.""" .
+
+:Measurement
+	a rdfs:Class ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Measurement" ;
+	rdfs:comment """A Measurement resource has a link to an Artifact resource and a link to measure resources that represent actual measures of the Artifact. It also has the date on which the measures are taken.""" .
+
+:Measure
+	a rdfs:Class ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Measure" ;
+	rdfs:comment """A Measure resource represents an observation of some measurable aspect of an Artifact.""" .
+
+:Plan
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItemCollection ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Plan" ;
+	rdfs:comment """A Plan resource is a collection of ScopeItem resources, WorkItem resources and Artifact resources with associated Measure resources. A Plan resource represents a project plan that is agreed on between an acquirer and a supplier at project initiation. Plan is a subclass of ManagedItemCollection.""".
+
+:Project
+	a rdfs:Class ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Project" ;
+	rdfs:comment """A Project resource represents the information on the project including the name of the project, the descriptions of the project, and start and end dates, both planned and actual, of the project.  A Project resource also specifies the metric and the unit of size of ScopeItem resources, each of which is unique in the project.""" .
+
+:Report
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItemCollection ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Report" ;
+	rdfs:comment """A Report resource represents a project status information reported by a supplier to an acquirer at agreed timing as a project report.  It is a ManagedItemCollection resource that collects ScopeItem resources, WorkItem resources, and Artifact resources whose properties are reported in the report.  It is also linked to Measurement resources that represent the quality data of the Artifact resources collected in the ManagedItemCollection resource.""" .
+
+:Risk
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItem ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "Risk" ;
+	rdfs:comment """Risk is a subclass of ManagedItem. A Risk resource represents a potential problem that must be controlled in order to meet the objectives of a project. Shared risks between an acquirer and a supplier must be managed.  Internal risks which must be resolved by a supplier alone may not be shared.  Failure to control the potential problem may result in negative consequences for the project, such as a schedule delay.""" .
+
+:RiskCollection
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItemCollection ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "RiskCollection" ;
+	rdfs:comment """RiskCollection is a subclass of ManagedItemCollection. A RiskCollection resource is a collection, or a snapshot of shared risks.  Shared risks of resolved status continue to be included in the collection.  Only Risk resources can be collected in a RiskCollection resource.  Examples are a collection of all Risk resources of the project on a specific date, a collection of Risk resources of some category, such as certain status, certain priority, related ScopeItem, and so on.""" .
+
+:ScopeItem
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItem ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "ScopeItem" ;
+	rdfs:comment """ScopeItem is a subclass of ManagedItem. A ScopeItem resource defines the scope of the work to be included in a project.  It defines the binding between an acquirer and a supplier for the project.""" .
+
+:WorkItem
+	a rdfs:Class ;
+	rdfs:subClassOf :ManagedItem ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "WorkItem" ;
+	rdfs:comment """WorkItem is a subclass of ManagedItem. A WorkItem resource describes the work to be performed in a contract.  It defines the work to be performed to create a (part of) content described by a ScopeItem.  The work may typically include cost, schedule, and resource requirements.  The set of all WorkItem resources in a project might form a work breakdown structure.""" .
+
+# properties
+
+:actualEndDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "actualEndDate" ;
+	rdfs:comment """actualEndDate is either a property of a WorkItem resource or a Project resource. It is the actual end date of the work described by the WorkItem resource or of the project described by the Project resource. Its value is a dateTime.""" ;
+    .
+    
+:actualSize
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "actualSize" ;
+	rdfs:comment """actualSize is a property actual development size of the scope described by the ScopeItem resource.""" ;
+	.
+	
+:actualStartDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "actualStartDate" ;
+	rdfs:comment """actualStartDate is  either a property of a WorkItem resource or a Project resource.  It is the actual start date of the work described by the WorkItem resource or of the project described by the Project resource.  Its value is a dateTime.""" ;
+   .
+   
+:belongsTo
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "belongsTo" ;
+	rdfs:comment """belongsTo is a relation between ManagedItemCollections and a Project resource.  An acquirer and a supplier may operate multiple projects in parallel.  This relation is used to identify which collection belongs to which project.""" ;
+   .
+
+	
+:collects
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "collects" ;
+	rdfs:comment """collects is a relation between a ManagedItemCollection resource and ManagedItem resources.  A Plan resource and a Report resource collect any combination of resources of ScopeItem, WorkItem and Artifact.  An IssueCollection resource collects only Issue resources and a RiskCollection collects only Risk resources.""" ;
+   .
+
+:correspondsTo
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "correspondsTo" ;
+	rdfs:comment """correspondsTo is a relation between a Plan resource and a Report resource.  A Report resource has at most one correspondsTo relation to a Plan resource.  If a new Plan resource is created, a Report resource may need to be related to the new Plan resource.""" ;
+   .
+
+:identifiedBy
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "identifiedBy" ;
+	rdfs:comment """identifiedBy is a relation between a Risk resource and ManagedItem resources.  A Risk may be identified by one or more ManagedItem resources.""" ;
+   .
+
+:identifiedDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "identifiedDate" ;
+	rdfs:comment """identifiedDate is an optional property of a Risk resource.  It is the identified date of the Risk resource.  Its value is a dateTime.""" ;
+   .
+
+:includes
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "includes" ;
+	rdfs:comment """includes is a relation between a Report resource and Measurement resources. A Measurement resource linked from the Report resource measures a quality value of the Artifact resource in the collection of the ManagedItem resources of the Report resource.""";
+   .
+
+:isPartOf
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "isPartOf" ;
+	rdfs:comment """isPartOf is a relation between a resource of type Artifact, ScopeItem or WorkItem and other resources of the same type.  It represents the parent and child relationship of ManagedItem resources of the same type.""";
+   .
+
+:measures 
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "measures" ;
+	rdfs:comment """measures is a relation between a Measurement resource and an Artifact resource.  A Measurement measures an Artifact.""" ;
+   .
+
+:metricOfMeasure
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "metricOfMeasure" ;
+	rdfs:comment """metricOfMeasure is a relation between a Measure resource and a Metric resource.  It defines a metric of Measure.""" ;
+   .
+	
+:metricOfScopeItemSize
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "metricOfScopeItemSize" ;
+	rdfs:comment """metricOfScopeItemSize is a relation between a Project resource and a Metric resource.  It defines a metric of the size which all the ScopeItem resources in the project refer to.""" ;
+   .
+
+:observes 
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "observes" ;
+	rdfs:comment """observes is a relation between a Measurement resource and a Measure resource.  One Measurement observes zero or many Measures.""" ;
+   .
+
+:plannedEndDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "plannedEndDate" ;
+	rdfs:comment """plannedEndDate is either a property of a WorkItem resource or a Project resource.  It is the planned end date of the work described by the WorkItem resource or of the project described by the Project resource.  Its value is a dateTime.""" ;
+   .
+
+:plannedSize
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "plannedSize" ;
+	rdfs:comment """plannedSize is a property on the estimated development size of the scope described by a ScopeItem resource.""" ;
+   .
+
+:plannedStartDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "plannedStartDate" ;
+	rdfs:comment """plannedStartDate is either a property of a WorkItem resource or of a Project resource.  It is the planned start date of the work described by the WorkItem resource or of the project described by the Project resource.  Its value is a dateTime.""" ;
+   .
+	
+:producedFor 
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "producedFor" ;
+	rdfs:comment """producedFor is a relation between an Artifact resource and a ScopeItem resource or a WorkItem resource.  Artifact resources are produced as deliverables of the scope defined by a ScopeItem resource or the result of implementing the work described by a WorkItem resource.""" ;
+   .
+
+:raisedBy
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "raisedBy" ;
+	rdfs:comment """raisedBy is a relation between an Issue resource and ManagedItem resources.  An Issue may be raised by one or more ManagedItem resources.""" ;
+   .
+
+:raisedDate
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "raisedDate" ;
+	rdfs:comment """raisedDate is an optional property of an Issue resource.  It is the raised date of the Issue resource.  Its value is a dateTime.""" ;
+   .
+
+:representedBy
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "representedBy" ;
+	rdfs:comment """representedBy is a relation between a WorkItem resource and a person in charge.  A work item may be represented by a person who acts as the contact for the work item.  This person is responsible for the progress of the work described by the WorkItem resource.  This person may or may not actually do the required work.""" ;
+   .
+
+:requiredBy
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "requiredBy" ;
+	rdfs:comment """requiredBy is a relation either between a WorkItem resource and an Artifact resource, or between a WorkItem resource and a ScopeItem resource.  A WorkItem resource, such as reviewing the design, is required for producing an Artifact resource such as a review record.  A WorkItem resource may also be required to implement the scope described by a ScopeItem resource.""" ;
+   .
+
+:sequenceNumber
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "sequenceNumber" ;
+	rdfs:comment """sequenceNumber is a unique number which represents the position of the resource in a sequential order of all the resources of each subclass of ManagedItem.""" ;
+   .
+
+:stateOfIssue
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "stateOfIssue" ;
+	rdfs:comment """stateOfIssue is a relation between an Issue resource and a State resource.  The State resource defines a set of values which represent the state of an issue resource.""" ;
+   .
+
+:stateOfRisk
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "stateOfRisk" ;
+	rdfs:comment """stateOfRisk is a relation between a Risk resource and a State resource.  The State resource defines a set of values which represent the state of a Risk resource.""" ;
+   .
+
+:targets
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "targets" ;
+	rdfs:comment """targets is a relation between an Artifact resource and a Measure resource. The Measure resource represents a target goal of quality measure of the Artificat resource.""" ;
+   .
+
+:unitOfMeasure
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "unitOfMeasure" ;
+	rdfs:comment """unitOfMeasure is a relation between a Measure resource and a Unit resource.  It is a unit of volume.  If an acquirer sums up the same type of measures in a report, the value should be converted according to the unit.""" ;
+   .
+
+:unitOfScopeItemSize
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "unitOfScopeItemSize" ;
+	rdfs:comment """unitOfScopeItemSize is a relation between a Project resource and a Unit resource.  It defines a unit of size which all the ScopeItem resources refer to in the project.""" ;
+   .
+
+:valueOfMeasure 
+	a rdf:Property ;
+	rdfs:isDefinedBy : ;
+	rdfs:label "valueOfMeasure" ;
+	rdfs:comment """valueOfMeasure is a property that represents a value for a Measure resource.""";
+   .
+
+	
