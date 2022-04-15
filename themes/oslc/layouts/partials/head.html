@@ -8,7 +8,7 @@
 
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Description }}" />
-  <meta property="og:url" content="{{ .URL }}/" />
+  <meta property="og:url" content="{{ .Permalink }}/" />
   {{ if .Params.banner }}
   <meta
     property="og:image"
@@ -39,7 +39,7 @@
   <meta name="description" content="{{ .Description }}" />
   {{ else if .Site.Params.DefaultDescription }}
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}" />
-  {{ end }} {{ .Hugo.Generator }}
+  {{ end }} {{ hugo.Generator }}
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800"
