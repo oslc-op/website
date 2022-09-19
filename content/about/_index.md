@@ -90,7 +90,6 @@ sponsors_img_size = [
 sponsors_others_list = [
   "Austrian Institute of Technology",
   "Axel Reichwein",
-  "Bank of America",
   "Cisco Systems",
   "Ericsson",
   "Fujitsu Limited",
