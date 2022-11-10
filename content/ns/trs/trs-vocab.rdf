@@ -8,16 +8,16 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://open-services.net/ns/core/trs#">
+    <dcterms:dateCopyrighted>2012-2022</dcterms:dateCopyrighted>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps01/tracked-resource-set.html"/>
     <dcterms:title>OSLC Core Tracked Resource Set vocabulary</dcterms:title>
-    <dcterms:dateCopyrighted>2012-2021</dcterms:dateCopyrighted>
     <dcterms:description>The OSLC Core Tracked Resource Set vocabulary defines terms used in describing Tracked Resource Sets.</dcterms:description>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2022-11-24</dcterms:issued>
     <rdfs:label>OSLC Core Tracked Resource Set vocabulary</rdfs:label>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
-    <dcterms:hasVersion>PSD</dcterms:hasVersion>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2021-08-26</dcterms:issued>
-    <dcterms:isPartOf rdf:resource="https://oslc-op.github.io/oslc-specs/specs/trs/tracked-resource-set.html"/>
-    <dcterms:source rdf:resource="https://github.com/oslc-op/oslc-specs/blob/master/specs/trs/trs-vocab.ttl"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps01/trs-vcab.ttl"/>
+    <dcterms:hasVersion>PS</dcterms:hasVersion>
     <vann:preferredNamespacePrefix>trs</vann:preferredNamespacePrefix>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://open-services.net/ns/core/trs#Base">

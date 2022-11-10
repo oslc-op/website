@@ -7,12 +7,6 @@
 <http://open-services.net/ns/trs/shapes/3.0#changeLog> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core/trs#changeLog> .
 <http://open-services.net/ns/trs/shapes/3.0#changeLog> <http://open-services.net/ns/core#name> "changeLog" .
 <http://open-services.net/ns/trs/shapes/3.0#changeLog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#order> .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changed> .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Deletion> .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://purl.org/dc/terms/description> "Represents the deletion of resource at a point in time."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://purl.org/dc/terms/title> "Deletion Event" .
-<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://purl.org/dc/terms/description> "{{This property MUST NOT be present unless the <code>trspatch:rdfPatch</code> property is also present}}, indicating this change event is annotated with a patch.\nThis property, when present, identifies the antecedent resource to be used to define the \"before\" state of the patch. If omitted, the antecedent resource is the resource referenced in the <code>trs:changed</code> property."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://open-services.net/ns/core#valueType> <http://open-services.net/ns/core#Resource> .
@@ -21,6 +15,22 @@
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core/trspatch#createdFrom> .
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://open-services.net/ns/core#name> "createdFrom" .
 <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://purl.org/dc/terms/title> "Creation Event" .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchRdfPatch> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changed> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Creation> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://purl.org/dc/terms/description> "Represents the creation or modification of a resource at a point in time."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#order> .
+<http://open-services.net/ns/trs/shapes/3.0#CreationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchBeforeEtag> .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#order> .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changed> .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Deletion> .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://purl.org/dc/terms/description> "Represents the deletion of resource at a point in time."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://purl.org/dc/terms/title> "Deletion Event" .
+<http://open-services.net/ns/trs/shapes/3.0#DeletionEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
 <http://open-services.net/ns/trs/shapes/3.0#previous> <http://purl.org/dc/terms/description> "The continuation of the Change Log, containing the next group of chronologically earlier Change Events."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/trs/shapes/3.0#previous> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://open-services.net/ns/trs/shapes/3.0#previous> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core/trs#ChangeLog> .
@@ -71,17 +81,6 @@
 <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> <http://open-services.net/ns/core#propertyDefinition> <http://open-services.net/ns/core/trspatch#afterETag> .
 <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> <http://open-services.net/ns/core#name> "afterETag" .
 <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://purl.org/dc/terms/description> "Represents the creation or modification of a resource at a point in time."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Creation> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Modification> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchBeforeEtag> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#order> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchRdfPatch> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changed> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> .
-<http://open-services.net/ns/trs/shapes/3.0#ChangeEventShape> <http://purl.org/dc/terms/title> "The shape of a Creation or Modification event" .
 <http://open-services.net/ns/trs/shapes/3.0#TrackedResourceSetShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changeLog> .
 <http://open-services.net/ns/trs/shapes/3.0#TrackedResourceSetShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#base> .
 <http://open-services.net/ns/trs/shapes/3.0#TrackedResourceSetShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#type> .
@@ -121,18 +120,18 @@
 <http://open-services.net/ns/trs/shapes/3.0#btype> <http://open-services.net/ns/core#propertyDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
 <http://open-services.net/ns/trs/shapes/3.0#btype> <http://open-services.net/ns/core#name> "type" .
 <http://open-services.net/ns/trs/shapes/3.0#btype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#Property> .
+<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/issued> "2022-11-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps01/trs-shapes.ttl> .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShapeConstraints> .
-<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/isPartOf> <https://oslc-op.github.io/oslc-specs/specs/trs/tracked-resource-set.html> .
+<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/hasVersion> "PS" .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Shapes for OSLC TRS" .
-<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/hasVersion> "PSD" .
-<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/issued> "2021-08-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps01/tracked-resource-set.html> .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/description> "Shapes for resources defined by OSLC TRS."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
-<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/source> <https://github.com/oslc-op/oslc-specs/blob/master/specs/trs/trs-shapes.ttl> .
+<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/dateCopyrighted> "2012-2022" .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/title> "Resource Shapes for OSLC TRS" .
-<http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/dateCopyrighted> "2012-2021" .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
 <http://open-services.net/ns/trs/shapes/3.0#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
-<http://open-services.net/ns/trs/shapes/3.0#order> <http://purl.org/dc/terms/description> "A non-negative integer number indicating the sequence in time of the Change Event.}} {{There MAY be gaps in the sequence}}, but {{a more recent Change Event MUST have a larger number than any preceding Change Event}}."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/trs/shapes/3.0#order> <http://purl.org/dc/terms/description> "A non-negative integer number indicating the sequence in time of the Change Event.}} {{There MAY be gaps in the sequence}}, but {{a more recently available Change Event MUST have a larger number than any previously avalable Change Event as accessed by GET on the change log}}."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/trs/shapes/3.0#order> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://open-services.net/ns/trs/shapes/3.0#order> <http://open-services.net/ns/core#valueType> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://open-services.net/ns/trs/shapes/3.0#order> <http://open-services.net/ns/core#occurs> <http://open-services.net/ns/core#Exactly-one> .
@@ -161,6 +160,16 @@
 <http://open-services.net/ns/trs/shapes/3.0#ChangeLogShape> <http://purl.org/dc/terms/description> "A Change Log describes what resources have been created, modified or deleted, and when."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
 <http://open-services.net/ns/trs/shapes/3.0#ChangeLogShape> <http://purl.org/dc/terms/title> "The shape of a ChangeLog" .
 <http://open-services.net/ns/trs/shapes/3.0#ChangeLogShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchCreatedFrom> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#order> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchRdfPatch> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://purl.org/dc/terms/description> "Represents the creation or modification of a resource at a point in time."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchAfterEtag> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#patchBeforeEtag> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#property> <http://open-services.net/ns/trs/shapes/3.0#changed> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://purl.org/dc/terms/title> "Modification Event" .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://open-services.net/ns/core#ResourceShape> .
+<http://open-services.net/ns/trs/shapes/3.0#ModificationEventShape> <http://open-services.net/ns/core#describes> <http://open-services.net/ns/core/trs#Modification> .
 <http://open-services.net/ns/trs/shapes/3.0#change> <http://open-services.net/ns/core#readOnly> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://open-services.net/ns/trs/shapes/3.0#change> <http://open-services.net/ns/core#range> <http://open-services.net/ns/core/trs#Modification> .
 <http://open-services.net/ns/trs/shapes/3.0#change> <http://open-services.net/ns/core#name> "change" .
