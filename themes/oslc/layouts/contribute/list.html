@@ -74,7 +74,9 @@
               <div class="contribute__content">
                 <p>{{ .Params.working_groups_paragraph }}</p>
                 <div class="contribute_links">
-                  <a href="{{ .Params.working_groups_moreurl}}" class="button dark-blue hover--dark_blue">{{ .Params.working_groups_more}}</a>
+                  {{ range .Params.working_groups_links }}
+                    <a href="{{ .link_url }}" class="button dark-blue hover--dark_blue">{{ .link_text }}</a>
+                  {{ end }}
                 </div>
               </div>
             </div>
