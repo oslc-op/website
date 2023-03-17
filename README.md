@@ -25,3 +25,10 @@ hugo server -w
 The deployment is taken care of by Github Actions, just merge your changes to `master`.
 
 Please check out the [wiki](https://github.com/OSLC/oslc-site-hugo/wiki/Contributing-Setup) for more details.
+
+## Licensing
+
+Please see the
+[LICENSE](https://github.com/oslc-op/oslc-admin/blob/master/LICENSE.md)
+file for description of the license terms and OASIS policies applicable
+to the OSLC Open Project work items.
