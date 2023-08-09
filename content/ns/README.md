@@ -16,8 +16,15 @@
 # Converting RDF files
 
 1. Make sure Jena is installed and its `bin` dir is on your PATH.
+ * You will need Java11 ([SDKMan](https://sdkman.io)) 
+ * get [Apache jena command line utilities](https://jena.apache.org/documentation/tools/index.html)
+ * Download from [Apache Jena Releases](https://jena.apache.org/download/index.cgi) to say `~/lib/`
+ * `export JENA_HOME=~/lib/jena-4.6.1/apache-jena`
+ * `export PATH=$PATH:$JENA_HOME/bin`
+ * Make sure JAVA_HOME is set properly
+ * Or use `brew install jena`
 2. Go into a folder in the NS.
-3. Run `../../../bin/conneg.sh original.ttl`.
+3. Run `../../../bin/conneg.sh <file>`. where `<file>` is the name of a vocab or shape ttl file wihout the .ttl extension
 4. Make sure exit code is `0` and the files are intact.
 
 # Checking all files
