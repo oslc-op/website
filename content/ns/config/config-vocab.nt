@@ -15,6 +15,10 @@
 <http://open-services.net/ns/config#globalConfigurationService> <http://www.w3.org/2000/01/rdf-schema#label> "globalConfigurationService" .
 <http://open-services.net/ns/config#globalConfigurationService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
 <http://open-services.net/ns/config#globalConfigurationService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://open-services.net/ns/config#release> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a resource representing a release." .
+<http://open-services.net/ns/config#release> <http://www.w3.org/2000/01/rdf-schema#label> "release" .
+<http://open-services.net/ns/config#release> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
+<http://open-services.net/ns/config#release> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://open-services.net/ns/config#mutable> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean property indicating whether or not a resource is modifiable; replaced by use of Baseline and Stream types." .
 <http://open-services.net/ns/config#mutable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "archaic" .
 <http://open-services.net/ns/config#mutable> <http://www.w3.org/2000/01/rdf-schema#label> "mutable" .
@@ -92,7 +96,7 @@
 <http://open-services.net/ns/config#ConfigurationSettings> <http://www.w3.org/2000/01/rdf-schema#label> "ConfigurationSettings" .
 <http://open-services.net/ns/config#ConfigurationSettings> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
 <http://open-services.net/ns/config#ConfigurationSettings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://open-services.net/ns/config#Baseline> <http://www.w3.org/2000/01/rdf-schema#comment> "An immutable configuration, with immutable contributions and immutable selections of immutable resources. All contributions to this configuration MUST be baselines." .
+<http://open-services.net/ns/config#Baseline> <http://www.w3.org/2000/01/rdf-schema#comment> "An immutable configuration with immutable selections of immutable resources, with immutable contributions that are themselves baselines." .
 <http://open-services.net/ns/config#Baseline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/config#Configuration> .
 <http://open-services.net/ns/config#Baseline> <http://www.w3.org/2000/01/rdf-schema#label> "Baseline" .
 <http://open-services.net/ns/config#Baseline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
@@ -106,14 +110,18 @@
 <http://open-services.net/ns/config#component> <http://www.w3.org/2000/01/rdf-schema#label> "component" .
 <http://open-services.net/ns/config#component> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
 <http://open-services.net/ns/config#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://open-services.net/ns/config#> <http://purl.org/dc/terms/dateCopyrighted> "2012-2015" .
-<http://open-services.net/ns/config#> <http://purl.org/dc/terms/license> "TBD" .
-<http://open-services.net/ns/config#> <http://purl.org/dc/terms/source> <http://tools.oasis-open.org/version-control/svn/oslc-core/trunk/specs/config/config-vocab.ttl> .
-<http://open-services.net/ns/config#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_config" .
-<http://open-services.net/ns/config#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Configuration Management vocabulary" .
-<http://open-services.net/ns/config#> <http://purl.org/dc/terms/description> "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources." .
-<http://open-services.net/ns/config#> <http://purl.org/dc/terms/title> "OSLC Configuration Management vocabulary" .
 <http://open-services.net/ns/config#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/description> "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources." .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/publisher> <https://open-services.net/about/> .
+<http://open-services.net/ns/config#> <http://www.w3.org/2000/01/rdf-schema#label> "OSLC Configuration Management vocabulary" .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/issued> "2022-02-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://open-services.net/ns/config#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "oslc_config" .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/hasVersion> "PS" .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/isPartOf> <https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/oslc-config-mgt-spec.html> .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/title> "OSLC Configuration Management vocabulary" .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/source> <https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/config-vocab.ttl> .
+<http://open-services.net/ns/config#> <http://purl.org/dc/terms/dateCopyrighted> "2012-2022" .
 <http://open-services.net/ns/config#configurations> <http://www.w3.org/2000/01/rdf-schema#comment> "A Linked Data Platform Container for configurations of a component." .
 <http://open-services.net/ns/config#configurations> <http://www.w3.org/2000/01/rdf-schema#label> "configurations" .
 <http://open-services.net/ns/config#configurations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/config#> .
