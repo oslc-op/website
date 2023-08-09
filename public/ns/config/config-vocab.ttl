@@ -2,29 +2,28 @@
 
 @prefix dcterms:     <http://purl.org/dc/terms/> .
 @prefix owl:         <http://www.w3.org/2002/07/owl#> .
-@prefix oslc:        <http://open-services.net/ns/core#> .
 @prefix oslc_config: <http://open-services.net/ns/config#> .
 @prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann:        <http://purl.org/vocab/vann/> .
 @prefix vs:          <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
 
 
 # the vocabulary
 
 oslc_config:
-    a owl:Ontology ;
-    dcterms:title "OSLC Configuration Management vocabulary" ;
-    dcterms:description "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources." ;
-    rdfs:label "OSLC Configuration Management vocabulary" ;
+    a                             owl:Ontology ;
     vann:preferredNamespacePrefix "oslc_config" ;
-
-    dcterms:source <http://tools.oasis-open.org/version-control/svn/oslc-core/trunk/specs/config/config-vocab.ttl> ;
-
-    # TBD - what should the license and copyright info be here?
-    dcterms:license "TBD" ;
-    dcterms:dateCopyrighted "2012-2015" .
+    rdfs:label                    "OSLC Configuration Management vocabulary" ;
+    dcterms:title                 "OSLC Configuration Management vocabulary" ;
+    dcterms:description           "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources." ;
+    dcterms:publisher             <https://open-services.net/about/> ;
+    dcterms:source                <https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/config-vocab.ttl> ;
+    dcterms:isPartOf              <https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/oslc-config-mgt-spec.html> ;
+    dcterms:hasVersion            "PS" ;
+    dcterms:license               <http://www.apache.org/licenses/LICENSE-2.0> ;
+    dcterms:issued               "2022-02-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:dateCopyrighted       "2012-2022" .
 
 
 # Classes
@@ -40,7 +39,7 @@ oslc_config:Baseline
     rdfs:isDefinedBy oslc_config: ;
     rdfs:label "Baseline" ;
     rdfs:subClassOf oslc_config:Configuration ;
-    rdfs:comment "An immutable configuration, with immutable contributions and immutable selections of immutable resources. All contributions to this configuration MUST be baselines." .
+    rdfs:comment "An immutable configuration with immutable selections of immutable resources, with immutable contributions that are themselves baselines." .
 
 oslc_config:ChangeSet
     a rdfs:Class ;
@@ -227,6 +226,12 @@ oslc_config:progressMessage
     rdfs:isDefinedBy oslc_config: ;
     rdfs:label "progressMessage" ;
     rdfs:comment "Text describing the progress of an operation." .
+
+oslc_config:release
+    a rdf:Property ;
+    rdfs:isDefinedBy oslc_config: ;
+    rdfs:label "release" ;
+    rdfs:comment "A reference to a resource representing a release." .
 
 oslc_config:selections
     a rdf:Property ;

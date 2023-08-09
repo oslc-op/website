@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-services.net/ns/readme/</guid>
-      <description>Canonical sources  AM: XML Asset: XML Automation: XML LDBP: XML CM: Turtle Config: Turtle Core: Turtle EMS: XML Perfmon: XML QM: XML RM: Turtle TRS: Turtle  Converting RDF files  Make sure Jena is installed and its bin dir is on your PATH. Go into a folder in the NS. Run ../../../bin/conneg.sh original.ttl. Make sure exit code is 0 and the files are intact.  Checking all files find .</description>
+      <description>Canonical sources  AM: XML Asset: XML Automation: XML LDBP: XML CM: Turtle Config: Turtle Core: Turtle EMS: XML Perfmon: XML QM: XML RM: Turtle TRS: Turtle  Converting RDF files  Make sure Jena is installed and its bin dir is on your PATH.   You will need Java11 (SDKMan) get Apache jena command line utilities Download from Apache Jena Releases to say ~/lib/ export JENA_HOME=~/lib/jena-4.6.1/apache-jena export PATH=$PATH:$JENA_HOME/bin Make sure JAVA_HOME is set properly Or use brew install jena  Go into a folder in the NS.</description>
     </item>
     
   </channel>
