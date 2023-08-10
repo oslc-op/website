@@ -48,6 +48,7 @@ See https://github.com/oslc-op/oslc-specs#oslc-open-project-specifications for a
 
 | Title | Publisher | Description |
 |:-------:|:--------------------:|-------------|
+| [Tracked Resource Set 3.0 PS01](https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps01/tracked-resource-set.html) |  **OSLC Open Project**  | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Tracked Resource Set 3.0 PSD01](https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/psd01/tracked-resource-set.html) |  **OSLC Open Project**  | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Tracked Resource Set 2.0 Finalized Draft](https://archive.open-services.net/wiki/core/TrackedResourceSet-2.0/) | OSLC Core WG (closed) | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Quality Management 2.1 PS01](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/ps01/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |

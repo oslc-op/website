@@ -192,7 +192,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 [trs]: https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps02/tracked-resource-set-vocab.html
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
 [auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
-[promcode]: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/cs02/promcode-vocab.html
+[promcode]: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.html
 
 > **NB!** All namespace URIs support content negotiation. Acceptable RDF MIME types:
 >
