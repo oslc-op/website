@@ -1,6 +1,6 @@
 # Canonical sources
 
-- AM: XML
+- AM: Turtle
 - Asset: XML
 - Automation: XML
 - LDBP: XML
@@ -9,7 +9,7 @@
 - Core: Turtle
 - EMS: XML
 - Perfmon: XML
-- QM: XML
+- QM: Turtle
 - RM: Turtle
 - TRS: Turtle
 

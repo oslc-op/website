@@ -1,0 +1,605 @@
+{
+    "@graph": [
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#comment",
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "dcterms:description": {
+                "@value": "Descriptive text about link type. Provides a description of this link\ntype that could be used in hover help or other areas of the UI where the user wants to understand more about what a link of this type means.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdfs:comment"
+            },
+            "oslc:name": "comment",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#instanceShape",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The URI of a Resource Shape that describes the possible properties, occurrence,\nvalue types, allowed values and labels. This shape information is useful in displaying the subject\nresource as well as guiding clients in performing modifications. Instance shapes may be specific\nto the authenticated user associated with the request that retrieved the resource, the current\nstate of the resource and other factors and thus should not be cached.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:range": {
+                "@id": "oslc:ResourceShape"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:instanceShape"
+            },
+            "oslc:name": "instanceShape",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#derives",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The resource that derives from another resource originated from or is\nsignificantly influenced by the referenced resource. For example a model element derives from a\nrequirement.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:derives"
+            },
+            "oslc:name": "derives",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#serviceProvider",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "A link to the resource's OSLC Service Provider. There may be cases when the\nsubject resource is available from a service provider that implements multiple domain\nspecifications, which could result in multiple values for this property.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:ServiceProvider"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:serviceProvider"
+            },
+            "oslc:name": "serviceProvider",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#LinkTypeShape",
+            "oslc:describes": {
+                "@id": "oslc_am:LinkType"
+            },
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#label"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#serviceProvider"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#instanceShape"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#comment"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#modified"
+                }
+            ],
+            "@type": "oslc:ResourceShape",
+            "dcterms:title": "LinkType",
+            "dcterms:description": {
+                "@value": "Represents type of link that is or can be used when defining links from AM resources.",
+                "@type": "rdf:XMLLiteral"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#identifier",
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "dcterms:description": {
+                "@value": "A unique identifier for a resource. Typically read-only and assigned by the\nservice provider when a resource is created. Not typically intended for end-user display.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:identifier"
+            },
+            "oslc:name": "identifier",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#label",
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "dcterms:description": {
+                "@value": "The human readable name for this link type. This value is expected to be used\nin drop down lists and in tables where a link of this type is involved.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdfs:label"
+            },
+            "oslc:name": "label",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#creator",
+            "dcterms:description": {
+                "@value": "Creator or creators of the resource. It is likely that the target resource will be a foaf:Person but that is not necessarily the case.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:creator"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:name": "creator",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#contributor",
+            "dcterms:description": {
+                "@value": "Contributor or contributors to the resource. It is likely that the target resource will be a foaf:Person but that is not necessarily the case.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:contributor"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:name": "contributor",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#created",
+            "dcterms:description": {
+                "@value": "Timestamp of resource creation.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:created"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:name": "created",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#modified",
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "dcterms:description": {
+                "@value": "Timestamp of latest resource modification.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:modified"
+            },
+            "oslc:name": "modified",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#title",
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "dcterms:description": {
+                "@value": "Title of the resource represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:title"
+            },
+            "oslc:name": "title",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#refine",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The target is a refinement of the source. (e.g. a use case scenario\nmight be a refinement of a textual requirement that describes the interaction).",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:refine"
+            },
+            "oslc:name": "refine",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#elaborates",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "This resource elaborates the referenced resource.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:elaborates"
+            },
+            "oslc:name": "elaborates",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#dctype",
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "dcterms:description": {
+                "@value": "A short string representation for the type, for example ‘Car’.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:type"
+            },
+            "oslc:name": "dctype",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#external",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "A generic link from a resource to an external web page.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:external"
+            },
+            "oslc:name": "external",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#type",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The resource type URIs.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#",
+            "dcterms:description": {
+                "@value": "All vocabulary URIs defined in the OSLC Architecture Management (AM) namespace.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "dcterms:dateCopyrighted": "2012-2022",
+            "dcterms:hasVersion": "OS",
+            "dcterms:source": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/am/v3.0/os/architecture-management-shapes.ttl"
+            },
+            "dcterms:isPartOf": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/am/v3.0/os/architecture-management-spec.html"
+            },
+            "rdfs:label": "OSLC Architecture Management (AM) Constraints",
+            "dcterms:title": "OSLC Architecture Management (AM) Constraints",
+            "@type": "oslc:ResourceShapeConstraints",
+            "dcterms:publisher": {
+                "@id": "https://open-services.net/about/"
+            },
+            "dcterms:issued": {
+                "@value": "2022-07-11",
+                "@type": "xsd:date"
+            },
+            "dcterms:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#shortTitle",
+            "dcterms:title": "Short title",
+            "dcterms:description": {
+                "@value": "{{Short name identifying a resource, often used as an abbreviated identifier for presentation to end-users. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:shortTitle"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:name": "shortTitle",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#source",
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:source"
+            },
+            "dcterms:description": {
+                "@value": "The resource URI a client can perform a get on to obtain the original non-OSLC AM formatted resource that was used to create this resource. The source resource is usually a binary or proprietary format that the service provider can consume and convert into an OSLC AM format. The service may use content negotiation with the Accept header to obtain the desired content type.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:name": "source",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#trace",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The model element has a trace to the requirement (e.g. An attribute\nor its value are traced to a requirement).",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:trace"
+            },
+            "oslc:name": "trace",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#ResourceShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#shortTitle"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#serviceProvider"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#description"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#trace"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#dctype"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#external"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#modified"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#satisfy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#source"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#type"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#derives"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#elaborates"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#refine"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#title"
+                },
+                {
+                    "@id": "http://open-services.net/ns/am/shapes/3.0#instanceShape"
+                }
+            ],
+            "@type": "oslc:ResourceShape",
+            "dcterms:description": {
+                "@value": "A generic resource format that can be used to represent any type of specific architecture\nresource like a UML Class, Use Case, or Business Process Diagram.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:describes": {
+                "@id": "oslc_am:Resource"
+            },
+            "dcterms:title": "Resource"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#description",
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "dcterms:description": {
+                "@value": "Descriptive text about resource represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:description"
+            },
+            "oslc:name": "description",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/am/shapes/3.0#satisfy",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "dcterms:description": {
+                "@value": "The model element satisfies the requirement (e.g. The use case\nsatisfies a functional requirement).",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:range": {
+                "@id": "oslc:Any"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "jazz_am:satisfy"
+            },
+            "oslc:name": "satisfy",
+            "@type": "oslc:Property"
+        }
+    ],
+    "@context": {
+        "oslc_am": "http://open-services.net/ns/am#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "jazz_am": "http://jazz.net/ns/dm/linktypes#",
+        "oslc": "http://open-services.net/ns/core#",
+        "@vocab": "http://open-services.net/ns/am/shapes/3.0#"
+    }
+}
