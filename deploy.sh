@@ -1,4 +1,5 @@
 #!/bin/bash
+set -uo pipefail
 
 echo "Starting Deployment"
 
@@ -29,6 +30,6 @@ git push origin production
 
 echo "Updating server code"
 SCRIPT="cd ../var/www/oslc.co; git pull origin production; exit"
-ssh -A root@165.227.5.255 "${SCRIPT}"
+ssh -A -p "${2:-22}" "${1}" "${SCRIPT}"
 
 git checkout master
