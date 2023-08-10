@@ -36,4 +36,4 @@ jobs:
           git config --global user.name "GH Deploy Action"
           # just a test
           ssh -o "StrictHostKeyChecking=no" -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_PRINCIPAL }} 'cd /var/www/oslc.co ; git log --name-status HEAD^..HEAD'
-          ./deploy.sh
+          ./deploy.sh ${{ secrets.SSH_PRINCIPAL }} ${{ secrets.SSH_PORT }}
