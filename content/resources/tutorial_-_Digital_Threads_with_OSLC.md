@@ -15,4 +15,4 @@ It was delivered by Erik Herzog (Technical Fellow, SAAB Aeronautics) and Eran Ge
 
 The tutorial covers many of the OSLC specifications, including Core, Configuration Management, TRS, as well as the domains. It also includes quite a bit of motivational material. 
 
-[Download](http://open-services.net/resources/Tutorial_-_Digital_Threads_with_OSLC.pdf)
+[Download](/files/2023/Tutorial_-_Digital_Threads_with_OSLC.pdf)
