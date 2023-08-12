@@ -6,7 +6,16 @@
     <description>Recent content in tutorial on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 22:20:00 +0000</lastBuildDate><atom:link href="http://open-services.net/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 22:20:00 +0000</lastBuildDate><atom:link href="http://open-services.net/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital threads with OSLC</title>
+      <link>http://open-services.net/resources/2023-tutorial_-_digital_threads_with_oslc/</link>
+      <pubDate>Sun, 16 Jul 2023 22:20:00 +0000</pubDate>
+      
+      <guid>http://open-services.net/resources/2023-tutorial_-_digital_threads_with_oslc/</guid>
+      <description>An OSLC tutorial at the the 33rd Annual INCOSE International Symposium</description>
+    </item>
+    
     <item>
       <title>OSLC Primer</title>
       <link>http://open-services.net/resources/oslc-primer/</link>
