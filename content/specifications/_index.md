@@ -8,7 +8,7 @@ The table below provides a convenient place to see the currently available OSLC 
 
 > **The vocabularies for use in applications can be found on the [Vocabularies](vocabularies) page.**
 
-The titles below are abbreviated for convenience. The full titles a available from the linked documents. For multi-part specifications, typically only the main specification is listed. The other parts are available from that specification.
+The titles below are abbreviated for convenience. The full titles are available from the linked documents. For multi-part specifications, typically only the main specification is listed. The other parts are available from that specification.
 
 Status refers to the OASIS Standards Track Work Products in the [OASIS Naming Directives](http://docs.oasis-open.org/specGuidelines/ndr/namingDirectives.html#stage)
 
