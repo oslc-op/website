@@ -48,7 +48,7 @@ The Project Governing Board provides top-level guidance and strategic direction 
 Current PGB members:
 
 - Jim Amsden (co-chair, IBM)
-- Andrew Berezovskyi (co-chair, KTH Royal Institute of Technology)
+- Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
 - Axel Reichwein (Koneksys)
 
 ## Technical Steering Committee (TSC)
@@ -58,7 +58,7 @@ The TSC directs the day-to-day technical activities of OSLC. TSC members include
 Current TSC members:
 
 - Jim Amsden (co-chair, IBM)
-- Andrew Berezovskyi (co-chair, KTH Royal Institute of Technology)
+- Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
 - Axel Reichwein (Koneksys)
 
 """
