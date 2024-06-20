@@ -30,15 +30,16 @@ Note: The open-services.net specifications that are being migrated to OASIS by t
 | [Query 3.0 OS](https://docs.oasis-open-projects.org/oslc-op/query/v3.0/os/oslc-query.html) | **OSLC Open Project** | Defines a simple, implementation independent selection and projection query capability. **OASIS Standard** |
 | [Quality Management 2.1 OS](https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Quality Management domain. |
 | [Requirements Management 2.1 OS](https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Requirements Management domain. **OASIS Standard** |
-| [Change Management 3.0 OS](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. **OASIS Standard** |
-| [Tracked Resource Set 3.0 PS02](https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps02/tracked-resource-set.html) |  **OSLC Open Project**  | Allows servers to expose a set of resources whose state can be tracked by clients. |
+| [Change Management 3.0 OS with Approved Errata 01](https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-spec.html ) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Change Management domain. **OASIS Standard** |
+| [Tracked Resource Set 3.0 OS](https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/tracked-resource-set.html) |  **OSLC Open Project**  | Allows servers to expose a set of resources whose state can be tracked by clients. |
 | [Architecture Management 3.0 OS](https://docs.oasis-open-projects.org/oslc-op/am/v3.0/os/architecture-management-spec.html) | **OSLC Open Project** | Defines the OSLC services and vocabulary for the Architecture Management domain. |
-| [Configuration Management 1.0 PS01](https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/oslc-config-mgt.html) | **OSLC Open Project** | OSLC Configuration Management defines an RDF vocabulary and a set of REST APIs for managing versions and configurations of linked data resources from multiple domains. |
+| [Configuration Management 1.0 OS](https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html) | **OSLC Open Project** | OSLC Configuration Management defines an RDF vocabulary and a set of REST APIs for managing versions and configurations of linked data resources from multiple domains. |
 | [Asset Management 2.0 Final](https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html) | OSLC Asset Management WG (closed) | Defines the OSLC services and vocabulary for the Asset Management domain. |
 | [Automation 2.0 Final](https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html) | OSLC Automation WG (closed) | Defines the OSLC services and vocabulary for the domain that supports automation of sequences of actions on OSLC resources. |
 | [Performance Monitoring 2.0 Final](https://archive.open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/index.html) | OSLC Performance Monitoring WG (closed) | Defines the OSLC services and vocabulary for the Performance Monitoring domain. |
 | [PROMCODE 1.0 OS](https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html) | OSLC PROMCODE TC | PROject Management of COntracted DElivery approach based on OSLC. OASIS Standard. |
-
+| [Link Discovery Management 1.0 PSD](https://docs.oasis-open-projects.org/oslc-op/ldm/v1.0/psd01/link-discovery-management-spec.html) |**OSLC Open Project**  | OSLC REST services for an application to discover incoming links owned by some other application. |
+| [Systems Modeling Language PSD](https://docs.oasis-open-projects.org/oslc-op/sysml/v2.0/psd01/sysml-spec.html) |**OSLC Open Project**  | OSLC REST services for OMG Systems Modeling Language v2. |
 
 ## Working Drafts
 
