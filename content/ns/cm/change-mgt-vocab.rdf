@@ -7,17 +7,17 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://open-services.net/ns/cm#">
-    <vann:preferredNamespacePrefix>oslc_cm</vann:preferredNamespacePrefix>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.ttl"/>
-    <rdfs:label>The OSLC Change Management(CM) Vocabulary</rdfs:label>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html"/>
-    <dcterms:title>The OSLC Change Management(CM) Vocabulary</dcterms:title>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2021-05-27</dcterms:issued>
-    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC Change Management (CM) namespace.</dcterms:description>
-    <dcterms:hasVersion>OS</dcterms:hasVersion>
+    >2023-07-06</dcterms:issued>
     <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <dcterms:hasVersion>OS</dcterms:hasVersion>
+    <dcterms:description rdf:parseType="Literal">All vocabulary URIs defined in the OSLC Change Management (CM) namespace.</dcterms:description>
+    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
+    <dcterms:title>The OSLC Change Management(CM) Vocabulary</dcterms:title>
+    <rdfs:label>The OSLC Change Management(CM) Vocabulary</rdfs:label>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-spec.html"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-vocab.ttl"/>
+    <vann:preferredNamespacePrefix>oslc_cm</vann:preferredNamespacePrefix>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://open-services.net/ns/cm#ChangeNotice">
     <rdfs:comment>Represents an assignment notification of a change request. May be used also to bestow authority onto the assigned user to effect the changes.</rdfs:comment>
@@ -84,7 +84,6 @@
     <rdfs:comment>Related to a test execution resource. It is likely
 that the target resource will be an oslc_qm:TestExecutionRecord.</rdfs:comment>
     <rdfs:label>relatedTestExecutionRecord</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#affectedByDefect">
@@ -93,22 +92,21 @@ likely that the target resource will be an oslc_cm:Defect.</rdfs:comment>
     <rdfs:label>affectedByDefect</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
-  <rdf:Property rdf:about="http://open-services.net/ns/cm#inProgress">
-    <rdfs:comment>Whether or not the Change Request in a state indicating that active work is occurring.</rdfs:comment>
-    <rdfs:label>inProgress</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
-  </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#affectsPlanItem">
     <rdfs:comment>Change request affects a plan item. It is likely that
 the target resource will be an oslc_cm:ChangeRequest.</rdfs:comment>
     <rdfs:label>affectsPlanItem</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
+  <rdf:Property rdf:about="http://open-services.net/ns/cm#inProgress">
+    <rdfs:comment>Whether or not the Change Request in a state indicating that active work is occurring.</rdfs:comment>
+    <rdfs:label>inProgress</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
+  </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#relatedTestPlan">
     <rdfs:comment>Related test plan resource. It is likely that the
 target resource will be an oslc_qm:TestPlan.</rdfs:comment>
     <rdfs:label>relatedTestPlan</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#affectsRequirement">
@@ -129,7 +127,6 @@ oslc_cm:Priority.</rdfs:comment>
 Request. It is likely that the target resource will be an
 oslc_qm:TestExecutionRecord.</rdfs:comment>
     <rdfs:label>blocksTestExecutionRecord</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#verified">
@@ -151,7 +148,6 @@ oslc_qm:TestExecutionRecord.</rdfs:comment>
     <rdfs:comment>Test case by which this change request is tested. It is
 likely that the target resource will be an oslc_qm:TestCase.</rdfs:comment>
     <rdfs:label>testedByTestCase</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#implementsRequirement">
@@ -164,7 +160,6 @@ target resource will be an oslc_rm:Requirement.</rdfs:comment>
     <rdfs:comment>Related test script resource. It is likely that the
 target resource will be an oslc_qm:TestScript.</rdfs:comment>
     <rdfs:label>relatedTestScript</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#parent">
@@ -191,7 +186,6 @@ oslc_cm:State value.</rdfs:comment>
 Request. It is likely that the target resource will be an
 oslc_qm:TestResult.</rdfs:comment>
     <rdfs:label>affectsTestResult</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#relatedChangeRequest">
@@ -201,16 +195,15 @@ that the target resource will be an oslc_cm:ChangeRequest.</rdfs:comment>
     <rdfs:label>relatedChangeRequest</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
+  <rdf:Property rdf:about="http://open-services.net/ns/cm#closeDate">
+    <rdfs:comment>The date at which no further activity or work is intended to be conducted.</rdfs:comment>
+    <rdfs:label>closeDate</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
+  </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#relatedTestCase">
     <rdfs:comment>Related test case resource. It is likely that the
 target resource will be an oslc_qm:TestCase.</rdfs:comment>
     <rdfs:label>relatedTestCase</rdfs:label>
-    <vs:term_status>archaic</vs:term_status>
-    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
-  </rdf:Property>
-  <rdf:Property rdf:about="http://open-services.net/ns/cm#closeDate">
-    <rdfs:comment>The date at which no further activity or work is intended to be conducted.</rdfs:comment>
-    <rdfs:label>closeDate</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/cm#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/cm#severity">
