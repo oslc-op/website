@@ -101,7 +101,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **Turtle prefix**       |`@prefix oslc_config: <http://open-services.net/ns/config#>`|
 | **SPARQL prefix**       |`PREFIX oslc_config: <http://open-services.net/ns/config#>` |
 | **OSLC Query prefix**   |`oslc_config%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Fconfig%23` |
-| **Specified Vocabulary**| [Config 1.0 PS01 vocabulary][config]          |
+| **Specified Vocabulary**| [Config 1.0 OS vocabulary][config]          |
 
 ### OSLC Tracked Resource Set
 
@@ -115,7 +115,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **Turtle prefix**       |`@prefix oslc_trs: <http://open-services.net/ns/core/trs#>`|
 | **SPARQL prefix**       |`PREFIX oslc_trs: <http://open-services.net/ns/core/trs#>` |
 | **OSLC Query prefix**   |`oslc_trs%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Ftrs%23` |
-| **Specified Vocabulary**| [TRS 3.0 PS02 vocabulary][trs]                   |
+| **Specified Vocabulary**| [TRS 3.0 OS vocabulary][trs]                   |
 
 ### OSLC SysML V2
 
