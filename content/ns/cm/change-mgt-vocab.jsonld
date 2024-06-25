@@ -1,456 +1,561 @@
 {
-  "@graph" : [ {
-    "@id" : "http://open-services.net/ns/cm#",
-    "@type" : "owl:Ontology",
-    "description" : "All vocabulary URIs defined in the OSLC Change Management (CM) namespace.",
-    "hasVersion" : "OS",
-    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-spec.html",
-    "issued" : "2021-05-27",
-    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
-    "publisher" : "https://open-services.net/about/",
-    "source" : "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.ttl",
-    "title" : "The OSLC Change Management(CM) Vocabulary",
-    "preferredNamespacePrefix" : "oslc_cm",
-    "label" : "The OSLC Change Management(CM) Vocabulary"
-  }, {
-    "@id" : "oslc_cm:Approved",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the Change Request has been approved.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "approved"
-  }, {
-    "@id" : "oslc_cm:Blocker",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "Severe problem. No workaround. Blocks development, test, or usage.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Blocker"
-  }, {
-    "@id" : "oslc_cm:ChangeNotice",
-    "@type" : "rdfs:Class",
-    "comment" : "Represents an assignment notification of a change request. May be used also to bestow authority onto the assigned user to effect the changes.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "ChangeNotice",
-    "subClassOf" : "oslc_cm:ChangeRequest"
-  }, {
-    "@id" : "oslc_cm:ChangeRequest",
-    "@type" : "rdfs:Class",
-    "comment" : "The CM Change Request resource.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "ChangeRequest"
-  }, {
-    "@id" : "oslc_cm:Closed",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the Change Request is completely done, no further fixes or fix verification is needed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "closed"
-  }, {
-    "@id" : "oslc_cm:Critical",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "Severe problem. No workaround.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Critical"
-  }, {
-    "@id" : "oslc_cm:Defect",
-    "@type" : "rdfs:Class",
-    "comment" : "A software or product defect.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Defect",
-    "subClassOf" : "oslc_cm:ChangeRequest"
-  }, {
-    "@id" : "oslc_cm:Enhancement",
-    "@type" : "rdfs:Class",
-    "comment" : "A request for new functionality.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Enhancement",
-    "subClassOf" : "oslc_cm:ChangeRequest"
-  }, {
-    "@id" : "oslc_cm:Fixed",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the Change Request has been fixed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "fixed"
-  }, {
-    "@id" : "oslc_cm:High",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Priority"
-    },
-    "comment" : "Highest priority, action on the change request highly recommended.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "High"
-  }, {
-    "@id" : "oslc_cm:Inprogress",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the Change Request in a state indicating that active work is occurring.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "inprogress"
-  }, {
-    "@id" : "oslc_cm:Low",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Priority"
-    },
-    "comment" : "Action on the change request can be safely deferred.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Low"
-  }, {
-    "@id" : "oslc_cm:Major",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "Prevents function from being used. There is a workaround.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Major"
-  }, {
-    "@id" : "oslc_cm:Medium",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Priority"
-    },
-    "comment" : "Acting on the change request can wait, but not forever.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Medium"
-  }, {
-    "@id" : "oslc_cm:Minor",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "Minimal impact.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Minor"
-  }, {
-    "@id" : "oslc_cm:Normal",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "Affects non-critical functionality. There is a workaround.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Normal"
-  }, {
-    "@id" : "oslc_cm:Priority",
-    "@type" : "rdfs:Class",
-    "comment" : "Defines the possible oslc_cm:priority property values.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Priority"
-  }, {
-    "@id" : "oslc_cm:PriorityUnassigned",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Priority"
-    },
-    "comment" : "The priority of the change request is intentionally not set.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "PriorityUnassigned"
-  }, {
-    "@id" : "oslc_cm:ReviewTask",
-    "@type" : "rdfs:Class",
-    "comment" : "A request to make a change and review the change.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "ReviewTask",
-    "subClassOf" : "oslc_cm:Task"
-  }, {
-    "@id" : "oslc_cm:Reviewed",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the Change Request has been reviewed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "reviewed"
-  }, {
-    "@id" : "oslc_cm:Severity",
-    "@type" : "rdfs:Class",
-    "comment" : "Defines the possible oslc_cm:severity property values.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Severity"
-  }, {
-    "@id" : "oslc_cm:SeverityUnassigned",
-    "rdf:type" : {
-      "@id" : "oslc_cm:Severity"
-    },
-    "comment" : "The severity of the change request is intentionally not set.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "SeverityUnassigned"
-  }, {
-    "@id" : "oslc_cm:State",
-    "@type" : "rdfs:Class",
-    "comment" : "Defines the possible oslc_cm:state property values.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "State"
-  }, {
-    "@id" : "oslc_cm:Task",
-    "@type" : "rdfs:Class",
-    "comment" : "An executable and trackable activity.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "Task",
-    "subClassOf" : "oslc_cm:ChangeRequest"
-  }, {
-    "@id" : "oslc_cm:Verified",
-    "rdf:type" : {
-      "@id" : "oslc_cm:State"
-    },
-    "comment" : "Whether or not the resolution or fix of the Change Request has been verified.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "verified"
-  }, {
-    "@id" : "oslc_cm:affectedByDefect",
-    "@type" : "rdf:Property",
-    "comment" : "Change request is affected by a reported defect. It is\nlikely that the target resource will be an oslc_cm:Defect.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "affectedByDefect"
-  }, {
-    "@id" : "oslc_cm:affectsPlanItem",
-    "@type" : "rdf:Property",
-    "comment" : "Change request affects a plan item. It is likely that\nthe target resource will be an oslc_cm:ChangeRequest.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "affectsPlanItem"
-  }, {
-    "@id" : "oslc_cm:affectsRequirement",
-    "@type" : "rdf:Property",
-    "comment" : "The ChangeRequest affects a Requirement. It is likely\nthat the target resource will be an oslc_rm:Requirement.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "affectsRequirement"
-  }, {
-    "@id" : "oslc_cm:affectsTestResult",
-    "@type" : "rdf:Property",
-    "comment" : "Associated resource that is affected by this Change\nRequest. It is likely that the target resource will be an\noslc_qm:TestResult.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "affectsTestResult",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:approved",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the Change Request has been approved.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "approved"
-  }, {
-    "@id" : "oslc_cm:authorizer",
-    "@type" : "rdf:Property",
-    "comment" : "The URI of a resource describing an agent who is responsible authorizing for and/or has authorized effort to be expended to address a set of change requests.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "authorizer"
-  }, {
-    "@id" : "oslc_cm:blocksTestExecutionRecord",
-    "@type" : "rdf:Property",
-    "comment" : "Associated resource that is blocked by this Change\nRequest. It is likely that the target resource will be an\noslc_qm:TestExecutionRecord.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "blocksTestExecutionRecord",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:closeDate",
-    "@type" : "rdf:Property",
-    "comment" : "The date at which no further activity or work is intended to be conducted.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "closeDate"
-  }, {
-    "@id" : "oslc_cm:closed",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the Change Request is completely done, no further fixes or fix verification is needed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "closed"
-  }, {
-    "@id" : "oslc_cm:defect",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used to report defects in testing.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "defect"
-  }, {
-    "@id" : "oslc_cm:fixed",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the Change Request has been fixed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "fixed"
-  }, {
-    "@id" : "oslc_cm:implementsRequirement",
-    "@type" : "rdf:Property",
-    "comment" : "The ChangeRequest implements the associated Requirement. It is likely that the\ntarget resource will be an oslc_rm:Requirement.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "implementsRequirement"
-  }, {
-    "@id" : "oslc_cm:inProgress",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the Change Request in a state indicating that active work is occurring.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "inProgress"
-  }, {
-    "@id" : "oslc_cm:parent",
-    "@type" : "rdf:Property",
-    "comment" : "The related parent change requests of the subject change request.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "parent"
-  }, {
-    "@id" : "oslc_cm:planItem",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used for associating change requests into plans (project, release, sprint, etc).",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "planItem"
-  }, {
-    "@id" : "oslc_cm:priority",
-    "@type" : "rdf:Property",
-    "comment" : "Used to indicate the relative importance of ChangeRequests.\nIt is likely that the target resource will be an\noslc_cm:Priority.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "priority"
-  }, {
-    "@id" : "oslc_cm:relatedChangeRequest",
-    "@type" : "rdf:Property",
-    "comment" : "This relationship is loosely coupled, has no specific\nmeaning, and can be used to link related change requests. It is likely\nthat the target resource will be an oslc_cm:ChangeRequest.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "relatedChangeRequest"
-  }, {
-    "@id" : "oslc_cm:relatedTestCase",
-    "@type" : "rdf:Property",
-    "comment" : "Related test case resource. It is likely that the\ntarget resource will be an oslc_qm:TestCase.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "relatedTestCase",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:relatedTestExecutionRecord",
-    "@type" : "rdf:Property",
-    "comment" : "Related to a test execution resource. It is likely\nthat the target resource will be an oslc_qm:TestExecutionRecord.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "relatedTestExecutionRecord",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:relatedTestPlan",
-    "@type" : "rdf:Property",
-    "comment" : "Related test plan resource. It is likely that the\ntarget resource will be an oslc_qm:TestPlan.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "relatedTestPlan",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:relatedTestScript",
-    "@type" : "rdf:Property",
-    "comment" : "Related test script resource. It is likely that the\ntarget resource will be an oslc_qm:TestScript.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "relatedTestScript",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:requirementsChangeRequest",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used for associating a change request for usage in tracking changes to a Requirements resource.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "requirementsChangeRequest"
-  }, {
-    "@id" : "oslc_cm:reviewed",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the Change Request has been reviewed.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "reviewed"
-  }, {
-    "@id" : "oslc_cm:severity",
-    "@type" : "rdf:Property",
-    "comment" : "Used to indicate the severity or potential impact of a defect.\nIt is likely that the target resource will be an oslc_cm:Severity.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "severity"
-  }, {
-    "@id" : "oslc_cm:state",
-    "@type" : "rdf:Property",
-    "comment" : "Used to indicate the status of the change request.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "state"
-  }, {
-    "@id" : "oslc_cm:status",
-    "@type" : "rdf:Property",
-    "comment" : "Used to indicate the status of the change request based\non values defined by the service provider. Most often a read-only\nproperty. It is likely that the target resource will be a string corresponding to an\noslc_cm:State value.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "status",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:task",
-    "@type" : "rdfs:Resource",
-    "comment" : "Used for associating change requests into executable and track-able items.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "task"
-  }, {
-    "@id" : "oslc_cm:testedByTestCase",
-    "@type" : "rdf:Property",
-    "comment" : "Test case by which this change request is tested. It is\nlikely that the target resource will be an oslc_qm:TestCase.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "testedByTestCase",
-    "term_status" : "archaic"
-  }, {
-    "@id" : "oslc_cm:tracksChangeSet",
-    "@type" : "rdf:Property",
-    "comment" : "Tracks a change set resource. It is likely that the\ntarget resource will be an oslc_config:ChangeSet.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "tracksChangeSet"
-  }, {
-    "@id" : "oslc_cm:tracksRequirement",
-    "@type" : "rdf:Property",
-    "comment" : "Tracks the associated Requirement or Requirement\nChangeSet resources. It is likely that the target resource will be an\noslc_rm:Requirement.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "tracksRequirement"
-  }, {
-    "@id" : "oslc_cm:verified",
-    "@type" : "rdf:Property",
-    "comment" : "Whether or not the resolution or fix of the Change Request has been verified.",
-    "isDefinedBy" : "http://open-services.net/ns/cm#",
-    "label" : "verified"
-  } ],
-  "@context" : {
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "isDefinedBy" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-      "@type" : "@id"
-    },
-    "term_status" : {
-      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
-    },
-    "subClassOf" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
-    "preferredNamespacePrefix" : {
-      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
-    },
-    "source" : {
-      "@id" : "http://purl.org/dc/terms/source",
-      "@type" : "@id"
-    },
-    "isPartOf" : {
-      "@id" : "http://purl.org/dc/terms/isPartOf",
-      "@type" : "@id"
-    },
-    "title" : {
-      "@id" : "http://purl.org/dc/terms/title"
-    },
-    "issued" : {
-      "@id" : "http://purl.org/dc/terms/issued",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
-    "description" : {
-      "@id" : "http://purl.org/dc/terms/description",
-      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
-    },
-    "hasVersion" : {
-      "@id" : "http://purl.org/dc/terms/hasVersion"
-    },
-    "license" : {
-      "@id" : "http://purl.org/dc/terms/license",
-      "@type" : "@id"
-    },
-    "owl" : "http://www.w3.org/2002/07/owl#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "dcterms" : "http://purl.org/dc/terms/",
-    "vann" : "http://purl.org/vocab/vann/",
-    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
-    "oslc_cm" : "http://open-services.net/ns/cm#"
-  }
+    "@graph": [
+        {
+            "@id": "oslc_cm:Enhancement",
+            "rdfs:comment": "A request for new functionality.",
+            "rdfs:label": "Enhancement",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "rdfs:subClassOf": {
+                "@id": "oslc_cm:ChangeRequest"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "http://open-services.net/ns/cm#",
+            "dcterms:issued": {
+                "@value": "2023-07-06",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            },
+            "dcterms:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            "dcterms:hasVersion": "OS",
+            "dcterms:description": {
+                "@value": "All vocabulary URIs defined in the OSLC Change Management (CM) namespace.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "dcterms:publisher": {
+                "@id": "https://open-services.net/about/"
+            },
+            "dcterms:title": "The OSLC Change Management(CM) Vocabulary",
+            "@type": "owl:Ontology",
+            "rdfs:label": "The OSLC Change Management(CM) Vocabulary",
+            "dcterms:isPartOf": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-spec.html"
+            },
+            "dcterms:source": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-vocab.ttl"
+            },
+            "vann:preferredNamespacePrefix": "oslc_cm"
+        },
+        {
+            "@id": "oslc_cm:ChangeRequest",
+            "rdfs:comment": "The CM Change Request resource.",
+            "rdfs:label": "ChangeRequest",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:tracksRequirement",
+            "rdfs:comment": "Tracks the associated Requirement or Requirement\nChangeSet resources. It is likely that the target resource will be an\noslc_rm:Requirement.",
+            "rdfs:label": "tracksRequirement",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:authorizer",
+            "rdfs:comment": "The URI of a resource describing an agent who is responsible authorizing for and/or has authorized effort to be expended to address a set of change requests.",
+            "rdfs:label": "authorizer",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:testedByTestCase",
+            "rdfs:comment": "Test case by which this change request is tested. It is\nlikely that the target resource will be an oslc_qm:TestCase.",
+            "rdfs:label": "testedByTestCase",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:relatedChangeRequest",
+            "rdfs:comment": "This relationship is loosely coupled, has no specific\nmeaning, and can be used to link related change requests. It is likely\nthat the target resource will be an oslc_cm:ChangeRequest.",
+            "rdfs:label": "relatedChangeRequest",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:reviewed",
+            "rdfs:comment": "Whether or not the Change Request has been reviewed.",
+            "rdfs:label": "reviewed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:affectsPlanItem",
+            "rdfs:comment": "Change request affects a plan item. It is likely that\nthe target resource will be an oslc_cm:ChangeRequest.",
+            "rdfs:label": "affectsPlanItem",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Reviewed",
+            "rdfs:comment": "Whether or not the Change Request has been reviewed.",
+            "rdfs:label": "reviewed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:State",
+            "rdfs:comment": "Defines the possible oslc_cm:state property values.",
+            "rdfs:label": "State",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:severity",
+            "rdfs:comment": "Used to indicate the severity or potential impact of a defect.\nIt is likely that the target resource will be an oslc_cm:Severity.",
+            "rdfs:label": "severity",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:requirementsChangeRequest",
+            "rdfs:comment": "Used for associating a change request for usage in tracking changes to a Requirements resource.",
+            "rdfs:label": "requirementsChangeRequest",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Resource"
+        },
+        {
+            "@id": "oslc_cm:Severity",
+            "rdfs:comment": "Defines the possible oslc_cm:severity property values.",
+            "rdfs:label": "Severity",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:status",
+            "rdfs:comment": "Used to indicate the status of the change request based\non values defined by the service provider. Most often a read-only\nproperty. It is likely that the target resource will be a string corresponding to an\noslc_cm:State value.",
+            "rdfs:label": "status",
+            "vs:term_status": "archaic",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:priority",
+            "rdfs:comment": "Used to indicate the relative importance of ChangeRequests.\nIt is likely that the target resource will be an\noslc_cm:Priority.",
+            "rdfs:label": "priority",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Fixed",
+            "rdfs:comment": "Whether or not the Change Request has been fixed.",
+            "rdfs:label": "fixed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:verified",
+            "rdfs:comment": "Whether or not the resolution or fix of the Change Request has been verified.",
+            "rdfs:label": "verified",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Priority",
+            "rdfs:comment": "Defines the possible oslc_cm:priority property values.",
+            "rdfs:label": "Priority",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:Normal",
+            "rdfs:comment": "Affects non-critical functionality. There is a workaround.",
+            "rdfs:label": "Normal",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:state",
+            "rdfs:comment": "Used to indicate the status of the change request.",
+            "rdfs:label": "state",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:affectsTestResult",
+            "rdfs:comment": "Associated resource that is affected by this Change\nRequest. It is likely that the target resource will be an\noslc_qm:TestResult.",
+            "rdfs:label": "affectsTestResult",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Blocker",
+            "rdfs:comment": "Severe problem. No workaround. Blocks development, test, or usage.",
+            "rdfs:label": "Blocker",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:SeverityUnassigned",
+            "rdfs:comment": "The severity of the change request is intentionally not set.",
+            "rdfs:label": "SeverityUnassigned",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:Critical",
+            "rdfs:comment": "Severe problem. No workaround.",
+            "rdfs:label": "Critical",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:closeDate",
+            "rdfs:comment": "The date at which no further activity or work is intended to be conducted.",
+            "rdfs:label": "closeDate",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:affectedByDefect",
+            "rdfs:comment": "Change request is affected by a reported defect. It is\nlikely that the target resource will be an oslc_cm:Defect.",
+            "rdfs:label": "affectedByDefect",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Low",
+            "rdfs:comment": "Action on the change request can be safely deferred.",
+            "rdfs:label": "Low",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Priority"
+        },
+        {
+            "@id": "oslc_cm:planItem",
+            "rdfs:comment": "Used for associating change requests into plans (project, release, sprint, etc).",
+            "rdfs:label": "planItem",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Resource"
+        },
+        {
+            "@id": "oslc_cm:ReviewTask",
+            "rdfs:comment": "A request to make a change and review the change.",
+            "rdfs:label": "ReviewTask",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "rdfs:subClassOf": {
+                "@id": "oslc_cm:Task"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:Task",
+            "rdfs:comment": "An executable and trackable activity.",
+            "rdfs:label": "Task",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "rdfs:subClassOf": {
+                "@id": "oslc_cm:ChangeRequest"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:affectsRequirement",
+            "rdfs:comment": "The ChangeRequest affects a Requirement. It is likely\nthat the target resource will be an oslc_rm:Requirement.",
+            "rdfs:label": "affectsRequirement",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:defect",
+            "rdfs:comment": "Used to report defects in testing.",
+            "rdfs:label": "defect",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Resource"
+        },
+        {
+            "@id": "oslc_cm:Closed",
+            "rdfs:comment": "Whether or not the Change Request is completely done, no further fixes or fix verification is needed.",
+            "rdfs:label": "closed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:relatedTestCase",
+            "rdfs:comment": "Related test case resource. It is likely that the\ntarget resource will be an oslc_qm:TestCase.",
+            "rdfs:label": "relatedTestCase",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:relatedTestPlan",
+            "rdfs:comment": "Related test plan resource. It is likely that the\ntarget resource will be an oslc_qm:TestPlan.",
+            "rdfs:label": "relatedTestPlan",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:parent",
+            "rdfs:comment": "The related parent change requests of the subject change request.",
+            "rdfs:label": "parent",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:ChangeNotice",
+            "rdfs:comment": "Represents an assignment notification of a change request. May be used also to bestow authority onto the assigned user to effect the changes.",
+            "rdfs:label": "ChangeNotice",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "rdfs:subClassOf": {
+                "@id": "oslc_cm:ChangeRequest"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:Approved",
+            "rdfs:comment": "Whether or not the Change Request has been approved.",
+            "rdfs:label": "approved",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:tracksChangeSet",
+            "rdfs:comment": "Tracks a change set resource. It is likely that the\ntarget resource will be an oslc_config:ChangeSet.",
+            "rdfs:label": "tracksChangeSet",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:implementsRequirement",
+            "rdfs:comment": "The ChangeRequest implements the associated Requirement. It is likely that the\ntarget resource will be an oslc_rm:Requirement.",
+            "rdfs:label": "implementsRequirement",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:relatedTestScript",
+            "rdfs:comment": "Related test script resource. It is likely that the\ntarget resource will be an oslc_qm:TestScript.",
+            "rdfs:label": "relatedTestScript",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Major",
+            "rdfs:comment": "Prevents function from being used. There is a workaround.",
+            "rdfs:label": "Major",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:Minor",
+            "rdfs:comment": "Minimal impact.",
+            "rdfs:label": "Minor",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Severity"
+        },
+        {
+            "@id": "oslc_cm:Defect",
+            "rdfs:comment": "A software or product defect.",
+            "rdfs:label": "Defect",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "rdfs:subClassOf": {
+                "@id": "oslc_cm:ChangeRequest"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_cm:High",
+            "rdfs:comment": "Highest priority, action on the change request highly recommended.",
+            "rdfs:label": "High",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Priority"
+        },
+        {
+            "@id": "oslc_cm:Inprogress",
+            "rdfs:comment": "Whether or not the Change Request in a state indicating that active work is occurring.",
+            "rdfs:label": "inprogress",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:task",
+            "rdfs:comment": "Used for associating change requests into executable and track-able items.",
+            "rdfs:label": "task",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdfs:Resource"
+        },
+        {
+            "@id": "oslc_cm:approved",
+            "rdfs:comment": "Whether or not the Change Request has been approved.",
+            "rdfs:label": "approved",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:fixed",
+            "rdfs:comment": "Whether or not the Change Request has been fixed.",
+            "rdfs:label": "fixed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:blocksTestExecutionRecord",
+            "rdfs:comment": "Associated resource that is blocked by this Change\nRequest. It is likely that the target resource will be an\noslc_qm:TestExecutionRecord.",
+            "rdfs:label": "blocksTestExecutionRecord",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:inProgress",
+            "rdfs:comment": "Whether or not the Change Request in a state indicating that active work is occurring.",
+            "rdfs:label": "inProgress",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:Verified",
+            "rdfs:comment": "Whether or not the resolution or fix of the Change Request has been verified.",
+            "rdfs:label": "verified",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:State"
+        },
+        {
+            "@id": "oslc_cm:closed",
+            "rdfs:comment": "Whether or not the Change Request is completely done, no further fixes or fix verification is needed.",
+            "rdfs:label": "closed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:relatedTestExecutionRecord",
+            "rdfs:comment": "Related to a test execution resource. It is likely\nthat the target resource will be an oslc_qm:TestExecutionRecord.",
+            "rdfs:label": "relatedTestExecutionRecord",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_cm:PriorityUnassigned",
+            "rdfs:comment": "The priority of the change request is intentionally not set.",
+            "rdfs:label": "PriorityUnassigned",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Priority"
+        },
+        {
+            "@id": "oslc_cm:Medium",
+            "rdfs:comment": "Acting on the change request can wait, but not forever.",
+            "rdfs:label": "Medium",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/cm#"
+            },
+            "@type": "oslc_cm:Priority"
+        }
+    ],
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "vann": "http://purl.org/vocab/vann/",
+        "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+        "oslc_cm": "http://open-services.net/ns/cm#"
+    }
 }

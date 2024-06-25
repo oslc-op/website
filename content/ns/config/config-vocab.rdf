@@ -7,27 +7,27 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:vann="http://purl.org/vocab/vann/">
   <owl:Ontology rdf:about="http://open-services.net/ns/config#">
-    <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
-    <dcterms:description>The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources.</dcterms:description>
-    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
-    <rdfs:label>OSLC Configuration Management vocabulary</rdfs:label>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2022-02-03</dcterms:issued>
-    <vann:preferredNamespacePrefix>oslc_config</vann:preferredNamespacePrefix>
-    <dcterms:hasVersion>PS</dcterms:hasVersion>
-    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/oslc-config-mgt-spec.html"/>
+    <dcterms:dateCopyrighted>2012-2023</dcterms:dateCopyrighted>
     <dcterms:title>OSLC Configuration Management vocabulary</dcterms:title>
-    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/config-vocab.ttl"/>
-    <dcterms:dateCopyrighted>2012-2022</dcterms:dateCopyrighted>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2023-07-23</dcterms:issued>
+    <dcterms:isPartOf rdf:resource="https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html"/>
+    <dcterms:hasVersion>PS</dcterms:hasVersion>
+    <vann:preferredNamespacePrefix>oslc_config</vann:preferredNamespacePrefix>
+    <rdfs:label>OSLC Configuration Management vocabulary</rdfs:label>
+    <dcterms:publisher rdf:resource="https://open-services.net/about/"/>
+    <dcterms:source rdf:resource="https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/config-vocab.ttl"/>
+    <dcterms:description>The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources.</dcterms:description>
+    <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
   </owl:Ontology>
-  <rdfs:Class rdf:about="http://open-services.net/ns/config#VersionResource">
-    <rdfs:comment>This type is used as a marker for any version resource.</rdfs:comment>
-    <rdfs:label>VersionResource</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
-  </rdfs:Class>
   <rdfs:Class rdf:about="http://open-services.net/ns/config#ConfigurationSettings">
     <rdfs:comment>Information about settings and preferences for a Configuration Management service.</rdfs:comment>
     <rdfs:label>ConfigurationSettings</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://open-services.net/ns/config#VersionResource">
+    <rdfs:comment>This type is used as a marker for any version resource.</rdfs:comment>
+    <rdfs:label>VersionResource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
   </rdfs:Class>
   <rdfs:Class rdf:about="http://open-services.net/ns/config#PersonalConfiguration">
@@ -38,14 +38,14 @@
     <rdfs:label>PersonalConfiguration</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://open-services.net/ns/config#Contribution">
-    <rdfs:comment>A contribution represents the contribution of one configuration to another.</rdfs:comment>
-    <rdfs:label>Contribution</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
-  </rdfs:Class>
   <rdfs:Class rdf:about="http://open-services.net/ns/config#UnboundSelections">
     <rdfs:comment>An indicator that a set of selections are as-yet unbound concept resources as opposed to bound version resources.</rdfs:comment>
     <rdfs:label>UnboundSelections</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://open-services.net/ns/config#Contribution">
+    <rdfs:comment>A contribution represents the contribution of one configuration to another.</rdfs:comment>
+    <rdfs:label>Contribution</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
   </rdfs:Class>
   <rdfs:Class rdf:about="http://open-services.net/ns/config#RemoveAll">
@@ -152,15 +152,15 @@
     <rdfs:label>overrides</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
   </rdf:Property>
-  <rdf:Property rdf:about="http://open-services.net/ns/config#configurationSettings">
-    <rdfs:comment>A reference to information about settings and preferences for a Configuration Management service.</rdfs:comment>
-    <rdfs:label>configurationSettings</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
-  </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/config#selections">
     <rdfs:comment>A reference to a Selections resource.</rdfs:comment>
     <rdfs:range rdf:resource="http://open-services.net/ns/config#Selections"/>
     <rdfs:label>selections</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://open-services.net/ns/config#configurationSettings">
+    <rdfs:comment>A reference to information about settings and preferences for a Configuration Management service.</rdfs:comment>
+    <rdfs:label>configurationSettings</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://open-services.net/ns/config#"/>
   </rdf:Property>
   <rdf:Property rdf:about="http://open-services.net/ns/config#progressMessage">

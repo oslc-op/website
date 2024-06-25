@@ -37,8 +37,8 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | CM 3.0 OASIS Standard                          |
-| **Publication date**    | 26 May 2021                                    |
+| **Deployed vocabulary** | CM 3.0 OASIS Standard with Approved Errata 01                         |
+| **Publication date**    | 06 July 2023                                    |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**     |
 | **Recommended prefix**  |`oslc_cm`                                           |
 | **Namespace URI**       |`http://open-services.net/ns/cm#`                   |
@@ -66,7 +66,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
 | **Deployed vocabulary** | QM 2.1 OASIS Standard                |
-| **Publication date**    | 9 January 2022                                 |
+| **Publication date**    | 19 January 2022                                 |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc_qm`                                           |
 | **Namespace URI**       |`http://open-services.net/ns/qm#`                   |
@@ -93,8 +93,8 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | Config 1.0 Project Specification 01      |
-| **Publication date**    | 30 May 2022                               |
+| **Deployed vocabulary** | Config 1.0 OASIS Standard      |
+| **Publication date**    | 23 July 2023                               |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>** |
 | **Recommended prefix**  |`oslc_config`                                   |
 | **Namespace URI**       |`http://open-services.net/ns/config#`           |
@@ -107,7 +107,7 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 | Property                | Value                                          |
 | ----------------------: | :----------------------------------------------|
-| **Deployed vocabulary** | TRS 3.0 Project Specification 02                |
+| **Deployed vocabulary** | TRS 3.0 OASIS Standard                |
 | **Publication date**    | 24 November 2022                              |
 | **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
 | **Recommended prefix**  |`oslc_trs`                                   |
@@ -116,6 +116,20 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 | **SPARQL prefix**       |`PREFIX oslc_trs: <http://open-services.net/ns/core/trs#>` |
 | **OSLC Query prefix**   |`oslc_trs%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2Ftrs%23` |
 | **Specified Vocabulary**| [TRS 3.0 PS02 vocabulary][trs]                   |
+
+### OSLC SysML V2
+
+| Property                | Value                                          |
+| ----------------------: | :----------------------------------------------|
+| **Deployed vocabulary** | SysML V2 Project Specification Draft 01                |
+| **Publication date**    | 25 April 2024                              |
+| **Status**              | **<span style="color: #2ecc71">ACTIVE</span>**|
+| **Recommended prefix**  |`oslc_sysmlv2`                                   |
+| **Namespace URI**       |`http://open-services.net/ns/sysmlv2#`           |
+| **Turtle prefix**       |`@prefix oslc_sysmlv2: <http://open-services.net/ns/sysmlv2#>`|
+| **SPARQL prefix**       |`PREFIX oslc_sysmlv2: <http://open-services.net/ns/sysmlv2#>` |
+| **OSLC Query prefix**   |`oslc_sysmlv2%3Dhttp%3A%2F%2Fopen-services.net%2Fns%2sysmlv2%23` |
+| **Specified Vocabulary**| [SysML 2.0 PSD01 vocabulary][sysmlv2]                   |
 
 ### OSLC Asset Management
 
@@ -184,12 +198,13 @@ OSLC [version compatibility guidelines](http://docs.oasis-open.org/oslc-core/osl
 
 
 [core]: https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/core-vocab.html
-[cm]: https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/os/change-mgt-vocab.html
+[cm]: https://docs.oasis-open-projects.org/oslc-op/cm/v3.0/errata01/os/change-mgt-vocab.html
 [rm]: https://docs.oasis-open-projects.org/oslc-op/rm/v2.1/os/requirements-management-vocab.html
 [qm]: https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-vocab.html
 [am]: https://docs.oasis-open-projects.org/oslc-op/am/v3.0/os/architecture-management-vocab.html
-[config]: https://docs.oasis-open-projects.org/oslc-op/config/v1.0/ps01/config-vocab.html
-[trs]: https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/ps02/tracked-resource-set-vocab.html
+[config]: https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/config-vocab.html
+[trs]: https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/tracked-resource-set-vocab.html
+[sysmlv2]: https://docs.oasis-open-projects.org/oslc-op/sysml/v2.0/psd01/sysml-vocab.html
 [asset]: https://archive.open-services.net/wiki/asset-management/OSLC-Asset-Management-2.0-Specification/index.html#OSLC-Asset-Management-Resource-Definitions
 [auto]: https://archive.open-services.net/wiki/automation/OSLC-Automation-Specification-Version-2.0/index.html#Automation-Resource-Definitions
 [promcode]: https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-vocab.html
