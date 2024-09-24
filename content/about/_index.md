@@ -49,7 +49,6 @@ Current PGB members:
 
 - Jim Amsden (co-chair, IBM)
 - Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
-- Axel Reichwein (Koneksys)
 
 ## Technical Steering Committee (TSC)
 
@@ -59,7 +58,6 @@ Current TSC members:
 
 - Jim Amsden (co-chair, IBM)
 - Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
-- Axel Reichwein (Koneksys)
 
 """
 
@@ -72,9 +70,8 @@ The OSLC Open Project relies on its Sponsors to fund development of the interope
 
 sponsors_img_list = [
   "accenture_logo.png",
-  "boeing_logo.png",
-  "ibm_logo.png",
-  "koneksys_logo.png"
+  "ibm_logo.png"
+  
 ]
 
 sponsors_img_size = [
