@@ -1,0 +1,223 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 15px;
+
+  transition: 350ms all ease-in-out;
+  z-index: 11;
+
+  .logo {
+    font-size: 26px;
+    color: $main-white;
+    font-weight: 500;
+  }
+
+  .menu {
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-right: 40px;
+        display: flex;
+
+        &.youtube-link {
+          background: #FFF;
+          padding: 5px 10px;
+          border-radius: 4px;
+          
+          a {
+            color: #F00;
+          }
+        }
+
+        a {
+          font-size: 18px;
+          color: $main-white;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            color: $alt;
+          }
+
+          &.button {
+            border-color: $main-white;
+            color: $main-black;
+
+            &::before {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+              border-right: 50px solid transparent;
+              border-bottom: 56px solid $main-white;
+            }
+
+            &:hover {
+              color: $main-white;
+
+              &::before {
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+
+    &.active {
+      .bar {
+        &.top {
+          transform: translateY(9px) rotate(45deg);
+        }
+
+        &.middle {
+          width: 0
+        }
+
+        &.bottom {
+          transform: translateY(-9px) rotate(-45deg)
+        }
+      }
+    }
+
+    .bar {
+      display: inline-block;
+      height: 2px;
+      width: 28px;
+      border-radius: 2px;
+      margin-bottom: 7px;
+      background: $main-white;
+      transition: all 300ms ease-in-out;
+
+      &:last-child {
+        margin-bottom: 0
+      }
+    }
+  }
+
+  &.scrolled,
+  &.alt {
+    background-color: $main-white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+
+    .logo {
+      color: $main;
+    }
+
+    .youtube-link {
+      background: #F00 !important;
+
+      a {
+        color: #FFF !important;
+      }
+    }
+
+    .menu ul li a {
+      color: $main;
+
+      &.button {
+        border-color: $oslc-light-blue;
+        color: $main-white;
+
+        &::before {
+          border-bottom-color: $oslc-light-blue;
+        }
+
+        &:hover {
+          color: $main-black;
+          border-color: $main-black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1240px) {
+  .main-header .menu ul li {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-header {
+    padding: 10px 16px;
+
+    &.scrolled .menu,
+    .menu {
+      display: flex;
+      justify-content: center;
+      background: $main;
+      position: fixed;
+      top: 50px;
+      left: 0;
+      right: 0;
+      height: 0;
+      overflow-y: hidden;
+      transition: 350ms all ease-in-out;
+
+      &.active {
+        height: 100vh;
+
+        ul {
+          padding-top: 40px;
+        }
+      }
+
+      ul {
+        flex-direction: column;
+        padding-top: 10px;
+        transition: 450ms all ease-in-out;
+
+        li {
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 25px;
+
+          a {
+            color: $main-white;
+          }
+        }
+      }
+    }
+
+    &.scrolled {
+      .menu-toggle .bar {
+        background: $main;
+      }
+
+      .menu ul li a {
+
+        &.button {
+          border-color: $main-white;
+          color: $main-black;
+
+          &::before {
+            border-bottom-color: $main-white;
+          }
+        }
+      }
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+  }
+}

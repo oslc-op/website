@@ -1,0 +1,16 @@
+<section id="organizers-anchor" class="content--section full connected">
+  <div class="container wrapper wrapper-default">
+    <h3 class="section--title">Organizers</h3>
+    <div class="section--gallery smaller--gallery logos five">
+      {{ range $index, $image := .Params.organizers }}
+      {{ $link := index $.Params.organizersLink $index }}
+      {{ $class := index $.Params.organizersClass $index }}
+      <div class="gallery--item">
+        <a href="{{ $link }}" target="_blank" class="{{ $class }}">
+          <img data-src="{{ $image }}" />
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

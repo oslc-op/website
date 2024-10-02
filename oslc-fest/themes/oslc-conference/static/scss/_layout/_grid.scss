@@ -1,0 +1,181 @@
+.wrapper {
+  width: 92%;
+  margin: auto;
+  position: relative;
+}
+
+.wrapper-default {
+  max-width: 1024px;
+}
+
+.wrapper-sm {
+  max-width: 800px;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+
+  &.row-center {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33.3333%;
+}
+
+.one-forth {
+  width: 25%;
+}
+
+.three-forth {
+  width: 75%;
+}
+
+.two-third {
+  width: 66.6666%;
+}
+
+.one-fifth {
+  width: 20%;
+}
+
+.align-right {
+  float: right;
+}
+
+.desktop-only,
+.tablet-only,
+.mobile-only {
+  display: none;
+}
+
+.header-margin {
+  margin-top: 66px;
+}
+
+@media screen and (min-width: 993px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .header-margin {
+    margin-top: 52px;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .md-full {
+    width: 100%;
+  }
+
+  .md-one-half {
+    width: 50%;
+  }
+
+  .md-one-third {
+    width: 33.3333%;
+  }
+
+  .md-one-forth {
+    width: 25%;
+  }
+
+  .md-three-forth {
+    width: 75%;
+  }
+
+  .md-two-third {
+    width: 66.6666%;
+  }
+
+  .md-one-fifth {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-margin {
+    margin-top: 52px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .sm-full {
+    width: 100%;
+  }
+
+  .sm-one-half {
+    width: 50%;
+  }
+
+  .sm-one-third {
+    width: 33.3333%;
+  }
+
+  .sm-one-forth {
+    width: 25%;
+  }
+
+  .sm-three-forth {
+    width: 75%;
+  }
+
+  .sm-two-third {
+    width: 66.6666%;
+  }
+
+  .sm-one-fifth {
+    width: 20%;
+  }
+}
+
+@media screnn and (min-width: 1600px) {
+  .lg-full {
+    width: 100%;
+  }
+
+  .lg-one-half {
+    width: 50%;
+  }
+
+  .lg-one-third {
+    width: 33.3333%;
+  }
+
+  .lg-one-forth {
+    width: 25%;
+  }
+
+  .lg-one-fifth {
+    width: 20%;
+  }
+}

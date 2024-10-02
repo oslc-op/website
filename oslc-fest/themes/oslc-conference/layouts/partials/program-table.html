@@ -1,0 +1,184 @@
+<!-- Will have to add a year variable -->
+<div class="container wrapper wrapper-default">
+  <h3 class="section--title">Program</h3>
+  <!-- <h4 class="table-legend--title text-center">Color Code</h4> -->
+  <!-- <div class="table-legend--wrap">
+    {{ range $index, $title := .Params.legendTitle }}
+    {{ $style := index $.Params.legendStyle $index }}
+    <div class="program-item {{$style}}">
+      <div class="info-wrap">
+        <div class="program-item--inner">
+          <p>{{$title}}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div> -->
+  <div class="program-table--wrap">
+    <div class="day column">
+      <label>{{ .Params.day1 }}</label>
+      {{if .Params.time}}
+      <h4>{{.Params.time}}</h4>
+      {{end}}
+      {{ range $index, $time := .Params.start1 }}
+      {{ $duration := index $.Params.duration1 $index }}
+      {{ $type := index $.Params.type1 $index }}
+      {{ $title := index $.Params.title1 $index }}
+      {{ $authors := index $.Params.authors1 $index }}
+      {{ $presentation := index $.Params.presentationLink1 $index }}
+      {{ $video := index $.Params.videoLink1 $index }}
+      {{ $panel := index $.Params.panelVariable1 $index }}
+      <div class="program-item {{ $type }}">
+        <div class="program-item--time-wrap">
+          <p>{{ $time }}</p>
+          <p class="program-duration"><i class="far fa-clock"></i> {{ $duration }}</p>
+        </div>
+        <div class="info-wrap">
+          {{with $panel}}
+          <div class="program-item--inner has-abstract" data-bio="{{ $panel }}" onclick="openPanel(this)">
+          {{else}}
+          <div class="program-item--inner">
+          {{end}}
+            <p>{{ $title }}</p>
+            {{with $authors}}
+            <p class="talk-speaker">{{ $authors }}</p>
+            {{ end }}
+          </div>
+          {{with $presentation | or $video}}
+          <div class="talk-files">
+            {{with $presentation}}
+            <div class="talk-presentation">
+              <i class="fas fa-file-pdf"></i>
+              <a target="_blank" href="{{ $presentation }}">Presentation</a>
+            </div>
+            {{ end }}
+            {{with $video }}
+            <div class="talk-video">
+              <i class="fas fa-play"></i>
+              <a target="_blank" href="{{ $video }}">Video</a>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ if .Params.start2 }}
+  <div class="program-table--wrap">
+    <div class="day column">
+      <label>{{ .Params.day2 }}</label>
+      {{if .Params.time}}
+      <h4>{{.Params.time}}</h4>
+      {{end}}
+      {{ range $index, $time := .Params.start2 }}
+      {{ $duration := index $.Params.duration2 $index }}
+      {{ $type := index $.Params.type2 $index }}
+      {{ $title := index $.Params.title2 $index }}
+      {{ $authors := index $.Params.authors2 $index }}
+      {{ $presentation := index $.Params.presentationLink2 $index }}
+      {{ $video := index $.Params.videoLink2 $index }}
+      {{ $panel := index $.Params.panelVariable2 $index }}
+      <div class="program-item {{ $type }}">
+        <div class="program-item--time-wrap">
+          <p>{{ $time }}</p>
+          <p class="program-duration"><i class="far fa-clock"></i> {{ $duration }}</p>
+        </div>
+        <div class="info-wrap">
+          {{with $panel}}
+          <div class="program-item--inner has-abstract" data-bio="{{ $panel }}" onclick="openPanel(this)">
+          {{else}}
+          <div class="program-item--inner">
+          {{end}}
+            <p>{{ $title }}</p>
+            {{with $authors}}
+            <p class="talk-speaker">{{ $authors }}</p>
+            {{ end }}
+          </div>
+          {{with $presentation | or $video}}
+          <div class="talk-files">
+            {{with $presentation}}
+            <div class="talk-presentation">
+              <i class="fas fa-file-pdf"></i>
+              <a target="_blank" href="{{ $presentation }}">Presentation</a>
+            </div>
+            {{ end }}
+            {{with $video }}
+            <div class="talk-video">
+              <i class="fas fa-play"></i>
+              <a target="_blank" href="{{ $video }}">Video</a>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  
+  {{ if .Params.start3 }}
+  <div class="program-table--wrap">
+    <div class="day column">
+      <label>{{ .Params.day3 }}</label>
+      {{if .Params.time}}
+      <h4>{{.Params.time}}</h4>
+      {{end}}
+      {{ range $index, $time := .Params.start3 }}
+      {{ $duration := index $.Params.duration3 $index }}
+      {{ $type := index $.Params.type3 $index }}
+      {{ $title := index $.Params.title3 $index }}
+      {{ $authors := index $.Params.authors3 $index }}
+      {{ $presentation := index $.Params.presentationLink3 $index }}
+      {{ $video := index $.Params.videoLink3 $index }}
+      {{ $altVideo := index $.Params.altVideoLink3 $index }}
+      {{ $panel := index $.Params.panelVariable3 $index }}
+      <div class="program-item {{ $type }}">
+        <div class="program-item--time-wrap">
+          <p>{{ $time }}</p>
+          <p class="program-duration"><i class="far fa-clock"></i> {{ $duration }}</p>
+        </div>
+        <div class="info-wrap">
+          {{with $panel}}
+          <div class="program-item--inner has-abstract" data-bio="{{ $panel }}" onclick="openPanel(this)">
+          {{else}}
+          <div class="program-item--inner">
+          {{end}}
+            <p>{{ $title }}</p>
+            {{with $authors}}
+            <p class="talk-speaker">{{ $authors }}</p>
+            {{ end }}
+          </div>
+          {{with $presentation | or $video}}
+          <div class="talk-files">
+            {{with $presentation}}
+            <div class="talk-presentation">
+              <i class="fas fa-file-pdf"></i>
+              <a target="_blank" href="{{ $presentation }}">Presentation</a>
+            </div>
+            {{ end }}
+            {{with $video }}
+            <div class="talk-video">
+              <i class="fas fa-play"></i>
+              <a target="_blank" href="{{ $video }}">Video</a>
+            </div>
+            {{ end }}
+            {{with $altVideo }}
+            <div class="talk-video">
+              <i class="fas fa-play"></i>
+              <a target="_blank" href="{{ $altVideo }}">Recorded Demo</a>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ partial "content/info-panel.html" . }}
