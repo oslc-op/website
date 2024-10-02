@@ -1,0 +1,32 @@
+<section id="sponsors-anchor" class="content--section full connected">
+  <div class="container wrapper wrapper-default">
+    <h3 class="section--title">Sponsors</h3>
+    <div class="section--gallery smaller--gallery logos">
+      {{ range $index, $image := .Params.sponsors }}
+      {{ $link := index $.Params.sponsorsLink $index }}
+      {{ $class := index $.Params.sponsorsClass $index }}
+      <div class="gallery--item">
+        <a href="{{ $link }}" target="_blank" class="{{ $class }}">
+          <img data-src="{{ $image }}" />
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="content--section full connected">
+  <div class="container wrapper wrapper-default">
+    <h3 class="section--title">Associated Partners</h3>
+    <div class="section--gallery smaller--gallery logos">
+      {{ range $index, $image := .Params.partners }}
+      {{ $link := index $.Params.partnersLink $index }}
+      {{ $class := index $.Params.partnersClass $index }}
+      <div class="gallery--item">
+        <a href="{{ $link }}" target="_blank" class="{{ $class }}">
+          <img data-src="{{ $image }}" />
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

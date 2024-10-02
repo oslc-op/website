@@ -1,0 +1,59 @@
+<section class="content--section full landing" style="background-image: url({{ .Params.bannerBackgroundImage }});">
+  <div class="{{ .Params.bannerOverlay }}"></div>
+  <div class="container landing">
+    <div class="section--image">
+      <img data-src="{{ .Params.bannerSideImage }}" />
+    </div>
+    <div class="section--info">
+      <h1 class="text-shadow big">{{ .Params.bannerTitle1 }}</h1>
+      {{ if .Params.bannerTitle2 }}
+      <h2 class="text-shadow big subtitle">{{ .Params.bannerTitle2 }}</h2>
+      {{ end }}
+      <h2 class="text-shadow big subtitle">{{ .Params.bannerTitle3 }}</h2>
+      <h3 class="text-shadow big alt subtitle">{{ .Params.bannerTitle4 }}</h3>
+      {{ if .Params.dayList }}
+      <div class="centralized">
+        {{ range $index, $label := .Params.dayList }}
+        {{ $link := index $.Params.dayListLink $index }}
+        {{ $class := index $.Params.dayListClass $index }}
+        <a href="{{ $link }}"class="section--button registration button white hover--white {{$class}}">
+          {{ $label }} <i class="fab fa-youtube" style="font-size: 20px; margin-left: 5px;"></i>
+        </a>
+        {{ end }}
+      {{ else }}
+      <div>
+        {{ if .Params.bannerActionLink }}
+          {{ if .Params.bannerActionFAIcon }}
+          <a href="{{.Params.bannerActionLink}}" target="_blank" class="section--button registration button white hover--white youtube">
+            {{ .Params.bannerActionText }} <i class="{{.Params.bannerActionFAIcon}}" style="font-size: 20px; margin-left: 5px;"></i>
+          </a>
+          {{ else}}
+          <a href="{{.Params.bannerActionLink}}" target="_blank" class="section--button registration button white hover--white">
+            {{ .Params.bannerActionText }}
+          </a>
+          {{ end }}
+        {{ else }}
+          {{ if .Params.bannerActionText }}
+<a href="#program" class="section--button registration button white hover--white">
+            {{ .Params.bannerActionText }}
+          </a>
+          {{ end }}
+        {{end}}
+        {{if .Params.bannerSaveTheDate }}
+          <a href="{{ .Params.bannerSaveTheDate }}" class="section--button button white no--hover">
+            <i class="far fa-calendar-plus"></i> Save the Date!
+          </a>
+        {{ end }}
+      {{ end }}
+      </div>
+      {{ if .Params.timeLabel }}
+      <div class="centralized">
+        <a href={{ .Params.linkTimeLabel }} target="_blank"
+        class="section--button registration button white hover--white youtube">
+        {{ .Params.timeLabel }}
+        </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

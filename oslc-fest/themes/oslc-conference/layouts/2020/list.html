@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+
+<body>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <main>
+    <div class="content--section--wrapper">
+      {{ partial "content/landing.html" . }}
+    </div>
+    <div class="content--section--wrapper">
+
+      {{ partial "content/about.html" . }}
+
+      {{ partial "content/keynote.html" . }}
+
+      {{ partial "content/speakers.html" . }}
+
+      <section id="program-anchor" class="content--section full connected">
+        {{ partial "program-table.html" . }}
+      </section>
+
+      {{ partial "content/sponsors.html" . }}
+
+      {{ partial "content/organizers.html" . }}
+
+      {{ partial "content/related.html" . }}
+    </div>
+  </main>
+
+  {{ partial "content/info-card.html" . }}
+
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+
+</html>

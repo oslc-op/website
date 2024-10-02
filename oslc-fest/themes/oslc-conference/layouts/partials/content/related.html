@@ -1,0 +1,11 @@
+<section id="related-anchor" class="content--section full connected">
+  <div class="container wrapper wrapper-default">
+    <h3 class="section--title">Related Events</h3>
+    {{ range $index, $related := .Params.related }}
+    {{ $link := index $.Params.relatedLink $index }}
+    <p class="text-center">
+      <a href="{{ $link }}" target="_blank">{{ $related }}</a>
+    </p>
+    {{ end }}
+  </div>
+</section>

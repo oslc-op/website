@@ -1,0 +1,111 @@
+.button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  border: 1px solid $main-black;
+  color: $main-black;
+  background: transparent;
+  padding: 15px 25px;
+  font-size: 18px;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+
+  z-index: 0;
+
+  &.white {
+    border-color: $main-white;
+    color: $main-white;
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  &.main {
+    border-color: $main;
+    color: $main;
+  }
+
+  &.no--hover {
+    color: $main;
+    border-color: $main-white;
+    margin-left: 20px;
+
+    i {
+      margin-right: 5px;
+    }
+    
+    &::before {
+      border-right-width: 50px;
+      border-bottom-width: 52px;
+      border-bottom-color: $main-white;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    &:hover {
+      color: $main;
+    }
+  }
+
+  &.hover--main {
+    &:hover {
+      color: $main-white;
+      border-color: $main;
+    }
+
+    &:before {
+      border-bottom-color: $main;
+    }
+  }
+
+  &.hover--white {
+    &:hover {
+      color: $main;
+      border-color: $main-white;
+    }
+
+    &:before {
+      border-bottom-color: $main-white;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      color: $main-white;
+
+      &::before {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  &:hover {
+    color: $main-white;
+
+    &::before {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 38px solid transparent;
+    border-bottom: 38px solid $main-black;
+    transition: all 200ms ease-in;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    box-sizing: border-box;
+
+    z-index: -1;
+  }
+}

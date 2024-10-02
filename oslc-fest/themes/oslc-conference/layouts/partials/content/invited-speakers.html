@@ -1,0 +1,30 @@
+<section id="speakers-anchor" class="content--section full connected">
+  <div class="container wrapper wrapper-default">
+    <h3 class="section--title">Invited Speakers</h3>
+    <div class="section--gallery align-top">
+      {{ range $index, $name := .Params.invitedName }}
+      {{ $title := index $.Params.invitedTitle $index }}
+      {{ $image := index $.Params.invitedImage $index }}
+      {{ $bio := index $.Params.invitedBio $index }}
+      {{ if $bio }}
+      <div class="gallery--item has-info" data-bio="{{ $bio }}" onclick="openInfo(this)">
+      {{ else }}
+      <div class="gallery--item">
+      {{end}}
+        <div class="hover-wrap">
+          <div class="image-wrap">
+            <div class="circular-image" style="background-image: url({{ $image }})"></div>
+          </div>
+          {{ if $bio }}
+          <div class="bio-circle">
+            <span>Bio</span>
+          </div>
+          {{ end }}
+        </div>
+        <h4 class="item-title">{{ $name }}</h4>
+        <p class="text-center">{{ $title }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
