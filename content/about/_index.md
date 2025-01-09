@@ -57,7 +57,9 @@ The TSC directs the day-to-day technical activities of OSLC. TSC members include
 Current TSC members:
 
 - Jim Amsden (co-chair, IBM)
+- Andrii Berezovskyi (KTH Royal Institute of Technology)
 - Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
+- Axel Reichwein (Koneksys)
 
 """
 
