@@ -1,14 +1,14 @@
-name: Deploy to DO
+name: Deploy
 
 on:
   push:
     branches: [master, main, master]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.ref }}
@@ -27,12 +27,10 @@ jobs:
         with:
           hugo-version: "0.97.0"
           # extended: true
-
       - name: Set up SSH
         uses: webfactory/ssh-agent@d4b9b8ff72958532804b70bbe600ad43b36d5f2e #v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Hugo Deploy
         run: |
           git config --global user.email "webmaster@open-services.net"
