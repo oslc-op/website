@@ -28,7 +28,7 @@ jobs:
           hugo-version: "0.97.0"
           # extended: true
       - name: Set up SSH
-        uses: webfactory/ssh-agent@d4b9b8ff72958532804b70bbe600ad43b36d5f2e #v0.8.0
+        uses: webfactory/ssh-agent@a6f90b1f127823b31d4d4a8d96047790581349bd #v0.9.1
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Hugo Deploy
