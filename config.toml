@@ -58,6 +58,12 @@ disqus_url = ""
     url  = "/contribute/"
     weight = 13
 
+[[menu.main]]
+    name = "OSLCFest"
+    url  = "https://oslcfest.open-services.net/"
+    weight = 15
+
+
 # Top bar social links menu
 
 [[menu.topbar]]
