@@ -72,21 +72,5 @@
     title="{{ .Site.Title }}"
   />
 
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-G0Y206QDT4"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    // These options are needed for GDPR w/o consent
-    gtag("config", "G-G0Y206QDT4", {
-      anonymize_ip: true,
-      client_storage: "none",
-    });
-  </script>
+  <script defer src="https://umami.open-services.net/script.js" data-website-id="3aeee303-cf54-4749-9d90-96af4b53d5ab"></script>
 </head>
