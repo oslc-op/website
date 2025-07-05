@@ -96,7 +96,7 @@ disqus_url = ""
     email = "your@email.com"
 
     about_us = "<p>An open community building practical specifications for integrating data.</p>"
-    copyright = "Copyright (c) 2022 OSLC; all rights reserved."
+    copyright = "Copyright (c) 2025 OSLC; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
