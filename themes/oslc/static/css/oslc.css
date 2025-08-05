@@ -94,7 +94,6 @@ blockquote {
   .container {
     width: 1024px;
   }
-
   .container__big {
     max-width: 1200px;
     width: 1200px;
@@ -452,7 +451,6 @@ header .container .menu-button span {
   .scrolled header .container .links {
     top: 64px;
   }
-
   header .container {
     height: 88px;
   }
@@ -690,23 +688,17 @@ table th {
   background: #EFEFEF;
 }
 .content--section.light-blue-gradient {
-  background: -moz-linear-gradient(275deg, #418EEB 0%, #4b5ad9 50%, #375178 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(275deg, #418EEB 0%, #4b5ad9 50%, #375178 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(175deg, #418EEB 0%, #4b5ad9 50%, #375178 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(275deg, #418EEB 0%, #4b5ad9 50%, #375178 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(275deg, #418EEB 0%, #4b5ad9 50%, #375178 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(175deg, #418EEB 0%, #4b5ad9 50%, #375178 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .content--section.light-blue-gradient .headline, .content--section.light-blue-gradient .subtitle, .content--section.light-blue-gradient p, .content--section.light-blue-gradient span {
   color: #FFF;
 }
 .content--section.dark-blue-gradient {
-  background: -moz-linear-gradient(275deg, #375178 0%, #131523 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(275deg, #375178 0%, #131523 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(175deg, #375178 0%, #131523 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(275deg, #375178 0%, #131523 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(275deg, #375178 0%, #131523 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(175deg, #375178 0%, #131523 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .content--section.dark-blue-gradient .headline, .content--section.dark-blue-gradient .subtitle, .content--section.dark-blue-gradient .column--item, .content--section.dark-blue-gradient p, .content--section.dark-blue-gradient span {
   color: #FFF;
@@ -830,11 +822,9 @@ table th {
   .desktop-only {
     display: none;
   }
-
   .sub_nav {
     top: 77px;
   }
-
   .content--section .headline {
     font-size: 30px;
   }
@@ -941,7 +931,6 @@ table th {
   .sub_nav {
     display: none;
   }
-
   .about_page .content--section {
     padding-bottom: 0;
   }
@@ -1295,7 +1284,7 @@ table th {
   align-items: center;
   background: #375178;
   width: 100%;
-  height: 100px;
+  height: 127px;
   overflow: hidden;
   position: relative;
 }
@@ -1334,7 +1323,7 @@ table th {
   }
   .section--news .news__container .news__item .news__image {
     width: 100%;
-    height: 100px;
+    height: 127px;
     overflow: hidden;
   }
   .section--news .news__container .news__item .news__image img {
@@ -1358,7 +1347,6 @@ table th {
   .hero-container .home-texture .hero .headline {
     margin-top: 10px;
   }
-
   .section--benefits .container {
     width: 100%;
   }
@@ -1369,18 +1357,15 @@ table th {
     width: 100%;
     padding: 20px 0 20px;
   }
-
   .section--understand .section--split .column--item {
     padding: 50px 0 20px;
   }
-
   .section--specs p {
     text-align: justify;
   }
   .section--specs img {
     width: 100%;
   }
-
   .section--supporters .supporters--list {
     flex-wrap: wrap;
     align-items: center;
@@ -1393,7 +1378,6 @@ table th {
   .section--supporters .supporters--list .supporter img {
     padding: 0 5%;
   }
-
   .section--news .news__container {
     justify-content: center;
     margin: 20px 0 0;
@@ -1637,7 +1621,6 @@ table th {
   .posts {
     padding-right: 0;
   }
-
   .post__footer {
     font-size: 12px;
   }
@@ -1645,7 +1628,6 @@ table th {
     display: flex;
     align-items: center;
   }
-
   .news--container {
     flex-direction: column-reverse;
   }
@@ -1811,7 +1793,7 @@ table th {
   content: "";
   width: 100%;
   height: 80px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2029,7 +2011,6 @@ table th {
   .rs-search .rs-search__item span {
     right: 10px;
   }
-
   .resource-post .post.no-tutorial {
     width: 90%;
   }
@@ -2041,7 +2022,6 @@ table th {
   .resource-post .sidebar-post {
     display: none;
   }
-
   .resources--list .resource--item {
     width: 100%;
   }

@@ -1,8 +1,9 @@
 [
-    {
-        "uri": "/../about/_index",
-        "title": "About",
-        "content": "",
-        "tags": []
-    }
+       {
+              "uri": "/../about/_index",
+              "title": "About",
+              "content": "",
+              "tags": [],
+              "categories": []
+       }
 ]
