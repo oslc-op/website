@@ -115,7 +115,7 @@ HugoLunr.prototype.readFile = function(filePath){
 		'tags': tags, 
 		'author': meta.data.author,
 		'categories': categories,
-		'date': meta.categories.date
+		// 'date': meta.categories.date
 	};
 	self.list.push(item);
 }

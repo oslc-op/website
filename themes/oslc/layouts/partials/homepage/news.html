@@ -19,7 +19,7 @@
             {{ if .Params.summary }}
               {{ .Params.summary }}
             {{ else }}
-              {{ .Summary }}
+              {{ .Content | plainify | truncate (.Site.Params.summaryLength | default 200) }}
             {{ end }}
           </div>
         </div>
