@@ -24,7 +24,7 @@
     content="https://open-services.net/img/logo.png"
   />
   
-    <meta name="generator" content="Hugo 0.97.0" />
+    <meta name="generator" content="Hugo 0.148.2">
 
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800"
@@ -36,8 +36,8 @@
   />
 
   
-  <link href="../../css/third-party.css" rel="stylesheet" />
-  <link href="../../css/oslc.css" rel="stylesheet" />
+  <link href="/css/third-party.css" rel="stylesheet" />
+  <link href="/css/oslc.css" rel="stylesheet" />
   
   
   <!--[if lt IE 9]>
@@ -47,12 +47,12 @@
   
 
   
-  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="../../img/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
 
   <link
     rel="alternate"
-    href="../../index.xml"
+    href="/index.xml"
     type="application/rss+xml"
     title="OSLC - Open Services for Lifecycle Collaboration"
   />
@@ -67,34 +67,34 @@
 
       <div class="oasis-header">
     <div class="container container__big">
-        <img src="../../img/OASIS-Primary-Logo-Mono-White.png">
+        <img src="/img/OASIS-Primary-Logo-Mono-White.png">
     </div>
 </div>
 <header>
   <nav class="nav">
     <div class="container container__big">
-      <a href="../../">
+      <a href="/">
         <div class="nav__logo">
-          <img src="../../img/logo.png" alt="Logo" />
+          <img src="/img/logo.png" alt="Logo" />
         </div>
       </a>
       <div class="links">
         <div class="nav__links">
           
           
-          <a href="../../why" class="nav__item">Why OSLC?</a>
+          <a href="/why" class="nav__item">Why OSLC?</a>
           
           <a href="https://oslc.github.io/developing-oslc-applications/" class="nav__item">Get started</a>
           
-          <a href="../../specifications" class="nav__item">Specs</a>
+          <a href="/specifications" class="nav__item">Specs</a>
           
-          <a href="../../news/" class="nav__item">News</a>
+          <a href="/news/" class="nav__item">News</a>
           
-          <a href="../../resources/" class="nav__item">Resources</a>
+          <a href="/resources/" class="nav__item">Resources</a>
           
-          <a href="../../about" class="nav__item">About</a>
+          <a href="/about" class="nav__item">About</a>
           
-          <a href="../../contribute/" class="nav__item">Contribute</a>
+          <a href="/contribute/" class="nav__item">Contribute</a>
           
           <a href="https://oslcfest.open-services.net/" class="nav__item">OSLCFest</a>
           
@@ -287,8 +287,7 @@
 <li>Focus first on identifying the basic containers implemented by the tool and expose each of these containers as a single ServiceProvider. Don’t attempt to create individual ServiceProviders for each type of resource. For example, if the data partitioning concept in your tool is project, create a single ServiceProvider for each project, even if the project can contain Defects, Risks, Issues, Comments, and Approvals.</li>
 <li>Identify a single URL for each ServiceProvider that will be used both as the URL to which new resources can be <code>POST</code>ed (the creation URI) and the URL of the RDF container resource that lists the existing resources of the container (the queryBase URI).</li>
 <li>Within each ServiceProvider’s representation, create a single Service with a single CreationFactory and a single QueryCapability each referencing the single URL established in step 2. Example 1 above shows exactly this pattern.</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <h2 id="what-does-a-querybase-resource-look-like">What does a queryBase resource look like?</h2>
 <p>The queryBase resource identified by a queryBase URI of a ServiceProvider is an RDF Container resource that lists resources in the ServiceProvider.</p>
 <p>If a ServiceProvider has multiple queryBases, it is undefined which queryBases a resource will show up in after being POSTed to a creation URI.</p>
@@ -317,8 +316,7 @@
 <p>The intention of some OSLC properties – like <code>oslc:service</code>, <code>oslc:creationFactory</code> and <code>oslc:queryCapability</code> – is that they only be used to reference blank nodes, never to reference true HTTP resources. To be able to express this intent, the OSLC Core specifies a number of OSLC-specific value types that are used in the specification and can also be found in <code>ResourceShape</code> (see later) property descriptions. These are the “resource value types”, <code>Resource</code>, <code>Local Resource</code>, and <code>AnyResource</code>. <code>Resource</code> means that the value will be an RDF URI reference. <code>Local Resource</code> means the value will be an RDF blank node identifier and <code>AnyResource</code> means it can be either. The OSLC specification allows you to further specify whether the referenced resource must be defined inside the same representation that contains the reference, in a separate document, or either, using the following values for the representation property of the property: <code>http://open-service.net/ns/core#Reference</code>, <code>http://open-service.net/ns/core#Inline</code>, or <code>http://open-service.net/ns/core#Either</code></p>
 <blockquote>
 <p><strong>Guidance - Usage of the representation property</strong></p>
-<p>There is ongoing discussion in the OSLC Core workgroup on the proper meaning and usage of the representation property. Defensive OSLC clients should always assume that a URI reference found in the representation of one resource may identify another resource on the web with its own independent representation or may – via a fragment identifier in the URL - identify a resource whose representation is part of the current representation. Similarly defensive clients should assume that an identifier may be either a URI reference or a blank node identifier - this is the standard RDF rule. Before dereferencing a URIRef that is found as the value of a property in an RDF graph, clients should look to see whether the information they are looking for about the resource identified by that URIRef is already included in the current graph in the form of triples with that URIRef as the subject. Also before dereferencing a URIRef, clients should verify that it does not circularly identify the current graph, perhaps with the addition only of a fragment identifier.</p>
-</blockquote>
+<p>There is ongoing discussion in the OSLC Core workgroup on the proper meaning and usage of the representation property. Defensive OSLC clients should always assume that a URI reference found in the representation of one resource may identify another resource on the web with its own independent representation or may – via a fragment identifier in the URL - identify a resource whose representation is part of the current representation. Similarly defensive clients should assume that an identifier may be either a URI reference or a blank node identifier - this is the standard RDF rule. Before dereferencing a URIRef that is found as the value of a property in an RDF graph, clients should look to see whether the information they are looking for about the resource identified by that URIRef is already included in the current graph in the form of triples with that URIRef as the subject. Also before dereferencing a URIRef, clients should verify that it does not circularly identify the current graph, perhaps with the addition only of a fragment identifier.</p></blockquote>
 <h2 id="unknown-properties-and-content">Unknown properties and content</h2>
 <p>As described before, OSLC depends on an open model for resource state. The specification defines some standard properties for integration, but also assumes that any given resource may have many more properties than are defined in the specification. Some tools will only support a fixed set of properties for a particular type of resource and may provide a <code>ResourceShape</code> that lists that set of properties. Clients should still assume that the set of properties for a type in an arbitrary tool may be open. This can happen several different ways. One is that the tool specifically supports an extensible set of properties in the sense that different resources of the same type may not all have the same properties. Another possibility is that the list of properties is fixed at any one time, but that older or newer resources may have different properties.</p>
 <p>For OSLC Defined Resources, clients should assume that an OSLC server implementation may discard triples for properties of which it does not have prior knowledge - an OSLC implementation may discard property values that are not part of the resource definition or Resource Shape known by the server.</p>
@@ -421,8 +419,7 @@ toolA:defect1
 </code></pre><blockquote>
 <p><strong>Guidance – implement simple validations for create and update</strong></p>
 <p>OSLC implementations should try to make it easy for programmatic clients to create and update resources. If OSLC implementations associate a lot of very complex validation rules that need to be satisfied in order for an update or creation to be accepted, it becomes difficult or impossible for a client to use the protocol without extensive additional information specific to the tool that needs to be communicated outside of the OSLC specifications. The preferred approach for tools is to allow creation and update based on the sort of simple validations that can be communicated programmatically through a <code>ResourceShape</code>. Additional checks that are required to implement more complex policies and constraints should result in the resource being flagged as requiring more attention, but should not cause the basic create or update to fail.</p>
-<p>It is possible that some tools or tool installations will have very strict requirements for complex constraints for data, and that they are unable or unwilling to allow the creation of resources that do not satisfy all those constraints even temporarily. Those tools or tool installations should be aware that as a consequence they may be making it difficult or impossible for external software to use their OSLC protocols without extensive customization.</p>
-</blockquote>
+<p>It is possible that some tools or tool installations will have very strict requirements for complex constraints for data, and that they are unable or unwilling to allow the creation of resources that do not satisfy all those constraints even temporarily. Those tools or tool installations should be aware that as a consequence they may be making it difficult or impossible for external software to use their OSLC protocols without extensive customization.</p></blockquote>
 <p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#Overview">ResourceShapes</a> in the OSLC Core specification</p>
 <h1 id="query-mechanisms">Query mechanisms</h1>
 <p>Finding information by performing a <code>GET</code> on a web of OSLC resources or on a ServiceProvider is a powerful, general mechanism, but sometimes it is inconvenient or inefficient to find specific information this way. To help with this problem, OSLC provides 2 distinct query mechanisms to find information in resources faster.</p>
@@ -574,15 +571,13 @@ http://example.com/proj1?oslc.where=dcterms:creator=&lt;http:example.com/users/3
 <li><strong>SPARQL</strong> Another option is to implement SPARQL. Since SPARQL is a sophisticated query language, it is probably not reasonable to expect that tools will implement a SPARQL query capability by transforming it to a different underlying data model and query language supported by the tool’s implementation data management layer, as might be practical for implementing OSLC Query. However, there are a number of freely-available open-source RDF triple-store implementations that offer complete SPARQL query implementations, so another implementation strategy is to make a copy of the most recent version of every resource and put it in an RDF triple-store, keep it up to date in real time, and then offer OSLC users SPARQL query using the SPARQL capabilities of the RDF triple store.
 Of course, if the state of the resources in the tool fits well with the relational data model, implementers could use the same technique with RDBMS technologies to expose SQL as a query language.</li>
 <li><strong>Proprietary</strong> Implementing a proprietary query language is always an option, but it has a much lower client value, since a client is faced with the need of “learning” the proprietary query language of each tool.</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 <p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#Query_Capabilities">Query Mechanisms</a> in the OSLC Core specification</p>
 <h1 id="serviceprovidercatalog">ServiceProviderCatalog</h1>
 <p>Most tools will expose more than one ServiceProvider, and there are different reasons why it might sometimes be useful for tools to expose defined sets of ServiceProviders. OSLC provides the concept of ServiceProviderCatalog for defining such sets. A ServiceProviderCatalog also has an optional property whose value is an OAuthConfiguration. If this property is set, clients can assume that all the ServiceProviders in the list can be accessed with the same OAuth tokens.</p>
 <blockquote>
 <p><strong>Guidance for ServiceProviderCatalog usage</strong></p>
-<p>OSLC provides the concept of a ServiceProviderCatalog, but does not specify how it is used, or what the meaning is of the set of ServiceProviders defined by a ServiceProviderCatalog. Clients should refer to the documentation specific to a particular tool for guidance on how to find and use any ServiceProviderCatalogs it exposes.</p>
-</blockquote>
+<p>OSLC provides the concept of a ServiceProviderCatalog, but does not specify how it is used, or what the meaning is of the set of ServiceProviders defined by a ServiceProviderCatalog. Clients should refer to the documentation specific to a particular tool for guidance on how to find and use any ServiceProviderCatalogs it exposes.</p></blockquote>
 <p>Learn more about <a href="https://archive.open-services.net/bin/view/Main/OslcCoreSpecificationa0f1.html?sortcol=table;table=up#Service_Provider_Resources">ServiceProviderCatalog</a> in the OSLC Core specification.</p>
 <h1 id="delegated-user-interface-dialogs">Delegated user interface dialogs</h1>
 <p>As we have seen, OSLC specifies simple HTTP protocols for locating, creating, updating, reading and deleting lifecycle resources. In many cases this is very useful, but for some integration scenarios, exploiting these protocols is not the best strategy. Suppose I’m the implementer of a test management tool that has a graphical user interface and I want to allow my users to easily create defects in a defect tracking tool when a test fails, or associate the failed test case with an existing defect if one exists. I could use the OSLC protocols already described to implement this integration, but if I did that I would have to implement the user interface needed for my users to enter all the fields of a new defect, or display lists of existing ones. In addition to being a lot of work, this could result in a poor user experience, because I cannot possibly understand all the detailed validations on new defects that a particular defect tool will demand, so I cannot help my users fill in all the appropriate fields with valid values. Fortunately, OSLC offers an additional style of integration that solves these problems. This style is based on the concept of a dialog. Continuing the example above, the idea of a dialog is that instead of the test management tool implementing the UI for creating or selecting defects, it asks the defect tracking tool to display to the user a “dialog” from its own user interface for the purpose. In the case of a dialog to create a new defect, the test tools can provide initial data from the test case to the dialog to “seed” the new defect, and the test tool can also get back the URL of the defect that finally gets created. In the case of a selection dialog, the test management tool gets back the URL of the selected defect, which it can then reference from the test case.</p>
@@ -689,9 +684,9 @@ Of course, if the state of the resources in the tool fits well with the relation
     
 
     
-    <script src="../../js/third-party.js"></script>
-<script src="../../js/base.js" ></script>
-<script src="../../js/lazy-load.js" ></script>
+    <script src="/js/third-party.js"></script>
+<script src="/js/base.js" ></script>
+<script src="/js/lazy-load.js" ></script>
 
     <script>
       $(document).ready(function(){
@@ -705,7 +700,7 @@ Of course, if the state of the resources in the tool fits well with the relation
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <script async src="../../js/fb.js"></script>    
+    <script async src="/js/fb.js"></script>    
   </body>
 </html>
 

@@ -1,8 +1,9 @@
 [
-    {
-        "uri": "/../_index",
-        "title": "Open Services for Lifecycle Collaboration",
-        "content": "",
-        "tags": []
-    }
+       {
+              "uri": "/../_index",
+              "title": "Open Services for Lifecycle Collaboration",
+              "content": "",
+              "tags": [],
+              "categories": []
+       }
 ]

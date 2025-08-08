@@ -4,16 +4,15 @@
     <title>Ns on OSLC - Open Services for Lifecycle Collaboration</title>
     <link>http://open-services.net/ns/</link>
     <description>Recent content in Ns on OSLC - Open Services for Lifecycle Collaboration</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://open-services.net/ns/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://open-services.net/ns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>http://open-services.net/ns/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://open-services.net/ns/readme/</guid>
-      <description>Canonical sources  AM: Turtle Asset: XML Automation: XML LDBP: XML CM: Turtle Config: Turtle Core: Turtle EMS: XML Perfmon: XML QM: Turtle RM: Turtle TRS: Turtle  Converting RDF files  Make sure Jena is installed and its bin dir is on your PATH.   You will need Java11 (SDKMan) get Apache jena command line utilities Download from Apache Jena Releases to say ~/lib/ export JENA_HOME=~/lib/jena-4.6.1/apache-jena export PATH=$PATH:$JENA_HOME/bin Make sure JAVA_HOME is set properly Or use brew install jena  Go into a folder in the NS.</description>
+      <description>&lt;h1 id=&#34;canonical-sources&#34;&gt;Canonical sources&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AM: Turtle&lt;/li&gt;&#xA;&lt;li&gt;Asset: XML&lt;/li&gt;&#xA;&lt;li&gt;Automation: XML&lt;/li&gt;&#xA;&lt;li&gt;LDBP: XML&lt;/li&gt;&#xA;&lt;li&gt;CM: Turtle&lt;/li&gt;&#xA;&lt;li&gt;Config: Turtle&lt;/li&gt;&#xA;&lt;li&gt;Core: Turtle&lt;/li&gt;&#xA;&lt;li&gt;EMS: XML&lt;/li&gt;&#xA;&lt;li&gt;Perfmon: XML&lt;/li&gt;&#xA;&lt;li&gt;QM: Turtle&lt;/li&gt;&#xA;&lt;li&gt;RM: Turtle&lt;/li&gt;&#xA;&lt;li&gt;TRS: Turtle&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;converting-rdf-files&#34;&gt;Converting RDF files&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Make sure Jena is installed and its &lt;code&gt;bin&lt;/code&gt; dir is on your PATH.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You will need Java11 (&lt;a href=&#34;https://sdkman.io&#34;&gt;SDKMan&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;get &lt;a href=&#34;https://jena.apache.org/documentation/tools/index.html&#34;&gt;Apache jena command line utilities&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Download from &lt;a href=&#34;https://jena.apache.org/download/index.cgi&#34;&gt;Apache Jena Releases&lt;/a&gt; to say &lt;code&gt;~/lib/&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;export JENA_HOME=~/lib/jena-4.6.1/apache-jena&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;export PATH=$PATH:$JENA_HOME/bin&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Make sure JAVA_HOME is set properly&lt;/li&gt;&#xA;&lt;li&gt;Or use &lt;code&gt;brew install jena&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Go into a folder in the NS.&lt;/li&gt;&#xA;&lt;li&gt;Run &lt;code&gt;../../../bin/conneg.sh &amp;lt;file&amp;gt;&lt;/code&gt;. where &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; is the name of a vocab or shape ttl file wihout the .ttl extension&lt;/li&gt;&#xA;&lt;li&gt;Make sure exit code is &lt;code&gt;0&lt;/code&gt; and the files are intact.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;checking-all-files&#34;&gt;Checking all files&lt;/h1&gt;&#xA;&lt;p&gt;find . -type f -regextype posix-extended -regex &amp;lsquo;.*.(nt|jsonld|xml|rdf|ttl)&amp;rsquo; -print0 | xargs -0 -I{} riot &amp;ndash;check &amp;ndash;strict &amp;ndash;sink {}&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
