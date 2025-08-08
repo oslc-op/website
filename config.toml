@@ -1,12 +1,21 @@
 baseURL = "//open-services.net"
 languageCode = "en-us"
 title = "OSLC - Open Services for Lifecycle Collaboration"
+ignoreLogs = ['warning-goldmark-raw-html']
 theme = "oslc"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
 layoutDir = "partials"
 disableLiveReload = false
 watch = true
 uglyURL = true
-paginate = 15
+[pagination]
+    pagerSize = 15
 relativeURLs = true
 
 disqusShortname = "yourdiscussshortname"
@@ -108,9 +117,10 @@ disqus_url = ""
     date_format = "January 2, 2006"
 
     logo = "/img/logo.png"
+    summaryLength = 160
 
 [Permalinks]
-    news = "/news/:filename/"
+    news = "/news/:contentbasename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]
