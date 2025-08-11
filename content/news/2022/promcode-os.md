@@ -10,4 +10,4 @@ banner = "img/news-default.jpg"
 
 OASIS is pleased to announce that the [OSLC PROMCODE Version 1.0](https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html) has been published after reaching the OASIS Standard status.
 
-OASIS congratulates the members of the OSLC Open Project and to the community of implementers, developers and users who have brought the work successfully to this milestone.
+OASIS congratulates the members of the OSLC Open Project and the community of implementers, developers and users who have brought the work successfully to this milestone.
