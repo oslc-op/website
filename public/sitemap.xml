@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://open-services.net/news/</loc>
+    <lastmod>2024-04-25T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://open-services.net/news/sysml-psd/</loc>
+    <lastmod>2024-04-25T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://open-services.net/news/config-os/</loc>
+    <lastmod>2023-07-23T12:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://open-services.net/resources/2023-tutorial_-_digital_threads_with_oslc/</loc>
     <lastmod>2023-07-16T22:20:00+00:00</lastmod>
   </url><url>
@@ -11,10 +20,10 @@
     <loc>http://open-services.net/tags/tutorial/</loc>
     <lastmod>2023-07-16T22:20:00+00:00</lastmod>
   </url><url>
-    <loc>http://open-services.net/news/chg-mgmt-oasis-stnd/</loc>
-    <lastmod>2021-05-27T18:25:00+02:00</lastmod>
+    <loc>http://open-services.net/news/promcode-os/</loc>
+    <lastmod>2022-03-11T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://open-services.net/news/</loc>
+    <loc>http://open-services.net/news/chg-mgmt-oasis-stnd/</loc>
     <lastmod>2021-05-27T18:25:00+02:00</lastmod>
   </url><url>
     <loc>http://open-services.net/contribute/ct-groups/</loc>

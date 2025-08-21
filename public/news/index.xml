@@ -6,8 +6,29 @@
     <description>Recent content in News on OSLC - Open Services for Lifecycle Collaboration</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 May 2021 18:25:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2024 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://open-services.net/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSLC Systems Modeling Language Version 2.0 PSD published</title>
+      <link>http://open-services.net/news/sysml-psd/</link>
+      <pubDate>Thu, 25 Apr 2024 12:00:00 +0000</pubDate>
+      <guid>http://open-services.net/news/sysml-psd/</guid>
+      <description>&lt;p&gt;OSLC Open Project is pleased to announce that the &lt;a href=&#34;https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html&#34;&gt;OSLC Systems Modeling Language Version 2.0 Project Specification Draft 01&lt;/a&gt; has been published.&lt;/p&gt;&#xA;&lt;p&gt;OSLC Open Project thanks the community of implementers, developers and users who have brought the work successfully to this milestone and welcomes feedback on this Project Specification Draft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OSLC Configuration Management Version 1.0 published as an OASIS Standard</title>
+      <link>http://open-services.net/news/config-os/</link>
+      <pubDate>Sun, 23 Jul 2023 12:00:00 +0000</pubDate>
+      <guid>http://open-services.net/news/config-os/</guid>
+      <description>&lt;p&gt;OASIS is pleased to announce that the &lt;a href=&#34;https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html&#34;&gt;OSLC Configuration Management Version 1.0&lt;/a&gt; has been published after reaching the OASIS Standard status.&lt;/p&gt;&#xA;&lt;p&gt;OASIS congratulates the members of the OSLC Open Project and the community of implementers, developers and users who have brought the work successfully to this milestone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OSLC PROMCODE reaches OASIS Standard status</title>
+      <link>http://open-services.net/news/promcode-os/</link>
+      <pubDate>Fri, 11 Mar 2022 12:00:00 +0000</pubDate>
+      <guid>http://open-services.net/news/promcode-os/</guid>
+      <description>&lt;p&gt;OASIS is pleased to announce that the &lt;a href=&#34;https://docs.oasis-open.org/oslc-promcode/promcode/v1.0/os/promcode-spec.html&#34;&gt;OSLC PROMCODE Version 1.0&lt;/a&gt; has been published after reaching the OASIS Standard status.&lt;/p&gt;&#xA;&lt;p&gt;OASIS congratulates the members of the OSLC Open Project and the community of implementers, developers and users who have brought the work successfully to this milestone.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Change Management v3.0 approved as the first OASIS Standard from an Open Project</title>
       <link>http://open-services.net/news/chg-mgmt-oasis-stnd/</link>
