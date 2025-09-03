@@ -48,7 +48,7 @@ The Project Governing Board provides top-level guidance and strategic direction 
 Current PGB members:
 
 - Jim Amsden (co-chair, IBM)
-- Jad El-Khoury (co-chair, KTH Royal Institute of Technology)
+- Ernest Mah (IBM)
 
 ## Technical Steering Committee (TSC)
 
@@ -71,8 +71,8 @@ The OSLC Open Project relies on its Sponsors to fund development of the interope
 """
 
 sponsors_img_list = [
-  "accenture_logo.png",
   "ibm_logo.png"
+  "mid-logo.png"
   
 ]
 
