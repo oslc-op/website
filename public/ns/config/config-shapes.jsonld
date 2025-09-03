@@ -1,0 +1,2315 @@
+{
+    "@graph": [
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider",
+            "dcterms:description": {
+                "@value": "A link to the resource's OSLC Service Provider.\nIf the subject resource is available from an application that implements multiple domain specifications, there can be multiple values for this property.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:range": {
+                "@id": "oslc:ServiceProvider"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:serviceProvider"
+            },
+            "oslc:name": "serviceProvider",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b0",
+            "dcterms:description": {
+                "@value": "Date and time this configuration was committed as a baseline.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:committed"
+            },
+            "oslc:name": "committed",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b1",
+            "oslc:allowedValue": [
+                {
+                    "@id": "oslc_auto:complete"
+                },
+                {
+                    "@id": "oslc_auto:queued"
+                },
+                {
+                    "@id": "oslc_auto:new"
+                },
+                {
+                    "@id": "oslc_auto:canceling"
+                },
+                {
+                    "@id": "oslc_auto:inProgress"
+                },
+                {
+                    "@id": "oslc_auto:canceled"
+                }
+            ],
+            "dcterms:description": {
+                "@value": "The state of the activity, as defined by OSLC Automation states.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:name": "state",
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "@type": "oslc:Property",
+            "oslc:propertyDefinition": {
+                "@id": "oslc_auto:state"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#acceptedBy",
+            "dcterms:description": {
+                "@value": "A type of configuration that <a href=\"config-resources.html#matching_contribs\">accepts</a> this configuration as a contribution.\n{{A configuration with no value for `oslc_config:acceptedBy` MUST NOT be used as a contribution to any other configuration}} -\nthat is, it can only be a root of a configuration hierarchy\n(or a stand-alone configuration if there is also no value for `oslc_config:accepts`). Such configurations should be rare.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:acceptedBy"
+            },
+            "oslc:name": "acceptedBy",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#ContributionShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "_:b2"
+                },
+                {
+                    "@id": "_:b3"
+                },
+                {
+                    "@id": "_:b4"
+                },
+                {
+                    "@id": "_:b5"
+                }
+            ],
+            "dcterms:title": "A contribution to a configuration.",
+            "oslc:describes": {
+                "@id": "oslc_config:Contribution"
+            },
+            "@type": "oslc:ResourceShape"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#modified",
+            "dcterms:description": {
+                "@value": "Timestamp of latest resource modification. {{Each resource SHOULD have one instance of the `dcterms:modified` property}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:modified"
+            },
+            "oslc:name": "modified",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b2",
+            "dcterms:description": {
+                "@value": "A reference to a configuration overridden by the configuration of this contribution.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:overrides"
+            },
+            "oslc:name": "overrides",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b3",
+            "dcterms:description": {
+                "@value": "An indication of the order of the contribution, relative to other contributions.\nContributions are sorted lexicographically on the Unicode code points of this value to resolve component skew.\nTo ensure predictable sorting regardless of implementation and locale, {{the `oslc_config:contributionOrder` string SHOULD be restricted to ASCII characters}}.\n{{Servers MUST support at least 64 characters in this string}}.\nThis property is read-only for contributions to a baseline, and modifiable for contributions to a stream.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:contributionOrder"
+            },
+            "oslc:name": "contributionOrder",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b4",
+            "dcterms:description": {
+                "@value": "The contributed configuration.\nThis property is read-only for contributions to a baseline, and modifiable for contributions to a stream.\n{{On a PUT or POST of a Stream resource and its Contributions, this contributed configuration SHOULD be unique amongst the set of configurations contributed to a given parent configuration}}.\n{{a server MAY collapse multiple contributions for the same configuration to a single contribution}}.\nDuring such a reduction of multiple Contribution resources to a single Contribution resource, this specification does not define the contributionOrder value in the merged result.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:configuration"
+            },
+            "oslc:name": "configuration",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b5",
+            "dcterms:description": {
+                "@value": "A resource type URI.\nClients can infer a resource type of `oslc_config:Contribution`,\nbut there is no requirement for servers to materialize this triple in the RDF representation.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#branch",
+            "dcterms:description": {
+                "@value": "An indicator of the intended purpose of the configuration.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:branch"
+            },
+            "oslc:name": "branch",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b6",
+            "dcterms:description": {
+                "@value": "A resource type URI.\n{{A stream MUST have at least the resource type `oslc_config:Stream`}}.\nClients can infer a resource type of `oslc_config:Configuration`,\nbut there is no requirement for servers to materialize this triple in the RDF representation.\n{{Other types MAY be added, including types that are used in `oslc_config:accepts` and `oslc_config:acceptedBy` properties\nto define which <a href=\"config-resources.html#matching_contribs\">matching configurations</a> may be added as contributions to this configuration,\nor to which this configuration may be added as a contribution}}.\n{{Servers MAY treat this property as read-only}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#",
+            "dcterms:issued": {
+                "@value": "2023-07-23",
+                "@type": "xsd:date"
+            },
+            "dcterms:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            "rdfs:label": "Resource Shapes for OSLC Configuration Management",
+            "dcterms:title": "Resource Shapes for OSLC Configuration Management",
+            "dcterms:description": {
+                "@value": "Shapes for resources defined by OSLC Configuration Management.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "dcterms:hasVersion": "PS",
+            "dcterms:dateCopyrighted": "2012-2023",
+            "@type": "oslc:ResourceShapeConstraints",
+            "dcterms:source": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/config-shapes.ttl"
+            },
+            "dcterms:isPartOf": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html"
+            },
+            "dcterms:publisher": {
+                "@id": "https://open-services.net/about/"
+            }
+        },
+        {
+            "@id": "_:b7",
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:committer"
+            },
+            "@type": "oslc:Property",
+            "dcterms:description": {
+                "@value": "The entity that checked in this version.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:name": "committer",
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#accepts",
+            "dcterms:description": {
+                "@value": "A type of configuration that is <a href=\"config-resources.html#matching_contribs\">acceptable as a contribution</a> to this stream.\nA configuration with no value for this predicate accepts no contributions -\nthat is, it can only be a leaf in a configuration hierarchy.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:accepts"
+            },
+            "oslc:name": "accepts",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b8",
+            "dcterms:description": {
+                "@value": "A reference to a resource providing more details about the progress or result of the activity.\nFor successful or partially successful operations, {{the `dcterms:references` property MUST be present, providing a link to the primary resource created or affected by the operation}}.\nFor completely unsuccessful activities, this property may be missing.\n{{For activities still in progress, this MAY be a reference to a resource providing further information; which MAY be provided inline}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:references"
+            },
+            "oslc:name": "references",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b9",
+            "dcterms:description": {
+                "@value": "A resource type URI.\n{{A baseline MUST have at least the resource type `oslc_config:Baseline`}}.\nClients can infer a resource type of `oslc_config:Configuration`,\nbut there is no requirement for servers to materialize this triple in the RDF representation.\n{{Other types MAY be added, including types that are used in `oslc_config:accepts` and `oslc_config:acceptedBy` properties}}\nto define which <a href=\"config-resources.html#matching_contribs\">matching configurations</a> may be added as contributions to this configuration,\nor to which this configuration may be added as a contribution.\n{{Servers MAY treat the `rdf:type` property of a baseline as read-only}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b10",
+            "dcterms:description": {
+                "@value": "A short human-readable identifier for the version of a resource.\n{{All versioned resources SHOULD have this property;\nwhere the property is present, this identifier MUST be unique amongst all currently existing versions of the same concept resource.\nThe subject of this property SHOULD be the concept resource URI}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:versionId"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "versionId",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#ActivityShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "_:b1"
+                },
+                {
+                    "@id": "_:b8"
+                },
+                {
+                    "@id": "_:b11"
+                },
+                {
+                    "@id": "_:b12"
+                },
+                {
+                    "@id": "_:b13"
+                },
+                {
+                    "@id": "_:b14"
+                },
+                {
+                    "@id": "_:b15"
+                },
+                {
+                    "@id": "_:b16"
+                },
+                {
+                    "@id": "_:b17"
+                }
+            ],
+            "oslc:describes": {
+                "@id": "oslc_config:Activity"
+            },
+            "dcterms:title": "The shape of an activity.",
+            "dcterms:description": {
+                "@value": "An activity is a read-only resource representing a long-running operation, such as recursive baseline or stream creation.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "@type": "oslc:ResourceShape"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#created",
+            "dcterms:description": {
+                "@value": "Timestamp of resource creation. {{Each resource SHOULD have one instance of the `dcterms:created` property}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:created"
+            },
+            "oslc:name": "created",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#creator",
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:creator"
+            },
+            "oslc:name": "creator",
+            "dcterms:description": {
+                "@value": "Creator or creators of the resource.\nThe link target is usually a `foaf:Person` or `foaf:Agent`, but could be any type.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "@type": "oslc:Property",
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            }
+        },
+        {
+            "@id": "_:b11",
+            "dcterms:description": {
+                "@value": "A name for the activity, or current phase of the activity.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:title"
+            },
+            "oslc:name": "title",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b12",
+            "dcterms:description": {
+                "@value": "Descriptive text about the progress of the activity, represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:progressMessage"
+            },
+            "oslc:name": "progressMessage",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b13",
+            "dcterms:description": {
+                "@value": "The percentage (0-100) of completion, if known.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:integer"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_auto:progress"
+            },
+            "oslc:name": "progress",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b14",
+            "dcterms:description": {
+                "@value": "The result of the activity, as defined by OSLC Automation verdicts.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:allowedValue": [
+                {
+                    "@id": "oslc_auto:warning"
+                },
+                {
+                    "@id": "oslc_auto:passed"
+                },
+                {
+                    "@id": "oslc_auto:fail"
+                },
+                {
+                    "@id": "oslc_auto:error"
+                },
+                {
+                    "@id": "oslc_auto:unavailable"
+                }
+            ],
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_auto:verdict"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "@type": "oslc:Property",
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:name": "verdict"
+        },
+        {
+            "@id": "_:b15",
+            "dcterms:description": {
+                "@value": "Timestamp of the last change of status.\nIf this property is missing, the time of creation can be taken to be the same as the last change of status.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:modified"
+            },
+            "oslc:name": "modified",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b16",
+            "dcterms:description": {
+                "@value": "A resource type URI. {{An Activity MUST have a resource type of `oslc_config:Activity`, and MAY have other types}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b17",
+            "dcterms:description": {
+                "@value": "A warning or error issued by the activity.\n{{Instances of this property MAY appear at any time during the execution of the activity, or MAY be returned only after the activity is complete}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:range": {
+                "@id": "oslc:Error"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:error"
+            },
+            "oslc:name": "error",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b18",
+            "dcterms:description": {
+                "@value": "A resource type URI. {{A Component MUST have a resource type of `oslc_config:Component`}}.\n{{A component MAY be a <a href=\"http://www.w3.org/TR/ldp/#ldpc\">Linked Data Platform Container</a>,\ncontaining the concept resources associated with this component}}.\n{{The members of such an `oslc_config:Component` container MUST NOT be of type `oslc_config:Configuration`}};\nsub-configurations are given in the `oslc_config:contributions` property.\nNo meaning is assigned to a member of type `oslc_config:Component`;\nneither client nor server is obligated to perform any recursion through nested Components.\n{{Servers MAY treat the `rdf:type` property for a component as read-only.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b19",
+            "dcterms:description": {
+                "@value": "A reference to a resource identifying versions of the resources (configuration items) in the configuration.\nThe set of version resources identified is the union of the sets in all the selections resources.\nSince selections properties are not ordered, there is no defined meaning to a selection that appears in two or more different selections properties;\n{{servers MAY treat such multiple occurrences of selections as an error}}.\n{{Servers MAY treat this property as read-only}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Selections"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:selections"
+            },
+            "oslc:name": "selections",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b20",
+            "dcterms:description": {
+                "@value": "A resource type URI.\n{{A Selections resource MUST have at least the resource type `oslc_config:Selections`}}.\n{{Selections resources MAY also have the type `oslc_config:UnboundSelections`}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#contributor",
+            "dcterms:description": {
+                "@value": "Contributor or contributors to the resource.\nThe link target is usually a `foaf:Person` or `foaf:Agent`, but could be any type.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:contributor"
+            },
+            "oslc:name": "contributor",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b21",
+            "dcterms:description": {
+                "@value": "Indicates the stream of which this is a baseline.\nNote that the referenced resource might no longer exist (streams are mutable so can be deleted),\nbut this property remains valuable to relate all baselines of the same stream.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:baselineOfStream"
+            },
+            "oslc:name": "baselineOfStream",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b22",
+            "dcterms:description": {
+                "@value": "A selected version resource.\n{{Selected resources MUST NOT be of type `oslc_config:Configuration`}};\nsub-configurations are given in the `oslc_config:contributions` property.\nNo meaning is assigned to a selected resource of type `oslc_config:Component`.\n{{This property MAY be modifiable for selections of a change set}}.\nIf the subject has the type `oslc_config:RemoveAll`, all selections in the overriden configuration are to be ignored;\nall selections are in this and other `oslc_selects` properties of the change set.\nAny target concept or version resources (depending on the presence or absence of the type `oslc_config:UnboundSelections`)\nindicated in this selection resource are selected in this configuration.\nOtherwise, if the subject has the type `oslc_config:Removals`,\nthe indicated target concepts or versions are explicitly removed from the set of versions selected by the configuration overridden by this configuration.\nOtherwise, if the subject has only the type `oslc_config:Selections`,\nthe indicated target concept or version resources are selected by this configuration;\na change set selection overrides (replaces) the concepts or versions selected by a matching concept resource in the overridden configuration's selection,\nand adds additional selections for concept resources that are not mentioned in the overridden configuration's selection.\nSince selections properties are not ordered, there is no defined meaning to a selection that appears in two or more different selections properties of any types,\nor to a change set that include both a `oslc_config:RemoveAll` and a `oslc_config:Removals` selection;\n{{servers MAY treat occurrences of potentially conflicting selections as an error}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:selects"
+            },
+            "oslc:name": "selects",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b23",
+            "dcterms:description": {
+                "@value": "The <a href=\"http://www.w3.org/TR/ldp/#ldpc\">Linked Data Platform Container</a>\nthat contains all the baselines of this stream.\nA new baseline of this stream is created by a POST to this container.\nNote that the `baselines` property itself is immutable,\nbut the container referenced by the property is not.\n{{The container MAY have an `oslc:resourceShape` property referencing a resource shape that describes the container}}.\n{{If a container resource shape is specified, it SHOULD have a property describing the membership of the container with a\n`oslc:valueShape` referencing a resource shape that describes the additional properties that may be specified for baselines}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "ldp:Container"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:baselines"
+            },
+            "oslc:name": "baselines",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b24",
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:committer"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "committer",
+            "@type": "oslc:Property",
+            "dcterms:description": {
+                "@value": "The entity that committed this configuration as a baseline.\nThe link target is usually a `foaf:Person` or `foaf:Agent`, but could be any type.",
+                "@type": "rdf:XMLLiteral"
+            }
+        },
+        {
+            "@id": "_:b25",
+            "dcterms:description": {
+                "@value": "A resource from which this version was derived.\nThis is likely to reference a different concept resource;\nuse of `prov:wasRevisionOf` is recommended to indicate an earlier version of the same concept resource.\n{{The subject of each instance of this property MUST be the concept resource URI;\nthe object can be a version resource URI, or a concept resource URI (possibly for a non-versioned resource)}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "prov:wasDerivedFrom"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "wasDerivedFrom",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#StreamShape",
+            "dcterms:title": "The shape of a stream.",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#component"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#release"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#wasDerivedFrom"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#subject"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#acceptedBy"
+                },
+                {
+                    "@id": "_:b26"
+                },
+                {
+                    "@id": "_:b23"
+                },
+                {
+                    "@id": "_:b19"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#archived"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#branch"
+                },
+                {
+                    "@id": "_:b27"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "_:b6"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#accepts"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#description"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#title"
+                }
+            ],
+            "@type": "oslc:ResourceShape",
+            "oslc:describes": {
+                "@id": "oslc_config:Stream"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape",
+            "dcterms:description": {
+                "@value": "The URI of a Resource Shape that describes the possible properties, occurrence, value types, allowed values and labels.\nThis shape information is useful in displaying the subject resource as well as guiding clients in performing modifications.\nInstance shapes may be specific to the authenticated user associated with the request that retrieved the resource,\nthe current state of the resource, and other factors, so {{instance shapes SHOULD NOT be cached}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:range": {
+                "@id": "oslc:ResourceShape"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:instanceShape"
+            },
+            "oslc:name": "instanceShape",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId",
+            "dcterms:description": {
+                "@value": "A short and human-readable identifier for the resource, such as a number.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:shortId"
+            },
+            "oslc:name": "shortId",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#component",
+            "dcterms:description": {
+                "@value": "The component of which this is a configuration, and from which the configuration selects versions of resources in the component.\nThe component is an invariant relating the different configurations of the same 'thing'.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Component"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:component"
+            },
+            "oslc:name": "component",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#release",
+            "dcterms:description": {
+                "@value": "A link to a resource indicating a target release for the artifacts selected by this configuration.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:release"
+            },
+            "oslc:name": "release",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle",
+            "dcterms:description": {
+                "@value": "A short title for the resource, represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:shortTitle"
+            },
+            "oslc:name": "shortTitle",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#wasDerivedFrom",
+            "dcterms:description": {
+                "@value": "A stream or baseline from which this stream was first copied.\nThis property can be absent for streams created as new empty streams.\nMultiple instances of this property imply the stream was initially formed from a merge from one or more baselines.\n{{The `prov:wasDerivedFrom` property is undefined for baselines; it MAY be absent, or it MAY have the same value as `oslc_config:baselineOfStream`}}.\nIf this property is present on multiple change sets overriding the same base configuration, it implies a partial ordering of those change sets,\nidentifying change sets derived from earlier change sets on the same base.\n{{Servers SHOULD treat this property as read-only after initial creation}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "prov:wasDerivedFrom"
+            },
+            "oslc:name": "wasDerivedFrom",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier",
+            "dcterms:description": {
+                "@value": "A unique identifier for this resource.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:identifier"
+            },
+            "oslc:name": "identifier",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#subject",
+            "dcterms:description": {
+                "@value": "Tag or keyword for a resource.\nEach occurrence of a `dcterms:subject` property denotes an additional tag for the resource.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:subject"
+            },
+            "oslc:name": "subject",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy",
+            "oslc:name": "modifiedBy",
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "dcterms:description": {
+                "@value": "The entity that most recently modified the subject resource.\nThe link target is usually a `foaf:Person` or `foaf:Agent`, but could be any type.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:modifiedBy"
+            },
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b26",
+            "dcterms:description": {
+                "@value": "A reference to the immediately preceding baseline of this stream.\nMultiple instances of this property imply the stream was merged from one or more baselines,\nand no baseline of the merged result has yet been taken.\nIf the property is absent, no baseline of this stream has been taken.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Baseline"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:previousBaseline"
+            },
+            "oslc:name": "previousBaseline",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#archived",
+            "dcterms:description": {
+                "@value": "Indicates whether the subject has been marked as archived, no longer an active resource.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:boolean"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc:archived"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:name": "archived",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b27",
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueShape": {
+                "@id": "http://open-services.net/ns/config/shapes/1.0/#ContributionShape"
+            },
+            "@type": "oslc:Property",
+            "oslc:range": {
+                "@id": "oslc_config:Contribution"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:contribution"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Inline"
+            },
+            "dcterms:description": {
+                "@value": "A contribution to this configuration.\nThe set of resource versions identified by this configuration is the union of the set determined by the\n`oslc_config:selections` resources and each of the sets of resource versions identified by the contributed configurations.\nA user can request an update to a configuration to change the set of contributions;\n{{servers MAY deny such requests if any added contributions do not <a href=\"config-resources.html#matching_contribs\">match</a> this configuration}}.\n{{The target MUST be of type `oslc_config:Contribution`}}.\n{{Contribution resources MUST be returned inline with the configuration resource}}.\nIn the set of Contribution resources for a single parent configuration,\n{{there MUST be only one Contribution resource for a given contributed configuration}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:name": "contribution"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#description",
+            "dcterms:description": {
+                "@value": "Descriptive text about the resource, represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:description"
+            },
+            "oslc:name": "description",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#title",
+            "dcterms:description": {
+                "@value": "Title of the resource, represented as rich text in XHTML content.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:title"
+            },
+            "oslc:name": "title",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b28",
+            "dcterms:description": {
+                "@value": "A resource type URI.\n{{A change set configuration MUST have at least the resource type `oslc_config:ChangeSet`}}.\nClients may infer a resource type of `oslc_config:Configuration`,\nbut there is no requirement for servers to materialize this triple in the RDF representation.\nOther types may be added, including types that are used in `oslc_config:accepts` properties\nto define which <a href=\"config-resources.html#matching_contribs\">matching configurations</a> to which this configuration may be added as a contribution.\n{{Servers MAY treat this property as read-only}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b29",
+            "dcterms:description": {
+                "@value": "A resource type URI. {{One of the type properties MUST have the version resource URI as the subject,\nand MUST have a resource type of `oslc_config:VersionResource`}}.\n{{Other types for the concept resource of which this is a version SHOULD use the concept resource URI as the subject}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b30",
+            "dcterms:description": {
+                "@value": "A reference to the immediately preceding baseline of the same stream.\nMultiple instances of this property imply the stream was merged from one or more baselines before this baseline was taken.\n{{This property MAY be updated by the server to refer to earlier baselines when intermediate baselines are deleted}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Baseline"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:previousBaseline"
+            },
+            "oslc:name": "previousBaseline",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b31",
+            "dcterms:description": {
+                "@value": "Date and time this version resource was checked in. Absent for mutable (checked out) versions.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:dateTime"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:committed"
+            },
+            "oslc:name": "committed",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b32",
+            "dcterms:description": {
+                "@value": "The component to which this version belongs.\n{{Configuration Management servers SHOULD indicate the owning component for each version resource using either this property,\nor using the membership relationship from the component LDPC}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Component"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:component"
+            },
+            "oslc:name": "component",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b33",
+            "dcterms:description": {
+                "@value": "The <a href=\"http://www.w3.org/TR/ldp/#ldpc\">Linked Data Platform Container</a>\nthat contains all the streams derived from this baseline.\nA new stream derived from this baseline is created by a POST to this container;\n{{a `previousBaseline` property of the new stream MUST be set to refer to this baseline}}.\nNote that the `streams` property itself is immutable,\nbut the container referenced by the property is not.\n{{The container MAY have an `oslc:resourceShape` property referencing a resource shape that describes the container}}.\n{{If a container resource shape is specified, it should have a property describing the membership of the container with a\n``oslc:valueShape`` referencing a resource shape that describes the shapes of streams that may be created}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "ldp:Container"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:streams"
+            },
+            "oslc:name": "streams",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#VersionResourceShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#description"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "_:b34"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#archived"
+                },
+                {
+                    "@id": "_:b25"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#title"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle"
+                },
+                {
+                    "@id": "_:b7"
+                },
+                {
+                    "@id": "_:b32"
+                },
+                {
+                    "@id": "_:b10"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId"
+                },
+                {
+                    "@id": "_:b29"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider"
+                },
+                {
+                    "@id": "_:b35"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape"
+                },
+                {
+                    "@id": "_:b36"
+                },
+                {
+                    "@id": "_:b31"
+                }
+            ],
+            "@type": "oslc:ResourceShape",
+            "oslc:describes": {
+                "@id": "oslc_config:VersionResource"
+            },
+            "dcterms:title": "{{The shape of a versioned resource: all versioned resources MUST match this shape}}.\n{{Versioned resources SHOULD match other shapes appropriate for their types - that is, they MAY have additional\nproperties and property constraints beyond those defined here}}."
+        },
+        {
+            "@id": "_:b34",
+            "dcterms:description": {
+                "@value": "The concept resource of which this resource is a version. {{The subject of this property MUST be the version resource URI}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:isVersionOf"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:name": "isVersionOf",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b35",
+            "dcterms:description": {
+                "@value": "A resource from which this version was derived.\nThis is likely to reference an earlier version of the same concept resource;\nuse of `prov:wasDerivedFrom` is recommended to indicate an earlier version of a different concept resource.\n{{The subject of each instance of this property MUST be the concept resource URI; the object is likely to be a version resource URI}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "prov:wasRevisionOf"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "wasRevisionOf",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b36",
+            "dcterms:description": {
+                "@value": "Tag or keyword for a resource.\nEach occurrence of a `dcterms:subject` property denotes an additional tag for the resource.\n{{Tags on versioned resources SHOULD be modifiable even if the resource is otherwise immutable (checked in)}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:subject"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "subject",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b37",
+            "oslc:representation": {
+                "@id": "oslc:Inline"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Contribution"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:name": "contribution",
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "@type": "oslc:Property",
+            "dcterms:description": {
+                "@value": "A contribution to this baseline.\nThe set of resource versions identified by this baseline is the union of the set determined by the\n`oslc_config:selections` resources and each of the sets of resource versions identified by the contributed baselines.\n{{The target MUST be of type `oslc_config:Contribution`}}.\n{{Contribution resources MUST be returned inline with the baseline resource}}.\n{{In the set of Contribution resources for a single parent baseline,\nthere MUST be only one Contribution resource for a given contributed baseline}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:contribution"
+            },
+            "oslc:valueShape": {
+                "@id": "http://open-services.net/ns/config/shapes/1.0/#ContributionShape"
+            }
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#BaselineShape",
+            "oslc:property": [
+                {
+                    "@id": "_:b33"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle"
+                },
+                {
+                    "@id": "_:b38"
+                },
+                {
+                    "@id": "_:b39"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#acceptedBy"
+                },
+                {
+                    "@id": "_:b30"
+                },
+                {
+                    "@id": "_:b40"
+                },
+                {
+                    "@id": "_:b41"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier"
+                },
+                {
+                    "@id": "_:b24"
+                },
+                {
+                    "@id": "_:b42"
+                },
+                {
+                    "@id": "_:b43"
+                },
+                {
+                    "@id": "_:b0"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#archived"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape"
+                },
+                {
+                    "@id": "_:b37"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#component"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#wasDerivedFrom"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#release"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider"
+                },
+                {
+                    "@id": "_:b21"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "_:b9"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId"
+                }
+            ],
+            "@type": "oslc:ResourceShape",
+            "oslc:describes": {
+                "@id": "oslc_config:Baseline"
+            },
+            "dcterms:title": "The shape of a baseline. {{Properties of a baseline defined in this specification MUST be read-only unless stated otherwise}}."
+        },
+        {
+            "@id": "_:b38",
+            "dcterms:description": {
+                "@value": "Tag or keyword for a resource.\nEach occurrence of a `dcterms:subject` property denotes an additional tag for the resource.\n{{Tags on baselines MUST be modifiable}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "xsd:string"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:subject"
+            },
+            "oslc:name": "subject",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b39",
+            "dcterms:description": {
+                "@value": "Descriptive text about the resource, represented as rich text in XHTML content.\n{{The description of a baseline MAY be modifiable}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:description"
+            },
+            "oslc:name": "description",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b40",
+            "dcterms:description": {
+                "@value": "Contributor or contributors to the resource.\nThe link target is usually a `foaf:Person` or `foaf:Agent`, but could be any type.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:contributor"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "@type": "oslc:Property",
+            "oslc:range": [
+                {
+                    "@id": "foaf:Agent"
+                },
+                {
+                    "@id": "foaf:Person"
+                }
+            ],
+            "oslc:name": "contributor",
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            }
+        },
+        {
+            "@id": "_:b41",
+            "dcterms:description": {
+                "@value": "A reference to a resource identifying immutable versions of the resources (configuration items) in the configuration.\nThe set of version resources identified is the union of the sets in all the selections resources.\nSince selections properties are not ordered, there is no defined meaning to a selection that appears in two or more different selections properties;\n{{servers MAY treat such multiple occurrences of selections as an error}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Selections"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:selections"
+            },
+            "oslc:name": "selections",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b42",
+            "dcterms:description": {
+                "@value": "An indicator of the intended purpose of the baseline.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Either"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:branch"
+            },
+            "oslc:name": "branch",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b43",
+            "dcterms:description": {
+                "@value": "Title of the resource, represented as rich text in XHTML content.\n{{The title of a baseline SHOULD be modifiable}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "rdf:XMLLiteral"
+            },
+            "oslc:readOnly": {
+                "@value": "false",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "dcterms:title"
+            },
+            "oslc:name": "title",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b44",
+            "dcterms:description": {
+                "@value": "{{If the selection type is not `oslc_config:UnboundSelections`,\nthe target resource MUST be a version resource}}.\nIf the selection type is `oslc_config:UnboundSelections`,\nthe target is a concept URI for a concept resource that should be in the configuration,\nbut for which no version is determined by this selection.\nUnbound selections can be bound to specific versions by mechanisms not defined by this specification\n(such as effectivity parameters, variability parameters, etc.), or may be left unbound,\nin which case the configuration may represent an incomplete or abstract view of a system.\n{{Selected resources MUST NOT be of type `oslc_config:Configuration`}};\nsub-configurations are given in the `oslc_config:contributions` property.\nNo meaning is assigned to a selected resource of type `oslc_config:Component`.\n{{This property is read-only for selections of a baseline, but MAY be modifiable for selections of a stream}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:selects"
+            },
+            "oslc:name": "selects",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#ChangeSetShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#component"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#release"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId"
+                },
+                {
+                    "@id": "_:b45"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#branch"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#archived"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape"
+                },
+                {
+                    "@id": "_:b46"
+                },
+                {
+                    "@id": "_:b28"
+                },
+                {
+                    "@id": "_:b47"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#subject"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#accepts"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#acceptedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#description"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#title"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle"
+                }
+            ],
+            "oslc:describes": {
+                "@id": "oslc_config:ChangeSet"
+            },
+            "@type": "oslc:ResourceShape",
+            "dcterms:title": "The shape of a ChangeSet.",
+            "dcterms:description": {
+                "@value": "A ChangeSet is a mutable configuration (a type of stream) that replaces, or identifies a set of changes from, the configuration identified by the `oslc_config:overrides` property.\nThat overridden configuration may be either a stream or a baseline, but a change set itself may not be a baseline.\n{{Servers MAY refuse to construct a baseline of a change set configuration}}.\nThis specification does not define the meaning of one change set overriding another change set; {{servers MAY treat this as an error}}.\nIf this change set has any contributions, those contributions completely replace the contributions to the overridden configuration\nwhen using this change set configuration as a context for resolving versions, or any configuration that contains this change set as a contribution;\nif this change set has no contributions, any contributions to the overridden configuration are handled normally.\nSelections in the change set may add to, replace, or remove from, the selections in the overridden configuration,\nas defined in <a href=\"#h3_shape-cselections\">ChangeSet Selections</a>.",
+                "@type": "rdf:XMLLiteral"
+            }
+        },
+        {
+            "@id": "_:b45",
+            "dcterms:description": {
+                "@value": "A contribution to this change set configuration.\n{{Servers MAY support contributions to change sets}}, and if so, this property behaves just as that for streams.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Contribution"
+            },
+            "oslc:valueShape": {
+                "@id": "http://open-services.net/ns/config/shapes/1.0/#ContributionShape"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:AnyResource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Inline"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:contribution"
+            },
+            "oslc:name": "contribution",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b46",
+            "dcterms:description": {
+                "@value": "A reference to a configuration modified or overridden by this change set configuration.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:overrides"
+            },
+            "oslc:name": "overrides",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b47",
+            "dcterms:description": {
+                "@value": "A reference to a resource identifying versions of the resources (configuration items) in the configuration;\nthese selections override, reduce, or extend the selections in the configuration identified by the `oslc_config:overrides` property.\n{{Servers MAY treat this property as read-only}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "oslc_config:ChangeSetSelections"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Zero-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:selections"
+            },
+            "oslc:name": "selections",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#SelectionsShape",
+            "oslc:property": [
+                {
+                    "@id": "_:b44"
+                },
+                {
+                    "@id": "_:b20"
+                }
+            ],
+            "dcterms:title": "The resources selected by a configuration.",
+            "oslc:describes": {
+                "@id": "oslc_config:Selections"
+            },
+            "@type": "oslc:ResourceShape"
+        },
+        {
+            "@id": "_:b48",
+            "dcterms:description": {
+                "@value": "The <a href=\"http://www.w3.org/TR/ldp/#ldpc\">Linked Data Platform Container</a>\nthat contains all the configurations (both streams and baselines) of this component.\n{{The `oslc_config:configurations` property on a component is read-only; servers MAY also treat the referenced container as read-only}}.\nIf it is not read-only, {{the container MAY have an `oslc:resourceShape` property referencing a resource shape that describes the\ncontainer}}. {{If a container resource shape is specified, the shape SHOULD have a property describing the membership of the container with a\n`oslc:valueShape` referencing a resource shape that describes the shapes of streams and baselines that may be created}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "ldp:Container"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:readOnly": {
+                "@value": "true",
+                "@type": "xsd:boolean"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:Exactly-one"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "oslc_config:configurations"
+            },
+            "oslc:name": "configurations",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "_:b49",
+            "dcterms:description": {
+                "@value": "A resource type URI.\n{{A change set Selections resource MUST have at least the resource type `oslc_config:Selections`}}.\n{{Change set selections resources MAY also have the types `oslc_config:ChangeSetSelections`,\n`oslc_config:UnboundSelections`, `oslc_config:Removals`,\nor `oslc_config:RemoveAll`}}.",
+                "@type": "rdf:XMLLiteral"
+            },
+            "oslc:range": {
+                "@id": "rdfs:Class"
+            },
+            "oslc:valueType": {
+                "@id": "oslc:Resource"
+            },
+            "oslc:representation": {
+                "@id": "oslc:Reference"
+            },
+            "oslc:occurs": {
+                "@id": "oslc:One-or-many"
+            },
+            "oslc:propertyDefinition": {
+                "@id": "rdf:type"
+            },
+            "oslc:name": "type",
+            "@type": "oslc:Property"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#CSelectionsShape",
+            "oslc:property": [
+                {
+                    "@id": "_:b22"
+                },
+                {
+                    "@id": "_:b49"
+                }
+            ],
+            "dcterms:title": "The resources selected by a change set.",
+            "oslc:describes": {
+                "@id": "oslc_config:ChangeSetSelections"
+            },
+            "@type": "oslc:ResourceShape"
+        },
+        {
+            "@id": "http://open-services.net/ns/config/shapes/1.0/#ComponentShape",
+            "@type": "oslc:ResourceShape",
+            "oslc:property": [
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#creator"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#instanceShape"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#archived"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#contributor"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modifiedBy"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#serviceProvider"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortTitle"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#subject"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#description"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#identifier"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#created"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#title"
+                },
+                {
+                    "@id": "_:b18"
+                },
+                {
+                    "@id": "_:b48"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#modified"
+                },
+                {
+                    "@id": "http://open-services.net/ns/config/shapes/1.0/#shortId"
+                }
+            ],
+            "dcterms:description": {
+                "@value": "A set of versioned resources; a configuration selects zero, one, or (very rarely) more than one version of these resources.\n{{A component itself MAY be a versioned resource}},\nindicated by the RDF type `oslc_config:VersionResource` on its versions, but need not be versioned;\nthe semantics of versioned components are not defined by this specification.\nTypically, components themselves are not nested - that is,\ntypically none of the members of an `oslc_config:Component` container are themselves of type `oslc_config:Component`;\nany required structure and hierarchy is realized through configurations,\nor through the structures within the configuration items themselves (e.g., versioned folders or directories).",
+                "@type": "rdf:XMLLiteral"
+            },
+            "dcterms:title": "The shape of a component.",
+            "oslc:describes": {
+                "@id": "oslc_config:Component"
+            }
+        }
+    ],
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "ldp": "http://www.w3.org/ns/ldp#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "oslc_config": "http://open-services.net/ns/config#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "oslc": "http://open-services.net/ns/core#",
+        "oslc_auto": "http://open-services.net/ns/auto#",
+        "@vocab": "http://open-services.net/ns/config/shapes/1.0/#"
+    }
+}

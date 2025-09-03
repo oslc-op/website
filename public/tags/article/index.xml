@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/article/</link>
+    <description>Recent content in Article on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 20:00:00 +0200</lastBuildDate>
+    <atom:link href="http://open-services.net/tags/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A survey of commercial tools with OSLC support</title>
+      <link>http://open-services.net/resources/tools-survey-2020/</link>
+      <pubDate>Mon, 11 May 2020 20:00:00 +0200</pubDate>
+      <guid>http://open-services.net/resources/tools-survey-2020/</guid>
+      <description>A survey of commercial tools that provide OSLC support. The survey describes in detail which OSLC capabilities are supported to which tools.</description>
+    </item>
+    <item>
+      <title>Debunking the OSLC Link-Only Myth</title>
+      <link>http://open-services.net/resources/article-20170715/</link>
+      <pubDate>Sun, 16 Jul 2017 13:24:02 +0200</pubDate>
+      <guid>http://open-services.net/resources/article-20170715/</guid>
+      <description>Integrating tools via standard interfaces</description>
+    </item>
+    <item>
+      <title>Why Integration requires a combination of linking and syncing</title>
+      <link>http://open-services.net/resources/article-20151109/</link>
+      <pubDate>Mon, 09 Nov 2015 20:00:00 +0200</pubDate>
+      <guid>http://open-services.net/resources/article-20151109/</guid>
+      <description>Tasktop explores the strengths of Open Services for Lifecycle Collaboration (OSLC) and some of the areas of improvement.</description>
+    </item>
+  </channel>
+</rss>

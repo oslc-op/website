@@ -1,0 +1,425 @@
+{
+    "@graph": [
+        {
+            "@id": "oslc_config:ChangeSetSelections",
+            "rdfs:comment": "A resource listing the version resources selected by a change set configuration.",
+            "rdfs:subClassOf": {
+                "@id": "oslc_config:Selections"
+            },
+            "rdfs:label": "ChangeSetSelections",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:Selections",
+            "rdfs:comment": "A resource listing the version resources selected by a configuration.",
+            "rdfs:label": "Selections",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "http://open-services.net/ns/config#",
+            "dcterms:dateCopyrighted": "2012-2023",
+            "dcterms:title": "OSLC Configuration Management vocabulary",
+            "dcterms:issued": {
+                "@value": "2023-07-23",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            },
+            "dcterms:isPartOf": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/oslc-config-mgt.html"
+            },
+            "dcterms:hasVersion": "PS",
+            "vann:preferredNamespacePrefix": "oslc_config",
+            "rdfs:label": "OSLC Configuration Management vocabulary",
+            "dcterms:publisher": {
+                "@id": "https://open-services.net/about/"
+            },
+            "dcterms:source": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/config/v1.0/os/config-vocab.ttl"
+            },
+            "dcterms:description": "The OSLC Configuration Management vocabulary defines terms for versioned resources and configurations of those versioned resources.",
+            "dcterms:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            "@type": "owl:Ontology"
+        },
+        {
+            "@id": "oslc_config:Activity",
+            "rdfs:comment": "An activity is a read-only resource representing a long-running operation, such as recursive baseline or stream creation.",
+            "rdfs:label": "Activity",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:Configuration",
+            "rdfs:comment": "A configuration identifies a set of versions of resources in a component. Configurations commonly identify exactly one version of each resource in a component. Configurations can also assemble other configurations into a shared context across multiple components.",
+            "rdfs:label": "Configuration",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:RemoveAll",
+            "rdfs:comment": "For a change set, an indicator that all selections in the overriden configuration are to be ignored; all selections are defined by the change set.",
+            "rdfs:label": "RemovalAll",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:ChangeSet",
+            "rdfs:comment": "A change set configuration represents a set of changes (including additions and removals) to some other configuration.",
+            "rdfs:subClassOf": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "ChangeSet",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:configuration",
+            "rdfs:comment": "A reference to a Configuration resource.",
+            "rdfs:label": "configuration",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:baselineOfStream",
+            "rdfs:comment": "The stream from which a baseline was made.",
+            "rdfs:range": {
+                "@id": "oslc_config:Stream"
+            },
+            "rdfs:label": "baselineOfStream",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:Stream",
+            "rdfs:comment": "A mutable configuration. Contributions to this configuration can be streams or baselines.",
+            "rdfs:subClassOf": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "Stream",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:committer",
+            "rdfs:comment": "The entity that committed or checked in this resource.",
+            "rdfs:label": "committer",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:previousBaseline",
+            "rdfs:comment": "For a stream or a baseline, a link to the most recent baseline of the same stream.",
+            "rdfs:range": {
+                "@id": "oslc_config:Baseline"
+            },
+            "rdfs:label": "previousBaseline",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:Baseline",
+            "rdfs:comment": "An immutable configuration with immutable selections of immutable resources, with immutable contributions that are themselves baselines.",
+            "rdfs:subClassOf": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "Baseline",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:progressMessage",
+            "rdfs:comment": "Text describing the progress of an operation.",
+            "rdfs:label": "progressMessage",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:configurations",
+            "rdfs:comment": "A Linked Data Platform Container for configurations of a component.",
+            "rdfs:label": "configurations",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:component",
+            "rdfs:comment": "A reference to a Component resource.",
+            "rdfs:label": "component",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:contribution",
+            "rdfs:comment": "A reference to a Contribution resource.",
+            "rdfs:range": {
+                "@id": "oslc_config:Contribution"
+            },
+            "rdfs:label": "contribution",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:Contribution",
+            "rdfs:comment": "A contribution represents the contribution of one configuration to another.",
+            "rdfs:label": "Contribution",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:ConfigurationSettings",
+            "rdfs:comment": "Information about settings and preferences for a Configuration Management service.",
+            "rdfs:label": "ConfigurationSettings",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:selections",
+            "rdfs:comment": "A reference to a Selections resource.",
+            "rdfs:range": {
+                "@id": "oslc_config:Selections"
+            },
+            "rdfs:label": "selections",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:selects",
+            "rdfs:comment": "A reference to a selected version resource.",
+            "rdfs:label": "selects",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:versionId",
+            "rdfs:comment": "A human-readable version identifier.",
+            "rdfs:label": "versionId",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:VersionResource",
+            "rdfs:comment": "This type is used as a marker for any version resource.",
+            "rdfs:label": "VersionResource",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:accepts",
+            "rdfs:comment": "A type of configuration acceptable as a contribution to the subject configuration.",
+            "rdfs:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "accepts",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:Removals",
+            "rdfs:comment": "For a change set, the selections to be removed from an overridden configuration.",
+            "rdfs:label": "Removals",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:contributionOrder",
+            "rdfs:comment": "The ordering value for a contribution.",
+            "rdfs:label": "contributionOrder",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:acceptedBy",
+            "rdfs:comment": "A type of configuration accepted as a contribution by the subject configuration.",
+            "rdfs:range": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "acceptedBy",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:UnboundSelections",
+            "rdfs:comment": "An indicator that a set of selections are as-yet unbound concept resources as opposed to bound version resources.",
+            "rdfs:label": "UnboundSelections",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:PersonalConfiguration",
+            "rdfs:comment": "A configuration intended for use by a single agent, rather than shared.",
+            "rdfs:subClassOf": {
+                "@id": "oslc_config:Configuration"
+            },
+            "rdfs:label": "PersonalConfiguration",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:Component",
+            "rdfs:comment": "A unit of organization consisting of a set of versioned resources. Components are the units of configurability, and form reusable assets or building blocks.",
+            "rdfs:label": "Component",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "oslc_config:baselines",
+            "rdfs:comment": "A Linked Data Platform Container for baselines of a stream.",
+            "rdfs:label": "baselines",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:committed",
+            "rdfs:comment": "Date and time a resource was committed, or checked in.",
+            "rdfs:label": "committed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:branch",
+            "rdfs:comment": "Identifies a resource as one for a specific branch or variant of the component.",
+            "rdfs:label": "branch",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:configurationSettings",
+            "rdfs:comment": "A reference to information about settings and preferences for a Configuration Management service.",
+            "rdfs:label": "configurationSettings",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:mutable",
+            "rdfs:comment": "A boolean property indicating whether or not a resource is modifiable; replaced by use of Baseline and Stream types.",
+            "vs:term_status": "archaic",
+            "rdfs:label": "mutable",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:release",
+            "rdfs:comment": "A reference to a resource representing a release.",
+            "rdfs:label": "release",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:globalConfigurationService",
+            "rdfs:comment": "An oslc:usage value marking a global configuration service.",
+            "rdfs:label": "globalConfigurationService",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdfs:Resource"
+        },
+        {
+            "@id": "oslc_config:overrides",
+            "rdfs:comment": "A reference to a configuration modified by a change set configuration.",
+            "rdfs:label": "overrides",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:streams",
+            "rdfs:comment": "A Linked Data Platform Container for streams created from a baseline.",
+            "rdfs:label": "streams",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "oslc_config:derivedFrom",
+            "rdfs:comment": "A resource from which this resource was derived; the use of prov:wasDerivedFrom is preferred.",
+            "vs:term_status": "archaic",
+            "rdfs:label": "derivedFrom",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/config#"
+            },
+            "@type": "rdf:Property"
+        }
+    ],
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "oslc_config": "http://open-services.net/ns/config#",
+        "vann": "http://purl.org/vocab/vann/",
+        "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    }
+}

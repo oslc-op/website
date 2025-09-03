@@ -1,0 +1,369 @@
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Virtual memory used." .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#label> "VirtualMemoryUsed" .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#VirtualizationMetrics> .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#MemoryMetrics> .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#VirtualMemoryUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for CPU-related metrics." .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "CpuMetrics" .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#CpuMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#comment> "Time during which a Java Connection Architecture thread pool was fully utilized (no threads were free)" .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#label> "TimeJCAThreadPoolExhausted" .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ThreadPoolMetrics> .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TimeJCAThreadPoolExhausted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#process> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#process> <http://www.w3.org/2000/01/rdf-schema#comment> "A process running, for example, in a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types." .
+<http://open-services.net/ns/perfmon#process> <http://www.w3.org/2000/01/rdf-schema#label> "process" .
+<http://open-services.net/ns/perfmon#process> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/perfmon#NotRunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values> .
+<http://open-services.net/ns/perfmon#NotRunning> <http://www.w3.org/2000/01/rdf-schema#comment> "Not running in its host environment" .
+<http://open-services.net/ns/perfmon#NotRunning> <http://www.w3.org/2000/01/rdf-schema#label> "NotRunning" .
+<http://open-services.net/ns/perfmon#NotRunning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for metrics that show resource usage." .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "ResourceUsageMetrics" .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResourceUsageMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for network-related metrics." .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "NetworkMetrics" .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#NetworkMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time required for some system to respond to a request" .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#label> "ResponseTime" .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResponseTimeMetrics> .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResponseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#monitoringAgent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#monitoringAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "Software that monitors a resource’s availability, performance, capacity, or utilization. Typically refers to a resource with type foaf:Agent, but it may refer to other resource types." .
+<http://open-services.net/ns/perfmon#monitoringAgent> <http://www.w3.org/2000/01/rdf-schema#label> "monitoringAgent" .
+<http://open-services.net/ns/perfmon#monitoringAgent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#monitoringAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for buffer pool-related metrics." .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "BufferPoolMetrics" .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#MemoryMetrics> .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#BufferPoolMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#comment> "Time during which a thread pool was fully utilized (no threads were free)" .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#label> "TimeThreadPoolExhausted" .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ThreadPoolMetrics> .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TimeThreadPoolExhausted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/2000/01/rdf-schema#comment> "Table space free." .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/2000/01/rdf-schema#label> "TableSpaceFree" .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TableSpaceFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#comment> "Network packets sent or received that did not complete successfully." .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#label> "NetworkIOErrors" .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#NetworkMetrics> .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#NetworkIOErrors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#comment> "Buffer pool hits, e.g. hit ratio or count" .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#label> "BufferPoolHits" .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#BufferPoolMetrics> .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#BufferPoolHits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#label> "TimeDatabaseThreadPoolExhausted" .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ThreadPoolMetrics> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TimeDatabaseThreadPoolExhausted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/2000/01/rdf-schema#comment> "Request failures" .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/2000/01/rdf-schema#label> "RequestFailures" .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#RequestFailures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of disk space committed beyond the disk's capacity." .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#label> "DiskSpaceOverCommitAmount" .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#DiskMetrics> .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#DiskSpaceOverCommitAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Lock usage" .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/2000/01/rdf-schema#label> "LockListUsed" .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#LockListUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#comment> "Failed login requests" .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#label> "LoginRequestFailures" .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#LoginRequestFailures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#mobilityEnabled> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#mobilityEnabled> <http://www.w3.org/2000/01/rdf-schema#comment> "An indication about whether the resource can move about dynamically." .
+<http://open-services.net/ns/perfmon#mobilityEnabled> <http://www.w3.org/2000/01/rdf-schema#label> "mobilityEnabled" .
+<http://open-services.net/ns/perfmon#mobilityEnabled> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#mobilityEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/2000/01/rdf-schema#comment> "Local inbound connections" .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/2000/01/rdf-schema#label> "LocalInboundConnections" .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#LocalInboundConnections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "CPU used." .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#label> "CpuUsed" .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#CpuMetrics> .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#CpuUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/2000/01/rdf-schema#comment> "Units for a quantity where a value of one represents 60 seconds of time." .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/2000/01/rdf-schema#label> "PerMinute" .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#PerMinute> <http://qudt.org/1.1/schema/qudtconversionMultiplier> "60"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt#TimeUnit> .
+<http://open-services.net/ns/perfmon#PerMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for disk-related metrics." .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "DiskMetrics" .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#DiskMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for memory-related metrics." .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "MemoryMetrics" .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#MemoryMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/2000/01/rdf-schema#comment> "Size/lenght/depth of a queue" .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/2000/01/rdf-schema#label> "QueueDepth" .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#QueueDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for requests that fail." .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "FailureMetrics" .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#FailureMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#disk> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#disk> <http://www.w3.org/2000/01/rdf-schema#comment> "A disk attached, for example, to a computer system. Typically refers to a resource with type crtv:ComputerSystem, but it may refer to other resource types." .
+<http://open-services.net/ns/perfmon#disk> <http://www.w3.org/2000/01/rdf-schema#label> "disk" .
+<http://open-services.net/ns/perfmon#disk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#disk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of log used, either absolute or relative to some maximum" .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/2000/01/rdf-schema#label> "LogUsed" .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#LogUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for thread pool-related metrics." .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "ThreadPoolMetrics" .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ThreadPoolMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Speed of the CPU" .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "CpuSpeed" .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#CpuMetrics> .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#CpuSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Disk space used." .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#label> "DiskSpaceUsed" .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#DiskMetrics> .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#DiskSpaceUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/2000/01/rdf-schema#comment> "SQL statements that failed" .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/2000/01/rdf-schema#label> "SqlStatmentFailures" .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#SqlStatmentFailures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/2000/01/rdf-schema#comment> "Average request failures" .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/2000/01/rdf-schema#label> "AvgRequestFailures" .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#AvgRequestFailures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Average time required for a system to respond to a Java Messaging Service GET request" .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#label> "AvgJmsGetTime" .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResponseTimeMetrics> .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#AvgJmsGetTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#Running> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values> .
+<http://open-services.net/ns/perfmon#Running> <http://www.w3.org/2000/01/rdf-schema#comment> "Running in its host environment" .
+<http://open-services.net/ns/perfmon#Running> <http://www.w3.org/2000/01/rdf-schema#label> "Running" .
+<http://open-services.net/ns/perfmon#Running> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/2000/01/rdf-schema#comment> "Garbage collection requests" .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/2000/01/rdf-schema#label> "GarbageCollectionRequests" .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#GarbageCollectionRequests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for requests on a resource, originating from an end user or a system component." .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "RequestMetrics" .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#RequestMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#> <http://purl.org/dc/terms/source> <http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf> .
+<http://open-services.net/ns/perfmon#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf> .
+<http://open-services.net/ns/perfmon#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/> .
+<http://open-services.net/ns/perfmon#> <http://www.w3.org/2000/01/rdf-schema#label> "Performance Monitoring" .
+<http://open-services.net/ns/perfmon#> <http://purl.org/dc/terms/description> "All vocabulary\n    URIs defined in the OSLC Performance Monitoring namespace."^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral> .
+<http://open-services.net/ns/perfmon#> <http://purl.org/dc/terms/title> "The OSLC Performance Monitoring Vocabulary" .
+<http://open-services.net/ns/perfmon#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for metrics defined in the Performance Monitoring vocabulary." .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric" .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/ems#Metric> .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of CPU ready from a virtual machine's point of view" .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#label> "VmCpuReady" .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#CpuMetrics> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#VirtualizationMetrics> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#VmCpuReady> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for metrics that show resource consumption in excess of capacity." .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "ResourceExhaustionMetrics" .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/2000/01/rdf-schema#comment> "Remote inbound connections" .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/2000/01/rdf-schema#label> "RemoteInboundConnections" .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#RemoteInboundConnections> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/2000/01/rdf-schema#comment> "A queue filled to its maximum capacity" .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/2000/01/rdf-schema#label> "QueueFull" .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#QueueFull> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/2000/01/rdf-schema#label> "MessageCount" .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#MessageCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#Unknown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Availability-Status-Property-Values> .
+<http://open-services.net/ns/perfmon#Unknown> <http://www.w3.org/2000/01/rdf-schema#comment> "Unknown status" .
+<http://open-services.net/ns/perfmon#Unknown> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown" .
+<http://open-services.net/ns/perfmon#Unknown> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Table space used." .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#label> "TableSpaceUsed" .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#TableSpaceUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Response_time_%28technology%29> .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for metrics that show time it takes for a response to be returned to a request." .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "ResponseTimeMetrics" .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#RequestMetrics> .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResponseTimeMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/wiki/performance-monitoring/File:perfmon.rdf> <http://www.rddl.org/nature> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for virtualization-related resource metrics." .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "VirtualizationMetrics" .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#VirtualizationMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/2000/01/rdf-schema#label> "HighDepthQueueCount" .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#HighDepthQueueCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#PerformanceMonitoringRecord> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Performance_Monitoring_Record> .
+<http://open-services.net/ns/perfmon#PerformanceMonitoringRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource representing performance monitoring information" .
+<http://open-services.net/ns/perfmon#PerformanceMonitoringRecord> <http://www.w3.org/2000/01/rdf-schema#label> "PerformanceMonitoringRecord" .
+<http://open-services.net/ns/perfmon#PerformanceMonitoringRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#PerformanceMonitoringRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Metric-Categories> .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/2000/01/rdf-schema#comment> "Metric category for metrics that show resource availability." .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/2000/01/rdf-schema#label> "ResourceAvailabilityMetrics" .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#Metric> .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Heap memory used." .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#label> "HeapMemoryUsed" .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#MemoryMetrics> .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#HeapMemoryUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/2000/01/rdf-schema#comment> "Databases hosted, either absolute or relative to some maximum" .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/2000/01/rdf-schema#label> "HostedDatabases" .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#HostedDatabases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#comment> "Average login request failures" .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#label> "AvgLoginRequestFailures" .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#FailureMetrics> .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#AvgLoginRequestFailures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#comment> "Real memory used." .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#label> "RealMemoryUsed" .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#MemoryMetrics> .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceUsageMetrics> .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#RealMemoryUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#tableReorganizationNeeded> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#tableReorganizationNeeded> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a database’s tables need to be reorganized." .
+<http://open-services.net/ns/perfmon#tableReorganizationNeeded> <http://www.w3.org/2000/01/rdf-schema#label> "tableReorganizationNeeded" .
+<http://open-services.net/ns/perfmon#tableReorganizationNeeded> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#tableReorganizationNeeded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "Memory available following completion of a garbage collection request." .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#label> "MemoryAvailableAfterGarbageCollection" .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#MemoryMetrics> .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceAvailabilityMetrics> .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#MemoryAvailableAfterGarbageCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource.3A-ems.3AMeasure> .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/2000/01/rdf-schema#comment> "A sort's performance was impacted because the data to be sorted is large enough for it to overflow from (relatively) fast to (relatively) slow storage." .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/2000/01/rdf-schema#label> "SortOverflows" .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://open-services.net/ns/perfmon#ResourceExhaustionMetrics> .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#SortOverflows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://open-services.net/ns/perfmon#availabilityStatus> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://open-services.net/wiki/performance-monitoring/OSLC-Performance-Monitoring-Specification-Version-2.0/#Resource-Properties> .
+<http://open-services.net/ns/perfmon#availabilityStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "An indication of availability." .
+<http://open-services.net/ns/perfmon#availabilityStatus> <http://www.w3.org/2000/01/rdf-schema#label> "availabilityStatus" .
+<http://open-services.net/ns/perfmon#availabilityStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://open-services.net/ns/perfmon#> .
+<http://open-services.net/ns/perfmon#availabilityStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .

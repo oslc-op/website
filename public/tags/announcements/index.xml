@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcements on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/announcements/</link>
+    <description>Recent content in Announcements on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Nov 2015 10:00:00 +0200</lastBuildDate>
+    <atom:link href="http://open-services.net/tags/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PROSTEP AG Announces OpenPDM OSLC Adapter</title>
+      <link>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</link>
+      <pubDate>Tue, 17 Nov 2015 10:00:00 +0200</pubDate>
+      <guid>http://open-services.net/news/prostep-ag-announces-openpdm-oslc-adapter/</guid>
+      <description>OpenPDM OSLC Adapter enables PLM systems to connect to the OSLC world. It offers OSLC standard services, especially for those PLM systems which don’t offer native ones.</description>
+    </item>
+    <item>
+      <title>Learn more about Tasktop Sync 4.3 (July 2015)</title>
+      <link>http://open-services.net/news/learn-more-about-tasktop-sync/</link>
+      <pubDate>Mon, 09 Nov 2015 10:00:00 +0200</pubDate>
+      <guid>http://open-services.net/news/learn-more-about-tasktop-sync/</guid>
+      <description>Tasktop announced the latest versions of its Tasktop Sync and Tasktop Data products, which add strategic new tools to its integration network and provide a vastly superior user experience.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,214 @@
+{
+    "@graph": [
+        {
+            "@id": "trs:Deletion",
+            "rdfs:comment": "Represents a resource deletion change event.",
+            "rdfs:label": "Deletion",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "http://open-services.net/ns/core/trs#",
+            "vann:preferredNamespacePrefix": "trs",
+            "@type": "owl:Ontology",
+            "dcterms:hasVersion": "OS",
+            "dcterms:isPartOf": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/tracked-resource-set.html"
+            },
+            "dcterms:license": {
+                "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+            },
+            "rdfs:label": "OSLC Core Tracked Resource Set vocabulary",
+            "dcterms:issued": {
+                "@value": "2023-07-23",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            },
+            "dcterms:source": {
+                "@id": "https://docs.oasis-open-projects.org/oslc-op/trs/v3.0/os/trs-vocab.ttl"
+            },
+            "dcterms:description": "The OSLC Core Tracked Resource Set vocabulary defines terms used in describing Tracked Resource Sets.",
+            "dcterms:title": "OSLC Core Tracked Resource Set vocabulary",
+            "dcterms:dateCopyrighted": "2012-2023"
+        },
+        {
+            "@id": "trs:base",
+            "rdfs:comment": "An enumeration of the Resources in the Resource Set.",
+            "rdfs:range": {
+                "@id": "trs:Base"
+            },
+            "rdfs:label": "base",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:Base",
+            "rdfs:comment": "A Base identifies the initial set of resources in a Tracked Resource Set.",
+            "rdfs:label": "Base",
+            "rdfs:subClassOf": {
+                "@id": "ldp:DirectContainer"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "trs:trackedResourceSet",
+            "rdfs:comment": "A Tracked Resource Set.",
+            "rdfs:range": {
+                "@id": "trs:TrackedResourceSet"
+            },
+            "rdfs:label": "trackedResourceSet",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:TrackedResourceSet",
+            "rdfs:comment": "A Tracked Resource Set provides a representation of the current state of a Resource Set.",
+            "rdfs:label": "Tracked Resource Set",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "trs:changed",
+            "rdfs:comment": "The Resource that has changed.",
+            "rdfs:label": "changed",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trspatch:rdfPatch",
+            "rdfs:comment": "Patch directives describing a modification to the resource's RDF representation.",
+            "rdfs:label": "rdfPatch",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:cutoffEvent",
+            "rdfs:comment": "The most recent Change Log entry that is accounted for in this Base. When rdf:nil, the Base is an enumeration at the start of time.",
+            "rdfs:label": "cutoffEvent",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:changeLog",
+            "rdfs:comment": "A Change Log providing an order series of incremental adjustments to the Resource Set.",
+            "rdfs:range": {
+                "@id": "trs:ChangeLog"
+            },
+            "rdfs:label": "changeLog",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:ChangeLog",
+            "rdfs:comment": "A Change Log describes what resources have been created, modified or deleted, and when.",
+            "rdfs:label": "Change Log",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "trspatch:beforeETag",
+            "rdfs:comment": "HTTP entity tag of resource immediately before this change.",
+            "rdfs:label": "beforeETag",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:change",
+            "rdfs:comment": "The Change Event entries.",
+            "rdfs:label": "change",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:previous",
+            "rdfs:comment": "The continuation of the Change Log, containing the next group of chronologically earlier Change Events.",
+            "rdfs:range": {
+                "@id": "trs:ChangeLog"
+            },
+            "rdfs:label": "previous",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:Modification",
+            "rdfs:comment": "Represents a resource creation or modification change event.",
+            "rdfs:label": "Modification",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        },
+        {
+            "@id": "trspatch:createdFrom",
+            "rdfs:comment": "URI of antecedent resource for trs:Creation Change Events.",
+            "rdfs:label": "createdFrom",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trspatch:afterETag",
+            "rdfs:comment": "HTTP entity tag of resource immediately after this change.",
+            "rdfs:label": "afterETag",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:order",
+            "rdfs:comment": "The sequence in time of the Change Event.",
+            "rdfs:label": "order",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdf:Property"
+        },
+        {
+            "@id": "trs:Creation",
+            "rdfs:comment": "Represents a resource creation or modification change event.",
+            "rdfs:label": "Creation",
+            "rdfs:isDefinedBy": {
+                "@id": "http://open-services.net/ns/core/trs#"
+            },
+            "@type": "rdfs:Class"
+        }
+    ],
+    "@context": {
+        "trs": "http://open-services.net/ns/core/trs#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "trspatch": "http://open-services.net/ns/core/trspatch#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "ldp": "http://www.w3.org/ns/ldp#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "vann": "http://purl.org/vocab/vann/"
+    }
+}

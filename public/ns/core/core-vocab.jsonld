@@ -1,0 +1,839 @@
+{
+  "@graph" : [ {
+    "@id" : "http://open-services.net/ns/core#",
+    "@type" : "owl:Ontology",
+    "description" : "All vocabulary URIs defined in the OSLC Core namespace.",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/oslc-core.html",
+    "issued" : "2021-08-26",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://github.com/oslc-op/oslc-specs/blob/master/specs/core/core-vocab.ttl",
+    "title" : "The OSLC Core Vocabulary",
+    "preferredNamespacePrefix" : "oslc",
+    "label" : "The OSLC Core Vocabulary"
+  }, {
+    "@id" : "oslc:AllowedValues",
+    "@type" : "rdfs:Class",
+    "comment" : "Provides a way to specify allowed values for one or more properties.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "AllowedValues"
+  }, {
+    "@id" : "oslc:Any",
+    "@type" : "rdfs:Class",
+    "comment" : "Any value type is allowed.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Any"
+  }, {
+    "@id" : "oslc:AnyResource",
+    "rdf:type" : {
+      "@id" : "oslc:ResourceValueType"
+    },
+    "comment" : "The object resource can be identified with either a URI or a blank node.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "AnyResource"
+  }, {
+    "@id" : "oslc:AttachmentContainer",
+    "@type" : "rdfs:Class",
+    "comment" : "An LDP-C that contains attachments for a resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "AttachmentContainer"
+  }, {
+    "@id" : "oslc:AttachmentDescriptor",
+    "@type" : "rdfs:Class",
+    "comment" : "An LDP-RS that contains additional data about an attachment.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "AttachmentDescriptor"
+  }, {
+    "@id" : "oslc:Cardinality",
+    "@type" : "rdfs:Class",
+    "comment" : "The number of allowed values for a property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Cardinality"
+  }, {
+    "@id" : "oslc:Comment",
+    "@type" : "rdfs:Class",
+    "comment" : "A Comment resource represents a single note, or comment, in a discussion thread.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Comment"
+  }, {
+    "@id" : "oslc:Compact",
+    "@type" : "rdfs:Class",
+    "comment" : "A resource describing how to display a link and Preview for another, associated resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Compact"
+  }, {
+    "@id" : "oslc:CreationFactory",
+    "@type" : "rdfs:Class",
+    "comment" : "The CreationFactory definition included in a ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "CreationFactory"
+  }, {
+    "@id" : "oslc:Dialog",
+    "@type" : "rdfs:Class",
+    "comment" : "Describes information about a dialog such as its title and dimensions.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Dialog"
+  }, {
+    "@id" : "oslc:Discussion",
+    "@type" : "rdfs:Class",
+    "comment" : "A Discussion resource is intended to represent a sequence of comments or notes regarding the associated resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Discussion"
+  }, {
+    "@id" : "oslc:Either",
+    "rdf:type" : {
+      "@id" : "oslc:Representation"
+    },
+    "comment" : "Representation is either a URI reference or blank node.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Either"
+  }, {
+    "@id" : "oslc:Error",
+    "@type" : "rdfs:Class",
+    "comment" : "Basis for forming an error response.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Error"
+  }, {
+    "@id" : "oslc:Exactly-one",
+    "rdf:type" : {
+      "@id" : "oslc:Cardinality"
+    },
+    "comment" : "Property with value is required.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Exactly-one"
+  }, {
+    "@id" : "oslc:ExtendedError",
+    "@type" : "rdfs:Class",
+    "comment" : "Extended error information.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ExtendedError"
+  }, {
+    "@id" : "oslc:ImpactFollowsLink",
+    "rdf:type" : {
+      "@id" : "oslc:ImpactType"
+    },
+    "comment" : "The property represents a dependency from subject to object.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ImpactFollowsLink"
+  }, {
+    "@id" : "oslc:ImpactOppositeLink",
+    "rdf:type" : {
+      "@id" : "oslc:ImpactType"
+    },
+    "comment" : "The property represents a dependency from object to subject.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ImpactOppositeLink"
+  }, {
+    "@id" : "oslc:ImpactType",
+    "@type" : "rdfs:Class",
+    "comment" : "An enumeration of specifying different impact types or a property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ImpactType"
+  }, {
+    "@id" : "oslc:Inline",
+    "rdf:type" : {
+      "@id" : "oslc:Representation"
+    },
+    "comment" : "The representation of the object resource must be present in the representation of the described resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Inline"
+  }, {
+    "@id" : "oslc:LocalResource",
+    "rdf:type" : {
+      "@id" : "oslc:ResourceValueType"
+    },
+    "comment" : "The object resource must be identified with a blank node. The term 'local resource' is used because the scope of identifier is local to the representation. Clients and servers should use oslc:representation oslc:Inline instead to include resource representations in the same document.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "LocalResource",
+    "term_status" : "archaic"
+  }, {
+    "@id" : "oslc:NoImpact",
+    "rdf:type" : {
+      "@id" : "oslc:ImpactType"
+    },
+    "comment" : "The property does not represent a dependency.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "NoImpact"
+  }, {
+    "@id" : "oslc:OAuthConfiguration",
+    "@type" : "rdfs:Class",
+    "comment" : "The OAuthConfiguration definition included in ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "OAuthConfiguration"
+  }, {
+    "@id" : "oslc:One-or-many",
+    "rdf:type" : {
+      "@id" : "oslc:Cardinality"
+    },
+    "comment" : "Property is required and multi-valued.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "One-or-many"
+  }, {
+    "@id" : "oslc:PrefixDefinition",
+    "@type" : "rdfs:Class",
+    "comment" : "The PrefixDefinition definition included in ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "PrefixDefinition"
+  }, {
+    "@id" : "oslc:Preview",
+    "@type" : "rdfs:Class",
+    "comment" : "An HTML representation of a resource that can be embedded in another user interface.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Preview"
+  }, {
+    "@id" : "oslc:Property",
+    "@type" : "rdfs:Class",
+    "comment" : "A Property resource describes one allowed or required property of a resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Property"
+  }, {
+    "@id" : "oslc:Publisher",
+    "@type" : "rdfs:Class",
+    "comment" : "The Publisher definition included in ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Publisher"
+  }, {
+    "@id" : "oslc:QueryCapability",
+    "@type" : "rdfs:Class",
+    "comment" : "The QueryCapability definition included in a ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "QueryCapability"
+  }, {
+    "@id" : "oslc:Reference",
+    "rdf:type" : {
+      "@id" : "oslc:Representation"
+    },
+    "comment" : "A URI Reference representation to a resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Reference"
+  }, {
+    "@id" : "oslc:Representation",
+    "@type" : "rdfs:Class",
+    "comment" : "Specifies how a resource is represented in a document.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Representation"
+  }, {
+    "@id" : "oslc:Resource",
+    "rdf:type" : {
+      "@id" : "oslc:ResourceValueType"
+    },
+    "comment" : "The object resource must be identified with a URI.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Resource"
+  }, {
+    "@id" : "oslc:ResourceShape",
+    "@type" : "rdfs:Class",
+    "comment" : "The Resource Shape used for creation, query and modify.  Formally, a shape S applies to a resource R if there is a triple R rdf:type T and there is a triple S oslc:describes T, or if there is a triple R oslc:instanceShape S.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ResourceShape"
+  }, {
+    "@id" : "oslc:ResourceShapeConstraints",
+    "@type" : "rdfs:Class",
+    "comment" : "Resource Shape Constraints metadata",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ResourceShapeConstraints"
+  }, {
+    "@id" : "oslc:ResourceValueType",
+    "@type" : "rdfs:Class",
+    "comment" : "Specifies how an object reference is represented in a document.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ResourceValueType"
+  }, {
+    "@id" : "oslc:ResponseInfo",
+    "@type" : "rdfs:Class",
+    "comment" : "The ResponseInfo included in query results.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ResponseInfo"
+  }, {
+    "@id" : "oslc:Service",
+    "@type" : "rdfs:Class",
+    "comment" : "The Service definition included in a ServiceProvider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Service"
+  }, {
+    "@id" : "oslc:ServiceProvider",
+    "@type" : "rdfs:Class",
+    "comment" : "The Service Provider resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ServiceProvider"
+  }, {
+    "@id" : "oslc:ServiceProviderCatalog",
+    "@type" : "rdfs:Class",
+    "comment" : "The Service Provider Catalog resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "ServiceProviderCatalog"
+  }, {
+    "@id" : "oslc:SymmetricImpact",
+    "rdf:type" : {
+      "@id" : "oslc:ImpactType"
+    },
+    "comment" : "The property represents a dependency from both subject to object and object to subject.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "SymmetricImpact"
+  }, {
+    "@id" : "oslc:Zero-or-many",
+    "rdf:type" : {
+      "@id" : "oslc:Cardinality"
+    },
+    "comment" : "Property is optional and multi-valued.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Zero-or-many"
+  }, {
+    "@id" : "oslc:Zero-or-one",
+    "rdf:type" : {
+      "@id" : "oslc:Cardinality"
+    },
+    "comment" : "Property is optional and single valued.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "Zero-or-one"
+  }, {
+    "@id" : "oslc:allowedValue",
+    "@type" : "rdf:Property",
+    "comment" : "Specifies the allowed values for a property (may be more than one).",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "allowedValue"
+  }, {
+    "@id" : "oslc:allowedValues",
+    "@type" : "rdf:Property",
+    "comment" : "Reference to an AllowedValues resource that specifies the allowed values for the property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "allowedValues",
+    "range" : "oslc:AllowedValues"
+  }, {
+    "@id" : "oslc:archived",
+    "@type" : "rdf:Property",
+    "comment" : "Indicates whether the subject has been marked as archived, no longer an actively updating resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "archived"
+  }, {
+    "@id" : "oslc:attachment",
+    "@type" : "rdf:Property",
+    "comment" : "An attachment associated with a resource. May be used as a membership predicate for an attachment container.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "attachment"
+  }, {
+    "@id" : "oslc:attachmentSize",
+    "@type" : "rdf:Property",
+    "comment" : "Size in bytes of the attachment content.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "attachmentSize"
+  }, {
+    "@id" : "oslc:authorizationURI",
+    "@type" : "rdf:Property",
+    "comment" : "URI for obtaining OAuth authorization.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "authorizationURI"
+  }, {
+    "@id" : "oslc:cause",
+    "@type" : "rdf:Property",
+    "comment" : "An error that is a cause of this error.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "cause"
+  }, {
+    "@id" : "oslc:comment",
+    "@type" : "rdf:Property",
+    "comment" : "Comment about the resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "comment"
+  }, {
+    "@id" : "oslc:creation",
+    "@type" : "rdf:Property",
+    "comment" : "To create a new resource via the factory, post it to this URI.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "creation"
+  }, {
+    "@id" : "oslc:creationDialog",
+    "@type" : "rdf:Property",
+    "comment" : "Enables clients to create a resource via UI.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "creationDialog"
+  }, {
+    "@id" : "oslc:creationFactory",
+    "@type" : "rdf:Property",
+    "comment" : "Enables clients to create new resources.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "creationFactory"
+  }, {
+    "@id" : "oslc:default",
+    "@type" : "rdf:Property",
+    "comment" : "Used in conjunction with oslc:usage property used to identify\nwhich service is the default usage.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "default"
+  }, {
+    "@id" : "oslc:defaultValue",
+    "@type" : "rdf:Property",
+    "comment" : "A default value for property, inlined into property definition.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "defaultValue"
+  }, {
+    "@id" : "oslc:describes",
+    "@type" : "rdf:Property",
+    "comment" : "This shape describes resources that are of the RDF type given by the object of the oslc:describes predicate. Formally, a shape S applies to a resource R if there is a triple R rdf:type T and there is a triple S oslc:describes T.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "describes"
+  }, {
+    "@id" : "oslc:details",
+    "@type" : "rdf:Property",
+    "comment" : "A URL that may be used to retrieve a resource to determine additional details about the service provider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "details"
+  }, {
+    "@id" : "oslc:dialog",
+    "@type" : "rdf:Property",
+    "comment" : "The URI of the HTML dialog.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "dialog"
+  }, {
+    "@id" : "oslc:discussedBy",
+    "@type" : "rdf:Property",
+    "comment" : "A series of notes and comments about this resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "discussedBy"
+  }, {
+    "@id" : "oslc:discussionAbout",
+    "@type" : "rdf:Property",
+    "comment" : "Reference to associated resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "discussionAbout"
+  }, {
+    "@id" : "oslc:document",
+    "@type" : "rdf:Property",
+    "comment" : "The URI of an HTML document to be used for the preview.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "document"
+  }, {
+    "@id" : "oslc:domain",
+    "@type" : "rdf:Property",
+    "comment" : "Namespace URI of the specification that is implemented by this service. In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "domain"
+  }, {
+    "@id" : "oslc:error",
+    "@type" : "rdf:Property",
+    "comment" : "Error information that may be associated with a resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "error"
+  }, {
+    "@id" : "oslc:executes",
+    "@type" : "rdf:Property",
+    "comment" : "Link from a currently available action to the future action it realizes.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "executes"
+  }, {
+    "@id" : "oslc:extendedError",
+    "@type" : "rdf:Property",
+    "comment" : "Extended (additional) error information.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "extendedError"
+  }, {
+    "@id" : "oslc:futureAction",
+    "@type" : "rdf:Property",
+    "comment" : "A predicate that links to an action that is not currently executable on the subject resource,\nbut may be executable in the future and/or on other resources.\nFor example, in OSLC Automation this is expected to link from an oslc_auto:AutomationPlan to an\noslc:Action resource with zero bindings (as it is not executable),\nwith the meaning that the executable form of the action may be available on oslc_auto:AutomationResult resources\ngenerated by executing that Automation Plan.  Similarly, resource shapes can allow discovery of actions\navailable on the output of a creation factory.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "futureAction"
+  }, {
+    "@id" : "oslc:hidden",
+    "@type" : "rdf:Property",
+    "comment" : "A hint that indicates that property MAY be hidden when presented in a user interface.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "hidden"
+  }, {
+    "@id" : "oslc:hintHeight",
+    "@type" : "rdf:Property",
+    "comment" : "Preferred height of a delegated user interface. Values must be expressed using length units as specified in Cascading Style Sheets 2.1.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "hintHeight"
+  }, {
+    "@id" : "oslc:hintWidth",
+    "@type" : "rdf:Property",
+    "comment" : "Preferred width of a delegated user interface. Values must be expressed using length units as specified in Cascading Style Sheets 2.1.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "hintWidth"
+  }, {
+    "@id" : "oslc:icon",
+    "@type" : "rdf:Property",
+    "comment" : "URI of an image applicable to the resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "icon"
+  }, {
+    "@id" : "oslc:iconAltLabel",
+    "@type" : "rdf:Property",
+    "comment" : "Alternative label used in association with the oslc:icon, such as HTML img tag's alt attribute.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "iconAltLabel"
+  }, {
+    "@id" : "oslc:iconSrcSet",
+    "@type" : "rdf:Property",
+    "comment" : "Specification of a set of images of different sizes based on HTML img element srcset attribute.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "iconSrcSet"
+  }, {
+    "@id" : "oslc:iconTitle",
+    "@type" : "rdf:Property",
+    "comment" : "Title used in association with the oslc:icon, such as HTML img tag's title attribute.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "iconTitle"
+  }, {
+    "@id" : "oslc:impactType",
+    "@type" : "rdf:Property",
+    "comment" : "Asserts that the subject property is a dependency relation and gives the direction of impact.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "impactType"
+  }, {
+    "@id" : "oslc:inReplyTo",
+    "@type" : "rdf:Property",
+    "comment" : "Reference to comment this comment is in reply to.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "inReplyTo"
+  }, {
+    "@id" : "oslc:initialHeight",
+    "@type" : "rdf:Property",
+    "comment" : "Recommended initial height of the preview. The presence of this property indicates that the preview supports dynamically computing its size. Values are expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1). Em and ex units are interpreted relative to the default system font (at 100% size).",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "initialHeight",
+    "term_status" : "archaic"
+  }, {
+    "@id" : "oslc:instanceShape",
+    "@type" : "rdf:Property",
+    "comment" : "The URI of a Resource Shape that describes the possible properties.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "instanceShape"
+  }, {
+    "@id" : "oslc:inverseLabel",
+    "@type" : "rdf:Property",
+    "comment" : "Provides a human-readable label for the inverse of the subject property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "inverseLabel"
+  }, {
+    "@id" : "oslc:isMemberProperty",
+    "@type" : "rdf:Property",
+    "comment" : "Used to define when a property is a member of a container, useful for query.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "isMemberProperty"
+  }, {
+    "@id" : "oslc:label",
+    "@type" : "rdf:Property",
+    "comment" : "Very short label for use in menu items.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "label"
+  }, {
+    "@id" : "oslc:largePreview",
+    "@type" : "rdf:Property",
+    "comment" : "URI and sizing properties for an HTML document to be used for a large preview.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "largePreview"
+  }, {
+    "@id" : "oslc:maxSize",
+    "@type" : "rdf:Property",
+    "comment" : "For String properties only, specifies maximum characters allowed. If not set, then there is no maximum or maximum is specified elsewhere.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "maxSize"
+  }, {
+    "@id" : "oslc:message",
+    "@type" : "rdf:Property",
+    "comment" : "An informative message describing the error that occurred.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "message"
+  }, {
+    "@id" : "oslc:modifiedBy",
+    "@type" : "rdf:Property",
+    "comment" : "The URI of a resource describing the entity that most recently modified this resource.  The link target is usually a foaf:Person or foaf:Agent, but could be any type.  This is modeled after dcterms:creator, but Dublin Core currently has no equivalent property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "modifiedBy"
+  }, {
+    "@id" : "oslc:moreInfo",
+    "@type" : "rdf:Property",
+    "comment" : "{{A resource giving more information on the error, with an HTML content-type.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "moreInfo"
+  }, {
+    "@id" : "oslc:name",
+    "@type" : "rdf:Property",
+    "comment" : "Name of property being defined, i.e. second part of property's Prefixed Name. For all other uses, consider dcterms:title, rdfs:label, oslc:shortTitle or oslc:label.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "name"
+  }, {
+    "@id" : "oslc:nextPage",
+    "@type" : "rdf:Property",
+    "comment" : "Link to next page of response.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "nextPage"
+  }, {
+    "@id" : "oslc:oauthAccessTokenURI",
+    "@type" : "rdf:Property",
+    "comment" : "URI for obtaining OAuth access token.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "oauthAccessTokenURI"
+  }, {
+    "@id" : "oslc:oauthConfiguration",
+    "@type" : "rdf:Property",
+    "comment" : "Defines the three OAuth URIs required for a client to act as an OAuth consumer.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "oauthConfiguration"
+  }, {
+    "@id" : "oslc:oauthRequestTokenURI",
+    "@type" : "rdf:Property",
+    "comment" : "URI for obtaining OAuth request token.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "oauthRequestTokenURI"
+  }, {
+    "@id" : "oslc:occurs",
+    "@type" : "rdf:Property",
+    "comment" : "One of the values http://open-services.net/ns/core#Exactly-one, http://open-services.net/ns/core#Zero-or-one, http://open-services.net/ns/core#Zero-or-many or http://open-services.net/ns/core#One-or-many.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "occurs"
+  }, {
+    "@id" : "oslc:order",
+    "@type" : "rdf:Property",
+    "comment" : "A computed property for each member resource of a query with an orderBy clause\nsupporting sorting of the RDF results.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "order"
+  }, {
+    "@id" : "oslc:partOfDiscussion",
+    "@type" : "rdf:Property",
+    "comment" : "Reference to owning Discussion resource .",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "partOfDiscussion"
+  }, {
+    "@id" : "oslc:postBody",
+    "@type" : "rdf:Property",
+    "comment" : "The body of a POST request to return the next page if the response was to a POST request.\nWhere a paged resource supports POST with an application/x-www-form-urlencoded body as an alternative to GET to\navoid the request URI exceeding server limitations, the oslc:ResponseInfo in the response to the POST SHOULD\ncontain this property so that a client knows what to POST to get the next page.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "postBody"
+  }, {
+    "@id" : "oslc:prefix",
+    "@type" : "rdf:Property",
+    "comment" : "Namespace prefix to be used for this namespace.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "prefix"
+  }, {
+    "@id" : "oslc:prefixBase",
+    "@type" : "rdf:Property",
+    "comment" : "The base URI of the namespace.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "prefixBase"
+  }, {
+    "@id" : "oslc:prefixDefinition",
+    "@type" : "rdf:Property",
+    "comment" : "Defines a namespace prefix for use in JSON representations and in forming OSLC Query Syntax strings.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "prefixDefinition"
+  }, {
+    "@id" : "oslc:property",
+    "@type" : "rdf:Property",
+    "comment" : "The properties that are allowed or required by this shape.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "property"
+  }, {
+    "@id" : "oslc:propertyDefinition",
+    "@type" : "rdf:Property",
+    "comment" : "URI of the property whose usage is being described.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "propertyDefinition"
+  }, {
+    "@id" : "oslc:publisher",
+    "@type" : "rdf:Property",
+    "comment" : "An entity responsible for making the resource available. Servers should use dcterms:publisher.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "publisher",
+    "term_status" : "archaic"
+  }, {
+    "@id" : "oslc:queryBase",
+    "@type" : "rdf:Property",
+    "comment" : "The base URI to use for queries. Queries may be invoked either by HTTP GET or HTTP POST. For HTTP GET, a query URI is formed by appending a key=value pair to the base URI. For HTTP POST, the query parameters are encoded as content with media type application/x-www-form-urlencoded and sent in the request body. The base URI MAY accept other query languages and media types in the request body, e.g. application/sparql-query for SPARQL queries.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "queryBase"
+  }, {
+    "@id" : "oslc:queryCapability",
+    "@type" : "rdf:Property",
+    "comment" : "Enables clients query across a collection of resources.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "queryCapability"
+  }, {
+    "@id" : "oslc:queryable",
+    "@type" : "rdf:Property",
+    "comment" : "Indicates whether a property is queryable (can appear in oslc.where and olsc.select clause) or not.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "queryable"
+  }, {
+    "@id" : "oslc:range",
+    "@type" : "rdf:Property",
+    "comment" : "For properties with a resource value-type, Providers MAY also specify the range of possible resource types allowed, each specified by URI. The default range is http://open-services.net/ns/core#Any.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "range"
+  }, {
+    "@id" : "oslc:readOnly",
+    "@type" : "rdf:Property",
+    "comment" : "true if the property is read-only. If omitted, or set to false, then the property is writable. Providers SHOULD declare a property read-only when changes to the value of that property will not be accepted after the resource has been created, e.g. on PUT/PATCH requests. Consumers should note that the converse does not apply: Providers MAY reject a change to the value of a writable property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "readOnly"
+  }, {
+    "@id" : "oslc:rel",
+    "@type" : "rdf:Property",
+    "comment" : "If present and set to 'alternate' then indicates that work-around is provided, behavior for other values is undefined.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "rel"
+  }, {
+    "@id" : "oslc:representation",
+    "@type" : "rdf:Property",
+    "comment" : "Should be http://open-services.net/ns/core#Reference, http://open-services.net/ns/core#Inline or http://open-services.net/ns/core#Either.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "representation"
+  }, {
+    "@id" : "oslc:resourceShape",
+    "@type" : "rdf:Property",
+    "comment" : "A Creation Factory MAY provide Resource Shapes that describe shapes of resources that may be created.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "resourceShape"
+  }, {
+    "@id" : "oslc:resourceType",
+    "@type" : "rdf:Property",
+    "comment" : "The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource's rdf:type property.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "resourceType"
+  }, {
+    "@id" : "oslc:results",
+    "@type" : "rdf:Property",
+    "comment" : "Used to hold the results of dialog action or JSON query results (default).\nThe JSON query result attribute 'oslc:results' is used whenever a provider doesn't have\na suitable property already in its model for such purposes.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "results"
+  }, {
+    "@id" : "oslc:score",
+    "@type" : "rdf:Property",
+    "comment" : "A computed property for each member resource of a full text search query indicating the quality of the\nmatch, and sort them in descending order of score.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "score"
+  }, {
+    "@id" : "oslc:selectionDialog",
+    "@type" : "rdf:Property",
+    "comment" : "Enables clients to select a resource via a UI.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "selectionDialog"
+  }, {
+    "@id" : "oslc:service",
+    "@type" : "rdf:Property",
+    "comment" : "Describes a service offered by the service provider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "service"
+  }, {
+    "@id" : "oslc:serviceProvider",
+    "@type" : "rdf:Property",
+    "comment" : "A link to the resource's OSLC Service Provider.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "serviceProvider"
+  }, {
+    "@id" : "oslc:serviceProviderCatalog",
+    "@type" : "rdf:Property",
+    "comment" : "Additional service provider catalog.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "serviceProviderCatalog"
+  }, {
+    "@id" : "oslc:shortId",
+    "@type" : "rdf:Property",
+    "comment" : "A short, human-readable, plain text value. This value should be unique in some context that is apparent to human users of a service.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "shortId"
+  }, {
+    "@id" : "oslc:shortTitle",
+    "@type" : "rdf:Property",
+    "comment" : "Shorter form of dcterms:title for the resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "shortTitle"
+  }, {
+    "@id" : "oslc:smallPreview",
+    "@type" : "rdf:Property",
+    "comment" : "URI and sizing properties for an HTML document to be used for a small preview.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "smallPreview"
+  }, {
+    "@id" : "oslc:statusCode",
+    "@type" : "rdf:Property",
+    "comment" : "The HTTP status code reported with the error.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "statusCode"
+  }, {
+    "@id" : "oslc:totalCount",
+    "@type" : "rdf:Property",
+    "comment" : "This optional property indicates the total number of results across all pages,\nits value should be non-negative. In the context of a query resource, this value SHOULD\nbe the total number of results, i.e. the number of resources that match the query.\nIn the context of other resources, the value SHOULD be the total number of property\nvalues (i.e. RDF triples) of the resource. Unless Stable Paging is in effect, the\ntotal count MAY vary as a client retrieves subsequent pages.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "totalCount"
+  }, {
+    "@id" : "oslc:usage",
+    "@type" : "rdf:Property",
+    "comment" : "An identifier URI for the domain specified usage of this creation factory. If a service provides multiple creation factories, it may designate the primary or default one that should be used with a property value of http://open-services.net/ns/core#default.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "usage"
+  }, {
+    "@id" : "oslc:valueShape",
+    "@type" : "rdf:Property",
+    "comment" : "if the value-type is a resource type, then Property MAY provide a shape value to indicate the Resource Shape that applies to the resource.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "valueShape"
+  }, {
+    "@id" : "oslc:valueType",
+    "@type" : "rdf:Property",
+    "comment" : "A URI that indicates the value type, for example XML Schema or RDF URIs for literal value types, and OSLC-specified for others.  If this property is omitted, then the value type is unconstrained.",
+    "isDefinedBy" : "http://open-services.net/ns/core#",
+    "label" : "valueType"
+  } ],
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "vann" : "http://purl.org/vocab/vann/",
+    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  }
+}

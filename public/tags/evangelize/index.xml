@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evangelize on OSLC - Open Services for Lifecycle Collaboration</title>
+    <link>http://open-services.net/tags/evangelize/</link>
+    <description>Recent content in Evangelize on OSLC - Open Services for Lifecycle Collaboration</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Jun 2017 20:57:23 +0200</lastBuildDate>
+    <atom:link href="http://open-services.net/tags/evangelize/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evangelise</title>
+      <link>http://open-services.net/contribute/ct-evangelise/</link>
+      <pubDate>Sat, 24 Jun 2017 20:57:23 +0200</pubDate>
+      <guid>http://open-services.net/contribute/ct-evangelise/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

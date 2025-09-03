@@ -1,0 +1,1567 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "oslc:Property",
+    "name" : "range",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "oslc:range",
+    "range" : "rdfs:Class",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "For object properties, specifies what the target resource type is expected to be, but that is not necessarily the case."
+  }, {
+    "@id" : "_:b1",
+    "@type" : "oslc:Property",
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "rdfs:Class",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs."
+  }, {
+    "@id" : "_:b10",
+    "@type" : "oslc:Property",
+    "name" : "prefixBase",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:prefixBase",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The base URI of the namespace."
+  }, {
+    "@id" : "_:b100",
+    "@type" : "oslc:Property",
+    "name" : "creator",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "The person who created the comment."
+  }, {
+    "@id" : "_:b101",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "The summary of the defined property."
+  }, {
+    "@id" : "_:b102",
+    "@type" : "oslc:Property",
+    "name" : "details",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:details",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A URL that may be used to retrieve a resource to determine additional details about the service provider such as a web page describing it."
+  }, {
+    "@id" : "_:b103",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title of this resource."
+  }, {
+    "@id" : "_:b104",
+    "@type" : "oslc:Property",
+    "name" : "oauthConfiguration",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:oauthConfiguration",
+    "range" : "oslc:OAuthConfiguration",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Defines the three OAuth URIs required for a client to act as an OAuth consumer."
+  }, {
+    "@id" : "_:b105",
+    "@type" : "oslc:Property",
+    "name" : "usage",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:usage",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An identifier URI for the domain specified usage of this resource. If a resource has multiple uses, it may designate the primary or default one that should be used with a property value of oslc:default."
+  }, {
+    "@id" : "_:b106",
+    "@type" : "oslc:Property",
+    "name" : "allowedValue",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:allowedValue",
+    "oslc:readOnly" : true,
+    "description" : "Specifies the allowed values of a property."
+  }, {
+    "@id" : "_:b107",
+    "@type" : "oslc:Property",
+    "name" : "propertyDefinition",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "property:Definition",
+    "range" : "rdf:Property",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The URI of the defined or constrained property."
+  }, {
+    "@id" : "_:b108",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title string that could be used for display."
+  }, {
+    "@id" : "_:b109",
+    "@type" : "oslc:Property",
+    "name" : "publisher",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:publisher",
+    "range" : "oslc:Publisher",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Describes the software product that provides the implementation."
+  }, {
+    "@id" : "_:b11",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A URN that uniquely identifies the implementation."
+  }, {
+    "@id" : "_:b110",
+    "@type" : "oslc:Property",
+    "name" : "valueShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:valueShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "For object properties, the URI of a shape resource that describes the object resource."
+  }, {
+    "@id" : "_:b111",
+    "@type" : "oslc:Property",
+    "name" : "RDF Type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An OSLC resource shape SHOULD have an RDF type of oslc:ResourceShape."
+  }, {
+    "@id" : "_:b112",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title string that could be used for display."
+  }, {
+    "@id" : "_:b113",
+    "@type" : "oslc:Property",
+    "name" : "iconTitle",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:iconTitle",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Title used in association with the oslc:icon, such as HTML img tag's title attribute."
+  }, {
+    "@id" : "_:b114",
+    "@type" : "oslc:Property",
+    "name" : "occurs",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:occurs",
+    "range" : "oslc:Cardinality",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The number of times the defined property may occur."
+  }, {
+    "@id" : "_:b115",
+    "@type" : "oslc:Property",
+    "name" : "readOnly",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:readOnly",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:boolean",
+    "description" : "If true then the defined property cannot be directly writen by clients, but may be updated indirectly by servers."
+  }, {
+    "@id" : "_:b116",
+    "@type" : "oslc:Property",
+    "name" : "maxSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:maxSize",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "For string datatype properties, the maximum number of characters."
+  }, {
+    "@id" : "_:b117",
+    "@type" : "oslc:Property",
+    "name" : "queryable",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:queryable",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:boolean",
+    "description" : "Indicates whether a property is queryable (can appear in oslc.where and olsc.select clause) or not."
+  }, {
+    "@id" : "_:b118",
+    "@type" : "oslc:Property",
+    "name" : "valueType",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:valueType",
+    "range" : "oslc:ResourceValueType",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The type of values of the defined property."
+  }, {
+    "@id" : "_:b119",
+    "@type" : "oslc:Property",
+    "name" : "RDF Type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An OSLC property SHOULD have an RDF type of oslc:Property."
+  }, {
+    "@id" : "_:b12",
+    "@type" : "oslc:Property",
+    "name" : "label",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:label",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Very short label for use in menu items."
+  }, {
+    "@id" : "_:b120",
+    "@type" : "oslc:Property",
+    "name" : "inReplyTo",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:inReplyTo",
+    "range" : "oslc:Comment",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Reference to the comment to which this comment replies."
+  }, {
+    "@id" : "_:b121",
+    "@type" : "oslc:Property",
+    "name" : "familyName",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "foaf:familyName",
+    "valueType" : "xsd:string",
+    "description" : "Family name of person expressed as simple text string."
+  }, {
+    "@id" : "_:b122",
+    "@type" : "oslc:Property",
+    "name" : "nick",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "foaf:nick",
+    "valueType" : "xsd:string",
+    "description" : "A short informal nickname or login identifer expressed as simple text string."
+  }, {
+    "@id" : "_:b123",
+    "@type" : "oslc:Property",
+    "name" : "largePreview",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:largePreview",
+    "range" : "oslc:Preview",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "URI and sizing properties for an HTML document to be used for a large preview."
+  }, {
+    "@id" : "_:b124",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Title that may be used in the display of a link to the resource. The value should include only content that is valid inside an HTML &lt;span&gt; element. Providers should include a dcterms:title property with an informative label for the resource. The title is typically shown to a user as a hyperlink. For a resource with no obvious title, Providers should omit the dcterms:title property. Providers must first HTML escape the contents of the dcterms:title before sending the response."
+  }, {
+    "@id" : "_:b125",
+    "@type" : "oslc:Property",
+    "name" : "smallPreview",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:smallPreview",
+    "range" : "oslc:Preview",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "URI and sizing properties for an HTML document to be used for a small preview."
+  }, {
+    "@id" : "_:b126",
+    "@type" : "oslc:Property",
+    "name" : "shortTitle",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:shortTitle",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Abbreviated title which may be used in the display of a link to the resource. The value should include only content that is valid inside an HTML &lt;span&gt; element. Providers should include an abbreviated title for the resource when possible. The abbreviated title is typically shown to a user as a hyperlink in presentations where visual space is limited. As a general guideline, the length of the abbreviated title should be 5 characters or less. A user-visible identifier that ordinarily appears in the dcterms:title, such as a defect number, makes for a good oslc:shortTitle value. When a resource has no obvious identifier or handle, Providers should omit the oslc:shortTitle property. Providers must first HTML escape the contents of the oslc:shortTitle before sending the response."
+  }, {
+    "@id" : "_:b127",
+    "@type" : "oslc:Property",
+    "name" : "iconAltLabel",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:iconAltLabel",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Alternative label used in association with the oslc:icon, such as HTML img tag's alt attribute."
+  }, {
+    "@id" : "_:b128",
+    "@type" : "oslc:Property",
+    "name" : "property",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:property",
+    "range" : "oslc:Property",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:Resource",
+    "description" : "Indicates an expected property of the described resources."
+  }, {
+    "@id" : "_:b129",
+    "@type" : "oslc:Property",
+    "name" : "resourceShape",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:resourceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "{{A Creation Factory MAY provide Resource Shapes that describe shapes of resources that may be created}}."
+  }, {
+    "@id" : "_:b13",
+    "@type" : "oslc:Property",
+    "name" : "usage",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:usage",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An identifier URI for the domain specified usage of this resource. If a resource has multiple uses, it may designate the primary or default one that should be used with a property value of oslc:default."
+  }, {
+    "@id" : "_:b130",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title of this resource."
+  }, {
+    "@id" : "_:b131",
+    "@type" : "oslc:Property",
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A service provider LDPC offered by this server."
+  }, {
+    "@id" : "_:b132",
+    "@type" : "oslc:Property",
+    "name" : "domain",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:domain",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Namespace URI of the specification that is implemented by this service. {{In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used}}."
+  }, {
+    "@id" : "_:b133",
+    "@type" : "oslc:Property",
+    "name" : "label",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:label",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Very short label for use in menu items."
+  }, {
+    "@id" : "_:b134",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "{{Details or body of the comment; SHOULD include only content that is valid and suitable inside an XHTML <code>&lt;div&gt;</code> element}}."
+  }, {
+    "@id" : "_:b135",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "{{A brief title for the comment; SHOULD include only content that is valid and suitable inside an XHTML <code>&lt;span&gt;</code> element}}."
+  }, {
+    "@id" : "_:b136",
+    "@type" : "oslc:Property",
+    "name" : "usage",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:usage",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An identifier URI for the domain specified usage of this query capability. If a service provides multiple query capabilities, it may designate the primary or default one that should be used with a property value of oslc:default."
+  }, {
+    "@id" : "_:b137",
+    "@type" : "oslc:Property",
+    "name" : "resourceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:resourceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "{{The Query Capability SHOULD provide a Resource Shape that describes the query base URI}}."
+  }, {
+    "@id" : "_:b14",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "The summary of this shape."
+  }, {
+    "@id" : "_:b15",
+    "@type" : "oslc:Property",
+    "name" : "creation",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:creation",
+    "range" : "ldp:Container",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "To create a new resource via the factory, post it to this URI."
+  }, {
+    "@id" : "_:b16",
+    "@type" : "oslc:Property",
+    "name" : "member",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdfs:member",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:Resource",
+    "description" : "OSLC domains might define a number of member or contains relationships between resources. The rdfs:member property is suitable for use when only one such relationship needs to be defined, or when no additional semantics need to be implied by the property name."
+  }, {
+    "@id" : "_:b17",
+    "@type" : "oslc:Property",
+    "name" : "queryCapability",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:queryCapability",
+    "range" : "oslc:QueryCapability",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Enables clients query across a collection of resources."
+  }, {
+    "@id" : "_:b18",
+    "@type" : "oslc:Property",
+    "name" : "oauthRequestTokenURI",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:oauthRequestTokenURI",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "URI for obtaining OAuth request token."
+  }, {
+    "@id" : "_:b19",
+    "@type" : "oslc:Property",
+    "name" : "icon",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:icon",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "URI of an image which may be used in the display of a link to the resource."
+  }, {
+    "@id" : "_:b2",
+    "@type" : "oslc:Property",
+    "name" : "oauthConfiguration",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:oauthConfiguration",
+    "range" : "oslc:OAuthConfiguration",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Defines the three OAuth URIs required for a client to act as an OAuth consumer."
+  }, {
+    "@id" : "_:b20",
+    "@type" : "oslc:Property",
+    "name" : "resourceShape",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:resourceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Describes constraints on dialog prefill requests."
+  }, {
+    "@id" : "_:b21",
+    "@type" : "oslc:Property",
+    "name" : "serviceProviderCatalog",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProviderCatalog",
+    "range" : "oslc:ServiceProviderCatalog",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Additional service provider catalog LDPCs used to organize services."
+  }, {
+    "@id" : "_:b22",
+    "@type" : "oslc:Property",
+    "name" : "discussedBy",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:discussedBy",
+    "range" : "oslc:Discussion",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:Resource",
+    "description" : "A series of notes and comments about this resource."
+  }, {
+    "@id" : "_:b23",
+    "@type" : "oslc:Property",
+    "name" : "publisher",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:publisher",
+    "range" : "oslc:Publisher",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Describes the software product that provides the implementation."
+  }, {
+    "@id" : "_:b24",
+    "@type" : "oslc:Property",
+    "name" : "error",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:error",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A series of errors associated with this resource."
+  }, {
+    "@id" : "_:b25",
+    "@type" : "oslc:Property",
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The URI of a Resource Shape that describes the possible properties, occurrence, value types, allowed values and labels. This shape information is useful in displaying the subject resource as well as guiding clients in performing modifications. Instance shapes may be specific to the authenticated user associated with the request that retrieved the resource, the current state of the resource and other factors and thus should not be cached."
+  }, {
+    "@id" : "_:b26",
+    "@type" : "oslc:Property",
+    "name" : "oauthAccessTokenURI",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:oauthAccessTokenURI",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "URI for obtaining OAuth access token."
+  }, {
+    "@id" : "_:b27",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A service defined identifier."
+  }, {
+    "@id" : "_:b28",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title string that could be used for display."
+  }, {
+    "@id" : "_:b29",
+    "@type" : "oslc:Property",
+    "name" : "creationFactory",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:creationFactory",
+    "range" : "oslc:CreationFactory",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "An LDPC that enables clients to create new resources."
+  }, {
+    "@id" : "_:b3",
+    "@type" : "oslc:Property",
+    "name" : "rel",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:rel",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "If present and set to 'alternate' then indicates that work-around is provided, behavior for other values is undefined."
+  }, {
+    "@id" : "_:b30",
+    "@type" : "oslc:Property",
+    "name" : "selectionDialog",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:selectionDialog",
+    "range" : "oslc:Dialog",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Enables clients to select a resource via UI."
+  }, {
+    "@id" : "_:b31",
+    "@type" : "oslc:Property",
+    "name" : "creationDialog",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:creationDialog",
+    "range" : "oslc:Dialog",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Enables clients to create a resource via UI."
+  }, {
+    "@id" : "_:b32",
+    "@type" : "oslc:Property",
+    "name" : "domain",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:domain",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Namespace URI of the specification that is implemented by this service. {{In most cases this namespace URI will be for an OSLC domain, but other URIs MAY be used}}."
+  }, {
+    "@id" : "_:b33",
+    "@type" : "oslc:Property",
+    "name" : "archived",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:archived",
+    "valueType" : "xsd:boolean",
+    "description" : "Indicates whether the subject has been marked as archived, no longer an actively updating resource."
+  }, {
+    "@id" : "_:b34",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title of the resource represented as rich text in XHTML content."
+  }, {
+    "@id" : "_:b35",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text about resource represented as rich text in XHTML content."
+  }, {
+    "@id" : "_:b36",
+    "@type" : "oslc:Property",
+    "name" : "nextPage",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:nextPage",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Link to the next page of a response."
+  }, {
+    "@id" : "_:b37",
+    "@type" : "oslc:Property",
+    "name" : "postBody",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:postBody",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "The body of a POST request to return the next page if the response was to a POST request. {{Where a paged resource supports POST with an application/x-www-form-urlencoded body as an alternative to GET to avoid the request URI exceeding server limitations, the oslc:ResponseInfo in the response to the POST SHOULD contain this property so that a client knows what to POST to get the next page}}."
+  }, {
+    "@id" : "_:b38",
+    "@type" : "oslc:Property",
+    "name" : "totalCount",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:totalCount",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "{{This optional property indicates the total number of results across all pages, its value SHOULD be non-negative}}.\n{{In the context of a query resource, this value SHOULD be the total number of results, i.e. the number of resources that match the query}}.\n{{In the context of other resources, the value SHOULD be the total number of property values (i.e. RDF triples) of the resource}}.\n{{Unless Stable Paging is in effect, the total count MAY vary as a client retrieves subsequent pages}}."
+  }, {
+    "@id" : "_:b39",
+    "@type" : "oslc:Property",
+    "name" : "comment",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:comment",
+    "range" : "oslc:Comment",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Comment about resource."
+  }, {
+    "@id" : "_:b4",
+    "@type" : "oslc:Property",
+    "name" : "allowedValue",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "oslc:allowedValue",
+    "oslc:readOnly" : true,
+    "description" : "Specifies the allow values in an AllowedValue constraint."
+  }, {
+    "@id" : "_:b40",
+    "@type" : "oslc:Property",
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "valueType" : "xsd:dateTime",
+    "description" : "Optional indication of when the error was detected."
+  }, {
+    "@id" : "_:b41",
+    "@type" : "oslc:Property",
+    "name" : "hintWidth",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintWidth",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "{{Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1) Em and ex units are interpreted relative to the default system font (at 100% size)}}."
+  }, {
+    "@id" : "_:b42",
+    "@type" : "oslc:Property",
+    "name" : "label",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:label",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Very short label for use in menu items."
+  }, {
+    "@id" : "_:b43",
+    "@type" : "oslc:Property",
+    "name" : "allowedValues",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:allowedValues",
+    "range" : "oslc:AllowedValues",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource containing a set of allowed values of the defined property."
+  }, {
+    "@id" : "_:b44",
+    "@type" : "oslc:Property",
+    "name" : "resourceType",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:resourceType",
+    "range" : "rdfs:Class",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The expected resource type URI that will be returned with this query capability. These would be the URIs found in the result resource's rdf:type property."
+  }, {
+    "@id" : "_:b45",
+    "@type" : "oslc:Property",
+    "name" : "document",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:document",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The URI of an HTML document to be used for the preview."
+  }, {
+    "@id" : "_:b46",
+    "@type" : "oslc:Property",
+    "name" : "defaultValue",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:defaultValue",
+    "oslc:readOnly" : true,
+    "description" : "The default value of the defined property."
+  }, {
+    "@id" : "_:b47",
+    "@type" : "oslc:Property",
+    "name" : "authorizationURI",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:authorizationURI",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "URI for obtaining OAuth authorization."
+  }, {
+    "@id" : "_:b48",
+    "@type" : "oslc:Property",
+    "name" : "moreInfo",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:moreInfo",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "{{A resource giving more information on the error SHOULD be of an HTML content-type}}."
+  }, {
+    "@id" : "_:b49",
+    "@type" : "oslc:Property",
+    "name" : "hintHeight",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintHeight",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "{{Values MUST be expressed in relative length units as defined in the W3C Cascading Style Sheets Specification (CSS 2.1) Em and ex units are interpreted relative to the default system font (at 100% size)}}."
+  }, {
+    "@id" : "_:b5",
+    "@type" : "oslc:Property",
+    "name" : "hintHeight",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintHeight",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Recommended height of the preview. Values are expressed using length units as specified in [[CSS21]]."
+  }, {
+    "@id" : "_:b50",
+    "@type" : "oslc:Property",
+    "name" : "service",
+    "occurs" : "oslc:One-or-many",
+    "propertyDefinition" : "oslc:service",
+    "range" : "oslc:Service",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Describes a service LDPC offered by the service provider."
+  }, {
+    "@id" : "_:b51",
+    "@type" : "oslc:Property",
+    "name" : "hintWidth",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintWidth",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Recommended width of the preview. Values are expressed using length units as specified in [[CSS21]]."
+  }, {
+    "@id" : "_:b52",
+    "@type" : "oslc:Property",
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of attachment creation."
+  }, {
+    "@id" : "_:b53",
+    "@type" : "oslc:Property",
+    "name" : "attachmentSize",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:attachmentSize",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "Size in bytes of the attachment content."
+  }, {
+    "@id" : "_:b54",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Description of the services provided."
+  }, {
+    "@id" : "_:b55",
+    "@type" : "oslc:Property",
+    "name" : "resourceType",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:resourceType",
+    "range" : "rdfs:Class",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The expected resource type URI of the resource that will be created using this creation factory. These would be the URIs found in the result resource's rdf:type property."
+  }, {
+    "@id" : "_:b56",
+    "@type" : "oslc:Property",
+    "name" : "message",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:message",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "An informative message describing the error that occurred."
+  }, {
+    "@id" : "_:b57",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "System-assigned identifier."
+  }, {
+    "@id" : "_:b58",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text about the attachment."
+  }, {
+    "@id" : "_:b59",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "xsd:string",
+    "description" : "Client-specified file name or title."
+  }, {
+    "@id" : "_:b6",
+    "@type" : "oslc:Property",
+    "name" : "usage",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:usage",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "An identifier URI for the domain specified usage of this dialog. If a resource has multiple uses, it may designate the primary or default one that should be used with a property value of oslc:default."
+  }, {
+    "@id" : "_:b60",
+    "@type" : "oslc:Property",
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of the attachment. Likely a <code>foaf:Person</code>, but not necessarily so."
+  }, {
+    "@id" : "_:b61",
+    "@type" : "oslc:Property",
+    "name" : "format",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:format",
+    "oslc:readOnly" : true,
+    "description" : "{{MIME type of the attachment content; SHOULD be a <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">PURL media-type resource</a>}}."
+  }, {
+    "@id" : "_:b62",
+    "@type" : "oslc:Property",
+    "name" : "givenName",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "foaf:givenName",
+    "valueType" : "xsd:string",
+    "description" : "Given name of person expressed as simple text string."
+  }, {
+    "@id" : "_:b63",
+    "@type" : "oslc:Property",
+    "name" : "iconSrcSet",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:iconSrcSet",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Specification of a set of images of different sizes based on HTML img element srcset attribute."
+  }, {
+    "@id" : "_:b64",
+    "@type" : "oslc:Property",
+    "name" : "label",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:label",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Very short label for use in menu items."
+  }, {
+    "@id" : "_:b65",
+    "@type" : "oslc:Property",
+    "name" : "representation",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:representation",
+    "range" : "oslc:Representation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "For object properties, how the object resource is represented in the representation of the described resource."
+  }, {
+    "@id" : "_:b66",
+    "@type" : "oslc:Property",
+    "name" : "statusCode",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:statusCode",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "The HTTP status code reported with the error."
+  }, {
+    "@id" : "_:b67",
+    "@type" : "oslc:Property",
+    "name" : "prefixDefinition",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:prefixDefinition",
+    "range" : "oslc:PrefixDefinition",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Inline",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Defines a namespace prefix for use in JSON representations and in forming OSLC Query Syntax strings."
+  }, {
+    "@id" : "_:b68",
+    "@type" : "oslc:Property",
+    "name" : "modifiedBy",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:modifiedBy",
+    "range" : [ "foaf:Person", "oslc:Any" ],
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:Resource",
+    "description" : "The URI of a resource describing the entity that most recently modified the subject resource. The link target is usually a foaf:Person or foaf:Agent, but could be any type. This is modeled after dcterms:creator, but Dublin Core currently has no equivalent property."
+  }, {
+    "@id" : "_:b69",
+    "@type" : "oslc:Property",
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : [ "foaf:Person", "oslc:Any" ],
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of the resource. It is likely that the target resource will be a foaf:Person but that is not necessarily the case."
+  }, {
+    "@id" : "_:b7",
+    "@type" : "oslc:Property",
+    "name" : "queryBase",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:queryBase",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The base URI to use for queries. Queries are invoked via HTTP GET on a query URI formed by appending a key=value pair to the base URI, as described in Query Capabilities section."
+  }, {
+    "@id" : "_:b70",
+    "@type" : "oslc:Property",
+    "name" : "isMemberProperty",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:isMemberProperty",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:boolean",
+    "description" : "If true then the described resource is a container and the defined property is used for container membership."
+  }, {
+    "@id" : "_:b71",
+    "@type" : "oslc:Property",
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:modified",
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification."
+  }, {
+    "@id" : "_:b72",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Typically read-only and assigned by the service provider when a resource is created. Not typically intended for end-user display."
+  }, {
+    "@id" : "_:b73",
+    "@type" : "oslc:Property",
+    "name" : "name",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:name",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "The local name of the defined property."
+  }, {
+    "@id" : "_:b74",
+    "@type" : "oslc:Property",
+    "name" : "icon",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:icon",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "URL to an icon file that represents the provider. This icon should be a favicon format and 16x16 pixels in size."
+  }, {
+    "@id" : "_:b75",
+    "@type" : "oslc:Property",
+    "name" : "describes",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:describes",
+    "range" : "rdfs:Class",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The described resource types that this shape applies to."
+  }, {
+    "@id" : "_:b76",
+    "@type" : "oslc:Property",
+    "name" : "subject",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:subject",
+    "valueType" : "xsd:string",
+    "description" : "Tag or keyword for a resource. Each occurrence of a dcterms:subject property denotes an additional tag for the resource."
+  }, {
+    "@id" : "_:b77",
+    "@type" : "oslc:Property",
+    "name" : "resourceType",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:resourceType",
+    "range" : "rdfs:Class",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The expected resource type URI for the resources that will be returned when using this dialog. These would be the URIs found in the result resource's <code>rdf:type</code> property."
+  }, {
+    "@id" : "_:b78",
+    "@type" : "oslc:Property",
+    "name" : "shortId",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:shortId",
+    "valueType" : "xsd:string",
+    "description" : "A short, human-readable, plain text value. This value should be unique in some context that is apparent to human users of a service."
+  }, {
+    "@id" : "_:b79",
+    "@type" : "oslc:Property",
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation."
+  }, {
+    "@id" : "_:b8",
+    "@type" : "oslc:Property",
+    "name" : "name",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "foaf:name",
+    "valueType" : "xsd:string",
+    "description" : "The full name of a person expressed as simple text string."
+  }, {
+    "@id" : "_:b80",
+    "@type" : "oslc:Property",
+    "name" : "shortTitle",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:shortTitle",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Shorter form of dcterms:title for the resource represented as rich text in XHTML content."
+  }, {
+    "@id" : "_:b81",
+    "@type" : "oslc:Property",
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : [ "foaf:Person", "oslc:Any" ],
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to the resource. It is likely that the target resource will be a foaf:Person but that is not necessarily the case."
+  }, {
+    "@id" : "_:b82",
+    "@type" : "oslc:Property",
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "A link to the resource's OSLC Service Provider. There may be cases when the subject resource is available from a service provider that implements multiple domain specifications, which could result in multiple values for this property."
+  }, {
+    "@id" : "_:b83",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:title",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title of the resource represented as rich text in XHTML content."
+  }, {
+    "@id" : "_:b84",
+    "@type" : "oslc:Property",
+    "name" : "queryable",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:queryable",
+    "valueType" : "xsd:boolean",
+    "description" : "Indicates whether a property is queryable (can appear in oslc.where and olsc.select clause) or not. Defaults to true if unspecified."
+  }, {
+    "@id" : "_:b85",
+    "@type" : "oslc:Property",
+    "name" : "references",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:references",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+  }, {
+    "@id" : "_:b86",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:description",
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text about resource represented as rich text in XHTML content."
+  }, {
+    "@id" : "_:b87",
+    "@type" : "oslc:Property",
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Relation which identifies a related resource."
+  }, {
+    "@id" : "_:b88",
+    "@type" : "oslc:Property",
+    "name" : "hintWidth",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintWidth",
+    "oslc:readOnly" : true,
+    "description" : "Recommended width of the dialog. Values are expressed using length units as specified in [[CSS21]]."
+  }, {
+    "@id" : "_:b89",
+    "@type" : "oslc:Property",
+    "name" : "dialog",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:dialog",
+    "oslc:readOnly" : true,
+    "description" : "The URI of the dialog."
+  }, {
+    "@id" : "_:b9",
+    "@type" : "oslc:Property",
+    "name" : "prefix",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:prefix",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "Namespace prefix to be used for this namespace."
+  }, {
+    "@id" : "_:b90",
+    "@type" : "oslc:Property",
+    "name" : "hintHeight",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hintHeight",
+    "oslc:readOnly" : true,
+    "description" : "Recommended height of the dialog. Values are expressed using length units as specified in [[CSS21]]."
+  }, {
+    "@id" : "_:b91",
+    "@type" : "oslc:Property",
+    "name" : "mbox",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "foaf:mbox",
+    "valueType" : "xsd:string",
+    "description" : "A personal mailbox for this person, typically identified using the mailto: URI scheme (see RFC 2368)."
+  }, {
+    "@id" : "_:b92",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Description of the services provided."
+  }, {
+    "@id" : "_:b93",
+    "@type" : "oslc:Property",
+    "name" : "discussionAbout",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:discussionAbout",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Reference to associated resource."
+  }, {
+    "@id" : "_:b94",
+    "@type" : "oslc:Property",
+    "name" : "extendedError",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:extendedError",
+    "range" : "oslc:ExtendedError",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Extended error information."
+  }, {
+    "@id" : "_:b95",
+    "@type" : "oslc:Property",
+    "name" : "references",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:references",
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "A reference to any resources that are the subject of this error."
+  }, {
+    "@id" : "_:b96",
+    "@type" : "oslc:Property",
+    "name" : "cause",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:cause",
+    "range" : "oslc:Error",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueType" : "oslc:AnyResource",
+    "description" : "An error that was the cause of this error."
+  }, {
+    "@id" : "_:b97",
+    "@type" : "oslc:Property",
+    "name" : "identifier",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:identifier",
+    "valueType" : "xsd:string",
+    "description" : "A unique human-readable string identifier for this resource, such as an error number or code."
+  }, {
+    "@id" : "_:b98",
+    "@type" : "oslc:Property",
+    "name" : "created",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:created",
+    "valueType" : "xsd:dateTime",
+    "description" : "When the comment resource was created."
+  }, {
+    "@id" : "_:b99",
+    "@type" : "oslc:Property",
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title string that could be used for display."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#",
+    "@type" : "oslc:ResourceShapeConstraints",
+    "description" : "Constraints on vocabulary terms defined in the OSLC Core namespace.",
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/core/v3.0/os/oslc-core.html",
+    "issued" : "2021-08-26",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://github.com/oslc-op/oslc-specs/blob/master/specs/core/core-shapes.ttl",
+    "title" : "The OSLC Core Constraints",
+    "label" : "The OSLC Core Constraints"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#AllowedValuesShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:AllowedValues",
+    "property" : "_:b4",
+    "title" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "Defines a set of allowed values for a defined property."
+    }
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#AttachmentDescriptorShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:AttachmentDescriptor",
+    "property" : [ "_:b52", "_:b57", "_:b58", "_:b59", "_:b53", "_:b60", "_:b61" ],
+    "title" : "LDP-RS to contain data about a LDP-NR(Attachment)"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#CommentShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Comment",
+    "property" : [ "_:b135", "_:b134", "_:b100", "_:b27", "_:b120", "_:b98" ],
+    "title" : "OSLC Core Comment Shape"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#CommonPropertiesShape",
+    "@type" : "oslc:ResourceShape",
+    "property" : [ "_:b78", "_:b1", "_:b79", "_:b80", "_:b81", "_:b82", "_:b33", "_:b83", "_:b76", "_:b84", "_:b71", "_:b22", "_:b72", "_:b68", "_:b16", "_:b69", "_:b85", "_:b86", "_:b25", "_:b24", "_:b87" ],
+    "title" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "Defines common properties that are be applicable to any OSLC resource. {{OSLC domains SHOULD use these properties where applicable rather than defining their own properties}}. The cardinality, representations, ranges, and other columns of the following table indicate typical usage. {{However, a domain MAY apply its own constraints for particular resource shapes}}."
+    }
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#CompactShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Compact",
+    "property" : [ "_:b123", "_:b124", "_:b125", "_:b126", "_:b63", "_:b113", "_:b19", "_:b127" ],
+    "title" : "Describes how to display a resource preview."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#CreationFactoryShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:CreationFactory",
+    "property" : [ "_:b99", "_:b55", "_:b129", "_:b105", "_:b133", "_:b15" ],
+    "dcterms:description" : "A Creation Factory describes a capability for creating resources, including an LDPC capable of creating and containing new resources via HTTP POST.",
+    "title" : "Creation Factory"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#DialogShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Dialog",
+    "property" : [ "_:b77", "_:b20", "_:b88", "_:b89", "_:b6", "_:b28", "_:b90", "_:b12" ],
+    "title" : "Describes information about a dialog such as its title and dimensions."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#DiscussionShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Discussion",
+    "property" : [ "_:b39", "_:b93" ],
+    "title" : "OSLC Core Discussion Shape"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ErrorShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Error",
+    "property" : [ "_:b56", "_:b94", "_:b95", "_:b96", "_:b40", "_:b97", "_:b66" ],
+    "title" : "OSLC Core Error Shape"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ExtendedErrorShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:ExtendedError",
+    "property" : [ "_:b48", "_:b3", "_:b41", "_:b49" ],
+    "title" : "OSLC Core ExtendedError Shape"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#OAuthConfigurationShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:OAuthConfiguration",
+    "property" : [ "_:b18", "_:b47", "_:b26" ],
+    "description" : "{{Service Providers that support OAuth Authentication SHOULD provide a way for clients to automatically discover the three OAuth URIs necessary to act as an OAuth Consumer}}.",
+    "title" : "OAuth Configuration"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#PersonShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "foaf:Person",
+    "property" : [ "_:b8", "_:b62", "_:b121", "_:b122", "_:b91" ],
+    "title" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "Person is a resource defined by FOAF that is used as the value for a dcterms:creator or dcterms:contributor property. This shape specifies the recommended minimal FOAF Person properties that should be provided for OSLC."
+    }
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#PrefixDefinitionShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:PrefixDefinition",
+    "property" : [ "_:b9", "_:b10" ],
+    "description" : "{{Service Providers MUST provide a Prefix Definition for each prefix supported by the service}}. {{Each Prefix Definition defines a namespace prefix that clients MAY use in forming OSLC Query Syntax strings}}.",
+    "title" : "Prefix Definition"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#PreviewShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Preview",
+    "property" : [ "_:b45", "_:b5", "_:b51" ],
+    "title" : "An HTML representation of a resource that can be embedded in another user interface."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#PropertyShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Property",
+    "property" : [ "_:b46", "_:b107", "_:b70", "_:b65", "_:b114", "http://open-services.net/ns/core/shapes/3.0#hidden", "_:b43", "_:b0", "_:b115", "_:b116", "_:b117", "_:b106", "_:b118", "http://open-services.net/ns/core/shapes/3.0#shapeDescription", "_:b119", "_:b110", "_:b73", "_:b101" ],
+    "title" : "Specifies the name, description, summary, occurrence, value type, allowed values, and several other aspects of the defined property."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#PublisherShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Publisher",
+    "property" : [ "_:b108", "_:b42", "_:b11", "_:b74" ],
+    "dcterms:description" : "A Publisher identifies and describes the software product that provides the OSLC implementation.",
+    "title" : "Publisher"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#QueryCapabilityShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:QueryCapability",
+    "property" : [ "_:b137", "_:b64", "_:b44", "_:b112", "_:b7", "_:b136" ],
+    "dcterms:description" : "A Query Capability describes a query capability, capable of querying resources via HTTP GET or POST.",
+    "title" : "Query Capability"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ResourceShapeShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:ResourceShape",
+    "property" : [ "_:b111", "http://open-services.net/ns/core/shapes/3.0#shapeDescription", "_:b14", "_:b75", "http://open-services.net/ns/core/shapes/3.0#hidden", "_:b128" ],
+    "dcterms:description" : "A resource should satisfy all the constraints defined by its applicable shapes.",
+    "title" : "A shape resource describes the contents of and constraints on some set of described resources."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ResponseInfoShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:ResponseInfo",
+    "property" : [ "_:b34", "_:b35", "_:b36", "_:b37", "_:b38" ],
+    "title" : "The shape of a resource providing information about a paged HTTP response body."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ServiceProviderCatalogShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:ServiceProviderCatalog",
+    "property" : [ "_:b21", "_:b131", "_:b92", "_:b109", "_:b130", "_:b132", "_:b2" ],
+    "dcterms:description" : "An LDPC describing an OSLC server that offers one or more ServiceProvider LDPCs. {{Servers MAY also organize the ServiceProviders in one or more ServiceProviderCatalog LDPCs to enable OSLC clients to find ServiceProviders offered}}. The members of these catalogs may include other nested catalogs as well as service providers.",
+    "title" : "Service Provider Catalog"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ServiceProviderShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:ServiceProvider",
+    "property" : [ "_:b67", "_:b102", "_:b50", "_:b23", "_:b54", "_:b103", "_:b104" ],
+    "dcterms:description" : "An LDPC whose members are the Service LDPCs offered by an OSLC server.",
+    "title" : "Service Provider"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#ServiceShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc:Service",
+    "property" : [ "_:b29", "_:b17", "_:b30", "_:b31", "_:b13", "_:b32" ],
+    "dcterms:description" : "An LDPC whose properties describe specific services offered by a server, and the URIs to use for those services in the context of that ServiceProvider.",
+    "title" : "Service"
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#hidden",
+    "@type" : "oslc:Property",
+    "name" : "hidden",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:hidden",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:boolean",
+    "description" : "Indicates the resource or property should not be displayed to users."
+  }, {
+    "@id" : "http://open-services.net/ns/core/shapes/3.0#shapeDescription",
+    "@type" : "oslc:Property",
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : true,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "The description of the defined constraint."
+  } ],
+  "@context" : {
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+    },
+    "valueType" : {
+      "@id" : "http://open-services.net/ns/core#valueType",
+      "@type" : "@id"
+    },
+    "representation" : {
+      "@id" : "http://open-services.net/ns/core#representation",
+      "@type" : "@id"
+    },
+    "readOnly" : {
+      "@id" : "http://open-services.net/ns/core#readOnly",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "range" : {
+      "@id" : "http://open-services.net/ns/core#range",
+      "@type" : "@id"
+    },
+    "propertyDefinition" : {
+      "@id" : "http://open-services.net/ns/core#propertyDefinition",
+      "@type" : "@id"
+    },
+    "occurs" : {
+      "@id" : "http://open-services.net/ns/core#occurs",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://open-services.net/ns/core#name"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "property" : {
+      "@id" : "http://open-services.net/ns/core#property",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://open-services.net/ns/core#describes",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "@vocab" : "http://open-services.net/ns/core/shapes/3.0#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}

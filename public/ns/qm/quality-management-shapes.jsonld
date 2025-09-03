@@ -1,0 +1,1546 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "runsOnTestEnvironment",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:runsOnTestEnvironment",
+    "range" : "oslc_qm:TestExecutionRecord",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape",
+    "valueType" : "oslc:Resource",
+    "description" : "The test environment that the Test Plan will be run on.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Runs on Test Environment"
+    }, "Runs on Test Environment" ]
+  }, {
+    "@id" : "_:b1",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Modified"
+    }, "Modified" ]
+  }, {
+    "@id" : "_:b10",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "relatedChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:relatedChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Related Change Request"
+    }, "Related Change Request" ]
+  }, {
+    "@id" : "_:b11",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Description"
+    }, "Description" ]
+  }, {
+    "@id" : "_:b12",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Modified"
+    }, "Modified" ]
+  }, {
+    "@id" : "_:b13",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Created"
+    }, "Created" ]
+  }, {
+    "@id" : "_:b14",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "shortId",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:shortId",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A short identifier for the resource.  Typically the integer shown in the web UI.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Short id"
+    }, "Short id" ]
+  }, {
+    "@id" : "_:b15",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.",
+    "title" : [ "Identifier", {
+      "@language" : "en",
+      "@value" : "Identifier"
+    } ]
+  }, {
+    "@id" : "_:b16",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Contributor"
+    }, "Contributor" ]
+  }, {
+    "@id" : "_:b17",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "executionInstructions",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:executionInstructions",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Instructions for executing the test script. Note that the value of Occurs is undefined. The resource shape document provided by the QM service provider may be consulted for its value.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Execution Instructions"
+    }, "Execution Instructions" ]
+  }, {
+    "@id" : "_:b18",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Creator"
+    }, "Creator" ]
+  }, {
+    "@id" : "_:b19",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "validatesRequirement",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:validatesRequirement",
+    "range" : "oslc_rm:Requirement",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_rm:Requirement",
+    "valueType" : "oslc:Resource",
+    "description" : "Requirement that is validated by the Test Script. It is likely that the target resource will be an oslc_rm:Requirement but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Validates Requirement"
+    }, "Validates Requirement" ]
+  }, {
+    "@id" : "_:b2",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "oslc_qm:TestResult",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Type"
+    }, "Type" ]
+  }, {
+    "@id" : "_:b20",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Contributor"
+    }, "Contributor" ]
+  }, {
+    "@id" : "_:b21",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ResourceShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Instance Shape"
+    }, "Instance Shape" ]
+  }, {
+    "@id" : "_:b22",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Related resource or resources to the resource.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Relation"
+    }, "Relation" ]
+  }, {
+    "@id" : "_:b23",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "shortId",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:shortId",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A short identifier for the resource.  Typically the integer shown in the web UI.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Short id"
+    }, "Short id" ]
+  }, {
+    "@id" : "_:b24",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Related resource or resources to the resource.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Relation"
+    }, "Relation" ]
+  }, {
+    "@id" : "_:b25",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "oslc_qm:TestPlan",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs.",
+    "title" : [ "Type", {
+      "@language" : "en",
+      "@value" : "Type"
+    } ]
+  }, {
+    "@id" : "_:b26",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ServiceProvider",
+    "valueType" : "oslc:Resource",
+    "description" : "The scope of a resource is a link to the resource's OSLC Service Provider.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Service Provider"
+    }, "Service Provider" ]
+  }, {
+    "@id" : "_:b27",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "executesTestScript",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:executesTestScript",
+    "range" : "oslc_qm:TestScript",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Script executed to produce the Test Result. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Executes Test Script"
+    }, "Executes Test Script" ]
+  }, {
+    "@id" : "_:b28",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Contributor"
+    }, "Contributor" ]
+  }, {
+    "@id" : "_:b29",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Title"
+    }, "Title" ]
+  }, {
+    "@id" : "_:b3",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "producedByTestExecutionRecord",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:producedByTestExecutionRecord",
+    "range" : "oslc_qm:TestExecutionRecord",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Execution Record that the Test Result was produced by. It is likely that the target resource will be an oslc_qm:TestExecutionRecord but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Produced by Test Execution Record"
+    }, "Produced by Test Execution Record" ]
+  }, {
+    "@id" : "_:b30",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "testsChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:testsChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "Change Request tested by the Test Case. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Tests Change Request"
+    }, "Tests Change Request" ]
+  }, {
+    "@id" : "_:b31",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "relatedChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:relatedChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Related Change Request"
+    }, "Related Change Request" ]
+  }, {
+    "@id" : "_:b32",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "relatedChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:relatedChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Related Change Request"
+    }, "Related Change Request" ]
+  }, {
+    "@id" : "_:b33",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Identifier"
+    }, "Identifier" ]
+  }, {
+    "@id" : "_:b34",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core).",
+    "title" : [ "Created", {
+      "@language" : "en",
+      "@value" : "Created"
+    } ]
+  }, {
+    "@id" : "_:b35",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Identifier"
+    }, "Identifier" ]
+  }, {
+    "@id" : "_:b36",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Related resource or resources to the resource.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Relation"
+    }, "Relation" ]
+  }, {
+    "@id" : "_:b37",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Contributor"
+    }, "Contributor" ]
+  }, {
+    "@id" : "_:b38",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ResourceShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Instance Shape"
+    }, "Instance Shape" ]
+  }, {
+    "@id" : "_:b39",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Title"
+    }, "Title" ]
+  }, {
+    "@id" : "_:b4",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "reportsOnTestPlan",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:reportsOnTestPlan",
+    "range" : "oslc_qm:TestPlan",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Plan that the Test Execution Record reports on. It is likely that the target resource will be an oslc_qm:TestPlan but that is not necessarily the case.",
+    "title" : [ "Reports on Test Plan", {
+      "@language" : "en",
+      "@value" : "Reports on Test Plan"
+    } ]
+  }, {
+    "@id" : "_:b40",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Creator"
+    }, "Creator" ]
+  }, {
+    "@id" : "_:b41",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Description"
+    }, "Description" ]
+  }, {
+    "@id" : "_:b42",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ServiceProvider",
+    "valueType" : "oslc:Resource",
+    "description" : "The scope of a resource is a link to the resource's OSLC Service Provider.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Service Provider"
+    }, "Service Provider" ]
+  }, {
+    "@id" : "_:b43",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "oslc_qm:TestCase",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Type"
+    }, "Type" ]
+  }, {
+    "@id" : "_:b44",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "shortId",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:shortId",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A short identifier for the resource.  Typically the integer shown in the web UI.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Short id"
+    }, "Short id" ]
+  }, {
+    "@id" : "_:b45",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "validatesRequirement",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:validatesRequirement",
+    "range" : "oslc_rm:Requirement",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_rm:Requirement",
+    "valueType" : "oslc:Resource",
+    "description" : "Requirement that is validated by the Test Case. It is likely that the target resource will be an oslc_rm:Requirement but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Validates Requirement"
+    }, "Validates Requirement" ]
+  }, {
+    "@id" : "_:b46",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Created"
+    }, "Created" ]
+  }, {
+    "@id" : "_:b47",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "usesTestScript",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:usesTestScript",
+    "range" : "oslc_qm:TestScript",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Script used by the Test Case. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Uses Test Script"
+    }, "Uses Test Script" ]
+  }, {
+    "@id" : "_:b48",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ServiceProvider",
+    "valueType" : "oslc:Resource",
+    "description" : "The scope of a resource is a link to the resource's OSLC Service Provider.",
+    "title" : [ "Service Provider", {
+      "@language" : "en",
+      "@value" : "Service Provider"
+    } ]
+  }, {
+    "@id" : "_:b49",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "runsOnTestEnvironment",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:runsOnTestEnvironment",
+    "range" : "oslc_qm:TestExecutionRecord",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Indicates the environment details of the test case for this execution record.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Runs on Test Environment"
+    }, "Runs on Test Environment" ]
+  }, {
+    "@id" : "_:b5",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ResourceShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Instance Shape"
+    }, "Instance Shape" ]
+  }, {
+    "@id" : "_:b50",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Created"
+    }, "Created" ]
+  }, {
+    "@id" : "_:b51",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Description"
+    }, "Description" ]
+  }, {
+    "@id" : "_:b52",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "executesTestScript",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:executesTestScript",
+    "range" : "oslc_qm:TestScript",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Script executed by the Test Execution Record. It is likely that the target resource will be an oslc_qm:TestScript but that is not necessarily the case.",
+    "title" : [ "Executes Test Script", {
+      "@language" : "en",
+      "@value" : "Executes Test Script"
+    } ]
+  }, {
+    "@id" : "_:b53",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Modified"
+    }, "Modified" ]
+  }, {
+    "@id" : "_:b54",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "contributor",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:contributor",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Contributor or contributors to resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Contributor"
+    }, "Contributor" ]
+  }, {
+    "@id" : "_:b55",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "validatesRequirementCollection",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:validatesRequirementCollection",
+    "range" : "oslc_rm:RequirementCollection",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_rm:RequirementCollection",
+    "valueType" : "oslc:Resource",
+    "description" : "Requirement Collection that is validated by the Test Plan. It is likely that the target resource will be an oslc_rm:RequirementCollection but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Validates Requirement Collection"
+    }, "Validates Requirement Collection" ]
+  }, {
+    "@id" : "_:b56",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "description",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:description",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML <div> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Description"
+    }, "Description" ]
+  }, {
+    "@id" : "_:b57",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Identifier"
+    }, "Identifier" ]
+  }, {
+    "@id" : "_:b58",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "usesTestCase",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:usesTestCase",
+    "range" : "oslc_qm:TestCase",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Case used by the Test Plan. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Uses Test Case"
+    }, "Uses Test Case" ]
+  }, {
+    "@id" : "_:b59",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "created",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:created",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of resource creation (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Created"
+    }, "Created" ]
+  }, {
+    "@id" : "_:b6",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Related resource or resources to the resource.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Relation"
+    }, "Relation" ]
+  }, {
+    "@id" : "_:b60",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Title"
+    }, "Title" ]
+  }, {
+    "@id" : "_:b61",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Creator"
+    }, "Creator" ]
+  }, {
+    "@id" : "_:b62",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ResourceShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Instance Shape"
+    }, "Instance Shape" ]
+  }, {
+    "@id" : "_:b63",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "status",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:status",
+    "oslc:readOnly" : false,
+    "valueType" : "xsd:string",
+    "description" : "Used to indicate the state of the Test Result based on values defined by the service provider. Most often a read-only property.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Status"
+    }, "Status" ]
+  }, {
+    "@id" : "_:b64",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "reportsOnTestCase",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_qm:reportsOnTestCase",
+    "range" : "oslc_qm:TestCase",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Case that the Test Result reports on. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Reports on Test Case"
+    }, "Reports on Test Case" ]
+  }, {
+    "@id" : "_:b65",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "instanceShape",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc:instanceShape",
+    "range" : "oslc:ResourceShape",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ResourceShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Resource Shape that provides hints as to resource property value-types and allowed values.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Instance Shape"
+    }, "Instance Shape" ]
+  }, {
+    "@id" : "_:b66",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "reportsOnTestPlan",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:reportsOnTestPlan",
+    "range" : "oslc_qm:TestPlan",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Plan that the Test Result reports on. It is likely that the target resource will be an oslc_qm:TestPlan but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Reports on Test Plan"
+    }, "Reports on Test Plan" ]
+  }, {
+    "@id" : "_:b67",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "runsOnTestEnvironment",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "oslc_qm:runsOnTestEnvironment",
+    "range" : "oslc_qm:TestExecutionRecord",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Configuration associated with the execution work item executed to generate the execution result.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Runs on Test Environment"
+    }, "Runs on Test Environment" ]
+  }, {
+    "@id" : "_:b68",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Creator"
+    }, "Creator" ]
+  }, {
+    "@id" : "_:b69",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Modified"
+    }, "Modified" ]
+  }, {
+    "@id" : "_:b7",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ServiceProvider",
+    "valueType" : "oslc:Resource",
+    "description" : "The scope of a resource is a link to the resource's OSLC Service Provider.",
+    "title" : [ "Service Provider", {
+      "@language" : "en",
+      "@value" : "Service Provider"
+    } ]
+  }, {
+    "@id" : "_:b70",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element.",
+    "title" : [ "Title", {
+      "@language" : "en",
+      "@value" : "Title"
+    } ]
+  }, {
+    "@id" : "_:b71",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "shortId",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:shortId",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A short identifier for the resource.  Typically the integer shown in the web UI.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Short id"
+    }, "Short id" ]
+  }, {
+    "@id" : "_:b72",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "affectedByChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:affectedByChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "Change request that affects the Test Result. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Affected by Change Request"
+    }, "Affected by Change Request" ]
+  }, {
+    "@id" : "_:b73",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "identifier",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:identifier",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:string",
+    "description" : "A unique identifier for a resource. Assigned by the service provider when a resource is created. Not intended for end-user display.",
+    "title" : [ "Identifier", {
+      "@language" : "en",
+      "@value" : "Identifier"
+    } ]
+  }, {
+    "@id" : "_:b74",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "relation",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:relation",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "Related resource or resources to the resource.",
+    "title" : [ "Relation", {
+      "@language" : "en",
+      "@value" : "Relation"
+    } ]
+  }, {
+    "@id" : "_:b75",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "creator",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "dcterms:creator",
+    "range" : "foaf:Person",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Either",
+    "valueShape" : "foaf:Person",
+    "valueType" : "oslc:AnyResource",
+    "description" : "Creator or creators of resource (reference: Dublin Core). It is likely that the target resource will be an foaf:Person but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Creator"
+    }, "Creator" ]
+  }, {
+    "@id" : "_:b76",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "modified",
+    "occurs" : "oslc:Zero-or-one",
+    "propertyDefinition" : "dcterms:modified",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:dateTime",
+    "description" : "Timestamp of latest resource modification (reference: Dublin Core).",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Modified"
+    }, "Modified" ]
+  }, {
+    "@id" : "_:b77",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "serviceProvider",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc:serviceProvider",
+    "range" : "oslc:ServiceProvider",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc:ServiceProvider",
+    "valueType" : "oslc:Resource",
+    "description" : "The scope of a resource is a link to the resource's OSLC Service Provider.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Service Provider"
+    }, "Service Provider" ]
+  }, {
+    "@id" : "_:b78",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "runsTestCase",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc_qm:runsTestCase",
+    "range" : "oslc_qm:TestCase",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Either",
+    "valueShape" : "https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape",
+    "valueType" : "oslc:Resource",
+    "description" : "Test Case run by the Test Execution Record. It is likely that the target resource will be an oslc_qm:TestCase but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Runs Test Case"
+    }, "Runs Test Case" ]
+  }, {
+    "@id" : "_:b79",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "blockedByChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:blockedByChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "Change Request that prevents execution of the Test Execution Record. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Blocked by Change Request"
+    }, "Blocked by Change Request" ]
+  }, {
+    "@id" : "_:b8",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "title",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "dcterms:title",
+    "oslc:readOnly" : false,
+    "valueType" : "rdf:XMLLiteral",
+    "description" : "Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML <span> element.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Title"
+    }, "Title" ]
+  }, {
+    "@id" : "_:b80",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "oslc_qm:TestExecutionRecord",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Type"
+    }, "Type" ]
+  }, {
+    "@id" : "_:b81",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : false,
+    "oslc:isMemberProperty" : false,
+    "name" : "relatedChangeRequest",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "oslc_qm:relatedChangeRequest",
+    "range" : "oslc_cm:ChangeRequest",
+    "oslc:readOnly" : false,
+    "representation" : "oslc:Reference",
+    "valueShape" : "oslc_cm:ChangeRequest",
+    "valueType" : "oslc:Resource",
+    "description" : "A related change request. It is likely that the target resource will be an oslc_cm:ChangeRequest but that is not necessarily the case.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Related Change Request"
+    }, "Related Change Request" ]
+  }, {
+    "@id" : "_:b82",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "shortId",
+    "occurs" : "oslc:Exactly-one",
+    "propertyDefinition" : "oslc:shortId",
+    "oslc:readOnly" : true,
+    "valueType" : "xsd:integer",
+    "description" : "A short identifier for the resource.  Typically the integer shown in the web UI.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Short id"
+    }, "Short id" ]
+  }, {
+    "@id" : "_:b9",
+    "@type" : "oslc:Property",
+    "oslc:hidden" : true,
+    "oslc:isMemberProperty" : false,
+    "name" : "type",
+    "occurs" : "oslc:Zero-or-many",
+    "propertyDefinition" : "rdf:type",
+    "range" : "oslc_qm:TestScript",
+    "oslc:readOnly" : true,
+    "representation" : "oslc:Reference",
+    "valueType" : "oslc:Resource",
+    "description" : "The resource type URIs.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "Type"
+    }, "Type" ]
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#",
+    "@type" : "oslc:ResourceShapeConstraints",
+    "description" : {
+      "@type" : "rdf:XMLLiteral",
+      "@value" : "Resource Shape Constraints defined in the OSLC QM 2.1 specification."
+    },
+    "hasVersion" : "OS",
+    "isPartOf" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-spec.html",
+    "issued" : "2022-01-19",
+    "license" : "http://www.apache.org/licenses/LICENSE-2.0",
+    "publisher" : "https://open-services.net/about/",
+    "source" : "https://docs.oasis-open-projects.org/oslc-op/qm/v2.1/os/quality-management-shapes.ttl",
+    "title" : "OSLC Quality Management (QM) Resource Shape Constraints",
+    "label" : "OSLC Quality Management (QM) Resource Shape Constraints"
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#TestCaseShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_qm:TestCase",
+    "property" : [ "_:b36", "_:b30", "_:b37", "_:b38", "_:b1", "_:b39", "_:b40", "_:b41", "_:b42", "_:b43", "_:b32", "_:b44", "_:b45", "_:b46", "_:b35", "_:b47" ],
+    "description" : "Defines the criteria which determine whether a system exhibits the correct behavior under a specific set of circumstances.",
+    "title" : [ "QM Test Case", {
+      "@language" : "en",
+      "@value" : "QM Test Case"
+    } ]
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#TestExecutionRecordShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_qm:TestExecutionRecord",
+    "property" : [ "_:b4", "_:b76", "_:b20", "_:b77", "_:b78", "_:b33", "_:b75", "_:b74", "_:b62", "_:b79", "_:b49", "_:b29", "_:b80", "_:b50", "_:b81", "_:b82", "_:b52", "_:b51" ],
+    "description" : "Planning for execution of a test.",
+    "title" : [ "QM Test Execution Record", {
+      "@language" : "en",
+      "@value" : "QM Test Execution Record"
+    } ]
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#TestPlanShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_qm:TestPlan",
+    "property" : [ "_:b25", "_:b53", "_:b0", "_:b31", "_:b54", "_:b55", "_:b56", "_:b57", "_:b58", "_:b59", "_:b21", "_:b22", "_:b60", "_:b26", "_:b61", "_:b23" ],
+    "description" : "Defines the overall process and strategy for testing a system.",
+    "title" : [ "QM Test Plan", {
+      "@language" : "en",
+      "@value" : "QM Test Plan"
+    } ]
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#TestResultShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_qm:TestResult",
+    "property" : [ "_:b63", "_:b2", "_:b64", "_:b34", "_:b65", "_:b66", "_:b67", "_:b68", "_:b24", "_:b28", "_:b3", "_:b27", "_:b69", "_:b48", "_:b70", "_:b71", "_:b72", "_:b73" ],
+    "description" : "Describes the outcome of attempting to execute a test.",
+    "title" : [ {
+      "@language" : "en",
+      "@value" : "QM Test Result"
+    }, "QM Test Result" ]
+  }, {
+    "@id" : "https://open-services.net/ns/qm/shapes/2.1/#TestScriptShape",
+    "@type" : "oslc:ResourceShape",
+    "describes" : "oslc_qm:TestScript",
+    "property" : [ "_:b6", "_:b7", "_:b8", "_:b9", "_:b10", "_:b11", "_:b12", "_:b13", "_:b14", "_:b5", "_:b15", "_:b16", "_:b17", "_:b18", "_:b19" ],
+    "description" : "Defines a program or list of steps used to conduct a test.",
+    "title" : [ "QM Test Script", {
+      "@language" : "en",
+      "@value" : "QM Test Script"
+    } ]
+  } ],
+  "@context" : {
+    "valueType" : {
+      "@id" : "http://open-services.net/ns/core#valueType",
+      "@type" : "@id"
+    },
+    "occurs" : {
+      "@id" : "http://open-services.net/ns/core#occurs",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://open-services.net/ns/core#name"
+    },
+    "representation" : {
+      "@id" : "http://open-services.net/ns/core#representation",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "hidden" : {
+      "@id" : "http://open-services.net/ns/core#hidden",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isMemberProperty" : {
+      "@id" : "http://open-services.net/ns/core#isMemberProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "valueShape" : {
+      "@id" : "http://open-services.net/ns/core#valueShape",
+      "@type" : "@id"
+    },
+    "readOnly" : {
+      "@id" : "http://open-services.net/ns/core#readOnly",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "range" : {
+      "@id" : "http://open-services.net/ns/core#range",
+      "@type" : "@id"
+    },
+    "propertyDefinition" : {
+      "@id" : "http://open-services.net/ns/core#propertyDefinition",
+      "@type" : "@id"
+    },
+    "property" : {
+      "@id" : "http://open-services.net/ns/core#property",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://open-services.net/ns/core#describes",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "@vocab" : "https://open-services.net/ns/qm/shapes/2.1/#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "oslc_rm" : "http://open-services.net/ns/rm#",
+    "oslc" : "http://open-services.net/ns/core#",
+    "oslc_qm" : "http://open-services.net/ns/qm#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "oslc_cm" : "http://open-services.net/ns/cm#"
+  }
+}
