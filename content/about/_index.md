@@ -71,7 +71,7 @@ The OSLC Open Project relies on its Sponsors to fund development of the interope
 """
 
 sponsors_img_list = [
-  "ibm_logo.png"
+  "ibm_logo.png",
   "mid-logo.png"
   
 ]
